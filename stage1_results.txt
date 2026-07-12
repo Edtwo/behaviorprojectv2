@@ -1,0 +1,92 @@
+======================================================================
+ STAGE 1 - VERIFICATION
+======================================================================
+rows: 5875   cols: 22
+columns: ['subject#', 'age', 'sex', 'test_time', 'motor_UPDRS', 'total_UPDRS', 'Jitter(%)', 'Jitter(Abs)', 'Jitter:RAP', 'Jitter:PPQ5', 'Jitter:DDP', 'Shimmer', 'Shimmer(dB)', 'Shimmer:APQ3', 'Shimmer:APQ5', 'Shimmer:APQ11', 'Shimmer:DDA', 'NHR', 'HNR', 'RPDE', 'DFA', 'PPE']
+subjects: 42  (expect 42)
+recordings/subject: min=101 max=168 mean=139.9
+test_time range (days): -4.3 .. 215.5
+age range: 36..85   sex codes: [0, 1]
+missing/NaN values: 0
+
+======================================================================
+ HEADLINE CHECK A: does motor_UPDRS vary WITHIN a patient over time?
+======================================================================
+motor_UPDRS overall SD: 8.13
+between-subject SD (of per-subject means): 7.79
+within-subject SD: mean=2.07  min=0.29 max=4.42
+within-subject range (max-min): mean=6.82 days-span
+-> if within-subject SD is tiny vs between-subject SD, there is little within-person
+   change to monitor and the headline must be reconsidered.
+
+======================================================================
+ INTEGRITY CHECK: is motor_UPDRS just a linear trend in time per subject?
+ (this dataset's UPDRS may be interpolated between a few clinical visits)
+======================================================================
+|corr(motor_UPDRS, test_time)| within subject: mean=0.713 median=0.814 min=0.003 max=1.000
+-> if ~1.0 for most subjects, UPDRS is essentially a smooth line in time
+   (interpolated); within-person 'change' is then a linear trend, not noisy
+   per-visit measurement. We must report this honestly.
+
+Example subject 1: first 12 (test_time, motor_UPDRS):
+   t=   5.643   motor_UPDRS= 28.199
+   t=   5.643   motor_UPDRS= 28.199
+   t=   5.644   motor_UPDRS= 28.199
+   t=   5.645   motor_UPDRS= 28.199
+   t=   5.646   motor_UPDRS= 28.199
+   t=   5.646   motor_UPDRS= 28.199
+   t=  12.666   motor_UPDRS= 28.447
+   t=  12.667   motor_UPDRS= 28.447
+   t=  12.667   motor_UPDRS= 28.447
+   t=  12.669   motor_UPDRS= 28.447
+   t=  12.669   motor_UPDRS= 28.447
+   t=  12.669   motor_UPDRS= 28.447
+
+======================================================================
+ HEADLINE CHECK B: within a patient, do voice features move with motor_UPDRS?
+ (mean signed r and mean |r| across subjects, per feature)
+======================================================================
+feature             mean r   mean|r|
+DFA                 -0.010     0.198
+HNR                  0.027     0.165
+Shimmer:APQ5        -0.034     0.155
+Shimmer             -0.032     0.155
+Shimmer:APQ11       -0.029     0.150
+Shimmer:APQ3        -0.034     0.149
+Shimmer:DDA         -0.034     0.149
+Shimmer(dB)         -0.029     0.148
+RPDE                 0.005     0.145
+PPE                  0.001     0.115
+NHR                 -0.017     0.110
+Jitter(%)           -0.016     0.106
+Jitter:PPQ5         -0.024     0.106
+Jitter(Abs)         -0.006     0.104
+Jitter:RAP          -0.022     0.102
+Jitter:DDP          -0.022     0.102
+
+======================================================================
+ CROSS-PERSON reference: pooled corr(feature, motor_UPDRS) across all rows
+======================================================================
+PPE              pooled r = 0.162
+HNR              pooled r = -0.157
+Shimmer:APQ11    pooled r = 0.137
+RPDE             pooled r = 0.129
+DFA              pooled r = -0.116
+Shimmer(dB)      pooled r = 0.110
+Shimmer          pooled r = 0.102
+Shimmer:APQ5     pooled r = 0.092
+Jitter(%)        pooled r = 0.085
+Shimmer:APQ3     pooled r = 0.084
+Shimmer:DDA      pooled r = 0.084
+Jitter:PPQ5      pooled r = 0.076
+NHR              pooled r = 0.075
+Jitter:DDP       pooled r = 0.073
+Jitter:RAP       pooled r = 0.073
+Jitter(Abs)      pooled r = 0.051
+
+======================================================================
+ READ THIS: the headline (personalized within-person monitoring) needs
+ (A) real within-person UPDRS variation AND (B) voice features that track it.
+ The integrity check tells us whether that 'tracking' is really just following
+ an interpolated linear trend - which we must state honestly either way.
+======================================================================
