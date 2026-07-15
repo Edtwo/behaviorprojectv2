@@ -1,0 +1,8 @@
+# FirstWords - Python dependencies (verified working on Python 3.14)
+# Install into a venv:  python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+pylangacq==0.23.0     # CHILDES/CHAT parser; gives MLU / IPSyn / TTR / ages
+pandas==2.3.3
+numpy==2.4.6
+scikit-learn==1.9.0
+shap==0.52.0          # interpretability (the actionable clinician readout)
+matplotlib==3.11.0    # figures for the poster

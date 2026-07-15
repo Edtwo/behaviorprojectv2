@@ -5,7 +5,8 @@
 import os, math
 import pylangacq
 
-SAMPLE_DIR = "data/childes/_synthetic_check"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SAMPLE_DIR = os.path.join(ROOT, "results", "_synthetic_check")
 os.makedirs(SAMPLE_DIR, exist_ok=True)
 
 # 3 tiny transcripts, CHI ages 1;06, 2;06, 3;06, with increasing child utterance
