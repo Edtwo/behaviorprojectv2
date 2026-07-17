@@ -10,14 +10,16 @@ Psychology).
 > child's *talking* (sentence length, vocabulary, grammar) against age norms, and flags kids who look
 > behind - so families can seek help sooner.
 
-## Status (2026-07-14)
-Data downloaded and BOTH signals verified on real data:
-- **Core** (Brown, typically-developing, 214 files, ages 18-62 mo): language complexity rises with age
-  (corr(age, MLU)=0.68) -> the developmental-level estimator will work.
-- **Delay** (ENNI, TD vs SLI, matched age ~85 mo): language-impaired children have markedly lower MLU
-  (5.67 vs 6.90, ~1 SD) on the same task -> the delay-screening headline looks viable.
+## Status (2026-07-16)
+Both signals verified on real data, and **Stage 2 (the core level estimator) is built and validated**:
+- **Core estimator** (Brown + ENNI-TD, 499 files, 288 distinct children, 18-120 mo): ridge regression
+  predicts a child's age from transcript features with **MAE 11.5 months, R² 0.74, child-independent**
+  (GroupKFold by child; predict-mean baseline MAE 27.8).
+- **Age-gap score** (predicted language age − actual age): centered near 0 for typically-developing
+  children; **language-impaired (SLI) children lag ~16 months** on the same task (Cohen's d ≈ 1.0) —
+  informal preview; Stage 3 makes it rigorous.
 
-Next: build Stage 2 (developmental-level estimator) then Stage 3 (delay signal-gate). See the handoff.
+Next: Stage 3 (delay classifier with age/length covariates). See the handoff.
 
 ## Repository layout
 ```
@@ -26,8 +28,9 @@ Next: build Stage 2 (developmental-level estimator) then Stage 3 (delay signal-g
 ├── PROJECT_HANDOFF.md      # FULL plan, all lessons, data facts, agent rules - READ THIS FIRST
 ├── requirements.txt        # pinned deps (verified on Python 3.14)
 ├── src/
-│   ├── stage1_check.py     # Stage 1: parse real data + verify core & delay signals
-│   └── verify_pipeline.py  # no-download smoke test of the CHAT->features pipeline
+│   ├── stage1_check.py             # Stage 1: parse real data + verify core & delay signals
+│   ├── stage2_level_estimator.py   # Stage 2: child-independent developmental-level estimator
+│   └── verify_pipeline.py          # no-download smoke test of the CHAT->features pipeline
 ├── data/                   # (gitignored) CHILDES corpora: Brown (TD), ENNI (TD+SLI)
 └── results/                # (gitignored) outputs / figures
 ```
