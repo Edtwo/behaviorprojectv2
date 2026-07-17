@@ -20,11 +20,12 @@ _Updated 2026-07-14 (after real data downloaded + both signals verified). Catego
 ### Signals (from `src/stage1_check.py` on the real data, 2026-07-14)
 - **CORE signal CONFIRMED (Brown, typically-developing):** 214 transcripts, ages 18.0-62.4 months. Language complexity rises with age: corr(age, MLU-words)=0.68, MLU-morphemes=0.69, TTR=0.62, IPSyn=0.53. A multivariate model will do better. => the developmental-level estimator will work.
 - **DELAY signal looks REAL (ENNI, TD vs SLI, AGES MATCHED ~85 mo):** TD n=286, SLI n=75. At the same age, language-impaired children have much lower MLU: words 6.90 (TD) vs 5.67 (SLI); morphemes 7.09 vs 5.81 - roughly a 1 SD gap on the SAME narrative task (so not an age or task artifact). TTR 0.37 vs 0.35 (small).
-### 2026-07-16 audit (full re-run; every 0b number reproduced exactly; new facts below)
-- **IPSyn "anomaly" RESOLVED as a length artifact:** pylangacq's ipsyn correlates with n child utterances in ENNI (r=0.37 TD, 0.50 SLI; 74% of ENNI files have <100 utterances) and SLI narratives are LONGER on average (93.6 vs 89.0 utts). Length-adjusting shrinks the SLI>TD gap (+0.53 -> +0.35); either way IPSyn does not separate TD/SLI here. MLU is length-ROBUST (r with n_utts = 0.09-0.14 in ENNI).
-- **WARNING - pylangacq's ipsyn() is NOT on the published IPSyn scale** (real IPSyn max ~112, TD 7-yr-olds ~90+; this returns 13-36 everywhere, default already n=100). It has age signal (r=0.53 Brown) so keep it as a FEATURE, but on the poster/paper call it a "syntax-complexity index," never "IPSyn (Scarborough 1990)."
-- **ENNI A/B story-form folders are DISJOINT children** (zero overlapping filenames) -> each ENNI file = one distinct child (286 TD + 75 SLI children). Child-independent splits on ENNI are trivial.
-- **ENNI ages span 48-120 mo (sd~20), only MEAN-matched at ~85 mo** -> Stage 3 must include age as a covariate. One TD file lacks an age header (285/286 aged).
+### 2026-07-16 audit (full re-run; every 0b number reproduced exactly; conclusions below - see Section 0c for the full issue write-ups & evidence)
+- **`syntax_index` (pylangacq ipsyn) is NOT the published IPSyn scale** - keep as a feature, never call it "IPSyn." [ISS-01]
+- **The IPSyn "anomaly" (SLI > TD) was a transcript-length artifact** - drop/length-correct it for TD-vs-SLI; MLU is length-robust and does the discriminating. [ISS-02]
+- **ENNI A/B folders are DISJOINT children** -> each ENNI file = one distinct child (286 TD + 75 SLI); child-independent splits are trivial. [ISS-03]
+- **ENNI ages span 48-120 mo, only MEAN-matched at ~85 mo** -> Stage 3 must include age as a covariate. One TD file lacks an age header (285/286 aged). [ISS-04, ISS-06]
+- **Raw TTR is length-confounded** -> added MATTR-50 (`mattr50`), length-robust. [ISS-05]
 - **Core signal is stronger WITHIN child than pooled:** Brown corr(age, MLUw) = 0.90 (Adam), 0.81 (Eve), 0.88 (Sarah) vs 0.68 pooled -> genuinely developmental, not a pooling artifact.
 - **ENNI TD doubles as level-estimator data:** 286 distinct TD children at 48-120 mo, overlapping Brown at 48-62 mo -> extends the core across ages; task differs (narrative vs home conversation), so control/report corpus.
 ### Stage 2 RESULTS (2026-07-16, `src/stage2_level_estimator.py`, real out-of-fold numbers)
@@ -37,6 +38,52 @@ _Updated 2026-07-14 (after real data downloaded + both signals verified). Catego
 - CHILDES downloads require a FREE TalkBank login (no anonymous route). Corpora are per-language collections; clinical corpora live under "Clinical-Eng" (ENNI/Gillam/Conti-Ramsden); typically-developing English under "Eng-NA" (Brown, etc.). Clinical corpora may be a higher access tier.
 - pylangacq API (rustling backend, v0.23): `read_chat(path, strict=False)` - MUST use strict=False (real CHAT files break strict parsing, e.g. "pause marker embedded in word"). Reader members: `n_files` and `file_paths` are ATTRIBUTES (no parens); `ages()` is a method with NO kwargs returning Age objects (parse "Y;MM.DD" -> months via regex); `mluw()/mlum()/ttr()/ipsyn()` are methods returning lists aligned to `file_paths`, computed for the target child. `mlum`/`ipsyn` need the %mor/%gra tiers (present in real CHILDES, absent in bare synthetic files).
 - Feature meanings: MLU-words = mean words per utterance; MLU-morphemes = mean morphemes per utterance; TTR = type-token ratio (lexical diversity); IPSyn = Index of Productive Syntax (syntactic complexity).
+
+================================================================================
+## 0c. ISSUE & DECISION LOG (living record of the experimental design - UPDATE EVERY TIME AN ISSUE IS FOUND OR RESOLVED)
+================================================================================
+_Purpose: this is the project's methods lab-notebook for the ISEF board/paper. Every problem we hit,
+every confound we caught, and every design choice we made in response goes here, dated, in the format
+below. Judges reward researchers who FIND their own flaws and fix them - this section is the paper trail
+that proves we did. Do NOT delete entries when resolved; mark them RESOLVED and keep the reasoning.
+When an issue is closed, also fold the one-line conclusion into 0b (verified facts) so future agents trust it.
+Format per entry: ID | date-found | STATUS (OPEN / RESOLVED / MONITORING) | what we saw | why it matters | what we did | evidence._
+
+- **ISS-01 | 2026-07-16 | RESOLVED | pylangacq's `ipsyn()` is NOT the published IPSyn scale.**
+  - Saw: values range 13-36 across every file in both corpora; ENNI TD 7-year-olds average ~22. Published IPSyn maxes at ~112 and TD 7-yr-olds score ~90+. Confirmed the default already uses the standard 100-utterance window (`ipsyn(n=100)` gives identical values), so it is not a settings mistake - the compiled backend computes a partial/nonstandard index.
+  - Why it matters: presenting "IPSyn = 22 at age 7" to a knowledgeable BEHA judge who knows IPSyn norms would look like an error and damage credibility.
+  - Did: kept the metric as a FEATURE (it still carries age signal, r=0.53 in Brown) but RELABELED it `syntax_index` everywhere (code, poster, paper) and will never call it "IPSyn (Scarborough 1990)." Documented the scale caveat.
+  - Evidence: `.venv/bin/python -c "...ipsyn() vs ipsyn(n=100)..."`; Stage 2 feature list uses `syntax_index`.
+
+- **ISS-02 | 2026-07-16 | RESOLVED | "IPSyn anomaly" - SLI scored slightly HIGHER than TD (22.56 vs 22.03), the wrong direction.**
+  - Saw: counterintuitive since SLI = language-impaired. Investigated as a possible artifact.
+  - Why it matters: an uncontrolled confound in a discriminating feature would undermine the whole delay-signal claim.
+  - Did/found: it is a TRANSCRIPT-LENGTH artifact. `syntax_index` correlates with number of child utterances (r=0.37 TD, 0.50 SLI), 74% of ENNI files have <100 utterances, and SLI narratives are LONGER on average (93.6 vs 89.0 utts). Length-adjusting shrinks the gap (+0.53 -> +0.35); either way this feature does not separate the groups. CONCLUSION: drop or length-correct `syntax_index` for TD-vs-SLI; lean on MLU (length-robust: r with n_utts = 0.09-0.14). This validated our own artifact-control doctrine (Lesson 4) and is a poster-worthy "we caught a confound" panel.
+  - Evidence: scratchpad length-confound diagnostic; pooled regression residuals by group.
+
+- **ISS-03 | 2026-07-16 | RESOLVED | Are ENNI's A/B story-set folders the SAME children twice (which would leak across a train/test split)?**
+  - Saw: ENNI is split into story-form A and story-form B folders per group; needed to know if a child appears in both.
+  - Why it matters: if A and B are the same kids, a naive split would put one child on both sides = leakage = inflated results.
+  - Did/found: file-name intersection between A and B is ZERO in both TD and SLI -> disjoint children -> each ENNI file is one distinct child (286 TD + 75 SLI). Child-independent splitting on ENNI is therefore trivial. Still used GroupKFold-by-child in Stage 2 for uniformity/safety.
+  - Evidence: `comm -12` on the A/B file lists.
+
+- **ISS-04 | 2026-07-16 | MONITORING | ENNI ages are only MEAN-matched (~85 mo), but individuals span 48-120 mo (sd~20).**
+  - Saw: the "ages matched" claim is true for the group means/spread, not per child.
+  - Why it matters: for the Stage 3 delay classifier, age is a confound if not handled - an older SLI child could be mistaken for delayed purely by age mixing.
+  - Did/plan: include age as a covariate in Stage 3 and report age-band subgroups; in Stage 2 the age-gap score already subtracts chronological age so this is handled there. Left OPEN->MONITORING until Stage 3 implements it.
+  - Evidence: ENNI age summaries (TD 48-120, SLI 50-118).
+
+- **ISS-05 | 2026-07-16 | RESOLVED | Raw TTR (type-token ratio) shrinks as a transcript gets longer (length confound).**
+  - Saw: known property of TTR; ENNI transcripts vary widely in length.
+  - Why it matters: a length-confounded lexical-diversity feature would smuggle transcript length into the model.
+  - Did: added MATTR-50 (moving-average TTR over sliding 50-word windows), which is length-robust, as `mattr50`; kept raw `ttr` too for comparison. Used in Stage 2.
+  - Evidence: `mattr()` in `src/stage2_level_estimator.py`.
+
+- **ISS-06 | 2026-07-16 | RESOLVED (noted) | One ENNI-TD file has no age header (285 of 286 aged).**
+  - Saw: `ages()` returns None for one TD file.
+  - Why it matters: silently dropping or mis-handling missing ages could bias the set.
+  - Did: age-dependent code filters `age_months.notna()` explicitly (that one file is excluded from age modeling, kept for feature stats). Documented rather than hidden.
+  - Evidence: Stage 2 "TD modeling set: ... 285 ENNI" vs 286 files.
 
 ================================================================================
 ## 1. HARD LESSONS - DO NOT REPEAT (paid for across DopaLoop, the idea-search, ParkinTrack, the ALS/category detour)
@@ -59,6 +106,7 @@ _Updated 2026-07-14 (after real data downloaded + both signals verified). Catego
 - Coordinate via git. Commit small with clear messages; keep this handoff + README current so the partner can resume. Read existing work before overwriting.
 - One stage at a time; run it (use `.venv/bin/python`); verify the checkpoint; report the REAL numbers; only then proceed. Claude Code can run Python here - verify, don't just write and hope.
 - If a gate fails, document it here honestly and adjust WITHIN the project (fall back to the developmental-level estimator) - don't silently paper over or abandon.
+- **Maintain the Issue & Decision Log (Section 0c).** Every time you find a confound/bug/quirk or resolve one, add or update an ISS-## entry (dated, with evidence). This is our experimental-design paper trail for ISEF judges - never delete resolved entries, mark them RESOLVED; fold the one-line conclusion into 0b.
 - Data ethics: CHILDES transcripts are de-identified minors' language data under TalkBank terms. Keep in `data/` (gitignored); DON'T commit raw data; follow TalkBank terms + citation rules; never attempt re-identification.
 - ISEF: human-participants research on a pre-existing public dataset (minors) -> SRC review + forms + an adult sponsor/Designated Supervisor BEFORE formal work. Confirm current-year rules with the Dallas Regional SRC. (The author has a "Data Security during Fair Registration" screenshots folder for this.)
 
