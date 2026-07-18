@@ -1,7 +1,7 @@
 # FirstWords - PROJECT HANDOFF & COMPLETE PLAN
 ### An interpretable tool that estimates a child's language-development level (and flags likely delay) from a speech sample
 _Self-contained record. Any agent (including a collaborator's agent) MUST read Sections 1-2 before touching the project._
-_Updated 2026-07-14 (after real data downloaded + both signals verified). Category: ISEF Behavioral & Cognitive Sciences (Developmental Psychology)._
+_Updated 2026-07-16 (Stage 2 level estimator DONE + verified; audit + Issue Log 0c added). Category: ISEF Behavioral & Cognitive Sciences (Developmental Psychology)._
 
 ================================================================================
 ## 0. TL;DR
@@ -176,15 +176,24 @@ De-identified, public, pre-existing dataset of MINORS -> human-participants pre-
 |- PROJECT_HANDOFF.md       THIS file (read first)
 |- requirements.txt         pinned deps (verified py3.14)
 |- src/
-|   |- stage1_check.py      Stage 1: parse real data + verify core & delay signals
-|   |- verify_pipeline.py   no-download smoke test of the CHAT->features pipeline
+|   |- stage1_check.py            Stage 1: parse real data + verify core & delay signals
+|   |- stage2_level_estimator.py  Stage 2: child-independent level estimator (DONE) + age-gap + figures
+|   |- verify_pipeline.py         no-download smoke test of the CHAT->features pipeline
 |- data/childes/            (gitignored) Brown/, ENNI/{TD,SLI}/, + more TD corpora
-|- results/                 (gitignored contents) outputs / figures
+|- results/                 (gitignored contents) features.csv, stage2_calibration.png, stage2_gap_preview.png
 |- .venv/                   (gitignored) Python 3.14 env
 ```
-Run: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`, download corpora into `data/childes/`, then `.venv/bin/python src/stage1_check.py`.
+Run: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`, download corpora into `data/childes/`, then `.venv/bin/python src/stage1_check.py` and `.venv/bin/python src/stage2_level_estimator.py`.
+### DATA LAYOUT a collaborator must reproduce (data/ is gitignored - each person downloads their own from TalkBank)
+```
+data/childes/
+  Brown/{Adam,Eve,Sarah}/*.cha          # TD longitudinal, 3 children, 214 files, 18-62 mo
+  ENNI/TD/{A,B}/*.cha                    # TD narrative, 286 distinct children, 48-120 mo
+  ENNI/SLI/{A,B}/*.cha (+ SLI/A/0noaudio/)  # SLI narrative, 75 distinct children
+```
+Code resolves paths relative to repo root and reads whole corpus dirs recursively (`read_chat(dir, strict=False)`), so exact subfolders don't matter as long as Brown/ and ENNI/{TD,SLI}/ exist. If your numbers differ from Section 0b, your download differs - reconcile before building on it.
 ### Restart (fresh session or partner's agent)
-- Read Sections 0-2. Committed project = FirstWords. Data + both signals verified; Stage 2 (level estimator) DONE and verified (0b Stage 2 RESULTS).
+- Read Sections 0, 0b, 0c, 1, 2 in that order. Committed project = FirstWords. Data + both signals verified; Stage 2 (level estimator) DONE and verified (0b Stage 2 RESULTS). Section 0c is the running issue log - skim it to see what's already been caught and resolved before re-investigating anything.
 - NEXT concrete step = Stage 3 (delay classifier, TD vs SLI on ENNI, age + transcript-length covariates, balanced metrics, child-independent, CIs). Also still recommended: download 1-2 more Eng-NA TD corpora with many children at 18-48 mo (Brown alone is 3 children there) and re-run stage2.
 - Keep the discipline that finally works: signal first, child-independent validation, baselines, honest CIs, artifact control, one checkpoint at a time, a usable tool + demo, honesty over hype.
 - History/fallbacks: DopaLoop lives at /Users/mihir/DopaLoop (MATLAB; do not touch). The ParkinTrack (PD) and ALS-Forecast explorations were removed from this repo (kept only as LESSONS in Section 1) - ALS-Forecast on PRO-ACT is the strongest non-BEHA fallback (TMED); choices13k (decision-making) and WESAD (stress) are BEHA fallbacks with instant data.
