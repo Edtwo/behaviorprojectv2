@@ -77,8 +77,23 @@ def header_group_sex(fp):
     cid = f"{birth.group(1)}:{sex}" if birth else os.path.basename(fp)
     return grp, sex, cid
 
+LANG_ONLY = ["mluw", "mlum", "mattr50"]        # age-free model (for out-of-age-range corpora)
+
+def label_from_path(fp, root):
+    """Read TD/SLI group and task from the relative folder path (e.g. Conti4 encodes
+    both in folder names: TD-frog, SLI-spontaneous). Falls back to the @ID header."""
+    rel = os.path.relpath(fp, root).upper()
+    grp = "SLI" if re.search(r"\bSLI\b|DLD", rel) else ("TD" if re.search(r"\bTD\b|CONTROL|TYPICAL", rel) else "")
+    task = next((t for t in ("FROG", "SPONTANEOUS", "NARRATIVE", "CONVERSATION") if t in rel), "all")
+    if not grp:                                 # fall back to header @Types / @ID
+        with open(fp, encoding="utf-8", errors="ignore") as f:
+            txt = f.read()
+        if re.search(r"@Types:.*\bSLI\b", txt): grp = "SLI"
+        elif re.search(r"@Types:.*\bTD\b", txt): grp = "TD"
+    return grp, task.lower()
+
 def extract_corpus(path):
-    """Generic per-file features + header-derived group for an arbitrary corpus dir."""
+    """Per-file features + group/task (from folder path) for an arbitrary corpus dir."""
     r = pylangacq.read_chat(path, strict=False)
     ages = [s2.months(a) for a in r.ages()]
     mluw, mlum, ttr, ipsyn = r.mluw(), r.mlum(), r.ttr(), r.ipsyn()
@@ -87,50 +102,76 @@ def extract_corpus(path):
     for i, fp in enumerate(r.file_paths):
         chi = [u for u in utts[i] if u.participant == "CHI"]
         words = [t.word.lower() for u in chi for t in u.tokens if t.pos and t.word]
-        grp, sex, cid = header_group_sex(fp)
-        rows.append({"file": os.path.basename(fp), "group": grp, "sex": sex, "child_id": cid,
+        grp, task = label_from_path(fp, path)
+        rows.append({"file": os.path.basename(fp), "task": task, "group": grp,
+                     "child_id": os.path.splitext(os.path.basename(fp))[0],
                      "age_months": ages[i], "mluw": mluw[i], "mlum": mlum[i], "ttr": ttr[i],
                      "mattr50": s2.mattr(words), "syntax_index": ipsyn[i], "n_utts": len(chi)})
     return pd.DataFrame(rows)
 
 def find_external_corpora():
-    out = []
-    if not os.path.isdir(DATA): return out
-    for name in sorted(os.listdir(DATA)):
-        p = os.path.join(DATA, name)
-        if os.path.isdir(p) and name not in KNOWN and glob.glob(os.path.join(p, "**/*.cha"), recursive=True):
-            out.append((name, p))
+    """Scan both data/childes/ and the data/ root for corpora other than Brown/ENNI."""
+    roots, out = [DATA, os.path.dirname(DATA)], []
+    seen = set()
+    for base in roots:
+        if not os.path.isdir(base): continue
+        for name in sorted(os.listdir(base)):
+            p = os.path.join(base, name)
+            if (os.path.isdir(p) and name not in KNOWN | {"childes"} and p not in seen
+                    and glob.glob(os.path.join(p, "**/*.cha"), recursive=True)):
+                out.append((name, p)); seen.add(p)
     return out
 
+def _auc_ci(y, p, n=2000, seed=0):
+    """Bootstrap 95% CI for AUC, resampling the external test children."""
+    rng = np.random.default_rng(seed)
+    idx = np.arange(len(y)); vals = []
+    for _ in range(n):
+        s = rng.choice(idx, size=len(idx), replace=True)
+        if len(np.unique(y[s])) < 2: continue
+        vals.append(roc_auc_score(y[s], p[s]))
+    return float(np.percentile(vals, 2.5)), float(np.percentile(vals, 97.5))
+
 def delay_transfer():
-    print("\nPART B - DELAY cross-corpus transfer (train ENNI, test an external clinical corpus)")
+    print("\nPART B - DELAY cross-corpus transfer (train ENNI, TEST external corpus; no refit)")
     ext = find_external_corpora()
     if not ext:
-        print("  No external corpus found. TO RUN THIS TEST, download a 2nd English clinical")
-        print("  corpus with TD + SLI/DLD children from TalkBank (Clinical-Eng), e.g.:")
-        print("    - Conti-Ramsden (Manchester)   - Gillam   - EllisWeismer")
-        print("  Unzip into data/childes/<CorpusName>/ (any layout). Labels are read from the")
-        print("  CHAT @ID header (TD/SLI), so no renaming is needed. Then re-run this script.")
+        print("  No external corpus found. Unzip a 2nd English clinical corpus (TD+SLI/DLD)")
+        print("  into data/ or data/childes/. Labels are read from folder names or @Types. Re-run.")
         return
-    # train delay model on ENNI (from features.csv)
     df = pd.read_csv(os.path.join(RESULTS, "features.csv"))
     enni = df[(df["corpus"] == "ENNI") & df["age_months"].notna()].dropna(subset=DELAY_FEATURES).copy()
     enni["y"] = (enni["group"] == "SLI").astype(int)
-    model = make_pipeline(StandardScaler(),
-                          LogisticRegression(class_weight="balanced", max_iter=1000)).fit(
+    full = make_pipeline(StandardScaler(), LogisticRegression(class_weight="balanced", max_iter=1000)).fit(
         enni[DELAY_FEATURES], enni["y"])
+    lang = make_pipeline(StandardScaler(), LogisticRegression(class_weight="balanced", max_iter=1000)).fit(
+        enni[LANG_ONLY], enni["y"])
+    enni_lo, enni_hi = enni["age_months"].min(), enni["age_months"].max()
+
     for name, p in ext:
         d = extract_corpus(p).dropna(subset=DELAY_FEATURES)
         d = d[d["group"].isin(["TD", "SLI"])]
-        counts = dict(d["group"].value_counts())
-        print(f"  {name}: {len(d)} labeled files {counts}")
-        if {"TD", "SLI"} <= set(counts):
-            y = (d["group"] == "SLI").astype(int)
-            proba = model.predict_proba(d[DELAY_FEATURES])[:, 1]
-            print(f"    -> ENNI-trained model on {name}: ROC-AUC = {roc_auc_score(y, proba):.3f} "
-                  f"(external validation; no refit)")
-        else:
-            print(f"    -> need BOTH TD and SLI labels to score AUC; found only {set(counts)}")
+        if d.empty:
+            print(f"  {name}: no TD/SLI-labeled files detected - skipping."); continue
+        a_lo, a_hi = d["age_months"].min(), d["age_months"].max()
+        oor = a_lo > enni_hi or a_hi < enni_lo
+        print(f"  {name}: {len(d)} files, ages {a_lo:.0f}-{a_hi:.0f} mo "
+              f"(ENNI train range {enni_lo:.0f}-{enni_hi:.0f}{' -> OUT OF RANGE, use language-only' if oor else ''})")
+        # report per TASK so each file is a distinct child within the comparison
+        for task, g in d.groupby("task"):
+            counts = dict(g["group"].value_counts())
+            if {"TD", "SLI"} <= set(counts):
+                y = (g["group"] == "SLI").astype(int).to_numpy()
+                p_lang = lang.predict_proba(g[LANG_ONLY])[:, 1]
+                auc_full = roc_auc_score(y, full.predict_proba(g[DELAY_FEATURES])[:, 1])
+                auc_lang = roc_auc_score(y, p_lang)
+                lo, hi = _auc_ci(y, p_lang)
+                print(f"     task={task:12s} {counts}  ROC-AUC: language-only={auc_lang:.3f} "
+                      f"[95% CI {lo:.3f}-{hi:.3f}]  full(+age)={auc_full:.3f}")
+            else:
+                print(f"     task={task:12s} {counts}  (need both TD & SLI - skipped)")
+    print("  NOTE: Conti4 is adolescents (~13-16 yr) vs ENNI 4-10 yr -> language-only is the fair")
+    print("  read (age is extrapolated in the full model). This is a HARD cross-age + cross-lab test.")
 
 def main():
     level_transfer()

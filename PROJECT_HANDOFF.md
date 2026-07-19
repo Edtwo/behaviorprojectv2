@@ -9,7 +9,7 @@ _Updated 2026-07-16 (Stage 2 level estimator DONE + verified; audit + Issue Log 
 - **Project:** FirstWords - takes a short transcript of a young child's speech, estimates their **language-developmental level** vs. age norms, and **flags likely language delay**. An accessible, interpretable early-screening aid (early intervention greatly improves outcomes). Analogy for judges: a "growth chart for language."
 - **True BEHA fit:** measures a developmental/cognitive construct (language acquisition) = Developmental Psychology. (We rejected an ALS idea because it was Translational-Medical, not BEHA.)
 - **Two-layer, de-risked design:** (1) CORE = developmental-level estimator (textbook-certain signal -> cannot dead-null; a complete project by itself); (2) HEADLINE = delay flag (typically-developing vs. language-impaired), signal-gated with a clean fallback to the core.
-- **STATUS (2026-07-18): data in hand; BOTH signals verified; Stage 2 (level estimator) AND Stage 3 (delay classifier) BUILT + validated child-independently.** Core: ridge MAE 11.2 mo, R2 0.76. Headline: delay flag ROC-AUC 0.861, with age/length proven NOT to be the signal -> the delay flag survived rigor and IS the headline. Next = Stage 4 (SHAP) + Stage 5 (demo).
+- **STATUS (2026-07-19): Stages 1-4 done + validated child-independently; 2 Tier-1 extensions done.** Core: ridge MAE 11.2 mo, R2 0.76. Headline: delay flag ROC-AUC 0.861 (age/length proven NOT the signal). Stage 4: SHAP + age-normed readout. Extensions: language growth-chart percentiles (well-calibrated), and CROSS-CORPUS external validation on Conti-Ramsden 4 (no refit; British adolescents; different lab/task/age) -> narrative AUC 0.70 [0.57-0.82], signal generalizes. Next = Stage 5 (demo) + optional Tier-2 (short-sample robustness, fairness).
 - **Data:** CHILDES (TalkBank). Downloaded: **Brown** (typically-developing) + **ENNI** (typically-developing AND language-impaired, same narrative task). Free TalkBank login required to download; de-identified.
 - **Stack (verified, Python 3.14 venv):** pylangacq 0.23 (CHAT parser; built-in MLU/IPSyn/TTR/ages), pandas, numpy, scikit-learn, shap, matplotlib. See requirements.txt.
 - **Honest ceiling:** genuine BEHA placement/finalist potential at Dallas Regional -> ISEF with strong execution + a live demo + the "helps kids" story. Not a guaranteed top prize; but it WILL complete and be a real, correctly-categorized, working tool.
@@ -78,6 +78,12 @@ Format per entry: ID | date-found | STATUS (OPEN / RESOLVED / MONITORING) | what
   - Why it matters: if A and B share children, a naive by-file split leaks a child across train/test = inflated results.
   - Did/found (INITIAL, later shown insufficient): file-NAME intersection between A and B is zero, so I concluded "disjoint children, each file = one child." **This method was wrong** - filenames are per-narrative, not per-child. See ISS-07 for the correct analysis and fix. Kept here (not deleted) as an honest record of a method error we caught ourselves.
   - Evidence: `comm -12` on the A/B file lists (necessary but insufficient test).
+
+- **ISS-08 | 2026-07-19 | RESOLVED | Conti-Ramsden 4 encodes TD/SLI in FOLDER names, not the @ID header (unlike ENNI).**
+  - Saw: the cross-corpus harness assumed the group label sits in the @ID header (true for ENNI). Conti4's @ID group field is empty; the label is in folder names (TD-frog/, SLI-spontaneous/) and the @Types tier.
+  - Why it matters: without adapting, the external-validation test would silently find zero labels.
+  - Did: `label_from_path()` reads group (SLI/DLD vs TD/control) AND task (frog/spontaneous) from the folder path, with an @Types header fallback; `find_external_corpora()` now scans BOTH data/ and data/childes/. Verified it recovers 99 TD + 19 SLI per task.
+  - Evidence: PART B output in `src/ext_crosscorpus.py`.
 
 - **ISS-07 | 2026-07-18 | RESOLVED | ENNI A/B folders DO share some children -> small child-leak in the by-file split (corrects ISS-03).**
   - Saw: building Stage 3, I remembered the ENNI instrument has each child tell BOTH story A and story B, so filename-disjointness (ISS-03) does not prove child-disjointness. Fingerprinting each file by its CHAT header (`Birth of CHI is ...` + sex) shows ~5 TD and ~2 SLI children appear in BOTH folders; one pair (402.cha in A, 404.cha in B) shares birthdate, sex AND exact age = unmistakably the same child. So 286 TD files map to ~279 distinct children, not 286.
@@ -150,6 +156,7 @@ Automatic language-level estimation and SLI detection from CHILDES exist in the 
 ### In hand (in `data/childes/`, gitignored) - ~575 transcripts total
 - **Brown/** (Adam, Eve, Sarah) - typically-developing, LONGITUDINAL. 214 files, ages 18-62 months. NOTE: only 3 distinct children (many sessions each) -> too few DISTINCT children for robust child-independent generalization on the toddler range by itself.
 - **ENNI/TD/** and **ENNI/SLI/** - Edmonton Narrative Norms Instrument. TD 286 files, SLI 75 files, ages ~85 months (~7 yr), matched across groups, SAME narrative task. Many distinct children. This is the delay-layer gold: TD vs SLI on identical task at matched age.
+- **Conti4/** (at `data/Conti4/`, NOT under childes/) - Conti-Ramsden 4, British; 99 TD + 19 SLI ADOLESCENTS (13-16 yr); two tasks (frog-story narrative + spontaneous conversation), group+task encoded in FOLDER names (TD-frog/, SLI-spontaneous/...). Used ONLY as the external cross-corpus test set for the delay layer (Section 10 PART B); NOT in the core train set (age far above target). %mor/%gra tiers present.
 ### Recommended additional downloads (to strengthen the CORE across ages + more children)
 - More Eng-NA typically-developing corpora with many children spanning ~18-72 months (e.g., a large multi-child corpus) - to give the level estimator enough DISTINCT children for honest child-independent CV across the young range. (Brown alone = 3 kids; add more.)
 ### Access
@@ -237,12 +244,17 @@ _Purpose: capture, as we go, exactly what to SAY and SHOW to judges so nothing i
 - CLAIM (the money slide): The delay signal is genuinely linguistic, not an artifact. EVIDENCE: age-alone AUC 0.42 and transcript-length-alone AUC 0.49 (both ~chance); language-only 0.78. REASONING: if the flag were just detecting older/longer transcripts, those confounds would classify - they don't.
 - CLAIM: It's interpretable. EVIDENCE: standardized coefficients - low morpheme-MLU and low lexical diversity drive the flag, age acts as the norm reference. REASONING: a clinician-style readout ("grammar + sentence length below age norm"), not a black box.
 
+### 9d-bis. CROSS-CORPUS GENERALIZATION (new headline evidence, 2026-07-19)
+- CLAIM: the delay signal generalizes beyond our training data. EVIDENCE: ENNI-trained flag, NO refit, on Conti-Ramsden 4 (British adolescents, different lab/task/age): frog-narrative AUC 0.702 [0.566-0.823], both CIs exclude chance. REASONING: it transfers across country + lab + task + a 6-10 yr age gap; the drop from 0.86 is the honest cost of that shift, not a failure. This is the single most convincing "it actually works on new data" result - build a slide for it.
+
 ### 9d. "Money slides" to build (visuals that win)
 1. Calibration scatter (results/stage2_calibration.png): predicted vs actual age hugging the diagonal, 18-120 mo.
 2. Artifact-control bar chart: AUC of language vs age-alone vs length-alone - the "we controlled the confound" proof.
 3. ROC + risk-score histograms (results/stage3_roc.png): clear TD vs SLI separation.
-4. LIVE DEMO (Stage 5): paste a transcript -> language age + percentile + gap + flag + top drivers. The single biggest score-mover.
-5. The Issue Log (Section 0c) as a "how I made this rigorous" panel: caught our own metric-scale error and a data-leak, and showed they didn't change conclusions.
+4. Cross-corpus generalization bar: in-domain ENNI AUC 0.86 vs external Conti4 AUC 0.70 (with CIs) - "works on a different lab's data."
+5. Language growth chart (results/ext_growth_chart.png): percentile curves + a flagged child at P6 - the metaphor made literal.
+6. LIVE DEMO (Stage 5): paste a transcript -> language age + percentile + gap + flag + top drivers. The single biggest score-mover.
+7. The Issue Log (Section 0c) as a "how I made this rigorous" panel: caught our own metric-scale error and a data-leak, and showed they didn't change conclusions.
 
 ### 9e. Anticipated judge questions -> prepared answers (expand as we go)
 - "Isn't this just measuring transcript length?" -> No; MLU is per-utterance (length-robust: r=0.09-0.14), and length-alone AUC is 0.49 (chance). Slide 2.
@@ -271,8 +283,8 @@ _The base (Stages 1-3) works and will complete. These are how to RAISE THE CEILI
 ### Tier 1 - highest payoff, moderate risk (these most increase winnability)
 - **CROSS-CORPUS GENERALIZATION (the big one). `src/ext_crosscorpus.py` BUILT.**
   - PART A (LEVEL transfer) DONE + runnable now: train age estimator on one corpus, test on the other (Brown conversation <-> ENNI narrative), overlap band 48-62 mo. RESULT: transfers with raw MAE 5.5-7.2 mo and a small task offset (-2.7 to -4.2 mo); offset-corrected MAE 4.9-6.1 vs within-corpus ref 2.7-3.2 -> transfers in rank/precision but tasks have different absolute norms (honest, expected). Poster line: "the model still works across a different task, once you account for a small task offset."
-  - PART B (DELAY transfer - the headline test) NEEDS A DOWNLOAD: train delay classifier on ENNI, TEST on a 2nd independently-collected English clinical corpus with TD+SLI/DLD (Clinical-Eng: Conti-Ramsden/Manchester, Gillam, EllisWeismer). Harness auto-reads TD/SLI from the CHAT @ID header, so ANY corpus unzipped into data/childes/<Name>/ is picked up - no renaming. GATE: parse it, confirm both labels present, then it reports external-validation AUC (no refit). A drop is itself an honest, reportable result.
-  - **ACTION FOR AUTHOR:** download one such corpus into data/childes/ and re-run `.venv/bin/python src/ext_crosscorpus.py`.
+  - PART B (DELAY transfer - the headline test) DONE 2026-07-19 with **Conti-Ramsden 4** (British; 99 TD + 19 SLI adolescents, 13-16 yr; two tasks - frog-story narrative & spontaneous conversation). Labels read from folder names (SLI-frog/ etc.); harness auto-scans data/ and data/childes/. Trained on ENNI, applied with NO refit. RESULT (language-only model, the fair read since Conti4 ages are OUT of ENNI's 48-120 mo range): **frog narrative AUC 0.702 [95% CI 0.566-0.823], spontaneous AUC 0.666 [0.533-0.784]** - both CIs exclude 0.5. Full(+age) model lower (0.67 / 0.62) as expected (age extrapolated). 
+  - INTERPRETATION (poster-ready): the SLI language signature transfers across COUNTRY (UK), LAB, TASK, and a 6-10 yr AGE GAP with no retraining, at AUC ~0.70 (vs 0.86 in-domain). The drop is expected under that much shift; that it stays well above chance is the generalization win. Task-matched (frog≈ENNI narrative) > conversation, and language-only > age-extrapolated - both confirm the design logic. HONEST limits: small SLI n (19) -> wide CI; adolescents not the target screening age.
 - **NORM-REFERENCED PERCENTILES ("growth chart" made literal). `src/ext_percentiles.py` DONE.** Quantile regression (P10/25/50/75/90 of sentence length vs age on TD) -> a child lands on a percentile like a pediatric growth chart. VALIDATED: 10.4% of TD children fall below P10 (target 10% = well-calibrated bands); example flagged child at P6. Output: results/ext_growth_chart.png (a genuine money slide). `percentile_for()` reusable by the Stage 5 demo.
 
 ### Tier 2 - strong, lower risk (clinical realism + fairness)
