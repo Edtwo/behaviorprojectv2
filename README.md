@@ -35,6 +35,8 @@ Next: Stage 4 (SHAP interpretability) and Stage 5 (the demo tool). See the hando
 │   ├── stage2_level_estimator.py   # Stage 2: child-independent developmental-level estimator
 │   ├── stage3_delay_classifier.py  # Stage 3: TD-vs-SLI delay classifier (ENNI, artifact-controlled)
 │   ├── stage4_interpretability.py  # Stage 4: SHAP drivers + age-normed per-child readout
+│   ├── ext_percentiles.py          # Extension: language "growth chart" (percentile curves)
+│   ├── ext_crosscorpus.py          # Extension: cross-corpus generalization (level now; delay needs 2nd corpus)
 │   └── verify_pipeline.py          # no-download smoke test of the CHAT->features pipeline
 ├── data/                   # (gitignored) CHILDES corpora: Brown (TD), ENNI (TD+SLI)
 └── results/                # (gitignored) outputs / figures
