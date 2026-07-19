@@ -22,7 +22,11 @@ validated child-independently**:
   threshold: 91% sensitivity, 65% specificity.
 - **Age-gap score**: TD children ≈ 0; SLI children's estimated language age lags ~16 months (d ≈ 1.0).
 
-Next: Stage 4 (SHAP interpretability) and Stage 5 (the demo tool). See the handoff.
+**Interpretability + demo + extensions (done):** SHAP drivers + an age-normed per-child readout
+(Stage 4); a paste-a-transcript screening **demo** (Stage 5: `.venv/bin/python src/stage5_demo.py --demo`);
+a language **growth chart** (percentile curves, well-calibrated); **cross-corpus external validation**
+on Conti-Ramsden 4 (AUC 0.70, no refit); **short-sample robustness** (AUC 0.82 at just 10 utterances);
+and a **fairness audit** (sex/age subgroups). See the handoff (Sections 0b, 9, 10).
 
 ## Repository layout
 ```
@@ -35,8 +39,11 @@ Next: Stage 4 (SHAP interpretability) and Stage 5 (the demo tool). See the hando
 │   ├── stage2_level_estimator.py   # Stage 2: child-independent developmental-level estimator
 │   ├── stage3_delay_classifier.py  # Stage 3: TD-vs-SLI delay classifier (ENNI, artifact-controlled)
 │   ├── stage4_interpretability.py  # Stage 4: SHAP drivers + age-normed per-child readout
+│   ├── stage5_demo.py              # Stage 5: paste-a-transcript screening demo (the judge-facing tool)
 │   ├── ext_percentiles.py          # Extension: language "growth chart" (percentile curves)
-│   ├── ext_crosscorpus.py          # Extension: cross-corpus generalization (level now; delay needs 2nd corpus)
+│   ├── ext_crosscorpus.py          # Extension: cross-corpus generalization (Brown<->ENNI + Conti4 external)
+│   ├── ext_shortsample.py          # Extension: short-sample robustness (AUC vs transcript length)
+│   ├── ext_fairness.py             # Extension: fairness/subgroup audit (sex, age band)
 │   └── verify_pipeline.py          # no-download smoke test of the CHAT->features pipeline
 ├── data/                   # (gitignored) CHILDES corpora: Brown (TD), ENNI (TD+SLI)
 └── results/                # (gitignored) outputs / figures
