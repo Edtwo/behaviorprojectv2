@@ -10,16 +10,19 @@ Psychology).
 > child's *talking* (sentence length, vocabulary, grammar) against age norms, and flags kids who look
 > behind - so families can seek help sooner.
 
-## Status (2026-07-16)
-Both signals verified on real data, and **Stage 2 (the core level estimator) is built and validated**:
-- **Core estimator** (Brown + ENNI-TD, 499 files, 288 distinct children, 18-120 mo): ridge regression
-  predicts a child's age from transcript features with **MAE 11.5 months, R² 0.74, child-independent**
-  (GroupKFold by child; predict-mean baseline MAE 27.8).
-- **Age-gap score** (predicted language age − actual age): centered near 0 for typically-developing
-  children; **language-impaired (SLI) children lag ~16 months** on the same task (Cohen's d ≈ 1.0) —
-  informal preview; Stage 3 makes it rigorous.
+## Status (2026-07-18)
+Both signals verified, and **Stages 2 (core level estimator) and 3 (delay classifier) are built and
+validated child-independently**:
+- **Core estimator** (Brown + ENNI-TD, 499 files, 281 distinct children, 18-120 mo): ridge regression
+  predicts a child's age from transcript features with **MAE 11.2 months, R² 0.76, child-independent**
+  (GroupKFold by child; predict-mean baseline MAE 27.1).
+- **Delay classifier** (ENNI, TD vs SLI, same task): **ROC-AUC 0.861** [0.81–0.91], child-independent
+  (StratifiedGroupKFold by child). Crucially, **age alone (AUC 0.42) and transcript length alone
+  (0.49) are at/below chance** — the signal is genuinely linguistic, not an artifact. At a screening
+  threshold: 91% sensitivity, 65% specificity.
+- **Age-gap score**: TD children ≈ 0; SLI children's estimated language age lags ~16 months (d ≈ 1.0).
 
-Next: Stage 3 (delay classifier with age/length covariates). See the handoff.
+Next: Stage 4 (SHAP interpretability) and Stage 5 (the demo tool). See the handoff.
 
 ## Repository layout
 ```
@@ -30,6 +33,7 @@ Next: Stage 3 (delay classifier with age/length covariates). See the handoff.
 ├── src/
 │   ├── stage1_check.py             # Stage 1: parse real data + verify core & delay signals
 │   ├── stage2_level_estimator.py   # Stage 2: child-independent developmental-level estimator
+│   ├── stage3_delay_classifier.py  # Stage 3: TD-vs-SLI delay classifier (ENNI, artifact-controlled)
 │   └── verify_pipeline.py          # no-download smoke test of the CHAT->features pipeline
 ├── data/                   # (gitignored) CHILDES corpora: Brown (TD), ENNI (TD+SLI)
 └── results/                # (gitignored) outputs / figures

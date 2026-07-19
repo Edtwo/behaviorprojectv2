@@ -46,6 +46,20 @@ def mattr(words, window=50):
     return st.mean(len(set(words[i:i+window]))/window
                    for i in range(len(words) - window + 1))
 
+def enni_child_id(fp):
+    """A stable child identifier for ENNI, from the CHAT header (birthdate + sex).
+    ENNI's A/B story folders can contain the SAME child (e.g. 402.cha and 404.cha
+    share birthdate, sex, and exact age), so filename is NOT a child id (see ISS-03/07).
+    Grouping on (birthdate, sex) keeps a child's A and B narratives on the same side
+    of any split; files missing a birthdate fall back to a unique per-file id."""
+    with open(fp, encoding="utf-8", errors="ignore") as f:
+        txt = f.read()
+    birth = re.search(r"Birth of CHI is ([\w-]+)", txt)
+    sex = re.search(r"\|CHI\|[^|]*\|(male|female)\|", txt)
+    if birth:
+        return f"ENNI:{birth.group(1)}:{sex.group(1) if sex else '?'}"
+    return "ENNI:file:" + os.path.splitext(os.path.basename(fp))[0]
+
 def extract(path, corpus, group, child_id_from):
     """Per-file feature rows for one corpus directory."""
     r = pylangacq.read_chat(path, strict=False)
@@ -72,10 +86,9 @@ def build_features():
         p = os.path.join(DATA, "Brown", child)
         if os.path.isdir(p):  # child_id = Brown child folder (longitudinal)
             rows += extract(p, "Brown", "TD", lambda fp, c=child: f"Brown:{c}")
-    # ENNI: A/B are disjoint children (verified) -> child_id = file stem
-    stem = lambda fp: "ENNI:" + os.path.splitext(os.path.basename(fp))[0]
-    rows += extract(os.path.join(DATA, "ENNI", "TD"), "ENNI", "TD", stem)
-    rows += extract(os.path.join(DATA, "ENNI", "SLI"), "ENNI", "SLI", stem)
+    # ENNI: child_id from header (birthdate+sex); A/B can share a child (ISS-07)
+    rows += extract(os.path.join(DATA, "ENNI", "TD"), "ENNI", "TD", enni_child_id)
+    rows += extract(os.path.join(DATA, "ENNI", "SLI"), "ENNI", "SLI", enni_child_id)
     return pd.DataFrame(rows)
 
 def mae(y, p): return float(np.mean(np.abs(np.asarray(y) - np.asarray(p))))

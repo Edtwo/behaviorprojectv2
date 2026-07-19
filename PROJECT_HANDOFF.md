@@ -9,7 +9,7 @@ _Updated 2026-07-16 (Stage 2 level estimator DONE + verified; audit + Issue Log 
 - **Project:** FirstWords - takes a short transcript of a young child's speech, estimates their **language-developmental level** vs. age norms, and **flags likely language delay**. An accessible, interpretable early-screening aid (early intervention greatly improves outcomes). Analogy for judges: a "growth chart for language."
 - **True BEHA fit:** measures a developmental/cognitive construct (language acquisition) = Developmental Psychology. (We rejected an ALS idea because it was Translational-Medical, not BEHA.)
 - **Two-layer, de-risked design:** (1) CORE = developmental-level estimator (textbook-certain signal -> cannot dead-null; a complete project by itself); (2) HEADLINE = delay flag (typically-developing vs. language-impaired), signal-gated with a clean fallback to the core.
-- **STATUS (2026-07-14): data in hand + BOTH signals VERIFIED on real data.** Next = Stage 2 (build the level estimator), then Stage 3 (delay classifier). Nothing is a gamble now.
+- **STATUS (2026-07-18): data in hand; BOTH signals verified; Stage 2 (level estimator) AND Stage 3 (delay classifier) BUILT + validated child-independently.** Core: ridge MAE 11.2 mo, R2 0.76. Headline: delay flag ROC-AUC 0.861, with age/length proven NOT to be the signal -> the delay flag survived rigor and IS the headline. Next = Stage 4 (SHAP) + Stage 5 (demo).
 - **Data:** CHILDES (TalkBank). Downloaded: **Brown** (typically-developing) + **ENNI** (typically-developing AND language-impaired, same narrative task). Free TalkBank login required to download; de-identified.
 - **Stack (verified, Python 3.14 venv):** pylangacq 0.23 (CHAT parser; built-in MLU/IPSyn/TTR/ages), pandas, numpy, scikit-learn, shap, matplotlib. See requirements.txt.
 - **Honest ceiling:** genuine BEHA placement/finalist potential at Dallas Regional -> ISEF with strong execution + a live demo + the "helps kids" story. Not a guaranteed top prize; but it WILL complete and be a real, correctly-categorized, working tool.
@@ -23,8 +23,8 @@ _Updated 2026-07-16 (Stage 2 level estimator DONE + verified; audit + Issue Log 
 ### 2026-07-16 audit (full re-run; every 0b number reproduced exactly; conclusions below - see Section 0c for the full issue write-ups & evidence)
 - **`syntax_index` (pylangacq ipsyn) is NOT the published IPSyn scale** - keep as a feature, never call it "IPSyn." [ISS-01]
 - **The IPSyn "anomaly" (SLI > TD) was a transcript-length artifact** - drop/length-correct it for TD-vs-SLI; MLU is length-robust and does the discriminating. [ISS-02]
-- **ENNI A/B folders are DISJOINT children** -> each ENNI file = one distinct child (286 TD + 75 SLI); child-independent splits are trivial. [ISS-03]
-- **ENNI ages span 48-120 mo, only MEAN-matched at ~85 mo** -> Stage 3 must include age as a covariate. One TD file lacks an age header (285/286 aged). [ISS-04, ISS-06]
+- **ENNI A/B folders SHARE a few children** (~7; ISS-03's "disjoint" claim was wrong) -> child_id must come from the CHAT header fingerprint (birthdate+sex), not the filename; split with GroupKFold/StratifiedGroupKFold. Impact tiny but now airtight. [ISS-07 corrects ISS-03]
+- **ENNI ages span 48-120 mo, only MEAN-matched at ~85 mo** -> include age as a covariate (done in Stage 3; age-alone AUC 0.42 = not the signal). One TD file lacks an age header (285/286 aged). [ISS-04, ISS-06]
 - **Raw TTR is length-confounded** -> added MATTR-50 (`mattr50`), length-robust. [ISS-05]
 - **Core signal is stronger WITHIN child than pooled:** Brown corr(age, MLUw) = 0.90 (Adam), 0.81 (Eve), 0.88 (Sarah) vs 0.68 pooled -> genuinely developmental, not a pooling artifact.
 - **ENNI TD doubles as level-estimator data:** 286 distinct TD children at 48-120 mo, overlapping Brown at 48-62 mo -> extends the core across ages; task differs (narrative vs home conversation), so control/report corpus.
@@ -34,6 +34,13 @@ _Updated 2026-07-16 (Stage 2 level estimator DONE + verified; audit + Issue Log 
 - Age-gap score defined = predicted language age - chronological age; TD out-of-fold gap mean -1.63 mo (sd 13.9) - roughly centered, as it should be.
 - **SLI preview (informal, same task, vs ENNI-TD out-of-fold gaps): SLI mean gap -16.45 mo vs TD -0.90 mo -> SLI children's estimated language age lags ~15.6 months, Cohen's d ~ 0.98.** Judge-friendly line: "children with language impairment sound ~1.3 years younger than they are." Stage 3 must make this rigorous (age + length covariates, balanced metrics, CIs).
 - Outputs: results/features.csv (575 files incl SLI), results/stage2_calibration.png, results/stage2_gap_preview.png.
+### Stage 3 RESULTS (2026-07-18, `src/stage3_delay_classifier.py`, ENNI-only, child-independent)
+- Set: 360 ENNI files, 345 distinct children, TD 285 vs SLI 75 (20.8% prevalence). ENNI-only (Brown excluded to avoid a task/age shortcut). Length-robust features (mluw, mlum, mattr50) + age covariate. StratifiedGroupKFold by header child_id (ISS-07).
+- **Logistic regression WINS (interpretable): ROC-AUC 0.861 [95% CI 0.811..0.907], PR-AUC 0.639 [0.530..0.748]** (baseline prevalence PR-AUC = 0.21) vs grad-boosting AUC 0.793.
+- **Artifact check (the money slide): age-alone AUC 0.42, transcript-length-alone AUC 0.49 (both ~chance) -> the signal is genuinely LINGUISTIC, not a confound.** Language-only 0.78; +age 0.86.
+- Screening operating point (~90% sensitivity): thr 0.36 -> sens 0.91, spec 0.65 (misses 7 of 75 SLI). Youden point: sens 0.88, spec 0.74.
+- Drivers (standardized logistic coefs; + => more likely impaired): mlum -1.39 (low morpheme MLU), age +1.35 (older but still low = flag), mattr50 -0.84 (low lexical diversity), mluw -0.38. All developmentally sensible.
+- Output: results/stage3_roc.png (ROC + risk-score histograms). **DELAY HEADLINE SURVIVES RIGOR -> it IS the headline (not a fallback).**
 ### Access / tooling / parsing (all verified)
 - CHILDES downloads require a FREE TalkBank login (no anonymous route). Corpora are per-language collections; clinical corpora live under "Clinical-Eng" (ENNI/Gillam/Conti-Ramsden); typically-developing English under "Eng-NA" (Brown, etc.). Clinical corpora may be a higher access tier.
 - pylangacq API (rustling backend, v0.23): `read_chat(path, strict=False)` - MUST use strict=False (real CHAT files break strict parsing, e.g. "pause marker embedded in word"). Reader members: `n_files` and `file_paths` are ATTRIBUTES (no parens); `ages()` is a method with NO kwargs returning Age objects (parse "Y;MM.DD" -> months via regex); `mluw()/mlum()/ttr()/ipsyn()` are methods returning lists aligned to `file_paths`, computed for the target child. `mlum`/`ipsyn` need the %mor/%gra tiers (present in real CHILDES, absent in bare synthetic files).
@@ -61,17 +68,23 @@ Format per entry: ID | date-found | STATUS (OPEN / RESOLVED / MONITORING) | what
   - Did/found: it is a TRANSCRIPT-LENGTH artifact. `syntax_index` correlates with number of child utterances (r=0.37 TD, 0.50 SLI), 74% of ENNI files have <100 utterances, and SLI narratives are LONGER on average (93.6 vs 89.0 utts). Length-adjusting shrinks the gap (+0.53 -> +0.35); either way this feature does not separate the groups. CONCLUSION: drop or length-correct `syntax_index` for TD-vs-SLI; lean on MLU (length-robust: r with n_utts = 0.09-0.14). This validated our own artifact-control doctrine (Lesson 4) and is a poster-worthy "we caught a confound" panel.
   - Evidence: scratchpad length-confound diagnostic; pooled regression residuals by group.
 
-- **ISS-03 | 2026-07-16 | RESOLVED | Are ENNI's A/B story-set folders the SAME children twice (which would leak across a train/test split)?**
-  - Saw: ENNI is split into story-form A and story-form B folders per group; needed to know if a child appears in both.
-  - Why it matters: if A and B are the same kids, a naive split would put one child on both sides = leakage = inflated results.
-  - Did/found: file-name intersection between A and B is ZERO in both TD and SLI -> disjoint children -> each ENNI file is one distinct child (286 TD + 75 SLI). Child-independent splitting on ENNI is therefore trivial. Still used GroupKFold-by-child in Stage 2 for uniformity/safety.
-  - Evidence: `comm -12` on the A/B file lists.
+- **ISS-03 | 2026-07-16 | CORRECTED by ISS-07 | Are ENNI's A/B story-set folders the SAME children twice?**
+  - Saw: ENNI is split into story-form A and B folders per group; needed to know if a child appears in both.
+  - Why it matters: if A and B share children, a naive by-file split leaks a child across train/test = inflated results.
+  - Did/found (INITIAL, later shown insufficient): file-NAME intersection between A and B is zero, so I concluded "disjoint children, each file = one child." **This method was wrong** - filenames are per-narrative, not per-child. See ISS-07 for the correct analysis and fix. Kept here (not deleted) as an honest record of a method error we caught ourselves.
+  - Evidence: `comm -12` on the A/B file lists (necessary but insufficient test).
 
-- **ISS-04 | 2026-07-16 | MONITORING | ENNI ages are only MEAN-matched (~85 mo), but individuals span 48-120 mo (sd~20).**
+- **ISS-07 | 2026-07-18 | RESOLVED | ENNI A/B folders DO share some children -> small child-leak in the by-file split (corrects ISS-03).**
+  - Saw: building Stage 3, I remembered the ENNI instrument has each child tell BOTH story A and story B, so filename-disjointness (ISS-03) does not prove child-disjointness. Fingerprinting each file by its CHAT header (`Birth of CHI is ...` + sex) shows ~5 TD and ~2 SLI children appear in BOTH folders; one pair (402.cha in A, 404.cha in B) shares birthdate, sex AND exact age = unmistakably the same child. So 286 TD files map to ~279 distinct children, not 286.
+  - Why it matters: Stage 2 (ENNI child_id = filename) and the first Stage 3 run (StratifiedKFold by file) each leaked ~7 children across folds -> mildly optimistic metrics.
+  - Did: derive child_id from the header fingerprint (birthdate+sex; unique fallback if missing); Stage 2 now GroupKFold-by that; Stage 3 now StratifiedGroupKFold-by that. IMPACT WAS TINY (the honest, reassuring part): Stage 2 MAE 11.46->11.19 mo; Stage 3 ROC-AUC 0.860->0.861 - so the earlier numbers were not meaningfully inflated, but the validation is now airtight and defensible to a judge who knows ENNI's design.
+  - Evidence: header-fingerprint overlap script (scratchpad); `enni_child_id()` in src/stage2_level_estimator.py; re-run logs.
+
+- **ISS-04 | 2026-07-16 | RESOLVED | ENNI ages are only MEAN-matched (~85 mo), but individuals span 48-120 mo (sd~20).**
   - Saw: the "ages matched" claim is true for the group means/spread, not per child.
   - Why it matters: for the Stage 3 delay classifier, age is a confound if not handled - an older SLI child could be mistaken for delayed purely by age mixing.
-  - Did/plan: include age as a covariate in Stage 3 and report age-band subgroups; in Stage 2 the age-gap score already subtracts chronological age so this is handled there. Left OPEN->MONITORING until Stage 3 implements it.
-  - Evidence: ENNI age summaries (TD 48-120, SLI 50-118).
+  - Did: Stage 3 includes age_months as a covariate, and the artifact check proves age is NOT the signal (age-alone ROC-AUC = 0.42, i.e. below chance; length-alone = 0.49). The language features carry it (language-only AUC 0.78; language+age 0.86, where age acts as a legitimate age-norm reference, not a shortcut). Stage 2's age-gap score already subtracts chronological age.
+  - Evidence: Stage 3 "Artifact check" block.
 
 - **ISS-05 | 2026-07-16 | RESOLVED | Raw TTR (type-token ratio) shrinks as a transcript gets longer (length confound).**
   - Saw: known property of TTR; ENNI transcripts vary widely in length.
@@ -147,7 +160,7 @@ De-identified, public, pre-existing dataset of MINORS -> human-participants pre-
 | 0 | Access: register TalkBank; download Brown + ENNI (+ more TD corpora). ISEF SRC forms + sponsor. venv. | DONE (Brown+ENNI in hand; more TD corpora recommended). |
 | 1 | Ingest + SIGNAL-GATE: parse transcripts; per-file features [child_id, corpus, group(TD/SLI), age_months, mluw, mlum, ttr, ipsyn, n_utterances, vocab...]; confirm core (age->complexity) + delay (TD vs SLI) signals, child-independent. | DONE - both signals confirmed (Section 0b). See src/stage1_check.py. |
 | 2 | **CORE deliverable:** developmental-LEVEL estimator - predict developmental age/level from features on combined TD corpora; **GroupKFold by CHILD**; baselines (predict-mean) + bootstrap CIs + calibration; define an "age-expected vs observed" gap score. | DONE (see 0b Stage 2 RESULTS): Ridge MAE 11.46 mo, R2 0.74, child-independent, beats baseline (27.77). Age-gap score works; SLI preview d~0.98. More TD corpora in 18-48mo range still recommended (only 3 Brown children there). |
-| 3 | **DELAY classifier + gate:** TD vs SLI (ENNI), child-independent, **artifact-controlled** (adjust/match for n_utterances/transcript length; MLU is per-utterance so robust; resolve the IPSyn anomaly). Balanced metrics (286 vs 75). | If a genuine delay signal survives rigor -> headline. Else -> fall back to Stage 2 core (documented). |
+| 3 | **DELAY classifier + gate:** TD vs SLI (ENNI), child-independent, **artifact-controlled** (adjust/match for n_utterances/transcript length; MLU is per-utterance so robust; resolve the IPSyn anomaly). Balanced metrics (286 vs 75). | DONE (0b Stage 3 RESULTS): logreg ROC-AUC 0.861, child-independent, age/length proven NOT the signal. **Signal SURVIVED rigor -> delay flag is the headline.** |
 | 4 | Interpretability: SHAP -> which markers drive level/delay -> actionable readout ("flag: MLU + syntax below age norm"). | Ranked drivers + readout logic. |
 | 5 | Deployable demo/tool: paste a child's transcript -> estimated level + age-gap + delay flag (if validated) + confidence + drivers. | Working demo (notebook / lightweight web app). |
 | 6 | Rigor + board-ready summary: child-independent results, calibration, CIs, subgroup checks (age bands, sex, corpus), artifact controls, honest limitations, Claim-Evidence-Reasoning + poster. | Final results + poster. |
@@ -193,7 +206,7 @@ data/childes/
 ```
 Code resolves paths relative to repo root and reads whole corpus dirs recursively (`read_chat(dir, strict=False)`), so exact subfolders don't matter as long as Brown/ and ENNI/{TD,SLI}/ exist. If your numbers differ from Section 0b, your download differs - reconcile before building on it.
 ### Restart (fresh session or partner's agent)
-- Read Sections 0, 0b, 0c, 1, 2 in that order. Committed project = FirstWords. Data + both signals verified; Stage 2 (level estimator) DONE and verified (0b Stage 2 RESULTS). Section 0c is the running issue log - skim it to see what's already been caught and resolved before re-investigating anything.
-- NEXT concrete step = Stage 3 (delay classifier, TD vs SLI on ENNI, age + transcript-length covariates, balanced metrics, child-independent, CIs). Also still recommended: download 1-2 more Eng-NA TD corpora with many children at 18-48 mo (Brown alone is 3 children there) and re-run stage2.
+- Read Sections 0, 0b, 0c, 1, 2 in that order. Committed project = FirstWords. Data + both signals verified; Stage 2 (level estimator) AND Stage 3 (delay classifier) DONE and verified (0b Stage 2/3 RESULTS). Section 0c is the running issue log - skim it to see what's already been caught and resolved before re-investigating anything.
+- NEXT concrete step = Stage 4 (SHAP interpretability -> actionable readout) then Stage 5 (the demo/tool: paste transcript -> level + age-gap + delay flag + drivers). Still recommended: download 1-2 more Eng-NA TD corpora with many children at 18-48 mo (Brown alone is 3 children there) and re-run stage2. Optional Stage 3 robustness: age-band subgroup metrics; sensitivity analysis excluding the ~7 shared-child files.
 - Keep the discipline that finally works: signal first, child-independent validation, baselines, honest CIs, artifact control, one checkpoint at a time, a usable tool + demo, honesty over hype.
 - History/fallbacks: DopaLoop lives at /Users/mihir/DopaLoop (MATLAB; do not touch). The ParkinTrack (PD) and ALS-Forecast explorations were removed from this repo (kept only as LESSONS in Section 1) - ALS-Forecast on PRO-ACT is the strongest non-BEHA fallback (TMED); choices13k (decision-making) and WESAD (stress) are BEHA fallbacks with instant data.
