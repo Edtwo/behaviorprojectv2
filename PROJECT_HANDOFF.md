@@ -210,3 +210,70 @@ Code resolves paths relative to repo root and reads whole corpus dirs recursivel
 - NEXT concrete step = Stage 4 (SHAP interpretability -> actionable readout) then Stage 5 (the demo/tool: paste transcript -> level + age-gap + delay flag + drivers). Still recommended: download 1-2 more Eng-NA TD corpora with many children at 18-48 mo (Brown alone is 3 children there) and re-run stage2. Optional Stage 3 robustness: age-band subgroup metrics; sensitivity analysis excluding the ~7 shared-child files.
 - Keep the discipline that finally works: signal first, child-independent validation, baselines, honest CIs, artifact control, one checkpoint at a time, a usable tool + demo, honesty over hype.
 - History/fallbacks: DopaLoop lives at /Users/mihir/DopaLoop (MATLAB; do not touch). The ParkinTrack (PD) and ALS-Forecast explorations were removed from this repo (kept only as LESSONS in Section 1) - ALS-Forecast on PRO-ACT is the strongest non-BEHA fallback (TMED); choices13k (decision-making) and WESAD (stress) are BEHA fallbacks with instant data.
+
+================================================================================
+## 9. POSTER & PRESENTATION TALKING POINTS (LIVING - add to this as results land; polish later)
+================================================================================
+_Purpose: capture, as we go, exactly what to SAY and SHOW to judges so nothing is reconstructed from memory the week before the fair. Judging in BEHA weights Research Question, Design/Methodology, Execution, and Communication. This section is our communication bank. Refine wording later; capture substance now._
+
+### 9a. The one-sentence pitch (memorize)
+"FirstWords is a growth chart for a child's language: paste a short speech sample, and it estimates the child's language-developmental age and flags likely language delay - an accessible, interpretable early screen, since early intervention is what changes a child's life."
+
+### 9b. The 60-second elevator version (the arc)
+1. PROBLEM: 10-15% of toddlers have language delay; early intervention markedly improves outcomes; but screening is late, subjective, or gated behind specialists many families can't reach.
+2. IDEA: language complexity (sentence length, vocabulary, grammar) rises with age extremely reliably - so a child's language can be scored against age norms, exactly like height on a growth chart.
+3. WHAT I BUILT: two layers - (a) a level estimator that predicts language age from a transcript, and (b) a delay flag (typically-developing vs. language-impaired).
+4. RESULTS: level estimate within ~11 months, child-independent; delay flag AUC 0.86 on the same task; and I proved the flag isn't cheating on age or transcript length.
+5. WHY IT MATTERS: it's free, interpretable (it tells you WHICH markers are low), and it works on data the model has never seen - a real screening aid, not a black box.
+
+### 9c. Headline claims -> evidence (Claim-Evidence-Reasoning; every number must be on the poster)
+- CLAIM: Language level is predictable from a transcript. EVIDENCE: ridge MAE 11.2 mo, R2 0.76, child-independent (GroupKFold), vs predict-mean baseline 27.1 mo. REASONING: the model more than halves the error of guessing the average; validated on children never seen in training.
+- CLAIM: The tool flags language delay. EVIDENCE: ROC-AUC 0.861 [0.81-0.91], child-independent (StratifiedGroupKFold), 91% sensitivity at a screening threshold. REASONING: strong separation on the SAME narrative task at matched age.
+- CLAIM (the money slide): The delay signal is genuinely linguistic, not an artifact. EVIDENCE: age-alone AUC 0.42 and transcript-length-alone AUC 0.49 (both ~chance); language-only 0.78. REASONING: if the flag were just detecting older/longer transcripts, those confounds would classify - they don't.
+- CLAIM: It's interpretable. EVIDENCE: standardized coefficients - low morpheme-MLU and low lexical diversity drive the flag, age acts as the norm reference. REASONING: a clinician-style readout ("grammar + sentence length below age norm"), not a black box.
+
+### 9d. "Money slides" to build (visuals that win)
+1. Calibration scatter (results/stage2_calibration.png): predicted vs actual age hugging the diagonal, 18-120 mo.
+2. Artifact-control bar chart: AUC of language vs age-alone vs length-alone - the "we controlled the confound" proof.
+3. ROC + risk-score histograms (results/stage3_roc.png): clear TD vs SLI separation.
+4. LIVE DEMO (Stage 5): paste a transcript -> language age + percentile + gap + flag + top drivers. The single biggest score-mover.
+5. The Issue Log (Section 0c) as a "how I made this rigorous" panel: caught our own metric-scale error and a data-leak, and showed they didn't change conclusions.
+
+### 9e. Anticipated judge questions -> prepared answers (expand as we go)
+- "Isn't this just measuring transcript length?" -> No; MLU is per-utterance (length-robust: r=0.09-0.14), and length-alone AUC is 0.49 (chance). Slide 2.
+- "How do you know it's not just age?" -> Age-alone AUC 0.42; age enters only as the norm reference, and the language features carry the signal (language-only 0.78).
+- "Did you test on unseen children?" -> Yes - all validation is child-independent (grouped by a child id derived from the CHAT header, after we found A/B share children; ISS-07).
+- "What's novel?" -> Not the ML - the honest, artifact-controlled, interpretable, accessible TOOL. Automatic SLI detection exists in the literature; our contribution is a rigorous, usable screen with a demo and self-audited validation.
+- "IPSyn of 22 at age 7 looks wrong." -> Correct catch - the library's index isn't on the published IPSyn scale, so we relabel it a generic 'syntax index' and don't rely on it for the delay flag (ISS-01/02).
+- "What are the limits?" -> (self-name these, see 9f).
+
+### 9f. Limitations to STATE OURSELVES (naming them first is a credibility win - Lesson 8)
+- Few distinct young children (Brown = 3 kids under 48 mo) -> level estimate is thinnest in the toddler range; adding more TD corpora is in progress.
+- Delay layer validated on ONE task/corpus (ENNI narratives, ~4-10 yr) -> cross-corpus/other-task generalization is the key open test (see Section 10).
+- SLI is one clinical label; not a diagnosis - this is a SCREEN that suggests seeking a professional, not a clinical instrument.
+- Transcripts are human-produced CHAT; a real deployment needs reliable child-speech transcription (hard) - named as a reach, not claimed.
+- The syntax index is nonstandard (relabeled); percentile norms are corpus-derived, not clinical norms.
+
+### 9g. Ethics / paperwork to show you handled (judges ask)
+De-identified public minors' data (CHILDES/TalkBank terms); ISEF human-participants pre-existing-dataset path -> SRC review + adult sponsor BEFORE formal work; no re-identification; framed as a screen that points families to professionals, not a diagnosis.
+
+================================================================================
+## 10. EXTENSION ROADMAP for the extra runway (~7-8 months) - EACH SIGNAL-GATED (do NOT bolt on unvalidated arms)
+================================================================================
+_The base (Stages 1-3) works and will complete. These are how to RAISE THE CEILING with the extra time. Same firewall as the two-layer core: every new arm must pass its own signal-gate FIRST, and a failure becomes a documented limitation, not a project-killer. Ordered by payoff-to-risk. Do Tier 1 before Tier 3._
+
+### Tier 1 - highest payoff, moderate risk (these most increase winnability)
+- **CROSS-CORPUS GENERALIZATION (the big one).** Train the delay classifier on ENNI, TEST on a SECOND, independently-collected clinical corpus (e.g. Gillam, Conti-Ramsden/MParkes under Clinical-Eng). If AUC holds on data from different researchers/task, that is the single most convincing evidence the tool actually works - it answers "does this generalize?" definitively. GATE: first just parse the second corpus and confirm TD/SLI labels + features exist; if access tier blocks it, document and fall back. Risk: access + a possible drop in AUC (which is itself an honest, publishable result).
+- **NORM-REFERENCED PERCENTILES ("growth chart" made literal).** Quantile regression on the TD data -> language-age percentile curves; the tool outputs "8th percentile for age," like a pediatric growth chart. Low modeling risk, huge presentation payoff, ties the whole metaphor together. GATE: none really - it's a reframing of Stage 2 output.
+
+### Tier 2 - strong, lower risk (clinical realism + fairness)
+- **SHORT-SAMPLE ROBUSTNESS.** How few utterances still screen reliably? Subsample transcripts to 50/30/20 utterances and plot AUC vs sample length. Directly answers "families can't record 100 utterances." Low risk.
+- **SUBGROUP / FAIRNESS AUDIT.** Sensitivity/specificity by sex and age band; check the flag isn't biased. Judge-favored ethics; low risk.
+
+### Tier 3 - the ambitious reach (genuine novelty, higher risk - only after Tier 1 lands)
+- **MULTILINGUAL LEVEL ESTIMATOR (equity headline; ArabLexify shape).** CHILDES has 20+ languages. Build the LEVEL estimator in a second language (e.g. Spanish) - screening where English tools don't exist. The level layer is low-risk (MLU-age holds cross-linguistically); the DELAY layer cross-lingually needs a clinical corpus in that language (the real reach). GATE: confirm a second-language TD corpus parses + age-complexity signal holds before promising it.
+- **ITEM-LEVEL SYNTACTIC PROFILE.** Instead of one syntax score, identify WHICH structures (e.g. past tense, plurals, complex clauses) are missing in SLI - a more novel developmental-linguistics contribution and a richer readout. Higher effort; uses the %mor/%gra tiers already in the data.
+- **LONGITUDINAL TRAJECTORY (weak data - lowest priority).** Brown has only 3 children; not enough for honest growth-trajectory generalization. Skip unless a large longitudinal multi-child TD corpus is added.
+
+### Honest strategic note (for the author)
+The base already clears the bars that eliminate most projects (real verified signal, child-independent validation, correct category, a working tool). That gets you COMPETITIVE at the regional and a genuine shot at ISEF placement. Tier 1 (cross-corpus + percentiles) + a polished live demo is what pushes toward TOP awards - because "it generalizes to unseen data from a different lab" plus "here, try it live" is what separates a finalist from a winner. Add reach arms only on top of a finished, demoable core; never at its expense (Lesson 5).
