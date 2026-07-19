@@ -34,6 +34,7 @@ Next: Stage 4 (SHAP interpretability) and Stage 5 (the demo tool). See the hando
 │   ├── stage1_check.py             # Stage 1: parse real data + verify core & delay signals
 │   ├── stage2_level_estimator.py   # Stage 2: child-independent developmental-level estimator
 │   ├── stage3_delay_classifier.py  # Stage 3: TD-vs-SLI delay classifier (ENNI, artifact-controlled)
+│   ├── stage4_interpretability.py  # Stage 4: SHAP drivers + age-normed per-child readout
 │   └── verify_pipeline.py          # no-download smoke test of the CHAT->features pipeline
 ├── data/                   # (gitignored) CHILDES corpora: Brown (TD), ENNI (TD+SLI)
 └── results/                # (gitignored) outputs / figures
