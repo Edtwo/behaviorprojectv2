@@ -20,7 +20,7 @@ import pylangacq
 from sklearn.linear_model import Ridge, LogisticRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import make_pipeline
-from sklearn.model_selection import KFold
+from sklearn.model_selection import GroupKFold
 from sklearn.metrics import roc_auc_score
 import stage2_level_estimator as s2   # reuse months(), mattr(), feature defs
 
@@ -54,9 +54,12 @@ def level_transfer():
         bias = float(np.median(resid))              # systematic task offset
         raw_mae = mae(te["age_months"], pred)
         adj_mae = mae(te["age_months"], pred - bias)  # offset-corrected
-        # within-corpus reference: 5-fold CV MAE on the TEST corpus, same band
+        # within-corpus reference: child-independent CV MAE on the TEST corpus, same
+        # band. MUST group by child_id - Brown has only 3 children, so a by-file split
+        # would leak the same child across folds and understate the reference error.
         teb = in_band(test); refp = np.full(len(teb), np.nan)
-        for tr, va in KFold(5, shuffle=True, random_state=0).split(teb):
+        n_groups = teb["child_id"].nunique()
+        for tr, va in GroupKFold(min(5, n_groups)).split(teb, groups=teb["child_id"]):
             mm = make_pipeline(StandardScaler(), Ridge(alpha=1.0)).fit(
                 teb.iloc[tr][LEVEL_FEATURES], teb.iloc[tr]["age_months"])
             refp[va] = mm.predict(teb.iloc[va][LEVEL_FEATURES])
