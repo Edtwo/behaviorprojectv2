@@ -161,17 +161,24 @@ def main():
         "grad-boosting":           lambda: HistGradientBoostingRegressor(random_state=0),
     }
     print("\n=== Child-independent CV (GroupKFold by child, 5 folds) ===")
-    best_name, best_mae = None, np.inf
     for name, fn in models.items():
         td[f"pred::{name}"] = oof_predict(fn, X, y, groups)
         m, r = mae(y, td[f"pred::{name}"]), r2(y, td[f"pred::{name}"])
         (mlo, mhi), (rlo, rhi) = cluster_bootstrap(td, f"pred::{name}")
         print(f"  {name:24s} MAE = {m:5.2f} mo  [95% CI {mlo:.2f}..{mhi:.2f}]   "
               f"R2 = {r:5.2f} [{rlo:.2f}..{rhi:.2f}]")
-        if m < best_mae and "baseline" not in name:
-            best_name, best_mae = name, m
+    # PRIMARY = the interpretable ridge (used by Stage 4 SHAP + the demo), unless a
+    # nonlinear model beats it by a meaningful margin (>1 mo MAE). Keeps the whole
+    # project consistent on one model and honors "simple, interpretable, rigorous."
+    ridge_mae = mae(y, td["pred::ridge (linear)"])
+    best_name = "ridge (linear)"
+    for name in models:
+        if "baseline" in name or name == best_name:
+            continue
+        if mae(y, td[f"pred::{name}"]) < ridge_mae - 1.0:
+            best_name, ridge_mae = name, mae(y, td[f"pred::{name}"])
     td["pred"] = td[f"pred::{best_name}"]
-    print(f"  -> best: {best_name}")
+    print(f"  -> PRIMARY model: {best_name} (interpretable ridge preferred unless beaten by >1 mo)")
 
     print("\n=== Per-corpus breakdown (best model, out-of-fold) ===")
     for corpus, g in td.groupby("corpus"):

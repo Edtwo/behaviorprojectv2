@@ -101,7 +101,16 @@ def evaluate_language(lang, corpus_root):
     mae = float(np.mean(np.abs(pred - y)))
     ss = np.sum((y - y.mean())**2); r2 = float(1 - np.sum((y - pred)**2)/ss) if ss else float("nan")
     base = float(np.mean(np.abs(y - y.mean())))
-    print(f"  child-independent LEVEL estimator: MAE={mae:.1f} mo (baseline {base:.1f}), R2={r2:.2f}")
+    # cluster-bootstrap CI (resample CHILDREN) - the sample is small, so report uncertainty
+    rng = np.random.default_rng(0)
+    by_child = {c: np.where(g == c)[0] for c in np.unique(g)}
+    kids = list(by_child); maes = []
+    for _ in range(2000):
+        idx = np.concatenate([by_child[k] for k in rng.choice(kids, len(kids), replace=True)])
+        maes.append(np.mean(np.abs(pred[idx] - y[idx])))
+    mlo, mhi = np.percentile(maes, [2.5, 97.5])
+    print(f"  child-independent LEVEL estimator: MAE={mae:.1f} mo [95% CI {mlo:.1f}-{mhi:.1f}] "
+          f"(baseline {base:.1f}), R2={r2:.2f}")
     print(f"  -> {lang} level estimator WORKS: language complexity predicts age cross-lingually.")
 
     fig, ax = plt.subplots(figsize=(5.5, 5.5))

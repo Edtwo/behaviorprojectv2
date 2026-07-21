@@ -68,7 +68,7 @@ def readout(row, level_model, delay_model, norms):
     lines = [
         f"Chronological age : {row['age_months']:.0f} months",
         f"Estimated language age : {lvl:.0f} months  (gap {gap:+.0f} mo vs age)",
-        f"Delay-flag probability : {p:.2f}  ->  {'ELEVATED' if elevated else 'not elevated'}",
+        f"Delay-flag risk score : {p:.2f} (0-1, recall-tuned)  ->  {'ELEVATED' if elevated else 'not elevated'}",
     ]
     if elevated and low:
         lines.append("Markers below age norm (driving the flag):")

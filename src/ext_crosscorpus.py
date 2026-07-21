@@ -175,11 +175,11 @@ def delay_transfer():
             if {"TD", "SLI"} <= set(counts):
                 y = (g["group"] == "SLI").astype(int).to_numpy()
                 p_lang = lang.predict_proba(g[LANG_ONLY])[:, 1]
-                auc_full = roc_auc_score(y, full.predict_proba(g[DELAY_FEATURES])[:, 1])
-                auc_lang = roc_auc_score(y, p_lang)
-                lo, hi = _auc_ci(y, p_lang)
+                p_full = full.predict_proba(g[DELAY_FEATURES])[:, 1]
+                auc_lang, auc_full = roc_auc_score(y, p_lang), roc_auc_score(y, p_full)
+                ll, lh = _auc_ci(y, p_lang); fl, fh = _auc_ci(y, p_full)
                 print(f"     task={task:12s} {counts}  ROC-AUC: language-only={auc_lang:.3f} "
-                      f"[95% CI {lo:.3f}-{hi:.3f}]  full(+age)={auc_full:.3f}")
+                      f"[{ll:.3f}-{lh:.3f}]  full(+age)={auc_full:.3f} [{fl:.3f}-{fh:.3f}]")
             else:
                 print(f"     task={task:12s} {counts}  (need both TD & SLI - skipped)")
     print("  NOTE: Conti4 is adolescents (~13-16 yr) vs ENNI 4-10 yr -> language-only is the fair")
