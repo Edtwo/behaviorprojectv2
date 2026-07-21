@@ -80,6 +80,16 @@ def extract(path, corpus, group, child_id_from):
         })
     return rows
 
+def _stem(fp):
+    return os.path.splitext(os.path.basename(fp))[0].lower()
+
+def bates_child_id(fp):
+    """Bates records each child across task/age conditions under different filenames
+    (amy.cha, amy28.cha, amyst.cha, ed_snack.cha). Normalize to the base given-name so a
+    child's 20- and 28-month files group together for child-independent CV."""
+    s = re.sub(r"(_snack|snack|st)$", "", re.sub(r"\d+$", "", _stem(fp)))
+    return f"Bates:{s}"
+
 def build_features():
     rows = []
     for child in sorted(os.listdir(os.path.join(DATA, "Brown"))):
@@ -89,6 +99,13 @@ def build_features():
     # ENNI: child_id from header (birthdate+sex); A/B can share a child (ISS-07)
     rows += extract(os.path.join(DATA, "ENNI", "TD"), "ENNI", "TD", enni_child_id)
     rows += extract(os.path.join(DATA, "ENNI", "SLI"), "ENNI", "SLI", enni_child_id)
+    # Move A: more DISTINCT young children (Brown alone was 3). Both TD, both have %mor.
+    # Gleason: same child stem across Dinner/Father/Mother contexts (ages ~25-62mo).
+    # Bates: same child across Free20/Free28/Snack28/Story28 conditions (ages 20 & 28mo).
+    if os.path.isdir(os.path.join(DATA, "Gleason")):
+        rows += extract(os.path.join(DATA, "Gleason"), "Gleason", "TD", lambda fp: f"Gleason:{_stem(fp)}")
+    if os.path.isdir(os.path.join(DATA, "Bates")):
+        rows += extract(os.path.join(DATA, "Bates"), "Bates", "TD", bates_child_id)
     return pd.DataFrame(rows)
 
 def mae(y, p): return float(np.mean(np.abs(np.asarray(y) - np.asarray(p))))
@@ -127,9 +144,12 @@ def main():
           f"{df['child_id'].nunique()} children, groups: {dict(df['group'].value_counts())}")
 
     td = df[(df["group"] == "TD") & df["age_months"].notna()].dropna(subset=FEATURES).copy()
+    young = td[td["age_months"] < 48]
     print(f"\nTD modeling set: {len(td)} files, {td['child_id'].nunique()} distinct children, "
           f"ages {td['age_months'].min():.0f}-{td['age_months'].max():.0f} mo "
-          f"(Brown {sum(td['corpus']=='Brown')}, ENNI {sum(td['corpus']=='ENNI')})")
+          f"per corpus: { {c: int(n) for c, n in td['corpus'].value_counts().items()} }")
+    print(f"  distinct children <48 mo (the old weak spot): {young['child_id'].nunique()} "
+          f"(was 3 with Brown alone)")
 
     X = td[FEATURES].to_numpy()
     y = td["age_months"].to_numpy()

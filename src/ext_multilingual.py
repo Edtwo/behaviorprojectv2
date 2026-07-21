@@ -98,28 +98,36 @@ def evaluate_language(lang, corpus_root):
     out = os.path.join(RESULTS, f"ext_ml_{lang.lower()}.png")
     fig.savefig(out, dpi=150); print(f"  figure: {os.path.relpath(out, ROOT)}")
 
+def corpus_language(corpus_root):
+    """Detect the corpus language from the first file's @Languages header."""
+    for fp in glob.glob(os.path.join(corpus_root, "**/*.cha"), recursive=True)[:1]:
+        m = re.search(r"@Languages:\t(\w+)", open(fp, encoding="utf-8", errors="ignore").read())
+        return m.group(1) if m else "unknown"
+    return "unknown"
+
+def discover():
+    """Find every corpus under data/childes/ and data/ml/, and evaluate the NON-English
+    ones (the multilingual test). English corpora are the core pipeline, skipped here."""
+    roots = [os.path.join(ROOT, "data", "childes"), ML]
+    found = []
+    for base in roots:
+        if not os.path.isdir(base): continue
+        for name in sorted(os.listdir(base)):
+            p = os.path.join(base, name)
+            if os.path.isdir(p) and glob.glob(os.path.join(p, "**/*.cha"), recursive=True):
+                found.append((name, p, corpus_language(p)))
+    return found
+
 def main():
-    if not os.path.isdir(ML) or not os.listdir(ML):
-        print("No multilingual data yet. TO RUN:")
-        print("  1) Download a CHILDES corpus in another language from TalkBank.")
-        print("     RECOMMENDED FIRST: Spanish (large equity impact, many corpora, many children).")
-        print("     Strong candidates: Spanish/Shiro (many children, narratives), or the broader")
-        print("     Spanish collection (DiezItza, OreaPine, Ornat, Marrero...).")
-        print("  2) Unzip into data/ml/<Language>/<Corpus>/  e.g. data/ml/Spanish/Shiro/")
-        print("  3) Re-run: .venv/bin/python src/ext_multilingual.py")
-        print("The harness auto-discovers every language folder and gates each on the age<->complexity signal.")
+    corpora = [(n, p, l) for n, p, l in discover() if l not in ("eng", "unknown")]
+    if not corpora:
+        print("No non-English corpus found. Drop e.g. a Spanish CHILDES corpus into")
+        print("data/childes/<Corpus>/ (or data/ml/<Language>/<Corpus>/) and re-run.")
+        print("The harness auto-detects language from @Languages and gates each corpus.")
         return
-    for lang in sorted(os.listdir(ML)):
-        lang_dir = os.path.join(ML, lang)
-        if not os.path.isdir(lang_dir): continue
-        # each language folder may hold one or more corpus subfolders (or .cha directly)
-        corpora = [os.path.join(lang_dir, c) for c in sorted(os.listdir(lang_dir))
-                   if os.path.isdir(os.path.join(lang_dir, c))]
-        if not corpora and glob.glob(os.path.join(lang_dir, "**/*.cha"), recursive=True):
-            corpora = [lang_dir]
-        for c in corpora:
-            if glob.glob(os.path.join(c, "**/*.cha"), recursive=True):
-                evaluate_language(lang, c)
+    print(f"Multilingual level-estimator test - found {len(corpora)} non-English corpus(es):")
+    for name, path, lang in corpora:
+        evaluate_language(lang, path)
 
 if __name__ == "__main__":
     main()
