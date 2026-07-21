@@ -44,6 +44,9 @@ and a **fairness audit** (sex/age subgroups). See the handoff (Sections 0b, 9, 1
 │   ├── ext_crosscorpus.py          # Extension: cross-corpus generalization (Brown<->ENNI + Conti4 external)
 │   ├── ext_shortsample.py          # Extension: short-sample robustness (AUC vs transcript length)
 │   ├── ext_fairness.py             # Extension: fairness/subgroup audit (sex, age band)
+│   ├── ext_morphprofile.py         # Extension: item-level grammatical profile (which markers flag SLI)
+│   ├── ext_calibration.py          # Extension: delay-flag probability calibration (reliability, Brier)
+│   ├── ext_taskreliability.py      # Extension: cross-task screening reliability (Conti4 frog vs conversation)
 │   └── verify_pipeline.py          # no-download smoke test of the CHAT->features pipeline
 ├── data/                   # (gitignored) CHILDES corpora: Brown (TD), ENNI (TD+SLI)
 └── results/                # (gitignored) outputs / figures
