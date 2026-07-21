@@ -47,7 +47,9 @@ and a **fairness audit** (sex/age subgroups). See the handoff (Sections 0b, 9, 1
 │   ├── ext_morphprofile.py         # Extension: item-level grammatical profile (which markers flag SLI)
 │   ├── ext_calibration.py          # Extension: delay-flag probability calibration (reliability, Brier)
 │   ├── ext_taskreliability.py      # Extension: cross-task screening reliability (Conti4 frog vs conversation)
-│   ├── ext_multilingual.py         # Extension: multilingual level estimator (German works; Spanish premise)
+│   ├── ext_multilingual.py         # Extension: multilingual level estimator (English/German/Cantonese)
+│   ├── ext_crosslingual_delay.py   # Extension: cross-lingual delay detection (German TD vs impaired)
+│   ├── ext_clinical_utility.py     # Extension: decision-curve analysis (net benefit vs default policies)
 │   └── verify_pipeline.py          # no-download smoke test of the CHAT->features pipeline
 ├── data/                   # (gitignored) CHILDES corpora: Brown (TD), ENNI (TD+SLI)
 └── results/                # (gitignored) outputs / figures
