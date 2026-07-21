@@ -112,16 +112,25 @@ def extract_corpus(path):
                      "mattr50": s2.mattr(words), "syntax_index": ipsyn[i], "n_utts": len(chi)})
     return pd.DataFrame(rows)
 
+def _has_sli(p):
+    """True if the corpus contains any SLI/DLD-labeled file (marks it as a clinical
+    TEST corpus). Excludes TD-only corpora (Bates/Gleason/Spanish...) from the delay test."""
+    for f in glob.glob(os.path.join(p, "**/*.cha"), recursive=True):
+        u = os.path.relpath(f, p).upper()
+        if re.search(r"\bSLI\b|DLD", u):
+            return True
+    return False
+
 def find_external_corpora():
-    """Scan both data/childes/ and the data/ root for corpora other than Brown/ENNI."""
-    roots, out = [DATA, os.path.dirname(DATA)], []
-    seen = set()
-    for base in roots:
+    """External clinical TEST corpora = those with SLI labels, under data/childes/ or
+    data/. Skips core/TD-only corpora and the not_in_use/ archive."""
+    out, seen = [], set()
+    for base in [DATA, os.path.dirname(DATA)]:
         if not os.path.isdir(base): continue
         for name in sorted(os.listdir(base)):
             p = os.path.join(base, name)
-            if (os.path.isdir(p) and name not in KNOWN | {"childes"} and p not in seen
-                    and glob.glob(os.path.join(p, "**/*.cha"), recursive=True)):
+            if name in KNOWN | {"childes", "not_in_use"}: continue
+            if os.path.isdir(p) and p not in seen and _has_sli(p):
                 out.append((name, p)); seen.add(p)
     return out
 

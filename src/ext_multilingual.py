@@ -36,9 +36,16 @@ def pearson(x, y):
     if len(x) < 3: return float("nan")
     return float(np.corrcoef(x, y)[0, 1])
 
+AGE_MAX = 156          # drop clear non-child outliers (e.g. a 368-mo adult in Szagun)
+# corpora where all files are one densely-sampled child (flat, age-coded filenames)
+SINGLE_CHILD = {"Ornat"}
+
 def child_id(fp, corpus_root):
-    """Best-effort child id: a birthdate+sex header fingerprint if present, else the
-    first sub-folder under the corpus root (per-child longitudinal layout), else file stem."""
+    """Best-effort child id: single-child corpora -> one id; else a birthdate+sex header
+    fingerprint; else the first sub-folder under the root (per-child layout); else stem."""
+    base = os.path.basename(corpus_root.rstrip("/"))
+    if base in SINGLE_CHILD:
+        return base
     with open(fp, encoding="utf-8", errors="ignore") as f:
         txt = f.read()
     b = re.search(r"Birth of CHI is ([\w-]+)", txt)
@@ -61,18 +68,28 @@ def ingest(corpus_root):
 
 def evaluate_language(lang, corpus_root):
     df = ingest(corpus_root).dropna(subset=["age_months", "mluw"])
+    df = df[df["age_months"] <= AGE_MAX]                       # drop non-child outliers
     n_child = df["child_id"].nunique()
     if len(df) < 5:
         print(f"[{lang}] too few parseable files ({len(df)})."); return
     corr = pearson(df["age_months"], df["mluw"])
+    # within-child correlation = the PREMISE test (does complexity rise with age in a
+    # well-sampled child?), robust to the corpus lacking many distinct children.
+    wc = [pearson(g["age_months"], g["mluw"]) for _, g in df.groupby("child_id")
+          if g["mluw"].notna().sum() >= 5]
+    wc_med = float(np.median(wc)) if wc else float("nan")
     print(f"\n=== {lang} ({os.path.basename(corpus_root)}) ===")
-    print(f"  files={len(df)}  ~children={n_child}  ages {df['age_months'].min():.0f}-"
-          f"{df['age_months'].max():.0f} mo  corr(age, MLU-words)={corr:.2f}")
-    gate = corr >= GATE_CORR and n_child >= GATE_MIN_CHILDREN
-    print(f"  SIGNAL GATE: {'PASS' if gate else 'FAIL'} "
-          f"(need corr>={GATE_CORR} and >={GATE_MIN_CHILDREN} children)")
-    if not gate:
-        print("  -> not enough signal/children yet; report honestly, try a larger corpus."); return
+    print(f"  files={len(df)}  children={n_child}  ages {df['age_months'].min():.0f}-"
+          f"{df['age_months'].max():.0f} mo  corr(age,MLU)={corr:.2f}  "
+          f"within-child corr (median of {len(wc)} kids)={wc_med:.2f}")
+    cross_ok = corr >= GATE_CORR and n_child >= GATE_MIN_CHILDREN
+    premise_ok = len(wc) >= 1 and wc_med >= 0.5
+    print(f"  PREMISE (within-child age<->complexity): {'CONFIRMED' if premise_ok else 'not shown'}"
+          f"   CROSS-CHILD ESTIMATOR GATE: {'PASS' if cross_ok else 'FAIL (data-limited)'}")
+    if not cross_ok:
+        print("  -> premise may hold, but too few distinct children across a wide age range for a"
+              " cross-child estimator (report honestly).")
+        return
 
     d = df.dropna(subset=FEATS)
     X, y, g = d[FEATS].to_numpy(), d["age_months"].to_numpy(), d["child_id"].to_numpy()
@@ -95,7 +112,7 @@ def evaluate_language(lang, corpus_root):
            ylabel="predicted language age (months)",
            title=f"{lang} level estimator (child-independent)\nMAE {mae:.1f} mo, R2 {r2:.2f}")
     fig.tight_layout()
-    out = os.path.join(RESULTS, f"ext_ml_{lang.lower()}.png")
+    out = os.path.join(RESULTS, f"ext_ml_{re.sub(r'[^a-z0-9]+', '_', lang.lower())}.png")
     fig.savefig(out, dpi=150); print(f"  figure: {os.path.relpath(out, ROOT)}")
 
 def corpus_language(corpus_root):
@@ -113,6 +130,7 @@ def discover():
     for base in roots:
         if not os.path.isdir(base): continue
         for name in sorted(os.listdir(base)):
+            if name == "not_in_use": continue          # archived, skip
             p = os.path.join(base, name)
             if os.path.isdir(p) and glob.glob(os.path.join(p, "**/*.cha"), recursive=True):
                 found.append((name, p, corpus_language(p)))
@@ -127,7 +145,9 @@ def main():
         return
     print(f"Multilingual level-estimator test - found {len(corpora)} non-English corpus(es):")
     for name, path, lang in corpora:
-        evaluate_language(lang, path)
+        # if the corpus separates controls (e.g. Szagun CI vs TD), use TD only
+        td = os.path.join(path, "TD")
+        evaluate_language(f"{lang}/{name}", td if os.path.isdir(td) else path)
 
 if __name__ == "__main__":
     main()
