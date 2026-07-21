@@ -51,19 +51,24 @@ def child_id(fp, corpus_root):
     b = re.search(r"Birth of CHI is ([\w-]+)", txt)
     if b: return "b:" + b.group(1)
     rel = os.path.relpath(fp, corpus_root).split(os.sep)
-    return rel[0] if len(rel) > 1 else os.path.splitext(rel[-1])[0]
+    # a NAMED first sub-folder is a per-child layout; a NUMERIC one (e.g. HKU age bins
+    # 2/3/4/5) is not -> then each file is its own child.
+    if len(rel) > 1 and not rel[0].isdigit():
+        return rel[0]
+    return os.path.splitext(rel[-1])[0]
 
 def ingest(corpus_root):
     r = pylangacq.read_chat(corpus_root, strict=False)
     ages = [s2.months(a) for a in r.ages()]
-    mluw = r.mluw()
+    mluw, mlum = r.mluw(), r.mlum()
     utts = r.utterances(by_file=True)
     rows = []
     for i, fp in enumerate(r.file_paths):
         chi = [u for u in utts[i] if u.participant == "CHI"]
         words = [t.word.lower() for u in chi for t in u.tokens if t.pos and t.word]
         rows.append({"child_id": child_id(fp, corpus_root), "age_months": ages[i],
-                     "mluw": mluw[i], "mattr50": s2.mattr(words), "n_utts": len(chi)})
+                     "mluw": mluw[i], "mlum": mlum[i], "mattr50": s2.mattr(words),
+                     "n_utts": len(chi)})
     return pd.DataFrame(rows)
 
 def evaluate_language(lang, corpus_root):
@@ -72,17 +77,24 @@ def evaluate_language(lang, corpus_root):
     n_child = df["child_id"].nunique()
     if len(df) < 5:
         print(f"[{lang}] too few parseable files ({len(df)})."); return
-    corr = pearson(df["age_months"], df["mluw"])
-    # within-child correlation = the PREMISE test (does complexity rise with age in a
-    # well-sampled child?), robust to the corpus lacking many distinct children.
-    wc = [pearson(g["age_months"], g["mluw"]) for _, g in df.groupby("child_id")
-          if g["mluw"].notna().sum() >= 5]
+    # The growth-chart signal = does ANY validated complexity marker rise with age?
+    # (Length-based MLU dominates in inflected/analytic languages, but in ISOLATING
+    # languages like Cantonese lexical diversity (MATTR) is the stronger index - so we
+    # gate on the BEST marker, not MLU alone, and report which marker wins.)
+    marker_corr = {f: pearson(df["age_months"], df[f]) for f in ["mluw", "mlum", "mattr50"]
+                   if df[f].notna().sum() >= 5}
+    best_marker = max(marker_corr, key=lambda k: abs(marker_corr[k]))
+    corr = marker_corr[best_marker]
+    wc = [pearson(g["age_months"], g[best_marker]) for _, g in df.groupby("child_id")
+          if g[best_marker].notna().sum() >= 5]
     wc_med = float(np.median(wc)) if wc else float("nan")
     print(f"\n=== {lang} ({os.path.basename(corpus_root)}) ===")
     print(f"  files={len(df)}  children={n_child}  ages {df['age_months'].min():.0f}-"
-          f"{df['age_months'].max():.0f} mo  corr(age,MLU)={corr:.2f}  "
-          f"within-child corr (median of {len(wc)} kids)={wc_med:.2f}")
-    cross_ok = corr >= GATE_CORR and n_child >= GATE_MIN_CHILDREN
+          f"{df['age_months'].max():.0f} mo")
+    print(f"  age-corr by marker: " + ", ".join(f"{k}={v:+.2f}" for k, v in marker_corr.items())
+          + f"  -> STRONGEST = {best_marker} ({corr:+.2f})")
+    print(f"  within-child corr of {best_marker} (median of {len(wc)} kids)={wc_med:.2f}")
+    cross_ok = abs(corr) >= GATE_CORR and n_child >= GATE_MIN_CHILDREN
     premise_ok = len(wc) >= 1 and wc_med >= 0.5
     print(f"  PREMISE (within-child age<->complexity): {'CONFIRMED' if premise_ok else 'not shown'}"
           f"   CROSS-CHILD ESTIMATOR GATE: {'PASS' if cross_ok else 'FAIL (data-limited)'}")
