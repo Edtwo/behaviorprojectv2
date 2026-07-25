@@ -154,6 +154,79 @@ every technical decision:
 And one architectural choice: **simple, interpretable models done rigorously** beat complex black boxes.
 A judge can understand ridge regression; they can't interrogate a neural net. Simplicity is a *strength*.
 
+## 2.0.5 — A plain-English crash course (READ THIS FIRST if you're new to computer science)
+*Everything technical below is built from the ideas in this section. Read it once and the rest is easy.*
+
+**A "model" is just a formula that turns inputs into a guess.** Think of a vending machine: you put in a
+selection (inputs), it gives you a snack (output). Our model takes in numbers describing a child's speech
+and outputs a guess — the child's language age, or how likely they are to have a delay.
+
+**A "feature" is one measured number describing the child.** Sentence length, vocabulary diversity, etc.
+Each child becomes a *row* of features — literally a row in a spreadsheet, with one column per feature.
+
+**"Training" is tuning the formula to fit examples.** Picture a formula with adjustable knobs:
+`guess = knob₁ × (sentence length) + knob₂ × (vocabulary) + … + knob₀`. Training turns the knobs until the
+guesses match the *known* answers for a set of example children as closely as possible. The knobs are
+called **weights**; a bigger weight means that feature matters more to the guess. A positive weight means
+"more of this feature → bigger output"; negative means the opposite.
+
+**Two kinds of guesses (this is the difference between Stage 2 and Stage 3):**
+- **Regression** = guess a NUMBER — here, the child's age in months. (Stage 2, the level estimator.)
+- **Classification** = guess a CATEGORY — here, typically-developing vs. delayed. (Stage 3, the delay flag.)
+
+**A "probability" is a number from 0 to 1 expressing confidence.** 0.90 means "90% sure this child is
+delayed." Classification models output a probability, and we pick a cutoff to turn it into a yes/no flag.
+
+**⚠ The central danger — cheating by memorizing (we call it "leakage").** Suppose we train the model on
+some children, then test it on the *same* children. Of course it looks brilliant — it already saw the
+answers. That's like grading a student on the exact questions they studied the night before. The score is
+a lie. So we **always test on children the model has never seen.** Almost every ML project that "looks
+amazing but doesn't work" failed here.
+
+**"Cross-validation" is how we test fairly without wasting data.** Split the children into 5 groups. Train
+on 4 groups, test on the 1 held-out group; then rotate so every child gets a turn being the held-out test —
+always judged by a model that never saw them. Average the 5 scores. It's like taking 5 practice exams, each
+on material you deliberately didn't study, and averaging your grades. The pooled predictions are called
+**"out-of-fold" (OOF)** — every prediction was made for a child the model hadn't seen.
+
+**"GroupKFold" makes cross-validation airtight for OUR data.** Some children have several recordings. If
+one recording lands in the training set and another in the test set, the model can memorize that specific
+child (leakage again). **GroupKFold** forces ALL of a child's recordings into the *same* group, so a child
+is either entirely "seen" or entirely "unseen" — never split across both. This one choice is the backbone
+of the project's credibility.
+
+**"Baseline" — the dumb model you must beat.** Before celebrating any score, compare it to a trivial
+model: for regression, "always guess the average age"; for classification, "always guess the common class."
+If your model can't clearly beat the dumb one, it learned nothing. (Ours cuts the error roughly in half.)
+
+**"AUC" measures how well the model RANKS.** Pick one delayed child and one typical child at random. AUC is
+the probability the model gives the delayed one a *higher* risk score. 0.5 = coin flip (useless); 1.0 =
+perfect; ours = 0.86. It's popular because it doesn't depend on where you set the flag cutoff — it measures
+the ranking itself.
+
+**"Sensitivity vs. specificity" — the screening trade-off.** *Sensitivity* (a.k.a. recall) = of the truly
+delayed kids, what fraction did we catch? *Specificity* = of the typical kids, what fraction did we
+correctly clear? These trade off: lower the flag cutoff and you catch more delayed kids (higher
+sensitivity) but also raise more false alarms (lower specificity). A *screening* tool deliberately favors
+sensitivity — missing an affected child is worse than a false alarm that a professional later clears.
+
+**"Confidence interval," via the "bootstrap."** Any single number is partly luck of *which* children we
+happened to have. The **bootstrap** re-rolls the dataset many times — each time randomly resampling
+children with replacement — and re-computes the score, giving the range it stays within 95% of the time.
+"AUC 0.86 [0.81–0.91]" means: across re-rolls, it almost always lands in 0.81–0.91. A *tight* interval = a
+*trustworthy* number. (We resample **children**, not recordings, because a child's recordings aren't
+independent — the "cluster" bootstrap.)
+
+**"Standardizing" features.** We rescale every feature to the same units (subtract its average, divide by
+its spread) so the model treats them fairly and so their weights are directly comparable in size.
+
+**"The artifact check" — are we measuring the real thing, or a coincidence?** The single most important
+idea in the project; fully explained at Stage 3 (§2.4). In one line: we deliberately try to predict the
+answer using *only* a suspected shortcut (like the child's age, or how long the transcript is) — and show
+that shortcut *fails*, proving the model relies on genuine language signal instead.
+
+*With that vocabulary, everything below reads plainly.*
+
 ## 2.1 Parsing transcripts → features (`stage2_level_estimator.py::extract`)
 
 Every stage starts by turning a CHAT transcript into a row of numbers. For each file we:
@@ -335,6 +408,105 @@ and a **non-diagnostic** recommendation. It reuses the exact validated pieces (`
 | "Why a different feature in Cantonese?" | Isolating language — diversity, not length, carries age | ext_multilingual | Klee 2004 |
 | "Your German delay AUC 0.99 seems high." | It was an age confound; honest number is age-matched 0.90 | ext_crosslingual_delay | ISS-15 |
 | "What are the limitations?" | (name them yourself: few young distinct children per language, CI≠SLI, screen not diagnosis, needs ASR for deployment) | handoff §9f | USPSTF 2006 |
+
+## Part 3b — Deeper answers to the questions judges actually ask
+*Longer, out-loud answers to the hard ones. Practice saying these in your own words.*
+
+**"Why should anyone trust a screening tool over a speech-language pathologist (SLP)?"**
+They shouldn't — and we never claim that. FirstWords is not a diagnosis and not a replacement for an SLP;
+it's an *accessible first look* that points families toward a professional sooner. The problem it solves is
+*access*: specialists are scarce, expensive, and often reached late, so many children are caught years
+after the window when intervention helps most. A free, interpretable screen that flags "this child looks
+behind — consider an evaluation" democratizes that first step. The SLP remains the diagnostician; we just
+help more of the right children reach one.
+
+**"Your model is simple (linear). Wouldn't a deep neural network do better?"**
+We actually tested a nonlinear model (gradient boosting) at every stage — and it did **not** beat the
+simple ridge/logistic models. With a few hundred children and only 4–5 features, complex models tend to
+*overfit* (memorize noise) rather than generalize, and they're black boxes. The right amount of complexity
+belongs in the *problem and the validation*, not the architecture. A simple model that we can fully explain
+and that a judge can understand is a strength for a clinical tool, not a weakness. If the fancy model had
+won meaningfully, we'd have used it — it didn't.
+
+**"How is this different from existing automatic SLI-detection research?"**
+Honestly: the machine-learning idea is not novel — automatic detection of language impairment from
+transcripts exists (e.g., Gabani et al., 2009). Our contribution is everything *around* the algorithm:
+(1) rigorous child-independent, **artifact-controlled** validation that answers the field's biggest
+critique (that such models detect transcript length, not impairment); (2) **interpretability** plus an
+actionable, age-normed readout; (3) a **working demo**; (4) **cross-corpus and cross-linguistic
+generalization**, including a genuine typology finding; and (5) a documented **self-audit** of our own
+confounds. It's the trustworthy, usable, accessible version of a known idea — which is exactly what turns
+research into a tool for real families.
+
+**"So what is genuinely novel here?"**
+Two things. First, the **cross-linguistic typology finding**: the growth-chart method works across three
+language families, but the *best marker changes with language type* — sentence length/morphemes in
+inflected languages (English, German), vocabulary diversity in an isolating one (Cantonese). Second, the
+**integration**: an interpretable screener whose generalization is demonstrated across labs *and* languages
+with explicit confound control — a level of validation rare at this scale.
+
+**"You have only 75 impaired children in ENNI. Isn't that too small to trust?"**
+It's modest, which is *why* we do two things. We report **confidence intervals** on every number so we
+never overstate a noisy estimate. And we validate **externally** on independent clinical corpora we never
+trained on — Gillam (171 impaired children, a different US lab) gave AUC 0.80–0.82 with no retraining. A
+result that holds on a different lab's larger sample is far stronger evidence than any single dataset.
+
+**"How do you handle the class imbalance, and why not just report accuracy?"**
+About 79% of ENNI children are typically-developing, so a lazy model that *always* says "typical" scores
+79% accuracy while catching *zero* affected kids — worthless. That's why we (a) weight the rare class so the
+model attends to it, and (b) never report raw accuracy. We report AUC, PR-AUC, and sensitivity/specificity —
+metrics that expose a model that ignores the minority.
+
+**"Explain the age confound and why age-matching matters."**
+If the impaired children were, on average, older or younger than the controls, a model could separate the
+groups purely by *age* and look like it detects impairment. We guard against this three ways: we compare
+groups at *matched ages*, we include age as a covariate so the model accounts for it, and — critically — we
+*prove* age can't do the job by training on **age alone** and showing it scores near chance (0.42). We
+caught this exact confound in the German cross-lingual test (age-only scored 0.92 there because that
+impaired cohort was older), discarded the inflated 0.99, and reported the honest age-matched 0.90. Catching
+our own confound is the point.
+
+**"The transcripts are made by researchers. Would this work on real-world recordings?"**
+That's an honest current limitation. A family recording at home would need reliable **automatic speech
+recognition (ASR)** to produce the transcript, and ASR for young children's speech is still poor. We screen
+*from transcripts*; the record-and-screen front-end is named as future work, not claimed. It doesn't
+undercut the science — it defines the deployment path.
+
+**"Could this be biased against certain dialects or socioeconomic backgrounds?"**
+A real risk for *any* language tool, and we don't dodge it. We ran a subgroup fairness audit across sex and
+age band and reported a modest gap honestly. Dialect and socioeconomic fairness is a key limitation:
+norms should ideally be built per dialect, and our current corpora don't let us fully test that. We name
+this ourselves as future work — naming your own limitations is more credible than hoping no one asks.
+
+**"How does the growth-chart percentile actually work, technically?"**
+With **quantile regression**. Ordinary regression predicts the *average* value; quantile regression predicts
+a chosen *percentile*. We fit, on typically-developing children, the curves for the 10th, 25th, 50th, 75th,
+and 90th percentiles of a marker (e.g., sentence length) as a function of age. A new child's value is then
+placed against those curves to read off their percentile — mathematically the same thing a pediatric
+height chart does. We validated it: about 10% of typical children fall below the 10th-percentile curve,
+exactly as they should if the bands are honest.
+
+**"When does your tool fail? What would falsify it?"**
+We can tell you precisely, because we tested it: it degrades **out of the trained age range** (on the
+language plateau, scores compress — we saw this in Cantonese Shiro and the cross-task test); it's
+**task-dependent** (a model trained on narratives shouldn't be trusted on casual conversation without
+re-checking); and it **can't build a norm where data doesn't exist** (Spanish cross-child). We demonstrated
+each of these limits ourselves rather than waiting to be caught.
+
+**"Does this help literacy / long-term outcomes?"**
+Indirectly, and the link is well-established. Oral language is the foundation of reading — the "Simple View
+of Reading" holds that reading comprehension = decoding × *language comprehension*, and early language delay
+is one of the strongest predictors of later reading difficulty (Catts, Fey, Tomblin & Zhang, 2002).
+Flagging language delay early enables the support that improves literacy trajectories. We screen *spoken*
+language, not reading directly, so we state the connection as a downstream benefit, not a direct claim.
+
+**"Why does Cantonese use a different feature than English? Isn't that inconsistent?"**
+It's not inconsistent — it's the scientifically correct behavior. Languages package complexity differently.
+English and German mark grammar with word endings, so *sentence length* tracks development well. Cantonese
+is *isolating* — it has almost no word-ending morphology — so length is a weak developmental signal there,
+while *vocabulary diversity* is strong. Our tool reflects that by selecting the strongest marker per
+language. The underlying *method* ("compare a validated complexity marker to age norms") is identical
+everywhere; only which marker is strongest changes, and that's a finding about language typology, not a flaw.
 
 ---
 
