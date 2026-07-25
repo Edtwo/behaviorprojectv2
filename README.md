@@ -28,6 +28,12 @@ a language **growth chart** (percentile curves, well-calibrated); **cross-corpus
 on Conti-Ramsden 4 (AUC 0.70, no refit); **short-sample robustness** (AUC 0.82 at just 10 utterances);
 and a **fairness audit** (sex/age subgroups). See the handoff (Sections 0b, 9, 10).
 
+## Learn the project
+- [`docs/EXPLAINER.md`](docs/EXPLAINER.md) — teaches the whole project from scratch: the science
+  (language development, DLD, the measures, cross-linguistic typology) then the computer science of
+  every step (models, validation, metrics, confound control, each extension), plus a judge-question crosswalk.
+- [`docs/READING_LIST.md`](docs/READING_LIST.md) — curated background papers by topic, with why-read notes.
+
 ## Repository layout
 ```
 .
