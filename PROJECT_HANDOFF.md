@@ -377,7 +377,7 @@ _A winning ISEF board is a MAGAZINE SPREAD, not a lab report: one clear story, r
    - *Conclusion*: restate the discovery + the tool, in 2-3 bullets, number-forward.
    - *Future work*: more typological extremes (Turkish, Mandarin), dialect/SES fairness, ASR front-end. *(Cite that Spanish was EXCLUDED from the typology axis on a pre-stated data-quality bar - honest.)*
    - *References* (small) + *Acknowledgments/AI-use disclosure* per fair rules (§2 integrity note).
-5. **THE LIVE DEMO** sits ON THE TABLE in front of the board (laptop running src/stage5_demo.py) - the board points to it ("try it -> "). The demo is the closer.
+5. **THE LIVE DEMO** sits ON THE TABLE in front of the board - the board points to it ("try it -> "). Use the VISUAL demo: `src/demo_report.py` generates a clean self-contained HTML report (opens in a browser, offline, nothing to crash) showing language age, age-gap, the growth chart with the child marked, the flag, and drivers. Far stronger than the terminal `stage5_demo.py`. Pre-generate 2-3 example reports (one TD, one impaired) AND be ready to run it live on any held-out .cha the judge points to. The demo is the closer.
 
 **FIGURE PREP (do this before printing):** regenerate every results/*.png used with a SHARED style (same font, same single accent color, large labels, no chart-junk, readable from 3 ft). A consistent figure look is 50% of a board looking "winner-level." Export at 300 DPI. Recommended headline figures, in priority order: ext_typology.png, the artifact-control bar, stage3_roc.png, stage2_calibration.png, ext_growth_chart.png, ext_decision_curve.png.
 

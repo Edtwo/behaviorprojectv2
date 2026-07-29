@@ -59,6 +59,8 @@ and a **fairness audit** (sex/age subgroups). See the handoff (Sections 0b, 9, 1
 │   ├── ext_unified_crosslingual.py # Extension: unified cross-lingual model (honest: per-language norms needed)
 │   ├── ext_typology.py             # Tested + RETRACTED: marker-vs-typology hypothesis (Mandarin broke it)
 │   ├── ext_clinical_utility.py     # Extension: decision-curve analysis (net benefit vs default policies)
+│   ├── ext_benchmark.py            # Benchmark: interpretable features vs TF-IDF text model + naive rule
+│   ├── demo_report.py              # Visual HTML demo report for judges (offline, no server)
 │   └── verify_pipeline.py          # no-download smoke test of the CHAT->features pipeline
 ├── data/                   # (gitignored) CHILDES corpora: Brown (TD), ENNI (TD+SLI)
 └── results/                # (gitignored) outputs / figures
