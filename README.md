@@ -57,7 +57,7 @@ and a **fairness audit** (sex/age subgroups). See the handoff (Sections 0b, 9, 1
 │   ├── ext_multilingual.py         # Extension: multilingual level estimator (English/German/Cantonese)
 │   ├── ext_crosslingual_delay.py   # Extension: cross-lingual delay detection (German TD vs impaired)
 │   ├── ext_unified_crosslingual.py # Extension: unified cross-lingual model (honest: per-language norms needed)
-│   ├── ext_typology.py             # The novel finding: best marker depends on language typology
+│   ├── ext_typology.py             # Tested + RETRACTED: marker-vs-typology hypothesis (Mandarin broke it)
 │   ├── ext_clinical_utility.py     # Extension: decision-curve analysis (net benefit vs default policies)
 │   └── verify_pipeline.py          # no-download smoke test of the CHAT->features pipeline
 ├── data/                   # (gitignored) CHILDES corpora: Brown (TD), ENNI (TD+SLI)
