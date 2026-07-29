@@ -163,6 +163,7 @@ Format per entry: ID | date-found | STATUS (OPEN / RESOLVED / MONITORING) | what
 - **Maintain the Issue & Decision Log (Section 0c).** Every time you find a confound/bug/quirk or resolve one, add or update an ISS-## entry (dated, with evidence). This is our experimental-design paper trail for ISEF judges - never delete resolved entries, mark them RESOLVED; fold the one-line conclusion into 0b.
 - Data ethics: CHILDES transcripts are de-identified minors' language data under TalkBank terms. Keep in `data/` (gitignored); DON'T commit raw data; follow TalkBank terms + citation rules; never attempt re-identification.
 - ISEF: human-participants research on a pre-existing public dataset (minors) -> SRC review + forms + an adult sponsor/Designated Supervisor BEFORE formal work. Confirm current-year rules with the Dallas Regional SRC. (The author has a "Data Security during Fair Registration" screenshots folder for this.)
+- **AI-USE INTEGRITY (critical - this repo was built with heavy AI-agent involvement).** This handoff and the code were produced with substantial AI assistance (an AI wrote most of the code and contributed to the statistical design). ISEF/affiliated fairs require HONEST disclosure of AI use AND that the work is genuinely the student's own. THE ONLY SAFE PATH IS HONESTY + REAL UNDERSTANDING: (1) fill out the fair's AI-use disclosure completely and truthfully; (2) the student must be able to EXPLAIN, DEFEND, RE-DERIVE, and ideally RE-IMPLEMENT every choice from their own understanding (use docs/EXPLAINER.md to LEARN it, then do independent work: re-run/verify analyses, extend something yourself, read every line). A rehearsed spin that misrepresents authorship is disqualifying if caught and is NOT worth it. Judges will ask "how much did you write vs. AI?" - the credible answer is an honest division of labor (student: conception, direction, decisions, data, interpretation; AI: implementation + methods support) PLUS demonstrated command of the material. Do not attempt to hide the AI involvement.
 
 ================================================================================
 ## 3. THE PROJECT, precisely
@@ -272,7 +273,22 @@ Code resolves paths relative to repo root and reads whole corpus dirs recursivel
 ================================================================================
 _Purpose: capture, as we go, exactly what to SAY and SHOW to judges so nothing is reconstructed from memory the week before the fair. Judging in BEHA weights Research Question, Design/Methodology, Execution, and Communication. This section is our communication bank. Refine wording later; capture substance now._
 
-### 9a. The one-sentence pitch (memorize)
+### 9a-0. TWO framings - LEAD WITH THE DISCOVERY (judge feedback: creativity is capped by the tool framing)
+The screening tool is the well-trodden part (auto SLI detection exists). The ORIGINAL part is the
+cross-linguistic finding. For the poster/abstract, LEAD with the discovery, then present the tool as how
+you validated it:
+- **DISCOVERY-LED pitch (use this as the headline):** "I found that *which* feature of a child's speech
+  best tracks their development depends on the language's grammar type: in an isolating language
+  (Cantonese) it's VOCABULARY DIVERSITY, while in English/German it's SENTENCE LENGTH. I built an
+  interpretable, cross-lingually validated language-screening tool to establish this - which also works
+  as an accessible early screen for language delay." (`src/ext_typology.py`, results/ext_typology.png.)
+- HONEST SCOPE of the discovery (do NOT overclaim): it is a robust CONTRAST (Cantonese isolating vs
+  English/German inflected), NOT yet a clean quantitative gradient across typology (Spanish data too weak
+  to place; only 3-4 languages). Say "consistent with typology; a full gradient needs more languages at
+  matched ages (e.g. agglutinative Turkish, isolating Mandarin)" - that honesty is a strength, and the
+  future-work is concrete.
+
+### 9a. The one-sentence pitch (tool framing - use as the SECONDARY line)
 "FirstWords is a growth chart for a child's language: paste a short speech sample, and it estimates the child's language-developmental age and flags likely language delay - an accessible, interpretable early screen, since early intervention is what changes a child's life."
 
 ### 9b. The 60-second elevator version (the arc)
