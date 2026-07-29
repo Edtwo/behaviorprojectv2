@@ -79,6 +79,10 @@ Format per entry: ID | date-found | STATUS (OPEN / RESOLVED / MONITORING) | what
   - Did/found (INITIAL, later shown insufficient): file-NAME intersection between A and B is zero, so I concluded "disjoint children, each file = one child." **This method was wrong** - filenames are per-narrative, not per-child. See ISS-07 for the correct analysis and fix. Kept here (not deleted) as an honest record of a method error we caught ourselves.
   - Evidence: `comm -12` on the A/B file lists (necessary but insufficient test).
 
+- **ISS-16 | 2026-07-20 | RESOLVED (self-retraction) | The "marker depends on language typology" finding did NOT replicate.**
+  - Saw: with 3 languages, isolating Cantonese used vocabulary diversity while inflected English/German used sentence length - looked like a typology law, and we (briefly) reframed the poster around it.
+  - Tested it (the right move): added Mandarin (2nd isolating) + Turkish (agglutinative). MANDARIN CONTRADICTS Cantonese (Mandarin is length-dominant, lex-dom -0.35). Two isolating languages disagree.
+  - Diagnosis: the marker-dominance is CONFOUNDED WITH TASK (Cantonese=free-play->diversity; Mandarin/English=narrative->length), not typology, across cross-corpus data we can't disentangle. RETRACTED the typology claim; do NOT headline it. Kept the narrower defensible point (no universal-best marker -> per-language/task calibration needed). `src/ext_typology.py`. This is a credibility POINT (we tested and retracted our own hypothesis) - the opposite of overclaiming.
 - **ISS-15 | 2026-07-20 | RESOLVED (rigor win) | Group AGE CONFOUND in the German cross-lingual delay test.**
   - Saw: German TD-vs-CI (cochlear-implant) delay classifier scored AUC 0.99 (full model) - suspiciously high. Artifact check: age-ALONE AUC 0.92 -> the CI cohort is systematically older (followed to later ages), so the classifier was mostly detecting AGE, not language.
   - Did: report the AGE-MATCHED (21-44 mo overlap) language-only AUC = 0.903 [0.837-0.957] as the honest headline (residual age-only 0.71 in that window; language clearly exceeds it). Never report the 0.99. This is the SAME artifact-control discipline as Stage 3 (age-alone must be checked), applied cross-lingually - and a poster-worthy example of catching our own confound. `src/ext_crosslingual_delay.py`.
@@ -273,20 +277,25 @@ Code resolves paths relative to repo root and reads whole corpus dirs recursivel
 ================================================================================
 _Purpose: capture, as we go, exactly what to SAY and SHOW to judges so nothing is reconstructed from memory the week before the fair. Judging in BEHA weights Research Question, Design/Methodology, Execution, and Communication. This section is our communication bank. Refine wording later; capture substance now._
 
-### 9a-0. TWO framings - LEAD WITH THE DISCOVERY (judge feedback: creativity is capped by the tool framing)
-The screening tool is the well-trodden part (auto SLI detection exists). The ORIGINAL part is the
-cross-linguistic finding. For the poster/abstract, LEAD with the discovery, then present the tool as how
-you validated it:
-- **DISCOVERY-LED pitch (use this as the headline):** "I found that *which* feature of a child's speech
-  best tracks their development depends on the language's grammar type: in an isolating language
-  (Cantonese) it's VOCABULARY DIVERSITY, while in English/German it's SENTENCE LENGTH. I built an
-  interpretable, cross-lingually validated language-screening tool to establish this - which also works
-  as an accessible early screen for language delay." (`src/ext_typology.py`, results/ext_typology.png.)
-- HONEST SCOPE of the discovery (do NOT overclaim): it is a robust CONTRAST (Cantonese isolating vs
-  English/German inflected), NOT yet a clean quantitative gradient across typology (Spanish data too weak
-  to place; only 3-4 languages). Say "consistent with typology; a full gradient needs more languages at
-  matched ages (e.g. agglutinative Turkish, isolating Mandarin)" - that honesty is a strength, and the
-  future-work is concrete.
+### 9a-0. ⚠ THE TYPOLOGY "DISCOVERY" DID NOT REPLICATE - DO NOT HEADLINE IT (updated 2026-07-20)
+With only 3 languages the pattern looked clean (Cantonese isolating -> vocabulary diversity; English/German
+-> sentence length). We then did the right thing and TESTED it by adding Mandarin (a 2nd isolating language)
+and Turkish (agglutinative). **It broke:** Mandarin (also isolating) is LENGTH-dominant (lex-dom -0.35), the
+OPPOSITE of Cantonese (+0.33). Two isolating languages disagree -> the marker-dominance is NOT a function of
+morphological typology; it is CONFOUNDED WITH TASK (Cantonese = free-play -> diversity; Mandarin/English =
+narrative -> length grows with age). See `src/ext_typology.py`. **Do NOT claim a typology law or lead the
+poster with it** - a judge who asks "what about other isolating languages?" would break it. This is a
+self-caught over-claim (log it; it's a credibility POINT that we tested and retracted our own hypothesis).
+- HONEST positioning for the poster (what actually holds): (1) an accessible, INTERPRETABLE, rigorously
+  validated language-delay screen with **artifact control** (age-/length-alone at chance) and **two
+  independent external validations** (Gillam 0.82, Conti4 0.70) - this is the real, strong story; (2) the
+  DELAY-detection approach generalizes to a 2nd language (German TD-vs-impaired, age-matched AUC 0.90) - the
+  most novel DEFENSIBLE result; (3) a narrower methodological point that DOES hold: no single language
+  feature is universally the best developmental marker across languages/tasks -> per-language/per-task
+  calibration is necessary (supported by both ext_typology and the ext_unified failure).
+- Creativity reality (honest): the core methods are not novel and the typology finding did not survive
+  replication. Do not manufacture novelty. The score comes from rigor, execution, honesty, and a polished
+  demoable tool - lead with those.
 
 ### 9a. The one-sentence pitch (tool framing - use as the SECONDARY line)
 "FirstWords is a growth chart for a child's language: paste a short speech sample, and it estimates the child's language-developmental age and flags likely language delay - an accessible, interpretable early screen, since early intervention is what changes a child's life."
@@ -352,14 +361,13 @@ _A winning ISEF board is a MAGAZINE SPREAD, not a lab report: one clear story, r
 - **Self-contained flow.** A judge should be able to walk it left-to-right, top-to-bottom, with no guidance, and get: problem -> discovery -> how you validated it -> why it matters.
 
 **LAYOUT (standard tri-fold, left->right reading order)**
-1. **TOP BANNER (full width):** Title + your name/school + the ONE-LINE discovery. Title should name the DISCOVERY, not the tool - e.g. "The Language of the Growth Chart: Which Speech Marker Signals a Child's Development Depends on the Language's Grammar." Subtitle can add the tool. (Per 9a-0: lead with the discovery.)
+1. **TOP BANNER (full width):** Title + your name/school + the one-line thesis. (NOTE: the typology "discovery" did NOT replicate - see 9a-0 - so do NOT title the board around it.) Title the board around the REAL, defensible contribution, e.g. "A Growth Chart for Language: An Interpretable, Externally-Validated Screen for Developmental Language Delay" (subtitle: rigor + accessibility). The honest strengths - not a retracted finding - lead.
 2. **LEFT PANEL - THE SETUP (why + what):**
    - *Background / problem* (short): language delay is common (~7%, DLD > autism, under-recognized), early intervention works, screening is late/gated. 2-3 sentences + one small icon/graphic.
    - *The gap & question*: complexity rises with age (the "growth chart"); can we measure a child's language age from a transcript, flag delay, and does the method hold across languages? State the HYPOTHESIS as a testable question.
    - *Data & methods (compact)*: CHILDES/TalkBank; N (335 children core, 360 delay, + external Gillam/Conti4, + German/Cantonese); one small "methods at a glance" box: features (MLU, vocab diversity, syntax), interpretable models (ridge/logistic), CHILD-INDEPENDENT validation. Keep it tight - depth goes on the paper.
 3. **CENTER PANEL - THE RESULTS (the biggest, most visual real estate; put the money slides here):**
-   - **HEADLINE (top center) = THE TYPOLOGY FIGURE** (results/ext_typology.png): "which marker carries development depends on language type." This is your novel contribution - biggest figure on the board.
-   - **The artifact-control panel**: bar chart of language-only vs age-only vs length-only AUC (0.78 / 0.42 / 0.49) with the caption "the signal is real language, not age or transcript length." This is your rigor showcase.
+   - **HEADLINE (top center) = THE ARTIFACT-CONTROL PANEL**: bar chart of language-only vs age-only vs length-only AUC (0.78 / 0.42 / 0.49) with the caption "the signal is real language, not age or transcript length." This is your strongest, most rigorous, most defensible result - make it the biggest figure. (The typology figure is RETRACTED - see 9a-0 - do not feature it as a finding.)
    - **The core results, compactly**: level estimator calibration scatter (MAE ~10 mo, R2 0.81) + delay ROC (AUC 0.86) + the two external validations (Gillam 0.82, Conti4 0.70) as a small "generalizes across labs" bar.
    - **The growth-chart percentile figure** + one **example readout** from the demo (a flagged child at P6 with drivers) - makes it concrete and human.
 4. **RIGHT PANEL - MEANING + RIGOR (what it means + why to trust it):**
@@ -407,11 +415,7 @@ _The base (Stages 1-3) works and will complete. These are how to RAISE THE CEILI
   - **CROSS-LINGUAL DELAY (the killer test - not just level, but the FLAG in another language). `src/ext_crosslingual_delay.py`.** German Szagun TD vs CI (cochlear-implant = language-delayed), within-German, child-independent. The artifact check CAUGHT a group age confound (CI cohort followed to older ages; age-only AUC 0.92 on full data -> full model's 0.99 is mostly age, DISCARDED). **Honest headline = AGE-MATCHED (21-44mo) language-only AUC 0.903 [0.837-0.957], vs residual age-only 0.71 -> language carries signal well beyond age.** So the DELAY-DETECTION approach generalizes to a 2nd language. CAVEATS: CI = hearing-related delay (not SLI); within-German model (English model NOT transferred - MLU scales differ); age-match imperfect (report language-vs-age side by side). This is also a RIGOR showcase: the tool caught its own confound.
   - **SPANISH - PREMISE CONFIRMED, cross-child estimator DATA-LIMITED.** Within-child age<->complexity is strong (Ornat r=0.77 over 1.6-3.8yr; Marrero/Idaira 0.99; FernAguado within-child median 0.62) = the growth-chart premise holds in Spanish too. BUT no Spanish corpus has many DISTINCT children across a wide age range (FernAguado = 47 kids but all age 3-4 -> no learnable slope; Ornat = 1 child; Marrero = 3), so a cross-child Spanish estimator FAILS the gate (pooled corr 0.33). This is a DATA-availability finding, not a method failure - and it SHARPENS the equity story: the developmental data/tools don't exist for Spanish-speaking children.
   - POSTER FRAMING (honest + strong): "The method is language-GENERAL: the age<->complexity premise holds within children in English, German, AND Spanish (within-child r=0.77-0.99), and a full child-independent estimator reproduces in German (MAE 3.1 mo, R2 0.79). Spanish confirms the premise but lacks the wide-age multi-child corpora needed to build a deployable norm - itself an equity gap this work highlights." (Earlier Shiro/BecaCESNo attempts - age-plateau / heterogeneous - are archived in data/childes/not_in_use/; superseded by the within-child + German analysis.)
-  - **NEXT DOWNLOADS to turn the typology CONTRAST into a real GRADIENT (the Creativity ceiling-raiser). `src/ext_typology.py` is ready for them.** Download from TalkBank into data/childes/:
-    - **TURKISH = `Aksu`** (33 children, ages 2;0-4;8). Turkish is AGGLUTINATIVE (extremely rich morphology) -> PREDICTION: morphology/length should dominate strongly (lex-dom very negative). Tests the high-morphology extreme.
-    - **MANDARIN = `ZhouNarratives`** (200 children, ages 3-6, Hungry-Caterpillar/Robber narratives - matches our narrative task). Mandarin is ISOLATING -> PREDICTION: vocabulary diversity should dominate (lex-dom positive), CONFIRMING the Cantonese result with a 2nd isolating language. (Alt: ZhouAssessment, 334 children.)
-    - After download: add both to `TYPOLOGY` in ext_typology.py (yue, cmn isolating; eng analytic; spa fusional[excluded]; deu fusional; tur agglutinative) and to ext_multilingual discovery; re-run. If Turkish lands high-morphology-dominant and Mandarin confirms isolating->diversity, the finding becomes a 5-language gradient across the FULL typology spectrum = a genuine, defensible novel result (not just a 3-language contrast). GATE each (strongest-marker r>=0.5, >=20 kids) - same bar that (honestly) excluded Spanish.
-  - MORE languages beyond that = diminishing returns; 5 diverse, well-sampled languages spanning isolating->agglutinative is the sweet spot.
+  - **TYPOLOGY EXTENSION TESTED + RETRACTED (2026-07-20). Turkish (Aksu, 54 files/33 kids) + Mandarin (ZhouNarratives, 232 files) were downloaded and added to `ext_typology.py`.** Result: the typology hypothesis FAILED - Mandarin (isolating) is length-dominant, contradicting Cantonese (isolating). The effect is task-confounded, not typological (ISS-16). Do NOT pursue this as a novelty headline. The corpora stay (Turkish/Mandarin could support a within-language premise check or future work), but the "typology gradient" is a dead end with available cross-task data.
   - **THE KILLER EXTENSION (grand-award caliber, if data exists): extend the DELAY layer cross-linguistically.** So far only the LEVEL estimator is multilingual. If a clinical SLI corpus exists in a 2nd language (Cantonese DLD, or Szagun's cochlear-implant group as a language-impaired proxy), test whether the DELAY FLAG generalizes -> "the screen detects impairment across languages" is a genuinely novel, strong claim. Harder (needs per-language clinical data); highest payoff of any remaining research direction.
 - **LONGITUDINAL TRAJECTORY (weak data - lowest priority).** Brown has only 3 children; not enough for honest growth-trajectory generalization. Skip unless a large longitudinal multi-child TD corpus is added.
 - **NEW candidate extensions (2026-07-20, novelty-raising, using data in hand):**

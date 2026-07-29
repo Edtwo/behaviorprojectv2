@@ -8,6 +8,7 @@
 # This reframes the project around its one genuinely original finding (per the judge
 # feedback), instead of the well-trodden "screening tool" framing.
 import os
+import re
 import numpy as np
 import pandas as pd
 import pylangacq
@@ -20,10 +21,20 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data", "childes")
 RESULTS = os.path.join(ROOT, "results")
 
-# Established morphological typology (from linguistics, NOT invented): a rough ordering
-# from ISOLATING (little inflection) to richly INFLECTED. Used only to ORDER the x-axis.
-TYPOLOGY = [("yue", "Cantonese", "isolating"), ("eng", "English", "analytic"),
-            ("spa", "Spanish", "fusional"), ("deu", "German", "fusional(rich)")]
+# Established morphological typology (from linguistics, NOT invented): ordered from
+# ISOLATING (little inflection) to richly INFLECTED/AGGLUTINATIVE. Used only to ORDER the axis.
+TYPOLOGY = [("yue", "Cantonese", "isolating"), ("cmn", "Mandarin", "isolating"),
+            ("eng", "English", "analytic"), ("spa", "Spanish", "fusional"),
+            ("deu", "German", "fusional(rich)"), ("tur", "Turkish", "agglutinative")]
+
+def months_flex(age):
+    """Age->months, tolerant of whole-year-only headers like '6;' (ZhouNarratives)."""
+    if age is None: return None
+    m = re.search(r"(\d+);(\d+)?(?:\.(\d+))?", str(age))
+    if m:
+        return int(m.group(1))*12 + int(m.group(2) or 0) + int(m.group(3) or 0)/30.0
+    m2 = re.search(r"^\s*(\d+)\s*$", str(age))
+    return int(m2.group(1))*12 if m2 else None
 
 def corrs(df):
     out = {}
@@ -34,7 +45,7 @@ def corrs(df):
 
 def load_dir(root, single_child=False):
     r = pylangacq.read_chat(root, strict=False)
-    ages = [s2.months(a) for a in r.ages()]; mluw, mlum = r.mluw(), r.mlum()
+    ages = [months_flex(a) for a in r.ages()]; mluw, mlum = r.mluw(), r.mlum()
     utts = r.utterances(by_file=True); rows = []
     for i, fp in enumerate(r.file_paths):
         chi = [u for u in utts[i] if u.participant == "CHI"]
@@ -54,6 +65,10 @@ def get_lang(code):
     if code == "spa":
         return pd.concat([load_dir(os.path.join(DATA, c)) for c in ["Ornat", "Marrero", "FernAguado"]
                           if os.path.isdir(os.path.join(DATA, c))], ignore_index=True)
+    if code == "tur" and os.path.isdir(os.path.join(DATA, "Aksu")):
+        return load_dir(os.path.join(DATA, "Aksu"))
+    if code == "cmn" and os.path.isdir(os.path.join(DATA, "ZhouNarratives")):
+        return load_dir(os.path.join(DATA, "ZhouNarratives"))
 
 AGE_LO, AGE_HI = 24, 54     # compare markers in a COMMON age window (fair across languages)
 # PRE-STATED inclusion criterion (a data-quality bar, decided on principle, applied to ALL
@@ -88,17 +103,29 @@ def main():
         print(f"  {name:14s}{typ:16s}{nkids:>5}{c['mluw']:+7.2f}{c['mlum']:+7.2f}"
               f"{c['mattr50']:+7.2f}{lexdom:+9.2f}  {status}")
 
-    print("\n  FINDING (from INCLUDED languages only): the marker carrying the developmental signal")
-    print("  tracks morphological typology - VOCABULARY DIVERSITY dominates in the ISOLATING language")
-    print("  (Cantonese, lex-dom>0); SENTENCE LENGTH/MORPHEMES dominate in the more inflected ones")
-    print("  (English, German; lex-dom<=0).")
-    if excluded:
-        names = ", ".join(f"{n} (data-quality)" for n, *_ in excluded)
-        print(f"  EXCLUDED on the pre-stated bar (reported openly, not hidden): {names}. Their")
-        print("  developmental signal was too weak to reliably attribute to any single marker; we keep")
-        print("  their within-child premise result elsewhere but do not place them on this axis.")
-    print("  FUTURE WORK to turn the contrast into a full gradient: add typological extremes with good")
-    print("  data - agglutinative TURKISH (Aksu) and a 2nd isolating language, MANDARIN (ZhouNarratives).")
+    # full-range corr for EVERY language (the window clips coarse-age corpora like Mandarin)
+    print("\n  FULL-RANGE per-language check (each language's own age range; the fair cross-check):")
+    for code, name, typ in TYPOLOGY:
+        df = get_lang(code)
+        if df is None: continue
+        df = df.dropna(subset=["age_months", "mluw", "mlum", "mattr50"])
+        if len(df) < 20: continue
+        c = corrs(df); lex = c["mattr50"] - max(c["mluw"], c["mlum"])
+        print(f"    {name:11s}({typ:13s}) ages {df.age_months.min():.0f}-{df.age_months.max():.0f}: "
+              f"lex-dom {lex:+.2f}  ({'DIVERSITY' if lex>0.1 else 'LENGTH/MORPH' if lex<-0.1 else 'balanced'})")
+
+    print("\n  *** HONEST CONCLUSION - the clean 'typology determines the marker' story does NOT hold ***")
+    print("  Two ISOLATING languages DISAGREE: Cantonese -> diversity (lex-dom +0.33), but MANDARIN ->")
+    print("  LENGTH (lex-dom -0.35). So the marker-dominance is NOT a clean function of morphological")
+    print("  typology. It is CONFOUNDED WITH TASK/CORPUS: the diversity-dominant case (Cantonese) is")
+    print("  free-play; the length-dominant cases (Mandarin, English) are narratives (narratives make")
+    print("  sentence length grow with age). With cross-corpus/cross-task data we CANNOT attribute the")
+    print("  difference to typology. DO NOT headline a 'typology law.'")
+    print("  WHAT REMAINS DEFENSIBLE (narrower, still real): no single language feature is universally")
+    print("  the best developmental marker across languages/tasks - which is exactly why per-language,")
+    print("  per-task calibration is necessary (also shown by the unified-model failure, ext_unified).")
+    print("  To ever test the typology hypothesis cleanly you'd need the SAME task across languages")
+    print("  differing in morphology - not available here. Report this as an honest null, not a finding.")
 
     # figure: grouped bars of the three markers per language, ordered by typology
     fig, ax = plt.subplots(figsize=(9, 5))

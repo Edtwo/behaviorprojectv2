@@ -500,13 +500,17 @@ is one of the strongest predictors of later reading difficulty (Catts, Fey, Tomb
 Flagging language delay early enables the support that improves literacy trajectories. We screen *spoken*
 language, not reading directly, so we state the connection as a downstream benefit, not a direct claim.
 
-**"Why does Cantonese use a different feature than English? Isn't that inconsistent?"**
-It's not inconsistent — it's the scientifically correct behavior. Languages package complexity differently.
-English and German mark grammar with word endings, so *sentence length* tracks development well. Cantonese
-is *isolating* — it has almost no word-ending morphology — so length is a weak developmental signal there,
-while *vocabulary diversity* is strong. Our tool reflects that by selecting the strongest marker per
-language. The underlying *method* ("compare a validated complexity marker to age norms") is identical
-everywhere; only which marker is strongest changes, and that's a finding about language typology, not a flaw.
+**"You mentioned the best marker differs by language — is that a real finding?"**
+Be careful and honest here: we *explored* this and it did **not** hold up, and saying so is a strength.
+With three languages it looked like a typology effect (Cantonese, an isolating language, relied on
+vocabulary diversity; English/German on sentence length). We *tested* it by adding Mandarin (also
+isolating) and Turkish — and **Mandarin contradicted Cantonese** (Mandarin was length-dominant). Two
+isolating languages disagreeing means it is **not** a clean typology law; the difference is confounded with
+the *task* (free-play vs. narrative) and corpus, which we can't disentangle with this data. So we
+**retracted** the typology claim. What *does* hold is narrower: no single language feature is universally
+the best developmental marker across languages and tasks — which is exactly why per-language, per-task
+calibration is necessary (the unified-model test showed the same thing). Testing your own hypothesis and
+reporting that it failed is real science; a judge will respect the retraction far more than an overclaim.
 
 ---
 
