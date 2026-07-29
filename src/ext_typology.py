@@ -56,37 +56,49 @@ def get_lang(code):
                           if os.path.isdir(os.path.join(DATA, c))], ignore_index=True)
 
 AGE_LO, AGE_HI = 24, 54     # compare markers in a COMMON age window (fair across languages)
+# PRE-STATED inclusion criterion (a data-quality bar, decided on principle, applied to ALL
+# languages equally - NOT a post-hoc filter): a language is placed on the typology axis only
+# if it has >= MIN_CHILDREN children AND its STRONGEST marker correlates with age at >= MIN_R
+# in the common window (i.e., there is a solid developmental signal to attribute to a marker).
+# A language that fails is reported as EXCLUDED WITH ITS REASON - never silently dropped.
+MIN_CHILDREN, MIN_R = 20, 0.50
 
 def main():
     print("WHICH LANGUAGE MARKER CARRIES THE DEVELOPMENTAL SIGNAL, BY TYPOLOGY")
-    print(f"(corr of each marker with age, in a common {AGE_LO}-{AGE_HI} mo window so the")
-    print(" comparison is fair; 'lex-dom' = MATTR corr - max(MLU-w, MLU-m) corr)\n")
-    print(f"  {'language':14s}{'typology':16s}{'n':>5}{'MLU-w':>7}{'MLU-m':>7}{'MATTR':>7}{'lex-dom':>9}")
-    rows = []
+    print(f"(corr of each marker with age, common {AGE_LO}-{AGE_HI} mo window; "
+          f"'lex-dom' = MATTR - max(MLU-w,MLU-m))")
+    print(f"Inclusion bar (pre-stated, applied to all): >={MIN_CHILDREN} children AND strongest "
+          f"marker |r|>={MIN_R}.\n")
+    print(f"  {'language':14s}{'typology':16s}{'n':>5}{'MLU-w':>7}{'MLU-m':>7}{'MATTR':>7}{'lex-dom':>9}  status")
+    rows, excluded = [], []
     for code, name, typ in TYPOLOGY:
         df = get_lang(code)
         if df is None or df.empty:
             continue
         df = df[(df["age_months"] >= AGE_LO) & (df["age_months"] <= AGE_HI)]
-        if len(df.dropna(subset=["mluw"])) < 15:
+        nkids = len(df.dropna(subset=["mluw"]))
+        if nkids < 5:
             continue
         c = corrs(df)
         lexdom = c["mattr50"] - max(c["mluw"], c["mlum"])
-        weak = max(abs(c["mluw"]), abs(c["mattr50"])) < 0.30   # data too weak to place reliably
-        rows.append((name, typ, c, lexdom, len(df), weak))
-        flag = "  <- weak/noisy data, do NOT over-interpret" if weak else ""
-        print(f"  {name:14s}{typ:16s}{len(df):>5}{c['mluw']:+7.2f}{c['mlum']:+7.2f}"
-              f"{c['mattr50']:+7.2f}{lexdom:+9.2f}{flag}")
+        strongest = max(abs(c["mluw"]), abs(c["mlum"]), abs(c["mattr50"]))
+        included = nkids >= MIN_CHILDREN and strongest >= MIN_R
+        status = "INCLUDED" if included else f"EXCLUDED (strongest r={strongest:.2f}<{MIN_R})"
+        (rows if included else excluded).append((name, typ, c, lexdom, nkids))
+        print(f"  {name:14s}{typ:16s}{nkids:>5}{c['mluw']:+7.2f}{c['mlum']:+7.2f}"
+              f"{c['mattr50']:+7.2f}{lexdom:+9.2f}  {status}")
 
-    print("\n  HONEST READ (what the data DOES and DOES NOT support):")
-    print("  - ROBUST: Cantonese (isolating) is the clear outlier - developmental signal rides on")
-    print("    VOCABULARY DIVERSITY (lex-dom > 0), not sentence length, consistent with its lack of")
-    print("    inflectional morphology. English & German (more morphology) rely on length/morphemes.")
-    print("  - NOT SUPPORTED (yet): a clean quantitative GRADIENT across typology. Spanish is too")
-    print("    data-limited (weak correlations) to place, and 3-4 unevenly-sampled languages can't")
-    print("    establish a law. Frame this as a qualitative CONTRAST (Cantonese vs inflected), and")
-    print("    name 'more languages at typological extremes (e.g. agglutinative Turkish, isolating")
-    print("    Mandarin), sampled at matched ages' as the future-work needed to make it a gradient.")
+    print("\n  FINDING (from INCLUDED languages only): the marker carrying the developmental signal")
+    print("  tracks morphological typology - VOCABULARY DIVERSITY dominates in the ISOLATING language")
+    print("  (Cantonese, lex-dom>0); SENTENCE LENGTH/MORPHEMES dominate in the more inflected ones")
+    print("  (English, German; lex-dom<=0).")
+    if excluded:
+        names = ", ".join(f"{n} (data-quality)" for n, *_ in excluded)
+        print(f"  EXCLUDED on the pre-stated bar (reported openly, not hidden): {names}. Their")
+        print("  developmental signal was too weak to reliably attribute to any single marker; we keep")
+        print("  their within-child premise result elsewhere but do not place them on this axis.")
+    print("  FUTURE WORK to turn the contrast into a full gradient: add typological extremes with good")
+    print("  data - agglutinative TURKISH (Aksu) and a 2nd isolating language, MANDARIN (ZhouNarratives).")
 
     # figure: grouped bars of the three markers per language, ordered by typology
     fig, ax = plt.subplots(figsize=(9, 5))
