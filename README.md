@@ -33,6 +33,7 @@ and a **fairness audit** (sex/age subgroups). See the handoff (Sections 0b, 9, 1
   (language development, DLD, the measures, cross-linguistic typology) then the computer science of
   every step (models, validation, metrics, confound control, each extension), plus a judge-question crosswalk.
 - [`docs/READING_LIST.md`](docs/READING_LIST.md) — curated background papers by topic, with why-read notes.
+- [`docs/METHODS_WALKTHROUGH.md`](docs/METHODS_WALKTHROUGH.md) — granular, code-level walkthrough of each analysis + how to explain it (for the team).
 
 ## Repository layout
 ```
