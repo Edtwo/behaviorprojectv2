@@ -7,3 +7,4 @@ scikit-learn==1.9.0
 scipy==1.18.0         # stats for reliability analysis (correlation, kappa)
 shap==0.52.0          # interpretability (the actionable clinician readout)
 matplotlib==3.11.0    # figures for the poster
+faster-whisper==1.2.1 # OPTIONAL: audio->transcript for the record-and-screen prototype (src/audio_screen.py)
