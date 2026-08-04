@@ -53,7 +53,8 @@ table{border-collapse:collapse;width:100%;font-size:13px} td{padding:4px 0;borde
 """
 
 def build_html(title, screener, row):
-    text, info, p = screener.screen(row)
+    text, info, pctl = screener.screen(row)   # pctl = growth-chart percentile (0-100)
+    p = info["p_delay"]                        # p = delay risk score (0-1) -> drives the flag
     z = info["z"]; low = sorted(((f, v) for f, v in z.items() if v < -0.5), key=lambda kv: kv[1])[:3]
     elevated = p >= 0.45
     drivers = "".join(f"<li><b>{html.escape(demo.s4.PRETTY.get(f, f))}</b>: {v:+.1f} SD below age norm</li>"
@@ -71,7 +72,7 @@ def build_html(title, screener, row):
      gap {info['gap']:+.0f} months</div></div>
  <div class="card"><div class="sub" style="margin-bottom:8px">delay screen</div>
    <span class="flag {'elev' if elevated else 'ok'}">{'ELEVATED' if elevated else 'NOT ELEVATED'}</span>
-   <div class="sub" style="margin-top:10px">risk score {p:.2f} (recall-tuned)</div></div>
+   <div class="sub" style="margin-top:10px">risk score {p:.2f} (recall-tuned) &nbsp;|&nbsp; sentence length at P{pctl:.0f} for age</div></div>
  <div class="card full"><b>Markers below age norm</b><ul class="drivers">{drivers}</ul>
    {'<div class="sub">Suggested action: discuss a speech-language evaluation with a professional.</div>' if elevated else ''}</div>
  <div class="card full"><img src="data:image/png;base64,{img}"></div>
