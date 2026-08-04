@@ -1,0 +1,59 @@
+FIRSTWORDS DEMO — HOW TO RUN IT (read this once, it is simple)
+================================================================
+
+WHAT THE DEMO IS
+The demo is a set of web pages (HTML files). You open them in a browser
+(Chrome, Safari, anything). There is no server, no internet, and no code to run
+on the day of the fair. A judge sees a clean report page, nothing else.
+
+THE FILES ARE ALREADY MADE. They are in this folder:
+   demo/reports/
+      demo_typical_1_age103mo.cha.html   (a typical 8-year-old, NOT flagged)
+      demo_typical_2_age111mo.cha.html   (a typical 9-year-old, NOT flagged)
+      demo_impaired_1_age62mo.cha.html   (a 5-year-old, FLAGGED)
+      demo_impaired_2_age70mo.cha.html   (a 6-year-old, FLAGGED)
+
+ON THE DAY OF THE FAIR (the whole demo, no terminal needed)
+1. Before judging, double-click each of the four HTML files in demo/reports/.
+   They open as browser tabs.
+2. When a judge comes, show a "typical" tab and an "impaired" tab side by side.
+   Point out: same tool, one child is flagged and one is not, and the report
+   shows the child's language age, the growth-chart position, and which
+   language markers are low.
+3. That is the demo. You never open code or the terminal.
+
+WHAT TO SAY
+"These transcripts come from a clinical dataset our model never trained on
+(Gillam, a US study). The model has never seen this child. It estimates the
+child's language age, plots them on a growth chart, and flags likely delay.
+It is a screening aid, not a diagnosis."
+
+WILL THE JUDGE SEE OUR CODE OR GITHUB?
+No. Opening an HTML report shows only that one page in the browser. The judge
+does not see your files, your code, or GitHub unless you deliberately open them.
+Keep the browser on the report tabs and that is all they see.
+
+IF A JUDGE ASKS TO TRY A DIFFERENT CHILD (optional, only if you are comfortable)
+You would run one command in the Terminal on your own laptop. The judge still
+only sees the browser page that comes out, not your code. Steps:
+   1. Open the "Terminal" app (this is NOT MATLAB; MATLAB is a different program).
+   2. Copy-paste this line and press Enter:
+        cd /Users/mihir/Documents/Claude/bearv2
+   3. Then copy-paste this line (change the file if you want a different child):
+        .venv/bin/python src/demo_report.py --file "demo/transcripts/impaired_1_age62mo.cha"
+   4. It prints "wrote results/demo_....html". Double-click that file to open it.
+
+IMPORTANT: only use children about 4 to 10 years old. The delay model was
+trained on that age range. Outside it, the flag can be wrong. All four example
+files are inside the safe range.
+
+IF YOU NEED TO REMAKE ALL FOUR REPORTS (for example after a code change)
+   1. Open Terminal.
+   2. cd /Users/mihir/Documents/Claude/bearv2
+   3. for f in demo/transcripts/*.cha; do .venv/bin/python src/demo_report.py --file "$f"; done
+   4. The new HTML files land in results/. Move them into demo/reports/.
+
+WHAT ".venv/bin/python" MEANS (so it is not a mystery)
+.venv is a folder inside the project that holds the exact Python setup this
+project needs. ".venv/bin/python" just means "use that Python." You do not
+install anything; it is already there.
