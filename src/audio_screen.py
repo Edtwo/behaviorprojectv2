@@ -36,16 +36,25 @@ LEVEL_FEATS = ["mluw", "mattr50"]           # ASR-derivable (words only)
 DELAY_FEATS = ["mluw", "mattr50", "age_months"]
 
 PAUSE = 0.5   # seconds of silence that starts a new utterance
+_MODEL = None
+
+def _get_model():
+    """Load faster-whisper once and cache it (so a server does not reload per request)."""
+    global _MODEL
+    if _MODEL is None:
+        try:
+            from faster_whisper import WhisperModel
+        except ImportError:
+            raise SystemExit("faster-whisper not installed. Run: .venv/bin/pip install faster-whisper")
+        _MODEL = WhisperModel("base.en", device="cpu", compute_type="int8")
+    return _MODEL
 
 def transcribe(path):
     """Audio -> list of child utterances. Utterances are segmented by PAUSES (word-level
     timestamps), which approximates how human transcribers break utterances, and also by
-    sentence punctuation when the model provides it. This matters because MLU is per-utterance."""
-    try:
-        from faster_whisper import WhisperModel
-    except ImportError:
-        raise SystemExit("faster-whisper not installed. Run: .venv/bin/pip install faster-whisper")
-    model = WhisperModel("base.en", device="cpu", compute_type="int8")
+    sentence punctuation when the model provides it. This matters because MLU is per-utterance.
+    Accepts any format PyAV can decode (wav, mp3, m4a, webm/opus from a browser recorder...)."""
+    model = _get_model()
     segments, _ = model.transcribe(path, word_timestamps=True, vad_filter=True)
     utts, cur, prev_end = [], [], None
     for seg in segments:
@@ -106,36 +115,49 @@ class ReducedScreener:
 
 PRETTY = {"mluw": "sentence length", "mattr50": "vocabulary diversity"}
 
-def report_html(title, utts, feat, age, out):
-    sc = ReducedScreener(); r = sc.screen(feat, age); elevated = r["p_delay"] >= 0.45
-    # growth chart (reuse the demo's styled plot via a tiny shim object)
-    shim = type("S", (), {"curves": sc.curves})()
-    img = dr.growth_plot_b64(shim, {"mluw": feat["mluw"], "age_months": age})
-    low = sorted(((f, v) for f, v in r["z"].items() if v < -0.5), key=lambda kv: kv[1])
-    drivers = "".join(f"<li><b>{PRETTY[f]}</b>: {v:+.1f} SD below age norm</li>" for f, v in low) \
-        or "<li>Sentence length and vocabulary are within age norms.</li>"
-    transcript = " ".join(html.escape(u) + "." for u in utts)
-    gap_col = "#7a1414" if r["gap"] < -6 else "#14532d"
-    body = f"""<div class="wrap">
-<div class="head"><h1>FirstWords: Screen From a Recording (prototype)</h1>
-<p>{html.escape(title)} &nbsp;&middot;&nbsp; transcribed automatically from audio, then screened (not a diagnosis)</p></div>
-<div class="body">
- <div class="box full"><div class="label">Automatic Transcript ({feat['n_utts']} utterances, {feat['n_words']} words)</div>
-   <div class="pad" style="font-size:14px;color:#3d3770">{transcript}</div></div>
+def build_report(title, utts, feat, age, screener=None):
+    """Return (html_string, result_dict) for a transcribed recording."""
+    sc = screener or ReducedScreener()
+    r = sc.screen(feat, age); elevated = r["p_delay"] >= 0.45
+    transcript = " ".join(html.escape(u.rstrip(".!?")) + "." for u in utts)
+    if r["reliable"]:
+        shim = type("S", (), {"curves": sc.curves})()
+        img = dr.growth_plot_b64(shim, {"mluw": feat["mluw"], "age_months": age})
+        low = sorted(((f, v) for f, v in r["z"].items() if v < -0.5), key=lambda kv: kv[1])
+        drivers = "".join(f"<li><b>{PRETTY[f]}</b>: {v:+.1f} SD below age norm</li>" for f, v in low) \
+            or "<li>Sentence length and vocabulary are within age norms.</li>"
+        gap_col = "#7a1414" if r["gap"] < -6 else "#14532d"
+        results = f"""
  <div class="box"><div class="label">Estimated Language Age</div><div class="pad">
-   <div class="big">{r['lang_age']:.0f} mo</div><div class="sub">child's age {age} months</div>
+   <div class="big">{r['lang_age']:.0f} mo</div><div class="sub">child's age {age:.0f} months</div>
    <div class="sub" style="margin-top:9px;font-size:19px;font-weight:900;color:{gap_col}">gap {r['gap']:+.0f} months</div></div></div>
  <div class="box"><div class="label">Delay Screen</div><div class="pad">
    <span class="flag {'elev' if elevated else 'ok'}">{'ELEVATED' if elevated else 'NOT ELEVATED'}</span>
    <div class="sub" style="margin-top:11px">risk score {r['p_delay']:.2f} &nbsp;&middot;&nbsp; sentence length at P{r['pctl']:.0f} for age</div></div></div>
  <div class="box full"><div class="label">Markers Below Age Norm</div><div class="pad"><ul class="drivers">{drivers}</ul></div></div>
- <div class="box full"><div class="label">Language Growth Chart</div><div class="pad" style="padding:12px 12px 8px"><img src="data:image/png;base64,{img}"></div></div>
+ <div class="box full"><div class="label">Language Growth Chart</div><div class="pad" style="padding:12px 12px 8px"><img src="data:image/png;base64,{img}"></div></div>"""
+    else:
+        results = f"""
+ <div class="box full"><div class="label">Could Not Screen This Recording</div><div class="pad">
+   The average utterance came out to {feat['mluw']:.0f} words, which is too long for real child speech,
+   so the recorder did not split the audio into sentences correctly. Try again with a clearer recording
+   and short pauses between sentences. (Segmenting speech into utterances is the open engineering problem.)</div></div>"""
+    body = f"""<div class="wrap">
+<div class="head"><h1>FirstWords: Screen From a Recording</h1>
+<p>{html.escape(title)} &nbsp;&middot;&nbsp; transcribed automatically from audio, then screened (prototype, not a diagnosis)</p></div>
+<div class="body">
+ <div class="box full"><div class="label">Automatic Transcript ({feat['n_utts']} utterances, {feat['n_words']} words)</div>
+   <div class="pad" style="font-size:14px;color:#3d3770">{transcript}</div></div>{results}
 </div>
 <div class="foot">Prototype. The transcript was produced by automatic speech recognition, which makes errors,
  so this reduced screen (sentence length + vocabulary + age) is not yet validated on recorded child speech.</div></div>"""
-    open(out, "w", encoding="utf-8").write(
-        f'<!doctype html><html><head><meta charset="utf-8"><title>FirstWords audio screen</title>'
-        f"<style>{dr.CSS}</style></head><body>{body}</body></html>")
+    doc = (f'<!doctype html><html><head><meta charset="utf-8"><title>FirstWords audio screen</title>'
+           f"<style>{dr.CSS}</style></head><body>{body}</body></html>")
+    return doc, r
+
+def report_html(title, utts, feat, age, out):
+    doc, r = build_report(title, utts, feat, age)
+    open(out, "w", encoding="utf-8").write(doc)
     return r
 
 def main():
