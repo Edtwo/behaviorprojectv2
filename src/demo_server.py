@@ -165,7 +165,9 @@ def analyze():
             f"<b>Unsupported file type ({ext}).</b> Use a .cha transcript or an audio file.</body></html>")
 
 if __name__ == "__main__":
+    # macOS uses port 5000 for AirPlay Receiver, so default to 5050 (override with PORT=...)
+    port = int(os.environ.get("PORT", "5050"))
     print("FirstWords demo app.")
-    print("Open http://localhost:5000 in Chrome. Drag in a .cha transcript or record audio, then Analyze.")
+    print(f"Open http://localhost:{port} in Chrome. Drag in a .cha transcript or record audio, then Analyze.")
     print("The speech model loads on the first recording (a few extra seconds).")
-    app.run(host="127.0.0.1", port=5000, debug=False)
+    app.run(host="127.0.0.1", port=port, debug=False)
