@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FirstWords Screen</title>
+<meta name="description" content="Screen a child's language from a transcript, typed sentences, or a recording. Runs entirely in your browser.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%237b6fce'/%3E%3Cpath d='M7 23 L12 17 L17 19 L25 9' stroke='white' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+ :root{--bg:#e9e6f7;--card:#f2f0fb;--box:#dcd7f4;--head:#7b6fce;--label:#8478d0;--ink:#241f52;--line:#2d2a61;--soft:#3d3770;--warn:#c4410f;--ok:#14532d}
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+ .wrap{max-width:860px;margin:20px auto;background:var(--card);border:3px solid var(--line);border-radius:8px;overflow:hidden}
+ .head{background:var(--head);color:#fff;padding:16px 22px;border-bottom:3px solid var(--line)}
+ .head h1{margin:0;font-size:24px;font-weight:900}
+ .head p{margin:6px 0 0;font-size:13px;color:#ece7ff}
+ .body{padding:18px 22px}
+ .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+ .tab{background:#fff;border:2px solid var(--line);border-radius:6px;padding:9px 14px;font-weight:700;font-size:14px;cursor:pointer;color:var(--ink)}
+ .tab.on{background:var(--head);color:#fff}
+ .card{border:2px solid var(--line);border-radius:8px;background:var(--box);overflow:hidden;margin-bottom:14px}
+ .card .label{background:var(--label);color:#fff;font-weight:900;font-size:12px;letter-spacing:.6px;text-transform:uppercase;padding:7px 14px;border-bottom:2px solid var(--line)}
+ .card .pad{padding:14px}
+ #drop{border:2px dashed var(--head);border-radius:8px;padding:26px 12px;background:#efedfb;cursor:pointer;text-align:center;font-size:15px;color:var(--soft)}
+ #drop.over{background:#ded9f7;border-color:var(--line)}
+ textarea{width:100%;min-height:150px;font:15px/1.4 Arial,sans-serif;border:2px solid var(--line);border-radius:6px;padding:10px;color:var(--ink)}
+ .btn{background:var(--head);color:#fff;border:2px solid var(--line);border-radius:6px;font-size:16px;font-weight:900;padding:11px 20px;cursor:pointer}
+ .btn.rec{background:#d13b3b}
+ .btn.big{width:100%;font-size:19px;padding:14px}
+ .btn:disabled{opacity:.5;cursor:default}
+ .row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-weight:700;font-size:14px;margin:4px 0 12px}
+ input[type=number]{font-size:16px;padding:6px;border:2px solid var(--line);border-radius:5px;width:64px}
+ .hint{font-size:13px;color:var(--soft);margin-top:8px}
+ #status{margin:10px 0 0;font-size:14px;color:var(--soft);min-height:20px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+ .big{font-size:40px;font-weight:900;line-height:1}
+ .sub{font-size:13px;color:var(--soft);margin-top:6px}
+ .flag{display:inline-block;font-weight:900;font-size:20px;padding:6px 14px;border:2px solid var(--line);border-radius:6px}
+ .flag.elev{background:#fbe1d6;color:var(--warn)}
+ .flag.ok{background:#dcefe2;color:var(--ok)}
+ .flag.na{background:#eee;color:#555}
+ ul{margin:0;padding-left:20px} li{margin:4px 0}
+ .foot{font-size:12px;color:var(--soft);padding:12px 22px;border-top:2px solid var(--line);background:#ebe8f8}
+ svg text{font-family:Arial,sans-serif}
+ .hidden{display:none}
+ details.demo{margin-top:14px;text-align:left;background:#efedfb;border:2px solid var(--line);border-radius:6px;padding:10px 14px}
+ details.demo summary{cursor:pointer;font-weight:700}
+ details.demo p{font-size:14px;margin:10px 0}
+ .scripts{display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:15px}
+ .scripts ol{margin:6px 0 0;padding-left:22px}
+ @media (max-width:640px){.scripts{grid-template-columns:1fr}}
+ @media (max-width:640px){.grid{grid-template-columns:1fr}.wrap{margin:0;border-radius:0;border-left:0;border-right:0}.body{padding:14px 16px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <div class="head">
+  <h1>FirstWords: Language Screen</h1>
+  <p>Screen a child's language from a transcript, typed sentences, or a recording. Everything runs on this device; nothing is uploaded. A screening aid, not a diagnosis.</p>
+ </div>
+ <div class="body">
+  <div class="tabs">
+   <button class="tab on" data-tab="file">Transcript or audio file</button>
+   <button class="tab" data-tab="type">Type what the child said</button>
+   <button class="tab" data-tab="rec">Record</button>
+  </div>
+
+  <div id="tab-file" class="card"><div class="label">Drop a file</div><div class="pad">
+   <div id="drop">Drag a <b>.cha</b> transcript or an audio file here, or tap to choose one.</div>
+   <input id="file" type="file" accept=".cha,audio/*" class="hidden">
+   <div class="hint">CHILDES transcripts (.cha) read the child's age from the file. Audio is transcribed on this device.</div>
+  </div></div>
+
+  <div id="tab-type" class="card hidden"><div class="label">Type the child's sentences, one per line</div><div class="pad">
+   <textarea id="typed" placeholder="the dog is running&#10;he want the ball&#10;where mommy go"></textarea>
+   <div class="hint">Use the child's exact words, one utterance per line. 10 or more utterances works best.</div>
+  </div></div>
+
+  <div id="tab-rec" class="card hidden"><div class="label">Record the child talking</div><div class="pad" style="text-align:center">
+   <button id="recBtn" class="btn">Record</button>
+   <div class="hint">Ask the child to tell a story or describe a picture. Short pauses between sentences help.</div>
+   <details class="demo">
+    <summary>No child here? Read a demo script aloud</summary>
+    <p>The screen measures <b>what</b> is said (sentence length and vocabulary), not the voice, so an adult can read a
+     child-style script. Set the age to <b>6 years 0 months</b>, tap Record, read one sentence at a time with a short pause after each, then Stop and Analyze.</p>
+    <div class="scripts">
+     <div><b>Script A: on track for age 6</b><ol>
+      <li>The boy had a pet frog.</li><li>At night the frog got out.</li><li>The jar was empty in the morning.</li>
+      <li>He looked inside his boots.</li><li>The dog got stuck in the jar.</li><li>They went outside to find it.</li>
+      <li>An owl flew out of the tree.</li><li>A deer carried the boy away.</li><li>They fell into the pond.</li>
+      <li>Then they found the frog family.</li></ol></div>
+     <div><b>Script B: short, simple sentences (screens as a delay)</b><ol>
+      <li>The boy has a frog.</li><li>The frog is in a jar.</li><li>The boy is sleeping.</li><li>The frog gets out.</li>
+      <li>The boy looks.</li><li>He looks in the boot.</li><li>The dog looks too.</li><li>The dog falls down.</li>
+      <li>They go outside.</li><li>They look and look.</li><li>They see the frog.</li><li>The boy is happy.</li></ol></div>
+    </div>
+   </details>
+  </div></div>
+
+  <div class="row">Child's age:
+   <input id="yrs" type="number" min="1" max="12" value="5"> years
+   <input id="mos" type="number" min="0" max="11" value="0"> months</div>
+  <div id="chosen" class="hint"></div>
+  <div id="modelStatus" class="hint"></div>
+  <button id="go" class="btn big">Analyze</button>
+  <div id="status"></div>
+  <div id="result"></div>
+ </div>
+ <div class="foot">Prototype for research and science-fair demonstration. Words-only screen (sentence length, vocabulary diversity, age) trained on public CHILDES transcripts; on 345 children it never saw it scored AUC <span id="aucTxt">0.86</span>. The delay flag is validated for ages 4 to 10 only, and recordings are not yet validated on real child speech. Not a diagnosis: talk to a speech-language pathologist about any concern.</div>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>

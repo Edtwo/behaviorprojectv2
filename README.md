@@ -28,6 +28,11 @@ a language **growth chart** (percentile curves, well-calibrated); **cross-corpus
 on Conti-Ramsden 4 (AUC 0.70, no refit); **short-sample robustness** (AUC 0.82 at just 10 utterances);
 and a **fairness audit** (sex/age subgroups). See the handoff (Sections 0b, 9, 10).
 
+**October 2026:** the screen holds up to transcription errors (AUC 0.85 with 40% of words wrong), gives
+consistent answers (split-half reliability 0.90), and runs as a **browser-based web demo** (`web/`;
+transcript, typed sentences, or a recording transcribed on-device). Current state, board and demo
+details: PROJECT_HANDOFF.md **Section 0d**. Pitch + judging plan: [`docs/PITCH.md`](docs/PITCH.md).
+
 ## Learn the project
 - [`docs/EXPLAINER.md`](docs/EXPLAINER.md) — teaches the whole project from scratch: the science
   (language development, DLD, the measures, cross-linguistic typology) then the computer science of
@@ -61,7 +66,19 @@ and a **fairness audit** (sex/age subgroups). See the handoff (Sections 0b, 9, 1
 │   ├── ext_clinical_utility.py     # Extension: decision-curve analysis (net benefit vs default policies)
 │   ├── ext_benchmark.py            # Benchmark: interpretable features vs TF-IDF text model + naive rule
 │   ├── demo_report.py              # Visual HTML demo report for judges (offline, no server)
+│   ├── demo_server.py              # Offline backup demo app (localhost:5050)
+│   ├── audio_screen.py             # Record-and-screen prototype (faster-whisper)
+│   ├── export_web_model.py         # Trains + exports the words-only model for the web demo
+│   ├── ext_asr_stress.py           # Transcription-error stress test
+│   ├── ext_reliability.py          # Split-half reliability
+│   ├── ext_fairness_ethnicity.py   # Ethnicity fairness audit on Gillam (interview only)
+│   ├── ext_fairness_fix.py         # Exploratory: does dropping vocabulary shrink the gap?
+│   ├── poster_figures.py           # Board figures fig1-fig8 (print-sized, recomputed)
+│   ├── poster_figures_extra.py     # Board figures fig9-fig10
 │   └── verify_pipeline.py          # no-download smoke test of the CHAT->features pipeline
+├── web/                    # Browser web demo (index.html, app.js, model.json); web/models/ gitignored
+├── scripts/                # fetch_web_model.sh (speech model files for the web demo)
+├── docs/                   # EXPLAINER, METHODS_WALKTHROUGH, READING_LIST, PITCH
 ├── data/                   # (gitignored) CHILDES corpora: Brown (TD), ENNI (TD+SLI)
 └── results/                # (gitignored) outputs / figures
 ```
