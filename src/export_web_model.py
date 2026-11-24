@@ -112,8 +112,11 @@ def main():
     print(f"\nWords-only delay screen, child-independent: AUC {auc:.3f} [{lo:.3f}-{hi:.3f}] "
           f"({len(enni)} transcripts, {enni.child_id.nunique()} children)")
     print(f"  screening cutoff {cut:.3f}: sensitivity {sens:.2f}, specificity {spec:.2f}")
-    s45, sp45, _ = s3.sens_spec_at(y, p, 0.45)
-    print(f"  (old demo cutoff 0.45: sensitivity {s45:.2f}, specificity {sp45:.2f})")
+    # strict version for reporting: cutoff chosen inside the training folds only
+    import ext_operating_point as op
+    yn, pn, flag = op.nested(enni, DELAY)
+    sens, spec = float(flag[yn == 1].mean()), float(1 - flag[yn == 0].mean())
+    print(f"  nested (cutoff from training folds only): sensitivity {sens:.2f}, specificity {spec:.2f}")
 
     level = make_pipeline(StandardScaler(), Ridge(1.0)).fit(td[LEVEL], td["age_months"])
     delay = lr().fit(enni[DELAY], enni["y"])

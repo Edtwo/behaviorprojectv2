@@ -64,7 +64,7 @@ def build_html(title, screener, row):
     text, info, pctl = screener.screen(row)   # pctl = growth-chart percentile (0-100)
     p = info["p_delay"]                        # p = delay risk score (0-1) -> drives the flag
     z = info["z"]; low = sorted(((f, v) for f, v in z.items() if v < -0.5), key=lambda kv: kv[1])[:3]
-    elevated = p >= 0.45
+    elevated = p >= screener.cutoff   # one rule everywhere: catches 90% of impaired children (stage3.screening_cutoff)
     drivers = "".join(f"<li><b>{html.escape(demo.s4.PRETTY.get(f, f))}</b>: {v:+.1f} SD below age norm</li>"
                       for f, v in low) or "<li>All language markers within or above age norm.</li>"
     img = growth_plot_b64(screener, row)
@@ -82,7 +82,7 @@ def build_html(title, screener, row):
    <div class="sub" style="margin-top:9px;font-size:19px;font-weight:900;color:{gap_col}">gap {info['gap']:+.0f} months</div></div></div>
  <div class="box"><div class="label">Delay Screen</div><div class="pad">
    <span class="flag {'elev' if elevated else 'ok'}">{'ELEVATED' if elevated else 'NOT ELEVATED'}</span>
-   <div class="sub" style="margin-top:11px">risk score {p:.2f} (recall-tuned) &nbsp;&middot;&nbsp; sentence length at P{pctl:.0f} for age</div></div></div>
+   <div class="sub" style="margin-top:11px">risk score {p:.2f} (flag at {screener.cutoff:.2f}) &nbsp;&middot;&nbsp; sentence length at P{pctl:.0f} for age</div></div></div>
  <div class="box full"><div class="label">Markers Below Age Norm</div><div class="pad">
    <ul class="drivers">{drivers}</ul>{action}</div></div>
  <div class="box full"><div class="label">Language Growth Chart</div><div class="pad" style="padding:12px 12px 8px"><img src="data:image/png;base64,{img}"></div></div>

@@ -62,3 +62,28 @@ ax.text(87.5, 13, "2 other labs", ha="center", fontsize=24, color=DARK)
 ax.text(87.5, 2, "never trained on", ha="center", fontsize=24, color=DARK)
 fig.savefig(os.path.join(OUT, "fig10_validation_design.png")); plt.close(fig)
 print("wrote results/poster/fig10_validation_design.png")
+
+# ---------------------------------------------------------------- fig 11: a class of 100
+# What the screen does for 100 children at 7% prevalence, using the STRICT operating point
+# (cutoff chosen inside training folds; results/operating_point.csv from ext_operating_point.py).
+op = pd.read_csv(os.path.join(ROOT, "results", "operating_point.csv")).iloc[0]
+sens, spec, prev = op.sensitivity, op.specificity, 0.07
+hit = round(100 * prev * sens); miss = round(100 * prev) - hit
+fa = round(100 * (1 - prev) * (1 - spec)); clear = 100 - hit - miss - fa
+cols = [VERM] * hit + ["white"] * miss + [LILAC] * fa + [PALE] * clear
+edge = [VERM] * hit + [VERM] * miss + [LILAC] * fa + [GRAY] * clear
+order = np.argsort(np.r_[np.zeros(hit + miss), np.ones(fa), 2 * np.ones(clear)], kind="stable")
+fig, ax = plt.subplots(figsize=(5.8, 6.25))
+ax.set_xlim(-0.6, 9.6); ax.set_ylim(-6.1, 9.6); ax.axis("off"); ax.set_aspect("equal")
+for k in range(100):
+    r, c = divmod(k, 10)
+    ax.add_patch(Circle((c, 9 - r), 0.38, fc=cols[order[k]], ec=edge[order[k]], lw=2.5))
+leg = [(VERM, VERM, f"{hit} with DLD: flagged"), ("white", VERM, f"{miss} with DLD: missed"),
+       (LILAC, LILAC, f"{fa} typical: sent for a check"), (PALE, GRAY, f"{clear} typical: cleared")]
+for i, (fc, ec, t) in enumerate(leg):
+    y0 = -1.4 - i * 1.15
+    ax.add_patch(Circle((0.1, y0), 0.38, fc=fc, ec=ec, lw=2.5))
+    ax.text(0.8, y0, t, va="center", fontsize=22, color=DARK)
+fig.savefig(os.path.join(OUT, "fig11_class_of_100.png")); plt.close(fig)
+print(f"wrote results/poster/fig11_class_of_100.png  (flagged {hit}, missed {miss}, checked {fa}, cleared {clear}; "
+      f"cleared children truly typical: {clear / (clear + miss):.0%})")

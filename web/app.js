@@ -207,14 +207,17 @@ function report(title, utts, feat, age, isAudio) {
       The average sentence came out to ${feat.mluw.toFixed(0)} words, longer than any child this age would speak.
       Either an adult was talking normally, or the pauses between sentences were too short for the recorder to split them.
       Try again with a short pause after each sentence. For a demo without a child, read one of the scripts in the Record tab.</div></div>`;
-  const gapCol = r.gap < -6 ? "#c4410f" : "#14532d";
+  // Lead with the age-normed growth-chart position. "Language age" is shown as a rough guide
+  // only: at ages 4-10 its typical error is about 13 months (src/ext_level_by_range.py).
+  const pc = Math.round(r.pctl), ord = n => n + (n % 100 > 10 && n % 100 < 14 ? "th" : ["th", "st", "nd", "rd"][n % 10] || "th");
+  const pcTxt = pc >= 90 ? "90th or above" : pc <= 1 ? "below the 1st" : ord(pc);
+  const pcCol = pc < 10 ? "#c4410f" : "#241f52";
   return `${transcript}
    <div class="grid">
-    <div class="card"><div class="label">Estimated language age</div><div class="pad">
-      <div class="big">${r.langAge.toFixed(0)} mo</div><div class="sub">child's age ${age.toFixed(0)} months</div>
-      <div style="margin-top:8px;font-size:19px;font-weight:900;color:${gapCol}">gap ${r.gap >= 0 ? "+" : ""}${r.gap.toFixed(0)} months</div></div></div>
-    <div class="card"><div class="label">Delay screen</div><div class="pad">${flagHTML}
-      <div class="sub">sentence length is at the ${r.pctl.toFixed(0)}th percentile for age</div></div></div>
+    <div class="card"><div class="label">Growth-chart position</div><div class="pad">
+      <div class="big" style="color:${pcCol}">${pcTxt}</div><div class="sub">percentile for sentence length, compared with typical children of the same age (${age.toFixed(0)} months)</div>
+      <div class="sub" style="margin-top:8px">Rough language age: about ${r.langAge.toFixed(0)} months (typical error &plusmn;13 months)</div></div></div>
+    <div class="card"><div class="label">Delay screen</div><div class="pad">${flagHTML}</div></div>
    </div>
    <div class="card"><div class="label">Markers below age norm</div><div class="pad"><ul>${drivers}</ul>
      ${lowCount ? `<div class="sub">Only ${feat.n_utts} utterances: 10 or more gives a more reliable screen.</div>` : ""}</div></div>

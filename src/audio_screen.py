@@ -27,6 +27,7 @@ from sklearn.pipeline import make_pipeline
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import stage2_level_estimator as s2
+import stage3_delay_classifier as s3
 import ext_percentiles as pct
 import demo_report as dr
 
@@ -99,6 +100,9 @@ class ReducedScreener:
         self.delay = make_pipeline(StandardScaler(),
                                    LogisticRegression(class_weight="balanced", max_iter=1000)).fit(
             enni[DELAY_FEATS], enni["y"])
+        self.cutoff = s3.screening_cutoff(
+            lambda: make_pipeline(StandardScaler(), LogisticRegression(class_weight="balanced", max_iter=1000)),
+            enni[DELAY_FEATS], enni["y"], enni["child_id"])
 
     def screen(self, feat, age):
         row = pd.DataFrame([{**feat, "age_months": age}])
@@ -111,14 +115,14 @@ class ReducedScreener:
         p90 = float(self.curves[0.90].predict(pct._design([age]))[0])
         reliable = feat["mluw"] <= 1.6 * p90
         return {"lang_age": lang_age, "gap": lang_age - age, "p_delay": p, "pctl": pctl,
-                "z": z, "reliable": reliable}
+                "z": z, "reliable": reliable, "elevated": p >= self.cutoff}
 
 PRETTY = {"mluw": "sentence length", "mattr50": "vocabulary diversity"}
 
 def build_report(title, utts, feat, age, screener=None):
     """Return (html_string, result_dict) for a transcribed recording."""
     sc = screener or ReducedScreener()
-    r = sc.screen(feat, age); elevated = r["p_delay"] >= 0.45
+    r = sc.screen(feat, age); elevated = r["elevated"]
     transcript = " ".join(html.escape(u.rstrip(".!?")) + "." for u in utts)
     if r["reliable"]:
         shim = type("S", (), {"curves": sc.curves})()
@@ -180,7 +184,7 @@ def main():
     else:
         print(f"  estimated language age {r['lang_age']:.0f} mo (child is {a.age_months:.0f}); "
               f"gap {r['gap']:+.0f} mo; delay risk {r['p_delay']:.2f} -> "
-              f"{'ELEVATED' if r['p_delay']>=0.45 else 'not elevated'}; sentence length P{r['pctl']:.0f}")
+              f"{'ELEVATED' if r['elevated'] else 'not elevated'}; sentence length P{r['pctl']:.0f}")
     if a.html:
         out = os.path.join(RESULTS, "audio_screen_report.html")
         report_html(os.path.basename(a.audio), utts, feat, a.age_months, out)

@@ -79,6 +79,15 @@ def boot_ci(y, p, groups, metric, n=2000):
         vals.append(metric(y[s], p[s]))
     return np.percentile(vals, [2.5, 97.5])
 
+def screening_cutoff(model_fn, X, y, groups, target=0.90):
+    """THE screening cutoff rule used everywhere (analysis, demos, web model): the risk score
+    that catches `target` of impaired children on child-independent out-of-fold predictions.
+    Each model has its own score scale, so the VALUE differs by model (full ~0.36,
+    words-only ~0.35); the RULE is the same. Honest accuracy at this rule is reported by
+    src/ext_operating_point.py (cutoff chosen inside training folds only)."""
+    fpr, tpr, thr = roc_curve(y, oof_proba(model_fn, np.asarray(X), np.asarray(y), np.asarray(groups)))
+    return float(thr[int(np.argmax(tpr >= target))])
+
 def sens_spec_at(y, p, thr):
     y, pred = np.asarray(y), (np.asarray(p) >= thr).astype(int)
     tp = int(((pred == 1) & (y == 1)).sum()); fn = int(((pred == 0) & (y == 1)).sum())

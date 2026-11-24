@@ -56,13 +56,13 @@ def feature_z(row, norms):
     return z
 
 # ---------- readout used by the demo ----------
-def readout(row, level_model, delay_model, norms):
+def readout(row, level_model, delay_model, norms, cutoff=0.36):
     """Human-readable screening readout for one child (a feature Series/dict)."""
     lvl = float(level_model.predict(pd.DataFrame([row])[LEVEL_FEATURES])[0])
     gap = lvl - row["age_months"]
     p = float(delay_model.predict_proba(pd.DataFrame([row])[DELAY_FEATURES])[0, 1])
     z = feature_z(row, norms)
-    elevated = p >= 0.45
+    elevated = p >= cutoff   # default = the 90%-sensitivity rule for the full model (stage3.screening_cutoff)
     # rank markers that are LOW for age (most negative z) as the actionable drivers
     low = sorted(((f, zz) for f, zz in z.items() if zz < -0.5), key=lambda kv: kv[1])
     lines = [
