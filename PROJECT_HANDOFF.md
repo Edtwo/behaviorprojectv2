@@ -191,6 +191,13 @@ Format per entry: ID | date-found | STATUS (OPEN / RESOLVED / MONITORING) | what
   - Saw: no dtype was set (could fetch ~290 MB full-precision files) and there was no progress display; a user's browser pulled from the Hugging Face CDN at ~0.25 MB/s.
   - Did: explicit 8-bit weights (~76 MB), a live download counter, early download when the Record tab opens, and the model served from the Vercel site itself (web/models/, ~5 MB/s; also avoids networks that block huggingface.co).
 
+- **ISS-23 | 2026-11-24 | RESOLVED (new evidence) | The "early screen" had no delay validation under age 4.**
+  - Saw: the delay flag was trained on ENNI (4-10 yr) and externally tested only on Gillam (5-12) and Conti4 (13-16), yet the project is pitched as an EARLY screen. Obvious judge question: "does it work on toddlers?"
+  - Did: downloaded EllisWeismer (Clinical-Eng; late talkers LT vs TD, visits at 30/42/54/66 mo, 130 children, filename stem = child id across visits). `src/ext_young_delay.py` applies the ENNI-trained flag and the Stage 2 level estimator with NO refit; `src/poster_figures_young.py` averages each child's tasks per visit (one score per child) -> fig11.
+  - Found: AUC 0.92 [0.87-0.96] at 30 mo, 0.78 at 42, 0.77 at 54, 0.55 (chance) at 66 (language-only model, per child). Within-EllisWeismer child-independent CV reaches about the same at 30 mo (0.89-0.92) -> the transferred model is near the ceiling. Level-gap score gives the same pattern (0.89-0.92 at 30 mo).
+  - Caveats: LT is a vocabulary-based label at ~2 yr, NOT SLI/DLD, so 30-mo agreement is partly expected. The fall with age matches the literature (many late talkers catch up); the screen cannot tell which late talkers stay behind. Say "catches late talkers", never "predicts later disorder".
+  - Evidence: results/ellisweismer_scores.csv, results/ellisweismer_by_visit.csv, results/poster/fig11_young_children.png.
+
 - **ISS-22 | 2026-10-13 | RESOLVED | ISEF rule: generative AI may not write the poster/abstract/research plan.**
   - Saw: Society for Science "Rules for All Projects": AI may be used as a resource but must be cited; students cannot use generative AI to write the research plan, abstract or poster; inappropriate AI use can fail a project.
   - Did: the board's AI-drafted bullets are placeholders the team is rewriting in their own words; References includes an AI-assistance citation; figures carry a credit line. Keep this in mind for any future board/abstract text.
@@ -255,6 +262,8 @@ MULTILINGUAL (Section 10): Szagun(German) + Ornat/Marrero/FernAguado(Spanish).
 - **Marrero/** - SPANISH, 3 children (folders), 27-59 mo. Multilingual premise: within-child up to 0.99.
 - **FernAguado/** - SPANISH, 47 children (name folders), 34-50 mo (narrow!), longitudinal, multiple tasks. Multilingual: many kids but no age spread -> shows the cross-child DATA LIMITATION.
 - **HKU/** - CANTONESE (yue), HKU-70. 70 TD children, ages 2-5 yr (folders 2/3/4/5 = AGE bins, so child_id=filename stem), free-play, %mor. Multilingual WIN (isolating language): LEVEL estimator MAE 6.5 mo, R2 0.55 via vocabulary diversity (MLU-words weak here).
+- **EllisWeismer/{LT,TD}/<visit><task>/** - (added 2026-11) English late talkers vs TD, 130 children, visits 30/42/54/66 mo, tasks ec/pc/int/conv. Toddler delay validation (ISS-23). Not in core train. Download path: Clinical-Eng/EllisWeismer (the zip also holds a 0phon/ copy; skip it).
+- **Providence/<Child>/*.cha** - (added 2026-11) English TD, 6 children ~1-3 yr, time-aligned transcripts. Audio for one ~33-mo session per child (5 children; Ethan's media is not served) extracted to `data/providence_audio/*.wav` (16 kHz mono) from media.talkbank.org/phon/Eng-NA/Providence/CHAT/<Child>/<session>.mp4. Real child-speech ASR test (ISS-24). Download path for transcripts: talkbank.org/data/phon/Eng-NA/Providence?f=zip (CHAT/ subfolder).
 - **Szagun/CI/** - GERMAN cochlear-implant group (22 children, 21-89 mo), language-delayed. Used in the CROSS-LINGUAL DELAY test (TD vs CI, age-matched AUC 0.90). Not in the level-estimator set.
 ### ARCHIVED (`data/childes/not_in_use/`) - superseded/exploratory, NOT read by any script (discovery skips not_in_use/):
 - **Shiro/** (Spanish, 113 kids, 6-11 yr) - age-plateau, gate failed. **BecaCESNo/** (Spanish, 70 kids, 3-12 yr) - heterogeneous, weak (R2 0.23). **DiezItza/** (Spanish, 20 kids, age 3) - redundant. All superseded by the within-child + German multilingual analysis; kept for provenance.
