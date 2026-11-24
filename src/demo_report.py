@@ -16,6 +16,11 @@ import matplotlib.pyplot as plt
 import stage5_demo as demo
 import ext_percentiles as pct
 
+# Flag cutoff on the delay risk score. 0.36 = Stage 3's screening point (~90% sensitivity on
+# held-out ENNI children: sens 0.91, spec 0.65), the number the board's "catches 91%" refers to.
+# Was 0.45 (lower sensitivity) until 2026-11; see PROJECT_HANDOFF ISS-25.
+SCREEN_CUTOFF = 0.36
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESULTS = os.path.join(ROOT, "results")
 
@@ -64,7 +69,7 @@ def build_html(title, screener, row):
     text, info, pctl = screener.screen(row)   # pctl = growth-chart percentile (0-100)
     p = info["p_delay"]                        # p = delay risk score (0-1) -> drives the flag
     z = info["z"]; low = sorted(((f, v) for f, v in z.items() if v < -0.5), key=lambda kv: kv[1])[:3]
-    elevated = p >= 0.45
+    elevated = p >= SCREEN_CUTOFF
     drivers = "".join(f"<li><b>{html.escape(demo.s4.PRETTY.get(f, f))}</b>: {v:+.1f} SD below age norm</li>"
                       for f, v in low) or "<li>All language markers within or above age norm.</li>"
     img = growth_plot_b64(screener, row)

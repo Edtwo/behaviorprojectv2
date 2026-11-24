@@ -191,6 +191,11 @@ Format per entry: ID | date-found | STATUS (OPEN / RESOLVED / MONITORING) | what
   - Saw: no dtype was set (could fetch ~290 MB full-precision files) and there was no progress display; a user's browser pulled from the Hugging Face CDN at ~0.25 MB/s.
   - Did: explicit 8-bit weights (~76 MB), a live download counter, early download when the Record tab opens, and the model served from the Vercel site itself (web/models/, ~5 MB/s; also avoids networks that block huggingface.co).
 
+- **ISS-25 | 2026-11-24 | RESOLVED (consistency) | Offline backup demo used a different flag cutoff than the board and web demo.**
+  - Saw: `demo_report.py` and `audio_screen.py` flagged at risk >= 0.45 (Stage 3's Youden point: sens 0.88, spec 0.74), while the board's "catches 91%" and the web demo use the ~90%-sensitivity screening point (full model 0.36; words-only web model 0.34). A judge comparing the backup demo to the board could see a mismatch.
+  - Did: one named constant per path, `SCREEN_CUTOFF` = 0.36 (demo_report, full model) and 0.34 (audio_screen, words-only, same as web/model.json). To revert to Youden, set both to 0.45.
+  - Evidence: `src/stage3_delay_classifier.py` operating-point lines (re-run 2026-11-24: AUC 0.862, thr 0.36 -> sens 0.91 spec 0.65; thr 0.45 -> sens 0.88 spec 0.74).
+
 - **ISS-23 | 2026-11-24 | RESOLVED (new evidence) | The "early screen" had no delay validation under age 4.**
   - Saw: the delay flag was trained on ENNI (4-10 yr) and externally tested only on Gillam (5-12) and Conti4 (13-16), yet the project is pitched as an EARLY screen. Obvious judge question: "does it work on toddlers?"
   - Did: downloaded EllisWeismer (Clinical-Eng; late talkers LT vs TD, visits at 30/42/54/66 mo, 130 children, filename stem = child id across visits). `src/ext_young_delay.py` applies the ENNI-trained flag and the Stage 2 level estimator with NO refit; `src/poster_figures_young.py` averages each child's tasks per visit (one score per child) -> fig11.

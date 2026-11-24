@@ -35,6 +35,9 @@ RESULTS = os.path.join(ROOT, "results")
 LEVEL_FEATS = ["mluw", "mattr50"]           # ASR-derivable (words only)
 DELAY_FEATS = ["mluw", "mattr50", "age_months"]
 
+# Words-only model's ~90%-sensitivity cutoff, same as the web demo (web/model.json "cutoff" 0.34).
+# Was 0.45 until 2026-11; see PROJECT_HANDOFF ISS-25.
+SCREEN_CUTOFF = 0.34
 PAUSE = 0.5   # seconds of silence that starts a new utterance
 _MODEL = None
 
@@ -118,7 +121,7 @@ PRETTY = {"mluw": "sentence length", "mattr50": "vocabulary diversity"}
 def build_report(title, utts, feat, age, screener=None):
     """Return (html_string, result_dict) for a transcribed recording."""
     sc = screener or ReducedScreener()
-    r = sc.screen(feat, age); elevated = r["p_delay"] >= 0.45
+    r = sc.screen(feat, age); elevated = r["p_delay"] >= SCREEN_CUTOFF
     transcript = " ".join(html.escape(u.rstrip(".!?")) + "." for u in utts)
     if r["reliable"]:
         shim = type("S", (), {"curves": sc.curves})()
@@ -180,7 +183,7 @@ def main():
     else:
         print(f"  estimated language age {r['lang_age']:.0f} mo (child is {a.age_months:.0f}); "
               f"gap {r['gap']:+.0f} mo; delay risk {r['p_delay']:.2f} -> "
-              f"{'ELEVATED' if r['p_delay']>=0.45 else 'not elevated'}; sentence length P{r['pctl']:.0f}")
+              f"{'ELEVATED' if r['p_delay']>=SCREEN_CUTOFF else 'not elevated'}; sentence length P{r['pctl']:.0f}")
     if a.html:
         out = os.path.join(RESULTS, "audio_screen_report.html")
         report_html(os.path.basename(a.audio), utts, feat, a.age_months, out)
