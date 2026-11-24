@@ -8,4 +8,5 @@ scipy==1.18.0         # stats for reliability analysis (correlation, kappa)
 shap==0.52.0          # interpretability (the actionable clinician readout)
 matplotlib==3.11.0    # figures for the poster
 faster-whisper==1.2.1 # OPTIONAL: audio->transcript for the record-and-screen prototype (src/audio_screen.py)
+av==15.1.0            # OPTIONAL, needed by faster-whisper 1.2.1: av>=16 removed an option it uses (crash: "unexpected keyword argument metadata_errors"). Verified 2026-11 on Python 3.13.
 flask==3.1.3          # OPTIONAL: local record-in-browser demo app (src/demo_server.py)

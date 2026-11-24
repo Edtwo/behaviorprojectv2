@@ -93,8 +93,9 @@ def run_child(name, cache):
     audio = read_wav(os.path.join(AUDIO, f"{name}.wav"))
     model = asc._get_model()
     key = name
-    if key not in cache:
-        cache[key] = {}
+    c = cache.setdefault(key, {})
+    save = lambda: json.dump(cache, open(CACHE, "w"))
+    if "asr_only" not in c:
         # 1) ASR-only, per gold utterance (pad 0.15 s each side)
         hyps = []
         for s, e, _ in gold:
@@ -102,16 +103,16 @@ def run_child(name, cache):
             segs, _ = model.transcribe(audio[a:b], language="en", vad_filter=False,
                                        condition_on_previous_text=False, beam_size=5)
             hyps.append(" ".join(sg.text for sg in segs))
-        cache[key]["asr_only"] = hyps
+        c["asr_only"] = hyps; save()
+    if "pipeline" not in c:
         # 2) pipeline: concatenated CHI clips + 1 s silences through transcribe()
         sil = np.zeros(SR, dtype="float32"); parts = []
         for s, e, _ in gold:
             parts += [audio[int(s / 1000 * SR):int(e / 1000 * SR)], sil]
-        p = tmp_wav(name, np.concatenate(parts)); cache[key]["pipeline"] = asc.transcribe(p); os.remove(p)
+        p = tmp_wav(name, np.concatenate(parts)); c["pipeline"] = asc.transcribe(p); os.remove(p); save()
+    if "raw15" not in c:
         # 3) raw first 15 minutes (parents included)
-        p = tmp_wav(name, audio[:RAW_SECONDS * SR]); cache[key]["raw15"] = asc.transcribe(p); os.remove(p)
-        json.dump(cache, open(CACHE, "w"))
-    c = cache[key]
+        p = tmp_wav(name, audio[:RAW_SECONDS * SR]); c["raw15"] = asc.transcribe(p); os.remove(p); save()
     gold_lists = [w for _, _, w in gold]
     gold_raw15 = [w for s, _, w in gold if s / 1000 < RAW_SECONDS]
     tok = lambda u: re.findall(r"[a-z']+", u.lower())
