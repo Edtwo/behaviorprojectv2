@@ -1,0 +1,646 @@
+@UTF8
+@PID:	11312/c-00015260-1
+@Begin
+@Languages:	eng
+@Participants:	CHI Target_Child, MOT Mother
+@ID:	eng|Bates|CHI|2;04.|male|TD|MC|Target_Child|||
+@ID:	eng|Bates|MOT||female|||Mother|||
+@Comment:	[ba3 morphotag | engine=stanza-1.11.1 ; lang=eng | 2026-05-07T09:19:41-04:00]
+@Types:	cross, toyplay, TD
+*CHI:	take (a)part [*] .
+%act:	<1w> unnests nesting cups and puts down .
+%mor:	verb|take-Fin-Imp-S adv|apart .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	now dog [*] .
+%act:	<1w> picks up dog in dollhouse and holds over floor
+%mor:	adv|now noun|dog .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	0 .
+%act:	holds nesting cups . puts cups on floor and arranges them
+*CHI:	ride back .
+%act:	<1w> moves car a little .
+%mor:	verb|ride-Fin-Imp-S adv|back .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	dog ride back too [?] [*] .
+%act:	<1w> puts dog in car . puts hands up
+%mor:	noun|dog noun|ride adv|back adv|too .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|ADVMOD 4|2|ADVMOD 5|2|PUNCT
+*MOT:	the dog's gonna ride in the back ?
+%mor:	det|the-Def-Art noun|dog~part|s verb|go-Part-Pres-S~part|to verb|ride-Inf-S adp|in det|the-Def-Art noun|back ?
+%gra:	1|2|DET 2|4|NSUBJ 3|2|CASE 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|9|CASE 8|9|DET 9|6|OBL 10|4|PUNCT
+*CHI:	no like this &=sound_effects .
+%act:	<1w> picks up dog and puts in another seat .
+%mor:	intj|no adp|like pron|this-Dem-S1 .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*CHI:	like this [=! gestures] .
+%act:	<1w> picks up again and puts in another seat
+%mor:	adp|like pron|this-Dem-S1 .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*CHI:	like this ?
+%mor:	adp|like pron|this-Dem-S1 ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	okay .
+%gpx:	gestures slightly toward nesting cups on floor
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Kent (.) <c(an)> [/] can you +...
+%mor:	propn|Kent aux|can-Fin-S pron|you-Prs-Nom-S2 +...
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	yeah ?
+%mor:	intj|yeah ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	can you put these together ?
+%act:	<1w> pushes nesting cups close to Jeremy
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|put-Inf-S pron|this-Dem-P1 adv|together ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|ADVMOD 6|3|PUNCT
+*MOT:	what do you have now ?
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|have-Inf-S adv|now ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+*CHI:	what ?
+%act:	<bef> puts man in car
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's back here now ?
+%act:	picks up car
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 adv|back adv|here adv|now ?
+%gra:	1|0|ROOT 2|1|COP 3|4|ADVMOD 4|1|ADVMOD 5|4|ADVMOD 6|1|PUNCT
+*CHI:	yyy yeah .
+%act:	picks up dog from dollhouse . takes dog from car and puts new dog in car
+%xpho:	<1w> oi m6
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	ride dog [!] [*] .
+%mor:	verb|ride-Fin-Imp-S noun|dog-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	ride .
+%mor:	noun|ride .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yyy .
+%xpho:	<1w> oi m6
+*MOT:	xxx .
+*CHI:	ride dog [!] [*] .
+%act:	examines dog in hand
+%mor:	verb|ride-Fin-Imp-S noun|dog-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	ride back .
+%mor:	verb|ride-Fin-Imp-S adv|back .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	he's gonna ride with the dog in the back ?
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S~part|to verb|ride-Inf-S adp|with det|the-Def-Art noun|dog adp|in det|the-Def-Art noun|back ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|8|CASE 7|8|DET 8|5|OBL 9|11|CASE 10|11|DET 11|5|OBL 12|3|PUNCT
+*CHI:	yeah .
+%act:	<1w> reaches for car with dog and puts it in car .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx dog go xxx .
+%act:	<1w-2w> has hand on dollhouse rim
+%mor:	noun|dog noun|go .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	go: .
+%act:	<1w-2w> has hand on dollhouse rim
+%xpho:	<1w> &-eh
+%mor:	verb|go-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	there <it go [* 0es]> [>] .
+%mor:	pron|there-Dem-S1 pron|it-Prs-Nom-S3 verb|go-Fin-Ind-Pres-S3 .
+%gra:	1|3|EXPL 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	Kent (.) can you put these together ?
+%act:	<1w> picks up nesting cups and moves them closer to Kent
+%mor:	propn|Kent aux|can-Fin-S pron|you-Prs-Nom-S2 verb|put-Inf-S pron|this-Dem-P1 adv|together ?
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|ADVMOD 7|4|PUNCT
+*CHI:	yeah .
+%act:	picks up nesting cup and puts inside bigger nesting cup
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	go like this ?
+%mor:	verb|go-Fin-Imp-S adp|like pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*MOT:	mhm .
+%gpx:	nods
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	oh .
+%act:	<1w> uttered as nesting cup fit in .
+%int:	<1w> rise and fall
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	then go like this ?
+%act:	<1w> picks up another nesting cup and puts in nesting cup stack
+%mor:	adv|then verb|go-Fin-Imp-S adp|like pron|this-Dem-S1 ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*MOT:	almost .
+%act:	arranges nesting cups on floor for Kent
+%mor:	adv|almost .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and [!] it go [*] like this [!] .
+%act:	picks up anoather nesting cup and puts in stack
+%mor:	cconj|and pron|it-Prs-Nom-S3 verb|go-Fin-Ind-Pres-S3 adp|like pron|this-Dem-S1 .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*MOT:	wait (.) let's try the green one .
+%act:	takes out Kent's nesting cup
+%mor:	verb|wait-Fin-Imp-S verb|let-Fin-Imp-S~pron|we-Prs-Acc-P1 verb|try-Inf-S det|the-Def-Art adj|green-S1 noun|one-Acc .
+%gra:	1|0|ROOT 2|1|XCOMP 3|2|OBJ 4|2|XCOMP 5|7|DET 6|7|AMOD 7|4|OBJ 8|1|PUNCT
+*CHI:	go right there ?
+%act:	picks up green nesting cup and puts in stack
+%mor:	verb|go-Fin-Imp-S adv|right adv|there ?
+%gra:	1|0|ROOT 2|3|ADVMOD 3|1|ADVMOD 4|1|PUNCT
+*MOT:	yeah (.) and the orange one .
+%gpx:	<1w> nods
+%mor:	intj|yeah cconj|and det|the-Def-Art adj|orange-S1 noun|one .
+%gra:	1|5|DISCOURSE 2|5|CC 3|5|DET 4|5|AMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	now oh orange one [*] ?
+%act:	picks up nesting cup from floor and puts in stack
+%xpho:	<3w> w6ng
+%mor:	adv|now intj|oh adj|orange-S1 num|one ?
+%gra:	1|4|ADVMOD 2|4|DISCOURSE 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*MOT:	a blue one I think (.) maybe a blue one .
+%mor:	det|a-Ind-Art adj|blue-S1 noun|one pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 adv|maybe det|a-Ind-Art adj|blue-S1 noun|one-Acc .
+%gra:	1|3|DET 2|3|AMOD 3|5|OBL-UNMARKED 4|5|NSUBJ 5|0|ROOT 6|9|ADVMOD 7|9|DET 8|9|AMOD 9|5|OBJ 10|5|PUNCT
+*CHI:	that one ?
+%act:	picks up nesting cup and puts in stack
+%mor:	det|that-Def-Dem-Sing num|one ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	that's still too little .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 adv|still adv|too adj|little-S1 .
+%gra:	1|5|NSUBJ 2|5|COP 3|5|ADVMOD 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	oh big [!] one [*] .
+%act:	takes nesting cup out of stack . picks up bigger one
+%mor:	intj|oh adj|big-S1 noun|one .
+%gra:	1|3|DISCOURSE 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	big one ?
+%mor:	adj|big-S1 noun|one ?
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	uhhuh .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	okay .
+%act:	<aft> puts nesting cup in stack that is too small
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	let's try the yellow one .
+%mor:	verb|let-Fin-Imp-S~pron|we-Prs-Acc-P1 verb|try-Inf-S det|the-Def-Art adj|yellow-S1 noun|one-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|6|DET 5|6|AMOD 6|3|OBJ 7|1|PUNCT
+*MOT:	let's try the yellow one .
+%mor:	verb|let-Fin-Imp-S~pron|we-Prs-Acc-P1 verb|try-Inf-S det|the-Def-Art adj|yellow-S1 noun|one-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|6|DET 5|6|AMOD 6|3|OBJ 7|1|PUNCT
+*MOT:	that was blue .
+%mor:	pron|that-Dem aux|be-Fin-Ind-Past-S3-irr adj|blue-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	that guy !
+%act:	picks up nesting and puts in stack
+%mor:	det|that-Def-Dem-Sing noun|guy !
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	that's green .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 adj|green-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*MOT:	that's green .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 adj|green-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	yyy .
+%act:	<aft> holds with others in his hands and manipulates slightly
+%xpho:	dIs je+wau
+%alt:	this yellow
+*MOT:	where's the yellow one ?
+%mor:	adv|where~aux|be-Fin-Ind-Pres-S3 det|the-Def-Art adj|yellow-S1 noun|one ?
+%gra:	1|0|ROOT 2|1|COP 3|5|DET 4|5|AMOD 5|1|NSUBJ 6|1|PUNCT
+*CHI:	what .
+%mor:	pron|what-Int-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	where's the yellow one ?
+%mor:	adv|where~aux|be-Fin-Ind-Pres-S3 det|the-Def-Art adj|yellow-S1 noun|one ?
+%gra:	1|0|ROOT 2|1|COP 3|5|DET 4|5|AMOD 5|1|NSUBJ 6|1|PUNCT
+*CHI:	right here .
+%act:	shows Mother nesting cup
+%mor:	adv|right adv|here .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	hm: ?
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	right there .
+%act:	<aft> begins to put in stack but stops
+%mor:	adv|right adv|there .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	yeah (.) that's the little one (.) isn't it ?
+%mor:	intj|yeah pron|that-Dem~aux|be-Fin-Ind-Pres-S3 det|the-Def-Art adj|little-S1 noun|one aux|be-Fin-Ind-Pres-S3~part|not pron|it-Prs-Nom-S3 ?
+%gra:	1|6|DISCOURSE 2|6|NSUBJ 3|6|COP 4|6|DET 5|6|AMOD 6|0|ROOT 7|9|COP 8|9|ADVMOD 9|6|PARATAXIS 10|6|PUNCT
+*MOT:	that's right .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 adj|right-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	big one .
+%act:	picks up correct nesting cup and puts in stack
+%mor:	adj|big-S1 noun|one .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	find the red one that would go in there ?
+%mor:	verb|find-Fin-Imp-S det|the-Def-Art adj|red-S1 noun|one-Acc pron|that-Rel aux|would-Fin-S verb|go-Inf-S adp|in adv|there ?
+%gra:	1|0|ROOT 2|4|DET 3|4|AMOD 4|1|OBJ 5|7|NSUBJ 6|7|AUX 7|4|ACL-RELCL 8|9|CASE 9|7|OBL 10|1|PUNCT
+*MOT:	this one .
+%mor:	det|this-Def-Dem-Sing noun|one .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	red one go [*] in there .
+%act:	<1w> picks up nesting cup and puts in stack . <1w> picks up another nesting cup and puts in stack . takes out again and puts on floor .
+%mor:	adj|red-S1 num|one verb|go-Fin-Imp-S adp|in adv|there .
+%gra:	1|2|AMOD 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	yyy .
+%xpho:	<1w> w6
+*CHI:	now .
+%act:	<1w> picks up another nesting cup and attempts to put in stack
+%mor:	adv|now .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	then a green one .
+%mor:	adv|then det|a-Ind-Art adj|green-S1 noun|one .
+%gra:	1|4|ADVMOD 2|4|DET 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	no .
+%act:	<1w> takes nesting cup off stack and puts down .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	red one ?
+%act:	<1w> touches nesting cup on floor .
+%mor:	adj|red-S1 noun|one ?
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	green one .
+%act:	<1w> picks up another nesting cup and puts in stack
+%mor:	adj|green-S1 noun|one .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	that's yellow .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 adj|yellow-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	yyy .
+%xpho:	da bai d&t
+*MOT:	yeah (.) but see it's too [/] too little to fit in there .
+%act:	<1w> outlines nesting cup top .
+%mor:	intj|yeah cconj|but verb|see-Fin-Imp-S pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adv|too adj|little-S1 part|to verb|fit-Inf-S adp|in adv|there .
+%gra:	1|3|DISCOURSE 2|3|CC 3|0|ROOT 4|7|EXPL 5|7|COP 6|7|ADVMOD 7|3|CCOMP 8|9|MARK 9|7|CSUBJ 10|11|CASE 11|9|OBL 12|3|PUNCT
+*MOT:	find the green one that would go in there .
+%act:	<1w> prompts by arranging nesting cups on floor
+%mor:	verb|find-Fin-Imp-S det|the-Def-Art adj|green-S1 noun|one-Acc pron|that-Rel aux|would-Fin-S verb|go-Inf-S adp|in adv|there .
+%gra:	1|0|ROOT 2|4|DET 3|4|AMOD 4|1|OBJ 5|7|NSUBJ 6|7|AUX 7|4|ACL-RELCL 8|9|CASE 9|7|OBL 10|1|PUNCT
+*CHI:	oh (.) green one ?
+%act:	<dur> picks up Mother's nesting cup <bef> takes nesting cup from stack .
+%mor:	intj|oh adj|green-S1 num|one ?
+%gra:	1|3|DISCOURSE 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	uhhuh .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx in there ?
+%act:	examines nesting cups
+%mor:	adp|in adv|there ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*CHI:	yyy .
+%xpho:	<1w> dau dIt du jo
+*MOT:	maybe this one goes in .
+%act:	picks up nesting cup and attempts to put in stack . takes out again
+%mor:	adv|maybe det|this-Def-Dem-Sing noun|one verb|go-Fin-Ind-Pres-S3 adv|in .
+%gra:	1|4|ADVMOD 2|3|DET 3|4|NSUBJ 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+*MOT:	oh (.) it's the white one .
+%par:	<aft> laughs
+%mor:	intj|oh pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 det|the-Def-Art adj|white-S1 noun|one .
+%gra:	1|6|DISCOURSE 2|6|NSUBJ 3|6|COP 4|6|DET 5|6|AMOD 6|0|ROOT 7|6|PUNCT
+*CHI:	like that kind ?
+%act:	<dur> puts nesting cup in stack <bef> attempts to put wrong nesting cup in stack .
+%mor:	adp|like det|that-Def-Dem-Sing noun|kind ?
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	uhhuh .
+%act:	<1w> picks up Jeremy's nesting cup and lets fall .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	except (.) I think [!] maybe the white one goes first .
+%act:	<1w> takes out Jeremy's nesting cup
+%mor:	sconj|except pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 adv|maybe det|the-Def-Art adj|white-S1 noun|one verb|go-Fin-Ind-Pres-S3 adv|first .
+%gra:	1|3|MARK 2|3|NSUBJ 3|0|ROOT 4|8|ADVMOD 5|7|DET 6|7|AMOD 7|8|NSUBJ 8|3|CCOMP 9|8|ADVMOD 10|3|PUNCT
+*MOT:	let's try that .
+%mor:	verb|let-Fin-Imp-S~pron|we-Prs-Acc-P1 verb|try-Inf-S pron|that-Dem .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|3|OBJ 5|1|PUNCT
+*CHI:	(o)kay .
+%act:	puts in white nesting cup
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah !
+%act:	<1w> puts Jeremy's cup in next .
+%mor:	intj|yeah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	(o)kay (.) then an orange one .
+%act:	<1w> pats nesting cup stack
+%mor:	intj|okay adv|then det|a-Ind-Art adj|orange-S1 noun|one .
+%gra:	1|5|DISCOURSE 2|5|ADVMOD 3|5|DET 4|5|AMOD 5|0|ROOT 6|5|PUNCT
+*MOT:	where's the orange one ?
+%mor:	adv|where~aux|be-Fin-Ind-Pres-S3 det|the-Def-Art adj|orange-S1 noun|one ?
+%gra:	1|0|ROOT 2|1|COP 3|5|DET 4|5|AMOD 5|1|NSUBJ 6|1|PUNCT
+*CHI:	yyy .
+%act:	<aft> picks up correct cup and puts in stack <dur> takes out nesting cup and holds . <bef> puts wrong nesting cup in stack .
+%xpho:	de
+%alt:	there
+*MOT:	hm: [?] .
+%mor:	intj|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	hm: .
+%mor:	intj|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	now try (.) yyy (.) red one .
+%act:	picks up nesting cup and puts in stack . holds nesting cups
+%xpho:	<3w> n6
+%mor:	adv|now verb|try-Fin-Imp-S adj|red-S1 noun|one-Acc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|AMOD 4|2|OBJ 5|2|PUNCT
+*MOT:	no (.) not quite .
+%act:	<1w> puts finger to Jeremy's nesting cup
+%mor:	intj|no part|not adv|quite .
+%gra:	1|3|DISCOURSE 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	try the other ones .
+%gpx:	<1w-4w> points to Jeremy's nesting cups
+%mor:	verb|try-Fin-Imp-S det|the-Def-Art adj|other-S1 noun|one-Plur-Acc .
+%gra:	1|0|ROOT 2|4|DET 3|4|AMOD 4|1|OBJ 5|1|PUNCT
+*MOT:	try the other ones in your hand .
+%gpx:	<1w-7w> points to Jeremy's nesting cups
+%mor:	verb|try-Fin-Imp-S det|the-Def-Art adj|other-S1 noun|one-Plur-Acc adp|in pron|your-Prs-Gen-S2 noun|hand .
+%gra:	1|0|ROOT 2|4|DET 3|4|AMOD 4|1|OBJ 5|7|CASE 6|7|NMOD-POSS 7|1|OBL 8|1|PUNCT
+*MOT:	whoops .
+%mor:	intj|whoops .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	oops !
+%act:	<1w> takes cup out and holds . manipulates nesting cups in hand . <1w> attempts to put in wrong nesting cup .
+%mor:	intj|oop !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	now +...
+%act:	<1w> tries one more in stack .
+%mor:	adv|now +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	try that one ?
+%act:	<1w> takes one cup off and puts down .
+%mor:	verb|try-Fin-Imp-S det|that-Def-Dem-Sing num|one ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	nope ?
+%act:	<1w> puts in correct nesting cup
+%mor:	intj|nope ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	try that kind .
+%mor:	verb|try-Fin-Imp-S det|that-Def-Dem-Sing noun|kind-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	uhhuh .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	now try that kind ?
+%act:	gets another nesting cup and puts in stack
+%mor:	adv|now verb|try-Fin-Imp-S det|that-Def-Dem-Sing noun|kind-Acc ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	+< xxx the other one .
+%mor:	det|the-Def-Art adj|other-S1 noun|one .
+%gra:	1|3|DET 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	try that kind .
+%act:	gets last nesting cup and attempts to put in stack . presses it
+%mor:	verb|try-Fin-Imp-S det|that-Def-Dem-Sing noun|kind-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	&-uh <try it> [/] try it now .
+%act:	takes out Jeremy's top nesting cup
+%mor:	verb|try-Fin-Imp-S pron|it-Prs-Acc-S3 adv|now .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|ADVMOD 4|1|PUNCT
+*CHI:	&-uh .
+%act:	puts in correct nesting cup
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	see about this house .
+%act:	<1w> pulls dollhouse closer to self
+%mor:	verb|see-Fin-Imp-S adp|about det|this-Def-Dem-Sing noun|house .
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|OBL 5|1|PUNCT
+*CHI:	(o)kay .
+%gpx:	<1w> looks inside dollhouse
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	open house [*] ?
+%act:	<1w> reaches for car that's in the way <1w> puts hand on dollhouse door .
+%mor:	adj|open-S1 noun|house ?
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	uhhuh .
+%act:	moves car and nesting cups back
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx .
+*MOT:	wan(t) (t)a open this house ?
+%mor:	verb|want-Fin-Imp-S part|to verb|open-Inf-S det|this-Def-Dem-Sing noun|house-Acc ?
+%gra:	1|0|ROOT 2|3|MARK 3|1|XCOMP 4|5|DET 5|3|OBJ 6|1|PUNCT
+*CHI:	yeah .
+%act:	<1w> opens dollhouse door .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yeah open and open and open house an(d) (.) open house (.) like that (.) (o)kay [*] ?
+%act:	<1w> opens another door and another and finally the last one
+%mor:	intj|yeah adj|open-S1 cconj|and adj|open-S1 cconj|and adj|open-S1 noun|house cconj|and adj|open-S1 noun|house adp|like pron|that-Dem intj|okay ?
+%gra:	1|7|DISCOURSE 2|7|AMOD 3|4|CC 4|2|CONJ 5|6|CC 6|2|CONJ 7|0|ROOT 8|10|CC 9|10|AMOD 10|7|CONJ 11|12|CASE 12|10|NMOD 13|7|DISCOURSE 14|7|PUNCT
+*MOT:	uhhuh .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and (.) now (.) now way [*] .
+%act:	attempts to pick up car but men fall
+%int:	<1w> rise and fall
+%mor:	cconj|and adv|now adv|now noun|way .
+%gra:	1|4|CC 2|4|ADVMOD 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	no way .
+%mor:	det|no-Def-Neg noun|way .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	now way ?
+%mor:	adv|now noun|way ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	whoop(s) .
+%act:	<1w> retrieves man .
+%xpho:	boidIN
+%mor:	intj|whoops .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	whoop(s) .
+%act:	<1w> retrieves man .
+%mor:	intj|whoops .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	hm:@o [= car noise] .
+%act:	<1w> pushes car in dloohouse through doors .
+%mor:	on|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	now go house yyy [*] .
+%act:	<1w> pushes car in dollhouse .
+%mor:	adv|now verb|go-Fin-Imp-S noun|house-Acc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	now it [*] goin(g) in .
+%act:	<1w> picks up car
+%mor:	adv|now pron|it-Prs-Nom-S3 verb|go-Part-Pres-S adv|in .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*MOT:	now it's going in ?
+%par:	spoken softly
+%mor:	adv|now pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S adp|in ?
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|ADVMOD 6|4|PUNCT
+*CHI:	oh !
+%act:	<1w> men fall from car .
+%xpho:	kr& kr&
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	crash (.) crash .
+%act:	<1w> car overturns
+%mor:	noun|crash noun|crash .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	it crashed ?
+%mor:	pron|it-Prs-Nom-S3 verb|crash-Fin-Ind-Past-S3 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	listen .
+%mor:	verb|listen-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	xxx .
+%act:	<1w> pulls dollhouse closer to Jeremy and herself
+*CHI:	on a table .
+%act:	<dur> takes grill from dollhouse , examines it and puts it aside <bef> takes ladder from dollhouse , chews on it and then holds it .
+%mor:	adp|on det|a-Ind-Art noun|table .
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	uhhuh .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's on the table there ?
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 adp|on det|the-Def-Art noun|table adv|there ?
+%gra:	1|5|NSUBJ 2|5|COP 3|5|CASE 4|5|DET 5|0|ROOT 6|5|ADVMOD 7|5|PUNCT
+*CHI:	wha(t) ?
+%act:	holds ladder out toward grill
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's on the table ?
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 adp|on det|the-Def-Art noun|table ?
+%gra:	1|0|ROOT 2|5|COP 3|5|CASE 4|5|DET 5|1|OBL 6|1|PUNCT
+*CHI:	wha(t) ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	the top .
+%gpx:	points to top of grill
+%mor:	det|the-Def-Art noun|top .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	what ?
+%act:	bangs ladder on floor . presses ladder on table . table falls . holds ladder
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's on the top of the table ?
+%act:	rights table
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 adp|on det|the-Def-Art noun|top adp|of det|the-Def-Art noun|table ?
+%gra:	1|5|NSUBJ 2|5|COP 3|5|CASE 4|5|DET 5|0|ROOT 6|8|CASE 7|8|DET 8|5|NMOD 9|5|PUNCT
+*CHI:	what ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's on the top +...
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 adp|on det|the-Def-Art noun|top +...
+%gra:	1|0|ROOT 2|5|COP 3|5|CASE 4|5|DET 5|1|OBL 6|1|PUNCT
+*MOT:	oh never mind .
+%act:	<1w> pulls dollhouse toward self
+%par:	<aft> laughs
+%mor:	intj|oh adv|never verb|mind-Fin-Imp-S .
+%gra:	1|3|DISCOURSE 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	what .
+%mor:	pron|what-Int-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	let's see .
+%act:	<1w> rummages in dollhouse .
+%mor:	verb|let-Fin-Imp-S~pron|we-Prs-Acc-P1 verb|see-Inf-S .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|1|PUNCT
+*MOT:	are they gonna eat dinner now ?
+%act:	<1w> puts picnic table by bench in dollhouse
+%mor:	aux|be-Fin-Ind-Pres-P3 pron|they-Prs-Nom-P3 verb|go-Part-Pres-S~part|to verb|eat-Inf-S noun|dinner-Acc adv|now ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|5|ADVMOD 8|3|PUNCT
+*CHI:	yeah .
+%gpx:	points to top of picnic table and grill
+%act:	<1w> takes picnic table from dollhouse and puts down by grill
+%xpho:	d&t
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	eat din(ner) +...
+%mor:	verb|eat-Fin-Imp-S noun|dinner-Acc +...
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	cookin(g) that [!] [*] .
+%mor:	verb|cook-Part-Pres-S pron|that-Dem .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	they're cooking that (.) that's right .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|cook-Part-Pres-S sconj|that pron|that-Dem~aux|be-Fin-Ind-Pres-S3 adj|right-S1 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|7|MARK 5|7|NSUBJ 6|7|COP 7|3|CCOMP 8|3|PUNCT
+*CHI:	yyy .
+%act:	<1w> mouths ladder .
+%xpho:	<1w> &hah
+*CHI:	&-uh (.) cooking steak .
+%act:	<1w> reaches in dollhouse , picks up man and drops him . reaches again , takes man out . puts man on top of grill and let's go
+%mor:	noun|cooking-Ger noun|steak .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	&=laughs .
+*CHI:	cooking yyy (.) whoop(s) !
+%act:	<1w> grill and man fall .
+%xpho:	<1w> jek
+%mor:	noun|cooking-Ger noun|whoop !
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	cook a +...
+%act:	<1w> rights grill , picks up man and puts man on top of grill .
+%mor:	verb|cook-Fin-Imp-S det|a-Ind-Art +...
+%gra:	1|0|ROOT 2|1|PUNCT 3|1|PUNCT
+*CHI:	drop a cook a yyy .
+%act:	<1w> falls again . rights grill .
+%xpho:	<4w> jek
+%mor:	verb|drop-Fin-Imp-S det|a-Ind-Art noun|cook-Acc noun|a .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT 5|1|PUNCT
+*CHI:	oop(s) !
+%act:	<1w> puts man on top of grill
+%mor:	intj|oop !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	cook a yyy .
+%xpho:	<2w> jek
+%mor:	verb|cook-Fin-Imp-S det|a-Ind-Art .
+%gra:	1|0|ROOT 2|1|PUNCT 3|1|PUNCT
+*MOT:	cook the egg ?
+%act:	scratches head
+%exp:	tries to understand
+%mor:	verb|cook-Fin-Imp-S det|the-Def-Art noun|egg-Acc ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	yeah !
+%mor:	intj|yeah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	cooking &-uh egg .
+%mor:	noun|cooking-Ger noun|egg .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	now climb like that [!] .
+%act:	<1w> puts ladder on top of man on grill <1w> puts ladder on picnic table . puts hands up .
+%mor:	adv|now verb|climb-Fin-Imp-S adp|like pron|that-Dem .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*CHI:	I'm a climb like that [*] .
+%mor:	pron|I-Prs-Nom-S1~aux|be-Fin-Ind-Pres-S1 det|a-Ind-Art noun|climb adp|like pron|that-Dem .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|6|CASE 6|4|NMOD 7|4|PUNCT
+*MOT:	you gonna climb that ?
+%mor:	pron|you-Prs-Nom-S2 verb|go-Part-Pres-S~part|to verb|climb-Inf-S pron|that-Dem ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|4|OBJ 6|2|PUNCT
+*CHI:	no (.) yeah (.) climb like that .
+%act:	<1w> moves ladder and man back . pauses and holds ladder on one hand . touches picnic tbale as if to steady .
+%mor:	intj|no intj|yeah verb|climb-Fin-Imp-S adp|like pron|that-Dem .
+%gra:	1|3|DISCOURSE 2|3|DISCOURSE 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	go other one [*] .
+%act:	<1w> puts ladder on picnic table .
+%mor:	verb|go-Fin-Imp-S adj|other-S1 noun|one-Acc .
+%gra:	1|0|ROOT 2|3|AMOD 3|1|OBJ 4|1|PUNCT
+*CHI:	now yyy up like that !
+%act:	<1w> picks up man and makes him climb ladder . makes man jump once for each of the following words , up like that . ladder falls
+%par:	<3w-5w> spoken in high pitch
+%xpho:	<2w> mAl3ri
+%mor:	adv|now adv|up adp|like pron|that-Dem !
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*MOT:	multirise (.) huh ?
+%mor:	noun|multirise intj|huh ?
+%gra:	1|0|ROOT 2|1|FLAT 3|1|PUNCT
+*CHI:	up like that .
+%act:	puts man in other hand . rights ladder on picnic table . takes man out of dollhouse
+%par:	<bef> laughs
+%mor:	adp|up adp|like pron|that-Dem .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*MOT:	uhhuh .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&-uh .
+*CHI:	dun_dun_dun@o .
+%act:	<1w> makes man climb ladder in three jumps
+%mor:	on|dundundun .
+%gra:	1|0|ROOT 2|1|PUNCT
+@End

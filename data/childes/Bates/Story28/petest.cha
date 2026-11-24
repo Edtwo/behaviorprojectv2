@@ -1,0 +1,381 @@
+@UTF8
+@PID:	11312/c-00015325-1
+@Begin
+@Languages:	eng
+@Participants:	CHI Target_Child, INV Investigator, MOT Mother, FAT Father
+@ID:	eng|Bates|CHI|2;04.|male|TD|MC|Target_Child|||
+@ID:	eng|Bates|INV|||||Investigator|||
+@ID:	eng|Bates|MOT||female|||Mother|||
+@ID:	eng|Bates|FAT||male|||Father|||
+@Comment:	[ba3 morphotag | engine=stanza-1.11.1 ; lang=eng | 2026-05-07T09:35:35-04:00]
+@Types:	cross, toyplay, TD
+*CHI:	0 [=! cries because he wants his father] .
+%act:	changes to Father's lap
+*INV:	do you want to tell the story to your mommy ?
+%gpx:	looks at Pete
+%act:	gives book to Pete
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|want-Inf-S part|to verb|tell-Inf-S det|the-Def-Art noun|story-Acc adp|to pron|your-Prs-Gen-S2 noun|mommy ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|DET 7|5|OBJ 8|10|CASE 9|10|NMOD-POSS 10|5|OBL 11|3|PUNCT
+*INV:	you hold the story and you tell it to your mommy .
+%mor:	pron|you-Prs-Nom-S2 verb|hold-Fin-Ind-Pres-S2 det|the-Def-Art noun|story-Acc cconj|and pron|you-Prs-Nom-S2 verb|tell-Fin-Ind-Pres-S2 pron|it-Prs-Acc-S3 adp|to pron|your-Prs-Gen-S2 noun|mommy .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|7|CC 6|7|NSUBJ 7|2|CONJ 8|7|OBJ 9|11|CASE 10|11|NMOD-POSS 11|7|OBL 12|2|PUNCT
+*INV:	and you can help him .
+%mor:	cconj|and pron|you-Prs-Nom-S2 aux|can-Fin-S verb|help-Inf-S pron|he-Prs-Acc-S3 .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	0 .
+%gpx:	looks at book
+%act:	takes book . sits on Father's lap holding book
+*MOT:	should we read this book ?
+%act:	touches book
+%mor:	aux|should-Fin-S pron|we-Prs-Nom-P1 verb|read-Inf-S det|this-Def-Dem-Sing noun|book-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*CHI:	no Daddy .
+%mor:	det|no-Def-Neg propn|Daddy .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	okay (.) let Daddy do it .
+%mor:	intj|okay verb|let-Fin-Imp-S propn|Daddy-Acc verb|do-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|2|XCOMP 5|4|OBJ 6|2|PUNCT
+*FAT:	0 .
+%act:	turns page
+*INV:	Daddy can hold it .
+%mor:	propn|Daddy aux|can-Fin-S verb|hold-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	who's that ?
+%gpx:	points to book . looks at Pete
+%mor:	pron|who-Int~aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	this .
+%gpx:	points to book . looks at book
+%mor:	pron|this-Dem-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	a bunny (.) yeah !
+%act:	<1w> turns page
+%gpx:	points to book . Looks at Pete
+%mor:	det|a-Ind-Art noun|bunny intj|yeah !
+%gra:	1|2|DET 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*MOT:	one day (.) Miffy wake up .
+%mor:	num|one noun|day propn|Miffy verb|wake-Fin-Ind-S adp|up .
+%gra:	1|2|NUMMOD 2|4|OBL-UNMARKED 3|4|NSUBJ 4|0|ROOT 5|4|COMPOUND-PRT 6|4|PUNCT
+*MOT:	what's she doing ?
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|she-Prs-Nom-S3 verb|do-Part-Pres-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*MOT:	what's she looking at ?
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|she-Prs-Nom-S3 verb|look-Part-Pres-S adp|at ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|1|CASE 6|4|PUNCT
+*MOT:	a window ?
+%mor:	det|a-Ind-Art noun|window ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	she's looking out the window and it's all +...
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|look-Part-Pres-S adp|out det|the-Def-Art noun|window cconj|and pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 det|all-Def-Tot +...
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|10|CC 8|10|NSUBJ 9|10|COP 10|3|CONJ 11|3|PUNCT
+*MOT:	everything is white .
+%mor:	pron|everything-Tot-S1 aux|be-Fin-Ind-Pres-S3 adj|white-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	no .
+%act:	turns page
+%gpx:	<aft> nods
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and what did she put on ?
+%gpx:	points to book
+%mor:	cconj|and pron|what-Int-S1 aux|do-Fin-Ind-Past-S3-irr pron|she-Prs-Nom-S3 verb|put-Inf-S adp|on ?
+%gra:	1|5|CC 2|5|OBJ 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|5|ADVMOD 7|5|PUNCT
+*MOT:	a red hat ?
+%mor:	det|a-Ind-Art adj|red-S1 noun|hat ?
+%gra:	1|3|DET 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	and what are those ?
+%mor:	cconj|and pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 pron|that-Dem-P1 ?
+%gra:	1|2|CC 2|0|ROOT 3|4|COP 4|2|NSUBJ 5|2|PUNCT
+*CHI:	hm: suit .
+%mor:	intj|hm verb|suit-Fin-Imp-S .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	a snowsuit .
+%gpx:	points to book
+%mor:	det|a-Ind-Art noun|snowsuit .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	and what's that ?
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|2|CC 2|0|ROOT 3|4|COP 4|2|NSUBJ 5|2|PUNCT
+*CHI:	hm: boots .
+%gpx:	<aft> points to book
+%mor:	intj|hm noun|boot-Plur .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	boots [<] .
+%act:	<1w> turns page
+%mor:	noun|boot-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and what's that ?
+%gpx:	<1w> points to book
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|2|CC 2|0|ROOT 3|4|COP 4|2|NSUBJ 5|2|PUNCT
+*MOT:	what's she riding on ?
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|she-Prs-Nom-S3 verb|ride-Part-Pres-S adp|on ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|COMPOUND-PRT 6|4|PUNCT
+*CHI:	0 [=! mumbles] .
+%gpx:	looks at book
+*MOT:	a sled !
+%gpx:	looks at Pete
+%mor:	det|a-Ind-Art noun|sled !
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	see her red mittens ?
+%mor:	verb|see-Fin-Imp-S pron|her-Prs-Gen-S3 adj|red-S1 noun|mitten-Plur-Acc ?
+%gra:	1|0|ROOT 2|4|NMOD-POSS 3|4|AMOD 4|1|OBJ 5|1|PUNCT
+*CHI:	a sled .
+%act:	turns page
+%mor:	det|a-Ind-Art noun|sled .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	yeah !
+%act:	<1w> turns page
+%mor:	intj|yeah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and what did she make here [!] ?
+%gpx:	<1w> points to book
+%mor:	cconj|and pron|what-Int-S1 aux|do-Fin-Ind-Past-S3-irr pron|she-Prs-Nom-S3 verb|make-Inf-S adv|here ?
+%gra:	1|5|CC 2|5|OBJ 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|5|ADVMOD 7|5|PUNCT
+*CHI:	snowman .
+%mor:	noun|snowman .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	right .
+%mor:	adj|right-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	with a nose .
+%mor:	adp|with det|a-Ind-Art noun|nose .
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	a carrot .
+%gpx:	<1w> points to book
+%mor:	det|a-Ind-Art noun|carrot .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	and what's that ?
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|2|CC 2|0|ROOT 3|4|COP 4|2|NSUBJ 5|2|PUNCT
+*CHI:	0 .
+%act:	turns book
+%gpx:	looks at book
+*MOT:	oh (.) poor birdie@c !
+%gpx:	looks at Pete . points to book
+%mor:	intj|oh adj|poor-S1 chi|birdie !
+%gra:	1|3|DISCOURSE 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	is he cold ?
+%mor:	aux|be-Fin-Ind-Pres-S3 pron|he-Prs-Nom-S3 adj|cold-S1 ?
+%gra:	1|3|COP 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	he's cold and he's sad .
+%act:	<1w> turns page
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adj|cold-S1 cconj|and pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adj|sad-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|7|CC 5|7|NSUBJ 6|7|COP 7|3|CONJ 8|3|PUNCT
+*MOT:	and there's Miffy .
+%mor:	cconj|and pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 propn|Miffy .
+%gra:	1|3|CC 2|3|EXPL 3|0|ROOT 4|3|NSUBJ 5|3|PUNCT
+*MOT:	is she sad ?
+%mor:	aux|be-Fin-Ind-Pres-S3 pron|she-Prs-Nom-S3 adj|sad-S1 ?
+%gra:	1|3|COP 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	are those tears ?
+%mor:	aux|be-Fin-Ind-Pres-P3 det|that-Def-Dem-Plur noun|tear-Plur ?
+%gra:	1|3|COP 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	hm: Pete tears [*] .
+%gpx:	points to his eyes
+%mor:	intj|hm propn|Pete verb|tear-Fin-Ind-Pres-S3 .
+%gra:	1|3|DISCOURSE 2|3|VOCATIVE 3|0|ROOT 4|3|PUNCT
+*MOT:	yeah (.) Pete's tears .
+%gpx:	looks at Pete . points to book
+%par:	<1w> laughs
+%mor:	intj|yeah propn|Pete~part|s noun|tear-Plur .
+%gra:	1|4|DISCOURSE 2|4|NMOD-POSS 3|2|CASE 4|0|ROOT 5|4|PUNCT
+*MOT:	so she's gonna build the little birdie@c a house .
+%act:	<1w> turns page
+%mor:	adv|so pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S~part|to verb|build-Inf-S det|the-Def-Art adj|little-S1 chi|birdie det|a-Ind-Art noun|house-Acc .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|9|DEP 8|9|AMOD 9|6|OBJ 10|11|DET 11|6|OBJ 12|4|PUNCT
+*MOT:	and what's that ?
+%mor:	cconj|and pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|2|CC 2|0|ROOT 3|4|COP 4|2|NSUBJ 5|2|PUNCT
+*CHI:	0 [=! mumbles] .
+%gpx:	<aft> looks at the TV . points finger .
+*FAT:	what's that ?
+%gpx:	points to book
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*FAT:	no (.) we don't need to watch the t@l v@l .
+%mor:	intj|no pron|we-Prs-Nom-P1 aux|do-Fin-Ind-Pres-P1~part|not verb|need-Inf-S part|to verb|watch-Inf-S det|the-Def-Art n:let|t n:let|v .
+%gra:	1|5|DISCOURSE 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|7|MARK 7|5|XCOMP 8|10|DEP 9|10|DEP 10|7|OBJ 11|5|PUNCT
+*FAT:	now look at that .
+%mor:	adv|now verb|look-Fin-Imp-S adp|at pron|that-Dem .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*FAT:	is that a house ?
+%mor:	aux|be-Fin-Ind-Pres-S3 sconj|that det|a-Ind-Art noun|house ?
+%gra:	1|4|COP 2|4|MARK 3|4|DET 4|0|ROOT 5|4|PUNCT
+*FAT:	he's got a hammer .
+%par:	<1w-4w> whispers
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|get-Part-Past-S-irr det|a-Ind-Art noun|hammer-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*FAT:	he's gonna build a house .
+%par:	<1w-6w> whispers
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S~part|to verb|build-Inf-S det|a-Ind-Art noun|house-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|DET 7|5|OBJ 8|3|PUNCT
+*MOT:	she's going to build the little birdie@c a house .
+%act:	<aft> turns page
+%gpx:	looks at Pete
+%mor:	pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|build-Inf-S det|the-Def-Art adj|little-S1 chi|birdie det|a-Ind-Art noun|house-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|8|DET 7|8|DEP 8|5|OBJ 9|10|DET 10|5|OBJ 11|3|PUNCT
+*FAT:	hm: (.) looks nice .
+%mor:	intj|hm verb|look-Fin-Ind-Pres-S3 adj|nice-S1 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|XCOMP 4|2|PUNCT
+*MOT:	oh (.) and the little birdie@c likes this new house .
+%gpx:	looks at Pete . points to book
+%act:	turns page several times
+%mor:	intj|oh cconj|and det|the-Def-Art adj|little-S1 chi|birdie verb|like-Fin-Ind-Pres-S3 det|this-Def-Dem-Sing adj|new-S1 noun|house-Acc .
+%gra:	1|6|DISCOURSE 2|6|CC 3|5|DET 4|5|AMOD 5|6|DEP 6|0|ROOT 7|9|DET 8|9|AMOD 9|6|OBJ 10|6|PUNCT
+*MOT:	he flew up and see how happy he is now ?
+%mor:	pron|he-Prs-Nom-S3 verb|fly-Fin-Ind-Past-S3-irr adp|up cconj|and verb|see-Fin-Ind-S3 adv|how adj|happy-S1 pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 adv|now ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|COMPOUND-PRT 4|5|CC 5|2|CONJ 6|7|ADVMOD 7|5|CCOMP 8|10|NSUBJ 9|7|COP 10|7|ADVMOD 11|2|PUNCT
+*MOT:	hm: ?
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	happy bird ?
+%mor:	adj|happy-S1 noun|bird ?
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	in his new house .
+%mor:	adp|in pron|his-Prs-Gen-S3 adj|new-S1 noun|house .
+%gra:	1|4|CASE 2|4|NMOD-POSS 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*MOT:	and then Miffy's mom said (.) +"/.
+%mor:	cconj|and adv|then propn|Miffy~part|s noun|mom verb|say-Fin-Ind-Past-S3-irr +"/.
+%gra:	1|6|CC 2|6|ADVMOD 3|5|NMOD-POSS 4|3|CASE 5|6|NSUBJ 6|0|ROOT 7|6|PUNCT
+*MOT:	+" it's time for bed !
+%mor:	pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 noun|time adp|for noun|bed !
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|5|CASE 5|3|NMOD 6|3|PUNCT
+*MOT:	so Miffy went inside (be)c(a)use she's sleepy ?
+%mor:	adv|so propn|Miffy verb|go-Fin-Ind-Past-S3-irr adv|inside sconj|because pron|she-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adj|sleepy-S1 ?
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|8|MARK 6|8|NSUBJ 7|8|COP 8|3|ADVCL 9|3|PUNCT
+*MOT:	huh ?
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	Daddy xxx Daddy .
+%act:	<1w> turns page .
+%mor:	propn|Daddy propn|Daddy .
+%gra:	1|0|ROOT 2|1|FLAT 3|1|PUNCT
+*CHI:	is she sleepy ?
+%gpx:	<1w> looks up . <1w> looks at book
+%act:	<1w> touches Father's face
+%mor:	aux|be-Fin-Ind-Pres-S3 pron|she-Prs-Nom-S3 adj|sleepy-S1 ?
+%gra:	1|3|COP 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	and she looked out the window .
+%mor:	cconj|and pron|she-Prs-Nom-S3 verb|look-Fin-Ind-Past-S3 adp|out det|the-Def-Art noun|window-Acc .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|COMPOUND-PRT 5|6|DET 6|3|OBJ 7|3|PUNCT
+*FAT:	uhhuh .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*FAT:	probably .
+%mor:	adv|probably .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and she said +"/.
+%gpx:	looks at Pete
+%mor:	cconj|and pron|she-Prs-Nom-S3 verb|say-Fin-Ind-Past-S3-irr +"/.
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	+" good night little bird !
+%mor:	adj|good-S1 noun|night adj|little-S1 noun|bird !
+%gra:	1|2|AMOD 2|4|NMOD-UNMARKED 3|4|AMOD 4|0|ROOT 5|4|PUNCT
+*MOT:	I'll play with you tomorrow .
+%mor:	pron|I-Prs-Nom-S1~aux|will-Fin-S verb|play-Inf-S adp|with pron|you-Prs-Acc-S2 noun|tomorrow .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|OBL-UNMARKED 7|3|PUNCT
+*MOT:	is she looking out the window ?
+%mor:	aux|be-Fin-Ind-Pres-S3 pron|she-Prs-Nom-S3 verb|look-Part-Pres-S adp|out det|the-Def-Art noun|window-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|COMPOUND-PRT 5|6|DET 6|3|OBJ 7|3|PUNCT
+*FAT:	say +"/.
+%mor:	verb|say-Fin-Imp-S +"/.
+%gra:	1|0|ROOT 2|1|PUNCT
+*FAT:	+" night night rabbit .
+%mor:	noun|night noun|night noun|rabbit .
+%gra:	1|2|COMPOUND 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	night_night rabbit .
+%gpx:	looks at book
+%act:	touches Father's face
+%par:	mumbles
+%mor:	noun|nightnight noun|rabbit .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*FAT:	night_night book .
+%act:	closes book
+%mor:	noun|nightnight noun|book .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	all done ?
+%gpx:	looks at Pete
+%mor:	det|all-Def-Tot verb|do-Part-Past-S-irr ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	hm: story .
+%act:	opens book and turns page
+%mor:	intj|hm noun|story .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	okay (.) you read it to me .
+%mor:	intj|okay pron|you-Prs-Nom-S2 verb|read-Fin-Ind-Pres-S2 pron|it-Prs-Acc-S3 adp|to pron|I-Prs-Acc-S1 .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|CASE 6|3|OBL 7|3|PUNCT
+*CHI:	0 .
+%act:	gets up and carries book to Investigator . hands book to Investigator
+*INV:	are you done ?
+%mor:	aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 adj|done-S1 ?
+%gra:	1|3|COP 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	are you all finished ?
+%mor:	aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 det|all-Def-Tot verb|finish-Part-Past-S ?
+%gra:	1|4|AUX-PASS 2|4|NSUBJ-PASS 3|2|DET 4|0|ROOT 5|4|PUNCT
+*INV:	or are you going to read it to me ?
+%mor:	cconj|or aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|go-Part-Pres-S part|to verb|read-Inf-S pron|it-Prs-Acc-S3 adp|to pron|I-Prs-Acc-S1 ?
+%gra:	1|4|CC 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|9|CASE 9|6|OBL 10|4|PUNCT
+*CHI:	0 [=! mumbles] .
+%gpx:	points to book
+%act:	turns page several times
+*INV:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx going in here .
+%gpx:	looks at book
+%mor:	verb|go-Part-Pres-S adp|in adv|here .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|OBL 4|1|PUNCT
+*INV:	is he going in here ?
+%mor:	aux|be-Fin-Ind-Pres-S3 pron|he-Prs-Nom-S3 verb|go-Part-Pres-S adp|in adv|here ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|OBL 6|3|PUNCT
+*INV:	who is that ?
+%mor:	pron|who-Int aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	hm: brown in here [*] .
+%act:	turns page
+%gpx:	looks at book
+%mor:	intj|hm adj|brown-S1 adp|in adv|here .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*INV:	should we go to Daddy's bed ?
+%mor:	aux|should-Fin-S pron|we-Prs-Nom-P1 verb|go-Inf-S adp|to propn|Daddy~part|s noun|bed ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|7|CASE 5|7|NMOD-POSS 6|5|CASE 7|3|OBL 8|3|PUNCT
+*CHI:	no .
+%act:	turns page
+%gpx:	looks at book
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	Daddy's in it .
+%mor:	propn|Daddy~part|s adp|in pron|it-Prs-Acc-S3 .
+%gra:	1|4|NMOD-POSS 2|1|CASE 3|4|CASE 4|0|ROOT 5|4|PUNCT
+*INV:	night_night xxx .
+%mor:	propn|nightnight .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	oops .
+%mor:	intj|oop .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	he [*] going here .
+%gpx:	looks at book
+%mor:	pron|he-Prs-Nom-S3 verb|go-Part-Pres-S adv|here .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	he [*] going in here .
+%mor:	pron|he-Prs-Nom-S3 verb|go-Part-Pres-S adp|in adv|here .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|OBL 5|2|PUNCT
+*CHI:	xxx .
+%act:	<1w> closes book and turns away
+*INV:	do you know what he's saying ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|know-Inf-S pron|what-Rel-S1 pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|say-Part-Pres-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|7|NSUBJ 6|7|AUX 7|4|ACL-RELCL 8|3|PUNCT
+*MOT:	his own +...
+%mor:	pron|his-Prs-Gen-S3 adj|own-S1 +...
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*MOT:	he's going (2.) here .
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S adv|here .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*MOT:	face it (.) or something .
+%mor:	verb|face-Fin-Imp-S pron|it-Prs-Acc-S3 cconj|or pron|something-Ind-S1 .
+%gra:	1|0|ROOT 2|1|OBJ 3|4|CC 4|2|CONJ 5|1|PUNCT
+*INV:	I think as he turns the pages +...
+%mor:	pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 sconj|as pron|he-Prs-Nom-S3 verb|turn-Fin-Ind-Pres-S3 det|the-Def-Art noun|page-Plur-Acc +...
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|MARK 4|5|NSUBJ 5|2|ADVCL 6|7|DET 7|5|OBJ 8|2|PUNCT
+@End

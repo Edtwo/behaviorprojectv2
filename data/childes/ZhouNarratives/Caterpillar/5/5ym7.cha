@@ -1,0 +1,145 @@
+@UTF8
+@PID:	11312/a-00102406-0
+@Begin
+@Languages:	zho
+@Participants:	CHI Target_Child, INV Investigator
+@ID:	zho|ZhouNarratives|CHI|5;||||Target_Child|||
+@ID:	zho|ZhouNarratives|INV|||||Investigator|||
+@Media:	5ym7, video
+@Date:	14-OCT-2008
+@Situation:	Kindergarten of Liu Yi
+@G:	05
+@Types:	cross, narrative, TD
+*CHI:	一 天 晚上 出现 一 个 白白的 , 圆圆的 球 [^c] . 76700_159280
+%wor:	一 76700_77060 天 77060_77420 晚上 77420_77820 出现 一 个 135980_136140 白白的 , 圆圆的 球 158780_159280 .
+%act:	第1&2 页
+%mor:	num|一 noun|天 noun|晚上 verb|出现-Inf-S num|一 noun|个 adj|白白的-S1 cm|cm adj|圆圆的-S1 part|球 .
+%gra:	1|3|NUMMOD 2|1|CLF 3|4|NMOD-TMOD 4|0|ROOT 5|6|NUMMOD 6|10|NMOD 7|10|AMOD 8|7|PUNCT 9|10|COMPOUND 10|4|OBJ 11|4|PUNCT
+@G:	06
+*CHI:	到 早上 , 毛毛虫 在 陆地 上面 快要 爬 到 太阳 的 另 一 面 [^c] . 207920_283040
+%wor:	到 早上 , 毛毛虫 在 207920_208120 陆地 上面 快要 爬 到 217320_217380 太阳 的 255060_255280 另 一 265940_266020 面 282540_283040 .
+%xsgra:	$set:tim, $set:cha, $eki:21, $iki:21, $eki:31, $iki:31
+%act:	第3&4页
+%mor:	adp|到 noun|早上 cm|cm noun|毛毛虫 verb|在-Inf-S noun|陆地-Acc noun|上面-Acc adv|快要 verb|爬-Inf-S verb|到-Inf-S noun|太阳 part|的 det|另-Def num|一 noun|面-Acc .
+%gra:	1|2|CASE 2|9|OBL 3|2|PUNCT 4|9|NSUBJ 5|9|ADVCL 6|5|OBJ 7|5|OBJ 8|9|ADVMOD 9|0|ROOT 10|9|MARK 11|15|NMOD 12|11|CASE 13|15|DET 14|15|NUMMOD 15|9|OBJ 16|9|PUNCT
+@G:	07
+*CHI:	毛毛虫 站 上来 跳 着 [^c] 就 开心地 跑 [^c] . 289420_289920
+%wor:	毛毛虫 站 上来 跳 着 289420_289920 就 开心地 跑 .
+%xsgra:	$eki:41
+%act:	第5&6页
+%mor:	noun|毛毛虫 part|站 verb|上来-Inf-S verb|跳-Inf-S aux|着-Inf-Prog-S sconj|就 adv|开心地 verb|跑-Inf-S .
+%gra:	1|2|COMPOUND 2|8|NSUBJ 3|4|MARK 4|8|ADVCL 5|4|AUX 6|8|MARK 7|8|ADVMOD 8|0|ROOT 9|8|PUNCT
+*CHI:	毛毛虫 第一 天 吃 了 一 个 苹果 [^c] . 305600_336100
+%wor:	毛毛虫 第一 天 305600_305820 吃 321960_322420 了 324580_324660 一 332060_333300 个 335600_336100 苹果 .
+%xsgra:	$eps:atm1, $eki:5a3, $iki:5a1
+%act:	苹果页
+%mor:	noun|毛毛虫 num|第一 noun|天 verb|吃-Inf-S aux|了-Inf-Perf-S num|一 noun|个 noun|苹果-Acc .
+%gra:	1|4|NSUBJ 2|3|NUMMOD 3|4|NMOD-TMOD 4|0|ROOT 5|4|AUX 6|8|NUMMOD 7|6|CLF 8|4|OBJ 9|4|PUNCT
+@G:	08
+*CHI:	毛毛虫 还 <吃 了> [/] 第二 天 吃 了 两 个 梨 [^c] . 350160_353284
+%wor:	毛毛虫 350160_350280 还 350300_350320 吃 350340_350360 了 350380_350400 第二 350420_350500 天 350520_350540 吃 350560_350580 了 350600_351201 两 351221_351241 个 351261_352764 梨 352784_353284 .
+%xsgra:	$eps:atm2, $eki:6a3, $iki:6a1
+%act:	梨页
+%mor:	noun|毛毛虫 sconj|还 num|第二 noun|天 verb|吃-Inf-S aux|了-Inf-Perf-S num|两 noun|个 noun|梨-Acc .
+%gra:	1|5|NSUBJ 2|5|MARK 3|4|NUMMOD 4|5|NMOD-TMOD 5|0|ROOT 6|5|AUX 7|9|NUMMOD 8|7|CLF 9|5|OBJ 10|5|PUNCT
+@G:	09
+*CHI:	第三 天 吃 了 三 个 酸 梅 [^c] . 353825_356669
+%wor:	第三 353825_354246 天 354266_354406 吃 354426_354827 了 354847_354867 三 354887_356069 个 356089_356109 酸 356129_356149 梅 356169_356669 .
+%xsgra:	$eps:atm3, $eki:7a1, $iki:7a1
+%act:	李子 页
+%mor:	num|第三 noun|天 verb|吃-Inf-S aux|了-Inf-Perf-S num|三 noun|个 noun|酸 part|梅 .
+%gra:	1|2|NUMMOD 2|3|NMOD-TMOD 3|0|ROOT 4|3|AUX 5|6|NUMMOD 6|8|NMOD 7|8|COMPOUND 8|3|OBJ 9|3|PUNCT
+@G:	10
+*CHI:	第四 天 , 毛毛虫 吃 了 四 个 草莓 [^c] . 356229_359053
+%wor:	第四 356229_356570 天 356590_356690 , 毛毛虫 356710_358152 吃 358172_358292 了 358312_358372 四 358393_358493 个 358513_358533 草莓 358553_359053 .
+%xsgra:	$eps:atm4, $eki:8a3, $iki:8a1
+%act:	草莓页
+%mor:	num|第四 noun|天 cm|cm noun|毛毛虫 verb|吃-Inf-S aux|了-Inf-Perf-S num|四 noun|个 noun|草莓-Acc .
+%gra:	1|2|NUMMOD 2|5|NMOD-TMOD 3|2|PUNCT 4|5|NSUBJ 5|0|ROOT 6|5|AUX 7|9|NUMMOD 8|7|CLF 9|5|OBJ 10|5|PUNCT
+@G:	11
+*CHI:	第五 天 , 毛毛虫 吃 了 五 个 黄 苹果 [^c] . 358633_360114
+%wor:	第五 358633_358713 天 358733_358753 , 毛毛虫 358773_358873 吃 358893_358913 了 358933_359274 五 359294_359514 个 359534_359554 黄 359574_359594 苹果 359614_360114 .
+%xsgra:	$eps:atm5, $eki:9a2, $iki:9a1
+%act:	桔子页
+%mor:	num|第五 noun|天 cm|cm noun|毛毛虫 verb|吃-Inf-S aux|了-Inf-Perf-S num|五 noun|个 noun|黄 noun|苹果-Acc .
+%gra:	1|2|NUMMOD 2|5|NMOD-TMOD 3|2|PUNCT 4|5|NSUBJ 5|0|ROOT 6|5|AUX 7|10|NUMMOD 8|7|CLF 9|10|NMOD 10|5|OBJ 11|5|PUNCT
+@G:	12
+*CHI:	第六 天 , 毛毛虫 吃 了 <很 多> [/] 很 多的 东西 等等 [/] 等等 [^c] . 364840_371850
+%wor:	第六 364840_365721 天 365741_365881 , 毛毛虫 365901_366081 吃 366101_366162 了 366182_366282 很 366302_366562 多 366582_366763 很 366783_367003 多的 367023_367323 东西 367343_369327 等等 369347_371330 等等 371350_371850 .
+%xsgra:	$eps:atm6, $eki:a1, $iki:a1
+%act:	星期六页
+%mor:	num|第六 noun|天 cm|cm noun|毛毛虫 verb|吃-Inf-S aux|了-Inf-Perf-S adv|很 adj|多的-S1 noun|东西-Acc noun|等等 .
+%gra:	1|2|NUMMOD 2|5|NMOD-TMOD 3|2|PUNCT 4|5|NSUBJ 5|0|ROOT 6|5|AUX 7|8|ADVMOD 8|9|AMOD 9|5|OBJ 10|9|ACL 11|5|PUNCT
+*CHI:	毛毛虫 肚子 越来越 胖 [^c] .
+%mor:	noun|毛毛虫 noun|肚子 adv|越来越 adj|胖-S1 .
+%gra:	1|2|NMOD 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+@G:	13
+*CHI:	它 又 吃 了 树叶 [^c] . 371590_373613
+%wor:	它 371590_372512 又 372532_372632 吃 372652_373032 了 373052_373092 树叶 373113_373613 .
+%xsgra:	$eps:atm7, $eki:da2, $iki:da1
+%act:	星期天页
+%mor:	pron|它-Int-S3 sconj|又 verb|吃-Inf-S aux|了-Inf-Perf-S noun|树叶-Acc .
+%gra:	1|3|NSUBJ 2|3|MARK 3|0|ROOT 4|3|AUX 5|3|OBJ 6|3|PUNCT
+*CHI:	吃 了 +... 374114_375936
+%wor:	吃 374114_375416 了 375436_375936 +...
+%mor:	verb|吃-Inf-S aux|了-Inf-Perf-S +...
+%gra:	1|0|ROOT 2|1|AUX 3|1|PUNCT
+*CHI:	一 二 三 四 五 . [+ bch] 413700_424734
+%wor:	一 413700_421430 二 421450_422311 三 422331_423973 四 423993_424214 五 424234_424734 .
+%mor:	num|一 num|二 num|三 num|四 num|五 .
+%gra:	1|4|NUMMOD 2|4|NUMMOD 3|4|NUMMOD 4|0|ROOT 5|4|PUNCT 6|4|PUNCT
+*CHI:	毛毛虫 吃 了 树叶 „ 五 个 洞 [^c] . 424314_426676
+%wor:	毛毛虫 424314_424534 吃 424554_424574 了 424594_425836 树叶 425856_426076 „ 五 426096_426116 个 426136_426156 洞 426176_426676 .
+%mor:	noun|毛毛虫 verb|吃-Inf-S aux|了-Inf-Perf-S noun|树叶-Acc punct|„ num|五 noun|个 noun|洞 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|AUX 4|2|OBJ 5|8|PUNCT 6|8|NUMMOD 7|6|CLF 8|4|APPOS 9|2|PUNCT
+*CHI:	毛毛虫 还是 饿 [^c] . 430900_432242
+%wor:	毛毛虫 430900_431621 还是 431641_431722 饿 431742_432242 .
+%mor:	noun|毛毛虫 aux|是-Inf-S adj|饿-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+@G:	14
+*CHI:	毛毛虫 好 胖 啊 [^c] . 431782_432582
+%wor:	毛毛虫 431782_431882 好 431902_431922 胖 431942_432062 啊 432082_432582 .
+%xsgra:	$end:ine3, $eki:g2
+%act:	大毛毛虫页
+%mor:	noun|毛毛虫 adv|好 adj|胖-S1 part|啊 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*CHI:	毛毛虫 自己 做 茧 了 [^c] . 432383_438919
+%wor:	毛毛虫 432383_434248 自己 434268_436855 做 436875_438258 茧 438278_438398 了 438419_438919 .
+%xsgra:	$end:atm1, $eki:e1, $iki:e1
+%mor:	noun|毛毛虫 pron|自己-Int-S1 verb|做-Inf-S noun|茧-Acc part|了 .
+%gra:	1|3|NSUBJ 2|1|APPOS 3|0|ROOT 4|3|OBJ 5|3|DISCOURSE 6|3|PUNCT
+@G:	15
+*CHI:	毛毛虫 的 茧子 破 了 [^c] . 451700_456733
+%wor:	毛毛虫 451700_453445 的 453465_453966 茧子 453986_456013 破 456033_456213 了 456233_456733 .
+%mor:	noun|毛毛虫 part|的 noun|茧子 verb|破-Inf-S part|了 .
+%gra:	1|3|NMOD 2|1|CASE 3|4|NSUBJ 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*CHI:	变成 一 个 五彩缤纷的 花 蝴蝶 [^c] . 475360_478116
+%wor:	变成 475360_475682 一 475702_475722 个 475742_475783 五彩缤纷的 475803_477475 花 477495_477596 蝴蝶 477616_478116 .
+%xsgra:	$end:atm4, $end:con2, $eki:ha2, $iki:ib1, $eki:jb2, $iki:jb2
+%act:	蝴蝶页
+%mor:	verb|变成-Inf-S num|一 noun|个 noun|五彩缤纷的 part|花 noun|蝴蝶-Acc .
+%gra:	1|0|ROOT 2|6|NUMMOD 3|2|CLF 4|5|COMPOUND 5|6|NMOD 6|1|OBJ 7|1|PUNCT
+@G:	16
+*CHI:	又 出来 <很 多> [/] 很 多的 小 洞洞 [^c] . [+ bok] 529120_532888
+%wor:	又 529120_529140 出来 529160_529240 很 529260_529280 多 529300_529320 很 529340_530062 多的 530082_532328 小 532348_532368 洞洞 532388_532888 .
+%act:	封底环衬
+%mor:	sconj|又 verb|出来-Inf-S adv|很 adj|多的-S1 part|小 noun|洞洞-Acc .
+%gra:	1|2|MARK 2|0|ROOT 3|4|ADVMOD 4|6|AMOD 5|6|CASE 6|2|OBJ 7|2|PUNCT
+@G:	17
+*CHI:	又 出来 一 个 毛毛虫 [^c] . [+ bok] 532829_533831
+%wor:	又 532829_532970 出来 532990_533070 一 533090_533110 个 533130_533311 毛毛虫 533331_533831 .
+%act:	封底
+%mor:	sconj|又 verb|出来-Inf-S num|一 noun|个 noun|毛毛虫-Acc .
+%gra:	1|2|MARK 2|0|ROOT 3|5|NUMMOD 4|3|CLF 5|2|OBJ 6|2|PUNCT
+*CHI:	蝴蝶 [^c] . [+ bok]
+%mor:	noun|蝴蝶 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	讲 完 了 [^c] . [+ str] 558420_559086
+%wor:	讲 558420_558482 完 558503_558566 了 558586_559086 .
+%mor:	verb|讲-Inf-S verb|完-Inf-S part|了 .
+%gra:	1|0|ROOT 2|1|MARK 3|1|DISCOURSE 4|1|PUNCT
+*INV:	&~哇 真 好听 . 558691_559253
+%wor:	真 558691_558733 好听 558753_559253 .
+%mor:	adv|真 adj|好听-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+@End

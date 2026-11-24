@@ -1,0 +1,160 @@
+@UTF8
+@PID:	11312/a-00102429-0
+@Begin
+@Languages:	zho
+@Participants:	CHI Target_Child, INV Investigator
+@ID:	zho|ZhouNarratives|CHI|6;||||Target_Child|||
+@ID:	zho|ZhouNarratives|INV|||||Investigator|||
+@Media:	6ym15, video
+@Date:	13-OCT-2008
+@Situation:	Kindergarten of Wei Hua
+@G:	05
+@Types:	cross, narrative, TD
+*CHI:	一 个 夜晚 [^c] . 1010_2254
+%wor:	一 1010_1693 个 1713_1734 夜晚 1754_2254 .
+%act:	第1&2 页
+%mor:	num|一 noun|个 noun|夜晚 .
+%gra:	1|3|NUMMOD 2|1|CLF 3|0|ROOT 4|3|PUNCT
+*INV:	嗯 .
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	忽然 有 一 个 小小的 虫 [^c] . 1834_2716
+%wor:	忽然 1834_1894 有 1915_1935 一 1955_1975 个 1995_2035 小小的 2055_2196 虫 2216_2716 .
+%xsgra:	$set:cha
+%mor:	adv|忽然 verb|有-Inf-S num|一 noun|个 adj|小小的-S1 part|虫 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|NUMMOD 4|6|NMOD 5|6|COMPOUND 6|2|OBJ 7|2|PUNCT
+*INV:	嗯 .
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	后来 呢 ?
+%mor:	noun|后来 part|呢 ?
+%gra:	1|0|ROOT 2|1|CASE 3|1|PUNCT
+@G:	06
+*CHI:	然后 小小 虫 出来 了 [^c] . 2256_3380
+%wor:	然后 2256_2317 小小 2337_2598 虫 2618_2639 出来 2659_2860 了 2880_3380 .
+%act:	第3&4 页
+%mor:	adv|然后 adj|小小-S1 part|虫 verb|出来-Inf-S part|了 .
+%gra:	1|4|ADVMOD 2|3|COMPOUND 3|4|NSUBJ 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*CHI:	等 早晨 [^c] .
+%mor:	noun|等 noun|早晨 .
+%gra:	1|2|NMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	看 小小 虫 出来 了 [^c] . 14030_16400
+%wor:	看 14030_14290 小小 15357_15618 虫 15638_15659 出来 15679_15880 了 15900_16400 .
+%xsgra:	$set:tim, $set:cha, $eki:31, $iki:32
+%mor:	verb|看-Inf-S adj|小小-S1 part|虫 verb|出来-Inf-S part|了 .
+%gra:	1|4|ADVCL 2|3|COMPOUND 3|4|NSUBJ 4|0|ROOT 5|1|DISCOURSE 6|4|PUNCT
+*INV:	嗯 .
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+@G:	07
+*CHI:	然后 小小 虫 够 不 到 太阳 , [^c] 就 决定 去 钻 洞 [^c] . 221670_228879
+%wor:	然后 221670_221910 小小 221930_222010 虫 222030_223232 够 223252_227277 不 227297_227317 到 227337_227498 太阳 227518_227578 , 就 227598_227798 决定 227818_227898 去 227918_227978 钻 227998_228359 洞 228379_228879 .
+%xsgra:	$eki:41
+%act:	第5&6 页
+%mor:	adv|然后 adj|小小-S1 part|虫 adv|够 adv|不 verb|到-Inf-S noun|太阳-Acc cm|cm sconj|就 verb|决定-Inf-S verb|去-Inf-S verb|钻-Inf-S part|洞 .
+%gra:	1|10|ADVMOD 2|3|COMPOUND 3|10|NSUBJ 4|6|ADVMOD 5|6|ADVMOD 6|10|ADVCL 7|6|OBJ 8|6|PUNCT 9|10|MARK 10|0|ROOT 11|10|XCOMP 12|13|COMPOUND 13|11|OBJ 14|10|PUNCT
+*CHI:	它 钻 了 个 苹果 洞 [^c] 又 出来 [^c] . 228880_231362
+%wor:	它 228880_229080 钻 229100_229460 了 229481_229621 个 229641_230622 苹果 230642_230722 洞 230742_230802 又 230822_230842 出来 230862_231362 .
+%xsgra:	$eki:5a2
+%act:	苹果页
+%mor:	pron|它-Int-S3 verb|钻-Inf-S aux|了-Inf-Perf-S noun|个 propn|苹果 part|洞 sconj|又 verb|出来-Inf-S .
+%gra:	1|8|NSUBJ 2|8|ADVCL 3|2|AUX 4|6|NMOD 5|6|COMPOUND 6|2|OBJ 7|8|MARK 8|0|ROOT 9|8|PUNCT
+@G:	08
+*CHI:	它 钻 了 两 个 梨 洞 [^c] 又 出来 了 [^c] . 236510_240232
+%wor:	它 236510_237370 钻 237390_237410 了 237430_237450 两 237470_238251 个 238271_238471 梨 238491_238511 洞 238531_239452 又 239472_239492 出来 239512_239712 了 239732_240232 .
+%xsgra:	$eki:6a3
+%act:	梨页
+%mor:	pron|它-Int-S3 verb|钻-Inf-S aux|了-Inf-Perf-S num|两 noun|个 noun|梨 part|洞 sconj|又 verb|出来-Inf-S part|了 .
+%gra:	1|9|NSUBJ 2|9|ADVCL 3|2|AUX 4|5|NUMMOD 5|7|NMOD 6|7|COMPOUND 7|2|OBJ 8|9|MARK 9|0|ROOT 10|9|DISCOURSE 11|9|PUNCT
+@G:	09
+*CHI:	它 钻 了 三 个 苹果 洞 [^c] 也 出来 了 [^c] . 239772_240873
+%wor:	它 239772_239792 钻 239812_239852 了 239872_239912 三 239932_239952 个 239972_240052 苹果 240073_240153 洞 240173_240193 也 240213_240233 出来 240253_240353 了 240373_240873 .
+%xsgra:	$eki:7a2
+%act:	李子页
+%mor:	pron|它-Int-S3 verb|钻-Inf-S aux|了-Inf-Perf-S num|三 noun|个 noun|苹果 part|洞 sconj|也 verb|出来-Inf-S part|了 .
+%gra:	1|9|NSUBJ 2|9|ADVCL 3|2|AUX 4|5|NUMMOD 5|7|NMOD 6|7|COMPOUND 7|2|OBJ 8|9|MARK 9|0|ROOT 10|9|DISCOURSE 11|9|PUNCT
+@G:	10
+*CHI:	钻 了 四 个 草莓 洞 , [^c] 又 出来 了 [^c] . 240413_244356
+%wor:	钻 240413_240473 了 240493_241694 四 241714_241954 个 241974_241994 草莓 242014_242214 洞 242234_242455 , 又 242475_242555 出来 242575_243836 了 243856_244356 .
+%xsgra:	$eki:8a2
+%act:	草莓页
+%mor:	verb|钻-Inf-S aux|了-Inf-Perf-S num|四 noun|个 noun|草莓 part|洞 cm|cm sconj|又 verb|出来-Inf-S part|了 .
+%gra:	1|9|ADVCL 2|1|AUX 3|4|NUMMOD 4|6|NMOD 5|6|COMPOUND 6|1|OBJ 7|9|PUNCT 8|9|MARK 9|0|ROOT 10|9|DISCOURSE 11|9|PUNCT
+@G:	11
+*CHI:	<钻 了 五 个> [/] 钻 了 五 个 桔子 洞 , [^c] 又 出来 了 [^c] . 249960_256307
+%wor:	钻 249960_252002 了 252022_255026 五 255046_255106 个 255127_255327 钻 255347_255387 了 255407_255427 五 255447_255467 个 255487_255507 桔子 255527_255587 洞 255607_255627 , 又 255647_255667 出来 255687_255787 了 255807_256307 .
+%xsgra:	$eki:9a2
+%act:	桔子页
+%mor:	verb|钻-Inf-S aux|了-Inf-Perf-S num|五 noun|个 noun|桔子 part|洞 cm|cm sconj|又 verb|出来-Inf-S part|了 .
+%gra:	1|9|ADVCL 2|1|AUX 3|4|NUMMOD 4|6|NMOD 5|6|COMPOUND 6|1|OBJ 7|1|PUNCT 8|9|MARK 9|0|ROOT 10|9|DISCOURSE 11|9|PUNCT
+@G:	12
+*CHI:	然后 它 钻 了 一 个 吃 的 东西 [^c] . 255948_257209
+%wor:	然后 255948_256028 它 256048_256148 钻 256168_256188 了 256208_256228 一 256248_256268 个 256288_256488 吃 256508_256528 的 256548_256689 东西 256709_257209 .
+%act:	星期六 页
+%mor:	adv|然后 pron|它-Int-S3 verb|钻-Inf-S aux|了-Inf-Perf-S num|一 noun|个 verb|吃-Inf-S sconj|的 noun|东西-Acc .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|AUX 5|6|NUMMOD 6|9|NMOD 7|9|ACL-RELCL 8|7|MARK-REL 9|3|OBJ 10|3|PUNCT
+*CHI:	钻 了 一 个 洞 [^c] . 256949_257850
+%wor:	钻 256949_257029 了 257049_257169 一 257189_257289 个 257309_257330 洞 257350_257850 .
+%mor:	verb|钻-Inf-S aux|了-Inf-Perf-S num|一 noun|个 noun|洞-Acc .
+%gra:	1|0|ROOT 2|1|AUX 3|5|NUMMOD 4|3|CLF 5|1|OBJ 6|1|PUNCT
+*CHI:	钻 了 一 个 洞 [^c] . 257390_258851
+%wor:	钻 257390_257410 了 257430_257450 一 257470_257970 个 257990_258331 洞 258351_258851 .
+%mor:	verb|钻-Inf-S aux|了-Inf-Perf-S num|一 noun|个 noun|洞-Acc .
+%gra:	1|0|ROOT 2|1|AUX 3|5|NUMMOD 4|3|CLF 5|1|OBJ 6|1|PUNCT
+*CHI:	钻 了 一 个 洞 [^c] . 258431_259772
+%wor:	钻 258431_258651 了 258671_258691 一 258711_259032 个 259052_259252 洞 259272_259772 .
+%mor:	verb|钻-Inf-S aux|了-Inf-Perf-S num|一 noun|个 noun|洞-Acc .
+%gra:	1|0|ROOT 2|1|AUX 3|5|NUMMOD 4|3|CLF 5|1|OBJ 6|1|PUNCT
+*CHI:	钻 了 一 个 洞 [^c] . 264680_267003
+%wor:	钻 264680_266342 了 266362_266382 一 266402_266422 个 266443_266483 洞 266503_267003 .
+%mor:	verb|钻-Inf-S aux|了-Inf-Perf-S num|一 noun|个 noun|洞-Acc .
+%gra:	1|0|ROOT 2|1|AUX 3|5|NUMMOD 4|3|CLF 5|1|OBJ 6|1|PUNCT
+*CHI:	钻 了 一 个 洞 [^c] . 266563_268826
+%wor:	钻 266563_266603 了 266623_266823 一 266843_268125 个 268145_268306 洞 268326_268826 .
+%mor:	verb|钻-Inf-S aux|了-Inf-Perf-S num|一 noun|个 noun|洞-Acc .
+%gra:	1|0|ROOT 2|1|AUX 3|5|NUMMOD 4|3|CLF 5|1|OBJ 6|1|PUNCT
+*CHI:	又 钻 了 一 个 洞 [^c] . 268366_269066
+%wor:	又 268366_268386 钻 268406_268426 了 268446_268466 一 268486_268506 个 268526_268546 洞 268566_269066 .
+%mor:	sconj|又 verb|钻-Inf-S aux|了-Inf-Perf-S num|一 noun|个 noun|洞-Acc .
+%gra:	1|2|MARK 2|0|ROOT 3|2|AUX 4|6|NUMMOD 5|4|CLF 6|2|OBJ 7|2|PUNCT
+*INV:	嗯 .
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+@G:	13
+*CHI:	然后 [/] 然后 在 [/] 在 树叶 上 连续 钻 了 四 个 洞 [^c] . 268606_269827
+%wor:	然后 268606_268666 然后 268686_268746 在 268766_268786 在 268807_268847 树叶 268867_268967 上 268987_269007 连续 269027_269087 钻 269107_269167 了 269187_269207 四 269227_269267 个 269287_269307 洞 269327_269827 .
+%xsgra:	$eki:da1
+%act:	星期天页
+%mor:	adv|然后 adp|在 noun|树叶 adp|上 adv|连续 verb|钻-Inf-S aux|了-Inf-Perf-S num|四 noun|个 noun|洞-Acc .
+%gra:	1|6|ADVMOD 2|3|CASE 3|6|OBL 4|3|CASE 5|6|ADVMOD 6|0|ROOT 7|6|AUX 8|10|NUMMOD 9|8|CLF 10|6|OBJ 11|6|PUNCT
+*CHI:	然后 又 从 树叶 枝 上 爬 了 [^c] . 269367_276759
+%wor:	然后 269367_269428 又 269448_269468 从 269488_269948 树叶 269969_271551 枝 271571_271591 上 271611_273535 爬 273555_276239 了 276259_276759 .
+%mor:	adv|然后 sconj|又 adp|从 noun|树叶 part|枝 noun|上 verb|爬-Inf-S part|了 .
+%gra:	1|7|ADVMOD 2|7|MARK 3|5|CASE 4|5|COMPOUND 5|7|OBL 6|5|ACL 7|0|ROOT 8|7|DISCOURSE 9|7|PUNCT
+*CHI:	它 爬 了 过来 . 294640_295269
+%wor:	它 294640_294661 爬 294683_294704 了 294726_294747 过来 294769_295269 .
+%mor:	pron|它-Int-S3 verb|爬-Inf-S aux|了-Inf-Perf-S verb|过来-Inf-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|AUX 4|2|MARK 5|2|PUNCT
+@G:	14
+*CHI:	然后 小小 虫 看 到 <一 个> [/] 一 个 跟 它 一样的 形状状 [: 形状] [^c] . 312260_312760
+%wor:	然后 小小 虫 312260_312281 看 到 一 个 一 个 跟 它 312260_312760 一样的 形状 .
+%xsgra:	$eki:e1
+%act:	大 毛毛虫页
+%mor:	adv|然后 adj|小小-S1 part|虫 verb|看-Inf-S verb|到-Inf-S num|一 noun|个 adp|跟 pron|它-Int-S3 part|一样的 noun|形状-Acc .
+%gra:	1|4|ADVMOD 2|3|COMPOUND 3|4|NSUBJ 4|0|ROOT 5|4|MARK 6|11|NUMMOD 7|6|CLF 8|11|CASE 9|11|DET 10|9|CASE 11|4|OBJ 12|4|PUNCT
+*CHI:	它 以为 [^c] 这 是 什么 呢 [^c] ? 519150_551730
+%wor:	它 519150_519171 以为 这 520110_520350 是 545610_545730 什么 545730_545930 呢 551230_551730 ?
+%mor:	pron|它-Int-S3 verb|为-Inf-S pron|这-Int-S1 aux|是-Inf-S pron|什么-Int-S1 part|呢 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|NSUBJ 4|5|COP 5|2|CCOMP 6|2|DISCOURSE 7|2|PUNCT
+*INV:	结果 呢 . 558810_559422
+%wor:	结果 558810_558900 呢 558922_559422 .
+%mor:	noun|结果 part|呢 .
+%gra:	1|0|ROOT 2|1|CASE 3|1|PUNCT
+@G:	15
+*CHI:	结果 小小 虫 就 变成 蝴蝶 了 [^c] . 561390_582080
+%wor:	结果 561390_561480 小小 虫 561390_561630 就 变成 蝴蝶 了 581580_582080 .
+%xsgra:	$end:con2, $eki:jb1, $iki:jb2
+%act:	蝴蝶页
+%mor:	noun|结果 adj|小小-S1 part|虫 sconj|就 verb|变成-Inf-S noun|蝴蝶-Acc part|了 .
+%gra:	1|5|OBL 2|3|COMPOUND 3|5|NSUBJ 4|5|MARK 5|0|ROOT 6|5|OBJ 7|5|DISCOURSE 8|5|PUNCT
+@End

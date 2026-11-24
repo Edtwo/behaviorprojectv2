@@ -1,0 +1,203 @@
+@UTF8
+@PID:	11312/a-00102376-0
+@Begin
+@Languages:	zho
+@Participants:	CHI Target_Child, INV Investigator
+@ID:	zho|ZhouNarratives|CHI|4;||||Target_Child|||
+@ID:	zho|ZhouNarratives|INV|||||Investigator|||
+@Media:	4ym4, video
+@Date:	20-NOV-2008
+@Situation:	Kindergarten of Wei Hua
+@G:	01
+@Types:	cross, narrative, TD
+*CHI:	好 饿的 毛毛虫 [^c] . 91570_92217
+%wor:	好 91570_91591 饿的 91612_91696 毛毛虫 91717_92217 .
+%act:	封面
+%mor:	adv|好 adj|饿的-S1 noun|毛毛虫 .
+%gra:	1|2|ADVMOD 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*INV:	噢 [^c] .
+%mor:	punct|噢 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	哎 ‡ [^c] 你 一边 翻 , [^c] 一边 讲 给 她 听 [^c] . 105690_111076
+%wor:	哎 105690_109375 ‡ 你 109395_109895 一边 109915_110196 翻 110216_110296 , 一边 110316_110416 讲 110436_110456 给 110476_110516 她 110536_110556 听 110576_111076 .
+%mor:	punct|哎 propn|‡ pron|你-Int-S2 adv|一边 verb|翻-Inf-S cm|cm adv|一边 verb|讲-Inf-S verb|给-Inf-S pron|她-Int-S3 verb|听-Inf-S .
+%gra:	1|5|PUNCT 2|5|NSUBJ 3|2|APPOS 4|5|ADVMOD 5|11|ADVCL 6|5|PUNCT 7|8|ADVMOD 8|5|CONJ 9|8|MARK 10|8|OBJ 11|0|ROOT 12|11|PUNCT
+*INV:	让 朵拉 躺 在 这里 听 啊 [^c] . 110677_111717
+%wor:	让 110677_110717 朵拉 110737_110797 躺 110817_110937 在 110957_110977 这里 110997_111077 听 111097_111197 啊 111217_111717 .
+%act:	把朵拉放在桌上 .
+%mor:	verb|让-Inf-S propn|朵拉 verb|躺-Inf-S verb|在-Inf-S pron|这里-Int-S1 verb|听-Inf-S part|啊 .
+%gra:	1|0|ROOT 2|6|NSUBJ 3|6|ADVCL 4|3|MARK 5|3|OBJ 6|1|CCOMP 7|6|DISCOURSE 8|1|PUNCT
+@G:	05
+*CHI:	月亮 出来 了 .
+%mor:	noun|月亮 verb|出来-Inf-S part|了 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*CHI:	有 个 小 东西 [^c] . 111257_112318
+%wor:	有 111257_111338 个 111358_111418 小 111438_111798 东西 111818_112318 .
+%xsgra:	$set:cha, $eki:11
+%act:	翻到第一合页指虫卵 .
+%mor:	verb|有-Inf-S noun|个 part|小 noun|东西-Acc .
+%gra:	1|0|ROOT 2|4|NMOD 3|4|CASE 4|1|OBJ 5|1|PUNCT
+*INV:	噢 [^c] .
+%mor:	punct|噢 .
+%gra:	1|0|ROOT 2|1|PUNCT
+@G:	06
+*CHI:	太阳 出来 了 [^c] .
+%mor:	noun|太阳 verb|出来-Inf-S part|了 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*CHI:	小 点点 就 不见 了 [^c] . 124610_125550
+%wor:	小 124610_124630 点点 124650_124790 就 124810_124930 不见 124950_125030 了 125050_125550 .
+%xsgra:	$set:tim, $eki:21
+%act:	翻到第二合页 .
+%mor:	part|小 noun|点点 sconj|就 verb|见-Inf-Neg-S part|了 .
+%gra:	1|2|CASE 2|4|NSUBJ 3|4|MARK 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*INV:	噢 [^c] .
+%mor:	punct|噢 .
+%gra:	1|0|ROOT 2|1|PUNCT
+@G:	07
+*CHI:	出来 了 一 只 小 毛毛虫 [^c] . 125090_125851
+%wor:	出来 125090_125150 了 125170_125210 一 125230_125251 只 125271_125291 小 125311_125331 毛毛虫 125351_125851 .
+%xsgra:	$set:cha, $eki:31, $iki:31
+%act:	翻到第三合页 .
+%mor:	verb|出来-Inf-S aux|了-Inf-Perf-S num|一 noun|只 part|小 noun|毛毛虫-Acc .
+%gra:	1|0|ROOT 2|1|AUX 3|6|NUMMOD 4|3|CLF 5|6|CASE 6|1|OBJ 7|1|PUNCT
+*INV:	噢 [^c] .
+%mor:	punct|噢 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	它 一 天 , 星期一 , 吃 了 一 个 苹果 [^c] . 125471_126432
+%wor:	它 125471_125491 一 125511_125531 天 125551_125571 , 星期一 125591_125691 , 吃 125711_125771 了 125791_125831 一 125851_125871 个 125892_125912 苹果 125932_126432 .
+%xsgra:	$eps:atm1, $eki:5a3, $iki:5a1, $cki:5a1
+%mor:	pron|它-Int-S3 num|一 noun|天 cm|cm noun|星期一 cm|cm verb|吃-Inf-S aux|了-Inf-Perf-S num|一 noun|个 noun|苹果-Acc .
+%gra:	1|3|NSUBJ 2|3|NUMMOD 3|7|NMOD-TMOD 4|5|PUNCT 5|3|CONJ 6|7|CC 7|0|ROOT 8|7|AUX 9|11|NUMMOD 10|9|CLF 11|7|OBJ 12|7|PUNCT
+@G:	08
+*CHI:	星期二 , 它 吃 了 两 个 梨 [^c] . 126092_130338
+%wor:	星期二 126092_129577 , 它 129597_129617 吃 129637_129657 了 129677_129697 两 129717_129738 个 129758_129818 梨 129838_130338 .
+%xsgra:	$eps:atm2, $eki:6a3, $iki:6a1, $cki:6a1
+%act:	翻到梨子页 .
+%mor:	noun|星期二 cm|cm pron|它-Int-S3 verb|吃-Inf-S aux|了-Inf-Perf-S num|两 noun|个 noun|梨-Acc .
+%gra:	1|4|NMOD-TMOD 2|1|PUNCT 3|4|NSUBJ 4|0|ROOT 5|4|AUX 6|8|NUMMOD 7|6|CLF 8|4|OBJ 9|4|PUNCT
+*INV:	噢 [^c] .
+%mor:	punct|噢 .
+%gra:	1|0|ROOT 2|1|PUNCT
+@G:	09
+*CHI:	星期三 , 吃 了 三 个 蓝莓 [^c] . 142550_146032
+%wor:	星期三 142550_145351 , 吃 145371_145392 了 145412_145432 三 145452_145472 个 145492_145512 蓝莓 145532_146032 .
+%xsgra:	$eps:atm3, $eki:7a1, $iki:7a1, $cki:7a1
+%act:	翻到李子页 .
+%mor:	noun|星期三 cm|cm verb|吃-Inf-S aux|了-Inf-Perf-S num|三 noun|个 noun|蓝莓-Acc .
+%gra:	1|3|NMOD-TMOD 2|1|PUNCT 3|0|ROOT 4|3|AUX 5|7|NUMMOD 6|5|CLF 7|3|OBJ 8|3|PUNCT
+*INV:	噢 .
+%mor:	punct|噢 .
+%gra:	1|0|ROOT 2|1|PUNCT
+@G:	10
+*CHI:	星期四 , 吃 了 四 个 草莓 [^c] . 145612_148573
+%wor:	星期四 145612_146452 , 吃 146472_147273 了 147293_147973 四 147993_148013 个 148033_148053 草莓 148073_148573 .
+%xsgra:	$eps:atm4, $eki:8a2, $iki:8a1, $cki:8a1
+%act:	翻到草莓页 .
+%mor:	noun|星期四 cm|cm verb|吃-Inf-S aux|了-Inf-Perf-S num|四 noun|个 noun|草莓-Acc .
+%gra:	1|3|NMOD-TMOD 2|1|PUNCT 3|0|ROOT 4|3|AUX 5|7|NUMMOD 6|5|CLF 7|3|OBJ 8|3|PUNCT
+@G:	12
+*CHI:	星期五 , 吃 了 好多 个 东西 [^c] . 149094_155658
+%wor:	星期五 149094_149454 , 吃 149474_149494 了 149514_149554 好多 149574_153017 个 153037_155138 东西 155158_155658 .
+%act:	翻到星期六页 .
+%mor:	noun|星期五 cm|cm verb|吃-Inf-S aux|了-Inf-Perf-S num|好多 noun|个 noun|东西-Acc .
+%gra:	1|3|NSUBJ 2|1|PUNCT 3|0|ROOT 4|3|AUX 5|7|NUMMOD 6|5|CLF 7|3|OBJ 8|3|PUNCT
+@G:	11
+*CHI:	哦 ‡ [^c] 星期五 , 吃 了 <一 个> [/] 五 个 桔子 [^c] . 160490_165873
+%wor:	哦 160490_160590 ‡ 星期五 160610_163832 , 吃 163852_163972 了 163992_164032 一 164052_164372 个 164392_164532 五 164552_164713 个 164733_165353 桔子 165373_165873 .
+%xsgra:	$eps:atm5, $eki:9a2, $iki:9a1, $cki:9a1
+%act:	意识到翻错了翻回桔子页
+%mor:	punct|哦 punct|‡ noun|星期五 cm|cm verb|吃-Inf-S aux|了-Inf-Perf-S num|五 noun|个 noun|桔子-Acc .
+%gra:	1|3|PUNCT 2|3|PUNCT 3|5|NSUBJ 4|3|PUNCT 5|0|ROOT 6|5|AUX 7|9|NUMMOD 8|7|CLF 9|5|OBJ 10|5|PUNCT
+@G:	12
+*CHI:	星期六 呢 , 吃 了 [^c] +... 165513_167054
+%wor:	星期六 165513_166234 呢 166254_166454 , 吃 166474_166534 了 166554_167054 +...
+%act:	从左往右数食物 .
+%mor:	noun|星期六 part|呢 cm|cm verb|吃-Inf-S part|了 +...
+%gra:	1|4|NMOD-TMOD 2|1|CASE 3|4|PUNCT 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*CHI:	一 个 [^c] . [+ bok]
+%mor:	num|一 noun|个 .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	两 个 [^c] . [+ bok] 166854_167514
+%wor:	两 166854_166994 个 167014_167514 .
+%mor:	num|两 noun|个 .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	三 个 [^c] . [+ bok] 167274_167874
+%wor:	三 167274_167354 个 167374_167874 .
+%mor:	num|三 noun|个 .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	四 个 [^c] . [+ bok] 167755_168335
+%wor:	四 167755_167815 个 167835_168335 .
+%mor:	num|四 noun|个 .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	五 个 [^c] . [+ bok] 167895_170156
+%wor:	五 167895_169636 个 169656_170156 .
+%mor:	num|五 noun|个 .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	六 个 [^c] . [+ bok] 172798_173519
+%wor:	六 172798_172999 个 173019_173519 .
+%mor:	num|六 noun|个 .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	七 个 [^c] . [+ bok] 175240_175800
+%wor:	七 175240_175280 个 175300_175800 .
+%mor:	num|七 noun|个 .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	八 个 [^c] . [+ bok] 175340_177722
+%wor:	八 175340_177202 个 177222_177722 .
+%mor:	num|八 noun|个 .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	九 个 [^c] . [+ bok] 177423_177983
+%wor:	九 177423_177463 个 177483_177983 .
+%mor:	num|九 noun|个 .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	十 个 [^c] . [+ bok] 177543_178423
+%wor:	十 177543_177903 个 177923_178423 .
+%mor:	num|十 noun|个 .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	十 一 个 [^c] . [+ bok] 178104_178684
+%wor:	十 178104_178124 一 178144_178164 个 178184_178684 .
+%mor:	num|十 num|一 noun|个 .
+%gra:	1|3|NUMMOD 2|3|NUMMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	+, 吃 了 西瓜 , 蛋糕 , 香肠 , 冰淇淋 , 棒棒糖 , 香肠 , 奶酪 , 丝瓜 , 冰淇淋 , 还有 红果 , 蛋糕 [^c] . 178224_189299
+%wor:	吃 178224_178244 了 178264_178284 西瓜 178304_178364 , 蛋糕 178384_183732 , 香肠 183752_183852 , 冰淇淋 183872_183992 , 棒棒糖 184012_184613 , 香肠 184633_184693 , 奶酪 184713_185154 , 丝瓜 185174_185414 , 冰淇淋 185434_185535 , 还有 185555_188699 红果 188719_188779 , 蛋糕 188799_189299 .
+%xsgra:	$eps:atm6, $eki:a7, $iki:a1, $cki:a1
+%act:	从右往左说食物的名称 .
+%mor:	verb|吃-Inf-S aux|了-Inf-Perf-S noun|西瓜-Acc cm|cm noun|蛋糕 cm|cm noun|香肠 cm|cm noun|冰淇淋 cm|cm noun|棒棒糖 cm|cm noun|香肠 cm|cm noun|奶酪 cm|cm noun|丝瓜 cm|cm noun|冰淇淋 cm|cm verb|还有-Inf-S noun|红果-Acc cm|cm noun|蛋糕 .
+%gra:	1|0|ROOT 2|1|AUX 3|1|OBJ 4|5|PUNCT 5|3|CONJ 6|7|PUNCT 7|3|CONJ 8|9|PUNCT 9|3|CONJ 10|11|PUNCT 11|3|CONJ 12|13|PUNCT 13|3|CONJ 14|15|PUNCT 15|3|CONJ 16|17|PUNCT 17|3|CONJ 18|19|PUNCT 19|3|CONJ 20|21|PUNCT 21|1|PARATAXIS 22|21|OBJ 23|24|PUNCT 24|22|CONJ 25|1|PUNCT
+@G:	14
+*CHI:	它 就 变成 了 一 个 可 饿的 毛毛虫 [^c] . 192240_202214
+%wor:	它 192240_193702 就 193722_196446 变成 196466_200011 了 200031_200151 一 200171_200592 个 200612_200652 可 200672_201614 饿的 201634_201694 毛毛虫 201714_202214 .
+%xsgra:	$eki:e1
+%act:	翻到大毛毛虫页 .
+%mor:	pron|它-Int-S3 sconj|就 verb|变成-Inf-S aux|了-Inf-Perf-S num|一 noun|个 aux|可-Inf-S verb|饿的-Inf-S noun|毛毛虫-Acc .
+%gra:	1|3|NSUBJ 2|3|MARK 3|0|ROOT 4|3|AUX 5|9|NUMMOD 6|5|CLF 7|8|AUX 8|9|AMOD 9|3|OBJ 10|3|PUNCT
+*CHI:	它 在 一 个 屋子 下 [^c] . 203076_203856
+%wor:	它 203076_203116 在 203136_203156 一 203176_203216 个 203236_203256 屋子 203276_203336 下 203356_203856 .
+%xsgra:	$eki:ha1, $iki:ha1
+%mor:	pron|它-Int-S3 adp|在 num|一 noun|个 noun|屋子 adp|下 .
+%gra:	1|5|NSUBJ 2|5|CASE 3|5|NUMMOD 4|3|CLF 5|0|ROOT 6|5|CASE 7|5|PUNCT
+*INV:	在 一 个 什么 下 [^c] ? 239966_240686
+%wor:	在 239966_239986 一 240006_240046 个 240066_240086 什么 下 240186_240686 ?
+%mor:	adp|在 num|一 noun|个 pron|什么-Int-S1 adp|下 ?
+%gra:	1|4|CASE 2|4|NUMMOD 3|2|CLF 4|0|ROOT 5|4|CASE 6|4|PUNCT
+*CHI:	在 一 个 屋 下 [^c] . [+ bch] 325046_325766
+%wor:	在 325046_325066 一 325086_325126 个 325146_325166 屋 325186_325246 下 325266_325766 .
+%mor:	adp|在 num|一 noun|个 noun|屋 adp|下 .
+%gra:	1|4|CASE 2|4|NUMMOD 3|2|CLF 4|0|ROOT 5|4|CASE 6|4|PUNCT
+@G:	15
+*CHI:	发现 自己 已经 变 瘦 了 [^c] . 424160_430614
+%wor:	发现 424160_426686 自己 426706_426826 已经 426846_429913 变 429933_429953 瘦 429973_430094 了 430114_430614 .
+%mor:	verb|发现-Inf-S pron|自己-Int-S1 adv|已经 verb|变-Inf-S adj|瘦-S1 part|了 .
+%gra:	1|0|ROOT 2|4|NSUBJ 3|4|ADVMOD 4|1|CCOMP 5|4|XCOMP 6|1|DISCOURSE 7|1|PUNCT
+*CHI:	变成 了 一 个 漂亮的 蝴蝶 [^c] . 439160_441550
+%wor:	变成 439160_439220 了 439240_439260 一 439280_439300 个 439320_439381 漂亮的 439401_441030 蝴蝶 441050_441550 .
+%xsgra:	$end:con2, $eki:jb2, $iki:jb2
+%act:	翻到蝴蝶页 .
+%mor:	verb|变成-Inf-S aux|了-Inf-Perf-S num|一 noun|个 adj|漂亮的-S1 noun|蝴蝶-Acc .
+%gra:	1|0|ROOT 2|1|AUX 3|6|NUMMOD 4|3|CLF 5|6|AMOD 6|1|OBJ 7|1|PUNCT
+@G:	16
+*CHI:	讲 完 了 [^c] . 472220_472720
+%wor:	讲 完 了 472220_472720 .
+%act:	翻到封底环衬 .
+%mor:	verb|讲-Inf-S verb|完-Inf-S part|了 .
+%gra:	1|0|ROOT 2|1|MARK 3|1|DISCOURSE 4|1|PUNCT
+@End

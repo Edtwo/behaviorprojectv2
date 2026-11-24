@@ -1,0 +1,277 @@
+@UTF8
+@PID:	11312/a-00102309-0
+@Begin
+@Languages:	zho
+@Participants:	INV Investigator, CHI Target_Child
+@ID:	zho|ZhouNarratives|INV|||||Investigator|||
+@ID:	zho|ZhouNarratives|CHI|6;||||Target_Child|||
+@Comment:	[ba3 morphotag | engine=stanza-1.11.1 ; lang=zho | 2026-05-07T09:17:29-04:00]
+@Media:	6yf3, video
+@Date:	04-MAR-2017
+@Situation:	Kindergarten of Hua Shi Zi Zhu Fu You
+@Types:	cross, narrative, TD
+*INV:	孩名 你 把 那 本 书 拿 过来 . 740_3568
+%wor:	孩名 740_2044 你 2064_2124 把 2144_2486 那 2506_2546 本 2566_2867 书 2887_3008 拿 3028_3048 过来 3068_3568 .
+%mor:	noun|孩名 pron|你-Int-S2 adp|把 det|那-Def noun|本 noun|书 verb|拿-Inf-S verb|过来-Inf-S .
+%gra:	1|7|NSUBJ 2|7|NSUBJ 3|6|CASE 4|5|DET 5|6|CLF 6|7|OBL-PATIENT 7|0|ROOT 8|7|MARK 9|7|PUNCT
+*INV:	先 自己 看 一 遍 . 3148_3869
+%wor:	先 3148_3188 自己 3208_3268 看 3289_3309 一 3329_3349 遍 3369_3869 .
+%mor:	sconj|先 pron|自己-Int-S1 verb|看-Inf-S num|一 noun|遍-Acc .
+%gra:	1|3|MARK 2|3|NSUBJ 3|0|ROOT 4|5|NUMMOD 5|3|OBJ 6|3|PUNCT
+*INV:	等 一会儿 再 讲 给 我们 听 , 讲 给 朵拉 听 [^c] ! 3409_6097
+%wor:	等 3409_3429 一会儿 3449_5115 再 5135_5195 讲 5215_5256 给 5276_5296 我们 5316_5376 听 5396_5416 , 讲 5436_5456 给 5476_5496 朵拉 5516_5577 听 5597_6097 !
+%mor:	noun|等 adv|一会儿 adv|再 verb|讲-Inf-S verb|给-Inf-S pron|我-Int-P1 verb|听-Inf-S cm|cm verb|讲-Inf-S verb|给-Inf-S propn|朵拉-Acc verb|听-Inf-S !
+%gra:	1|4|OBL 2|4|ADVMOD 3|4|ADVMOD 4|0|ROOT 5|4|MARK 6|7|NSUBJ 7|4|CCOMP 8|12|PUNCT 9|12|ADVCL 10|9|MARK 11|10|OBJ 12|4|CONJ 13|4|PUNCT
+*INV:	你 先 看 一 遍 . 14260_14961
+%wor:	你 14260_14280 先 14300_14320 看 14340_14400 一 14420_14441 遍 14461_14961 .
+%mor:	pron|你-Int-S2 sconj|先 verb|看-Inf-S num|一 noun|遍-Acc .
+%gra:	1|3|NSUBJ 2|3|MARK 3|0|ROOT 4|5|NUMMOD 5|3|OBJ 6|3|PUNCT
+*INV:	然后 待会儿 一边 翻 书 一边 讲 给 它 听 „ 好不好 [^c] ? 14501_17174
+%wor:	然后 14501_14561 待会儿 14581_14682 一边 14702_14762 翻 14783_14803 书 14823_14843 一边 14863_15889 讲 15909_16311 给 16332_16352 它 16372_16432 听 16452_16653 „ 好不好 16674_17174 ?
+%act:	孩子 翻 看 三 个 强盗
+%mor:	adv|然后 noun|待会儿 adv|一边 verb|翻-Inf-S noun|书-Acc adv|一边 verb|讲-Inf-S verb|给-Inf-S pron|它-Int-S3 verb|听-Inf-S punct|„ adj|好不好-S1 ?
+%gra:	1|7|ADVMOD 2|7|NSUBJ 3|4|ADVMOD 4|7|ADVCL 5|4|OBJ 6|7|ADVMOD 7|0|ROOT 8|7|MARK 9|10|NSUBJ 10|7|CCOMP 11|12|PUNCT 12|10|XCOMP 13|7|PUNCT
+*CHI:	看 完 了 [^c] .
+%mor:	verb|看-Inf-S verb|完-Inf-S part|了 .
+%gra:	1|0|ROOT 2|1|MARK 3|1|DISCOURSE 4|1|PUNCT
+*INV:	看 完 啦 [^c] ?
+%mor:	verb|看-Inf-S verb|完-Inf-S part|啦 ?
+%gra:	1|0|ROOT 2|1|MARK 3|1|DISCOURSE 4|1|PUNCT
+*CHI:	&~嗯 [^c] .
+*INV:	那 你 现在 一边 翻 一边 讲 给 朵拉 听 „ 好不好 啊 [^c] ? 18560_21474
+%wor:	那 18560_18960 你 18560_18580 现在 一边 19002_19062 翻 19083_19103 一边 19163_20189 讲 20209_20611 给 20632_20652 朵拉 听 20752_20953 „ 好不好 20974_21474 啊 ?
+%mor:	pron|那-Int-S1 pron|你-Int-S2 noun|现在 adv|一边 verb|翻-Inf-S adv|一边 verb|讲-Inf-S verb|给-Inf-S propn|朵拉-Acc verb|听-Inf-S punct|„ adj|好不好-S1 part|啊 ?
+%gra:	1|10|NSUBJ 2|10|NSUBJ 3|5|NMOD-TMOD 4|5|ADVMOD 5|10|ADVCL 6|5|ADVMOD 7|5|XCOMP 8|7|MARK 9|8|OBJ 10|0|ROOT 11|12|PUNCT 12|10|XCOMP 13|10|DISCOURSE 14|10|PUNCT
+*CHI:	朵拉 就是 布 娃娃 啊 [^c] .
+%mor:	propn|朵拉 aux|是-Inf-S propn|布 noun|娃娃 part|啊 .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|NMOD 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*INV:	讲 给 它 听 „ 好不好 [^c] ? 87610_96403
+%wor:	讲 87610_95582 给 95603_95623 它 95643_95803 听 95823_95883 „ 好不好 95903_96403 ?
+%mor:	verb|讲-Inf-S verb|给-Inf-S pron|它-Int-S3 verb|听-Inf-S punct|„ adj|好不好-S1 ?
+%gra:	1|0|ROOT 2|1|MARK 3|4|NSUBJ 4|1|XCOMP 5|6|PUNCT 6|4|XCOMP 7|1|PUNCT
+*INV:	来 开始 吧 [^c] !
+%mor:	sconj|来 verb|开始-Inf-S part|吧 !
+%gra:	1|2|MARK 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*CHI:	从前 有 三 个 魔鬼 . 96324_98066
+%wor:	从前 96324_97265 有 97285_97385 三 97405_97425 个 97446_97546 魔鬼 97566_98066 .
+%mor:	noun|从前 verb|有-Inf-S num|三 noun|个 noun|魔鬼-Acc .
+%gra:	1|2|NMOD-TMOD 2|0|ROOT 3|5|NUMMOD 4|3|CLF 5|2|OBJ 6|2|PUNCT
+*CHI:	他们 都 很 喜欢 做 坏 事 [^c] . 101130_104835
+%wor:	他们 101130_103353 都 103373_103393 很 103413_103473 喜欢 103493_103794 做 103814_104275 坏 104295_104315 事 104335_104835 .
+%mor:	pron|他-Int-P3 sconj|都 adv|很 verb|喜欢-Inf-S verb|做-Inf-S adj|坏-S1 part|事 .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|ADVMOD 4|0|ROOT 5|4|XCOMP 6|7|COMPOUND 7|5|OBJ 8|4|PUNCT
+*CHI:	他们 这次 晚上 就 想 去 偷 东西 [^c] . 105957_109523
+%wor:	他们 105957_106458 这次 106478_107340 晚上 107360_107440 就 107460_107740 想 107760_107780 去 107801_108281 偷 108301_109002 东西 109023_109523 .
+%mor:	pron|他-Int-P3 det|这次-Def noun|晚上 sconj|就 aux|想-Inf-S sconj|去 verb|偷-Inf-S noun|东西-Acc .
+%gra:	1|7|NSUBJ 2|3|DET 3|7|NMOD-TMOD 4|7|MARK 5|7|AUX 6|7|MARK 7|0|ROOT 8|7|OBJ 9|7|PUNCT
+*CHI:	到 了 一 个 山洞 里 黑不拉漆 的 . 109123_112487
+%wor:	到 109123_109323 了 109343_109363 一 109383_109423 个 109443_109463 山洞 109483_110505 里 110525_110585 黑不拉漆 110605_111967 的 111987_112487 .
+%mor:	verb|到-Inf-S aux|了-Inf-Perf-S num|一 noun|个 noun|山洞-Acc adp|里 verb|黑-Inf-S part|的 .
+%gra:	1|7|ADVCL 2|1|AUX 3|5|NUMMOD 4|3|CLF 5|1|OBJ 6|5|CASE 7|0|ROOT 8|7|DISCOURSE 9|7|PUNCT
+*CHI:	就 看见 了 有 各种各样 的 怪 东西 [^c] . 113250_117274
+%wor:	就 113250_113930 看见 113950_114651 了 114672_114812 有 114832_114972 各种各样 114992_115152 的 115172_115232 怪 115252_116754 东西 116774_117274 .
+%mor:	sconj|就 verb|看见-Inf-S aux|了-Inf-Perf-S verb|有-Inf-S adj|各种各样-S1 sconj|的 part|怪 noun|东西-Acc .
+%gra:	1|2|MARK 2|0|ROOT 3|2|AUX 4|8|ACL-RELCL 5|8|AMOD 6|5|MARK-REL 7|8|CASE 8|2|OBJ 9|2|PUNCT
+*CHI:	每 个 人 都 拿 了 一 样 怪 东西 [^c] . 117215_118596
+%wor:	每 117215_117335 个 117355_117375 人 117395_117616 都 117636_117676 拿 117696_117736 了 117756_117776 一 117796_117836 样 117856_117876 怪 117896_118076 东西 118096_118596 .
+%mor:	det|每-Def noun|个 noun|人 sconj|都 verb|拿-Inf-S aux|了-Inf-Perf-S num|一 noun|样 part|怪 noun|东西-Acc .
+%gra:	1|2|DET 2|3|CLF 3|5|NSUBJ 4|5|MARK 5|0|ROOT 6|5|AUX 7|10|NUMMOD 8|7|CLF 9|10|CASE 10|5|OBJ 11|5|PUNCT
+*CHI:	原来 照 手 电 筒 一 看 , 原来 是 这些 东西 [^c] . 119839_122201
+%wor:	原来 119839_120380 照 120400_120500 手 120520_120680 电 120700_120960 筒 120980_121000 一 121020_121081 看 121101_121161 , 原来 121181_121281 是 121301_121401 这些 121421_121681 东西 121701_122201 .
+%mor:	adv|原来 adp|照 noun|手 part|电 part|筒 num|一 verb|看-Inf-S cm|cm adv|原来 aux|是-Inf-S det|这些-Def noun|东西 .
+%gra:	1|7|ADVMOD 2|5|CASE 3|4|COMPOUND 4|5|COMPOUND 5|7|OBL 6|7|OBL 7|0|ROOT 8|12|PUNCT 9|12|ADVMOD 10|12|COP 11|12|DET 12|7|PARATAXIS 13|7|PUNCT
+*CHI:	一 个 拿 的 是 斧头 [^c] . 121822_124785
+%wor:	一 121822_122122 个 122142_122302 拿 122322_123344 的 123364_124045 是 124065_124265 斧头 124285_124785 .
+%mor:	num|一 noun|个 verb|拿-Inf-S sconj|的 aux|是-Inf-S noun|斧头 .
+%gra:	1|6|NUMMOD 2|1|CLF 3|6|CSUBJ 4|3|MARK-REL 5|6|COP 6|0|ROOT 7|6|PUNCT
+*CHI:	<一 个 拿 的> [//] 两 个 拿 的 是 一样的 , 是 喇叭 [^c] . 129150_131573
+%wor:	一 129150_129630 个 129650_129751 拿 129771_129791 的 129811_129911 两 129931_129971 个 129991_130051 拿 130071_130372 的 130392_130792 是 130812_130832 一样的 130852_131013 , 是 131033_131053 喇叭 131073_131573 .
+%mor:	num|两 noun|个 verb|拿-Inf-S sconj|的 aux|是-Inf-S adj|一样的-S1 cm|cm aux|是-Inf-S noun|喇叭 .
+%gra:	1|2|NUMMOD 2|3|OBL 3|6|CSUBJ 4|3|MARK-REL 5|9|COP 6|9|AMOD 7|9|PUNCT 8|9|COP 9|0|ROOT 10|9|PUNCT
+*CHI:	一 个 是 听 的 喇叭 . 131253_134297
+%wor:	一 131253_132716 个 132736_133016 是 133036_133377 听 133397_133737 的 133757_133777 喇叭 133797_134297 .
+%mor:	num|一 noun|个 aux|是-Inf-S verb|听-Inf-S sconj|的 noun|喇叭 .
+%gra:	1|6|NUMMOD 2|1|CLF 3|6|COP 4|6|ACL-RELCL 5|4|MARK-REL 6|0|ROOT 7|6|PUNCT
+*CHI:	一 个 是 吹 的 喇叭 [^c] . 134659_136020
+%wor:	一 134659_134679 个 134699_134859 是 134879_135120 吹 135140_135160 的 135180_135500 喇叭 135520_136020 .
+%mor:	num|一 noun|个 aux|是-Inf-S verb|吹-Inf-S sconj|的 noun|喇叭 .
+%gra:	1|6|NUMMOD 2|1|CLF 3|6|COP 4|6|ACL-RELCL 5|4|MARK-REL 6|0|ROOT 7|6|PUNCT
+*CHI:	他们 都 一起 到 外面 去 做怪 [^c] . 135621_139346
+%wor:	他们 135621_136141 都 136161_136622 一起 136642_137023 到 137043_137484 外面 137504_138105 去 138125_138826 做怪 138846_139346 .
+%mor:	pron|他-Int-P3 sconj|都 noun|一起 verb|到-Inf-S noun|外面-Acc sconj|去 verb|做怪-Inf-S .
+%gra:	1|7|NSUBJ 2|7|MARK 3|7|OBL 4|7|ADVCL 5|4|OBJ 6|7|MARK 7|0|ROOT 8|7|PUNCT
+*CHI:	最后 看见 一 户 人家 有 很 多 人 . 146050_150356
+%wor:	最后 146050_146490 看见 146510_147672 一 147692_147712 户 147732_148373 人家 148393_148453 有 148474_148914 很 148934_149736 多 149756_149836 人 149856_150356 .
+%mor:	noun|最后 verb|看见-Inf-S num|一 noun|户 noun|人家 verb|有-Inf-S adv|很 num|多 noun|人-Acc .
+%gra:	1|2|NMOD-TMOD 2|0|ROOT 3|5|NUMMOD 4|3|CLF 5|6|NSUBJ 6|2|CCOMP 7|9|ADVMOD 8|9|NUMMOD 9|6|OBJ 10|2|PUNCT
+*CHI:	他们 就 一起 弄 [^c] . 149896_151217
+%wor:	他们 149896_150156 就 150176_150577 一起 150597_150697 弄 150717_151217 .
+%mor:	pron|他-Int-P3 sconj|就 noun|一起 verb|弄-Inf-S .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|OBL 4|0|ROOT 5|4|PUNCT
+*CHI:	想 办法 弄 声音 出来 把 那些 人 都 吓 跑 了 [^c] . 150777_154903
+%wor:	想 150777_150797 办法 150817_151799 弄 151819_153041 声音 153061_153241 出来 153261_153662 把 153682_153722 那些 153742_153802 人 153822_153842 都 153862_153883 吓 153903_153923 跑 153943_154383 了 154403_154903 .
+%mor:	aux|想-Inf-S noun|办法 verb|弄-Inf-S noun|声音-Acc verb|出来-Inf-S adp|把 det|那些-Def noun|人 sconj|都 verb|吓-Inf-S verb|跑-Inf-S part|了 .
+%gra:	1|3|AUX 2|10|NSUBJ 3|10|ADVCL 4|3|OBJ 5|3|MARK 6|8|CASE 7|8|DET 8|10|OBL-PATIENT 9|10|MARK 10|0|ROOT 11|10|XCOMP 12|10|DISCOURSE 13|10|PUNCT
+*CHI:	一 个 声音 是 当当当@o . 155225_157287
+%wor:	一 155225_156567 个 156587_156627 声音 156647_156727 是 156747_156767 当当当 156787_157287 .
+%mor:	num|一 noun|个 noun|声音 aux|是-Inf-S on|当当当 .
+%gra:	1|3|NUMMOD 2|1|CLF 3|5|NSUBJ 4|5|COP 5|0|ROOT 6|5|PUNCT
+*CHI:	他们 都 也 把 马 吓 坏 了 [^c] . 159770_165780
+%wor:	他们 159770_161012 都 161032_164578 也 164598_164799 把 164819_164959 马 164979_165079 吓 165099_165139 坏 165159_165260 了 165280_165780 .
+%mor:	pron|他-Int-P3 sconj|都 sconj|也 adp|把 propn|马 verb|吓-Inf-S verb|坏-Inf-S part|了 .
+%gra:	1|6|NSUBJ 2|6|MARK 3|6|MARK 4|5|CASE 5|6|OBL-PATIENT 6|0|ROOT 7|6|MARK 8|6|DISCOURSE 9|6|PUNCT
+*CHI:	马 [//] 有 个 人 想 叫 马车 回家 [^c] . 165400_166781
+%wor:	马 165400_165600 有 165620_166021 个 166041_166061 人 166081_166101 想 166121_166141 叫 166161_166181 马车 166201_166261 回家 166281_166781 .
+%mor:	verb|有-Inf-S noun|个 noun|人 aux|想-Inf-S verb|叫-Inf-S noun|马车-Acc verb|回家-Inf-S .
+%gra:	1|0|ROOT 2|3|NMOD 3|7|NSUBJ 4|7|AUX 5|7|ADVCL 6|5|OBJ 7|1|CCOMP 8|1|PUNCT
+*CHI:	马 就 在 奔 . 167283_170348
+%wor:	马 167283_169728 就 169748_169768 在 169788_169828 奔 169848_170348 .
+%mor:	propn|马 sconj|就 adv|在 verb|奔-Inf-S .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	可是 <那 个> [/] 那 个 魔鬼 就 把 他们 的 轮胎 砍 坏 了 [^c] . 171510_176797
+%wor:	可是 171510_171570 那 171590_171610 个 171630_171650 那 171670_171690 个 171710_171750 魔鬼 171770_173493 就 173513_173533 把 173553_173613 他们 173633_174294 的 174314_174394 轮胎 174414_175816 砍 175836_175996 坏 176016_176277 了 176297_176797 .
+%mor:	sconj|可是 det|那-Def noun|个 noun|魔鬼 sconj|就 adp|把 pron|他-Int-P3 part|的 noun|轮胎 verb|砍-Inf-S verb|坏-Inf-S part|了 .
+%gra:	1|10|MARK 2|3|DET 3|4|CLF 4|10|NSUBJ 5|10|MARK 6|9|CASE 7|9|DET 8|7|CASE 9|10|OBL-PATIENT 10|0|ROOT 11|10|MARK 12|10|DISCOURSE 13|10|PUNCT
+*CHI:	他们 就 没 法 回去 了 [^c] . 176497_178359
+%wor:	他们 176497_176657 就 176677_176697 没 176717_177238 法 177258_177278 回去 177298_177839 了 177859_178359 .
+%mor:	pron|他-Int-P3 sconj|就 verb|没-Inf-S noun|法-Acc verb|回去-Inf-S part|了 .
+%gra:	1|5|NSUBJ 2|5|MARK 3|5|ADVCL 4|3|OBJ 5|0|ROOT 6|5|DISCOURSE 7|5|PUNCT
+*CHI:	马车 也 给 砍 的 声音 吓 死 了 . 179602_181925
+%wor:	马车 179602_179662 也 179682_180423 给 180443_180784 砍 180804_181024 的 181044_181144 声音 181164_181264 吓 181284_181344 死 181364_181405 了 181425_181925 .
+%mor:	noun|马车 sconj|也 verb|给-Inf-S verb|砍-Inf-S sconj|的 noun|声音-Acc verb|吓-Inf-S verb|死-Inf-S part|了 .
+%gra:	1|7|NSUBJ 2|7|MARK 3|7|ADVCL 4|6|ACL-RELCL 5|4|MARK-REL 6|3|OBJ 7|0|ROOT 8|7|MARK 9|7|DISCOURSE 10|7|PUNCT
+*CHI:	就 奔 了 起来 .
+%mor:	sconj|就 verb|奔-Inf-S aux|了-Inf-Perf-S verb|起来-Inf-S .
+%gra:	1|2|MARK 2|0|ROOT 3|2|AUX 4|2|MARK 5|2|PUNCT
+*CHI:	就 奔 得 越来越 快 [^c] .
+%mor:	sconj|就 verb|奔-Inf-S part|得 adv|越来越 adj|快-S1 .
+%gra:	1|2|MARK 2|0|ROOT 3|2|COMPOUND-EXT 4|5|ADVMOD 5|2|XCOMP 6|2|PUNCT
+*CHI:	他们 发现 了 一 个 盒子 像 藏 宝 的 盒子 [^c] .
+%mor:	pron|他-Int-P3 verb|发现-Inf-S aux|了-Inf-Perf-S num|一 noun|个 noun|盒子 verb|像-Inf-S propn|藏 part|宝 sconj|的 noun|盒子-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|AUX 4|11|NUMMOD 5|4|CLF 6|7|NSUBJ 7|11|ACL-RELCL 8|9|COMPOUND 9|7|OBJ 10|7|MARK-REL 11|2|OBJ 12|2|PUNCT
+*CHI:	其实 里面 藏 了 很 多 金银财宝 [^c] .
+%mor:	adv|其实 noun|里面 verb|藏-Inf-S aux|了-Inf-Perf-S adv|很 adj|多-S1 noun|金银财宝-Acc .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|AUX 5|6|ADVMOD 6|7|AMOD 7|3|OBJ 8|3|PUNCT
+*CHI:	他们 打开 了 盖子 . 181505_183867
+%wor:	他们 181505_182246 打开 182266_182526 了 182546_183347 盖子 183367_183867 .
+%mor:	pron|他-Int-P3 verb|打开-Inf-S aux|了-Inf-Perf-S noun|盖子-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|AUX 4|2|OBJ 5|2|PUNCT
+*CHI:	是 金色的 [^c] .
+%mor:	aux|是-Inf-S noun|金色的 .
+%gra:	1|2|COP 2|0|ROOT 3|2|PUNCT
+*CHI:	是 什么 呀 ?
+%mor:	aux|是-Inf-S pron|什么-Int-S1 part|呀 ?
+%gra:	1|2|COP 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*CHI:	他们 不 认识 钱 . 205990_209615
+%wor:	他们 205990_208895 不 208915_208995 认识 209015_209095 钱 209115_209615 .
+%mor:	pron|他-Int-P3 adv|不 verb|认识-Inf-S noun|钱-Acc .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	他们 就 又 把 这 钱 放 进去 了 [^c] . 209155_213262
+%wor:	他们 209155_210257 就 210277_210297 又 210317_210337 把 210357_210418 这 210438_210518 钱 210538_211479 放 211500_211520 进去 211540_212742 了 212762_213262 .
+%mor:	pron|他-Int-P3 sconj|就 sconj|又 adp|把 det|这-Def noun|钱 verb|放-Inf-S verb|进去-Inf-S part|了 .
+%gra:	1|7|NSUBJ 2|7|MARK 3|7|MARK 4|6|CASE 5|6|DET 6|7|OBL-PATIENT 7|0|ROOT 8|7|MARK 9|7|DISCOURSE 10|7|PUNCT
+*CHI:	看见 小 猫猫 . 213804_216788
+%wor:	看见 213804_216068 小 216088_216268 猫猫 216288_216788 .
+%mor:	verb|看见-Inf-S part|小 noun|猫猫-Acc .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBJ 4|1|PUNCT
+*CHI:	头 就 想 办法 把 妈妈 引 走 了 . 218010_221594
+%wor:	头 218010_219131 就 219151_219171 想 219191_219211 办法 219231_219332 把 219352_219372 妈妈 219392_219492 引 219512_220994 走 221014_221074 了 221094_221594 .
+%mor:	noun|头 sconj|就 aux|想-Inf-S verb|办法-Inf-S adp|把 noun|妈妈 verb|引-Inf-S verb|走-Inf-S part|了 .
+%gra:	1|7|NSUBJ 2|7|MARK 3|7|AUX 4|7|ADVCL 5|6|CASE 6|7|OBL-PATIENT 7|0|ROOT 8|7|MARK 9|7|DISCOURSE 10|7|PUNCT
+*CHI:	把 宝宝 抱 回去 [^c] . 221134_224298
+%wor:	把 221134_221675 宝宝 221695_223678 抱 223698_223778 回去 223798_224298 .
+%mor:	adp|把 noun|宝宝 verb|抱-Inf-S verb|回去-Inf-S .
+%gra:	1|2|CASE 2|3|OBL-PATIENT 3|0|ROOT 4|3|MARK 5|3|PUNCT
+*CHI:	她 来 到 自己 魔鬼 住 的 地方 [^c] . 226963_230528
+%wor:	她 226963_227084 来 227104_227204 到 227224_228806 自己 228826_228906 魔鬼 228926_229828 住 229848_229888 的 229908_230008 地方 230028_230528 .
+%mor:	pron|她-Int-S3 verb|来-Inf-S verb|到-Inf-S pron|自己-Int-S1 noun|魔鬼 verb|住-Inf-S sconj|的 noun|地方-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|MARK 4|5|NMOD 5|6|NSUBJ 6|8|ACL-RELCL 7|6|MARK-REL 8|2|OBJ 9|2|PUNCT
+*CHI:	有 个 黑乎乎的 黑 山洞 . 230930_235856
+%wor:	有 230930_231911 个 231931_235036 黑乎乎的 235056_235276 黑 235296_235336 山洞 235356_235856 .
+%mor:	verb|有-Inf-S noun|个 adj|黑乎乎的-S1 noun|黑 noun|山洞-Acc .
+%gra:	1|0|ROOT 2|5|NMOD 3|5|AMOD 4|5|NMOD 5|1|OBJ 6|1|PUNCT
+*CHI:	就 让 宝宝 睡 在 这 个 里面 [^c] . 235456_240644
+%wor:	就 235456_235537 让 235557_235577 宝宝 235597_235677 睡 235697_235737 在 235757_235797 这 235817_235837 个 235857_240124 里面 240144_240644 .
+%mor:	sconj|就 verb|让-Inf-S noun|宝宝 verb|睡-Inf-S verb|在-Inf-S det|这-Def noun|个 noun|里面-Acc .
+%gra:	1|2|MARK 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|4|MARK 6|7|DET 7|8|CLF 8|4|OBJ 9|2|PUNCT
+*CHI:	宝宝 觉得 很 温暖 . 240264_241004
+%wor:	宝宝 240264_240364 觉得 240384_240444 很 240464_240484 温暖 240504_241004 .
+%mor:	noun|宝宝 verb|觉得-Inf-S adv|很 adj|温暖-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|ADVMOD 4|2|XCOMP 5|2|PUNCT
+*CHI:	她 就 睡着 了 [^c] . 240604_241385
+%wor:	她 240604_240665 就 240685_240745 睡着 240765_240865 了 240885_241385 .
+%mor:	pron|她-Int-S3 sconj|就 verb|睡着-Inf-S part|了 .
+%gra:	1|3|NSUBJ 2|3|MARK 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*CHI:	最后 有 个 仙子 来 了 , 打开 了 盖子 . 245670_247974
+%wor:	最后 245670_246572 有 246592_246612 个 246632_246692 仙子 246712_247113 来 247133_247154 了 247174_247234 , 打开 247254_247354 了 247374_247454 盖子 247474_247974 .
+%mor:	noun|最后 verb|有-Inf-S noun|个 noun|仙子 verb|来-Inf-S aux|了-Inf-Perf-S cm|cm verb|打开-Inf-S aux|了-Inf-Perf-S noun|盖子-Acc .
+%gra:	1|2|NMOD-TMOD 2|0|ROOT 3|4|NMOD 4|8|NSUBJ 5|8|ADVCL 6|5|AUX 7|5|PUNCT 8|2|CCOMP 9|8|AUX 10|8|OBJ 11|2|PUNCT
+*CHI:	看见 盖子 里面 都 是 钱 . 248277_249398
+%wor:	看见 248277_248537 盖子 248557_248678 里面 248698_248758 都 248778_248838 是 248858_248878 钱 248898_249398 .
+%mor:	verb|看见-Inf-S noun|盖子 noun|里面-Acc sconj|都 aux|是-Inf-S noun|钱 .
+%gra:	1|6|ACL 2|3|NMOD 3|1|OBJ 4|6|MARK 5|6|COP 6|0|ROOT 7|6|PUNCT
+*CHI:	拿 了 好多 [^c] . 248958_249860
+%wor:	拿 248958_249059 了 249079_249339 好多 249360_249860 .
+%mor:	verb|拿-Inf-S aux|了-Inf-Perf-S adj|好多-S1 .
+%gra:	1|0|ROOT 2|1|AUX 3|1|XCOMP 4|1|PUNCT
+*CHI:	最后 那 个 仙子 把 钱 都 给 人家 去 买 很 多 驴子 , 很 多 马车 之后 , 叫 那 三 个 坏蛋 来 拉 这 个 车 . 255150_268366
+%wor:	最后 255150_256571 那 256591_256651 个 256672_256692 仙子 256712_256772 把 256792_256812 钱 256832_258714 都 258734_258854 给 258874_259055 人家 259075_260577 去 260597_261498 买 261518_261638 很 261658_261698 多 261718_261758 驴子 261778_262740 , 很 262760_263180 多 263200_263240 马车 263260_264182 之后 264202_264322 , 叫 264342_264542 那 264562_264582 三 264602_264662 个 264682_267286 坏蛋 267306_267486 来 267506_267526 拉 267546_267606 这 267626_267706 个 267726_267846 车 267866_268366 .
+%mor:	noun|最后 det|那-Def noun|个 noun|仙子 adp|把 noun|钱 sconj|都 verb|给-Inf-S noun|人家-Acc sconj|去 verb|买-Inf-S adv|很 adj|多-S1 noun|驴子-Acc cm|cm adv|很 adj|多-S1 noun|马车 adp|之后 cm|cm verb|叫-Inf-S det|那-Def num|三 noun|个 noun|坏蛋 sconj|来 verb|拉-Inf-S det|这-Def noun|个 noun|车-Acc .
+%gra:	1|11|NMOD-TMOD 2|3|DET 3|4|CLF 4|11|NSUBJ 5|6|CASE 6|11|OBL-PATIENT 7|11|MARK 8|11|ADVCL 9|8|OBJ 10|11|MARK 11|0|ROOT 12|13|ADVMOD 13|14|AMOD 14|11|OBJ 15|18|PUNCT 16|17|ADVMOD 17|18|AMOD 18|21|NSUBJ 19|18|CASE 20|21|MARK 21|11|PARATAXIS 22|24|DET 23|24|NUMMOD 24|25|NMOD 25|27|NSUBJ 26|27|MARK 27|21|CCOMP 28|29|DET 29|30|CLF 30|27|OBJ 31|11|PUNCT
+*CHI:	然后 他们 又 逃 出来 了 , 又 找到 一 堆 金银财宝 . 271210_273353
+%wor:	然后 271210_271270 他们 271290_271350 又 271370_271390 逃 271410_271430 出来 271450_271510 了 271530_271550 , 又 271570_271610 找到 271630_271690 一 271710_272272 堆 272292_272833 金银财宝 272853_273353 .
+%mor:	adv|然后 pron|他-Int-P3 sconj|又 verb|逃-Inf-S verb|出来-Inf-S part|了 cm|cm sconj|又 verb|找到-Inf-S num|一 noun|堆 noun|金银财宝-Acc .
+%gra:	1|9|ADVMOD 2|9|NSUBJ 3|4|MARK 4|9|ADVCL 5|4|MARK 6|4|DISCOURSE 7|4|PUNCT 8|9|MARK 9|0|ROOT 10|12|NUMMOD 11|10|CLF 12|9|OBJ 13|9|PUNCT
+*CHI:	不过 这次 , 金银财宝 , 他们 装 在 车 里面 [^c] . 273374_277361
+%wor:	不过 273374_274797 这次 274817_275197 , 金银财宝 275217_275358 , 他们 275378_276560 装 276580_276761 在 276781_276801 车 276821_276841 里面 276861_277361 .
+%mor:	sconj|不过 det|这次-Def cm|cm propn|金银财宝 cm|cm pron|他-Int-P3 verb|装-Inf-S verb|在-Inf-S noun|车-Acc noun|里面 .
+%gra:	1|7|MARK 2|4|DET 3|4|PUNCT 4|7|NSUBJ 5|6|CC 6|4|CONJ 7|0|ROOT 8|7|MARK 9|7|OBJ 10|9|ACL 11|7|PUNCT
+*CHI:	最后 被 一 个 坏人 的 最 坏的 头子 发现 了 [^c] . 284250_286512
+%wor:	最后 284250_285091 被 285111_285131 一 285151_285191 个 285211_285231 坏人 285251_285351 的 285371_285391 最 285411_285491 坏的 285511_285672 头子 285692_285912 发现 285932_285992 了 286012_286512 .
+%mor:	noun|最后 aux|被-Inf-S num|一 noun|个 noun|坏人 part|的 adv|最 adj|坏的-S1 noun|头子 verb|发现-Inf-S part|了 .
+%gra:	1|10|NMOD-TMOD 2|10|AUX-PASS 3|5|NUMMOD 4|3|CLF 5|9|NMOD 6|5|CASE 7|8|ADVMOD 8|9|AMOD 9|10|NSUBJ 10|0|ROOT 11|10|DISCOURSE 12|10|PUNCT
+*CHI:	+" 你们 怎么 在 这儿 [^c] . 286072_286913
+%wor:	你们 286072_286152 怎么 286172_286353 在 286373_286393 这儿 286413_286913 .
+%mor:	pron|你-Int-P1 adv|怎么 verb|在-Inf-S pron|这儿-Int-S1 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	快要 天 亮 了 . 286513_288154
+%wor:	快要 286513_286713 天 286733_287594 亮 287614_287634 了 287654_288154 .
+%mor:	adv|快要 adv|天 adj|亮-S1 part|了 .
+%gra:	1|3|ADVMOD 2|3|ADVMOD 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*CHI:	快点 回 魔鬼 的 城 里面 去 呀 [^c] ! 287695_289056
+%wor:	快点 287695_287755 回 287775_287795 魔鬼 287815_287915 的 287935_287955 城 287975_288035 里面 288055_288476 去 288496_288536 呀 288556_289056 !
+%mor:	adv|快点 verb|回-Inf-S noun|魔鬼-Acc sconj|的 noun|城 noun|里面 verb|去-Inf-S part|呀 !
+%gra:	1|2|ADVMOD 2|5|ACL-RELCL 3|2|OBJ 4|2|MARK-REL 5|7|NSUBJ 6|5|APPOS 7|0|ROOT 8|7|DISCOURSE 9|7|PUNCT
+*CHI:	他们 就 纷纷 跑 到 魔鬼 城 里面 去 了 [^c] . 298210_304920
+%wor:	他们 298210_299351 就 299371_302537 纷纷 302557_303057 跑 303077_303097 到 303118_303158 魔鬼 303178_303238 城 303258_304099 里面 304119_304340 去 304360_304400 了 304420_304920 .
+%mor:	pron|他-Int-P3 sconj|就 adv|纷纷 verb|跑-Inf-S verb|到-Inf-S noun|魔鬼 part|城 noun|里面-Acc verb|去-Inf-S part|了 .
+%gra:	1|9|NSUBJ 2|9|MARK 3|4|ADVMOD 4|9|ADVCL 5|4|MARK 6|7|COMPOUND 7|4|OBJ 8|4|OBJ 9|0|ROOT 10|9|DISCOURSE 11|9|PUNCT
+*CHI:	最后 他们 就 开始 玩 [//] 逗 那 个 宝宝 了 [^c] . 304460_309707
+%wor:	最后 304460_306523 他们 306543_306603 就 306623_307505 开始 307525_307705 玩 307725_307745 逗 307765_307885 那 307905_308106 个 308126_308226 宝宝 308246_309187 了 309207_309707 .
+%mor:	noun|最后 pron|他-Int-P3 sconj|就 verb|开始-Inf-S verb|逗-Inf-S det|那-Def noun|个 noun|宝宝-Acc part|了 .
+%gra:	1|4|NMOD-TMOD 2|4|NSUBJ 3|4|MARK 4|0|ROOT 5|4|XCOMP 6|7|DET 7|8|CLF 8|5|OBJ 9|4|DISCOURSE 10|4|PUNCT
+*CHI:	然后 天 亮 了 . 311110_312512
+%wor:	然后 311110_311210 天 311230_311852 亮 311872_311992 了 312012_312512 .
+%mor:	adv|然后 propn|天 adj|亮-S1 part|了 .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*CHI:	他们 也 就 感觉 倦 了 [^c] . 312052_313074
+%wor:	他们 312052_312152 也 312173_312193 就 312213_312233 感觉 312253_312514 倦 312534_312554 了 312574_313074 .
+%mor:	pron|他-Int-P3 sconj|也 sconj|就 verb|感觉-Inf-S adj|倦-S1 part|了 .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|MARK 4|0|ROOT 5|4|XCOMP 6|4|DISCOURSE 7|4|PUNCT
+*CHI:	他们 就 想 睡觉 了 [^c] . 312614_316804
+%wor:	他们 312614_315462 就 315482_315502 想 315522_316184 睡觉 316204_316284 了 316304_316804 .
+%mor:	pron|他-Int-P3 sconj|就 aux|想-Inf-S verb|睡觉-Inf-S part|了 .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|AUX 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*CHI:	这时 不 是 魔鬼 的 人 . 329390_351350
+%wor:	这时 不 329390_329890 是 350290_350530 魔鬼 的 350850_351350 人 .
+%mor:	noun|这时 adv|不 aux|是-Inf-S noun|魔鬼 part|的 noun|人 .
+%gra:	1|6|NMOD-TMOD 2|6|ADVMOD 3|6|COP 4|6|NMOD 5|4|CASE 6|0|ROOT 7|6|PUNCT
+*CHI:	正好 醒来 做 恶 的 人 都 没 醒 [^c] . 419750_500270
+%wor:	正好 醒来 做 419750_420130 恶 的 492790_492910 人 493950_494010 都 498870_499770 没 醒 499770_500270 .
+%mor:	adv|正好 verb|醒来-Inf-S verb|做-Inf-S adj|恶-S1 sconj|的 noun|人 sconj|都 adv|没 verb|醒-Inf-S .
+%gra:	1|2|ADVMOD 2|6|ACL-RELCL 3|2|XCOMP 4|3|XCOMP 5|2|MARK-REL 6|9|NSUBJ 7|9|MARK 8|9|ADVMOD 9|0|ROOT 10|9|PUNCT
+*INV:	&~喔 孩名 讲 的 故事 真 好听 呢 [^c] ! 523390_797210
+%wor:	孩名 讲 的 523390_523790 故事 真 好听 呢 796710_797210 !
+%mor:	noun|孩名 verb|讲-Inf-S sconj|的 noun|故事 adv|真 adj|好听-S1 part|呢 !
+%gra:	1|2|NSUBJ 2|4|ACL-RELCL 3|2|MARK-REL 4|6|NSUBJ 5|6|ADVMOD 6|0|ROOT 7|6|DISCOURSE 8|6|PUNCT
+@End

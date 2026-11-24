@@ -1,0 +1,495 @@
+@UTF8
+@PID:	11312/c-00015261-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child
+@ID:	eng|Bates|MOT||female|||Mother|||
+@ID:	eng|Bates|CHI|2;04.|female|TD|MC|Target_Child|||
+@Comment:	[ba3 morphotag | engine=stanza-1.11.1 ; lang=eng | 2026-05-07T09:28:01-04:00]
+@Types:	cross, toyplay, TD
+*MOT:	what do you have ?
+%act:	<aft> receives nesting cups from Linda and turns them in hand
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|have-Inf-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	twos .
+%act:	<bef> holds two nesting cups that are stuck together . <dur> puts nesting cups in Mother's hand . <aft> tries to pull more nesting cups apart that are in her lap
+%mor:	noun|two-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	twos ?
+%act:	opens hand so Linda can see nesting cups
+%mor:	noun|two-Plur ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	two what ?
+%mor:	num|two pron|what-Int-S1 ?
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	two box [*] .
+%gpx:	looks closely at nesting cups in Mother's hand
+%act:	<aft> pulls nesting cups apart and puts back together
+%mor:	num|two noun|box .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	two box ?
+%act:	puts nesting cups in hand together as one
+%mor:	num|two noun|box ?
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	here (.) these (.) are yours .
+%act:	<1w> holds nesting cups out to Mother . puts them on floor in front of Mother
+%mor:	adv|here pron|this-Dem-P1 aux|be-Fin-Ind-Pres-P3 pron|your-Prs-S2 .
+%gra:	1|0|ROOT 2|4|NSUBJ 3|4|COP 4|1|PARATAXIS 5|1|PUNCT
+*MOT:	these are yours ?
+%act:	<aft> puts back on floor
+%mor:	pron|this-Dem-P1 aux|be-Fin-Ind-Pres-P3 pron|your-Prs-S2 ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	these are mine .
+%act:	picks up nesting cups in front of self and holds in lap
+%mor:	pron|this-Dem-P1 aux|be-Fin-Ind-Pres-P3 pron|my-Prs-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*MOT:	and these are mine (.) huh ?
+%act:	<1w> puts hand on nesting cups on floor . picks up nesting cups .
+%mor:	cconj|and pron|this-Dem-P1 aux|be-Fin-Ind-Pres-P3 pron|my-Prs-S1 intj|huh ?
+%gra:	1|4|CC 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|FLAT 6|4|PUNCT
+*MOT:	okay .
+%act:	<1w> turns them in hand to examine
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	mine too .
+%act:	<aft> holds out nesting cups for Mother to see
+%mor:	pron|my-Prs-S1 adv|too .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	these are mine too ?
+%act:	holds nesting cups
+%mor:	pron|this-Dem-P1 aux|be-Fin-Ind-Pres-P3 pron|my-Prs-S1 adv|too ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*CHI:	these are mine .
+%act:	<aft> pulls them back to self
+%exp:	Linda interrupts Mother
+%mor:	pron|this-Dem-P1 aux|be-Fin-Ind-Pres-P3 pron|my-Prs-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*MOT:	these are mine ?
+%mor:	pron|this-Dem-P1 aux|be-Fin-Ind-Pres-P3 pron|my-Prs-S1 ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	these are mine too .
+%act:	<aft> pulls them back to self . puts aside on floor
+%mor:	pron|this-Dem-P1 aux|be-Fin-Ind-Pres-P3 pron|my-Prs-S1 adv|too .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*MOT:	okay .
+%par:	smiles
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what shall we do with them ?
+%act:	<1w> turns nesting cups in hand
+%mor:	pron|what-Int-S1 aux|shall-Fin-S pron|we-Prs-Nom-P1 verb|do-Inf-S adp|with pron|they-Prs-Acc-P3 ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+*CHI:	0 .
+%act:	reaches in dollhouse and rummages . takes out shape box object and puts in nesting cup . reaches in shape box and takes out shape box object . reaches for nesting cups in Mother's hand with shape box object . begins to put shape box object in Mother's nesting cup but pulls it away
+*CHI:	&-eh out (.) box +...
+%act:	tries to pull one nesting cup from Mother's bunch . succeeds and another falls out . sets one nesting cup on floor and puts shape box object in nesting cup
+%mor:	adp|out noun|box +...
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	get it out ?
+%act:	relaxs hand holding nesting cups . continues holding nesting cups
+%mor:	verb|get-Fin-Imp-S pron|it-Prs-Acc-S3 adp|out ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMPOUND-PRT 4|1|PUNCT
+*CHI:	an(d) an(d) these get out [*] .
+%act:	picks up other nesting cups from floor and pulls them apart
+%par:	<1w> breathy
+%xpho:	<3w-4w> di g6h
+%mor:	cconj|and cconj|and pron|this-Dem-P1 verb|get-Fin-Ind-Pres-P3 adp|out .
+%gra:	1|4|CC 2|4|CC 3|4|NSUBJ 4|0|ROOT 5|4|COMPOUND-PRT 6|4|PUNCT
+*CHI:	and put it in box [!] [*] .
+%act:	<1w> puts one nesting cup on floor and then another .
+%mor:	cconj|and verb|put-Fin-Imp-S pron|it-Prs-Acc-S3 adp|in noun|box .
+%gra:	1|2|CC 2|0|ROOT 3|2|OBJ 4|5|CASE 5|2|OBL 6|2|PUNCT
+*CHI:	and here .
+%act:	<aft> rummages in shape box and takes shape box object out . puts object in one nesting cup on floor
+%mor:	cconj|and adv|here .
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*MOT:	like that ?
+%act:	continues holding some nesting cups
+%mor:	adp|like pron|that-Dem ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*CHI:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	like that .
+%act:	<1w> rummages in shape box , takes out shape box object , and puts in nesting cup on floor
+%par:	<1w> spoken softly . <aft> laughs
+%mor:	adp|like pron|that-Dem .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	0 [=! chuckles] .
+*CHI:	ball .
+%gpx:	gestures to ball in nesting cup
+%mor:	noun|ball .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	in the ball [//] balls ?
+%act:	<aft> lets Linda take nesting cups from hand
+%mor:	adp|in det|the-Def-Art noun|ball-Plur ?
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	an(d) an(d) yyy .
+%act:	<1w> takes nesting cups from Mother . <1w> takes nesting cups apart .
+%xpho:	<3w> or6
+%mor:	cconj|and cconj|and .
+%gra:	1|0|ROOT 2|1|CC 3|1|PUNCT
+*CHI:	like that .
+%act:	<1w> puts one nesting cup on floor .
+%mor:	adp|like pron|that-Dem .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*CHI:	and xxx like that .
+%act:	<1w> puts other nesting cup on floor
+%mor:	cconj|and adp|like pron|that-Dem .
+%gra:	1|3|CC 2|3|CASE 3|0|ROOT 4|3|PUNCT
+*MOT:	like that ?
+%act:	let's Linda take the rest of her nesting cups . folds hands
+%mor:	adp|like pron|that-Dem ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*CHI:	uhhuh .
+%act:	<aft> takes one nesting cup out of stack from Mother . puts small nesting cup on floor . sets another on floor
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	there's a_lot_of them .
+%mor:	pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 verb|alotof-Inf-S pron|they-Prs-Acc-P3 .
+%gra:	1|2|EXPL 2|0|ROOT 3|2|XCOMP 4|3|OBJ 5|2|PUNCT
+*CHI:	xxx know .
+%act:	continues taking nesting cups from stack and setting on floor . places last two near Mother
+%mor:	verb|know-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	do you know ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|know-Inf-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	now what ?
+%mor:	adv|now pron|what-Int-S1 ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	what ?
+%act:	<1w> touches nesting cups that are not lined up on floor . <1w> takes nesting cups apart .
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what ?
+%act:	<1w> takes nesting cups apart . <1w> puts one nesting cup in line on floor . reaches for last on nesting cup stack . pulls nesting cups apart
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what [/] what are you going to do now ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|go-Part-Pres-S part|to verb|do-Inf-S adv|now ?
+%gra:	1|6|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|ADVMOD 8|4|PUNCT
+*CHI:	play .
+%mor:	verb|play-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	(.) the peoples@n want to [*] .
+%act:	<1w> sets one nesting cup in line of nesting cups on floor
+%mor:	det|the-Def-Art neo|peoples verb|want-Fin-Ind-Pres-P3 part|to .
+%gra:	1|2|DET 2|3|DEP 3|0|ROOT 4|3|XCOMP 5|3|PUNCT
+*MOT:	oh play with the people ?
+%mor:	intj|oh verb|play-Fin-Imp-S adp|with det|the-Def-Art noun|person-Plur ?
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|2|PUNCT
+*MOT:	want to ?
+%mor:	verb|want-Fin-Ind-Pres-S part|to ?
+%gra:	1|0|ROOT 2|1|XCOMP 3|1|PUNCT
+*CHI:	xxx .
+%act:	<aft> takes object from one hand and puts in nesting cup on floor
+%par:	spoken softly
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	(o)kay .
+%act:	<aft> reaches in shape box , takes out shape box object and puts in nesting cup . repeats this again
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you put that little box inside these ?
+%mor:	pron|you-Prs-Nom-S2 verb|put-Fin-Ind-Past-S2-irr det|that-Def-Dem-Sing adj|little-S1 noun|box-Acc adp|inside pron|this-Dem-P1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|AMOD 5|2|OBJ 6|7|CASE 7|2|OBL 8|2|PUNCT
+*CHI:	yeah .
+%act:	<aft> reaches in shape box . takes out object and puts in nesting cup . closes shape box lid
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	okay .
+%exp:	attempts to sound enthused
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	that was fun .
+%mor:	pron|that-Dem aux|be-Fin-Ind-Past-S3-irr adj|fun-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	I play with dis [: this] .
+%act:	<bef> reaches in dollhouse and takes out chicken . <dur> holds out chicken for Mother to see . holds chicken to self
+%mor:	pron|I-Prs-Nom-S1 verb|play-Fin-Ind-Pres-S1 adp|with pron|this-Dem-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*MOT:	you wan(t) (t)a play with this ?
+%par:	<1w> smiles
+%mor:	pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 part|to verb|play-Inf-S adp|with pron|this-Dem-S1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|6|CASE 6|4|OBL 7|2|PUNCT
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what is it ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 ?
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	chicken .
+%act:	<1w> reaches in dollhouse and picks up cowboy .
+%mor:	noun|chicken .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	+< your .
+%act:	<1w> reaches over dollhouse with cowboy and tosses him to Mother
+%xpho:	<2w> 6t3r
+%mor:	pron|your-Prs-Gen-S2 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	is this for me ?
+%act:	<1w> picks up cowboy .
+%mor:	aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 adp|for pron|I-Prs-Acc-S1 ?
+%gra:	1|4|COP 2|0|ROOT 3|4|CASE 4|2|NMOD 5|2|PUNCT
+*MOT:	he has a hat on .
+%act:	<1w> turns cowboy in hand to examine .
+%par:	<1w> spoken softly
+%mor:	pron|he-Prs-Nom-S3 verb|have-Fin-Ind-Pres-S3 det|a-Ind-Art noun|hat-Acc adp|on .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|ADVMOD 6|2|PUNCT
+*MOT:	oh thank you .
+%act:	<1w> picks up man from floor and holds in hand
+%mor:	intj|oh verb|thank-Fin-Ind-Pres-S1 pron|you-Prs-Acc-S2 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	0 .
+%act:	reaches in dollhouse , takes out man and holds out to Mother . attempts to put man in Mother's hand but misses and it falls
+*MOT:	what are we supposed to do with them ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P1 pron|we-Prs-Nom-P1 verb|suppose-Part-Past-S part|to verb|do-Inf-S adp|with pron|they-Prs-Acc-P3 ?
+%gra:	1|6|OBJ 2|4|AUX-PASS 3|4|NSUBJ-PASS 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|8|CASE 8|6|OBL 9|4|PUNCT
+*MOT:	what do you want +... [+ fr]
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|want-Inf-S +...
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*MOT:	oh (.) you put the people in there ?
+%mor:	intj|oh pron|you-Prs-Nom-S2 verb|put-Fin-Ind-Past-S2-irr det|the-Def-Art noun|person-Plur-Acc adp|in adv|there ?
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|7|CASE 7|3|OBL 8|3|PUNCT
+*CHI:	uhhuh !
+%act:	<bef> picks up man from dollhouse floor and drops through shape box hole . <aft> reaches in dollhouse through door , takes out man and drops through shape box hole
+%mor:	intj|uhhuh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you gonna fix up the house ?
+%mor:	pron|you-Prs-Nom-S2 verb|go-Part-Pres-S~part|to verb|fix-Inf-S adp|up det|the-Def-Art noun|house ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|7|CASE 6|7|DET 7|4|OBL 8|2|PUNCT
+*CHI:	what ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	mine's <gonna> [/] going in the bed .
+%act:	<1w> puts man from hand on floor .
+%mor:	pron|my-Prs-S1~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S adp|in det|the-Def-Art noun|bed .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*MOT:	xxx people's coming [?] in the house .
+%act:	<1w> reaches in dollhouse and moves bed . walks man from floor into dollhouse through door .
+%mor:	noun|person-Plur~aux|be-Fin-Ind-Pres-S3 verb|come-Part-Pres-S adp|in det|the-Def-Art noun|house .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*MOT:	shut the door .
+%act:	<1w> shuts door .
+%mor:	verb|shut-Fin-Imp-S det|the-Def-Art noun|door-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	he's going to bed .
+%act:	<1w> walks man to bed and puts in bed
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S part|to verb|bed-Inf-S .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|3|PUNCT
+*MOT:	xxx sleep night night .
+%mor:	noun|sleep noun|night noun|night .
+%gra:	1|2|COMPOUND 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	mine go to bed too .
+%act:	<aft> attempts to open shape box lid but fails
+%mor:	pron|my-Prs-S1 verb|go-Fin-Ind-Pres-S1 adp|to noun|bed adv|too .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|ADVMOD 6|2|PUNCT
+*MOT:	where is yours ?
+%mor:	adv|where aux|be-Fin-Ind-Pres-S3 pron|your-Prs-S2 ?
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	in here .
+%act:	opens shape box lid and takes out man
+%mor:	adp|in adv|here .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	how'd it get in there ?
+%mor:	adv|how~aux|would-Fin-S pron|it-Prs-Nom-S3 verb|get-Inf-S adp|in adv|there ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+*CHI:	&-um another one .
+%act:	<bef> rummages in shape box . <dur> takes out man . <aft> closes shape box lid
+%xpho:	<2w> onU
+%mor:	det|another-Def-Ind noun|one .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	there's another one ?
+%mor:	pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 det|another-Def-Ind noun|one ?
+%gra:	1|2|EXPL 2|0|ROOT 3|4|DET 4|2|NSUBJ 5|2|PUNCT
+*CHI:	mine go to bed too .
+%act:	<bef> walks man in dollhouse through door . <dur> tries to move dollhouse objects aside in dollhouse . <aft> attempts to put man in bed but misses
+%mor:	pron|my-Prs-S1 verb|go-Fin-Ind-Pres-S1 adp|to noun|bed adv|too .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|ADVMOD 6|2|PUNCT
+*MOT:	he goes to bed (.) too ?
+%mor:	pron|he-Prs-Nom-S3 verb|go-Fin-Ind-Pres-S3 adp|to noun|bed adv|too ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|ADVMOD 6|2|PUNCT
+*CHI:	yyy .
+%act:	tries to pick up man . manipulates man in dollhouse
+%xpho:	waSIN
+%alt:	walking
+*MOT:	+< xxx water .
+%mor:	noun|water .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	where are (a)nother [*] ?
+%act:	<bef> takes man from dollhouse .
+%mor:	adv|where aux|be-Fin-Ind-Pres-P3 det|another-Def-Ind ?
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	here .
+%act:	<1w> takes bed from dollhouse
+%xpho:	<1w> ijeh
+%mor:	adv|here .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	where's the other bed ?
+%mor:	adv|where~aux|be-Fin-Ind-Pres-S3 det|the-Def-Art adj|other-S1 noun|bed ?
+%gra:	1|0|ROOT 2|1|COP 3|5|DET 4|5|AMOD 5|1|NSUBJ 6|1|PUNCT
+*CHI:	here it is .
+%act:	takes out bed so Mother can see
+%mor:	adv|here pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|COP 4|1|PUNCT
+*MOT:	here it is .
+%mor:	adv|here pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|COP 4|1|PUNCT
+*CHI:	where [*] other chair ?
+%act:	leans on dollhouse . begins to put bed inside but puts on floor
+%xpho:	<3w> Se
+%mor:	adv|where adj|other-S1 noun|chair ?
+%gra:	1|3|ADVMOD 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	where's the other chair ?
+%mor:	adv|where~aux|be-Fin-Ind-Pres-S3 det|the-Def-Art adj|other-S1 noun|chair ?
+%gra:	1|0|ROOT 2|1|COP 3|5|DET 4|5|AMOD 5|1|NSUBJ 6|1|PUNCT
+*CHI:	<here's> [/] here it is .
+%act:	reaches in dollhouse , takes out chair and puts on floor
+%mor:	adv|here pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|COP 4|1|PUNCT
+*CHI:	here xxx man .
+%mor:	adv|here noun|man .
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*CHI:	here yyy .
+%act:	reaches in dollhouse and works at getting man out
+%xpho:	<2w> neh
+%mor:	adv|here .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	mine [*] hat .
+%act:	<1w> takes man from dollhopuse and holds up high . <1w> drops man on front of Mother .
+%mor:	pron|my-Prs-S1 noun|hat .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	mine [*] hat on .
+%act:	<1w> leans on dollhouse for support
+%mor:	pron|my-Prs-S1 noun|hat adp|on .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT 4|2|PUNCT
+*MOT:	you want the hat on ?
+%act:	<bef> reaches for man in Linda's hand but misses . picks man up from floor . <dur> holds man
+%mor:	pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 det|the-Def-Art noun|hat-Acc adp|on ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|ADVMOD 6|2|PUNCT
+*CHI:	yes .
+%mor:	intj|yes .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you want me to have the ones with the hat on ?
+%act:	holds both men in one hand
+%mor:	pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 pron|I-Prs-Acc-S1 part|to verb|have-Inf-S det|the-Def-Art noun|one-Plur-Acc adp|with det|the-Def-Art noun|hat adp|on ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|5|MARK 5|2|XCOMP 6|7|DET 7|5|OBJ 8|10|CASE 9|10|DET 10|7|NMOD 11|2|PUNCT 12|2|PUNCT
+*CHI:	yeah .
+%act:	<aft> lays on floor by dollhouse with hands on objects
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	okay .
+%act:	<aft> puts a man in each hand . walks man to dollhouse door
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	I'm gonna knock on the door .
+%act:	<1w> makes man knock on dollhouse door . <1w> leaves man at door as if he's listening for an answer .
+%mor:	pron|I-Prs-Nom-S1~aux|be-Fin-Ind-Pres-S1 verb|go-Part-Pres-S~part|to verb|knock-Inf-S adp|on det|the-Def-Art noun|door .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|8|CASE 7|8|DET 8|5|OBL 9|3|PUNCT
+*MOT:	is anyone going to answer ?
+%mor:	aux|be-Fin-Ind-Pres-S3 pron|anyone-Ind-S1 verb|go-Part-Pres-S part|to verb|answer-Inf-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|3|PUNCT
+*MOT:	everybody's asleep (.) huh ?
+%act:	<1w> reaches in dollhouse and turns lawn chair right side up
+%mor:	pron|everybody-Tot-S1~aux|be-Fin-Ind-Pres-S3 adj|asleep-S1 intj|huh ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|VOCATIVE 5|3|PUNCT
+*MOT:	how did the car get in the house ?
+%mor:	adv|how aux|do-Fin-Ind-Past-S3-irr det|the-Def-Art noun|car verb|get-Inf-S adp|in det|the-Def-Art noun|house ?
+%gra:	1|5|ADVMOD 2|5|AUX 3|4|DET 4|5|NSUBJ 5|0|ROOT 6|8|CASE 7|8|DET 8|5|OBL 9|5|PUNCT
+*CHI:	what ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	ugh .
+%act:	reaches in dollhouse and takes car out . holds car
+%par:	breathy
+%mor:	intj|ugh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	0 [=! chuckles] .
+*CHI:	take it out .
+%mor:	verb|take-Fin-Imp-S pron|it-Prs-Acc-S3 adp|out .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMPOUND-PRT 4|1|PUNCT
+*MOT:	get it out ?
+%par:	<1w> laughs
+%mor:	verb|get-Fin-Imp-S pron|it-Prs-Acc-S3 adp|out ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|COMPOUND-PRT 4|1|PUNCT
+*MOT:	do cars belong in houses ?
+%mor:	aux|do-Fin-Ind-Pres-P3 noun|car-Plur verb|belong-Fin-Ind-Pres-P3 adp|in noun|house-Plur ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	&-um (.) no .
+%xpho:	6hm n6h ni ni
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yyy .
+%alt:	<1w> night_night
+*MOT:	what +...
+%mor:	pron|what-Int-S1 +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yyy .
+%xpho:	<1w> od6h
+*CHI:	byebye [>] .
+%act:	<1w> closes one door .
+%mor:	propn|byebye .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	byebye [>] .
+%act:	<1w> pushes man in door and closes other half of door
+%mor:	propn|byebye .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	byebye [>] .
+%mor:	propn|byebye .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	+, bye .
+%act:	<1w> makes sure door is securely shut .
+%mor:	intj|bye .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&-um .
+%act:	<1w> walks man to dollhouse and makes him knock on side of house .
+*CHI:	everybody's asleep .
+%act:	<1w> manipulates man on floor
+%xpho:	<1w> aibAd 6sip
+%mor:	pron|everybody-Tot-S1~aux|be-Fin-Ind-Pres-S3 adj|asleep-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*MOT:	what ?
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	+< everybody@x +...
+%xpho:	aibAd
+%mor:	unk|everybody +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	oh [% thinking] (.) everybody's asleep ?
+%mor:	intj|oh pron|everybody-Tot-S1~aux|be-Fin-Ind-Pres-S3 adj|asleep-S1 ?
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	everybody's .
+%act:	<1w> takes man from dollhouse and puts outside at dollhouse door
+%mor:	pron|everybody-Tot-S1~part|s .
+%gra:	1|0|ROOT 2|1|CASE 3|1|PUNCT
+*MOT:	do what ?
+%act:	holds objects in hands
+%mor:	verb|do-Fin-Imp-S pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	are they going to let him in ?
+%mor:	aux|be-Fin-Ind-Pres-P3 pron|they-Prs-Nom-P3 verb|go-Part-Pres-S part|to verb|let-Inf-S pron|he-Prs-Acc-S3 adp|in ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|5|COMPOUND-PRT 8|3|PUNCT
+*CHI:	0 .
+%act:	puts man back in dollhouse . moves man in dollhouse as if attempting to open door for man on outside . succeeds at opening door
+*MOT:	oh that's nice [>] .
+%mor:	intj|oh pron|that-Dem~aux|be-Fin-Ind-Pres-S3 adj|nice-S1 .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	I going open door [*] .
+%act:	<bef> takes both men out of dollhouse and puts them on floor
+%mor:	pron|I-Prs-Nom-S1 verb|go-Part-Pres-S adj|open-S1 noun|door-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|AMOD 4|2|OBJ 5|2|PUNCT
+*MOT:	you're going to open the door ?
+%mor:	pron|you-Prs-Nom-S2~aux|be-Fin-Ind-Pres-S2 verb|go-Part-Pres-S part|to verb|open-Inf-S det|the-Def-Art noun|door-Acc ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|DET 7|5|OBJ 8|3|PUNCT
+@End

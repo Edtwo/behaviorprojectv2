@@ -1,0 +1,548 @@
+@UTF8
+@PID:	11312/c-00015241-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child
+@ID:	eng|Bates|MOT||female|||Mother|||
+@ID:	eng|Bates|CHI|1;08.|male|TD|MC|Target_Child|||
+@Comment:	[ba3 morphotag | engine=stanza-1.11.1 ; lang=eng | 2026-05-07T09:32:11-04:00]
+@Types:	cross, toyplay, TD
+*MOT:	what about that one ?
+%act:	puts shape box object on shape box
+%mor:	pron|what-Int-S1 adp|about det|that-Def-Dem-Sing noun|one ?
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|NMOD 5|1|PUNCT
+*CHI:	0 .
+%act:	puts shape box object in shape box
+*MOT:	good !
+%act:	<1w> claps .
+%mor:	adj|good-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what about that one ?
+%act:	<1w> picks up shape box object and puts on shape box
+%mor:	pron|what-Int-S1 adp|about det|that-Def-Dem-Sing noun|one ?
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|NMOD 5|1|PUNCT
+*CHI:	&-uh .
+%act:	<aft> puts object in shape box . puts in own shape box object . picks up nesting cups and manipulates <dur> puts object over correct hole . <bef> picks up shape box object and holds .
+*MOT:	oh (.) Tom !
+%mor:	intj|oh propn|Tom !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	great !
+%mor:	adj|great-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yes !
+%act:	<1w> claps .
+%mor:	intj|yes !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	look !
+%act:	<1w> picks up and holds out another shape box object .
+%mor:	verb|look-Fin-Imp-S !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	lookee [<] !
+%act:	<1w> picks up and holds out another shape box object .
+%mor:	verb|lookee-Fin-Imp-S !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	look at this .
+%act:	<1w> puts shape box object on shape box lid
+%mor:	verb|look-Fin-Imp-S adp|at pron|this-Dem-S1 .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*MOT:	where does that go ?
+%par:	<1w> whispers
+%mor:	adv|where aux|do-Fin-Ind-Pres-S3 pron|that-Dem verb|go-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	go: .
+%act:	<dur> picks up shape box object <bef> puts nesting cups on floor .
+%xpho:	<1w> 6m
+%mor:	verb|go-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah (.) where does that go ?
+%mor:	intj|yeah adv|where aux|do-Fin-Ind-Pres-S3 pron|that-Dem verb|go-Inf-S ?
+%gra:	1|5|DISCOURSE 2|5|ADVMOD 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|5|PUNCT
+*CHI:	go: .
+%act:	puts object in correct hole
+%xpho:	<1w> 6m
+%mor:	verb|go-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	fantastic !
+%int:	<1w> emphasizes middle of word
+%mor:	adj|fantastic-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	look at that .
+%act:	<1w-3w> picks up shape box object and puts on lid
+%mor:	verb|look-Fin-Imp-S adp|at pron|that-Dem .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*MOT:	where does that [!] go ?
+%act:	<1w-4w> picks up shape box object and puts on lid
+%mor:	adv|where aux|do-Fin-Ind-Pres-S3 pron|that-Dem verb|go-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	go: .
+%act:	takes shape box object and rubs on shape box lid , attempting various holes
+%xpho:	6n go 6n dZ&t Ik
+%mor:	verb|go-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yyy yyy yyy .
+*MOT:	where does that [!] go (.) honey ?
+%mor:	adv|where aux|do-Fin-Ind-Pres-S3 pron|that-Dem verb|go-Inf-S noun|honey-Acc ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	&-uh &~v sit .
+%act:	gets shape box object in correct hole
+%mor:	verb|sit-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yes !
+%act:	claps
+%int:	drawn out
+%par:	<bef> gasps
+%mor:	intj|yes !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx does erget@u ?
+%act:	picks up another shape box object , holds briefly and attempts to put in shape box
+%alt:	where does that get
+%mor:	aux|do-Fin-Ind-Pres-S3 uni|erget ?
+%gra:	1|0|ROOT 2|1|DEP 3|1|PUNCT
+*MOT:	yeah !
+%mor:	intj|yeah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&-uh &-uh .
+%act:	adjusts shape box object
+*MOT:	oh !
+%act:	helps Tom . puts shape box object in correct position
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	wait a minute (.) y(a) have ta turn it around here .
+%mor:	verb|wait-Fin-Imp-S det|a-Ind-Art noun|minute pron|you-Prs-Acc-S2 verb|have-Fin-Imp-S part|to verb|turn-Inf-S pron|it-Prs-Acc-S3 adp|around adv|here .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBL-UNMARKED 4|5|NSUBJ 5|1|PARATAXIS 6|7|MARK 7|5|XCOMP 8|7|OBJ 9|10|CASE 10|7|OBL 11|1|PUNCT
+*MOT:	yeah !
+%mor:	intj|yeah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	oh !
+%act:	puts object in correct hole
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	look at that !
+%act:	<1w-3w> picks up and puts shape box object on lid <1w> claps .
+%mor:	verb|look-Fin-Imp-S adp|at pron|that-Dem !
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*MOT:	where does that go ?
+%act:	<1w-4w> picks up and puts shape box object on lid
+%mor:	adv|where aux|do-Fin-Ind-Pres-S3 pron|that-Dem verb|go-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	yyy yyy yyy .
+%act:	<2w> puts shape box object on floor . reorients shape box object in hand . attempts to put object in various holes <2w> picks up shape box lid . <1w> picks up shape box object from floor and holds .
+%par:	<aft> gasps
+%xpho:	ja tSa tSet
+*MOT:	where does that go ?
+%mor:	adv|where aux|do-Fin-Ind-Pres-S3 pron|that-Dem verb|go-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	that go .
+%act:	<aft> tries another hole but it's wrong
+%mor:	det|that-Def-Dem-Sing verb|go-Fin-Ind-Pres-S3 .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	right there !
+%act:	taps correct hole
+%par:	whispers
+%mor:	adv|right adv|there !
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	[^ pointing up to a top shelf] there !
+%mor:	adv|there !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	tries correct hole , struggles
+*MOT:	look !
+%act:	helps Tom . takes shape box object and puts in correct position on lid
+%mor:	verb|look-Fin-Imp-S !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	here yyy ?
+%act:	<1w-2w> puts hands on shape box . picks up shape box object and puts in shape box <1w> takes shape box object , drops , puts on floor .
+%xpho:	<2w> Seh vo Se
+%mor:	adv|here ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yyy yyy .
+%act:	<1w-2w> puts hands on shape box . picks up shape box object and puts in shape box
+%xpho:	<1w> Seh vo Se
+*MOT:	good !
+%act:	claps
+%gpx:	smiles
+%mor:	adj|good-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	oh ah !
+%act:	<1w> picks up another shape box object and puts in shape box
+%par:	<aft> laughs
+%mor:	intj|oh intj|ah !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	yes !
+%act:	claps
+%gpx:	smiles
+%mor:	intj|yes !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	<1w> picks up shape box object and puts on shape box lid <1w> soft clap . <aft> puts in correct hole <dur> attempts to put shape box object in wrong hole . <bef> picks up nesting cup then puts down .
+*CHI:	&=laughs .
+%act:	takes shape box object and puts in shape box . slaps thighs
+*MOT:	yeah !
+%act:	<1w> claps .
+%mor:	intj|yeah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	where'd <that lady go> [>] ?
+%act:	<1w> picks up shape box object .
+%mor:	adv|where~aux|would-Fin-S det|that-Def-Dem-Sing noun|lady verb|go-Inf-S ?
+%gra:	1|5|ADVMOD 2|5|AUX 3|4|DET 4|5|NSUBJ 5|0|ROOT 6|5|PUNCT
+*MOT:	look !
+%act:	<1w> sets object by correct hole
+%mor:	verb|look-Fin-Imp-S !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yay@i !
+%act:	takes object and slides in hole
+%mor:	co|yay !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yay@i !
+%act:	<aft> picks up shape box object and puts on shape box lid
+%par:	<bef> gasps
+%mor:	co|yay !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&-uh !
+%act:	<1w> takes shape box object and attempts to put in shape box .
+*CHI:	&-uh !
+%act:	<1w> takes shape box object and attempts to put in shape box .
+*CHI:	yyy .
+%act:	<1w> lets go
+%xpho:	<1w> pwe
+*MOT:	wait (.) what about this [!] one ?
+%act:	<1w> reorients Tom's hand . puts shape box object in correct position .
+%mor:	verb|wait-Fin-Imp-S pron|what-Int-S1 adp|about det|this-Def-Dem-Sing noun|one ?
+%gra:	1|0|ROOT 2|1|OBJ 3|5|CASE 4|5|DET 5|2|NMOD 6|1|PUNCT
+*MOT:	uhoh .
+%par:	<1w> gasps .
+%mor:	intj|uhoh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yay@i !
+%act:	<aft> claps
+%par:	<1w> spoken loudly
+%mor:	co|yay !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yay@i !
+%act:	<dur> flails hands <bef> takes shape box object , slips , puts in correct hole .
+%par:	spoken loudly
+%mor:	co|yay !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	good !
+%act:	<aft> discards objects
+%mor:	adj|good-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	good !
+%act:	picks up shape box object and holds
+%mor:	adj|good-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's in here ?
+%act:	<1w> pulls dollhouse toward Tom .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 adp|in adv|here ?
+%gra:	1|0|ROOT 2|4|COP 3|4|CASE 4|1|OBL 5|1|PUNCT
+*MOT:	let's see what's in here .
+%act:	<1w> takes car and puts on floor
+%mor:	verb|let-Fin-Imp-S~pron|we-Prs-Acc-P1 verb|see-Inf-S pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 adp|in adv|here .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|7|NSUBJ 5|7|COP 6|7|CASE 7|3|CCOMP 8|1|PUNCT
+*CHI:	0 .
+%act:	takes dog out of dollhouse and puts in car
+*MOT:	the little people are going for a ride (.) on Easter mornin(g) .
+%act:	<1w-12w> takes man out of dollhouse and puts in car . repeats two more times . drives car .
+%par:	<1w> sing song
+%mor:	det|the-Def-Art adj|little-S1 noun|person-Plur aux|be-Fin-Ind-Pres-P3 verb|go-Part-Pres-S adp|for det|a-Ind-Art noun|ride adp|on propn|Easter noun|morning-Ger .
+%gra:	1|3|DET 2|3|AMOD 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|8|CASE 7|8|DET 8|5|OBL 9|11|CASE 10|11|COMPOUND 11|8|NMOD 12|5|PUNCT
+*MOT:	rrroom@o .
+%act:	<1w> takes man out of dollhouse and puts in car . repeats two more times . drives car .
+%mor:	on|rrroom .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	are you taking the dog ?
+%act:	<1w> examines dog . stops car , takes out man , drops and retrieves and puts in driver's seat
+%mor:	aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|take-Part-Pres-S det|the-Def-Art noun|dog-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*MOT:	we'd better put somebody (.) in the driver's seat .
+%mor:	pron|we-Prs-Nom-P1~aux|would-Fin-Ind-Past-P1 adv|well verb|put-Inf-S pron|somebody-Ind-S1 adp|in det|the-Def-Art noun|driver~part|s noun|seat .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|10|CASE 7|8|DET 8|10|NMOD-POSS 9|8|CASE 10|4|OBL 11|4|PUNCT
+*CHI:	uhoh !
+%act:	<dur> flails hands <bef> reaches in dollhouse but stops . pulls car briefly .
+%mor:	intj|uhoh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	[^ pointing up to a top shelf] there !
+%mor:	adv|there !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	la_laaaa@o .
+%act:	pulls car
+%exp:	car noises
+%mor:	on|lalaaaa .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah (.) brroom_room@o .
+%act:	pulls dollhouse toward self . rummages
+%mor:	intj|yeah on|brroomroom .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	[^ pointing up to a top shelf] there !
+%act:	drives car . stops
+%mor:	adv|there !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	broom_broom_broom@o .
+%mor:	on|broombroombroom .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	here's a chicken .
+%act:	<1w-3w> takes chicken out of dollhouse and holds out to Tom . puts chicken down . dances chicken and puts down .
+%mor:	adv|here~aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|chicken .
+%gra:	1|0|ROOT 2|1|COP 3|4|DET 4|1|NSUBJ 5|1|PUNCT
+*MOT:	cock_a_doddle_doo@o !
+%act:	<aft> takes another chicken out and puts on floor <1w> takes chicken out of dollhouse and holds out to Tom . puts chicken down . dances chicken and puts down .
+%com:	<aft> makes chicken noises
+%mor:	on|cockadoddledoo !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	toys .
+%act:	<dur> holds car <bef> takes chicken . picks up car and turns it over , dumping it out .
+%mor:	noun|toy-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	toys .
+%mor:	noun|toy-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	toys .
+%mor:	noun|toy-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	toys .
+%act:	takes some objects out of dollhouse
+%mor:	noun|toy-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	toys .
+%act:	takes man out of dollhouse
+%mor:	noun|toy-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	uhhuh .
+%act:	takes bed out of dollhouse and holds
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	oh .
+%act:	<aft> puts car on floor
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	look (.) this one's going night night (.) Tom .
+%act:	takes man out of dollhouse , puts bed down . puts man on bed
+%mor:	verb|look-Fin-Imp-S det|this-Def-Dem-Sing noun|one~part|s verb|go-Ger-S noun|night noun|night propn|Tom-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|7|NMOD-POSS 4|3|CASE 5|7|AMOD 6|7|COMPOUND 7|1|OBL-UNMARKED 8|1|OBJ 9|1|PUNCT
+*MOT:	&=vocalizes xxx night_night !
+%par:	<1w> spoken in high pitch
+%mor:	propn|nightnight !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	night_night xxx .
+%act:	takes man out of dollhouse and puts in car .
+%xpho:	nai+nait
+%mor:	propn|nightnight .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	night_night xxx .
+%act:	takes man out , examines , and manipulates
+%par:	spoken softly
+%mor:	propn|nightnight .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&-uh woom_woo_woo@o .
+%par:	<2w> car noise
+%mor:	on|woomwoowoo .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	look at this .
+%act:	<1w-3w> holds man out to Tom .
+%mor:	verb|look-Fin-Imp-S adp|at pron|this-Dem-S1 .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*MOT:	lookit .
+%act:	<1w> holds man out to Tom .
+%mor:	noun|lookit .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	&=vocalizes xxx night_night !
+%act:	<1w> puts man in bed .
+%par:	<1w> spoken in high pitch
+%mor:	propn|nightnight !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	see you in the mornin(g) !
+%act:	<1w> picks up beds and puts on other side of dollhouse
+%mor:	verb|see-Fin-Imp-S pron|you-Prs-Acc-S2 adp|in det|the-Def-Art noun|morning-Ger !
+%gra:	1|0|ROOT 2|1|OBJ 3|5|CASE 4|5|DET 5|1|OBL 6|1|PUNCT
+*CHI:	woo_woo_woo_wa@o .
+%act:	<1w> puts man in car . puts other man in car .
+%par:	car noise
+%mor:	on|woowoowoowa .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	woo_woo_woo_woo@o .
+%act:	<1w> pushes car around
+%mor:	on|woowoowoowoo .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	where are they going ?
+%act:	<aft> sets down but it falls over <dur> takes out man and bench , putting man in bench . <bef> rummages in dollhouse . takes out bed , examines , and puts down in dollhouse .
+%mor:	adv|where aux|be-Fin-Ind-Pres-P3 pron|they-Prs-Nom-P3 verb|go-Part-Pres-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	&-uh going .
+%act:	puts hand on car
+%mor:	verb|go-Part-Pres-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	where are they going ?
+%act:	rights bench
+%mor:	adv|where aux|be-Fin-Ind-Pres-P3 pron|they-Prs-Nom-P3 verb|go-Part-Pres-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	&-uh going .
+%act:	manipulates man in car
+%gpx:	glances at fallen objects
+%mor:	verb|go-Part-Pres-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	for a ride ?
+%mor:	adp|for det|a-Ind-Art noun|ride ?
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	in a ride [!] .
+%act:	pushes car a little
+%mor:	adp|in det|a-Ind-Art noun|ride .
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	yeah (.) for a ride [!] .
+%act:	picks up object and puts in bench . straightens men
+%mor:	intj|yeah adp|for det|a-Ind-Art noun|ride .
+%gra:	1|4|DISCOURSE 2|4|CASE 3|4|DET 4|0|ROOT 5|4|PUNCT
+*CHI:	yyy yyy yyy .
+%xpho:	<1w> e dIh tS6den
+*CHI:	dee_dee@o .
+%act:	<1w> makes car noise .
+%mor:	on|deedee .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	uhoh !
+%act:	<1w> makes crash sound
+%mor:	intj|uhoh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	children .
+%mor:	noun|child-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yyy yyy yyy .
+%xpho:	<1w> e dIh tS6den
+*MOT:	uhoh !
+%act:	<1w> takes object out of dollhouse and puts on floor
+%mor:	intj|uhoh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	accident !
+%mor:	noun|accident !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&-uh !
+%act:	<aft> picks up one man and then another . puts man in mouth and bites
+*MOT:	look (.) here's a dog .
+%mor:	verb|look-Fin-Imp-S adv|here~aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|dog .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|5|COP 4|5|DET 5|1|PARATAXIS 6|1|PUNCT
+*MOT:	look at the dog (.) Tom !
+%mor:	verb|look-Fin-Imp-S adp|at det|the-Def-Art noun|dog propn|Tom !
+%gra:	1|0|ROOT 2|5|CASE 3|5|DET 4|1|OBL 5|1|OBL 6|1|PUNCT
+*MOT:	arf_arf@o .
+%mor:	on|arfarf .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	look at that dog .
+%com:	<1w> whispers
+%mor:	verb|look-Fin-Imp-S adp|at det|that-Def-Dem-Sing noun|dog .
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|OBL 5|1|PUNCT
+*MOT:	ruff_ruff_ruff@o !
+%act:	<aft> lowers dog to floor
+%mor:	on|ruffruffruff !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	ruff@o .
+%par:	spoken softly
+%mor:	on|ruff .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	that's a dog .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|dog .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|4|PUNCT
+*CHI:	ruff_ruff_ruff@o .
+%act:	stops biting man . examines objects and puts down
+%mor:	on|ruffruffruff .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	mhm .
+%act:	manipulates dog . takes object out of dollhouse
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you bet (.) that's a dog .
+%exp:	<1w> as if said to herself
+%mor:	pron|you-Prs-Nom-S2 verb|bet-Fin-Ind-Pres-S2 pron|that-Dem~aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|dog .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|6|NSUBJ 4|6|COP 5|6|DET 6|2|CCOMP 7|2|PUNCT
+*CHI:	tick_tck_tck_tck@o .
+%act:	reaches for Mother's hand . holds object toward ear , sets down , takes and holds to ear
+%mor:	on|ticktcktcktck .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	tick_tick_tick_tick_tick@o .
+%act:	holds arm toward Tom's ear
+%par:	<aft> laughs
+%mor:	on|tickticktickticktick .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	tick_tick@o .
+%act:	rubs ear
+%xpho:	tI+tI
+%mor:	on|ticktick .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	haha@i .
+%act:	takes away arm . straightens watch . manipulates nesting cups
+%mor:	co|haha .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah !
+%par:	<aft> laughs
+%mor:	intj|yeah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	tick_tick_tick_tick_tick_tick@o .
+%act:	holds own wrist to ear
+%xpho:	tI
+%mor:	on|ticktickticktickticktick .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	build a pyramid .
+%act:	builds tower
+%mor:	verb|build-Fin-Imp-S det|a-Ind-Art noun|pyramid-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	dum_doo_doo_doo@wp .
+%par:	<1w> sings
+%mor:	wplay|dumdoodoodoo .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	look (.) Tom !
+%mor:	verb|look-Fin-Imp-S propn|Tom-Acc !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	look .
+%mor:	verb|look-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&-uh !
+%act:	<bef> picks up nesting cup , manipulates , puts on floor
+*MOT:	look look .
+%act:	<aft> puts Tom's nesting cups on tower
+%mor:	verb|look-Fin-Imp-S noun|look-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	ah !
+%act:	picks up tower carefully but it falls . falls again
+%par:	<aft> crying and whining that changes to laughing
+%mor:	intj|ah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	uhoh !
+%act:	pushes dollhouse away . retrieves cups
+%mor:	intj|uhoh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	uhoh !
+%mor:	intj|uhoh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	uhoh !
+%par:	<1w> spoken in high pitch
+%mor:	intj|uhoh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	more ?
+%mor:	adj|more-Cmp-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	more ?
+%mor:	adj|more-Cmp-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	mhm .
+%act:	pushes dollhouse further away . picks up nesting cups and begins stacking rapidly
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	more .
+%xpho:	<2w> Sei S&k
+%mor:	adj|more-Cmp-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	+, them .
+%act:	<1w> picks up nesting cups rapidly and holds
+%xpho:	<1w> Sei S&k
+%alt:	<1w> stack
+%mor:	pron|they-Prs-Acc-P3 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	put that one on here .
+%act:	taps nesting cup stack
+%gpx:	points to nesting cup to her right
+%mor:	verb|put-Fin-Imp-S det|that-Def-Dem-Sing noun|one-Acc adp|on adv|here .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|5|CASE 5|1|OBL 6|1|PUNCT
+*CHI:	0 .
+%act:	puts own nesting cup on stack
+*MOT:	no this one .
+%gpx:	points to nesting cup
+%mor:	intj|no det|this-Def-Dem-Sing noun|one .
+%gra:	1|3|DISCOURSE 2|3|DET 3|0|ROOT 4|3|PUNCT
+@End

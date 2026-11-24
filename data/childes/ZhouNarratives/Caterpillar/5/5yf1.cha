@@ -1,0 +1,141 @@
+@UTF8
+@PID:	11312/a-00102380-0
+@Begin
+@Languages:	zho
+@Participants:	CHI Target_Child, INV Investigator
+@ID:	zho|ZhouNarratives|CHI|5;||||Target_Child|||
+@ID:	zho|ZhouNarratives|INV|||||Investigator|||
+@Media:	5yf1, video
+@Date:	05-NOV-2008
+@Situation:	Kindergarten of Bing Chang Tian
+@G:	01
+@Types:	cross, narrative, TD
+*CHI:	&~嗯 [^c] 毛毛虫 [^c] . [+ bok]
+%act:	看着封面 .
+%mor:	noun|毛毛虫 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	嗯 [^c] .
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+@G:	02
+*CHI:	这 个 xxx 是 花的 [^c] . [+ bok] 97420_97920
+%wor:	这 个 是 97420_97920 花的 .
+%act:	翻到封面环衬 .
+%mor:	det|这-Def noun|个 aux|是-Inf-S noun|花的 .
+%gra:	1|2|DET 2|4|CLF 3|4|COP 4|0|ROOT 5|4|PUNCT
+*INV:	噢 [^c] .
+%mor:	punct|噢 .
+%gra:	1|0|ROOT 2|1|PUNCT
+@G:	05
+*CHI:	在 一 个 地球 表面 上 [^c] . 127990_130633
+%wor:	在 127990_129171 一 129191_129212 个 129232_129252 地球 129272_129332 表面 129352_130113 上 130133_130633 .
+%act:	翻到第1 , 2页 .
+%mor:	adp|在 num|一 noun|个 propn|地球 noun|表面 adp|上 .
+%gra:	1|5|CASE 2|5|NUMMOD 3|2|CLF 4|5|NMOD 5|0|ROOT 6|5|CASE 7|5|PUNCT
+*INV:	嗯 [^c] . 130233_130733
+%wor:	嗯 130233_130733 .
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	有 很 多的 东西 [^c] . 132918_136443
+%wor:	有 132918_133338 很 133358_135322 多的 135342_135923 东西 135943_136443 .
+%mor:	verb|有-Inf-S adv|很 adj|多的-S1 noun|东西-Acc .
+%gra:	1|0|ROOT 2|3|ADVMOD 3|4|AMOD 4|1|OBJ 5|1|PUNCT
+*INV:	嗯 .
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	外 星球 [^c] .
+%mor:	part|外 noun|星球 .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+@G:	06
+*CHI:	太阳 快 落 山 时 [^c] . 136163_139267
+%wor:	太阳 136163_137986 快 138006_138567 落 138587_138647 山 138667_138747 时 138767_139267 .
+%xsgra:	$eki:21
+%act:	翻到第3 .4页 .
+%mor:	noun|太阳 adj|快-S1 verb|落-Inf-S part|山 adp|时 .
+%gra:	1|2|NSUBJ 2|4|AMOD 3|4|COMPOUND 4|0|ROOT 5|4|CASE 6|4|PUNCT
+@G:	07
+*CHI:	它 看见 苹果 [^c] 就 钻 进 苹果 里 [^c] .
+%xsgra:	$eki:5a2
+%act:	翻到第5 .6页 .
+%mor:	pron|它-Int-S3 verb|看见-Inf-S propn|苹果-Acc sconj|就 verb|钻-Inf-S verb|进-Inf-S propn|苹果 part|里 .
+%gra:	1|5|NSUBJ 2|5|ADVCL 3|2|OBJ 4|5|MARK 5|0|ROOT 6|5|MARK 7|8|COMPOUND 8|5|OBJ 9|5|PUNCT
+@G:	08
+*CHI:	从 苹果 里 出来 了 [^c] . 145230_148373
+%wor:	从 145230_145550 苹果 145570_147733 里 147753_147773 出来 147793_147853 了 147873_148373 .
+%mor:	adp|从 propn|苹果 adp|里 verb|出来-Inf-S part|了 .
+%gra:	1|2|CASE 2|4|OBL 3|2|CASE 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*CHI:	又 钻 进 了 梨子 [^c] . 147913_151778
+%wor:	又 147913_147933 钻 147953_147973 进 147993_150917 了 150937_151258 梨子 151278_151778 .
+%xsgra:	$eki:6a1
+%act:	翻到苹果生梨页 .
+%mor:	sconj|又 verb|钻-Inf-S verb|进-Inf-S aux|了-Inf-Perf-S noun|梨子-Acc .
+%gra:	1|2|MARK 2|0|ROOT 3|2|MARK 4|2|AUX 5|2|OBJ 6|2|PUNCT
+@G:	09
+*CHI:	从 梨子 出来 了 [^c] . 152179_154101
+%wor:	从 152179_153421 梨子 153441_153501 出来 153521_153581 了 153601_154101 .
+%mor:	adp|从 noun|梨子 verb|出来-Inf-S part|了 .
+%gra:	1|2|CASE 2|3|OBL 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*CHI:	钻 进 葡萄 [^c] .
+%act:	翻到生梨李子页 .
+%mor:	noun|钻 verb|进-Inf-S noun|葡萄-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+@G:	10
+*CHI:	蓝 水果 又 出来 了 [^c] . 153661_154642
+%wor:	蓝 153661_153721 水果 153741_153881 又 153901_153961 出来 153981_154122 了 154142_154642 .
+%mor:	propn|蓝 noun|水果 sconj|又 verb|出来-Inf-S part|了 .
+%gra:	1|2|NMOD 2|4|NSUBJ 3|4|MARK 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*CHI:	钻 进 红 的 [^c] . 155403_157826
+%wor:	钻 155403_155764 进 155784_155844 红 155864_157306 的 157326_157826 .
+%act:	翻到李子草莓页 .
+%mor:	noun|钻 verb|进-Inf-S adj|红-S1 part|的 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|2|DISCOURSE 5|2|PUNCT
+@G:	11
+*CHI:	红 的 里面 ‡ 又 出来 了 [^c] . 159930_162953
+%wor:	红 159930_160550 的 160570_162233 里面 162253_162313 ‡ 又 162333_162353 出来 162373_162433 了 162453_162953 .
+%mor:	noun|红 part|的 noun|里面 punct|‡ sconj|又 verb|出来-Inf-S part|了 .
+%gra:	1|3|NMOD 2|1|CASE 3|6|NSUBJ 4|3|PUNCT 5|6|MARK 6|0|ROOT 7|6|DISCOURSE 8|6|PUNCT
+*CHI:	钻 进 桔黄 里 [^c] . 162493_163714
+%wor:	钻 162493_162513 进 162533_162553 桔黄 162573_163194 里 163214_163714 .
+%act:	翻到草莓桔子页 .
+%mor:	noun|钻 verb|进-Inf-S propn|桔黄 part|里 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|COMPOUND 4|2|OBJ 5|2|PUNCT
+@G:	12
+*CHI:	桔黄 的 ‡ 又 出来 了 [^c] . 163455_167119
+%wor:	桔黄 163455_165818 的 165838_165918 ‡ 又 165938_166118 出来 166138_166599 了 166619_167119 .
+%act:	翻到星期六页 .
+%mor:	noun|桔黄 part|的 noun|‡ sconj|又 verb|出来-Inf-S part|了 .
+%gra:	1|3|NMOD 2|1|CASE 3|5|NSUBJ 4|5|MARK 5|0|ROOT 6|5|DISCOURSE 7|5|PUNCT
+*CHI:	结果 它 钻 累 了 [^c] . 166739_169342
+%wor:	结果 166739_167280 它 167300_167540 钻 167560_168121 累 168141_168822 了 168842_169342 .
+%mor:	noun|结果 pron|它-Int-S3 verb|钻-Inf-S verb|累-Inf-S part|了 .
+%gra:	1|3|NSUBJ 2|3|NSUBJ 3|0|ROOT 4|3|MARK 5|3|DISCOURSE 6|3|PUNCT
+*CHI:	它 就 累 [//] 很 累地 趴 在 地 上 [^c] . 169483_171886
+%wor:	它 169483_169503 就 169523_169563 累 169583_169704 很 169724_169804 累地 169824_169884 趴 169904_169924 在 169944_170304 地 170324_171366 上 171386_171886 .
+%mor:	pron|它-Int-S3 sconj|就 adv|很 adj|累地-S1 verb|趴-Inf-S verb|在-Inf-S noun|地-Acc noun|上 .
+%gra:	1|5|NSUBJ 2|5|MARK 3|4|ADVMOD 4|5|ADVCL 5|0|ROOT 6|5|MARK 7|5|OBJ 8|7|ACL 9|5|PUNCT
+@G:	13
+*CHI:	它 在 吃 叶子 [^c] . 174570_175318
+%wor:	它 174570_174694 在 174715_174756 吃 174777_174798 叶子 174818_175318 .
+%xsgra:	$eps:atm7, $eki:da2, $iki:da1
+%act:	翻到星期天页 .
+%mor:	pron|它-Int-S3 adv|在 verb|吃-Inf-S noun|叶子-Acc .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+@G:	14
+*CHI:	一 个 大大的 卵 出来 了 [^c] . 182690_320640
+%wor:	一 182690_183130 个 210480_211480 大大的 卵 出来 313780_314080 了 320140_320640 .
+%act:	翻到大毛毛虫页 .
+%mor:	num|一 noun|个 adj|大大的-S1 part|卵 verb|出来-Inf-S part|了 .
+%gra:	1|2|NUMMOD 2|4|NMOD 3|4|COMPOUND 4|5|NSUBJ 5|0|ROOT 6|5|DISCOURSE 7|5|PUNCT
+*CHI:	毛毛虫 变 大 了 [^c] . 350960_351994
+%wor:	毛毛虫 350960_351370 变 351391_351432 大 351452_351473 了 351494_351994 .
+%xsgra:	$end:ine3, $eki:g2
+%mor:	noun|毛毛虫 verb|变-Inf-S adj|大-S1 part|了 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|2|DISCOURSE 5|2|PUNCT
+@G:	15
+*CHI:	突然间 它 就 变成 一 只 大大的 蝴蝶 [^c] . 389060_390471
+%wor:	突然间 389060_389161 它 389181_389201 就 389222_389424 变成 389444_389566 一 389586_389606 只 389627_389647 大大的 389667_389951 蝴蝶 389971_390471 .
+%xsgra:	$end:con2, $iki:ja1, $eki:jb1, $iki:jb2
+%act:	翻到蝴蝶页 .
+%mor:	adv|突然间 pron|它-Int-S3 sconj|就 verb|变成-Inf-S num|一 noun|只 adj|大大的-S1 noun|蝴蝶-Acc .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|MARK 4|0|ROOT 5|8|NUMMOD 6|5|CLF 7|8|AMOD 8|4|OBJ 9|4|PUNCT
+@End

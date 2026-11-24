@@ -1,0 +1,568 @@
+@UTF8
+@PID:	11312/c-00015218-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child
+@ID:	eng|Bates|MOT||female|||Mother|||
+@ID:	eng|Bates|CHI|1;08.|female|TD|MC|Target_Child|||
+@Comment:	[ba3 morphotag | engine=stanza-1.11.1 ; lang=eng | 2026-05-07T09:30:18-04:00]
+@Types:	cross, toyplay, TD
+*MOT:	what's that ?
+%act:	holds object out to Amy
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	yyy .
+%gpx:	looks at chicken
+%act:	holds nesting cups
+%xpho:	wi
+*MOT:	it's a chicken .
+%mor:	pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|chicken .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|4|PUNCT
+*CHI:	yeah .
+%act:	takes chicken
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's this ?
+%act:	<1w-2w> holds object out to Amy <1w> picks up object .
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*MOT:	what is [!] that ?
+%act:	<1w-3w> holds object out to Amy
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	yyy ?
+%act:	<aft> manipulates chicken in hands
+%xpho:	6rat
+*MOT:	xxx it's a woof .
+%mor:	pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|woof .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|4|PUNCT
+*CHI:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah .
+%act:	picks up object and puts back in dollhouse
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	woof .
+%act:	wiggles chicken back and forth
+%xpho:	<2w> wu
+%mor:	noun|woof .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	xxx it's a woof .
+%mor:	pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|woof .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|4|PUNCT
+*MOT:	what's this ?
+%act:	<1w> picks up object from dollhouse and holds out to Amy
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*MOT:	a chicken !
+%mor:	det|a-Ind-Art noun|chicken !
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	0 .
+%act:	takes object and examines
+*MOT:	what's this ?
+%act:	picks up object from dollhouse and holds out to Amy
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	hat [% putting hat on Leo's head] .
+%com:	spoken softly
+%xpho:	hi6
+%mor:	noun|hat .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	is that a hat ?
+%mor:	aux|be-Fin-Ind-Pres-S3 pron|that-Dem det|a-Ind-Art noun|hat ?
+%gra:	1|4|COP 2|4|NSUBJ 3|4|DET 4|0|ROOT 5|4|PUNCT
+*CHI:	yeah !
+%act:	wiggles in hand . holds objects in both hands
+%com:	spoken loudly
+%mor:	intj|yeah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah !
+%mor:	intj|yeah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yyy !
+%xpho:	mA bI
+*MOT:	huh ?
+%act:	<1w> picks up table , examines and puts in dollhouse <1w> puts object in dollhouse . picks up chair and puts in dollhouse .
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	oh look at that .
+%act:	<1w-4w> picks up table , examines and puts in dollhouse
+%mor:	intj|oh verb|look-Fin-Imp-S adp|at pron|that-Dem .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*MOT:	there's a picnic table .
+%mor:	pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|picnic noun|table .
+%gra:	1|2|EXPL 2|0|ROOT 3|5|DET 4|5|COMPOUND 5|2|NSUBJ 6|2|PUNCT
+*MOT:	and you can sit some people down here .
+%act:	<dur> picks up another chair and puts by table . picks up man and puts in chair <bef> picks up chair and puts down by table .
+%mor:	cconj|and pron|you-Prs-Nom-S2 aux|can-Fin-S verb|sit-Inf-S det|some-Def-Ind noun|person-Plur-Acc adp|down adv|here .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|COMPOUND-PRT 8|4|ADVMOD 9|4|PUNCT
+*CHI:	hey !
+%act:	puts toys on floor and leans on dollhouse with hands on rim
+%gpx:	points in dollhouse
+%mor:	intj|hey !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	aht@i !
+%mor:	co|aht !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	ow@i .
+%gpx:	<aft> looks at Mother's object , at car and at dollhouse as Mother uses each
+%act:	<aft> picks up object and holds
+%mor:	co|ow .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	hoo_hoo_hoo_hoo_hoo@o !
+%act:	<aft> puts object on dollhouse floor . picks up car and puts outside dollhouse . pushes dollhouse back
+%exp:	dancing noises
+%mor:	on|hoohoohoohoohoo !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	I don't know [% whining and beginning to cry] +...
+%act:	<1w> picks up ladder and examines .
+%mor:	pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not verb|know-Inf-S +...
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*MOT:	what's this ?
+%act:	<1w> puts down on side of dollhouse
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*MOT:	a ladder I guess .
+%mor:	det|a-Ind-Art noun|ladder pron|I-Prs-Nom-S1 verb|guess-Fin-Ind-Pres-S1 .
+%gra:	1|2|DET 2|0|ROOT 3|4|NSUBJ 4|2|ACL-RELCL 5|2|PUNCT
+*CHI:	0 .
+%act:	puts object down . takes two men out of dollhouse and holds
+*MOT:	0 .
+%act:	takes chair from dollhouse and puts on floor . takes another chair out and begins to put on floor but stops . moves toward Amy and puts chair on floor in front of her
+*CHI:	0 .
+%act:	picks up chair out of dollhouse , drops , picks up again . begins to put on floor but stops , examines , and puts down by Mother's chair
+*MOT:	can you take him out ?
+%act:	<aft> opens dollhouse door
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|take-Inf-S pron|he-Prs-Acc-S3 adp|out ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|COMPOUND-PRT 6|3|PUNCT
+*MOT:	boom_boom_boom_boom@o .
+%act:	<aft> puts man in chair
+%exp:	walking noises
+%mor:	on|boomboomboomboom .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yeah .
+%act:	<aft> picks up chair with other hand and holds both to knee <dur> lowers one man toward chair . <bef> manipulates men , holding one in each hand .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	0 .
+%act:	walks another man out dollhouse door and puts in chair
+*MOT:	here .
+%act:	<dur> picks up man and puts in car . pushes car toward Amy slightly <1w> moves chair toward Amy slightly .
+%mor:	adv|here .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	go for a ride ?
+%act:	<dur> picks up man and puts in car . pushes car toward Amy slightly
+%mor:	verb|go-Fin-Imp-S adp|for det|a-Ind-Art noun|ride ?
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|OBL 5|1|PUNCT
+*CHI:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	he's gonna go for a ride with the children .
+%act:	picks up chicken by Amy and puts in car
+%mor:	pron|he-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S~part|to verb|go-Inf-S adp|for det|a-Ind-Art noun|ride adp|with det|the-Def-Art noun|child-Plur .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|8|CASE 7|8|DET 8|5|OBL 9|11|CASE 10|11|DET 11|8|NMOD 12|3|PUNCT
+*CHI:	yeah .
+%act:	attempts to put man in car
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yeah .
+%act:	succeeds in getting man in car
+%com:	spoken loudly
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	examines man in hand . attempts to put man in car . knocks other man out . succeeds
+*MOT:	whoops .
+%mor:	intj|whoops .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	xxx .
+%act:	picks up man , puts back in car and drives car in front of Amy
+%exp:	car noises
+*MOT:	0 [=! snoring noise] .
+%act:	picks up chair and puts on floor . puts man in chair , tilting
+*CHI:	&=laughs [>] .
+*MOT:	&=laughs [<] .
+%act:	pokes Amy in stomach
+*CHI:	0 [=! laughs louder] .
+%act:	pushes toys on floor , knocks ladder and puts hands on toys on floor
+*MOT:	uhoh .
+%act:	<1w> rights ladder .
+%mor:	intj|uhoh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	here (.) the dog's gonna go up the ladder .
+%act:	<1w> picks up dog and makes him climb the ladder
+%mor:	adv|here det|the-Def-Art noun|dog~part|s verb|go-Part-Pres-S~part|to verb|go-Inf-S adp|up det|the-Def-Art noun|ladder-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|5|NSUBJ 4|3|CASE 5|1|CSUBJ 6|7|MARK 7|5|XCOMP 8|7|COMPOUND-PRT 9|10|DET 10|7|OBJ 11|1|PUNCT
+*CHI:	0 [=! chuckles] .
+%act:	pushes toys toward ladder and ladder falls
+*MOT:	look at this .
+%act:	rights ladder , makes dog climb it and dance on the rim
+%exp:	climbing noises
+%mor:	verb|look-Fin-Imp-S adp|at pron|this-Dem-S1 .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*MOT:	look .
+%mor:	verb|look-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	boom_boom_boom_boom@o .
+%mor:	on|boomboomboomboom .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	ah !
+%act:	<aft> takes table out of dollhouse and puts down by chair
+%int:	draws out the letter h
+%mor:	intj|ah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	picks up Mother's man and holds with other object
+*MOT:	there's a table and there's some chairs .
+%act:	picks up chair by Amy and puts down by table
+%mor:	pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|table cconj|and pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 det|some-Def-Ind noun|chair-Plur .
+%gra:	1|2|EXPL 2|0|ROOT 3|4|DET 4|2|NSUBJ 5|7|CC 6|7|EXPL 7|2|CONJ 8|9|DET 9|7|NSUBJ 10|2|PUNCT
+*MOT:	there's a little boy .
+%act:	<aft> reaches in dollhouse , takes out object and puts on floor
+%mor:	pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 det|a-Ind-Art adj|little-S1 noun|boy .
+%gra:	1|2|EXPL 2|0|ROOT 3|5|DET 4|5|AMOD 5|2|NSUBJ 6|2|PUNCT
+*CHI:	ah !
+%xpho:	yet
+%mor:	intj|ah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yyy !
+%act:	<aft> picks up man and holds . dog falls . examines objects . lets another object fall
+*MOT:	shall we go eat ?
+%act:	holds dog . dances dog
+%mor:	aux|shall-Fin-S pron|we-Prs-Nom-P1 verb|go-Inf-S verb|eat-Inf-S ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|XCOMP 5|3|PUNCT
+*CHI:	yyy !
+%act:	takes man from open hand and attempts to put in car
+%xpho:	ye+yet
+*MOT:	c(o)m(e) on .
+%act:	picks up dog and brings to table
+%mor:	verb|come-Fin-Imp-S adp|on .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	let's go eat .
+%mor:	verb|let-Fin-Imp-S~pron|we-Prs-Acc-P1 verb|go-Inf-S verb|eat-Inf-S .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|3|XCOMP 5|1|PUNCT
+*CHI:	no !
+%act:	takes hand back and holds man and objects
+%mor:	intj|no !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	&-uh .
+%act:	<1w> puts dog in chair .
+*MOT:	dog's gonna eat first .
+%act:	<1w-5w> picks up boy , walks him toward table and puts him in chair
+%mor:	noun|dog~aux|be-Fin-Ind-Pres-S3 verb|go-Part-Pres-S~part|to verb|eat-Inf-S adj|first-S1 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|XCOMP 7|3|PUNCT
+*MOT:	dog and the boy .
+%act:	<1w-4w> picks up boy , walks him toward table and puts him in chair
+%mor:	noun|dog cconj|and det|the-Def-Art noun|boy .
+%gra:	1|0|ROOT 2|4|CC 3|4|DET 4|1|CONJ 5|1|PUNCT
+*CHI:	uh_uh_uh@o .
+%act:	<aft> puts arm up , flailing
+%exp:	walking noises
+%mor:	on|uhuhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	huh !
+%act:	walks man toward chair and puts in chair
+%mor:	intj|huh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	here comes the little girl .
+%mor:	adv|here verb|come-Fin-Ind-Pres-S3 det|the-Def-Art adj|little-S1 noun|girl .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|5|DET 4|5|AMOD 5|2|NSUBJ 6|2|PUNCT
+*CHI:	girl !
+%act:	<1w> brings man over to chair .
+%xpho:	ge wId6l g6
+%mor:	noun|girl !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	little girl !
+%act:	<1w> examines object in hand <1w> attempts to put man in chair and succeeds .
+%mor:	adj|little-S1 noun|girl !
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	0 [=! eating noises] .
+*CHI:	0 .
+%gpx:	smiles at Mother
+*MOT:	0 [=! eating noises] .
+*CHI:	hey !
+%act:	reaches for shape box
+%mor:	intj|hey !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's that ?
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	yyy !
+%act:	<aft> looks inside shape box
+%xpho:	geI
+*MOT:	huh ?
+%act:	rummages in shape box
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	oh !
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's in there ?
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 adp|in adv|there ?
+%gra:	1|0|ROOT 2|4|COP 3|4|CASE 4|1|OBL 5|1|PUNCT
+*CHI:	yyy !
+%xpho:	m6
+*MOT:	huh ?
+%act:	takes block out of shape box , drops , and retrieves
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	takes ball out of shape box and holds
+*MOT:	what's that ?
+%act:	holds object out on her palm toward Amy . closes palm
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*MOT:	what is it ?
+%act:	opens palm
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 ?
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	yyy !
+%act:	puts ball on Mother's palm
+%alt:	ball
+%xpho:	A
+*MOT:	a ball ?
+%mor:	det|a-Ind-Art noun|ball ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	0 .
+%act:	ball drops . picks up ball and holds . kicks object on floor away
+*CHI:	0 [=! babbles] .
+%act:	fingers ball on top . takes hand away
+*MOT:	0 .
+%act:	pushes dollhouse away and shuts door . puts balls on top
+*MOT:	+< where does it go ?
+%mor:	adv|where aux|do-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 verb|go-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	0 .
+%act:	puts ball in shape box
+*MOT:	up &=points !
+%act:	<aft> retrieves ball and puts on shape box lid
+%mor:	adv|up !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	opens shape box lid and block falls . holds open a bit and then shuts
+*MOT:	+< where does it go ?
+%mor:	adv|where aux|do-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 verb|go-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	0 .
+%act:	picks up ball and attempts to put in wrong hole . bangs on lid with block . puts block in right hole
+*MOT:	0 [=! gasps] .
+*CHI:	0 .
+%act:	opens shape box and block falls
+*MOT:	whoops !
+%act:	retrieves block
+%mor:	intj|whoops !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	takes ball out
+%gpx:	smiles
+*MOT:	+< where does this go ?
+%act:	holds object out to Amy
+%mor:	adv|where aux|do-Fin-Ind-Pres-S3 pron|this-Dem-S1 verb|go-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	0 .
+%act:	shuts shape box lid . puts own ball in . opens shape box lid
+*MOT:	xxx .
+%act:	<dur> puts hand in shape box and back out <bef> puts block in shape box .
+%par:	spoken very softly
+*CHI:	0 .
+%act:	reaches in shape box and takes out block . shuts lid , rubs block on lid and puts in shape box
+*MOT:	0 [=! gasps] .
+%gpx:	<aft> smiles
+*CHI:	&=laughs .
+%act:	opens shape box lid , takes out same block , shuts lid and puts in shape box
+*CHI:	&=laughs .
+%act:	opens shape box and reaches in
+*MOT:	0 .
+%act:	reaches in shape box
+*CHI:	no !
+%act:	takes Mother's hand out . reaches in shape box and rummages
+%mor:	intj|no !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no ?
+%act:	<aft> puts finger to shape box lid
+%mor:	intj|no ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	ah !
+%act:	<aft> rummages in shape box <dur> puts hand on shape box lid and opens it . holds it open . <bef> takes block out of shape box , shuts lid and puts in shape box .
+%gpx:	big smile
+%par:	pleasurable scream .
+%mor:	intj|ah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	let me see .
+%act:	puts hand in shape box and rummages . takes out blocks
+%mor:	verb|let-Fin-Imp-S pron|I-Prs-Acc-S1 verb|see-Inf-S .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|1|PUNCT
+*MOT:	let me see .
+%mor:	verb|let-Fin-Imp-S pron|I-Prs-Acc-S1 verb|see-Inf-S .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|1|PUNCT
+*CHI:	no !
+%act:	attempts to remove Mother's hand . takes block out and holds
+%xpho:	<1w> ne
+%mor:	intj|no !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	no !
+%com:	<1w> spoken louder
+%mor:	intj|no !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's this one ?
+%act:	holds block out to Amy
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 det|this-Def-Dem-Sing noun|one ?
+%gra:	1|0|ROOT 2|4|COP 3|4|DET 4|1|NSUBJ 5|1|PUNCT
+*CHI:	no [<] !
+%mor:	intj|no !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	no !
+%act:	<aft> puts block in shape box but it sticks
+%mor:	intj|no !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	mine .
+%act:	manipulates Mother's block
+%mor:	pron|my-Prs-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	0 .
+%act:	pushes stuck block through hole
+*CHI:	0 .
+%act:	attempts to put square block in circular hole
+*MOT:	uhoh (.) where does that [!] go ?
+%mor:	intj|uhoh adv|where aux|do-Fin-Ind-Pres-S3 pron|that-Dem verb|go-Inf-S ?
+%gra:	1|5|DISCOURSE 2|5|ADVMOD 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|5|PUNCT
+*CHI:	yyy .
+%act:	begins opening lid
+%xpho:	6+n6
+*MOT:	huh ?
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	uhoh .
+%act:	<aft> puts block in shape box . takes out round block and attempts to put in wrong hole
+%mor:	intj|uhoh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	where go ?
+%act:	picks up square block and holds out to Amy
+%mor:	adv|where verb|go-Fin-Ind-Pres-S3 ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	yeah .
+%act:	lifts block up and takes Mother's block . puts round block in shape box but it sticks . attempts to push through with index finger
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	+< where does this go ?
+%gpx:	<3w> touches block
+%mor:	adv|where aux|do-Fin-Ind-Pres-S3 pron|this-Dem-S1 verb|go-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*MOT:	&=laughs .
+%act:	<bef> opens shape box a bit and block falls through and lid falls shut
+*CHI:	&=laughs .
+%act:	<dur> opens shape box lid <bef> lifts shape box lid a bit and lets it shut . repeats two times .
+*MOT:	0 .
+%act:	helps open shape box
+*CHI:	0 .
+%act:	takes block from shape box and holds under arm with other blocks . reaches in and out of shape box
+*MOT:	shall we dump them all out ?
+%act:	<aft> dumps box out , rights box and shuts lid
+%mor:	aux|shall-Fin-S pron|we-Prs-Nom-P1 verb|dump-Inf-S pron|they-Prs-Acc-P3 det|all-Def-Tot adp|out ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|DET 6|3|COMPOUND-PRT 7|3|PUNCT
+*CHI:	0 .
+%act:	helps with shape box . puts hand over box and block falls from under her arm
+*MOT:	there .
+%act:	pushes shape box toward Amy
+%mor:	adv|there .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&-uh .
+%act:	opens shape box and reaches in
+*MOT:	open !
+%mor:	adj|open-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yyy !
+%act:	takes block from shape box and puts on floor
+%xpho:	deI de
+*MOT:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&-uh !
+%act:	<aft> shuts lid
+%com:	struggle noise
+*MOT:	where does that one go ?
+%act:	picks up block and holds out to Amy
+%mor:	adv|where aux|do-Fin-Ind-Pres-S3 det|that-Def-Dem-Sing num|one verb|go-Inf-S ?
+%gra:	1|5|ADVMOD 2|5|AUX 3|5|DET 4|5|NSUBJ 5|0|ROOT 6|5|PUNCT
+*CHI:	[^ pointing up to a top shelf] there !
+%act:	takes block and puts under other arm
+%xpho:	<1w> ger
+%mor:	adv|there !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	open !
+%mor:	adj|open-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yyy !
+%act:	<aft> touches shape box lid with block and puts block through hole . touches blocks in arm . puts slab block in other hand . holds square block toward wrong hole while holding slab toward floor . attempts to put square block in
+%xpho:	eI g6 gum
+*MOT:	+< where does it go ?
+%act:	<dur> fingers and holds it <bef> picks up another slab .
+%mor:	adv|where aux|do-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 verb|go-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*MOT:	nope .
+%act:	<dur> holds block over hole <bef> taps block on lid .
+%mor:	intj|nope .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	holds blocks . arm follows Mother's
+*MOT:	nope .
+%act:	puts block over another hole
+%mor:	intj|nope .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	touches Mother's block
+*MOT:	nope .
+%act:	puts block over another hole
+%mor:	intj|nope .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	no .
+%act:	takes block and tries fourth hole
+%com:	spoken softly
+%xpho:	nA
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	nope .
+%int:	draws out the letter o
+%mor:	intj|nope .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	no .
+%xpho:	nA
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	+< where does it go ?
+%mor:	adv|where aux|do-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 verb|go-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	no .
+%act:	continues trying fourth hole
+%xpho:	nA
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no it doesn't go there .
+%mor:	intj|no pron|it-Prs-Nom-S3 aux|do-Fin-Ind-Pres-S3~part|not verb|go-Inf-S adv|there .
+%gra:	1|5|DISCOURSE 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|5|ADVMOD 7|5|PUNCT
+*CHI:	yyy .
+%act:	<aft> tries third hole
+%xpho:	noI
+*MOT:	+< where does it go ?
+%mor:	adv|where aux|do-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 verb|go-Inf-S ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*MOT:	try right there !
+%gpx:	<1w> points to middle hole
+%mor:	verb|try-Fin-Imp-S adv|right adv|there !
+%gra:	1|0|ROOT 2|3|ADVMOD 3|1|ADVMOD 4|1|PUNCT
+*MOT:	try right there !
+%mor:	verb|try-Fin-Imp-S adv|right adv|there !
+%gra:	1|0|ROOT 2|3|ADVMOD 3|1|ADVMOD 4|1|PUNCT
+*CHI:	0 .
+%act:	manipulates blocks . takes slab again and puts by hole
+@End

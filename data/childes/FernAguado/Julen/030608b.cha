@@ -1,0 +1,836 @@
+@UTF8
+@PID:	11312/a-00073808-1
+@Begin
+@Languages:	spa
+@Participants:	AND Brother, CHI Target_Child, INV Investigator
+@ID:	spa|FernAguado|AND|8;02.17||||Brother|||
+@ID:	spa|FernAguado|CHI|3;06.08||||Target_Child|||
+@ID:	spa|FernAguado|INV|||||Investigator|||
+@Comment:	[ba3 morphotag | engine=stanza-1.11.1 ; lang=spa | 2026-05-04T04:00:24-04:00]
+@Date:	20-OCT-1999
+@Location:	Pamplona , Navarra , Spain
+@Situation:	JUN y AND juegan con el barco pirata
+@Types:	long, toyplay, TD
+*AND:	Julen .
+%mor:	propn|julen .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	qué ?
+%mor:	pron|qué-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	Julen .
+%mor:	propn|julen .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	qué ?
+%mor:	pron|qué-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	pon esto aquí .
+%com:	el mástil
+%mor:	verb|poner-Fin-Ind-Pres-S1 pron|este-Dem-S1 adv|aquí .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|ADVMOD 4|1|PUNCT
+*AND:	venga ponlo .
+%mor:	verb|venir-Fin-Sub-Pres-S3 verb|poner-Fin-Ind-Pres-S .
+%gra:	1|0|ROOT 2|1|XCOMP 3|1|PUNCT
+*AND:	pon tú .
+%mor:	verb|poner-Fin-Ind-Pres-S pron|tú-Prs-Nom-S2 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*AND:	aquí esto toma .
+%mor:	adv|aquí pron|este-Dem-S1 verb|tomar-Fin-Ind-Pres-S3 .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*AND:	mira Julen pon esto aquí .
+%mor:	verb|mirar-Fin-Ind-Pres-S3 propn|julen verb|poner-Fin-Ind-Pres-S1 pron|este-Dem-S1 adv|aquí .
+%gra:	1|3|ADVCL 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|ADVMOD 6|3|PUNCT
+*AND:	no se puede ?
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 aux|poder-Fin-Ind-Pres-S3 ?
+%gra:	1|3|ADVMOD 2|3|EXPL-PV 3|0|ROOT 4|3|PUNCT
+*AND:	no .
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	así Julen .
+%mor:	adv|así propn|julen .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*AND:	ponlo tú .
+%mor:	verb|poner-Fin-Ind-Pres-S pron|tú-Prs-Nom-S2 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*AND:	ya está (.) muy bien .
+%mor:	adv|ya aux|estar-Fin-Ind-Pres-S3 adv|mucho adv|bien .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|ADVMOD 4|2|ADVMOD 5|2|PUNCT
+*AND:	ahora <pon esto así> [/] pon esto así .
+%com:	una vela
+%mor:	adv|ahora verb|poner-Fin-Ind-Pres-S1 pron|este-Dem-S1 adv|así .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|2|ADVMOD 5|2|PUNCT
+*CHI:	no .
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	tú .
+%mor:	pron|tú-Prs-Nom-S2 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	no .
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	tú .
+%mor:	pron|tú-Prs-Nom-S2 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	vale pues tú pones ésta (.) vale ?
+%mor:	verb|valer-Fin-Ind-Pres-S3 sconj|pues pron|tú-Prs-Nom-S2 verb|pón-Fin-Ind-Pres-S1 pron|este-Dem-S1 verb|valer-Fin-Ind-Pres-S3 ?
+%gra:	1|0|ROOT 2|4|MARK 3|4|NSUBJ 4|1|CCOMP 5|4|OBJ 6|4|ADVCL 7|1|PUNCT
+*AND:	venga pon .
+%mor:	verb|venir-Fin-Sub-Pres-S3 verb|poner-Fin-Ind-Pres-S .
+%gra:	1|0|ROOT 2|1|XCOMP 3|1|PUNCT
+*CHI:	cómo se pone ?
+%mor:	pron|cómo-Ind-S1 pron|él-Prs-Acc-reflx-S3 verb|poner-Fin-Ind-Pres-S3 ?
+%gra:	1|3|OBL 2|3|EXPL-PV 3|0|ROOT 4|3|PUNCT
+*AND:	éste está roto .
+%com:	una vela
+%mor:	pron|este-Dem-S1 aux|estar-Fin-Ind-Pres-S3 adj|roto-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*INV:	no pasa nada .
+%mor:	adv|no verb|pasar-Fin-Ind-Pres-S3 pron|nada-Neg-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|NSUBJ 4|2|PUNCT
+*INV:	si está roto no lo pongas .
+%mor:	sconj|si aux|estar-Fin-Ind-Pres-S3 adj|roto-S1 adv|no pron|él-Prs-Acc-S3 verb|poner-Fin-Ind-Pres-S1 .
+%gra:	1|3|MARK 2|3|COP 3|6|ADVCL 4|6|ADVMOD 5|6|OBJ 6|0|ROOT 7|6|PUNCT
+*CHI:	pues pon eso .
+%com:	la bandera
+%mor:	sconj|pues verb|poner-Fin-Ind-Pres-S1 pron|ese-Dem-S1 .
+%gra:	1|2|MARK 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*AND:	esto ?
+%mor:	pron|este-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	vale (.) esto aquí .
+%mor:	verb|valer-Fin-Ind-Pres-S3 pron|este-Dem-S1 adv|aquí .
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|ADVMOD 4|1|PUNCT
+*AND:	esto ?
+%com:	el cofre
+%mor:	pron|este-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	mira esto .
+%mor:	verb|mirar-Fin-Ind-Pres-S3 pron|este-Dem-S1 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*AND:	mira (.) y esto ponlo tú .
+%mor:	verb|mirar-Fin-Ind-Pres-S3 cconj|y pron|este-Dem-S1 verb|poner-Fin-Ind-Pres-S1 pron|tú-Prs-Nom-S2 .
+%gra:	1|0|ROOT 2|4|CC 3|4|NSUBJ 4|1|CONJ 5|4|OBJ 6|1|PUNCT
+*AND:	aquí dentro ponlo tú .
+%mor:	adv|aquí adv|dentro verb|poner-Fin-Ind-Pres-S1 pron|tú-Prs-Nom-S2 .
+%gra:	1|3|ADVMOD 2|3|ADVMOD 3|0|ROOT 4|3|NSUBJ 5|3|PUNCT
+*CHI:	no .
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	mira Julen mételo aquí [/] aquí .
+%mor:	verb|mirar-Fin-Ind-Pres-S3 propn|julen-Acc propn|mételo adv|aquí .
+%gra:	1|0|ROOT 2|1|OBJ 3|2|FLAT 4|1|ADVMOD 5|1|PUNCT
+*AND:	eso ahí .
+%mor:	pron|ese-Dem-S1 adv|ahí .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	falta eso (.) eh ?
+%com:	redes
+%mor:	verb|faltar-Fin-Ind-Pres-S3 pron|ese-Dem-S1 intj|eh ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|2|FLAT 4|1|PUNCT
+*CHI:	esto falta .
+%mor:	pron|este-Dem-S1 noun|falta-Fem .
+%gra:	1|0|ROOT 2|1|FLAT 3|1|PUNCT
+*CHI:	toma .
+%com:	se las das
+%mor:	verb|tomar-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	ah (.) sí .
+%mor:	intj|ah intj|sí .
+%gra:	1|0|ROOT 2|1|FIXED 3|1|PUNCT
+*AND:	a_ver Julen eso lo pongo yo que es difícil .
+%mor:	x|aver propn|julen pron|ese-Dem-S1 pron|él-Prs-Acc-S3 verb|poner-Fin-Ind-Pres-S1 pron|yo-Prs-Nom-S1 pron|que-Rel-S1 aux|ser-Fin-Ind-Pres-S3 adj|difícil-S1 .
+%gra:	1|5|ADVMOD 2|5|NSUBJ 3|5|NSUBJ 4|5|OBJ 5|0|ROOT 6|5|NSUBJ 7|9|MARK 8|9|COP 9|6|ACL-RELCL 10|5|PUNCT
+*AND:	ésta aquí .
+%mor:	pron|este-Dem-S1 adv|aquí .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	toma (.) una pelota .
+%mor:	verb|tomar-Fin-Ind-Pres-S3 det|uno-Fem-Ind-Art-Sing noun|pelota-Fem-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*AND:	espera .
+%mor:	verb|esperar-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	esto dónde es ?
+%mor:	pron|este-Dem-S1 adv|dónde aux|ser-Fin-Ind-Pres-S3 ?
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*AND:	el cañón .
+%mor:	det|el-Masc-Def-Art-Sing noun|cañón-Masc .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*AND:	esto es aquí .
+%com:	la pelota
+%mor:	pron|este-Dem-S1 aux|ser-Fin-Ind-Pres-S3 adv|aquí .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*AND:	mira .
+%com:	dispara
+%mor:	verb|mirar-Fin-Ind-Pres-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	no !
+%mor:	adv|no !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	mío !
+%mor:	pron|mío-Prs-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	no es tuya .
+%mor:	adv|no aux|ser-Fin-Ind-Pres-S3 det|tuyo-Fem-Def-Prs-Sing-P .
+%gra:	1|3|ADVMOD 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	a_ver (.) Julen pero quita el muñeco (.) eh ?
+%mor:	x|aver propn|julen cconj|pero verb|quitar-Fin-Ind-Pres-S3 det|el-Masc-Def-Art-Sing noun|muñeco-Masc-Acc x|eh ?
+%gra:	1|2|DEP 2|0|ROOT 3|4|CC 4|1|CONJ 5|6|DET 6|4|OBJ 7|6|APPOS 8|2|PUNCT
+*AND:	móntalo tú también (.) eh Julen ?
+%mor:	noun|móntalo-Masc pron|tú-Prs-Nom-S2 adv|también x|eh propn|julen ?
+%gra:	1|4|DEP 2|1|NSUBJ 3|4|ADVMOD 4|5|DEP 5|0|ROOT 6|5|PUNCT
+*AND:	que lo tiras .
+%mor:	sconj|que pron|él-Prs-Acc-S3 verb|tira-Fin-Ind-Pres-P3 .
+%gra:	1|3|MARK 2|3|OBJ 3|0|ROOT 4|3|PUNCT
+*AND:	cómo va esto ?
+%mor:	pron|cómo-Ind-S1 verb|ir-Fin-Ind-Pres-S3 pron|este-Dem-S1 ?
+%gra:	1|2|OBL 2|0|ROOT 3|2|NSUBJ 4|2|PUNCT
+*AND:	<esto no se cómo se pone> [//] no se cómo se pone esto .
+%com:	las redes
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 pron|cómo-Ind-S1 pron|él-Prs-Acc-reflx-S3 verb|poner-Fin-Ind-Pres-S3 pron|este-Dem-S1 .
+%gra:	1|5|ADVMOD 2|5|EXPL-PV 3|5|OBL 4|5|EXPL-PV 5|0|ROOT 6|5|NSUBJ 7|5|PUNCT
+*INV:	eso lo tienes que poner en el mástil antes que lo demás .
+%mor:	pron|ese-Dem-S1 pron|él-Prs-Acc-S3 verb|tener-Fin-Ind-Pres-S1 sconj|que verb|poner-Inf-S adp|en det|el-Masc-Def-Art-Sing noun|mástil-Masc adv|antes sconj|que pron|él-Prs-Acc-S3 pron|demás-Ind-P1 .
+%gra:	1|3|NSUBJ 2|5|OBJ 3|0|ROOT 4|5|CC 5|3|CONJ 6|8|CASE 7|8|DET 8|5|OBL 9|5|ADVMOD 10|12|MARK 11|12|DET 12|9|OBL 13|3|PUNCT
+*AND:	mira Julen .
+%mor:	verb|mirar-Fin-Ind-Pres-S3 propn|julen .
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|PUNCT
+*CHI:	qué ?
+%mor:	pron|qué-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	esto ?
+%mor:	pron|este-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	qué ?
+%mor:	pron|qué-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	para hacer esto lo ponemos aquí .
+%mor:	adp|para verb|hacer-Inf-S pron|este-Dem-S1 pron|él-Prs-Acc-S3 verb|poner-Fin-Ind-Pres-P1 adv|aquí .
+%gra:	1|2|MARK 2|5|ADVCL 3|2|OBJ 4|5|OBJ 5|0|ROOT 6|5|ADVMOD 7|5|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	para hacer esto lo ponemos aquí sólo (.) vale ?
+%com:	le enseña a disparar el arpón
+%mor:	adp|para verb|hacer-Inf-S pron|este-Dem-S1 pron|él-Prs-Acc-S3 verb|poner-Fin-Ind-Pres-P1 adv|aquí adv|sólo verb|valer-Fin-Ind-Pres-S3 ?
+%gra:	1|2|MARK 2|5|ADVCL 3|2|OBJ 4|5|OBJ 5|0|ROOT 6|5|ADVMOD 7|8|ADVMOD 8|5|ADVCL 9|5|PUNCT
+*AND:	y luego esto se pone así y se hace pum@o y se tira (.) vale .
+%mor:	cconj|y adv|luego pron|este-Dem-S1 pron|él-Prs-Acc-reflx-S3 verb|poner-Fin-Ind-Pres-S3 adv|así cconj|y pron|él-Prs-Acc-reflx-S3 verb|hacer-Fin-Ind-Pres-S3 on|pum cconj|y pron|él-Prs-Acc-reflx-S3 verb|tirar-Fin-Ind-Pres-S3 verb|valer-Fin-Ind-Pres-S3 .
+%gra:	1|5|CC 2|5|ADVMOD 3|5|NSUBJ 4|5|EXPL-PV 5|0|ROOT 6|5|ADVMOD 7|9|CC 8|9|EXPL-PV 9|5|CONJ 10|9|DEP 11|13|CC 12|13|EXPL-PV 13|5|CONJ 14|13|XCOMP 15|5|PUNCT
+*CHI:	a_ver ?
+%mor:	x|aver ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	luego esto es aquí .
+%mor:	adv|luego pron|este-Dem-S1 aux|ser-Fin-Ind-Pres-S3 adv|aquí .
+%gra:	1|4|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*AND:	ahora .
+%com:	pone el puesto del vigía
+%mor:	adv|ahora .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	así .
+%mor:	adv|así .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	Julen .
+%mor:	propn|julen .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	qué ?
+%com:	juega con la barca y no hace caso de AND
+%mor:	pron|qué-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	esto ponlo aquí [/] aquí mira .
+%mor:	pron|este-Dem-S1 verb|poner-Fin-Ind-Pres-S1 adv|aquí verb|mirar-Fin-Ind-Pres-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|XCOMP 5|2|PUNCT
+*CHI:	tú .
+%mor:	pron|tú-Prs-Nom-S2 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	Julen mira (.) tú pon esto aquí .
+%mor:	propn|julen verb|mirar-Fin-Ind-Pres-S3 pron|tú-Prs-Nom-S2 verb|poner-Fin-Ind-Pres-S1 pron|este-Dem-S1 adv|aquí .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|4|OBJ 6|4|ADVMOD 7|2|PUNCT
+*AND:	no .
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	Julen esto es aquí y pon esto aquí .
+%mor:	propn|julen pron|este-Dem-S1 aux|ser-Fin-Ind-Pres-S3 adv|aquí cconj|y verb|poner-Fin-Ind-Pres-S1 pron|este-Dem-S1 adv|aquí .
+%gra:	1|3|NSUBJ 2|1|FLAT 3|0|ROOT 4|3|ADVMOD 5|6|CC 6|3|CONJ 7|6|OBJ 8|6|ADVMOD 9|3|PUNCT
+*AND:	ponlo aquí tú solo .
+%mor:	verb|poner-Fin-Ind-Pres-S1 adv|aquí pron|tú-Prs-Nom-S2 adj|solo-S1 .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|NSUBJ 4|3|AMOD 5|1|PUNCT
+*AND:	dónde está ?
+%mor:	adv|dónde aux|estar-Fin-Ind-Pres-S3 ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	aquí no .
+%mor:	adv|aquí adv|no .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	<no es ahí> [//] aquí no es .
+%mor:	adv|aquí adv|no aux|ser-Fin-Ind-Pres-S3 .
+%gra:	1|3|ADVMOD 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*AND:	sí es .
+%mor:	intj|sí aux|ser-Fin-Ind-Pres-S3 .
+%gra:	1|2|ADVCL 2|0|ROOT 3|2|PUNCT
+*CHI:	ese es así .
+%mor:	pron|ese-Dem-S1 aux|ser-Fin-Ind-Pres-S3 adv|así .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*AND:	no .
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	ese no es .
+%mor:	pron|ese-Dem-S1 adv|no aux|ser-Fin-Ind-Pres-S3 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*AND:	<éste es> [/] éste es aquí .
+%com:	colocan los piratas
+%mor:	pron|este-Dem-S1 aux|ser-Fin-Ind-Pres-S3 adv|aquí .
+%gra:	1|2|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*AND:	si quieres éste lo ponemos aquí (.) vale ?
+%mor:	sconj|si verb|querer-Fin-Ind-Pres-S1 pron|este-Dem-S1 pron|él-Prs-Acc-S3 verb|poner-Fin-Ind-Pres-P1 adv|aquí verb|valer-Fin-Ind-Pres-S3 ?
+%gra:	1|2|MARK 2|5|ADVCL 3|2|NSUBJ 4|5|OBJ 5|0|ROOT 6|7|ADVMOD 7|5|ADVCL 8|5|PUNCT
+*CHI:	así .
+%mor:	adv|así .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	y así conduce .
+%mor:	cconj|y adv|así verb|conducir-Fin-Ind-Pres-S3 .
+%gra:	1|3|CC 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	no se cae .
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 verb|caer-Fin-Ind-Pres-S3 .
+%gra:	1|3|ADVMOD 2|3|EXPL-PV 3|0|ROOT 4|3|PUNCT
+*AND:	a_ver cuál es ?
+%mor:	verb|aver-Fin-S pron|cuál-Int-S1 aux|ser-Fin-Ind-Pres-S3 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|CCOMP 4|1|PUNCT
+*CHI:	a_ver ?
+%mor:	x|aver ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	aquí hay una .
+%com:	red
+%mor:	adv|aquí verb|haber-Fin-Ind-Pres-S3 pron|uno-Ind-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*AND:	esto es aquí .
+%mor:	pron|este-Dem-S1 aux|ser-Fin-Ind-Pres-S3 adv|aquí .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*AND:	ay (.) Julen que se cae .
+%com:	JUN le da una patada sin querer al barco
+%mor:	propn|ay propn|julen pron|que-Rel-S1 pron|él-Prs-Acc-reflx-S3 verb|caer-Fin-Ind-Pres-S3 .
+%gra:	1|2|DEP 2|0|ROOT 3|5|MARK 4|5|EXPL-PV 5|2|ACL-RELCL 6|2|PUNCT
+*CHI:	que susto (.) eh ?
+%mor:	sconj|que verb|susto-Fin-Ind-Pres-S3 intj|eh ?
+%gra:	1|2|MARK 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	está aquí .
+%com:	un pirata
+%mor:	aux|estar-Fin-Ind-Pres-S3 adv|aquí .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	que se va .
+%mor:	pron|que-Rel-S1 pron|él-Prs-Acc-reflx-S3 verb|ir-Fin-Ind-Pres-S3 .
+%gra:	1|3|MARK 2|3|EXPL-PV 3|0|ROOT 4|3|PUNCT
+*AND:	a_ver (.) así .
+%mor:	verb|aver-Fin-S adv|así .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*AND:	ay (.) que se cae .
+%mor:	x|ay pron|que-Rel-S1 pron|él-Prs-Acc-reflx-S3 verb|caer-Fin-Ind-Pres-S3 .
+%gra:	1|4|DEP 2|4|MARK 3|4|EXPL-PV 4|0|ROOT 5|4|PUNCT
+*AND:	luego esto es aquí .
+%mor:	adv|luego pron|este-Dem-S1 aux|ser-Fin-Ind-Pres-S3 adv|aquí .
+%gra:	1|4|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*CHI:	éste ?
+%mor:	pron|este-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	bueno éste es aquí .
+%mor:	adj|buen-S1 pron|este-Dem-S1 aux|ser-Fin-Ind-Pres-S3 adv|aquí .
+%gra:	1|2|AMOD 2|3|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*AND:	no [/] no .
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	éste es aquí .
+%mor:	pron|este-Dem-S1 aux|ser-Fin-Ind-Pres-S3 adv|aquí .
+%gra:	1|2|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	móntale .
+%mor:	noun|móntale-Masc .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	<ya está> [/] ya está monta(d)o .
+%mor:	adv|ya aux|estar-Fin-Ind-Pres-S3 adj|montar-S1 .
+%gra:	1|3|ADVMOD 2|3|AUX-PASS 3|0|ROOT 4|3|PUNCT
+*CHI:	y éste cómo ?
+%mor:	cconj|y pron|este-Dem-S1 pron|cómo-Ind-S1 ?
+%gra:	1|2|CC 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	no es así .
+%mor:	adv|no aux|ser-Fin-Ind-Pres-S3 adv|así .
+%gra:	1|3|ADVMOD 2|3|COP 3|0|ROOT 4|3|PUNCT
+*AND:	ahora lo pongo .
+%mor:	adv|ahora pron|él-Prs-Acc-S3 verb|poner-Fin-Ind-Pres-S1 .
+%gra:	1|3|ADVMOD 2|3|OBJ 3|0|ROOT 4|3|PUNCT
+*AND:	ya se ha monta(d)o .
+%mor:	adv|ya pron|él-Prs-Acc-reflx-S3 aux|haber-Fin-Ind-Pres-S3 verb|montar-Part-Past-S .
+%gra:	1|4|ADVMOD 2|4|EXPL-PV 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*INV:	ya está .
+%mor:	adv|ya aux|estar-Fin-Ind-Pres-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV:	bueno pues ahora jugar con él un rato .
+%mor:	adj|buen-S1 sconj|pues adv|ahora verb|jugar-Inf-S adp|con pron|él-Prs-Acc,Nom-S3 det|uno-Masc-Ind-Art-Sing noun|rato-Masc-Acc .
+%gra:	1|0|ROOT 2|4|MARK 3|4|ADVMOD 4|1|CSUBJ 5|6|CASE 6|4|OBL 7|8|DET 8|4|OBJ 9|1|PUNCT
+*AND:	eh ?
+%mor:	x|eh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	jugad con él un rato .
+%mor:	verb|jugar-Fin-Ind-Pres-S adp|con pron|él-Prs-Acc,Nom-S3 det|uno-Masc-Ind-Art-Sing noun|rato-Masc-Acc .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|5|DET 5|1|OBJ 6|1|PUNCT
+*AND:	jo (.) yo quiero ir con mis amigos .
+%mor:	intj|jo pron|yo-Prs-Nom-S1 verb|querer-Fin-Ind-Pres-S1 verb|ir-Inf-S adp|con det|mi-Def-Prs-Plur-S noun|amigo-Masc-Plur .
+%gra:	1|3|DEP 2|3|NSUBJ 3|0|ROOT 4|3|XCOMP 5|7|CASE 6|7|DET 7|4|OBL 8|3|PUNCT
+*AND:	Julen (.) mira tú eres éste (.) vale ?
+%mor:	propn|julen verb|mirar-Fin-Ind-Pres-S3 pron|tú-Prs-Nom-S2 aux|ser-Fin-Ind-Pres-S1 pron|este-Dem-S1 verb|valer-Fin-Ind-Pres-S3 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|NSUBJ 4|6|COP 5|6|NSUBJ 6|2|CCOMP 7|2|PUNCT
+*AND:	yo soy el capitán y ahora sacamos nuestra arma secreta (.) vale Julen ?
+%mor:	pron|yo-Prs-Nom-S1 aux|ser-Fin-Ind-Pres-S1 det|el-Masc-Def-Art-Sing noun|capitán-Masc cconj|y adv|ahora verb|sacar-Fin-Ind-Pres-P1 det|nuestro-Fem-Def-Prs-Sing-P noun|arma-Fem-Acc adj|secreto-S1 verb|valer-Fin-Ind-Pres-S3 propn|julen ?
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|7|CC 6|7|ADVMOD 7|4|CONJ 8|9|DET 9|7|OBJ 10|9|AMOD 11|4|CONJ 12|11|NSUBJ 13|4|PUNCT
+*AND:	este cañón y ahora mira .
+%com:	JUN dispara
+%mor:	det|este-Masc-Def-Dem-Sing noun|cañón-Masc cconj|y adv|ahora verb|mirar-Fin-Ind-Pres-S3 .
+%gra:	1|2|DET 2|0|ROOT 3|5|CC 4|5|ADVMOD 5|2|CONJ 6|2|PUNCT
+*AND:	ála (.) has matado a todos (.) Julen .
+%mor:	propn|ála aux|haber-Fin-Ind-Pres-S1 verb|matar-Part-Past-S adp|a det|todo-Masc-Def-Tot-Plur propn|julen-Acc .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBJ 7|3|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	ahora tenemos un barquito pequeño (.) vale ?
+%mor:	adv|ahora verb|tener-Fin-Ind-Pres-P1 det|uno-Masc-Ind-Art-Sing noun|barquito-Masc-Acc adj|pequeño-S1 verb|valer-Fin-Ind-Pres-S3 ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|DET 4|2|OBJ 5|4|AMOD 6|2|ADVCL 7|2|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	ese [/] ese [/] ese [/] ese .
+%mor:	pron|ese-Dem-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	venga (.) capitán lo tenemos que cargar .
+%mor:	verb|venir-Fin-Sub-Pres-S3 noun|capitán-Masc-Acc pron|él-Prs-Acc-S3 verb|tener-Fin-Ind-Pres-P1 sconj|que verb|cargar-Inf-S .
+%gra:	1|4|ADVCL 2|1|OBJ 3|6|OBJ 4|0|ROOT 5|6|CC 6|4|CONJ 7|4|PUNCT
+*CHI:	toma [/] toma .
+%com:	le da un pirata
+%mor:	verb|tomar-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	no caben .
+%mor:	adv|no verb|caber-Fin-Ind-Pres-P3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*AND:	lo tenemos que cargar .
+%mor:	pron|él-Prs-Acc-S3 verb|tener-Fin-Ind-Pres-P1 sconj|que verb|cargar-Inf-S .
+%gra:	1|4|OBJ 2|0|ROOT 3|4|CC 4|2|CONJ 5|2|PUNCT
+*AND:	ahora cargan el cañón .
+%mor:	adv|ahora verb|cargar-Fin-Ind-Pres-P3 det|el-Masc-Def-Art-Sing noun|cañón-Masc-Acc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	y aquí una +//.
+%mor:	cconj|y adv|aquí pron|uno-Ind-S1 +//.
+%gra:	1|3|CC 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	quita [//] que voy a hacer (.) quita .
+%com:	dispara el cañón
+%mor:	pron|que-Rel-S1 verb|ir-Fin-Ind-Pres-S1 adp|a verb|hacer-Inf-S verb|quitar-Fin-Ind-Pres-S3 .
+%gra:	1|2|MARK 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|2|XCOMP 6|2|PUNCT
+*AND:	venga (.) Julen que son malos (.) vale ?
+%com:	los de la barca
+%mor:	verb|venir-Fin-Sub-Pres-S3 propn|julen pron|que-Rel-S1 aux|ser-Fin-Ind-Pres-P3 adj|malo-P1 verb|valer-Fin-Ind-Pres-S3 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|6|MARK 4|6|COP 5|6|ADVMOD 6|1|CCOMP 7|1|PUNCT
+*AND:	éstos son malos .
+%mor:	pron|este-Dem-P1 aux|ser-Fin-Ind-Pres-P3 adj|malo-P1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	espera .
+%mor:	verb|esperar-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	mucho rato jugar ?
+%mor:	det|mucho-Masc-Def-Ind-Sing noun|rato-Masc verb|jugar-Inf-S ?
+%gra:	1|2|DET 2|3|OBL 3|0|ROOT 4|3|PUNCT
+*INV:	no .
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	cuánto ?
+%mor:	pron|cuánto-Ind-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	cinco minutos .
+%mor:	num|cinco noun|minuto-Masc-Plur .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*AND:	vale (.) venga Julen vamos !
+%mor:	verb|valer-Fin-Ind-Pres-S3 verb|venir-Fin-Sub-Pres-S3 propn|julen verb|ir-Fin-Ind-Pres-P1 !
+%gra:	1|0|ROOT 2|1|XCOMP 3|4|NSUBJ 4|2|CSUBJ 5|1|PUNCT
+*AND:	ya está .
+%mor:	adv|ya aux|estar-Fin-Ind-Pres-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*AND:	ya hemos llegado .
+%mor:	adv|ya aux|haber-Fin-Ind-Pres-P1 verb|llegar-Part-Past-S .
+%gra:	1|3|ADVMOD 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*AND:	ahora tenemos que ponernos +//.
+%mor:	adv|ahora verb|tener-Fin-Ind-Pres-P1 sconj|que verb|poner-Inf-S +//.
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|CC 4|2|XCOMP 5|2|PUNCT
+*AND:	ah (.) que me he liado !
+%mor:	intj|ah pron|que-Rel-S1 pron|yo-Prs-Dat-S1 aux|haber-Fin-Ind-Pres-S1 verb|liar-Part-Past-S !
+%gra:	1|5|DEP 2|5|MARK 3|5|EXPL-PV 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*AND:	toma .
+%mor:	verb|tomar-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	venga Julen ahora se tiene que volver este barco que es muy malo .
+%mor:	verb|venir-Fin-Sub-Pres-S3 propn|julen adv|ahora pron|él-Prs-Acc-reflx-S3 verb|tener-Fin-Ind-Pres-S3 sconj|que verb|volver-Inf-S det|este-Masc-Def-Dem-Sing noun|barco-Masc-Acc pron|que-Rel-S1 aux|ser-Fin-Ind-Pres-S3 adv|mucho adj|malo-S1 .
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|ADVMOD 4|7|EXPL-PASS 5|1|CCOMP 6|7|CC 7|5|CONJ 8|9|DET 9|7|OBJ 10|13|MARK 11|13|COP 12|13|ADVMOD 13|9|ACL 14|1|PUNCT
+*AND:	venga (.) dale con la bola .
+%mor:	verb|venir-Fin-Sub-Pres-S3 verb|dalir-Fin-Ind-Pres-S3 adp|con det|el-Fem-Def-Art-Sing noun|bola-Fem .
+%gra:	1|0|ROOT 2|1|XCOMP 3|5|CASE 4|5|DET 5|2|OBL 6|1|PUNCT
+*AND:	mátale .
+%mor:	noun|mátale-Masc .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	oh (.) ya está muerto .
+%mor:	intj|oh adv|ya aux|estar-Fin-Ind-Pres-S3 adj|muerto-S1 .
+%gra:	1|4|DEP 2|4|ADVMOD 3|4|COP 4|0|ROOT 5|4|PUNCT
+*AND:	ahora le enterraremos aquí abajo .
+%mor:	adv|ahora pron|él-Prs-Dat-S3 verb|enterrar-Fin-Ind-Fut-P1 adv|aquí adv|abajo .
+%gra:	1|3|ADVMOD 2|3|OBL-ARG 3|0|ROOT 4|3|ADVMOD 5|3|ADVMOD 6|3|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	abre esto .
+%com:	la bodega
+%mor:	verb|abrir-Fin-Ind-Pres-S3 pron|este-Dem-S1 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	abro .
+%mor:	verb|abrir-Fin-Ind-Pres-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	si está muerto .
+%mor:	sconj|si aux|estar-Fin-Ind-Pres-S3 adj|muerto-S1 .
+%gra:	1|3|MARK 2|3|COP 3|0|ROOT 4|3|PUNCT
+*AND:	y ahora los metemos aquí y así no podrán salir porque son malos .
+%mor:	cconj|y adv|ahora pron|él-Prs-Acc-P3 verb|meter-Fin-Ind-Pres-P1 adv|aquí cconj|y adv|así adv|no aux|poder-Fin-Ind-Fut-P3 verb|salir-Inf-S sconj|porque aux|ser-Fin-Ind-Pres-P3 adj|malo-P1 .
+%gra:	1|4|CC 2|4|ADVMOD 3|4|OBJ 4|0|ROOT 5|4|ADVMOD 6|10|CC 7|10|ADVMOD 8|10|ADVMOD 9|10|AUX 10|4|CONJ 11|13|MARK 12|13|COP 13|10|ADVCL 14|4|PUNCT
+*CHI:	son malos sí .
+%mor:	aux|ser-Fin-Ind-Pres-P3 adj|malo-P1 intj|sí .
+%gra:	1|2|COP 2|0|ROOT 3|2|ADVCL 4|2|PUNCT
+*AND:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	y éste también .
+%mor:	cconj|y pron|este-Dem-S1 adv|también .
+%gra:	1|2|CC 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*AND:	ya está .
+%mor:	adv|ya aux|estar-Fin-Ind-Pres-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*AND:	nadie más hay que meter .
+%mor:	pron|nadie-Neg-S1 adv|más verb|haber-Fin-Ind-Pres-S3 sconj|que verb|meter-Inf-S .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|3|PUNCT
+*AND:	aquí están todos .
+%mor:	adv|aquí aux|estar-Fin-Ind-Pres-P3 pron|todo-Tot-P1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|NSUBJ 4|2|PUNCT
+*AND:	éste [//] es bueno (.) éste porque tiene que ser el vigilante aquí .
+%mor:	aux|ser-Fin-Ind-Pres-S3 adj|buen-S1 pron|este-Dem-S1 sconj|porque verb|tener-Fin-Ind-Pres-S3 sconj|que aux|ser-Inf-S det|el-Masc-Def-Art-Sing noun|vigilante adv|aquí .
+%gra:	1|2|COP 2|0|ROOT 3|2|NSUBJ 4|5|MARK 5|2|ADVCL 6|9|CC 7|9|COP 8|9|DET 9|5|CONJ 10|9|ADVMOD 11|2|PUNCT
+*CHI:	y lo ponemos en la mesa ?
+%mor:	cconj|y pron|él-Prs-Acc-S3 verb|poner-Fin-Ind-Pres-P1 adp|en det|el-Fem-Def-Art-Sing noun|mesa-Fem ?
+%gra:	1|3|CC 2|3|OBJ 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*AND:	y éste [//] también (.) éste es bueno .
+%mor:	cconj|y adv|también pron|este-Dem-S1 aux|ser-Fin-Ind-Pres-S3 adj|buen-S1 .
+%gra:	1|5|CC 2|5|ADVMOD 3|5|NSUBJ 4|5|COP 5|0|ROOT 6|5|PUNCT
+*AND:	y la mesita aquí para que hagan cosas y ya está .
+%mor:	cconj|y det|el-Fem-Def-Art-Sing noun|mesita-Fem adv|aquí adp|para sconj|que verb|hacer-Fin-Sub-Pres-P3 noun|cosa-Fem-Plur-Acc cconj|y adv|ya aux|estar-Fin-Ind-Pres-S3 .
+%gra:	1|3|CC 2|3|DET 3|0|ROOT 4|3|ADVMOD 5|7|MARK 6|7|MARK 7|3|ADVCL 8|7|OBJ 9|11|CC 10|11|ADVMOD 11|7|CONJ 12|3|PUNCT
+*AND:	y ahora este barco .
+%mor:	cconj|y adv|ahora det|este-Masc-Def-Dem-Sing noun|barco-Masc .
+%gra:	1|4|CC 2|4|ADVMOD 3|4|DET 4|0|ROOT 5|4|PUNCT
+*CHI:	así (.) encima .
+%mor:	adv|así adv|encima .
+%gra:	1|0|ROOT 2|1|FIXED 3|1|PUNCT
+*AND:	disparamos a éste que le mata .
+%mor:	verb|disparar-Fin-Ind-Pres-P1 adp|a pron|este-Dem-S1 pron|que-Rel-S1 pron|él-Prs-Dat-S3 verb|matar-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBJ 4|6|MARK 5|6|OBL-ARG 6|3|ACL-RELCL 7|1|PUNCT
+*AND:	oh (.) le ha dado pero no le ha hecho daño .
+%mor:	intj|oh pron|él-Prs-Dat-S3 aux|haber-Fin-Ind-Pres-S3 verb|dar-Part-Past-S cconj|pero adv|no pron|él-Prs-Dat-S3 aux|haber-Fin-Ind-Pres-S3 verb|hacer-Part-Past-S noun|daño-Masc-Acc .
+%gra:	1|4|DEP 2|4|OBL-ARG 3|4|AUX 4|0|ROOT 5|9|CC 6|9|ADVMOD 7|9|OBL-ARG 8|9|AUX 9|4|CONJ 10|9|OBJ 11|4|PUNCT
+*CHI:	dispárale mucho .
+%mor:	verb|dispáraler-Fin-Ind-Pres-S3 pron|mucho-Ind-S1 .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*AND:	otra vez ?
+%mor:	det|otro-Fem-Def-Ind-Sing noun|vez-Fem ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*AND:	oh (.) se ha caído .
+%mor:	intj|oh pron|él-Prs-Acc-reflx-S3 aux|haber-Fin-Ind-Pres-S3 verb|caer-Part-Past-S .
+%gra:	1|4|DEP 2|4|EXPL-PV 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*AND:	ahora tenemos que tirarle a los tiburones .
+%mor:	adv|ahora verb|tener-Fin-Ind-Pres-P1 sconj|que verb|tirar-Inf-S~pron|él-Prs-Dat-S3 adp|a det|el-Masc-Def-Art-Plur noun|tiburón-Masc-Plur-Acc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|CC 4|2|CONJ 5|4|EXPL 6|8|CASE 7|8|DET 8|4|OBJ 9|2|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	aquí hay uno !
+%mor:	adv|aquí verb|haber-Fin-Ind-Pres-S3 pron|uno-Ind-S1 !
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*AND:	ah (.) sí .
+%mor:	intj|ah intj|sí .
+%gra:	1|0|ROOT 2|1|FIXED 3|1|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	y eres muy malo .
+%mor:	cconj|y aux|ser-Fin-Ind-Pres-S1 adv|mucho adj|malo-S1 .
+%gra:	1|4|CC 2|4|COP 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*AND:	oh (.) se ha caído .
+%mor:	intj|oh pron|él-Prs-Acc-reflx-S3 aux|haber-Fin-Ind-Pres-S3 verb|caer-Part-Past-S .
+%gra:	1|4|DEP 2|4|EXPL-PV 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*CHI:	venga (.) pónmelo aquí .
+%mor:	verb|venir-Fin-Sub-Pres-S3 noun|pónmelo-Masc-Acc adv|aquí .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|ADVMOD 4|1|PUNCT
+*CHI:	aquí sí se cae .
+%com:	en el trampolín
+%mor:	adv|aquí intj|sí pron|él-Prs-Acc-reflx-S3 verb|caer-Fin-Ind-Pres-S3 .
+%gra:	1|4|ADVMOD 2|4|ADVCL 3|4|EXPL-PV 4|0|ROOT 5|4|PUNCT
+*CHI:	aquí corre .
+%mor:	adv|aquí verb|correr-Fin-Ind-Pres-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*AND:	ahora lo tenemos que echar .
+%mor:	adv|ahora pron|él-Prs-Acc-S3 verb|tener-Fin-Ind-Pres-P1 sconj|que verb|echar-Inf-S .
+%gra:	1|3|ADVMOD 2|5|OBJ 3|0|ROOT 4|5|CC 5|3|CONJ 6|3|PUNCT
+*AND:	oh (.) no le he da(d)o .
+%mor:	intj|oh adv|no pron|él-Prs-Dat-S3 aux|haber-Fin-Ind-Pres-S1 verb|dar-Part-Past-S .
+%gra:	1|5|DEP 2|5|ADVMOD 3|5|OBL-ARG 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*AND:	ahora tenemos que matarle .
+%mor:	adv|ahora verb|tener-Fin-Ind-Pres-P1 sconj|que verb|matar-Inf-S~pron|él-Prs-Dat-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|CC 4|2|CONJ 5|4|OBL-ARG 6|2|PUNCT
+*CHI:	no le has dado .
+%mor:	adv|no pron|él-Prs-Dat-S3 aux|haber-Fin-Ind-Pres-S1 verb|dar-Part-Past-S .
+%gra:	1|4|ADVMOD 2|4|OBL-ARG 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*CHI:	uno dos tres cuatro (.) ahora sí .
+%mor:	pron|uno-Ind-S1 num|dos num|tres num|cuatro adv|ahora intj|sí .
+%gra:	1|4|NSUBJ 2|4|NUMMOD 3|4|NUMMOD 4|0|ROOT 5|4|ADVMOD 6|5|ADVCL 7|4|PUNCT
+*CHI:	aquí está .
+%mor:	adv|aquí verb|estar-Fin-Ind-Pres-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*AND:	Julen corre (.) tenemos que matarlo con éste .
+%com:	con el cañón
+%mor:	propn|julen verb|correr-Fin-Ind-Pres-S3 verb|tener-Fin-Ind-Pres-P1 sconj|que verb|matar-Inf-S~pron|él-Prs-Acc-S3 adp|con pron|este-Dem-S1 .
+%gra:	1|5|NSUBJ 2|0|ROOT 3|2|XCOMP 4|5|CC 5|3|CONJ 6|5|OBJ 7|8|CASE 8|5|OBL 9|2|PUNCT
+*AND:	con esta cosa .
+%mor:	adp|con det|este-Fem-Def-Dem-Sing noun|cosa-Fem .
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	corre .
+%mor:	verb|correr-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	bien (.) le hemos matado .
+%mor:	adv|bien pron|él-Prs-Dat-S3 aux|haber-Fin-Ind-Pres-P1 verb|matar-Part-Past-S .
+%gra:	1|4|ADVMOD 2|4|OBL-ARG 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	ahora falta el vigilante .
+%mor:	adv|ahora verb|faltar-Fin-Ind-Pres-S3 det|el-Masc-Def-Art-Sing noun|vigilante .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|DET 4|2|NSUBJ 5|2|PUNCT
+*AND:	es <el [*] que más> [/] el [*] que más va a costar matarle .
+%mor:	aux|ser-Fin-Ind-Pres-S3 det|el-Masc-Def-Art-Sing pron|que-Rel-S1 adv|más verb|ir-Fin-Ind-Pres-S3 adp|a verb|costar-Inf-S verb|matar-Inf-S~pron|él-Prs-Dat-S3 .
+%gra:	1|0|ROOT 2|5|DET 3|5|NSUBJ 4|5|ADVMOD 5|1|CCOMP 6|7|MARK 7|5|XCOMP 8|5|XCOMP 9|8|OBL-ARG 10|1|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	venga (.) vamos tenemos que coger este cañón .
+%mor:	verb|venir-Fin-Sub-Pres-S3 verb|ir-Fin-Ind-Pres-P1 verb|tener-Fin-Ind-Pres-P1 sconj|que verb|coger-Inf-S det|este-Masc-Def-Dem-Sing noun|cañón-Masc-Acc .
+%gra:	1|3|CSUBJ 2|1|XCOMP 3|0|ROOT 4|5|CC 5|3|CONJ 6|7|DET 7|5|OBJ 8|3|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	vamos a coger éste .
+%mor:	verb|ir-Fin-Ind-Pres-P1 adp|a verb|coger-Inf-S pron|este-Dem-S1 .
+%gra:	1|0|ROOT 2|3|MARK 3|1|XCOMP 4|3|OBJ 5|1|PUNCT
+*AND:	tenemos que coger este cañón a_ver si llega si no igual nos hundimos .
+%mor:	verb|tener-Fin-Ind-Pres-P1 sconj|que verb|coger-Inf-S det|este-Masc-Def-Dem-Sing noun|cañón-Masc-Acc noun|aver sconj|si verb|llegar-Fin-Ind-Pres-S3 sconj|si part|no adj|igual-S1 pron|yo-Prs-Dat-P1 verb|hundir-Fin-Ind-Pres-P1 .
+%gra:	1|0|ROOT 2|3|MARK 3|1|XCOMP 4|5|DET 5|3|OBJ 6|5|AMOD 7|8|MARK 8|3|ADVCL 9|13|MARK 10|13|ADVMOD 11|10|FIXED 12|13|OBJ 13|8|ADVCL 14|1|PUNCT
+*CHI:	hay un tiburón !
+%mor:	verb|haber-Fin-Ind-Pres-S3 det|uno-Masc-Ind-Art-Sing noun|tiburón-Masc-Acc !
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*AND:	ay (.) no puede .
+%mor:	propn|ay adv|no aux|poder-Fin-Ind-Pres-S3 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*AND:	no se puede corre .
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 aux|poder-Fin-Ind-Pres-S3 verb|correr-Fin-Ind-Pres-S3 .
+%gra:	1|4|ADVMOD 2|4|EXPL-PV 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*AND:	tenemos que hacer una cosa .
+%mor:	verb|tener-Fin-Ind-Pres-P1 sconj|que verb|hacer-Inf-S det|uno-Fem-Ind-Art-Sing noun|cosa-Fem-Acc .
+%gra:	1|0|ROOT 2|3|MARK 3|1|XCOMP 4|5|DET 5|3|OBJ 6|1|PUNCT
+*AND:	yo ya se .
+%mor:	pron|yo-Prs-Nom-S1 adv|ya pron|él-Prs-Acc-reflx-S3 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	aquí hay un tiburón (.) corre !
+%mor:	adv|aquí verb|haber-Fin-Ind-Pres-S3 det|uno-Masc-Ind-Art-Sing noun|tiburón-Masc-Acc verb|correr-Fin-Ind-Pres-S3 !
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|ADVCL 6|2|PUNCT
+*CHI:	mira .
+%mor:	verb|mirar-Fin-Ind-Pres-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	hay un tiburón .
+%mor:	verb|haber-Fin-Ind-Pres-S3 det|uno-Masc-Ind-Art-Sing noun|tiburón-Masc-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	entonces vamos (.) tenemos que coger a uno .
+%mor:	adv|entonces verb|ir-Fin-Ind-Pres-P1 verb|tener-Fin-Ind-Pres-P1 sconj|que verb|coger-Inf-S adp|a pron|uno-Ind-S1 .
+%gra:	1|2|ADVMOD 2|3|CSUBJ 3|0|ROOT 4|5|CC 5|3|CONJ 6|7|CASE 7|5|OBJ 8|3|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	entonces ahora tiene que subir .
+%mor:	adv|entonces adv|ahora verb|tener-Fin-Ind-Pres-S3 sconj|que verb|subir-Inf-S .
+%gra:	1|3|ADVMOD 2|3|ADVMOD 3|0|ROOT 4|5|CC 5|3|CONJ 6|3|PUNCT
+*AND:	y ahora (.) se ha caído corre .
+%mor:	cconj|y adv|ahora pron|él-Prs-Acc-reflx-S3 aux|haber-Fin-Ind-Pres-S3 verb|caer-Part-Past-S verb|correr-Fin-Ind-Pres-S3 .
+%gra:	1|5|CC 2|5|ADVMOD 3|5|EXPL-PV 4|5|AUX 5|0|ROOT 6|5|XCOMP 7|5|PUNCT
+*AND:	ahora tenemos que ir con el barco a matarle .
+%mor:	adv|ahora verb|tener-Fin-Ind-Pres-P1 sconj|que verb|ir-Inf-S adp|con det|el-Masc-Def-Art-Sing noun|barco-Masc adp|a verb|matar-Inf-S~pron|él-Prs-Dat-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|CC 4|2|CONJ 5|7|CASE 6|7|DET 7|4|OBL 8|9|MARK 9|4|ADVCL 10|9|OBL-ARG 11|2|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	ya voy .
+%mor:	adv|ya verb|ir-Fin-Ind-Pres-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	disparo .
+%com:	el cañón
+%mor:	noun|disparo-Masc .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	ya está .
+%mor:	adv|ya aux|estar-Fin-Ind-Pres-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*AND:	está muerto .
+%mor:	aux|estar-Fin-Ind-Pres-S3 adj|muerto-S1 .
+%gra:	1|2|COP 2|0|ROOT 3|2|PUNCT
+*CHI:	eh (.) mira le he matado (.) mira .
+%mor:	intj|eh propn|mirar pron|él-Prs-Dat-S3 aux|haber-Fin-Ind-Pres-S1 verb|matar-Part-Past-S noun|mira-Fem-Acc .
+%gra:	1|5|DEP 2|1|FLAT 3|5|OBL-ARG 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*AND:	ah (.) sí .
+%mor:	intj|ah intj|sí .
+%gra:	1|0|ROOT 2|1|FIXED 3|1|PUNCT
+*CHI:	tengo una bola para matar .
+%mor:	verb|tener-Fin-Ind-Pres-S1 det|uno-Fem-Ind-Art-Sing noun|bola-Fem-Acc adp|para verb|matar-Inf-S .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|5|MARK 5|3|ACL 6|1|PUNCT
+*AND:	y éste ?
+%mor:	cconj|y pron|este-Dem-S1 ?
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*AND:	se ha metido .
+%mor:	pron|él-Prs-Acc-reflx-S3 aux|haber-Fin-Ind-Pres-S3 verb|meter-Part-Past-S .
+%gra:	1|3|EXPL-PV 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*AND:	venga (.) tírala .
+%mor:	verb|venir-Fin-Sub-Pres-S3 noun|tírala-Fem-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	aquí dentro .
+%mor:	adv|aquí adv|dentro .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*AND:	eh (.) hay que bajar la ancla .
+%mor:	intj|eh verb|haber-Fin-Ind-Pres-S3 sconj|que verb|bajar-Inf-S det|el-Fem-Def-Art-Sing noun|ancla-Fem-Acc .
+%gra:	1|2|DEP 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|6|DET 6|4|OBJ 7|2|PUNCT
+*AND:	<ahora tenemos> [/] <tenemos ahora> [//] aquí tenemos que estar en una prueba .
+%mor:	adv|aquí verb|tener-Fin-Ind-Pres-P1 sconj|que aux|estar-Inf-S adp|en det|uno-Fem-Ind-Art-Sing noun|prueba-Fem .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|CC 4|2|CONJ 5|7|CASE 6|7|DET 7|4|OBL 8|2|PUNCT
+*CHI:	aquí uno .
+%com:	pirata
+%mor:	adv|aquí pron|uno-Ind-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*AND:	ah (.) sí (.) en una prueba .
+%mor:	intj|ah intj|sí adp|en det|uno-Fem-Ind-Art-Sing noun|prueba-Fem .
+%gra:	1|5|DEP 2|1|FIXED 3|5|CASE 4|5|DET 5|0|ROOT 6|5|PUNCT
+*CHI:	aquí otro .
+%mor:	adv|aquí pron|otro-Ind-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*AND:	en una prueba tenemos que darle a éste gris nada más .
+%mor:	adp|en det|uno-Fem-Ind-Art-Sing noun|prueba-Fem verb|tener-Fin-Ind-Pres-P1 sconj|que verb|dar-Inf-S~pron|él-Prs-Dat-S3 adp|a det|este-Masc-Def-Dem-Sing noun|gris-Masc pron|nada-Neg-S1 adv|más .
+%gra:	1|3|CASE 2|3|DET 3|6|OBL 4|0|ROOT 5|6|CC 6|4|CONJ 7|6|EXPL 8|10|CASE 9|10|DET 10|6|OBL-ARG 11|6|OBJ 12|6|ADVMOD 13|4|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	a estos dos nada más .
+%mor:	adp|a det|este-Masc-Def-Dem-Plur num|dos pron|nada-Neg-S1 adv|más .
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|NMOD 5|3|ADVMOD 6|3|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	hay que darle a dos personas .
+%mor:	verb|haber-Fin-Ind-Pres-S3 sconj|que verb|dar-Inf-S~pron|él-Prs-Dat-S3 adp|a num|dos noun|persona-Fem-Plur-Acc .
+%gra:	1|0|ROOT 2|3|MARK 3|1|XCOMP 4|3|EXPL 5|7|CASE 6|7|NUMMOD 7|3|OBJ 8|1|PUNCT
+*CHI:	así [//] no sube así .
+%mor:	adv|no verb|subir-Fin-Ind-Pres-S3 adv|así .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	más fuerte (.) eh ?
+%mor:	adv|más adj|fuerte-S1 x|eh ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|DEP 4|2|PUNCT
+*CHI:	toma [/] toma .
+%com:	le acerca el barco
+%mor:	verb|tomar-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	a_ver (.) no .
+%mor:	x|aver adv|no .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*AND:	déjalo aquí .
+%mor:	verb|déjalo-Fin-Ind-Pres-S adv|aquí .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*AND:	no importa .
+%mor:	adv|no verb|importar-Fin-Ind-Pres-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*AND:	ahora aquí le tenemos que dar .
+%mor:	adv|ahora adv|aquí pron|él-Prs-Dat-S3 verb|tener-Fin-Ind-Pres-P1 sconj|que verb|dar-Inf-S .
+%gra:	1|4|ADVMOD 2|4|ADVMOD 3|6|OBL-ARG 4|0|ROOT 5|6|CC 6|4|CONJ 7|4|PUNCT
+*CHI:	no [/] no .
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	<ahora tú Julen> [/] ahora tú tienes que darles .
+%mor:	adv|ahora pron|tú-Prs-Nom-S2 verb|tener-Fin-Ind-Pres-S1 sconj|que verb|dar-Inf-S~pron|él-Prs-Dat-P3 .
+%gra:	1|3|ADVMOD 2|5|NSUBJ 3|0|ROOT 4|5|CC 5|3|CONJ 6|5|OBL-ARG 7|3|PUNCT
+*CHI:	yo voy a tirar a ese .
+%mor:	pron|yo-Prs-Nom-S1 verb|ir-Fin-Ind-Pres-S1 adp|a verb|tirar-Inf-S adp|a pron|ese-Dem-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|6|CASE 6|4|OBL 7|2|PUNCT
+*AND:	vale .
+%mor:	verb|valer-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	ah (.) casi [/] casi le das pero no le has da(d)o .
+%mor:	intj|ah adv|casi pron|él-Prs-Dat-S3 verb|dar-Fin-Ind-Pres-S1 cconj|pero adv|no pron|él-Prs-Dat-S3 aux|haber-Fin-Ind-Pres-S2 verb|dar-Part-Past-S .
+%gra:	1|4|DEP 2|4|ADVMOD 3|4|OBL-ARG 4|0|ROOT 5|9|CC 6|9|ADVMOD 7|9|OBL-ARG 8|9|AUX 9|4|CONJ 10|4|PUNCT
+*AND:	a_ver (.) quita .
+%mor:	x|aver verb|quitar-Fin-Ind-Pres-S3 .
+%gra:	1|2|DEP 2|0|ROOT 3|2|PUNCT
+*AND:	a_ver (.) toma le hemos dado .
+%mor:	x|aver verb|tomar-Fin-Ind-Pres-S3 pron|él-Prs-Dat-S3 aux|haber-Fin-Ind-Pres-P1 verb|dar-Part-Past-S .
+%gra:	1|2|NSUBJ 2|5|ADVCL 3|5|OBL-ARG 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*CHI:	ahora yo !
+%mor:	adv|ahora pron|yo-Prs-Nom-S1 !
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*AND:	venga (.) a_ver si le matas .
+%mor:	verb|venir-Fin-Sub-Pres-S3 noun|aver-Acc sconj|si pron|él-Prs-Dat-S3 verb|mata-Fin-Ind-Pres-P3 .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|MARK 4|5|OBL-ARG 5|1|ADVCL 6|1|PUNCT
+*AND:	venga (.) tira .
+%mor:	verb|venir-Fin-Sub-Pres-S3 noun|tira-Fem-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	a ese .
+%mor:	adp|a pron|ese-Dem-S1 .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*AND:	venga .
+%mor:	verb|venir-Fin-Sub-Pres-S3 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	voy a ponerlo para allá un poco .
+%mor:	verb|ir-Fin-Ind-Pres-S1 adp|a verb|poner-Inf-S~pron|él-Prs-Acc-S3 adp|para adv|allá det|uno-Masc-Ind-Art-Sing pron|poco-Ind-S1 .
+%gra:	1|0|ROOT 2|3|MARK 3|1|XCOMP 4|3|OBJ 5|6|CASE 6|1|ADVMOD 7|8|CASE 8|1|OBL 9|1|PUNCT
+*AND:	así .
+%mor:	adv|así .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	ya [/] ya .
+%mor:	adv|ya .
+%gra:	1|0|ROOT 2|1|PUNCT
+*AND:	ah (.) casi [/] casi le das .
+%mor:	intj|ah adv|casi pron|él-Prs-Dat-S3 verb|dar-Fin-Ind-Pres-S1 .
+%gra:	1|4|DEP 2|4|ADVMOD 3|4|OBL-ARG 4|0|ROOT 5|4|PUNCT
+*AND:	ahora yo .
+%mor:	adv|ahora pron|yo-Prs-Nom-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*AND:	ay (.) no le he dado .
+%mor:	propn|ay adv|no pron|él-Prs-Dat-S3 aux|haber-Fin-Ind-Pres-S1 verb|dar-Part-Past-S .
+%gra:	1|5|NSUBJ 2|5|ADVMOD 3|5|OBL-ARG 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*CHI:	ahora yo .
+%mor:	adv|ahora pron|yo-Prs-Nom-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	ahora yo (.) eh ?
+%mor:	adv|ahora pron|yo-Prs-Nom-S1 intj|eh ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|FLAT 4|2|PUNCT
+*AND:	ah (.) casi [/] casi le das .
+%mor:	intj|ah adv|casi pron|él-Prs-Dat-S3 verb|dar-Fin-Ind-Pres-S1 .
+%gra:	1|4|DEP 2|4|ADVMOD 3|4|OBL-ARG 4|0|ROOT 5|4|PUNCT
+@End

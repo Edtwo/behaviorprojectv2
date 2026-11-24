@@ -1,0 +1,368 @@
+@UTF8
+@PID:	11312/c-00015294-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child, INV Investigator
+@ID:	eng|Bates|MOT||female|||Mother|||
+@ID:	eng|Bates|CHI|2;04.|female|TD|MC|Target_Child|||
+@ID:	eng|Bates|INV|||||Investigator|||
+@Comment:	[ba3 morphotag | engine=stanza-1.11.1 ; lang=eng | 2026-05-07T09:36:12-04:00]
+@Types:	cross, toyplay, TD
+*MOT:	would you like to eat cookie now (.) too ?
+%act:	<bef> seated
+%mor:	aux|would-Fin-S pron|you-Prs-Nom-S2 verb|like-Inf-S part|to verb|eat-Inf-S noun|cookie-Acc adv|now adv|too ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|5|ADVMOD 8|5|ADVMOD 9|3|PUNCT
+*CHI:	oh (.) all gone .
+%act:	<bef> seated , drinking . <aft> steps down with tea pitcher
+%mor:	intj|oh det|all-Def-Tot adj|gone-S1 .
+%gra:	1|3|DISCOURSE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	all_gone .
+%mor:	noun|allgone .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	well (.) should we get some more ?
+%mor:	intj|well aux|should-Fin-S pron|we-Prs-Nom-P1 verb|get-Inf-S det|some-Def-Ind adj|more-Cmp-S1 ?
+%gra:	1|4|DISCOURSE 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*CHI:	uhhuh .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	okay .
+%act:	<dur> goes to fridge
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	oh look it .
+%act:	sits down
+%mor:	intj|oh verb|look-Fin-Imp-S pron|it-Prs-Acc-S3 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	we don't have very much left .
+%mor:	pron|we-Prs-Nom-P1 aux|do-Fin-Ind-Pres-P1~part|not verb|have-Inf-S adv|very adv|much verb|leave-Part-Past-S-irr .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|ADVMOD 6|7|ADVMOD 7|4|XCOMP 8|4|PUNCT
+*MOT:	do you want it poured in your pitcher ?
+%act:	sets down carton
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|want-Inf-S pron|it-Prs-Acc-S3 verb|pour-Part-Past-S adp|in pron|your-Prs-Gen-S2 noun|pitcher ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|XCOMP 6|8|CASE 7|8|NMOD-POSS 8|5|OBL 9|3|PUNCT
+*MOT:	there we go .
+%mor:	pron|there-Int-S1 pron|we-Prs-Nom-P1 verb|go-Fin-Ind-Pres-P1 .
+%gra:	1|3|EXPL 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	just a minute .
+%mor:	adv|just det|a-Ind-Art noun|minute .
+%gra:	1|3|ADVMOD 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	there we go .
+%mor:	pron|there-Int-S1 pron|we-Prs-Nom-P1 verb|go-Fin-Ind-Pres-P1 .
+%gra:	1|3|EXPL 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	will you pour Mommy some juice ?
+%mor:	aux|will-Fin-S pron|you-Prs-Nom-S2 verb|pour-Inf-S propn|Mommy det|some-Def-Ind noun|juice-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|IOBJ 5|6|DET 6|3|OBJ 7|3|PUNCT
+*CHI:	0 .
+%act:	pours juice into baby cup
+*MOT:	will you pour Mommy some juice too ?
+%mor:	aux|will-Fin-S pron|you-Prs-Nom-S2 verb|pour-Inf-S propn|Mommy det|some-Def-Ind noun|juice-Acc adv|too ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|IOBJ 5|6|DET 6|3|OBJ 7|3|ADVMOD 8|3|PUNCT
+*CHI:	0 .
+%act:	pours Mother juice
+*MOT:	thank_you (.) very [!] good .
+%mor:	propn|thankyou adv|very adj|good-S1 .
+%gra:	1|0|ROOT 2|3|ADVMOD 3|1|PARATAXIS 4|1|PUNCT
+*MOT:	can I have some of your cookie ?
+%mor:	aux|can-Fin-S pron|I-Prs-Nom-S1 verb|have-Inf-S det|some-Def-Ind adp|of pron|your-Prs-Gen-S2 noun|cookie ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|7|CASE 6|7|NMOD-POSS 7|4|NMOD 8|3|PUNCT
+*CHI:	uhhuh .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what kind of cookie is that ?
+%gpx:	looks at Paula
+%mor:	det|what-Def-Int noun|kind adp|of noun|cookie aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|2|DET 2|6|NSUBJ 3|4|CASE 4|2|NMOD 5|6|COP 6|0|ROOT 7|6|PUNCT
+*MOT:	hm: ?
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	oh chocolate !
+%mor:	intj|oh noun|chocolate !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	chocolate chip ?
+%mor:	noun|chocolate noun|chip ?
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*CHI:	uhhuh .
+%act:	<aft> drinks
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yes !
+%act:	drinks
+%mor:	intj|yes !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	do you like having tea parties with your tea set ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|like-Inf-S verb|have-Ger-S noun|tea noun|party-Plur-Acc adp|with pron|your-Prs-Gen-S2 noun|tea noun|set ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|XCOMP 5|6|COMPOUND 6|4|OBJ 7|10|CASE 8|10|NMOD-POSS 9|10|COMPOUND 10|4|OBL 11|3|PUNCT
+*CHI:	uhhuh .
+%act:	drinks
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you do ?
+%mor:	pron|you-Prs-Nom-S2 aux|do-Fin-Ind-Pres-S2 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	more !
+%act:	shows pitcher to Mother
+%xpho:	mor d&t
+%mor:	adj|more-Cmp-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	that .
+%mor:	pron|that-Dem .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	use your tea pot so then we can put more in it .
+%act:	pours into tea pot
+%mor:	verb|use-Fin-Imp-S pron|your-Prs-Gen-S2 noun|tea noun|pot-Acc adv|so adv|then pron|we-Prs-Nom-P1 aux|can-Fin-S verb|put-Inf-S adj|more-Cmp-S1 adp|in pron|it-Prs-Acc-S3 .
+%gra:	1|0|ROOT 2|4|NMOD-POSS 3|4|COMPOUND 4|1|OBJ 5|9|ADVMOD 6|9|ADVMOD 7|9|NSUBJ 8|9|AUX 9|1|PARATAXIS 10|9|OBJ 11|12|CASE 12|9|OBL 13|1|PUNCT
+*CHI:	xxx .
+%act:	reaches for pot
+*MOT:	xxx please .
+%mor:	intj|please .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx please .
+%act:	<aft> takes pot and pours into cup
+%xpho:	piz
+%mor:	intj|please .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	whoa@i .
+%mor:	co|whoa .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you're pouring a cup and a half there .
+%mor:	pron|you-Prs-Nom-S2~aux|be-Fin-Ind-Pres-S2 verb|pour-Part-Pres-S det|a-Ind-Art noun|cup-Acc cconj|and det|a-Ind-Art noun|half adv|there .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|9|CC 7|8|DET 8|9|OBL-UNMARKED 9|3|ADVMOD 10|3|PUNCT
+*CHI:	0 .
+%act:	<aft> drinks , spills
+*MOT:	&=laughs .
+*CHI:	xxx .
+%act:	rearranges dishes
+%xpho:	xxx . mor mor dIs
+*CHI:	more (.) more [*] this .
+%mor:	adv|more adv|more pron|this-Dem-S1 .
+%gra:	1|2|ADVMOD 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	more of what ? [+ nv]
+%mor:	adj|more-Cmp-S1 adp|of pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*CHI:	more that .
+%act:	places pot close to Mother
+%xpho:	mor d&t
+%mor:	adj|more-Cmp-S1 pron|that-Dem .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	what's that ?
+%gpx:	looks at Paula
+%act:	picks up pot
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	tea cuppit@c .
+%mor:	noun|tea chi|cuppit .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*MOT:	okay .
+%act:	pours milk
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	I poured it .
+%gpx:	looks at pot
+%xpho:	6 pord It
+%mor:	pron|I-Prs-Nom-S1 verb|pour-Fin-Ind-Past-S1 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	okay there you are .
+%act:	hands pot to Paula
+%mor:	intj|okay adv|there pron|you-Prs-Nom-S2 aux|be-Fin-Ind-Pres-S2 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|4|NSUBJ 4|2|COP 5|2|PUNCT
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	I think the orange juice is just about all gone .
+%mor:	pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 det|the-Def-Art adj|orange-S1 noun|juice aux|be-Fin-Ind-Pres-S3 adv|just adv|about det|all-Def-Tot adj|gone-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|AMOD 5|10|NSUBJ 6|10|COP 7|10|ADVMOD 8|10|ADVMOD 9|10|ADVMOD 10|2|CCOMP 11|2|PUNCT
+*MOT:	we drank it all this morning .
+%mor:	pron|we-Prs-Nom-P1 verb|drink-Fin-Ind-Past-P1-irr pron|it-Prs-Acc-S3 det|all-Def-Tot det|this-Def-Dem-Sing noun|morning-Ger .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|6|DET-PREDET 5|6|DET 6|2|OBL-UNMARKED 7|2|PUNCT
+*CHI:	all_gone !
+%act:	<bef> pours juice in cup . <dur> slams pot down
+%mor:	noun|allgone !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	all_gone .
+%mor:	noun|allgone .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	<aft> drinks , spills
+*MOT:	&=laughs .
+*CHI:	mm@i [% very whiny] !
+%mor:	co|mm !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	is that good ?
+%mor:	aux|be-Fin-Ind-Pres-S3 pron|that-Dem adj|good-S1 ?
+%gra:	1|3|COP 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	hm: ?
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	want s(o)m(e) (m)ore milk [!] [*] .
+%mor:	verb|want-Fin-Imp-Pres-S det|some-Def-Ind adj|more-Cmp-S1 noun|milk-Acc .
+%gra:	1|0|ROOT 2|4|DET 3|4|AMOD 4|1|OBJ 5|1|PUNCT
+*MOT:	want some milk now ?
+%gpx:	looks at Paula
+%mor:	verb|want-Fin-Ind-Pres-S det|some-Def-Ind noun|milk-Acc adv|now ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|ADVMOD 5|1|PUNCT
+*CHI:	want dat [: that] .
+%xpho:	w6nt d&t
+%mor:	verb|want-Fin-Imp-Pres-S pron|that-Dem .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	do you think you really want milk and orange juice together ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|think-Inf-S pron|you-Prs-Nom-S2 adv|really verb|want-Fin-Ind-Pres-S2 noun|milk cconj|and adj|orange-S1 noun|juice-Acc adv|together ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|6|NSUBJ 5|6|ADVMOD 6|3|CCOMP 7|10|COMPOUND 8|10|CC 9|7|CONJ 10|6|OBJ 11|6|ADVMOD 12|3|PUNCT
+*CHI:	0 .
+%act:	drinks
+*MOT:	you still have your cookie .
+%mor:	pron|you-Prs-Nom-S2 adv|still verb|have-Fin-Ind-Pres-S2 pron|your-Prs-Gen-S2 noun|cookie-Acc .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|5|NMOD-POSS 5|3|OBJ 6|3|PUNCT
+*CHI:	you [/] you orange juice [*] !
+%gpx:	points to cup
+%mor:	pron|you-Prs-Gen-S2 adj|orange-S1 noun|juice !
+%gra:	1|3|COMPOUND 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	what dyou [: do you] want me to do with it ?
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|want-Inf-S pron|I-Prs-Acc-S1 part|to verb|do-Inf-S adp|with pron|it-Prs-Acc-S3 ?
+%gra:	1|7|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|7|MARK 7|4|XCOMP 8|9|CASE 9|7|OBL 10|4|PUNCT
+*CHI:	<drink it> [<] .
+%mor:	verb|drink-Fin-Imp-S pron|it-Prs-Acc-S3 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	drink it ?
+%act:	drinks
+%gpx:	nods
+%mor:	verb|drink-Fin-Imp-S pron|it-Prs-Acc-S3 ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	is that good orange juice ?
+%mor:	aux|be-Fin-Ind-Pres-S3 det|that-Def-Dem-Sing adj|good-S1 adj|orange-S1 noun|juice ?
+%gra:	1|5|COP 2|5|DET 3|5|AMOD 4|5|AMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	uhhuh .
+%gpx:	points to refrigerator
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	more milk .
+%act:	<aft> slams cup
+%mor:	adj|more-Cmp-S1 noun|milk .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	be careful with it .
+%mor:	aux|be-Fin-Imp-S adj|careful-S1 adp|with pron|it-Prs-Acc-S3 .
+%gra:	1|2|COP 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*MOT:	what do you want in it ?
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|want-Inf-S adp|in pron|it-Prs-Acc-S3 ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+*CHI:	pour some milk in it .
+%gpx:	points to refrigerator
+%mor:	verb|pour-Fin-Imp-S det|some-Def-Ind noun|milk-Acc adp|in pron|it-Prs-Acc-S3 .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|5|CASE 5|1|OBL 6|1|PUNCT
+*MOT:	you want some milk in it (.) too ?
+%mor:	pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 det|some-Def-Ind noun|milk-Acc adp|in pron|it-Prs-Acc-S3 adv|too ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|6|CASE 6|2|OBL 7|2|ADVMOD 8|2|PUNCT
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&~a:h xxx in it .
+%mor:	adp|in pron|it-Prs-Acc-S3 .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	we'll put some milk in it for you if you like .
+%act:	takes pitcher , goes to refrigerator
+%mor:	pron|we-Prs-Nom-P1~aux|will-Fin-S verb|put-Inf-S det|some-Def-Ind noun|milk-Acc adp|in pron|it-Prs-Acc-S3 adp|for pron|you-Prs-Acc-S2 sconj|if pron|you-Prs-Nom-S2 verb|like-Fin-Ind-Pres-S2 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|7|CASE 7|3|OBL 8|9|CASE 9|3|OBL 10|12|MARK 11|12|NSUBJ 12|3|ADVCL 13|3|PUNCT
+*CHI:	0 .
+%gpx:	watches Mother
+*MOT:	should I get you another cup ?
+%mor:	aux|should-Fin-S pron|I-Prs-Nom-S1 verb|get-Inf-S pron|you-Prs-Acc-S2 det|another-Def-Ind noun|cup-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|IOBJ 5|6|DET 6|3|OBJ 7|3|PUNCT
+*MOT:	another tea cup ?
+%mor:	det|another-Def-Ind noun|tea noun|cup ?
+%gra:	1|3|DET 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	no (.) make it fil@c [?] down .
+%gpx:	holds cup toward Mother
+%mor:	intj|no verb|make-Fin-Imp-S pron|it-Prs-Acc-S3 chi|fil adv|down .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|2|DEP 5|2|ADVMOD 6|2|PUNCT
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	what did she say ?
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Past-S3-irr pron|she-Prs-Nom-S3 verb|say-Inf-S ?
+%gra:	1|4|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*MOT:	she wanted that cup .
+%mor:	pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Past-S3 det|that-Def-Dem-Sing noun|cup-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	I was going to get her another cup but she wants it .
+%mor:	pron|I-Prs-Nom-S1 aux|be-Fin-Ind-Past-S1-irr verb|go-Part-Pres-S part|to verb|get-Inf-S pron|her-Prs-Acc-S3 det|another-Def-Ind noun|cup-Acc cconj|but pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S3 pron|it-Prs-Acc-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|IOBJ 7|8|DET 8|5|OBJ 9|11|CC 10|11|NSUBJ 11|3|CONJ 12|11|OBJ 13|3|PUNCT
+*CHI:	get me !
+%mor:	verb|get-Fin-Imp-S pron|I-Prs-Acc-S1 !
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	okay (.) this is milk .
+%act:	sets pitcher down . sits
+%mor:	intj|okay pron|this-Dem-S1 aux|be-Fin-Ind-Pres-S3 noun|milk .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	that milk ?
+%mor:	det|that-Def-Dem-Sing noun|milk ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	uhhuh (.) that's milk .
+%mor:	intj|uhhuh pron|that-Dem~aux|be-Fin-Ind-Pres-S3 noun|milk .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	0 .
+%act:	<aft> pours into cup . milk overflows
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx .
+*MOT:	[^ taking the mouse from Leo] I know .
+%mor:	pron|I-Prs-Nom-S1 verb|know-Fin-Ind-Pres-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	you spilled it (.) didn't you ?
+%mor:	pron|you-Prs-Nom-S2 verb|spill-Fin-Ind-Past-S2 pron|it-Prs-Nom-S3 aux|do-Fin-Ind-Past-S3-irr~part|not pron|you-Prs-Nom-S2 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PARATAXIS 5|6|ADVMOD 6|4|NSUBJ 7|2|PUNCT
+*MOT:	see what you're doing ?
+%mor:	verb|see-Fin-Imp-S pron|what-Rel-S1 pron|you-Prs-Nom-S2~aux|be-Fin-Ind-Pres-S2 verb|do-Part-Pres-S ?
+%gra:	1|0|ROOT 2|1|OBJ 3|5|NSUBJ 4|5|AUX 5|2|ACL-RELCL 6|1|PUNCT
+*MOT:	you're spilling it .
+%mor:	pron|you-Prs-Nom-S2~aux|be-Fin-Ind-Pres-S2 verb|spill-Part-Pres-S pron|it-Prs-Acc-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	put it in a saucer .
+%mor:	verb|put-Fin-Imp-S pron|it-Prs-Acc-S3 adp|in det|a-Ind-Art noun|saucer .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|CASE 4|5|DET 5|1|OBL 6|1|PUNCT
+*MOT:	right ?
+%mor:	adj|right-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	<aft> plays with spill
+*MOT:	do you want to get a cloth so we can wipe up the milk ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|want-Inf-S part|to verb|get-Inf-S det|a-Ind-Art noun|cloth-Acc sconj|so pron|we-Prs-Nom-P1 aux|can-Fin-S verb|wipe-Inf-S adp|up det|the-Def-Art noun|milk-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|DET 7|5|OBJ 8|11|MARK 9|11|NSUBJ 10|11|AUX 11|3|PARATAXIS 12|11|COMPOUND-PRT 13|14|DET 14|11|OBJ 15|3|PUNCT
+*MOT:	or do you want to play with it and get it all over the floor ?
+%mor:	cconj|or aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|want-Inf-S part|to verb|play-Inf-S adp|with pron|it-Prs-Acc-S3 cconj|and verb|get-Inf-S pron|it-Prs-Acc-S3 det|all-Def-Tot adp|over det|the-Def-Art noun|floor ?
+%gra:	1|4|CC 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|8|CASE 8|6|OBL 9|10|CC 10|6|CONJ 11|10|OBJ 12|10|ADVMOD 13|15|CASE 14|15|DET 15|10|OBL 16|4|PUNCT
+*MOT:	I think you want to get it all over the floor .
+%act:	<aft> gets cloth
+%mor:	pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 part|to verb|get-Inf-S pron|it-Prs-Acc-S3 det|all-Def-Tot adp|over det|the-Def-Art noun|floor .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|6|ADVMOD 9|11|CASE 10|11|DET 11|6|OBL 12|2|PUNCT
+*CHI:	0 .
+%act:	plays with milk
+*MOT:	oops .
+%act:	gets rag
+%mor:	intj|oop .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	want to wipe it up for me ?
+%act:	moves dishes
+%mor:	verb|want-Fin-Imp-S part|to verb|wipe-Inf-S pron|it-Prs-Acc-S3 adp|up adp|for pron|I-Prs-Acc-S1 ?
+%gra:	1|0|ROOT 2|3|MARK 3|1|XCOMP 4|3|OBJ 5|3|COMPOUND-PRT 6|7|CASE 7|3|OBL 8|1|PUNCT
+*MOT:	wipe up the milk .
+%mor:	verb|wipe-Fin-Imp-S adp|up det|the-Def-Art noun|milk-Acc .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|4|DET 4|1|OBJ 5|1|PUNCT
+*MOT:	wipe off the table there .
+%mor:	verb|wipe-Fin-Imp-S adp|off det|the-Def-Art noun|table-Acc adv|there .
+%gra:	1|0|ROOT 2|1|COMPOUND-PRT 3|4|DET 4|1|OBJ 5|1|ADVMOD 6|1|PUNCT
+*MOT:	there's still more milk .
+%mor:	pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 adv|still adj|more-Cmp-S1 noun|milk .
+%gra:	1|2|EXPL 2|0|ROOT 3|2|ADVMOD 4|5|AMOD 5|2|NSUBJ 6|2|PUNCT
+*CHI:	0 .
+%act:	wipes table
+*MOT:	more milk there .
+%com:	filming often didn't include both Mother and Paula in picture . action recording difficult .
+%mor:	adj|more-Cmp-S1 noun|milk adv|there .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+@End

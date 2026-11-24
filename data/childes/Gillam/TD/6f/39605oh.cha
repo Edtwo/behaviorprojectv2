@@ -1,0 +1,111 @@
+@UTF8
+@PID:	11312/c-00034020-1
+@Begin
+@Languages:	eng
+@Participants:	INV Investigator, CHI Target_Child
+@ID:	eng|Gillam|INV|||||Investigator|||
+@ID:	eng|Gillam|CHI|6;05.|female|||Target_Child|||
+@Date:	05-MAR-2002
+@Comment:	DOB = 10/3/1995
+@Comment:	Examiner = Joan Kaderavek
+@Comment:	Grade =K
+@Comment:	Ethnicity = European American
+@Comment:	Impairment = No
+@G:	McDonalds
+@Types:	cross, narrative, TD
+*INV:	what happened to the boy and the girl in the story ?
+%mor:	pron|what-Int-S1 verb|happen-Fin-Ind-Past-S3 adp|to det|the-Def-Art noun|boy cconj|and det|the-Def-Art noun|girl adp|in det|the-Def-Art noun|story ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|8|CC 7|8|DET 8|5|CONJ 9|11|CASE 10|11|DET 11|8|NMOD 12|2|PUNCT
+*CHI:	they wanna go to Mcdonalds .
+%mor:	pron|they-Prs-Nom-P3 verb|want-Fin-Ind-Pres-P3~part|to verb|go-Inf-S adp|to propn|Mcdonald .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|6|CASE 6|4|OBL 7|2|PUNCT
+*CHI:	when they got there &-um they +...
+%mor:	adv|when pron|they-Prs-Nom-P3 verb|get-Fin-Ind-Past-P3-irr adv|there pron|they-Prs-Nom-P3 +...
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|OBJ 6|3|PUNCT
+*CHI:	I forgot the boys name .
+%mor:	pron|I-Prs-Nom-S1 verb|forget-Fin-Ind-Past-S1-irr det|the-Def-Art noun|boy-Plur noun|name-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|COMPOUND 5|2|OBJ 6|2|PUNCT
+*INV:	that's okay .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 adj|okay-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	<they his um> [/] [*] Lisa's mom and her brother both know <what she> [/] what they wanted then .
+%mor:	propn|Lisa~part|s noun|mom cconj|and pron|her-Prs-Gen-S3 noun|brother det|both-Def-Tot verb|know-Fin-Ind-Pres-P3 pron|what-Rel-S1 pron|they-Prs-Nom-P3 verb|want-Fin-Ind-Past-P3 adv|then .
+%gra:	1|3|NMOD-POSS 2|1|CASE 3|8|NSUBJ 4|6|CC 5|6|NMOD-POSS 6|3|CONJ 7|8|ADVMOD 8|0|ROOT 9|8|OBJ 10|11|NSUBJ 11|9|ACL-RELCL 12|11|ADVMOD 13|8|PUNCT
+*CHI:	but Lisa didn't know .
+%mor:	cconj|but propn|Lisa aux|do-Fin-Ind-Past-S3-irr~part|not verb|know-Inf-S .
+%gra:	1|5|CC 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	<and then Lisa and her> [/] and then her brother wanted a cheeseburger and &-um a milkshake and some french fries .
+%mor:	cconj|and adv|then pron|her-Prs-Gen-S3 noun|brother verb|want-Fin-Ind-Past-S3 det|a-Ind-Art noun|cheeseburger-Acc cconj|and det|a-Ind-Art noun|milkshake cconj|and det|some-Def-Ind adj|French-S1 noun|fry-Plur .
+%gra:	1|5|CC 2|5|ADVMOD 3|4|NMOD-POSS 4|5|NSUBJ 5|0|ROOT 6|7|DET 7|5|OBJ 8|10|CC 9|10|DET 10|7|CONJ 11|14|CC 12|14|DET 13|14|AMOD 14|7|CONJ 15|5|PUNCT
+*CHI:	and her mom wanted a salad .
+%mor:	cconj|and pron|her-Prs-Gen-S3 noun|mom verb|want-Fin-Ind-Past-S3 det|a-Ind-Art noun|salad-Acc .
+%gra:	1|4|CC 2|3|NMOD-POSS 3|4|NSUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*CHI:	and &-um then Lisa finally remembered what she wanted .
+%mor:	cconj|and adv|then propn|Lisa adv|finally verb|remember-Fin-Ind-Past-S3 pron|what-Rel-S1 pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Past-S3 .
+%gra:	1|5|CC 2|5|ADVMOD 3|5|NSUBJ 4|5|ADVMOD 5|0|ROOT 6|5|OBJ 7|8|NSUBJ 8|6|ACL-RELCL 9|5|PUNCT
+*CHI:	and <she want> [/] she wanted &-um a happy meal and a chocolate <milkshake> [/] icecream cone .
+%mor:	cconj|and pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Past-S3 det|a-Ind-Art adj|happy-S1 noun|meal-Acc cconj|and det|a-Ind-Art noun|chocolate noun|icecream noun|cone .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|6|DET 5|6|AMOD 6|3|OBJ 7|11|CC 8|11|DET 9|11|COMPOUND 10|11|COMPOUND 11|6|CONJ 12|3|PUNCT
+*INV:	anything else ?
+%mor:	pron|anything-Ind-S1 adj|else-S1 ?
+%gra:	1|0|ROOT 2|1|AMOD 3|1|PUNCT
+*CHI:	<then their &~m and um> [/] [*] and then their &~m +...
+%mor:	cconj|and adv|then pron|their-Prs-Gen-P3 +...
+%gra:	1|3|CC 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	I don't know how much it was .
+%mor:	pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not verb|know-Inf-S adv|how adj|much-S1 pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|ADVMOD 6|4|OBJ 7|6|NSUBJ 8|6|COP 9|4|PUNCT
+*CHI:	but <um and> [/] then their mom forgot &-um her purse .
+%mor:	cconj|but adv|then pron|their-Prs-Gen-P3 noun|mom verb|forget-Fin-Ind-Past-S3-irr pron|her-Prs-Gen-S3 noun|purse-Acc .
+%gra:	1|5|CC 2|5|ADVMOD 3|4|NMOD-POSS 4|5|NSUBJ 5|0|ROOT 6|7|NMOD-POSS 7|5|OBJ 8|5|PUNCT
+*CHI:	<and then they hadta go &~ba and then they wanted> [/] then they hadta go back and get it .
+%mor:	adv|then pron|they-Prs-Nom-P3 verb|have-Fin-Ind-Past-P3-irr~part|to verb|go-Inf-S adv|back cconj|and verb|get-Inf-S pron|it-Prs-Acc-S3 .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|ADVMOD 7|8|CC 8|5|CONJ 9|8|OBJ 10|3|PUNCT
+@G:	LateForSchool
+*INV:	can you tell me a story that goes with the five pictures .
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|tell-Inf-S pron|I-Prs-Acc-S1 det|a-Ind-Art noun|story-Acc pron|that-Rel verb|go-Fin-Ind-Pres-S3 adp|with det|the-Def-Art num|five noun|picture-Plur .
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|IOBJ 5|6|DET 6|3|OBJ 7|8|NSUBJ 8|6|ACL-RELCL 9|12|CASE 10|12|DET 11|12|NUMMOD 12|8|OBL 13|3|PUNCT
+*CHI:	he woke up .
+%mor:	pron|he-Prs-Nom-S3 verb|wake-Fin-Ind-Past-S3-irr adp|up .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|COMPOUND-PRT 4|2|PUNCT
+*CHI:	and he was late .
+%mor:	cconj|and pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr adj|late-S1 .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	and then he spilled his milk .
+%mor:	cconj|and adv|then pron|he-Prs-Nom-S3 verb|spill-Fin-Ind-Past-S3 pron|his-Prs-Gen-S3 noun|milk-Acc .
+%gra:	1|4|CC 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|6|NMOD-POSS 6|4|OBJ 7|4|PUNCT
+*CHI:	and he broke his <&~sh> [/] shoelace .
+%mor:	cconj|and pron|he-Prs-Nom-S3 verb|break-Fin-Ind-Past-S3-irr pron|his-Prs-Gen-S3 noun|shoelace-Acc .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|5|NMOD-POSS 5|3|OBJ 6|3|PUNCT
+*CHI:	and he was late for the bus .
+%mor:	cconj|and pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr adj|late-S1 adp|for det|the-Def-Art noun|bus .
+%gra:	1|4|CC 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	and then he got at school late [*] .
+%mor:	cconj|and adv|then pron|he-Prs-Nom-S3 verb|get-Fin-Ind-Past-S3-irr adp|at noun|school adv|late .
+%gra:	1|4|CC 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|ADVMOD 8|4|PUNCT
+*INV:	are you finished ?
+%mor:	aux|be-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|finish-Part-Past-S ?
+%gra:	1|3|AUX-PASS 2|3|NSUBJ-PASS 3|0|ROOT 4|3|PUNCT
+@G:	Aliens
+*CHI:	there was a girl and boy going to the park .
+%mor:	pron|there-Int-S1 verb|be-Fin-Ind-Past-S3-irr det|a-Ind-Art noun|girl cconj|and noun|boy verb|go-Ger-S adp|to det|the-Def-Art noun|park .
+%gra:	1|2|EXPL 2|0|ROOT 3|4|DET 4|2|NSUBJ 5|6|CC 6|4|CONJ 7|4|ACL 8|10|CASE 9|10|DET 10|7|OBL 11|2|PUNCT
+*CHI:	and then they saw octopuses coming out of this <um ship or or> [/] space thing .
+%mor:	cconj|and adv|then pron|they-Prs-Nom-P3 verb|see-Fin-Ind-Past-P3-irr noun|octopuse-Plur-Acc verb|come-Ger-S adp|out adp|of det|this-Def-Dem-Sing noun|space noun|thing-Ger .
+%gra:	1|4|CC 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|5|ACL 7|11|CASE 8|11|CASE 9|11|DET 10|11|COMPOUND 11|6|OBL 12|4|PUNCT
+*CHI:	<and then and then> [/] and <there was a &~da> [/] there was a dad and a mom and a girl and a dog .
+%mor:	cconj|and pron|there-Int-S1 verb|be-Fin-Ind-Past-S3-irr det|a-Ind-Art noun|dad cconj|and det|a-Ind-Art noun|mom cconj|and det|a-Ind-Art noun|girl cconj|and det|a-Ind-Art noun|dog .
+%gra:	1|3|CC 2|3|EXPL 3|0|ROOT 4|5|DET 5|3|NSUBJ 6|8|CC 7|8|DET 8|5|CONJ 9|11|CC 10|11|DET 11|5|CONJ 12|14|CC 13|14|DET 14|5|CONJ 15|3|PUNCT
+*CHI:	and <they thought> [/] they thought it was cool .
+%mor:	cconj|and pron|they-Prs-Nom-P3 verb|think-Fin-Ind-Past-P3-irr pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr adj|cool-S1 .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|6|NSUBJ 5|6|COP 6|3|CCOMP 7|3|PUNCT
+*INV:	can you think of anything else to put in your story ?
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|think-Inf-S adp|of pron|anything-Ind-S1 adj|else-S1 part|to verb|put-Inf-S adp|in pron|your-Prs-Gen-S2 noun|story ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|5|AMOD 7|8|MARK 8|5|ACL 9|11|CASE 10|11|NMOD-POSS 11|8|OBL 12|3|PUNCT
+*CHI:	and there was a person that was an octopus too waving goodbye [*] .
+%mor:	cconj|and pron|there-Int-S1 verb|be-Fin-Ind-Past-S3-irr det|a-Ind-Art noun|person pron|that-Rel aux|be-Fin-Ind-Past-S3-irr det|a-Ind-Art noun|octopus adv|too verb|wave-Part-Pres-S noun|goodbye .
+%gra:	1|3|CC 2|3|EXPL 3|0|ROOT 4|5|DET 5|3|NSUBJ 6|9|NSUBJ 7|9|COP 8|9|DET 9|5|ACL-RELCL 10|11|ADVMOD 11|12|AMOD 12|9|NMOD 13|3|PUNCT
+*INV:	finished ?
+%mor:	verb|finish-Fin-Ind-Past-S ?
+%gra:	1|0|ROOT 2|1|PUNCT
+@End

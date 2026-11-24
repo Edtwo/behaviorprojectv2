@@ -1,0 +1,241 @@
+@UTF8
+@PID:	11312/c-00015221-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child
+@ID:	eng|Bates|MOT||female|||Mother|||
+@ID:	eng|Bates|CHI|1;08.|male|TD|MC|Target_Child|||
+@Comment:	[ba3 morphotag | engine=stanza-1.11.1 ; lang=eng | 2026-05-07T09:42:41-04:00]
+@Types:	cross, toyplay, TD
+*MOT:	you like to open the doors of the house ?
+%act:	<1w> puts chicken on bench
+%mor:	pron|you-Prs-Nom-S2 verb|like-Fin-Ind-Pres-S2 part|to verb|open-Inf-S det|the-Def-Art noun|door-Plur-Acc adp|of det|the-Def-Art noun|house ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|6|DET 6|4|OBJ 7|9|CASE 8|9|DET 9|6|NMOD 10|2|PUNCT
+*MOT:	that's fun isn't it ?
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 noun|fun aux|be-Fin-Ind-Pres-S3~part|not pron|it-Prs-Nom-S3 ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|COP 5|6|ADVMOD 6|3|PARATAXIS 7|3|PUNCT
+*MOT:	that's fun to open .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 adj|fun-S1 part|to verb|open-Inf-S .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|5|MARK 5|3|ADVCL 6|3|PUNCT
+*CHI:	0 .
+%act:	opens and closes doors of dollhouse . puts hand in dollhouse . moves table . closes doors
+*MOT:	can you tell me what this is ?
+%gpx:	points to and taps table
+%act:	<1w> puts bench in dollhouse
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|tell-Inf-S pron|I-Prs-Acc-S1 pron|what-Int-S1 pron|this-Dem-S1 aux|be-Fin-Ind-Pres-S3 ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|IOBJ 5|3|OBJ 6|7|NSUBJ 7|5|ACL-RELCL 8|3|PUNCT
+*MOT:	what is this ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*MOT:	hm: ?
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's this right here &=points ?
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 adj|right-S1 adv|here ?
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|1|NSUBJ 5|1|ADVMOD 6|1|PUNCT
+*CHI:	table .
+%act:	<aft> opens door <bef> closes door .
+%xpho:	tibA
+%mor:	noun|table .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	&-um table .
+%gpx:	shakes head yes
+%mor:	noun|table .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	that's right .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 adj|right-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	0 .
+%act:	puts hand inside dollhouse and takes out toy
+*MOT:	+< what are these &=points ?
+%gpx:	points to and taps chickens
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 pron|this-Dem-P1 ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*MOT:	what are these guys ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 det|this-Def-Dem-Plur noun|guy-Plur ?
+%gra:	1|0|ROOT 2|1|COP 3|4|DET 4|1|NSUBJ 5|1|PUNCT
+*CHI:	yyy .
+%act:	<aft> reaches in dollhouse and touches bench
+%alt:	cluck_cluck+cluck
+%xpho:	p6k+p6k+p6k
+*MOT:	bark_bark_bark@o .
+%mor:	on|barkbarkbark .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	that's what they say .
+%act:	<1w-4w> picks up grill and places outside dollhouse
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 pron|what-Rel-S1 pron|they-Prs-Nom-P3 verb|say-Fin-Ind-Pres-P3 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|5|NSUBJ 5|3|ACL-RELCL 6|3|PUNCT
+*MOT:	that's what the chickens say .
+%act:	<1w-5w> picks up grill and places outside dollhouse
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 pron|what-Rel-S1 det|the-Def-Art noun|chicken-Plur verb|say-Fin-Ind-Pres-P3 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|5|DET 5|6|NSUBJ 6|3|ACL-RELCL 7|3|PUNCT
+*MOT:	look !
+%act:	takes out grill and hands to Doug
+%mor:	verb|look-Fin-Imp-S !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	here's a cooker !
+%mor:	adv|here~aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|cooker !
+%gra:	1|0|ROOT 2|1|COP 3|4|DET 4|1|NSUBJ 5|1|PUNCT
+*CHI:	0 .
+%gpx:	looks at Mother's hand
+%act:	drops bench
+*MOT:	here's a cooker like Daddy's cooker .
+%mor:	adv|here~aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|cooker adp|like propn|Daddy~part|s noun|cooker .
+%gra:	1|0|ROOT 2|1|COP 3|4|DET 4|1|NSUBJ 5|8|CASE 6|8|NMOD-POSS 7|6|CASE 8|4|NMOD 9|1|PUNCT
+*MOT:	that's like Daddy's cooker .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 adp|like propn|Daddy~part|s noun|cooker .
+%gra:	1|6|NSUBJ 2|6|COP 3|6|CASE 4|6|NMOD-POSS 5|4|CASE 6|0|ROOT 7|6|PUNCT
+*CHI:	0 .
+%act:	takes grill and examines
+*MOT:	0 .
+%act:	reaches in dollhouse , takes out man and sits outside
+*CHI:	0 .
+%act:	throws grill in dollhouse . opens and closes dollhouse doors
+*MOT:	0 .
+%act:	takes grill out of dollhouse and sets next to man . arranges furniture inside dollhouse . puts man in car
+*MOT:	you like those little doors (.) don't cha [: you] ?
+%mor:	pron|you-Prs-Nom-S2 verb|like-Fin-Ind-Pres-S2 det|that-Def-Dem-Plur adj|little-S1 noun|door-Plur-Acc aux|do-Fin-Ind-Pres-P3~part|not pron|you-Prs-Nom-S2 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|AMOD 5|2|OBJ 6|2|CCOMP 7|8|ADVMOD 8|6|NSUBJ 9|2|PUNCT
+*MOT:	that's a mommy and two dogs .
+%gpx:	points to car
+%act:	<aft> moves car <bef> puts man in car .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|mommy cconj|and num|two noun|dog-Plur .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|7|CC 6|7|NUMMOD 7|4|CONJ 8|4|PUNCT
+*CHI:	0 .
+%act:	closes , opens and closes dollhouse doors
+*MOT:	those doors are lots of fun (.) aren't they ?
+%act:	<aft> closes doors opposite Doug
+%par:	<bef> laughs
+%mor:	det|that-Def-Dem-Plur noun|door-Plur aux|be-Fin-Ind-Pres-P3 noun|lot-Plur adp|of noun|fun aux|be-Fin-Ind-Pres-P3~part|not pron|they-Prs-Nom-P3 ?
+%gra:	1|2|DET 2|4|NSUBJ 3|4|COP 4|7|NSUBJ 5|6|CASE 6|4|NMOD 7|0|ROOT 8|9|ADVMOD 9|7|NSUBJ 10|7|PUNCT
+*MOT:	did you see these ?
+%act:	<aft> moves dollhouse away . ladder falls
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|see-Inf-S pron|this-Dem-P1 ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	0 .
+%gpx:	looks at shape box
+%act:	slides toward dollhouse , picks up ladder and closes doors
+*MOT:	did you see these over here (.) sweetheart ?
+%act:	takes out blocks and beads (actually balls)
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|see-Inf-S pron|this-Dem-P1 adp|over adv|here noun|sweetheart ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|7|CASE 6|7|ADVMOD 7|3|OBL 8|3|PUNCT
+*MOT:	here's some blocks (.) beads .
+%mor:	adv|here~aux|be-Fin-Ind-Pres-S3 det|some-Def-Ind noun|block-Plur noun|bead-Plur .
+%gra:	1|0|ROOT 2|1|COP 3|5|DET 4|5|COMPOUND 5|1|NSUBJ 6|1|PUNCT
+*CHI:	0 .
+%act:	closes dollhouse doors and knocks ladder down as he crawls around to the right of the dollhouse . opens doors on both sides . takes bed out of dollhouse
+*MOT:	what is that ?
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	0 [=! groan] .
+*MOT:	xxx that's a bed .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|bed .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|4|PUNCT
+*MOT:	it's a sponge though (.) isn't it ?
+%mor:	pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|sponge adv|though aux|be-Fin-Ind-Pres-S3~part|not pron|it-Prs-Nom-S3 ?
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|6|ADVMOD 6|4|PARATAXIS 7|6|ADVMOD 8|4|PARATAXIS 9|4|PUNCT
+*MOT:	he has a sponge bed .
+%mor:	pron|he-Prs-Nom-S3 verb|have-Fin-Ind-Pres-S3 det|a-Ind-Art noun|sponge noun|bed-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|COMPOUND 5|2|OBJ 6|2|PUNCT
+*CHI:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	hm: ?
+%mor:	intj|hm ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no (.) we don't touch that !
+%gpx:	shakes head
+%mor:	intj|no pron|we-Prs-Nom-P1 aux|do-Fin-Ind-Pres-P1~part|not verb|touch-Inf-S pron|that-Dem !
+%gra:	1|5|DISCOURSE 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*CHI:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no (.) no .
+%mor:	intj|no intj|no .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*MOT:	no outlets .
+%mor:	det|no-Def-Neg noun|outlet-Plur .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	oh no .
+%mor:	intj|oh intj|no .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*CHI:	0 .
+%act:	puts bed back in dollhouse
+*MOT:	that's a sponge bed .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|sponge noun|bed .
+%gra:	1|5|NSUBJ 2|5|COP 3|5|DET 4|5|COMPOUND 5|0|ROOT 6|5|PUNCT
+*MOT:	can you put the little person back on the bed ?
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|put-Inf-S det|the-Def-Art adj|little-S1 noun|person-Acc adv|back adp|on det|the-Def-Art noun|bed ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|6|DET 5|6|AMOD 6|3|OBJ 7|3|ADVMOD 8|10|CASE 9|10|DET 10|3|OBL 11|3|PUNCT
+*MOT:	make the bed stand up and put the little person on it .
+%mor:	verb|make-Fin-Imp-S det|the-Def-Art noun|bed-Acc verb|stand-Inf-S adp|up cconj|and verb|put-Fin-Imp-S det|the-Def-Art adj|little-S1 noun|person-Acc adp|on pron|it-Prs-Acc-S3 .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|XCOMP 5|4|COMPOUND-PRT 6|7|CC 7|1|CONJ 8|10|DET 9|10|AMOD 10|7|OBJ 11|12|CASE 12|7|OBL 13|1|PUNCT
+*CHI:	Mommy ?
+%act:	<aft> takes out grill <dur> picks up man inside dollhouse . <bef> moves dollhouse around . closes door .
+%mor:	propn|Mommy ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yes honey .
+%mor:	intj|yes noun|honey .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*CHI:	cooker .
+%xpho:	doUk3r
+%mor:	noun|cooker .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	a cooker .
+%gpx:	shakes head
+%mor:	det|a-Ind-Art noun|cooker .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	Sandy ?
+%gpx:	points to door of play room . looks at door . looks at Mother's eyes
+%xpho:	du du
+%mor:	propn|Sandy ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Sandy went in there .
+%mor:	propn|Sandy verb|go-Fin-Ind-Past-S3-irr adp|in adv|there .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|CASE 4|2|OBL 5|2|PUNCT
+*MOT:	Sandy is in there .
+%mor:	propn|Sandy aux|be-Fin-Ind-Pres-S3 adp|in adv|there .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|CASE 4|0|ROOT 5|4|PUNCT
+*MOT:	she'll be back in a few minutes .
+%mor:	pron|she-Prs-Nom-S3~aux|will-Fin-S aux|be-Inf-S adv|back adp|in det|a-Ind-Art adj|few-S1 noun|minute-Plur .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|COP 4|0|ROOT 5|8|CASE 6|8|DET 7|8|AMOD 8|4|OBL 9|4|PUNCT
+*CHI:	cooker .
+%act:	puts grill in dollhouse
+%xpho:	doUk3r
+%mor:	noun|cooker .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	cooker .
+%mor:	noun|cooker .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	opens and closes doors . turns dollhouse toward self . puts man on bench in dollhouse
+*MOT:	&-um very nice .
+%mor:	adv|very adj|nice-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	0 .
+%act:	puts another man on same bench
+*MOT:	oh very nice .
+%mor:	intj|oh adv|very adj|nice-S1 .
+%gra:	1|3|DISCOURSE 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	you want the mommy and the little girl to be on the same chair ?
+%mor:	pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 det|the-Def-Art noun|mommy-Acc cconj|and det|the-Def-Art adj|little-S1 noun|girl part|to aux|be-Inf-S adp|on det|the-Def-Art adj|same-S1 noun|chair ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|8|CC 6|8|DET 7|8|AMOD 8|4|CONJ 9|14|MARK 10|14|COP 11|14|CASE 12|14|DET 13|14|AMOD 14|2|XCOMP 15|2|PUNCT
+*CHI:	0 .
+%act:	turns dollhouse right and left . opens and closes doors . moves around dollhouse slightly . opens and closes doors . stands up and walks to left doors and turns dollhouse left . opens and closes doors
+*MOT:	did you see all of these little things ?
+%act:	picks up nesting cups
+%mor:	aux|do-Fin-Ind-Past-S2-irr pron|you-Prs-Nom-S2 verb|see-Inf-S det|all-Def-Tot adp|of det|this-Def-Dem-Plur adj|little-S1 noun|thing-Plur ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|8|CASE 6|8|DET 7|8|AMOD 8|4|NMOD 9|3|PUNCT
+*CHI:	0 .
+%gpx:	glances at Mother's hands . looks at cups
+%act:	kneels over by nesting cups
+*MOT:	look at this .
+%act:	unstacks cups
+%mor:	verb|look-Fin-Imp-S adp|at pron|this-Dem-S1 .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*CHI:	0 .
+%act:	takes three cups and unstacks
+@End
