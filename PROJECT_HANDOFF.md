@@ -38,6 +38,14 @@ _Updated 2026-10-26 (final board v2 built in Canva; browser web demo deployed; O
 - Cutoff transfer: ISS-18. Real-world numbers at 7% prevalence (sens 0.91 / spec 0.65): PPV ~16%, NPV ~99%, ~39% of a class flagged - interview prep only.
 - Published screeners (Berkman et al., 2015, Pediatrics; USPSTF evidence review): sensitivity 50-94%, specificity 45-96% across 23 studies -> ours is "comparable to published screeners" (safe one-liner).
 
+**November 2026 additions (AI-assisted session; all reproducible; full write-ups in 0c; grade + ranked weaknesses in `docs/ISEF_SCORECARD.md`).**
+- Data added: EllisWeismer (toddler late talkers) and Providence (toddler home audio); see Section 4.
+- `ext_young_delay.py` (ISS-23, ISS-26): ENNI-trained flag RANKS late talkers vs typical at 30 mo with AUC 0.92 (no refit; fig11 via `poster_figures_young.py`), falling to chance by 66 mo (catch-up). The ENNI cutoff flags 100% of toddlers, so keep the demo's 4-10 yr limit; a cutoff from ~34 local typical toddlers gives sens 0.87 / spec 0.77.
+- `ext_asr_childspeech.py` (ISS-24): first real child-speech test of the recording path. Words mostly wrong (WER ~0.95) but on child-only audio language age within ~3.8 mo; raw home audio off by ~25 mo (parents counted). Pitch filter fix failed its gate (ISS-27).
+- `ext_operating_points.py`: per-100-children tradeoff table for the false-alarm question.
+- Fixes: all offline-demo flags now use the board's 91%-sensitivity cutoff (ISS-25); `requirements.txt` pins `av==15.1.0` (newer av crashes faster-whisper).
+- Pitch (`docs/PITCH.md`) updated with toddler, false-alarm and real-recording answers. Board text untouched (team writes it).
+
 ================================================================================
 ## 0b. VERIFIED FACTS (established by running real checks - trust these)
 ================================================================================
