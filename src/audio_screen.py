@@ -57,6 +57,11 @@ def transcribe(path):
     timestamps), which approximates how human transcribers break utterances, and also by
     sentence punctuation when the model provides it. This matters because MLU is per-utterance.
     Accepts any format PyAV can decode (wav, mp3, m4a, webm/opus from a browser recorder...)."""
+    return [u for u, _, _ in transcribe_timed(path)]
+
+def transcribe_timed(path):
+    """Same as transcribe(), but each utterance comes with its (start_s, end_s) in the audio,
+    so a later step (e.g. the child/adult voice filter, ext_voice_filter.py) can look at it."""
     model = _get_model()
     segments, _ = model.transcribe(path, word_timestamps=True, vad_filter=True)
     utts, cur, prev_end = [], [], None
@@ -67,16 +72,16 @@ def transcribe(path):
             if not tok:
                 continue
             gap = (w.start - prev_end) if prev_end is not None else 0
-            ends_sentence = cur and cur[-1][-1] in ".!?"
+            ends_sentence = cur and cur[-1][0][-1] in ".!?"
             # break on a pause, on sentence punctuation, or at a new Whisper segment
             if cur and (gap > PAUSE or ends_sentence or seg_start):
-                utts.append(" ".join(cur)); cur = []
-            cur.append(tok); prev_end = w.end; seg_start = False
+                utts.append(cur); cur = []
+            cur.append((tok, w.start, w.end)); prev_end = w.end; seg_start = False
     if cur:
-        utts.append(" ".join(cur))
+        utts.append(cur)
     # strip punctuation-only tokens; keep utterances with at least one word
-    utts = [re.sub(r"\s+", " ", u).strip() for u in utts]
-    return [u for u in utts if re.search(r"[a-zA-Z]", u)]
+    out = [(re.sub(r"\s+", " ", " ".join(t for t, _, _ in u)).strip(), u[0][1], u[-1][2]) for u in utts]
+    return [o for o in out if re.search(r"[a-zA-Z]", o[0])]
 
 def features(utts):
     words = [w.lower() for u in utts for w in re.findall(r"[a-z']+", u.lower())]
