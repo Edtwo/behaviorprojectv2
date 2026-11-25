@@ -202,6 +202,11 @@ Format per entry: ID | date-found | STATUS (OPEN / RESOLVED / MONITORING) | what
   - Open: a larger model (large-v3) may lower word error; a GPU run was handed to the PC session (edtwo-async-piglet). Results not yet received.
   - Evidence: results/asr_childspeech.csv, results/asr_childspeech_log.txt, results/asr_childspeech_cache.json (raw transcripts, gitignored with results/).
 
+- **ISS-27 | 2026-11-25 | GATE FAILED (do not build) | Voice pitch alone cannot separate the toddler from the parent.**
+  - Idea: fix ISS-24's raw-audio failure cheaply by keeping only high-pitched speech (toddlers ~300 Hz vs adults ~120-220 Hz).
+  - Signal check first (Lesson 1), on human-timed, non-overlapping utterances (~360 per family, librosa pYIN median F0): child median 274-337 Hz vs adult 114-218 Hz, but AUC(F0 -> child) only 0.73-0.84; 63-72% of child utterances are >= 250 Hz and 5-28% of adult utterances are too. Parents raise their pitch when talking to toddlers.
+  - Decision: a pitch filter would drop about a third of the child's speech and keep many parent sentences. NOT built. Real separation needs a trained speaker-diarization model (future work, not this phase). Script kept in the session scratchpad only (not committed); rerun recipe = this entry.
+
 - **ISS-26 | 2026-11-25 | FINDING (limitation + fix path) | The toddler AUC is RANKING only; the ENNI cutoff flags every toddler.**
   - Saw: at the ENNI 90%-sensitivity cutoff (language-only 0.34), 100% of EllisWeismer 30- and 42-mo children are flagged, typical ones included (TD median risk 0.96 at 30 mo). Risk is calibrated for 4-10 yr olds, so short toddler sentences all look "at risk". The Stage 2 level-gap cutoff fails the other way (EllisWeismer TD toddlers read +6.9 mo ahead, a corpus/task offset): a 10th-percentile core-TD gap cutoff catches 0-20%.
   - Why it matters: "AUC 0.92 at 30 mo" must never be said as "the flag works on toddlers". It is the same pattern as ISS-18 (Gillam): ranking transfers across labs and ages; cutoffs do not.
