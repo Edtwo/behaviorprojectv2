@@ -30,7 +30,7 @@ likely judge "gotchas" have real answers, which matters most in the interview.
 
 1. **Ownership of the work (interview, up to ~10 points).** Heavy AI involvement in code and stats. Judges ask "walk me through how you split the data" or "why logistic regression". If the team can't answer without notes, scores drop fast, and misrepresenting authorship can disqualify. *Fix: team only.* Re-run every script yourselves, read EXPLAINER.md, and be able to draw the validation diagram from memory.
 2. **"Early screen" with no early data (fixed now, see below).** The flag was only validated at 4-16 yr.
-3. **Recording path never tested on real child speech (fixed now, see below).**
+3. **Recording path never tested on real child speech (now tested, see below: works on child-only audio, fails on raw home audio).**
 4. **Real-world usefulness at the screening cutoff.** At 7% prevalence, PPV ~16% and ~39% of a class flagged. A sharp judge will ask "so most flags are false alarms?" *Answer:* yes, that is normal for a first-line screen tuned to miss few kids; NPV ~99% means a pass is trustworthy; published screeners have similar tradeoffs (sensitivity 50-94%, specificity 45-96%). *Added Nov 2026:* `src/ext_operating_points.py` prints the full tradeoff per 100 children (e.g. catch 6.4 of 7 with 36.5 false alarms, vs catch 3.5 of 7 with 7.8 false alarms), so you can explain the choice instead of defending one number.
 5. **Fairness gap (ISS-17).** Over-flags typical African American children on Gillam (31% vs 14%). Already handled honestly; keep it interview-only and never claim equal performance.
 6. **Prior work comparison.** A BEHA judge who knows Gabani et al. (2009) may ask how your accuracy compares. *Fix:* look up their reported numbers in the paper (do not quote from memory) and have one honest sentence ready: same corpus, different goal (interpretable, artifact-controlled, words-only, works from audio).
@@ -53,10 +53,19 @@ likely judge "gotchas" have real answers, which matters most in the interview.
   - The 54-66 month drop is a real limit: the screen cannot tell which late talkers will stay behind.
 
 ### B. Real child-speech ASR test: `ext_asr_childspeech.py`
-See the results section at the end of this file (filled in once the run finished).
+- Data: Providence (Eng-NA), 5 typical children, one ~1-hour home recording each at ~33 months, with time-aligned human transcripts. Model: Whisper base.en (what the demos use), CPU.
+- **Word level:** Whisper gets most toddler words wrong. Word error rate on the child's speech ~0.95 (0.73-1.21 per child).
+- **Screen features on child-only audio** (child's own utterances, run through the real `transcribe()`): sentence length off by 11% on average, vocabulary diversity by 10%, language age by **3.8 months**. Close, despite wrong words, because sentence breaks come from pauses. Encouraging but fragile: 5 kids, one age, all typical.
+- **Unfiltered home audio:** language age inflated by **~25 months**, because parents' speech is counted as the child's. The "could not screen" guard caught 1 of 5. Wrong direction for a screen: a delayed child would look older and be missed.
+- Interpretation (CER):
+  - Claim: the recording path is usable only on audio that is mostly the child.
+  - Evidence: language age within ~4 months on child-only audio vs ~25 months off on raw home audio.
+  - Reasoning: the features depend on counting the child's sentences and words, so any adult speech in the recording directly corrupts them; word identity matters less.
+- Next step this points to: speaker separation, or a recording protocol where the adult stays quiet (a story retell, like ENNI's task). A large-v3 GPU run on the PC may lower word error (pending).
+- Scoring effect: turns "untested on real kids" into a measured, honest limitation with a specific fix. That is worth more with judges than an untested claim.
 
 ## Recommended next moves (team decides)
 1. **Board:** consider replacing fig6/fig9 with fig11 (toddler result). It directly answers "does an early screen work early?"
-2. **Pitch:** update the "Does the recording version work on real kids?" answer with the Providence numbers.
+2. **Pitch:** done. The recording answer now uses the Providence numbers.
 3. **Interview drill:** practice the 6 weakness questions above out loud with someone who has not seen the project.
 4. **Do not add new analyses** after this. Research is closed; remaining points are in presentation.

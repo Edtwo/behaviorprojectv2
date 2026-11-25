@@ -138,7 +138,9 @@ def run_child(name, cache):
     rows = []
     for cond, hyp, er in [("gold", gold_lists, None), ("asr_only", asr_lists, errs(gold_lists, asr_lists)),
                           ("gold_clean", gold_clean, None), ("asr_only_clean", asr_clean, errs(gold_clean, asr_clean)),
-                          ("pipeline", [tok(u) for u in c["pipeline"]], None),
+                          ("pipeline", [tok(u) for u in c["pipeline"]],
+                           {"wer_pooled": wer([w for g in gold_lists for w in g],
+                                              [w for u in c["pipeline"] for w in tok(u)])}),
                           ("gold_first15", gold_raw15, None),
                           ("raw15_all_speakers", [tok(u) for u in c["raw15"]], None)]:
         f = feat_from_wordlists(hyp)
@@ -178,6 +180,11 @@ def main():
               f"MATTR {e_mat.mean():+6.1f}% (|{e_mat.abs().mean():4.1f}|)  "
               f"lang-age shift {e_age.mean():+5.1f} mo (|{e_age.abs().mean():4.1f}|)  "
               f"utts {c.n_utts.sum():.0f} vs gold {r.n_utts.sum():.0f}")
+    pl = df[df.condition == "pipeline"]
+    print(f"\n  pipeline: whole-session word error rate (child words in order, mean of children): "
+          f"{pl.wer_pooled.mean():.2f} (range {pl.wer_pooled.min():.2f}-{pl.wer_pooled.max():.2f})")
+    print("  NOTE: per-clip conditions (asr_only*) transcribe each utterance alone; Whisper invents text on")
+    print("  very short clips, so their WER overstates error. The pipeline row is the realistic one.")
     for cond, ref in [("asr_only_clean", "gold_clean"), ("asr_only", "gold")]:
         a = df[df.condition == cond]; n = df[df.condition == ref].n_utts.sum()
         print(f"\n  {cond}: Word error rate on real ~33-mo child speech (mean of children): {a.wer_pooled.mean():.2f}; "
