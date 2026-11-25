@@ -200,7 +200,7 @@ Format per entry: ID | date-found | STATUS (OPEN / RESOLVED / MONITORING) | what
 
 - **ISS-25 | 2026-11-24 | RESOLVED (consistency) | Offline backup demo used a different flag cutoff than the board and web demo.**
   - Saw: `demo_report.py` and `audio_screen.py` flagged at risk >= 0.45 (Stage 3's Youden point: sens 0.88, spec 0.74), while the board's "catches 91%" and the web demo use the ~90%-sensitivity screening point (full model 0.36; words-only web model 0.34). A judge comparing the backup demo to the board could see a mismatch.
-  - Did: one named constant per path, `SCREEN_CUTOFF` = 0.36 (demo_report, full model) and 0.34 (audio_screen, words-only, same as web/model.json). To revert to Youden, set both to 0.45.
+  - Did: one named constant per model, `SCREEN_CUTOFF` = 0.36 in stage4_interpretability.py (full model; used by the text readout, stage5_demo and demo_report) and 0.34 in audio_screen.py (words-only, same as web/model.json). To revert to Youden, set both to 0.45.
   - Evidence: `src/stage3_delay_classifier.py` operating-point lines (re-run 2026-11-24: AUC 0.862, thr 0.36 -> sens 0.91 spec 0.65; thr 0.45 -> sens 0.88 spec 0.74).
 
 - **ISS-23 | 2026-11-24 | RESOLVED (new evidence) | The "early screen" had no delay validation under age 4.**

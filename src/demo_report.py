@@ -16,10 +16,8 @@ import matplotlib.pyplot as plt
 import stage5_demo as demo
 import ext_percentiles as pct
 
-# Flag cutoff on the delay risk score. 0.36 = Stage 3's screening point (~90% sensitivity on
-# held-out ENNI children: sens 0.91, spec 0.65), the number the board's "catches 91%" refers to.
-# Was 0.45 (lower sensitivity) until 2026-11; see PROJECT_HANDOFF ISS-25.
-SCREEN_CUTOFF = 0.36
+# Flag cutoff: single source in stage4_interpretability (Stage 3 screening point, ISS-25).
+SCREEN_CUTOFF = demo.s4.SCREEN_CUTOFF
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESULTS = os.path.join(ROOT, "results")
