@@ -12,7 +12,7 @@ rubric, written by an AI assistant (Claude) from the repo, the handoff and fresh
 | Design & methodology (15) | 13 | 14 | Child-independent splits, artifact controls, two locked-box outside labs, benchmark vs black box. Now also a cross-age test. |
 | Execution: data, analysis, interpretation (20) | 16 | 19 | Unusually rigorous issue log (now 31 entries, two self-retractions, one failed gate). The recording path is tested on real toddler audio, and its main failure (parents' speech) now has a measured partial fix (ISS-31). |
 | Creativity (20) | 12 | 17 | Core method is known (Gabani et al., 2009 did ML on ENNI). New credit: (1) a developmental-science finding: toddler late talking and school-age DLD share one language dimension, since the transfer works in BOTH directions (ISS-29, fig12); (2) a new deployable method: calibrate the cutoff for a new population with typical children only, matching full-label performance (ISS-30); (3) a child-voice filter made from the app's own speech model (ISS-31). Plus artifact control, words-only ASR-robust model, private in-browser demo, fairness audit. |
-| Presentation: poster (10) | 7 | 7 | Clean flow, but 10 figures is dense, and the text is still an AI draft that ISEF rules require the team to rewrite. |
+| Presentation: poster (10) | 7 | 7 | Clean flow, but dense, and the text is still an AI draft the team must rewrite. Board review (Nov 25) found 3 lines now contradicted by results (Section 6 "not yet tested", Section 9 "next: real recordings", the "30 typical kids" tile hides a 35% false-alarm cost). Fixes + fig13/fig12 swaps listed in BOARD_REVIEW.md: about 9 once the team applies them. |
 | Presentation: interview (25) | 17 | 19 | Depends almost entirely on the team. Prepared answers now cover toddlers, false alarms and real recordings. Main risk: AI did most of the code, so judges will test ownership. |
 | **Total (100)** | **73** | **85** | |
 
@@ -91,7 +91,7 @@ measured, honest answers, including where each one stops working. That matters m
   - Why judges care: clinics rarely have diagnosed children to tune a tool, but typical children are everywhere. This is what makes the screen portable.
 
 ## Recommended next moves (team decides)
-1. **Board:** the strongest creativity visual is fig12 (both directions). Consider it, or fig11, in place of fig6/fig9. Team decides; keep the board from getting denser.
+1. **Board:** follow `docs/BOARD_REVIEW.md`: fix the 3 outdated lines, swap fig9 -> fig13 (real recordings) and fig5 -> fig12 (both directions). Team writes all wording.
 2. **Pitch:** done. The recording answer now uses the Providence numbers.
 3. **Interview drill:** use `docs/INTERVIEW_DRILL.md` (28 questions, pointers to evidence, no scripted answers). Practice out loud with someone who has not seen the project.
 4. **Demo check done:** every Gillam child matching the 4 demo transcripts' ages scores outside the 0.36-0.45 band, so the demo outcomes are unchanged by the new cutoff (ISS-25). Still open the 4 HTML reports once before judging.
