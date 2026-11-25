@@ -42,6 +42,9 @@ if ASR_MODEL:
     from faster_whisper import WhisperModel
     asc._MODEL = WhisperModel(ASR_MODEL, device=os.environ.get("ASR_DEVICE", "cpu"),
                               compute_type=os.environ.get("ASR_COMPUTE", "int8"))
+# ASR_SKIP_CLIPS=1 skips the slow per-clip stage (a method check, not the realistic condition),
+# e.g. for large models on CPU. Only pipeline and raw-audio rows are then reported.
+SKIP_CLIPS = os.environ.get("ASR_SKIP_CLIPS") == "1"
 SR = 16000
 RAW_SECONDS = 15 * 60
 SKIP = {"xxx", "yyy", "www"}
@@ -114,7 +117,7 @@ def run_child(name, cache):
     key = name
     c = cache.setdefault(key, {})
     save = lambda: json.dump(cache, open(CACHE, "w"))
-    if "asr_only" not in c:
+    if "asr_only" not in c and not SKIP_CLIPS:
         # 1) ASR-only, per gold utterance (pad 0.15 s each side)
         hyps = []
         for s, e, _ in gold:
@@ -135,10 +138,10 @@ def run_child(name, cache):
     gold_lists = [w for _, _, w in gold]
     gold_raw15 = [w for s, _, w in gold if s / 1000 < RAW_SECONDS]
     tok = lambda u: re.findall(r"[a-z']+", u.lower())
-    asr_lists = [tok(h) for h in c["asr_only"]]
+    asr_lists = [tok(h) for h in c["asr_only"]] if "asr_only" in c else None
     clean = clean_mask(os.path.join(CHA, child, f"{sess}.cha"), gold)
     gold_clean = [g for g, k in zip(gold_lists, clean) if k]
-    asr_clean = [h for h, k in zip(asr_lists, clean) if k]
+    asr_clean = [h for h, k in zip(asr_lists, clean) if k] if asr_lists is not None else None
 
     def errs(ref, hyp):
         w = [wer(g, h) for g, h in zip(ref, hyp)]
@@ -146,8 +149,10 @@ def run_child(name, cache):
                 "exact_match": float(np.mean([g == h for g, h in zip(ref, hyp)])),
                 "dropped_utts": sum(1 for h in hyp if not h)}
     rows = []
-    for cond, hyp, er in [("gold", gold_lists, None), ("asr_only", asr_lists, errs(gold_lists, asr_lists)),
-                          ("gold_clean", gold_clean, None), ("asr_only_clean", asr_clean, errs(gold_clean, asr_clean)),
+    conds = [("gold", gold_lists, None), ("gold_clean", gold_clean, None)]
+    if asr_lists is not None:
+        conds += [("asr_only", asr_lists, errs(gold_lists, asr_lists)), ("asr_only_clean", asr_clean, errs(gold_clean, asr_clean))]
+    for cond, hyp, er in conds + [
                           ("pipeline", [tok(u) for u in c["pipeline"]],
                            {"wer_pooled": wer([w for g in gold_lists for w in g],
                                               [w for u in c["pipeline"] for w in tok(u)])}),
@@ -176,12 +181,13 @@ def main():
 
     pd.set_option("display.width", 200)
     print("\nPer child (MLU-words / MATTR / language-age / delay prob):")
-    print(df[["child", "age_months", "condition", "n_utts", "mluw", "mattr50", "lang_age", "p_delay",
-              "wer_pooled", "exact_match", "dropped_utts"]].round(2).to_string(index=False))
+    print(df[[c for c in ["child", "age_months", "condition", "n_utts", "mluw", "mattr50", "lang_age", "p_delay",
+              "wer_pooled", "exact_match", "dropped_utts"] if c in df.columns]].round(2).to_string(index=False))
 
     print("\nSummary vs gold (mean over children; signed % error, then mean |error|):")
     for cond, ref in [("asr_only_clean", "gold_clean"), ("asr_only", "gold"), ("pipeline", "gold"),
                       ("raw15_all_speakers", "gold_first15")]:
+        if cond not in set(df.condition): continue
         c = df[df.condition == cond].set_index("child"); r = df[df.condition == ref].set_index("child")
         e_mlu = 100 * (c.mluw - r.mluw) / r.mluw
         e_mat = 100 * (c.mattr50 - r.mattr50) / r.mattr50
@@ -196,6 +202,7 @@ def main():
     print("  NOTE: per-clip conditions (asr_only*) transcribe each utterance alone; Whisper invents text on")
     print("  very short clips, so their WER overstates error. The pipeline row is the realistic one.")
     for cond, ref in [("asr_only_clean", "gold_clean"), ("asr_only", "gold")]:
+        if cond not in set(df.condition): continue
         a = df[df.condition == cond]; n = df[df.condition == ref].n_utts.sum()
         print(f"\n  {cond}: Word error rate on real ~33-mo child speech (mean of children): {a.wer_pooled.mean():.2f}; "
               f"exact utterance match {a.exact_match.mean():.0%}; EMPTY outputs {a.dropped_utts.sum():.0f} / {n:.0f}")
