@@ -15,6 +15,8 @@ says *what* is wrong and *why*; the team writes the words.
 
 ## 2. Figure swaps (stronger evidence, same or less space)
 
+**DONE 2026-11-25 (saved in Canva, images only):** fig9 -> fig13 in Section 6, fig5 -> fig12 in Section 7. The team must now rewrite the Section 7 heading ("As accurate as a 3,000-feature model") and the Section 6 note, which still describe the old figures.
+
 | Section | Now | Suggested | Why |
 |---|---|---|---|
 | 6 Screen from a recording | fig9 (simulated transcription errors) | **fig13 real recordings** (new, `src/poster_figures_audio.py`) | Real toddler audio beats a simulation. It shows the problem (raw: +12 months) and your fix (+4 months) in one picture, which is a strong problem → solution → impact story. Keep "0.85 with 40% wrong words" as a single number if you want it. |
