@@ -104,7 +104,7 @@ const Q=[
 [2,"Why MATTR instead of type-token ratio?","What goes wrong with TTR on longer transcripts.","ISS-05"],
 [3,"What's the biggest weakness of your project?","Pick one honestly and give the evidence.","ISEF_SCORECARD.md, Weaknesses"],
 [3,"Does it work on toddlers?","Ranking yes, flag no, and the toddler cutoff fix.","ISS-23, ISS-26, fig11"],
-[3,"Does the recording version work on real children?","Child-only vs raw home audio, why parents' speech breaks it, and what a bigger speech model did.","ISS-24"],
+[3,"Does the recording version work on real children?","Child-only vs raw home audio, why parents' speech breaks it, what a bigger speech model did, and what the voice filter fixed and didn't.","ISS-24, ISS-31"],
 [3,"Is it fair across ethnic groups?","The Gillam gap, what the cause was (not grammar), what you'd do.","ISS-17"],
 [3,"Name a result you were excited about that turned out to be wrong.","What you believed, what check showed it was wrong.","ISS-16, ISS-15"],
 [3,"Someone did ML on ENNI in 2009. What's new here?","Gabani et al.'s actual reported numbers (look them up), then your differences.","READING_LIST.md section D"],
@@ -134,6 +134,8 @@ const N=[
 ["Children in the whole project","1,184","fig8"],
 ["Real recordings, child-only audio: language-age error","3.8 mo (base) / 3.0 mo (large-v3)","ISS-24"],
 ["Real recordings, raw home audio: language-age error","+25 mo (base) / +10 mo (large-v3)","ISS-24"],
+["Child-voice filter: child vs adult AUC on unseen families","0.94 (pitch alone: 0.73–0.84)","ISS-31"],
+["Full raw recording, language-age error: unfiltered vs voice filter","+11.7 mo → +4.2 mo","ISS-31"],
 ["Fairness gap on Gillam: typical kids flagged","31% African American vs 14%","ISS-17"],
 ["DLD prevalence and source","about 7% (Tomblin et al., 1997)","PITCH.md"]
 ];

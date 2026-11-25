@@ -51,7 +51,7 @@ Format: question -> what a strong answer must include -> where to check it.
     Pick one honestly and give the evidence. -> ISEF_SCORECARD.md "Weaknesses"
 17. **Does it work on toddlers?** Careful: ranking yes, flag no. -> ISS-23, ISS-26, fig11
 18. **Does the recording version work on real children?**
-    Must include: child-only vs raw home audio, and why parents' speech breaks it. -> ISS-24
+    Must include: child-only vs raw home audio, why parents' speech breaks it, and what the voice filter fixed and didn't. -> ISS-24, ISS-31
 19. **Is it fair across ethnic groups?**
     Must include: the Gillam gap, what you found the cause was (not grammar), what you'd do. -> ISS-17
 20. **Name a result you were excited about that turned out to be wrong.** -> ISS-16 (typology), ISS-15 (German 0.99)
