@@ -55,6 +55,15 @@ def gold_utts(cha):
     return out, age
 
 
+def clean_mask(cha, gold, pad_ms=300):
+    """True for a gold CHI utterance when NO adult utterance overlaps it (within pad_ms).
+    In home recordings parents talk over and around toddlers; on overlapped clips Whisper
+    transcribes the louder adult. The clean subset isolates error on child speech itself."""
+    r = pylangacq.read_chat(cha, strict=False)
+    adult = [u.time_marks for u in r.utterances() if u.time_marks and u.participant != "CHI"]
+    return [not any(a0 < e + pad_ms and a1 > s - pad_ms for a0, a1 in adult) for s, e, _ in gold]
+
+
 def wer(ref, hyp):
     """Word error rate via edit distance."""
     d = np.arange(len(hyp) + 1)
@@ -117,18 +126,24 @@ def run_child(name, cache):
     gold_raw15 = [w for s, _, w in gold if s / 1000 < RAW_SECONDS]
     tok = lambda u: re.findall(r"[a-z']+", u.lower())
     asr_lists = [tok(h) for h in c["asr_only"]]
-    wers = [wer(g, h) for g, h in zip(gold_lists, asr_lists)]
+    clean = clean_mask(os.path.join(CHA, child, f"{sess}.cha"), gold)
+    gold_clean = [g for g, k in zip(gold_lists, clean) if k]
+    asr_clean = [h for h, k in zip(asr_lists, clean) if k]
+
+    def errs(ref, hyp):
+        w = [wer(g, h) for g, h in zip(ref, hyp)]
+        return {"wer_pooled": sum(x * len(g) for x, g in zip(w, ref)) / max(1, sum(len(g) for g in ref)),
+                "exact_match": float(np.mean([g == h for g, h in zip(ref, hyp)])),
+                "dropped_utts": sum(1 for h in hyp if not h)}
     rows = []
-    for cond, ref, hyp in [("gold", gold_lists, gold_lists), ("asr_only", gold_lists, asr_lists),
-                           ("pipeline", gold_lists, [tok(u) for u in c["pipeline"]]),
-                           ("gold_first15", gold_raw15, gold_raw15),
-                           ("raw15_all_speakers", gold_raw15, [tok(u) for u in c["raw15"]])]:
+    for cond, hyp, er in [("gold", gold_lists, None), ("asr_only", asr_lists, errs(gold_lists, asr_lists)),
+                          ("gold_clean", gold_clean, None), ("asr_only_clean", asr_clean, errs(gold_clean, asr_clean)),
+                          ("pipeline", [tok(u) for u in c["pipeline"]], None),
+                          ("gold_first15", gold_raw15, None),
+                          ("raw15_all_speakers", [tok(u) for u in c["raw15"]], None)]:
         f = feat_from_wordlists(hyp)
         rows.append({"child": child, "session": sess, "age_months": age, "condition": cond, **(f or {}),
-                     "wer_mean": float(np.mean(wers)) if cond == "asr_only" else np.nan,
-                     "wer_pooled": (sum(w * len(g) for w, g in zip(wers, gold_lists)) /
-                                    sum(len(g) for g in gold_lists)) if cond == "asr_only" else np.nan,
-                     "dropped_utts": sum(1 for h in asr_lists if not h) if cond == "asr_only" else np.nan})
+                     **(er or {})})
     return rows, age
 
 
@@ -150,11 +165,11 @@ def main():
     pd.set_option("display.width", 200)
     print("\nPer child (MLU-words / MATTR / language-age / delay prob):")
     print(df[["child", "age_months", "condition", "n_utts", "mluw", "mattr50", "lang_age", "p_delay",
-              "wer_pooled", "dropped_utts"]].round(2).to_string(index=False))
+              "wer_pooled", "exact_match", "dropped_utts"]].round(2).to_string(index=False))
 
-    g = df[df.condition == "gold"].set_index("child")
     print("\nSummary vs gold (mean over children; signed % error, then mean |error|):")
-    for cond, ref in [("asr_only", "gold"), ("pipeline", "gold"), ("raw15_all_speakers", "gold_first15")]:
+    for cond, ref in [("asr_only_clean", "gold_clean"), ("asr_only", "gold"), ("pipeline", "gold"),
+                      ("raw15_all_speakers", "gold_first15")]:
         c = df[df.condition == cond].set_index("child"); r = df[df.condition == ref].set_index("child")
         e_mlu = 100 * (c.mluw - r.mluw) / r.mluw
         e_mat = 100 * (c.mattr50 - r.mattr50) / r.mattr50
@@ -163,9 +178,10 @@ def main():
               f"MATTR {e_mat.mean():+6.1f}% (|{e_mat.abs().mean():4.1f}|)  "
               f"lang-age shift {e_age.mean():+5.1f} mo (|{e_age.abs().mean():4.1f}|)  "
               f"utts {c.n_utts.sum():.0f} vs gold {r.n_utts.sum():.0f}")
-    a = df[df.condition == "asr_only"]
-    print(f"\n  Word error rate on real ~33-mo child speech (pooled): {a.wer_pooled.mean():.2f}; "
-          f"utterances Whisper returned EMPTY: {a.dropped_utts.sum():.0f} / {g.n_utts.sum():.0f}")
+    for cond, ref in [("asr_only_clean", "gold_clean"), ("asr_only", "gold")]:
+        a = df[df.condition == cond]; n = df[df.condition == ref].n_utts.sum()
+        print(f"\n  {cond}: Word error rate on real ~33-mo child speech (mean of children): {a.wer_pooled.mean():.2f}; "
+              f"exact utterance match {a.exact_match.mean():.0%}; EMPTY outputs {a.dropped_utts.sum():.0f} / {n:.0f}")
 
 
 if __name__ == "__main__":
