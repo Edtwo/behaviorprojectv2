@@ -69,5 +69,5 @@ measured, honest answers, including where each one stops working. That matters m
 1. **Board:** consider replacing fig6/fig9 with fig11 (toddler result). It directly answers "does an early screen work early?"
 2. **Pitch:** done. The recording answer now uses the Providence numbers.
 3. **Interview drill:** use `docs/INTERVIEW_DRILL.md` (26 questions, pointers to evidence, no scripted answers). Practice out loud with someone who has not seen the project.
-4. **Before judging:** re-run the 4 demo transcripts in the offline backup demo; its cutoff changed to 0.36 (ISS-25) and those files are not in the repo, so this was not checked.
+4. **Demo check done:** every Gillam child matching the 4 demo transcripts' ages scores outside the 0.36-0.45 band, so the demo outcomes are unchanged by the new cutoff (ISS-25). Still open the 4 HTML reports once before judging.
 5. **Do not add new analyses** after this. Research is closed; remaining points are in presentation.
