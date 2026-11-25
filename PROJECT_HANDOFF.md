@@ -38,6 +38,14 @@ _Updated 2026-10-26 (final board v2 built in Canva; browser web demo deployed; O
 - Cutoff transfer: ISS-18. Real-world numbers at 7% prevalence (sens 0.91 / spec 0.65): PPV ~16%, NPV ~99%, ~39% of a class flagged - interview prep only.
 - Published screeners (Berkman et al., 2015, Pediatrics; USPSTF evidence review): sensitivity 50-94%, specificity 45-96% across 23 studies -> ours is "comparable to published screeners" (safe one-liner).
 
+**November 2026 additions (AI-assisted session; all reproducible; full write-ups in 0c; grade + ranked weaknesses in `docs/ISEF_SCORECARD.md`).**
+- Data added: EllisWeismer (toddler late talkers) and Providence (toddler home audio); see Section 4.
+- `ext_young_delay.py` (ISS-23, ISS-26): ENNI-trained flag RANKS late talkers vs typical at 30 mo with AUC 0.92 (no refit; fig11 via `poster_figures_young.py`), falling to chance by 66 mo (catch-up). The ENNI cutoff flags 100% of toddlers, so keep the demo's 4-10 yr limit; a cutoff from ~34 local typical toddlers gives sens 0.87 / spec 0.77.
+- `ext_asr_childspeech.py` (ISS-24): first real child-speech test of the recording path. Words mostly wrong (WER ~0.95) but on child-only audio language age within ~3.8 mo; raw home audio off by ~25 mo (parents counted). Pitch filter fix failed its gate (ISS-27).
+- `ext_operating_points.py`: per-100-children tradeoff table for the false-alarm question.
+- Fixes: all offline-demo flags now use the board's 91%-sensitivity cutoff (ISS-25); `requirements.txt` pins `av==15.1.0` (newer av crashes faster-whisper).
+- Pitch (`docs/PITCH.md`) updated with toddler, false-alarm and real-recording answers. Board text untouched (team writes it).
+
 ================================================================================
 ## 0b. VERIFIED FACTS (established by running real checks - trust these)
 ================================================================================
@@ -54,7 +62,7 @@ _Updated 2026-10-26 (final board v2 built in Canva; browser web demo deployed; O
 - **ENNI TD doubles as level-estimator data:** 286 distinct TD children at 48-120 mo, overlapping Brown at 48-62 mo -> extends the core across ages; task differs (narrative vs home conversation), so control/report corpus.
 ### Stage 2 RESULTS (updated 2026-07-20 after Move A: added Bates + Gleason toddler corpora)
 - TD modeling set NOW: 669 files, **335 distinct children**, 18-120 mo (ENNI 285, Brown 214, Bates 100, Gleason 70). **Distinct children <48 mo went from 3 (Brown only) -> 48** = the old weak spot is FIXED. Features: mluw, mlum, ttr, mattr50, syntax_index. GroupKFold by child; cluster bootstrap CIs resample CHILDREN.
-- **Ridge (interpretable primary): MAE 9.99 mo [95% CI 9.11..11.26], R2 0.81 [0.77..0.83]** (improved from 11.46 / 0.74 pre-Move-A); grad-boosting marginally better (MAE 9.34, R2 0.81); baseline 24.48. Per-corpus OOF MAE: Bates 2.6 (20-28mo), Brown 7.65, Gleason 7.43, ENNI 13.4 (older = flatter growth = harder, expected + cross-linguistically consistent).
+- **Ridge (interpretable primary): MAE 9.99 mo [95% CI 9.11..11.26], R2 0.81 [0.77..0.83]** (improved from 11.46 / 0.74 pre-Move-A); grad-boosting marginally better (MAE 9.34, R2 0.81); baseline 24.48. Per-corpus OOF MAE: Bates 2.6 (20-28mo), Brown 7.65, Gleason 7.43, ENNI 13.4 (older = flatter growth = harder, expected + cross-linguistically consistent). **[CORRECTED 2026-11-25, ISS-28: those per-corpus numbers are the GRADIENT-BOOSTING model's. For the ridge primary model (board/demos) they are Bates 5.3, Brown 8.5, Gleason 7.3, ENNI 13.1 (fresh download; ridge overall now MAE 9.85, R2 0.81).]**
 - Age-gap score = predicted language age - chronological age; TD OOF gap ~centered.
 - SLI preview (informal): SLI gap ~-16 mo vs TD ~0 -> ~1.3 yr lag, d~1.0. (Rigor = Stage 3.)
 - Outputs: results/features.csv (746 files), stage2_calibration.png, stage2_gap_preview.png. NOTE: history pre-Move-A was MAE 11.19/R2 0.76 on 281 children - Move A is a real improvement, not a restatement.
@@ -191,6 +199,28 @@ Format per entry: ID | date-found | STATUS (OPEN / RESOLVED / MONITORING) | what
   - Saw: no dtype was set (could fetch ~290 MB full-precision files) and there was no progress display; a user's browser pulled from the Hugging Face CDN at ~0.25 MB/s.
   - Did: explicit 8-bit weights (~76 MB), a live download counter, early download when the Record tab opens, and the model served from the Vercel site itself (web/models/, ~5 MB/s; also avoids networks that block huggingface.co).
 
+- **ISS-24 | 2026-11-25 | FINDING (first real child-speech test of the recording path) | Whisper gets toddler WORDS mostly wrong, but the screen's features survive on child-only audio; unfiltered home audio does not.**
+  - Saw/did: `src/ext_asr_childspeech.py` on Providence (5 TD children, one ~33-mo home session each, ~1 hr audio each, time-aligned human transcripts; Ethan's media not served). Whisper base.en (the model the demos use), CPU. Conditions vs the human transcript of the SAME child speech: (1) PIPELINE = the child's utterances cut out by their CHAT time stamps, joined with 1 s silences, run through the real `audio_screen.transcribe()`; (2) RAW = first 15 min of the session, unfiltered (parents included); (3) per-clip = each utterance transcribed alone (method check).
+  - Found:
+    - Word level (pipeline): whole-session word error rate 0.95 (range 0.73-1.21). Base.en essentially cannot read toddler words (e.g. "red bed" -> "Oh", "why leave it alone" -> "Finally the wall").
+    - Screen features (pipeline): MLU-words +5% (mean |error| 11%), vocabulary diversity (MATTR) +9% (|10%|), estimated language age +2.7 mo (|3.8| mo). Utterance count 2508 vs 2318. So length/diversity land near the truth even though the words are wrong: utterance breaks come from pauses, and wrong words are still roughly the right number and spread. Encouraging but FRAGILE (n=5, one age, all typical).
+    - Raw home audio: language age +25 mo, MLU +75%. Parents' speech is transcribed as the child's. The "could not screen" guard caught only 1 of 5. Bias is in the DANGEROUS direction: a delayed child would look older and be MISSED.
+    - Per-clip method: WER 1.4-1.5 even on clips with no adult overlap (686 "clean" utterances); Whisper invents text on very short clips (e.g. "six" -> "Very good. Okay, come back and I'll find..."). This is a METHOD artifact (the app never transcribes isolated clips), so it is reported but not used as the headline.
+  - Why it matters: answers "does the recording path work on real kids?" with data instead of "untested". Honest answer: only on audio that is mostly the child; speaker separation (or a recording protocol where the adult stays quiet, e.g. a story retell like ENNI) is required before real use.
+  - Open: a larger model (large-v3) may lower word error; a GPU run was handed to the PC session (edtwo-async-piglet). Results not yet received.
+  - Evidence: results/asr_childspeech.csv, results/asr_childspeech_log.txt, results/asr_childspeech_cache.json (raw transcripts, gitignored with results/).
+
+- **ISS-28 | 2026-11-25 | RESOLVED (reproducibility audit + one mislabel) | Board numbers reproduce from a fresh download; a per-corpus line was from the wrong model.**
+  - Did: fresh TalkBank download (same 746 files), Python 3.13, re-ran poster_figures.py, ext_reliability.py, ext_asr_stress.py, export_web_model.py, stage2/3. Also re-ran Stage 2 with the EXACT pinned library versions (pandas 2.3.3, numpy 2.4.6, sklearn 1.9.0): identical to the newer libraries (pandas 3.1, numpy 2.5, sklearn 1.9.1), so results do not depend on library version.
+  - Every board number reproduces at board precision: artifact control 0.86 vs age 0.42 / length 0.49; ROC 0.862 [0.814-0.907], screening sens 0.91 spec 0.65; Gillam 0.80 (0.83 in ENNI age range), Conti4 0.70; black box 0.82, simple rule 0.82; 10 sentences 0.82; language age MAE 9.85 (board "10"), R2 0.81; 1,184 children; reliability Spearman-Brown 0.90, same flag 84%; stress test 0.861 -> 0.846 at 40% WER; web words-only AUC 0.861, cutoff 0.34 unchanged.
+  - Drift: ridge MAE 9.99 (July) -> 9.85 now; web/model.json coefficients differ in the 4th digit (regenerated file NOT committed; the deployed demo stays as is). Cause = small upstream changes to TalkBank files, since pinned libraries give the same 9.85.
+  - MISLABEL FOUND: 0b's "Per-corpus OOF MAE: Bates 2.6, Brown 7.65, Gleason 7.43, ENNI 13.4" sat next to the RIDGE headline but are gradient-boosting numbers (today 2.68 / 7.79 / 7.56 / 13.42). Ridge (the board/demo model): Bates 5.3, Brown 8.5, Gleason 7.3, ENNI 13.1. In Bates' narrow 20-28 mo band a constant 24-mo guess scores 4.0, so ridge has no within-band precision for the youngest toddlers; its value there is ordering children across the full 18-120 mo range. Corrected in 0b and Section 4. If a judge asks about toddler accuracy, give the ridge number.
+
+- **ISS-27 | 2026-11-25 | GATE FAILED (do not build) | Voice pitch alone cannot separate the toddler from the parent.**
+  - Idea: fix ISS-24's raw-audio failure cheaply by keeping only high-pitched speech (toddlers ~300 Hz vs adults ~120-220 Hz).
+  - Signal check first (Lesson 1), on human-timed, non-overlapping utterances (~360 per family, librosa pYIN median F0): child median 274-337 Hz vs adult 114-218 Hz, but AUC(F0 -> child) only 0.73-0.84; 63-72% of child utterances are >= 250 Hz and 5-28% of adult utterances are too. Parents raise their pitch when talking to toddlers.
+  - Decision: a pitch filter would drop about a third of the child's speech and keep many parent sentences. NOT built. Real separation needs a trained speaker-diarization model (future work, not this phase). Script kept in the session scratchpad only (not committed); rerun recipe = this entry.
+
 - **ISS-26 | 2026-11-25 | FINDING (limitation + fix path) | The toddler AUC is RANKING only; the ENNI cutoff flags every toddler.**
   - Saw: at the ENNI 90%-sensitivity cutoff (language-only 0.34), 100% of EllisWeismer 30- and 42-mo children are flagged, typical ones included (TD median risk 0.96 at 30 mo). Risk is calibrated for 4-10 yr olds, so short toddler sentences all look "at risk". The Stage 2 level-gap cutoff fails the other way (EllisWeismer TD toddlers read +6.9 mo ahead, a corpus/task offset): a 10th-percentile core-TD gap cutoff catches 0-20%.
   - Why it matters: "AUC 0.92 at 30 mo" must never be said as "the flag works on toddlers". It is the same pattern as ISS-18 (Gillam): ranking transfers across labs and ages; cutoffs do not.
@@ -200,7 +230,7 @@ Format per entry: ID | date-found | STATUS (OPEN / RESOLVED / MONITORING) | what
 
 - **ISS-25 | 2026-11-24 | RESOLVED (consistency) | Offline backup demo used a different flag cutoff than the board and web demo.**
   - Saw: `demo_report.py` and `audio_screen.py` flagged at risk >= 0.45 (Stage 3's Youden point: sens 0.88, spec 0.74), while the board's "catches 91%" and the web demo use the ~90%-sensitivity screening point (full model 0.36; words-only web model 0.34). A judge comparing the backup demo to the board could see a mismatch.
-  - Did: one named constant per path, `SCREEN_CUTOFF` = 0.36 (demo_report, full model) and 0.34 (audio_screen, words-only, same as web/model.json). To revert to Youden, set both to 0.45.
+  - Did: one named constant per model, `SCREEN_CUTOFF` = 0.36 in stage4_interpretability.py (full model; used by the text readout, stage5_demo and demo_report) and 0.34 in audio_screen.py (words-only, same as web/model.json). To revert to Youden, set both to 0.45.
   - Evidence: `src/stage3_delay_classifier.py` operating-point lines (re-run 2026-11-24: AUC 0.862, thr 0.36 -> sens 0.91 spec 0.65; thr 0.45 -> sens 0.88 spec 0.74).
 
 - **ISS-23 | 2026-11-24 | RESOLVED (new evidence) | The "early screen" had no delay validation under age 4.**
@@ -280,7 +310,7 @@ MULTILINGUAL (Section 10): Szagun(German) + Ornat/Marrero/FernAguado(Spanish).
 ### ARCHIVED (`data/childes/not_in_use/`) - superseded/exploratory, NOT read by any script (discovery skips not_in_use/):
 - **Shiro/** (Spanish, 113 kids, 6-11 yr) - age-plateau, gate failed. **BecaCESNo/** (Spanish, 70 kids, 3-12 yr) - heterogeneous, weak (R2 0.23). **DiezItza/** (Spanish, 20 kids, age 3) - redundant. All superseded by the within-child + German multilingual analysis; kept for provenance.
 ### Recommended additional downloads (to strengthen the CORE across ages + more children)
-- **Move A (fix the young-children gap) - DONE 2026-07-20.** Added Bates + Gleason (both %mor present). Result: distinct children <48 mo went 3 -> 48; Stage 2 MAE 11.19 -> 9.99, R2 0.76 -> 0.81. Bates OOF MAE 2.6 mo. The core's biggest weakness is essentially removed. (Still could add more if a large continuous 18-48mo multi-child corpus appears, but the gap is now adequately covered.)
+- **Move A (fix the young-children gap) - DONE 2026-07-20.** Added Bates + Gleason (both %mor present). Result: distinct children <48 mo went 3 -> 48; Stage 2 MAE 11.19 -> 9.99, R2 0.76 -> 0.81. Bates OOF MAE 2.6 mo (gradient-boosting; ridge = 5.3, see ISS-28). The core's biggest weakness is essentially removed. (Still could add more if a large continuous 18-48mo multi-child corpus appears, but the gap is now adequately covered.)
 ### Access
 Free TalkBank account -> download corpus zips -> unzip into `data/childes/`. Clinical corpora (ENNI etc.) may require a higher access tier / permission request.
 ### ISEF paperwork
@@ -429,6 +459,7 @@ self-caught over-claim (log it; it's a credibility POINT that we tested and retr
 - Delay layer validated on ONE task/corpus (ENNI narratives, ~4-10 yr) -> cross-corpus/other-task generalization is the key open test (see Section 10).
 - SLI is one clinical label; not a diagnosis - this is a SCREEN that suggests seeking a professional, not a clinical instrument.
 - Transcripts are human-produced CHAT; a real deployment needs reliable child-speech transcription. We built a WORKING record-and-screen PROTOTYPE (demo app) that removes the transcript barrier, but its audio path is not yet validated on real child recordings (data-limited) - present as a prototype, name real-child ASR accuracy as the open validation.
+  - UPDATE 2026-11 (ISS-24): now TESTED on real ~33-mo home recordings (Providence, 5 children). Whisper base.en gets most toddler words wrong (WER ~0.95), yet on child-only audio the screen's features land close (sentence length |11%|, language age |3.8| mo). Unfiltered home audio inflates language age by ~25 mo because parents' speech is counted. Say: "works on audio that is mostly the child; needs speaker separation before real use." Still a prototype.
 - The syntax index is nonstandard (relabeled); percentile norms are corpus-derived, not clinical norms.
 - Cross-TASK reliability was poor in an out-of-range stress test (ISS-11) -> the screen assumes a single standardized, age-appropriate task; true test-retest reliability (repeated same-task samples in 4-10yr) is future work.
 - The delay-flag probability from the recall-tuned model is over-stated; report the isotonic-recalibrated probability for honesty (ext_calibration).

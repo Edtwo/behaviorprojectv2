@@ -75,10 +75,14 @@ details: PROJECT_HANDOFF.md **Section 0d**. Pitch + judging plan: [`docs/PITCH.m
 │   ├── ext_fairness_fix.py         # Exploratory: does dropping vocabulary shrink the gap?
 │   ├── poster_figures.py           # Board figures fig1-fig8 (print-sized, recomputed)
 │   ├── poster_figures_extra.py     # Board figures fig9-fig10
+│   ├── ext_young_delay.py          # Nov 2026: toddler validation on EllisWeismer (late talkers, 30-66 mo) + cutoff check
+│   ├── poster_figures_young.py     # Nov 2026: fig11 (toddler AUC by age)
+│   ├── ext_asr_childspeech.py      # Nov 2026: real child-speech ASR test (Providence home audio)
+│   ├── ext_operating_points.py     # Nov 2026: false alarms vs misses per 100 children at each cutoff
 │   └── verify_pipeline.py          # no-download smoke test of the CHAT->features pipeline
 ├── web/                    # Browser web demo (index.html, app.js, model.json); web/models/ gitignored
 ├── scripts/                # fetch_web_model.sh (speech model files for the web demo)
-├── docs/                   # EXPLAINER, METHODS_WALKTHROUGH, READING_LIST, PITCH
+├── docs/                   # EXPLAINER, METHODS_WALKTHROUGH, READING_LIST, PITCH, ISEF_SCORECARD, INTERVIEW_DRILL
 ├── data/                   # (gitignored) CHILDES corpora: Brown (TD), ENNI (TD+SLI)
 └── results/                # (gitignored) outputs / figures
 ```

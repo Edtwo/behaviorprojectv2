@@ -46,7 +46,7 @@ Shape: **problem → solution → effective → accessible → important**, then
 **5. Why it matters, and what's next (15 s)**
 - A parent, teacher or pediatrician anywhere could get an early warning in minutes, then go to a specialist with a reason.
 - It's a screening aid, not a diagnosis.
-- Next: test the recording path on real child recordings, add more languages (it already works in German and Cantonese), and partner with clinicians.
+- Next: separate the child's voice from the parent's in recordings (we tested on real home recordings, and that is what breaks it), add a toddler cutoff, add more languages (it already works in German and Cantonese), and partner with clinicians.
 
 **6. Hand off to the demo:** "Want to try it?"
 
@@ -56,10 +56,12 @@ Shape: **problem → solution → effective → accessible → important**, then
 
 - **"Isn't AUC 0.86 just okay?"** It's measured on children the model never saw, with confidence intervals. It held up on other labs' kids without retraining. A lot of high numbers you'll see at a fair come from testing on training data.
 - **"Why not deep learning?"** We tested a 3,000-feature text model. It wasn't more accurate (0.82 vs 0.86), and a clinician can't see why it flags a child. Ours can.
-- **"Does the recording version work on real kids?"** It's a prototype. The public clinical datasets don't share their audio, so we couldn't test that step on clinical recordings yet. That's our top next step. The words-only model itself is validated.
+- **"Does the recording version work on real kids?"** Partly, and we measured exactly where it breaks. We ran it on real home recordings of five 2½-year-olds that came with human transcripts. The speech recognizer gets most toddler words wrong, but our screen doesn't need the exact words, just how long the sentences are and how varied the vocabulary is. On the child's own speech, the estimated language age landed within about 4 months of the human-transcript answer. On the raw recording with parents talking, it was off by about 2 years, because it counted the parents' sentences as the child's. So it works on audio that's mostly the child, and separating the speakers is our next step. It's still a prototype. (Only 5 typical children at one age, so we call this encouraging, not proven.)
+- **"Why not just use a better speech model?"** We might: we're testing a larger model on a GPU. But the bigger problem is the parent's voice, not word accuracy, so speaker separation matters more.
 - **"Does it work on toddlers, or just school-age kids?"** We trained on 4-10 year olds, then tested on 130 children from the Ellis Weismer study, with no retraining. At 2½ years it separates late talkers from typical talkers at 0.92. The score drops with age (0.78 at 3½, 0.55 at 5½) because many late talkers catch up, which is what the research literature says happens.
 - **"So why does your demo only flag ages 4-10?"** Because the cutoff is tuned on 4-10 year olds. Used on toddlers it flags every child, since all toddlers have short sentences. The *ranking* still works (0.92), so the fix is a toddler cutoff. We tested setting it from about 35 typical toddlers only, no diagnosed kids needed: it caught 87% of late talkers and cleared 77% of typical ones, on children not used to set it. That's our next step, not a finished feature.
 - **"So can it predict which toddlers will have a disorder later?"** No, and we don't claim that. "Late talker" is decided by vocabulary size at age 2, not a disorder diagnosis. By 5½ our screen can't tell which late talkers stayed behind. It catches who is behind *now*.
+- **"In a real classroom, aren't most of your flags false alarms?"** Yes, at our cutoff, and that's on purpose. Out of 100 kids, about 7 have DLD. Our screen catches about 6 of the 7, and flags roughly 37 of the other 93 for a closer look. A "pass" is right about 99% of the time. We could flip it: a stricter cutoff flags only about 8 typical kids, but then it misses half the kids who need help. For a first-step screen, missing a child is the worse mistake. (Table: `src/ext_operating_points.py`.)
 - **"Is this a diagnosis?"** No. It's a screen that says who should see a specialist sooner.
 - **"Who did what / how did you use AI?"** Answer honestly and specifically, matching what you wrote in your references and notebook.
 
