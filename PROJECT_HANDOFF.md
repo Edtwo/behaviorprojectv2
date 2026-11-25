@@ -43,6 +43,7 @@ _Updated 2026-10-26 (final board v2 built in Canva; browser web demo deployed; O
 - `ext_young_delay.py` (ISS-23, ISS-26): ENNI-trained flag RANKS late talkers vs typical at 30 mo with AUC 0.92 (no refit; fig11 via `poster_figures_young.py`), falling to chance by 66 mo (catch-up). The ENNI cutoff flags 100% of toddlers, so keep the demo's 4-10 yr limit; a cutoff from ~34 local typical toddlers gives sens 0.87 / spec 0.77.
 - `ext_asr_childspeech.py` (ISS-24): first real child-speech test of the recording path. Words mostly wrong (WER ~0.95) but on child-only audio language age within ~3.8 mo; raw home audio off by ~25 mo (parents counted). Pitch filter fix failed its gate (ISS-27).
 - `ext_operating_points.py`: per-100-children tradeoff table for the false-alarm question.
+- Creativity (ISS-29, ISS-30): `ext_continuity.py` shows toddler late talking and school-age DLD share one language dimension (transfer works both ways, fig12); `ext_typical_only_calibration.py` shows a new setting can set its cutoff from typical children only, matching full-label performance.
 - Fixes: all offline-demo flags now use the board's 91%-sensitivity cutoff (ISS-25); `requirements.txt` pins `av==15.1.0` (newer av crashes faster-whisper).
 - Pitch (`docs/PITCH.md`) updated with toddler, false-alarm and real-recording answers. Board text untouched (team writes it).
 
@@ -210,6 +211,18 @@ Format per entry: ID | date-found | STATUS (OPEN / RESOLVED / MONITORING) | what
   - Why it matters: answers "does the recording path work on real kids?" with data instead of "untested". Honest answer: only on audio that is mostly the child; speaker separation (or a recording protocol where the adult stays quiet, e.g. a story retell like ENNI) is required before real use.
   - Open: a larger model (large-v3) may lower word error; a GPU run was handed to the PC session (edtwo-async-piglet). Results not yet received.
   - Evidence: results/asr_childspeech.csv, results/asr_childspeech_log.txt, results/asr_childspeech_cache.json (raw transcripts, gitignored with results/).
+
+- **ISS-29 | 2026-11-25 | FINDING (creativity: a developmental-science result) | Toddler late talking and school-age DLD share one language dimension.**
+  - Question: are late talking (~2 yr) and DLD/SLI (school age) on the same measurable continuum? Debated in the developmental literature (team: find and cite the key papers yourselves; none quoted here from memory).
+  - Test (`src/ext_continuity.py`, fig12 via `poster_figures_young.py`): bidirectional transfer, language only (no age), no refit, one row per child. ENNI-trained -> EllisWeismer 30 mo: AUC 0.92 [0.86-0.96]. EllisWeismer-30-mo-trained -> ENNI: 0.77 [0.71-0.83]; -> Gillam: 0.78 [0.73-0.82]. Reference: ENNI's own language-only model 0.78 [0.72-0.84]. So a model that has only ever seen 2-year-olds ranks school-age DLD as well as a model trained on school-age DLD.
+  - Coefficients (standardized; negative = lower -> more likely delayed): word-parts per sentence dominates BOTH (-1.48 toddler, -1.38 school-age); vocabulary diversity -0.53 / -0.37. Words per sentence -0.93 toddler but +0.32 school-age: with word-parts held fixed, the school-age model rewards more word-parts PER WORD (grammatical endings), consistent with grammatical morphology being a DLD hallmark. Read: shared length dimension, plus a school-age grammar component.
+  - Caveats: different labs, tasks and labels (LT is vocabulary-based at ~2 yr); this shows a shared MARKER dimension, not that the same children go on to DLD (needs longitudinal outcomes, which the team ruled out of scope).
+
+- **ISS-30 | 2026-11-25 | FINDING (creativity: a deployable method) | A screen can be calibrated for a new population using TYPICAL children only.**
+  - Problem: ranking transfers but cutoffs don't (ISS-18, ISS-26); the standard fix needs diagnosed children from the new setting, which are rare and costly.
+  - Method (`src/ext_typical_only_calibration.py`): set the cutoff at a chosen percentile of TYPICAL children's risk (e.g. 85th -> ~15% false alarms), no diagnosed children; cross-fitted, 500 splits.
+  - Gillam (cutoff from ~246 typical kids): borrowed ENNI cutoff sens 0.58 / spec 0.82. Typical-only hits the target exactly: spec 0.80 / 0.85 / 0.90 with sens 0.64 / 0.54 / 0.44, matching the label oracle (0.64 / 0.55 / 0.43). EllisWeismer 30 mo (~34 typical kids): spec 0.78-0.87, sens 0.86 / 0.80 / 0.73 vs oracle 0.84 / 0.76 / 0.71.
+  - Read: a clinic, school district or new language community can tune the false-alarm rate with typical children alone and lose nothing vs having full labels. Sensitivity is then limited only by the ranking. Does NOT fix the fairness gap (ISS-17); group-specific cutoffs were considered and not pursued (small n, ethics).
 
 - **ISS-28 | 2026-11-25 | RESOLVED (reproducibility audit + one mislabel) | Board numbers reproduce from a fresh download; a per-corpus line was from the wrong model.**
   - Did: fresh TalkBank download (same 746 files), Python 3.13, re-ran poster_figures.py, ext_reliability.py, ext_asr_stress.py, export_web_model.py, stage2/3. Also re-ran Stage 2 with the EXACT pinned library versions (pandas 2.3.3, numpy 2.4.6, sklearn 1.9.0): identical to the newer libraries (pandas 3.1, numpy 2.5, sklearn 1.9.1), so results do not depend on library version.

@@ -64,6 +64,27 @@ def main():
     fig.savefig(os.path.join(OUT, "fig11_young_children.png")); plt.close(fig)
     print("wrote results/poster/fig11_young_children.png")
 
+    # fig12: does ONE language dimension link toddler late talking and school-age DLD?
+    # (needs results/continuity_transfer.csv + continuity_coefs.csv from src/ext_continuity.py)
+    tr_p = os.path.join(ROOT, "results", "continuity_transfer.csv")
+    if not os.path.exists(tr_p):
+        print("skip fig12: run src/ext_continuity.py first"); return
+    tr = pd.read_csv(tr_p)
+    fig, ax = plt.subplots(figsize=(11.4, 6.2))
+    labels = ["school-age model\n-> 2½-year-olds", "2½-year-old model\n-> school-age (ENNI)",
+              "2½-year-old model\n-> school-age (Gillam)"]
+    y = np.arange(len(tr))[::-1]
+    ax.barh(y, tr.auc - 0.5, left=0.5, color=[PURPLE, LILAC, LILAC], height=0.6, ec=DARK, lw=2)
+    ax.errorbar(tr.auc, y, xerr=[tr.auc - tr.lo, tr.hi - tr.auc], fmt="none", ecolor=DARK, elinewidth=3, capsize=8)
+    for yi, a, hi in zip(y, tr.auc, tr.hi):
+        ax.text(hi + 0.012, yi, f"{a:.2f}", va="center", fontsize=26, fontweight="bold", color=DARK)
+    ax.axvline(0.5, color=VERM, ls="--", lw=3)
+    ax.text(0.505, y.max() + 0.55, "coin flip", color=VERM, fontsize=22, fontweight="bold", va="bottom")
+    ax.set_yticks(y); ax.set_yticklabels(labels, fontsize=22)
+    ax.set_xlim(0.45, 1.05); ax.set_ylim(-0.6, y.max() + 1.0); ax.set_xlabel("ROC-AUC (no retraining, no age)")
+    fig.savefig(os.path.join(OUT, "fig12_both_directions.png")); plt.close(fig)
+    print("wrote results/poster/fig12_both_directions.png")
+
 
 if __name__ == "__main__":
     main()

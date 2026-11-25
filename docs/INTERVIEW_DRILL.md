@@ -61,6 +61,9 @@ Format: question -> what a strong answer must include -> where to check it.
 23. **If you had a year and a clinic partner, what would you do next?**
     Must include something concrete: speaker separation, a toddler cutoff from local typical kids, a prospective test.
 
+27. **What's original about your project?** Know both ideas and their numbers. -> ISS-29 (fig12), ISS-30
+28. **Does your both-directions result mean late talkers will develop DLD?** Must include: shared measure vs same children, what data would answer it. -> ISS-29
+
 ## Level 4: ownership (expect at least one of these)
 
 24. **How much of this did you do, and how much did AI do?**

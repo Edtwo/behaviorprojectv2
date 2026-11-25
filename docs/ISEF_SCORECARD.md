@@ -11,10 +11,10 @@ rubric, written by an AI assistant (Claude) from the repo, the handoff and fresh
 | Research question (10) | 8 | 9 | Clear, important, testable. Gap was "early screen" framing with no data under age 4. The toddler test shows the signal reaches 2.5 yr (ranking), and names what a toddler mode still needs (its own cutoff). |
 | Design & methodology (15) | 13 | 14 | Child-independent splits, artifact controls, two locked-box outside labs, benchmark vs black box. Now also a cross-age test. |
 | Execution: data, analysis, interpretation (20) | 16 | 18 | Unusually rigorous issue log (now 27 entries, two self-retractions, one failed gate). The recording path is now tested on real toddler audio: works on child-only audio, fails on raw home audio. A measured limit beats an untested claim. |
-| Creativity (20) | 12 | 14 | Core method is known (Gabani et al., 2009 did ML on ENNI). Credit comes from the angles: artifact control, words-only ASR-robust model, private in-browser demo, fairness audit, and now "trained on 4-10 yr olds, still ranks late talkers at 2.5 yr". |
+| Creativity (20) | 12 | 16 | Core method is known (Gabani et al., 2009 did ML on ENNI). New credit: (1) a developmental-science finding: toddler late talking and school-age DLD share one language dimension, since the transfer works in BOTH directions (ISS-29, fig12); (2) a new deployable method: calibrate the cutoff for a new population with typical children only, matching full-label performance (ISS-30). Plus artifact control, words-only ASR-robust model, private in-browser demo, fairness audit. |
 | Presentation: poster (10) | 7 | 7 | Clean flow, but 10 figures is dense, and the text is still an AI draft that ISEF rules require the team to rewrite. |
 | Presentation: interview (25) | 17 | 19 | Depends almost entirely on the team. Prepared answers now cover toddlers, false alarms and real recordings. Main risk: AI did most of the code, so judges will test ownership. |
-| **Total (100)** | **73** | **81** | |
+| **Total (100)** | **73** | **83** | |
 
 Rough read: before, a strong regional/state project with an ISEF-level shot. After, the two most
 likely judge "gotchas" ("does it work on toddlers?", "does the recording work on real kids?") have
@@ -26,6 +26,7 @@ measured, honest answers, including where each one stops working. That matters m
 - **Self-caught errors are documented** (ISS-07 data leak, ISS-15 age confound, ISS-16 retracted typology). Few high-school projects can show this.
 - **Interpretable beats black box** (0.86 vs 0.82), with per-child "why" output.
 - **Working demo** that a judge can touch.
+- **Two original ideas (Nov 2026):** one shared language dimension from age 2 to school age, and calibrating a screen with typical children only. Both turn an engineering project into one that says something new.
 
 ## Weaknesses, ranked by points at risk
 
@@ -65,8 +66,17 @@ measured, honest answers, including where each one stops working. That matters m
 - Next step this points to: speaker separation, or a recording protocol where the adult stays quiet (a story retell, like ENNI's task). A large-v3 GPU run on the PC may lower word error (pending).
 - Scoring effect: turns "untested on real kids" into a measured, honest limitation with a specific fix. That is worth more with judges than an untested claim.
 
+### C. Creativity: two original ideas (ISS-29, ISS-30)
+- **One dimension from toddlers to school age** (`ext_continuity.py`, `fig12_both_directions.png`): with no age and no retraining, the school-age model ranks 2½-year-old late talkers at 0.92, and a model trained only on 2½-year-olds ranks school-age DLD at 0.77 (ENNI) and 0.78 (Gillam), as well as ENNI's own model (0.78). Both models lean hardest on sentence length in word-parts.
+  - Claim: toddler late talking and school-age DLD sit on one shared, measurable language dimension.
+  - Evidence: transfer in both directions, same dominant marker.
+  - Reasoning: if they were unrelated conditions, a model of one would not rank the other; the school-age model also weights grammatical endings, matching what is known about DLD.
+  - Caveat: shared marker dimension, not proof that the same children go on to DLD (needs longitudinal data). Find and cite the late-talker/DLD continuity papers yourselves.
+- **Calibrate with typical kids only** (`ext_typical_only_calibration.py`): a new population sets its cutoff from typical children alone. On Gillam it hits the target false-alarm rate exactly and matches the sensitivity full labels would give (0.64 vs 0.64 at 80% specificity); on toddlers, ~34 typical kids are enough.
+  - Why judges care: clinics rarely have diagnosed children to tune a tool, but typical children are everywhere. This is what makes the screen portable.
+
 ## Recommended next moves (team decides)
-1. **Board:** consider replacing fig6/fig9 with fig11 (toddler result). It directly answers "does an early screen work early?"
+1. **Board:** the strongest creativity visual is fig12 (both directions). Consider it, or fig11, in place of fig6/fig9. Team decides; keep the board from getting denser.
 2. **Pitch:** done. The recording answer now uses the Providence numbers.
 3. **Interview drill:** use `docs/INTERVIEW_DRILL.md` (26 questions, pointers to evidence, no scripted answers). Practice out loud with someone who has not seen the project.
 4. **Demo check done:** every Gillam child matching the 4 demo transcripts' ages scores outside the 0.36-0.45 band, so the demo outcomes are unchanged by the new cutoff (ISS-25). Still open the 4 HTML reports once before judging.
