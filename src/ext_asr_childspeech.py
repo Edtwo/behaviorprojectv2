@@ -31,7 +31,17 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AUDIO = os.path.join(ROOT, "data", "providence_audio")
 CHA = os.path.join(ROOT, "data", "childes", "Providence")
 RESULTS = os.path.join(ROOT, "results")
-CACHE = os.path.join(RESULTS, "asr_childspeech_cache.json")
+# Optional model override without touching audio_screen.py, e.g. on a GPU machine:
+#   ASR_MODEL=large-v3 ASR_DEVICE=cuda ASR_COMPUTE=float16 python src/ext_asr_childspeech.py
+# Outputs then get a "_<model>" suffix so they never overwrite the default base.en run.
+ASR_MODEL = os.environ.get("ASR_MODEL")
+TAG = f"_{ASR_MODEL.replace('.', '').replace('-', '')}" if ASR_MODEL else ""
+CACHE = os.path.join(RESULTS, f"asr_childspeech{TAG}_cache.json")
+OUT_CSV = os.path.join(RESULTS, f"asr_childspeech{TAG}.csv")
+if ASR_MODEL:
+    from faster_whisper import WhisperModel
+    asc._MODEL = WhisperModel(ASR_MODEL, device=os.environ.get("ASR_DEVICE", "cpu"),
+                              compute_type=os.environ.get("ASR_COMPUTE", "int8"))
 SR = 16000
 RAW_SECONDS = 15 * 60
 SKIP = {"xxx", "yyy", "www"}
@@ -160,7 +170,7 @@ def main():
                 out = scr.screen({"mluw": row["mluw"], "mattr50": row["mattr50"]}, age)
                 row.update(lang_age=out["lang_age"], p_delay=out["p_delay"], reliable=out["reliable"])
         rows += r
-    df = pd.DataFrame(rows); df.to_csv(os.path.join(RESULTS, "asr_childspeech.csv"), index=False)
+    df = pd.DataFrame(rows); df.to_csv(OUT_CSV, index=False)
 
     pd.set_option("display.width", 200)
     print("\nPer child (MLU-words / MATTR / language-age / delay prob):")
