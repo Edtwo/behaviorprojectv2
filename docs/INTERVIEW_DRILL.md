@@ -41,7 +41,7 @@ Format: question -> what a strong answer must include -> where to check it.
 13. **What does "91% sensitivity" cost you? How many false alarms per 100 kids?**
     Must include: the per-100 numbers, why you chose this end of the tradeoff. -> `src/ext_operating_points.py`
 14. **How reliable is one sample from a child?**
-    Must include: split-half result, what Spearman-Brown corrects for. -> `src/ext_reliability.py`
+    Must include: split-half result, what Spearman-Brown corrects for, and whether two *different tasks* agree (good at 30 mo, weak later). -> `src/ext_reliability.py`, ISS-11 follow-up
 15. **Why MATTR instead of type-token ratio?**
     Must include: what goes wrong with TTR on longer transcripts. -> ISS-05
 

@@ -138,6 +138,25 @@ def main():
     print("'at risk'); a cutoff from local typical toddlers alone restores a usable screen at 30 mo.")
     print("Falling AUC at 54-66 mo is expected (many late talkers catch up), not a model failure.")
 
+    # E) CROSS-TASK RELIABILITY in range (follow-up to ISS-11, which was out of range on Conti4).
+    #    Most children gave TWO samples at the same visit (e.g. examiner play + parent play).
+    #    Do the two samples rank the child the same way? Within-group r guards against the
+    #    LT/TD mix inflating the correlation.
+    from scipy.stats import spearmanr
+    print("\nE) Cross-task reliability: two different samples, same child, same visit")
+    for v, g in ew.groupby("visit"):
+        w = g.pivot_table(index=["child_id", "y"], columns="task", values="p_lang").dropna().reset_index()
+        t = [c for c in w.columns if c not in ("child_id", "y")]
+        if len(t) < 2:
+            print(f"   {v} mo: one task only"); continue
+        r = spearmanr(w[t[0]], w[t[1]])[0]
+        fa, fb = w[t[0]] >= w[t[0]].quantile(0.7), w[t[1]] >= w[t[1]].quantile(0.7)
+        po = float((fa == fb).mean()); pe = fa.mean() * fb.mean() + (1 - fa.mean()) * (1 - fb.mean())
+        within = "  ".join(f"{nm} r={spearmanr(w[w.y == k][t[0]], w[w.y == k][t[1]])[0]:.2f} (n={int((w.y == k).sum())})"
+                           for k, nm in [(0, "TD"), (1, "LT")])
+        print(f"   {v} mo {t[0]} vs {t[1]}: n={len(w)}  risk Spearman {r:.2f} (2-sample {2 * r / (1 + r):.2f})"
+              f"  same top-30% flag {po:.0%} kappa {(po - pe) / (1 - pe):.2f}  | within group: {within}")
+
 
 if __name__ == "__main__":
     main()
