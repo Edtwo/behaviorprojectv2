@@ -63,7 +63,17 @@ measured, honest answers, including where each one stops working. That matters m
   - Claim: the recording path is usable only on audio that is mostly the child.
   - Evidence: language age within ~4 months on child-only audio vs ~25 months off on raw home audio.
   - Reasoning: the features depend on counting the child's sentences and words, so any adult speech in the recording directly corrupts them; word identity matters less.
-- Next step this points to: speaker separation, or a recording protocol where the adult stays quiet (a story retell, like ENNI's task). A large-v3 GPU run on the PC may lower word error (pending).
+- **Bigger model check (Whisper large-v3, same 5 children, cloud CPU):**
+
+  | Measure | base.en | large-v3 |
+  |---|---|---|
+  | Word error rate, child-only | 0.95 | 0.84 (better for all 5 kids) |
+  | Language-age error, child-only | 3.8 mo | 3.0 mo |
+  | Language age, raw home audio | +25 mo (+15 without one broken child) | +10 mo |
+  | Raw-audio results the guard caught | 1 of 5 | 0 of 5 (no wild failures) |
+
+  - Read: a better recognizer helps a little on child-only audio and removes the one catastrophic raw-audio failure, but raw audio is still about 10 months too old for every child. Parents' speech remains the main problem, and better word accuracy does not fix it.
+- Next step this points to: speaker separation, or a recording protocol where the adult stays quiet (a story retell, like ENNI's task).
 - Scoring effect: turns "untested on real kids" into a measured, honest limitation with a specific fix. That is worth more with judges than an untested claim.
 
 ### C. Creativity: two original ideas (ISS-29, ISS-30)
