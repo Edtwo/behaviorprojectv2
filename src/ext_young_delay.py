@@ -27,7 +27,7 @@ from sklearn.linear_model import Ridge, LogisticRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import StratifiedGroupKFold
-from sklearn.metrics import roc_auc_score
+from sklearn.metrics import roc_auc_score, roc_curve
 import stage2_level_estimator as s2
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -110,8 +110,33 @@ def main():
             oof[va] = clf().fit(g.loc[tr, LANG], g.loc[tr, "y"]).predict_proba(g.loc[va, LANG])[:, 1]
         print(f"   {v} mo {t:5}  {report('within-corpus', g, oof)}")
 
-    print("\nRead: high AUC at 30 mo = the markers catch late talkers. Falling AUC at 54-66 mo is")
-    print("expected (many late talkers catch up) and is a developmental result, not a failure.")
+    # D) CUTOFFS (ISS-26). AUC is ranking only. Does the ENNI cutoff work on toddlers, and if not,
+    #    what does a cutoff set from LOCAL TYPICAL children only (no clinical labels) achieve?
+    print("\nD) Cutoffs, one score per child per visit (tasks averaged)")
+    oof = np.zeros(len(enni)); en = enni.reset_index(drop=True)
+    for tr, va in StratifiedGroupKFold(5, shuffle=True, random_state=0).split(en, en.y, en.child_id):
+        oof[va] = clf().fit(en.loc[tr, LANG], en.loc[tr, "y"]).predict_proba(en.loc[va, LANG])[:, 1]
+    fpr, tpr, thr = roc_curve(en.y, oof); enni_cut = thr[np.argmax(tpr >= 0.90)]
+    pc = ew.groupby(["visit", "child_id"]).agg(y=("y", "first"), p=("p_lang", "mean")).reset_index()
+    rng = np.random.default_rng(0)
+    for v, g in pc.groupby("visit"):
+        fl = g.p >= enni_cut
+        sens = (fl & (g.y == 1)).sum() / g.y.sum(); spec = (~fl & (g.y == 0)).sum() / (g.y == 0).sum()
+        res = []
+        for _ in range(200):     # cross-fit: cutoff from half the TD kids, tested on the other children
+            td = g[g.y == 0].child_id.to_numpy(); cal = set(rng.choice(td, len(td) // 2, replace=False))
+            c, t = g[g.child_id.isin(cal)], g[~g.child_id.isin(cal)]
+            f2 = t.p >= np.percentile(c.p, 80)
+            res.append(((f2 & (t.y == 1)).sum() / t.y.sum(), (~f2 & (t.y == 0)).sum() / (t.y == 0).sum()))
+        r = np.array(res)
+        print(f"   {v} mo: ENNI cutoff {enni_cut:.2f} -> sens {sens:.2f} spec {spec:.2f} (flags {fl.mean():.0%})"
+              f" | local-TD cutoff (80th pct, ~{len(g[g.y == 0]) // 2} TD kids) -> sens {r[:, 0].mean():.2f}"
+              f" [{np.percentile(r[:, 0], 2.5):.2f}-{np.percentile(r[:, 0], 97.5):.2f}] spec {r[:, 1].mean():.2f}")
+
+    print("\nRead: high AUC at 30 mo = the markers RANK late talkers below typical peers. The ENNI")
+    print("cutoff does NOT transfer (risk is calibrated for 4-10 yr olds, so every toddler looks")
+    print("'at risk'); a cutoff from local typical toddlers alone restores a usable screen at 30 mo.")
+    print("Falling AUC at 54-66 mo is expected (many late talkers catch up), not a model failure.")
 
 
 if __name__ == "__main__":

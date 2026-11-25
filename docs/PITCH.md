@@ -35,7 +35,7 @@ Shape: **problem → solution → effective → accessible → important**, then
 - We checked it wasn't cheating. Age alone and transcript length alone score at coin-flip level (0.42 and 0.49). The signal is the child's language.
 - Then we tested it on 782 children from two other labs, in the USA and the UK, without changing anything. It still worked: 0.80 and 0.70.
 - And our four simple measures are as accurate as a black-box AI with 3,000 features, but ours can explain every decision.
-- It even works younger than it was trained. We trained only on 4- to 10-year-olds, then tested on 2½-year-olds from another lab without changing anything: it picked out late talkers with a score of 0.92. (fig11)
+- The signal even reaches younger than we trained. We trained only on 4- to 10-year-olds, then tested on 2½-year-olds from another lab: it still ranked late talkers below typical talkers at 0.92. (fig11) To actually flag toddlers it needs a toddler cutoff, set from typical toddlers; with one it catches about 87%.
 
 **4. It's accessible (20 s)**
 - About 10 sentences are enough to screen (0.82).
@@ -58,6 +58,7 @@ Shape: **problem → solution → effective → accessible → important**, then
 - **"Why not deep learning?"** We tested a 3,000-feature text model. It wasn't more accurate (0.82 vs 0.86), and a clinician can't see why it flags a child. Ours can.
 - **"Does the recording version work on real kids?"** It's a prototype. The public clinical datasets don't share their audio, so we couldn't test that step on clinical recordings yet. That's our top next step. The words-only model itself is validated.
 - **"Does it work on toddlers, or just school-age kids?"** We trained on 4-10 year olds, then tested on 130 children from the Ellis Weismer study, with no retraining. At 2½ years it separates late talkers from typical talkers at 0.92. The score drops with age (0.78 at 3½, 0.55 at 5½) because many late talkers catch up, which is what the research literature says happens.
+- **"So why does your demo only flag ages 4-10?"** Because the cutoff is tuned on 4-10 year olds. Used on toddlers it flags every child, since all toddlers have short sentences. The *ranking* still works (0.92), so the fix is a toddler cutoff. We tested setting it from about 35 typical toddlers only, no diagnosed kids needed: it caught 87% of late talkers and cleared 77% of typical ones, on children not used to set it. That's our next step, not a finished feature.
 - **"So can it predict which toddlers will have a disorder later?"** No, and we don't claim that. "Late talker" is decided by vocabulary size at age 2, not a disorder diagnosis. By 5½ our screen can't tell which late talkers stayed behind. It catches who is behind *now*.
 - **"Is this a diagnosis?"** No. It's a screen that says who should see a specialist sooner.
 - **"Who did what / how did you use AI?"** Answer honestly and specifically, matching what you wrote in your references and notebook.

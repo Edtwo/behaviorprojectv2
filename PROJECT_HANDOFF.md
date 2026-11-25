@@ -191,6 +191,13 @@ Format per entry: ID | date-found | STATUS (OPEN / RESOLVED / MONITORING) | what
   - Saw: no dtype was set (could fetch ~290 MB full-precision files) and there was no progress display; a user's browser pulled from the Hugging Face CDN at ~0.25 MB/s.
   - Did: explicit 8-bit weights (~76 MB), a live download counter, early download when the Record tab opens, and the model served from the Vercel site itself (web/models/, ~5 MB/s; also avoids networks that block huggingface.co).
 
+- **ISS-26 | 2026-11-25 | FINDING (limitation + fix path) | The toddler AUC is RANKING only; the ENNI cutoff flags every toddler.**
+  - Saw: at the ENNI 90%-sensitivity cutoff (language-only 0.34), 100% of EllisWeismer 30- and 42-mo children are flagged, typical ones included (TD median risk 0.96 at 30 mo). Risk is calibrated for 4-10 yr olds, so short toddler sentences all look "at risk". The Stage 2 level-gap cutoff fails the other way (EllisWeismer TD toddlers read +6.9 mo ahead, a corpus/task offset): a 10th-percentile core-TD gap cutoff catches 0-20%.
+  - Why it matters: "AUC 0.92 at 30 mo" must never be said as "the flag works on toddlers". It is the same pattern as ISS-18 (Gillam): ranking transfers across labs and ages; cutoffs do not.
+  - Did: cross-fitted test of a cutoff set from LOCAL TYPICAL children only (80th percentile of risk among half the TD toddlers, ~34 kids; no clinical labels), tested on the remaining children, 200 random splits: 30 mo sens 0.87 [0.76-1.00], spec 0.77; 42 mo 0.53 / 0.77; 54 mo 0.58 / 0.78; 66 mo 0.30 / 0.77.
+  - Conclusion: the web demo's 4-10 yr limit on the flag is CORRECT; keep it. A toddler version would need local typical-child norms (no diagnosed children needed), which is a concrete, testable next step.
+  - Evidence: `src/ext_young_delay.py` part D.
+
 - **ISS-25 | 2026-11-24 | RESOLVED (consistency) | Offline backup demo used a different flag cutoff than the board and web demo.**
   - Saw: `demo_report.py` and `audio_screen.py` flagged at risk >= 0.45 (Stage 3's Youden point: sens 0.88, spec 0.74), while the board's "catches 91%" and the web demo use the ~90%-sensitivity screening point (full model 0.36; words-only web model 0.34). A judge comparing the backup demo to the board could see a mismatch.
   - Did: one named constant per path, `SCREEN_CUTOFF` = 0.36 (demo_report, full model) and 0.34 (audio_screen, words-only, same as web/model.json). To revert to Youden, set both to 0.45.

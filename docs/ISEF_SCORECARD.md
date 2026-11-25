@@ -47,6 +47,7 @@ likely judge "gotchas" have real answers, which matters most in the interview.
   - Claim: the screen catches late talkers at 2.5 years even though it never saw a child under 4.
   - Evidence: AUC 0.92 with no refit; late talkers average 1.6 words per sentence vs 2.5 for typical peers.
   - Reasoning: the same markers (sentence length, vocabulary diversity) separate groups at every age; the AUC falls with age because many late talkers catch up, which matches the developmental literature.
+- **Cutoff check (ISS-26), important:** AUC measures ranking only. At the ENNI cutoff the flag fires for **100% of 30-month-olds**, typical ones included, because its risk scale is built for 4-10 yr olds. Set from ~34 local *typical* toddlers instead (no diagnosed kids needed), it catches **87%** of late talkers with **77%** specificity on children not used to set it. So: keep the demo's 4-10 yr limit; a toddler mode is a concrete next step, not a current feature.
 - Honest caveats to say out loud:
   - "Late talker" is not the same label as DLD/SLI; it is identified by small vocabulary at about 2 years, so 30-month agreement is partly expected. Call it "catches late talkers", not "predicts later disorder".
   - The 54-66 month drop is a real limit: the screen cannot tell which late talkers will stay behind.
