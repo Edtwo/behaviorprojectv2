@@ -76,9 +76,9 @@ details: PROJECT_HANDOFF.md **Section 0d**. Pitch + judging plan: [`docs/PITCH.m
 │   ├── poster_figures.py           # Board figures fig1-fig8 (print-sized, recomputed)
 │   ├── poster_figures_extra.py     # Board figures fig9-fig10
 │   ├── ext_young_delay.py          # Nov 2026: toddler validation on EllisWeismer (late talkers, 30-66 mo) + cutoff check
-│   ├── poster_figures_young.py     # Nov 2026: fig11 (toddler AUC by age) + fig12 (both directions)
+│   ├── poster_figures_young.py     # Nov 2026: fig14 (toddler AUC by age) + fig12 (both directions)
 │   ├── ext_asr_childspeech.py      # Nov 2026: real child-speech ASR test (Providence home audio)
-│   ├── ext_voice_filter.py         # Nov 2026: child-vs-adult voice filter from the Whisper encoder (ISS-31)
+│   ├── ext_voice_filter.py         # Nov 2026: child-vs-adult voice filter from the Whisper encoder (ISS-36)
 │   ├── poster_figures_audio.py     # Nov 2026: fig13 (real home recordings: raw vs voice filter vs child-only)
 │   ├── ext_operating_points.py     # Nov 2026: false alarms vs misses per 100 children at each cutoff
 │   ├── ext_continuity.py           # Nov 2026: toddler late talking <-> school-age DLD, transfer both ways (fig12)

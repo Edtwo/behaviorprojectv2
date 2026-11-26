@@ -26,7 +26,7 @@ os.makedirs(RESULTS, exist_ok=True)
 LEVEL_FEATURES = ["mluw", "mlum", "ttr", "mattr50", "syntax_index"]   # Stage 2
 DELAY_FEATURES = ["mluw", "mlum", "mattr50", "age_months"]            # Stage 3
 # Flag cutoff = Stage 3 screening point (~90% sensitivity: sens 0.91, spec 0.65 on held-out ENNI).
-# Single source for the full model (demo_report uses it too). Was 0.45 (Youden) until 2026-11; ISS-25.
+# Single source for the full model (demo_report uses it too). Was 0.45 (Youden) until 2026-11; ISS-30.
 SCREEN_CUTOFF = 0.36
 PRETTY = {"mluw": "sentence length (words/utt)", "mlum": "grammatical morphemes/utt",
           "ttr": "vocab diversity (TTR)", "mattr50": "vocab diversity (MATTR-50)",

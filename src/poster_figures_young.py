@@ -3,7 +3,7 @@
 # Same style as poster_figures_extra.py. Reads results/ellisweismer_scores.csv
 # (written by src/ext_young_delay.py). One score per CHILD per visit: a child's tasks at
 # a visit (e.g. examiner + parent play at 30 mo) are averaged, so no child counts twice.
-#   fig11_young_children.png  delay-flag ROC-AUC (late talkers vs typical) at 30/42/54/66 mo
+#   fig14_young_children.png  delay-flag ROC-AUC (late talkers vs typical) at 30/42/54/66 mo
 # USAGE: .venv/bin/python src/ext_young_delay.py && .venv/bin/python src/poster_figures_young.py
 import os
 import numpy as np, pandas as pd
@@ -61,8 +61,8 @@ def main():
     ax.set_xlim(26, 70); ax.set_ylim(0.4, 1.0); ax.set_xticks(r.visit)
     ax.set_xticklabels([f"{v}" for v in r.visit])
     ax.set_xlabel("Child's age (months)"); ax.set_ylabel("ROC-AUC")
-    fig.savefig(os.path.join(OUT, "fig11_young_children.png")); plt.close(fig)
-    print("wrote results/poster/fig11_young_children.png")
+    fig.savefig(os.path.join(OUT, "fig14_young_children.png")); plt.close(fig)
+    print("wrote results/poster/fig14_young_children.png")
 
     # fig12: does ONE language dimension link toddler late talking and school-age DLD?
     # (needs results/continuity_transfer.csv + continuity_coefs.csv from src/ext_continuity.py)

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-# FirstWords - Extension: CHILD-VOICE FILTER for raw home recordings (fixes ISS-24's open problem).
+# FirstWords - Extension: CHILD-VOICE FILTER for raw home recordings (fixes ISS-29's open problem).
 #
-# Problem (ISS-24): on raw home audio the screen counts the PARENTS' sentences as the child's,
+# Problem (ISS-29): on raw home audio the screen counts the PARENTS' sentences as the child's,
 # so language age is inflated (+25 mo base.en, +10 mo large-v3) and a delayed child could be
-# missed. A pitch-only filter failed its signal check (ISS-27: AUC 0.73-0.84).
+# missed. A pitch-only filter failed its signal check (ISS-32: AUC 0.73-0.84).
 #
 # Idea: the speech model already in the app (Whisper base.en) has an audio ENCODER. Its internal
 # representation of an utterance carries who is speaking (child vs adult voice) far better than

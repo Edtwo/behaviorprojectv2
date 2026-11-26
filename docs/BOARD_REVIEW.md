@@ -8,10 +8,10 @@ says *what* is wrong and *why*; the team writes the words.
 
 | Where on the board | Problem | Evidence |
 |---|---|---|
-| Section 6, the PROTOTYPE note ("not yet tested on recorded child speech") | No longer true. It was tested on real home recordings of 5 toddlers, and a voice filter was built and tested. A judge who hears the pitch and then reads this line sees a contradiction. | ISS-24, ISS-31, fig13 |
-| Section 9, "Next: real child recordings" | Done. The real next steps are now: put the child-voice filter in the demo, and fix sentence splitting on short recordings. | ISS-31 |
-| Section 5 tile and Section 8 ("30 local typical kids ... catches 80%") | True for Gillam **only at about 35% false alarms** (specificity 0.65, range 0.47-0.81 with just 30 kids). That is the same false-alarm rate as the ENNI screening point, so it is fair, but the tile hides the cost. Know this cold, and consider showing the false-alarm side. At 20% false alarms, 30 typical kids catch 64%. | re-run 2026-11-25 (1,000 random draws of 30 typical Gillam children); ISS-30 |
-| Title ("Validated Across Labs and Ages") | "Ages" is now backed by the toddler test (AUC 0.92 at 2½ years), but nothing on the board shows it. Either show fig11 or be ready to explain it in one sentence when a judge points at the title. | ISS-23, fig11 |
+| Section 6, the PROTOTYPE note ("not yet tested on recorded child speech") | No longer true. It was tested on real home recordings of 5 toddlers, and a voice filter was built and tested. A judge who hears the pitch and then reads this line sees a contradiction. | ISS-29, ISS-36, fig13 |
+| Section 9, "Next: real child recordings" | Done. The real next steps are now: put the child-voice filter in the demo, and fix sentence splitting on short recordings. | ISS-36 |
+| Section 5 tile and Section 8 ("30 local typical kids ... catches 80%") | True for Gillam **only at about 35% false alarms** (specificity 0.65, range 0.47-0.81 with just 30 kids). That is the same false-alarm rate as the ENNI screening point, so it is fair, but the tile hides the cost. Know this cold, and consider showing the false-alarm side. At 20% false alarms, 30 typical kids catch 64%. | re-run 2026-11-25 (1,000 random draws of 30 typical Gillam children); ISS-35 |
+| Title ("Validated Across Labs and Ages") | "Ages" is now backed by the toddler test (AUC 0.92 at 2½ years), but nothing on the board shows it. Either show fig14 or be ready to explain it in one sentence when a judge points at the title. | ISS-28, fig14 |
 
 ## 2. Figure swaps (stronger evidence, same or less space)
 
@@ -28,7 +28,7 @@ Net: the same number of figures, with two simulated or duplicate items swapped f
 ## 3. Layout and readability (from the board thumbnail)
 - **Section 8 Conclusion** is the most text-heavy box. Each "Supported" line repeats numbers already shown in Section 5. Shorter lines that point back to the figures read faster.
 - **Read the board from 6 feet away** (or zoom the Canva view to 15%). Any text you can't read at that size, a judge walking by can't either.
-- **Credit line:** fig13 is made from TalkBank Providence data (Demuth et al., 2006). Add Providence and Ellis Weismer (if you use fig11/fig12) to the references, since the board's references don't list them yet. Find the exact citations on TalkBank's corpus pages yourselves.
+- **Credit line:** fig13 is made from TalkBank Providence data (Demuth et al., 2006). Add Providence and Ellis Weismer (if you use fig14/fig12) to the references, since the board's references don't list them yet. Find the exact citations on TalkBank's corpus pages yourselves.
 - **Every figure needs its credit line** ("made by the team in Python"), as the board already does for the existing figures.
 
 ## 4. Files

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # FirstWords - board figure 13: does the recording path work on REAL toddler recordings?
-# Same style as poster_figures.py. Reads results/asr_childspeech.csv (ISS-24, base.en) and
-# results/voice_filter.csv (ISS-31). All three bars use Whisper base.en (the demo's model) and
+# Same style as poster_figures.py. Reads results/asr_childspeech.csv (ISS-29, base.en) and
+# results/voice_filter.csv (ISS-36). All three bars use Whisper base.en (the demo's model) and
 # the FULL ~1-hour home session of each of 5 Providence children (~33 months).
 #   fig13_real_recordings.png  language age from the recording minus language age from the
 #                              human transcript (months): child-only audio / raw / raw + filter

@@ -11,7 +11,7 @@
 # Bayes' rule, since ENNI's 21% SLI share is far above real life.
 # Per 100 children at 7%: 7 truly affected, 93 not.
 # LIMITATION: ENNI-only operating points; the cutoff does not transfer to other corpora
-# without recalibration (ISS-18, ISS-26).
+# without recalibration (ISS-18, ISS-31).
 import os
 import numpy as np
 import pandas as pd

@@ -110,7 +110,7 @@ def main():
             oof[va] = clf().fit(g.loc[tr, LANG], g.loc[tr, "y"]).predict_proba(g.loc[va, LANG])[:, 1]
         print(f"   {v} mo {t:5}  {report('within-corpus', g, oof)}")
 
-    # D) CUTOFFS (ISS-26). AUC is ranking only. Does the ENNI cutoff work on toddlers, and if not,
+    # D) CUTOFFS (ISS-31). AUC is ranking only. Does the ENNI cutoff work on toddlers, and if not,
     #    what does a cutoff set from LOCAL TYPICAL children only (no clinical labels) achieve?
     print("\nD) Cutoffs, one score per child per visit (tasks averaged)")
     oof = np.zeros(len(enni)); en = enni.reset_index(drop=True)

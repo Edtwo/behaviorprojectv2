@@ -37,7 +37,7 @@ Format: question -> what a strong answer must include -> where to check it.
     Must include: age as the norm reference. -> Handoff 0b Stage 4, 9e
 11. **What's the difference between your two models (level estimator vs delay flag)?** -> Handoff section 3
 12. **Why does the ENNI cutoff not work on Gillam or on toddlers?**
-    Must include: ranking vs cutoff, why a probability scale depends on the training group. -> ISS-18, ISS-26
+    Must include: ranking vs cutoff, why a probability scale depends on the training group. -> ISS-18, ISS-31
 13. **What does "91% sensitivity" cost you? How many false alarms per 100 kids?**
     Must include: the per-100 numbers, why you chose this end of the tradeoff. -> `src/ext_operating_points.py`
 14. **How reliable is one sample from a child?**
@@ -49,20 +49,20 @@ Format: question -> what a strong answer must include -> where to check it.
 
 16. **What's the biggest weakness of your project?**
     Pick one honestly and give the evidence. -> ISEF_SCORECARD.md "Weaknesses"
-17. **Does it work on toddlers?** Careful: ranking yes, flag no. -> ISS-23, ISS-26, fig11
+17. **Does it work on toddlers?** Careful: ranking yes, flag no. -> ISS-28, ISS-31, fig14
 18. **Does the recording version work on real children?**
-    Must include: child-only vs raw home audio, why parents' speech breaks it, and what the voice filter fixed and didn't. -> ISS-24, ISS-31
+    Must include: child-only vs raw home audio, why parents' speech breaks it, and what the voice filter fixed and didn't. -> ISS-29, ISS-36
 19. **Is it fair across ethnic groups?**
     Must include: the Gillam gap, what you found the cause was (not grammar), what you'd do. -> ISS-17
 20. **Name a result you were excited about that turned out to be wrong.** -> ISS-16 (typology), ISS-15 (German 0.99)
 21. **Someone did ML on ENNI in 2009. What's new here?**
     Know Gabani et al.'s actual reported numbers (look them up; not in the repo). -> READING_LIST.md section D
-22. **Why does the AUC fall from 30 to 66 months in the toddler test?** -> ISS-23
+22. **Why does the AUC fall from 30 to 66 months in the toddler test?** -> ISS-28
 23. **If you had a year and a clinic partner, what would you do next?**
     Must include something concrete: speaker separation, a toddler cutoff from local typical kids, a prospective test.
 
-27. **What's original about your project?** Know both ideas and their numbers. -> ISS-29 (fig12), ISS-30
-28. **Does your both-directions result mean late talkers will develop DLD?** Must include: shared measure vs same children, what data would answer it. -> ISS-29
+27. **What's original about your project?** Know both ideas and their numbers. -> ISS-34 (fig12), ISS-35
+28. **Does your both-directions result mean late talkers will develop DLD?** Must include: shared measure vs same children, what data would answer it. -> ISS-34
 
 ## Level 4: ownership (expect at least one of these)
 

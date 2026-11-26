@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # FirstWords - Extension: CALIBRATE A SCREEN WITH TYPICAL CHILDREN ONLY.
 #
-# Problem (ISS-18, ISS-26): the ranking transfers to new labs and ages, but the cutoff does not.
+# Problem (ISS-18, ISS-31): the ranking transfers to new labs and ages, but the cutoff does not.
 # The ENNI cutoff catches only ~58% of impaired Gillam children, and flags 100% of toddlers.
 # The usual fix needs DIAGNOSED children from the new setting, who are rare, slow and costly to
 # find. Typical children are everywhere.

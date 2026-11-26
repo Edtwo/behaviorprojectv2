@@ -36,7 +36,7 @@ LEVEL_FEATS = ["mluw", "mattr50"]           # ASR-derivable (words only)
 DELAY_FEATS = ["mluw", "mattr50", "age_months"]
 
 # Words-only model's ~90%-sensitivity cutoff, same as the web demo (web/model.json "cutoff" 0.34).
-# Was 0.45 until 2026-11; see PROJECT_HANDOFF ISS-25.
+# Was 0.45 until 2026-11; see PROJECT_HANDOFF ISS-30.
 SCREEN_CUTOFF = 0.34
 PAUSE = 0.5   # seconds of silence that starts a new utterance
 _MODEL = None

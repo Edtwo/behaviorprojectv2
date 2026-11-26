@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 import stage5_demo as demo
 import ext_percentiles as pct
 
-# Flag cutoff: single source in stage4_interpretability (Stage 3 screening point, ISS-25).
+# Flag cutoff: single source in stage4_interpretability (Stage 3 screening point, ISS-30).
 SCREEN_CUTOFF = demo.s4.SCREEN_CUTOFF
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

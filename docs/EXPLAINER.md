@@ -72,7 +72,7 @@ understand, because they explain several of your results:
 
 1. **The signal is strongest where the curve is steep (young children).** That's why your estimator is
    most accurate on toddlers (Bates corpus: ~5.3-month error for the ridge model the board uses, ~2.7 for
-   gradient boosting; the old "2.6" was the boosting number, see ISS-28) and why adding young children
+   gradient boosting; the old "2.6" was the boosting number, see ISS-33) and why adding young children
    hardened the whole model.
 2. **On the plateau, age is hard to predict from language** — which is exactly why the Cantonese *Shiro*
    corpus (all 6–11-year-olds) failed and *Szagun* (German toddlers) succeeded. It's the same reason a
