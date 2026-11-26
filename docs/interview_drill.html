@@ -1,0 +1,192 @@
+<title>FirstWords Interview Drill</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one question card at a time, timer + controls under it, progress strip on top. */
+:root{
+  --bg:#f6f5fb; --surface:#ffffff; --fg:#22203f; --muted:#625e86; --line:#dcd8ef;
+  --accent:#5a4fbf; --accent-soft:#ebe8fb; --good:#1f8a5b; --warn:#c2410c;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#15142a; --surface:#1f1d3a; --fg:#ecebf8; --muted:#a9a5cc; --line:#34315a;
+  --accent:#a69cf5; --accent-soft:#2c2852; --good:#4cc38a; --warn:#fb923c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#15142a; --surface:#1f1d3a; --fg:#ecebf8; --muted:#a9a5cc; --line:#34315a;
+  --accent:#a69cf5; --accent-soft:#2c2852; --good:#4cc38a; --warn:#fb923c; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,4vw,2.2rem);margin:0;letter-spacing:-.01em;text-wrap:balance}
+.sub{color:var(--muted);margin:4px 0 0;max-width:62ch}
+.modes,.levels{display:flex;flex-wrap:wrap;gap:8px}
+button{font:inherit;cursor:pointer;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--fg);padding:8px 14px}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:700}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-family:var(--mono);font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.q{font-family:var(--display);font-weight:600;font-size:clamp(1.25rem,3.2vw,1.6rem);line-height:1.3;margin:0;text-wrap:balance}
+.reveal{background:var(--accent-soft);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.reveal b{font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.reveal p{margin:0}
+.ptr{font-family:var(--mono);font-size:.85rem;color:var(--accent)}
+.timer{display:flex;align-items:center;gap:14px}
+.bar{flex:1;height:10px;border-radius:5px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;width:100%;background:var(--accent);transform-origin:left;transition:transform .25s linear}
+.bar.over i{background:var(--warn)}
+.secs{font-family:var(--mono);font-variant-numeric:tabular-nums;min-width:3.5ch;text-align:right}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+.primary{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:700}
+.got{border-color:var(--good);color:var(--good);font-weight:700}
+.shaky{border-color:var(--warn);color:var(--warn);font-weight:700}
+.stats{display:flex;gap:18px;flex-wrap:wrap;font-size:.9rem;color:var(--muted)}
+.stats strong{color:var(--fg);font-variant-numeric:tabular-nums}
+.note{font-size:.88rem;color:var(--muted);max-width:62ch}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>FirstWords Interview Drill</h1>
+    <p class="sub">Answer out loud in 45 seconds, no notes. Then check what a strong answer must include. Your answers come from you; this page only gives the checklist and the numbers.</p>
+  </header>
+
+  <div class="modes" role="group" aria-label="Mode">
+    <button id="m-q" aria-pressed="true">Judge questions</button>
+    <button id="m-n" aria-pressed="false">Number recall</button>
+  </div>
+  <div class="levels" id="levels" role="group" aria-label="Filter"></div>
+
+  <section class="card" aria-live="polite">
+    <div class="meta"><span id="tag">Level 1</span><span id="pos">1 / 28</span></div>
+    <p class="q" id="q">Loading…</p>
+    <div class="timer"><div class="bar" id="bar"><i id="fill"></i></div><span class="secs" id="secs">45s</span></div>
+    <div class="reveal" id="reveal" hidden>
+      <b id="rlabel">A strong answer must include</b>
+      <p id="must"></p>
+      <span class="ptr" id="ptr"></span>
+    </div>
+    <div class="row">
+      <button class="primary" id="start">Start timer</button>
+      <button id="show">Show checklist</button>
+    </div>
+    <div class="row">
+      <button class="got" id="got">I nailed it</button>
+      <button class="shaky" id="bad">Shaky, ask again</button>
+      <button id="skip">Skip</button>
+    </div>
+  </section>
+
+  <div class="stats"><span>Nailed: <strong id="s-good">0</strong></span><span>Shaky: <strong id="s-bad">0</strong></span><span>Left in this round: <strong id="s-left">0</strong></span>
+    <button id="reset" style="margin-left:auto">Reset progress</button></div>
+  <p class="note">Ready for judging when every Level 1 and Level 2 question is in "nailed" without notes. Shaky questions come back more often. Progress is saved in this browser only.</p>
+</div>
+
+<script>
+const Q=[
+[1,"What problem are you solving, in one sentence?","Who is affected, how common, why it's missed.","PITCH.md section 1"],
+[1,"What does your tool take in, and what does it give back?","Input (transcript / typed / recording) and the 3 outputs.","PITCH.md section 2"],
+[1,"What are the four measures, and why those?","What each one counts, and why it changes with age.","EXPLAINER.md, Stage 2"],
+[1,"What does an AUC of 0.86 mean? Explain it to a 10-year-old.","What 0.5 and 1.0 mean, and what \"ranking\" means.","fig2, EXPLAINER.md"],
+[1,"How do you know you didn't test on children you trained on?","Splitting by child, not by file, and why that matters.","fig10, ISS-07"],
+[1,"What's your data, and where did it come from?","CHILDES / TalkBank, de-identified, ~1,184 children, which corpora do what.","fig8, Handoff section 4"],
+[1,"Is this a diagnosis?","Screen vs diagnosis, and what happens after a flag.","PITCH.md, judge lines"],
+[2,"Why logistic regression instead of deep learning?","The black-box comparison numbers, and interpretability.","fig5, src/ext_benchmark.py"],
+[2,"How do you know the model isn't just detecting age or transcript length?","The three AUCs on fig1 and what \"at chance\" means.","fig1, ISS-04"],
+[2,"Why does age have the biggest SHAP value if age alone can't classify?","Age as the norm reference.","Handoff 0b Stage 4, 9e"],
+[2,"What's the difference between your two models (level estimator vs delay flag)?","What each predicts, what data each is trained on.","Handoff section 3"],
+[2,"Why does the ENNI cutoff not work on Gillam or on toddlers?","Ranking vs cutoff, and why a probability scale depends on the training group.","ISS-18, ISS-31"],
+[2,"What does \"91% sensitivity\" cost you? How many false alarms per 100 kids?","The per-100 numbers, and why you chose this end of the tradeoff.","src/ext_operating_points.py"],
+[2,"How reliable is one sample from a child?","Split-half result, what Spearman-Brown corrects for, and whether two different tasks agree.","src/ext_reliability.py, ISS-11"],
+[2,"Why MATTR instead of type-token ratio?","What goes wrong with TTR on longer transcripts.","ISS-05"],
+[3,"What's the biggest weakness of your project?","Pick one honestly and give the evidence.","ISEF_SCORECARD.md, Weaknesses"],
+[3,"Does it work on toddlers?","Ranking yes, flag no, and the toddler cutoff fix.","ISS-28, ISS-31, fig14"],
+[3,"Does the recording version work on real children?","Child-only vs raw home audio, why parents' speech breaks it, what a bigger speech model did, and what the voice filter fixed and didn't.","ISS-29, ISS-36"],
+[3,"Is it fair across ethnic groups?","The Gillam gap, what the cause was (not grammar), what you'd do.","ISS-17"],
+[3,"Name a result you were excited about that turned out to be wrong.","What you believed, what check showed it was wrong.","ISS-16, ISS-15"],
+[3,"Someone did ML on ENNI in 2009. What's new here?","Gabani et al.'s actual reported numbers (look them up), then your differences.","READING_LIST.md section D"],
+[3,"Why does the AUC fall from 30 to 66 months in the toddler test?","Late talkers catching up, and what the label means.","ISS-28"],
+[3,"If you had a year and a clinic partner, what would you do next?","Something concrete: speaker separation, a local toddler cutoff, a prospective test.","Scorecard, next steps"],
+[3,"What's original about your project?","Both ideas and their numbers.","ISS-34 (fig12), ISS-35"],
+[3,"Does your both-directions result mean late talkers will develop DLD?","Shared measure vs same children, and what data would answer it.","ISS-34"],
+[4,"How much of this did you do, and how much did AI do?","Honest and specific; must match your AI-use disclosure and references.","Handoff section 2, ISS-22"],
+[4,"Walk me through how you'd re-run your main result from scratch.","venv, data folder, stage2_level_estimator.py, stage3_delay_classifier.py.","README.md"],
+[4,"What would happen if you removed age from the model?","Predict the number before checking.","fig1"]
+];
+const N=[
+["AUC on children the model never saw","0.86 [0.81–0.91]","Stage 3"],
+["Age-alone AUC / transcript-length-alone AUC","0.42 / 0.49 (chance)","fig1"],
+["Language-only AUC (no age)","0.78","fig1"],
+["Sensitivity and specificity at the screening cutoff","0.91 / 0.65 (cutoff 0.36)","Stage 3"],
+["Outside labs, no retraining: Gillam / Conti4","0.80 / 0.70 (782 children)","ext_crosscorpus"],
+["Black-box text model (3,000 features) AUC","0.82","fig5"],
+["AUC with only 10 sentences","0.82","fig6"],
+["AUC with 40% of words transcribed wrong","0.85","ext_asr_stress"],
+["Toddler (30 mo) AUC, no retraining","0.92 [0.87–0.96]","fig14, ISS-28"],
+["Toddler AUC at 42 / 54 / 66 months","0.78 / 0.77 / 0.55","fig14"],
+["Toddler cutoff from typical kids only: sens / spec","0.87 / 0.77","ISS-31"],
+["Toddler model → school-age DLD (ENNI / Gillam)","0.77 / 0.78","fig12, ISS-34"],
+["Per 100 kids at 7% prevalence: caught / false alarms","about 6 of 7 / about 37","ext_operating_points"],
+["Language age error (ridge), all ages","about 10 months (MAE 9.85), R² 0.81","Stage 2"],
+["Children in the whole project","1,184","fig8"],
+["Real recordings, child-only audio: language-age error","3.8 mo (base) / 3.0 mo (large-v3)","ISS-29"],
+["Real recordings, raw home audio: language-age error","+25 mo (base) / +10 mo (large-v3)","ISS-29"],
+["Child-voice filter: child vs adult AUC on unseen families","0.94 (pitch alone: 0.73–0.84)","ISS-36"],
+["Full raw recording, language-age error: unfiltered vs voice filter","+11.7 mo → +4.2 mo","ISS-36"],
+["Fairness gap on Gillam: typical kids flagged","31% African American vs 14%","ISS-17"],
+["DLD prevalence and source","about 7% (Tomblin et al., 1997)","PITCH.md"]
+];
+const $=id=>document.getElementById(id);
+let mode="q", level=0, deck=[], cur=null, t=null, left=45;
+const KEY="fw-drill-v1";
+let st={}; try{st=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){st={}}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
+const id=(m,i)=>m+i;
+function pool(){
+  if(mode==="n") return N.map((_,i)=>i);
+  return Q.map((_,i)=>i).filter(i=>!level||Q[i][0]===level||(level===5&&st[id("q",i)]==="bad"));
+}
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function build(){
+  const p=pool(); const bad=p.filter(i=>st[id(mode,i)]==="bad");
+  deck=shuffle(p.concat(bad)); next();
+}
+function levelsUI(){
+  const L=$("levels"); L.innerHTML="";
+  if(mode==="n"){L.hidden=true;return} L.hidden=false;
+  [["All",0],["Level 1",1],["Level 2",2],["Level 3",3],["Level 4",4],["Shaky only",5]].forEach(([n,v])=>{
+    const b=document.createElement("button"); b.textContent=n; b.setAttribute("aria-pressed",v===level);
+    b.onclick=()=>{level=v;levelsUI();build()}; L.appendChild(b);
+  });
+}
+function stop(){clearInterval(t);t=null;$("start").textContent="Start timer"}
+function render(){
+  stop(); left=45; $("fill").style.transform="scaleX(1)"; $("bar").classList.remove("over"); $("secs").textContent="45s";
+  $("reveal").hidden=true;
+  const total=pool().length;
+  if(cur===null){$("q").textContent=level===5?"No shaky questions left. Nice.":"Round done. Pick a filter to start again.";$("tag").textContent="";$("pos").textContent="";stats();return}
+  if(mode==="q"){const [lv,q,m,p]=Q[cur];$("tag").textContent="Level "+lv;$("q").textContent=q;$("rlabel").textContent="A strong answer must include";$("must").textContent=m;$("ptr").textContent="Check: "+p}
+  else{const [q,a,p]=N[cur];$("tag").textContent="Number recall";$("q").textContent=q;$("rlabel").textContent="The number";$("must").textContent=a;$("ptr").textContent="Source: "+p}
+  $("pos").textContent=(total-deck.length)+" / "+total; stats();
+}
+function next(){cur=deck.length?deck.shift():null;render()}
+function stats(){
+  const p=pool(); let g=0,b=0; p.forEach(i=>{const s=st[id(mode,i)];if(s==="good")g++;if(s==="bad")b++});
+  $("s-good").textContent=g;$("s-bad").textContent=b;$("s-left").textContent=deck.length+(cur===null?0:1);
+}
+$("start").onclick=()=>{ if(t){stop();return}
+  $("start").textContent="Pause";
+  t=setInterval(()=>{left--; $("secs").textContent=(left>=0?left:"+"+(-left))+"s";
+    $("fill").style.transform="scaleX("+Math.max(0,left/45)+")"; if(left<0)$("bar").classList.add("over")},1000)};
+$("show").onclick=()=>{stop();$("reveal").hidden=false};
+$("got").onclick=()=>{if(cur===null)return;st[id(mode,cur)]="good";save();next()};
+$("bad").onclick=()=>{if(cur===null)return;st[id(mode,cur)]="bad";save();deck.splice(Math.min(3,deck.length),0,cur);next()};
+$("skip").onclick=()=>{if(cur!==null)next()};
+$("reset").onclick=()=>{st={};save();build()};
+function setMode(m){mode=m;$("m-q").setAttribute("aria-pressed",m==="q");$("m-n").setAttribute("aria-pressed",m==="n");levelsUI();build()}
+$("m-q").onclick=()=>setMode("q"); $("m-n").onclick=()=>setMode("n");
+levelsUI(); build();
+</script>

@@ -73,10 +73,18 @@ plan: [`docs/PITCH.md`](docs/PITCH.md). Team ownership exercise: [`exercises/`](
 │   ├── ext_fairness_fix.py         # Exploratory: does dropping vocabulary shrink the gap?
 │   ├── poster_figures.py           # Board figures fig1-fig8 (print-sized, recomputed)
 │   ├── poster_figures_extra.py     # Board figures fig9-fig10
+│   ├── ext_young_delay.py          # Nov 2026: toddler validation on EllisWeismer (late talkers, 30-66 mo) + cutoff check
+│   ├── poster_figures_young.py     # Nov 2026: fig14 (toddler AUC by age) + fig12 (both directions)
+│   ├── ext_asr_childspeech.py      # Nov 2026: real child-speech ASR test (Providence home audio)
+│   ├── ext_voice_filter.py         # Nov 2026: child-vs-adult voice filter from the Whisper encoder (ISS-36)
+│   ├── poster_figures_audio.py     # Nov 2026: fig13 (real home recordings: raw vs voice filter vs child-only)
+│   ├── ext_operating_points.py     # Nov 2026: false alarms vs misses per 100 children at each cutoff
+│   ├── ext_continuity.py           # Nov 2026: toddler late talking <-> school-age DLD, transfer both ways (fig12)
+│   ├── ext_typical_only_calibration.py # Nov 2026: set the cutoff in a new population from typical kids only
 │   └── verify_pipeline.py          # no-download smoke test of the CHAT->features pipeline
 ├── web/                    # Browser web demo (index.html, app.js, model.json); web/models/ gitignored
 ├── scripts/                # fetch_web_model.sh (speech model files for the web demo)
-├── docs/                   # EXPLAINER, METHODS_WALKTHROUGH, READING_LIST, PITCH
+├── docs/                   # EXPLAINER, METHODS_WALKTHROUGH, READING_LIST, PITCH, ISEF_SCORECARD, BOARD_REVIEW, INTERVIEW_DRILL
 ├── data/childes/           # the public CHILDES corpora used (CC BY-NC-SA; see data/README.md)
 ├── exercises/              # ownership exercise: rebuild the classifier yourself
 └── results/                # outputs (gitignored) except poster/ figures + summary CSVs
