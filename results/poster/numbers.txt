@@ -1,0 +1,54 @@
+ENNI delay set: 360 transcripts, 345 children, 75 impaired transcripts
+
+Fig 1 - artifact control
+  Age alone                    AUC 0.423 [0.347-0.499]
+  Transcript length alone      AUC 0.490 [0.414-0.566]
+  Language alone               AUC 0.781 [0.721-0.837]
+  Language + age (our model)   AUC 0.861 [0.813-0.906]
+  wrote results/poster/fig1_artifact_control.png
+
+Fig 2 - ROC
+  AUC 0.861 [0.813-0.906]; screening point sens 0.91 (68 of 75), spec 0.65
+  wrote results/poster/fig2_roc_screening.png
+
+Fig 3 - growth chart
+  typical transcripts below P10: 9.7% (target 10%); impaired transcripts below P10: 28.0%; below P25: 54.7%
+  wrote results/poster/fig3_growth_chart.png
+
+Fig 4 - external validation (trained on ENNI, no retraining)
+  Gillam all: n=664 (171 impaired), ages 60-143 mo, AUC 0.803 [0.765-0.840]
+  Gillam within ENNI age range: n=539, AUC 0.825 [0.785-0.861]
+  Conti4 frog story: n=118 (19 impaired), ages 157-192 mo, language-only AUC 0.702 [0.566-0.823]
+  wrote results/poster/fig4_external_validation.png
+
+Fig 5 - benchmark vs black box
+  Our 4 explainable measures                   AUC 0.860 [0.814-0.904]
+  Black-box text model (3,000 word features)   AUC 0.822 [0.767-0.873]
+  Simple rule (sentence length + age)          AUC 0.817 [0.758-0.868]
+  wrote results/poster/fig5_benchmark.png
+
+Fig 6 - short samples
+  N=  10: AUC 0.818 [0.761-0.869]
+  N=  15: AUC 0.819 [0.766-0.867]
+  N=  20: AUC 0.829 [0.778-0.876]
+  N=  30: AUC 0.829 [0.775-0.879]
+  N=  40: AUC 0.834 [0.786-0.882]
+  N=  50: AUC 0.850 [0.800-0.894]
+  N= all: AUC 0.862 [0.814-0.904]
+  wrote results/poster/fig6_short_sample.png
+
+Fig 7 - language age estimate
+  n=669 transcripts, 335 children; MAE 9.99 mo, R2 0.81
+  wrote results/poster/fig7_language_age.png
+
+Fig 8 - data overview
+  Bates (USA)              ages 1.7-2.3 yr, 30 children
+  Gleason (USA)            ages 2.1-5.2 yr, 24 children
+  Brown (USA)              ages 1.5-5.2 yr, 3 children
+  ENNI typical (Canada)    ages 4.0-10.0 yr, 278 children
+  ENNI (Canada)            ages 4.0-10.0 yr, 345 children
+  Gillam (USA)             ages 5.0-11.9 yr, 664 children
+  Conti-Ramsden (UK)       ages 13.1-16.0 yr, 118 children
+  German (Szagun)          ages 1.2-3.7 yr, 22 children
+  Cantonese (HKU)          ages 2.4-5.7 yr, 70 children
+  wrote results/poster/fig8_data_overview.png

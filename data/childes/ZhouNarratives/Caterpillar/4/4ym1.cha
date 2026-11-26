@@ -1,0 +1,120 @@
+@UTF8
+@PID:	11312/a-00102366-0
+@Begin
+@Languages:	zho
+@Participants:	CHI Target_Child, INV Investigator
+@ID:	zho|ZhouNarratives|CHI|4;||||Target_Child|||
+@ID:	zho|ZhouNarratives|INV|||||Investigator|||
+@Media:	4ym1, video
+@Date:	05-NOV-2008
+@Situation:	Kindergarten of Bing Chang Tian
+@G:	02
+@Types:	cross, narrative, TD
+*CHI:	这里 都 是 孔 [^c] . [+ bok]
+%act:	翻开封面环衬 .
+%mor:	pron|这里-Int-S1 sconj|都 aux|是-Inf-S propn|孔 .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|COP 4|0|ROOT 5|4|PUNCT
+@G:	03
+*CHI:	这里 也 是 洞 [^c] . [+ bok]
+%act:	翻开扉页一 .
+%mor:	pron|这里-Int-S1 sconj|也 aux|是-Inf-S noun|洞 .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|COP 4|0|ROOT 5|4|PUNCT
+@G:	04
+*CHI:	这里 没有 字 [^c] . [+ bok] 50040_56231
+%wor:	这里 50040_53506 没有 53526_55711 字 55731_56231 .
+%act:	翻开扉页二 .
+%mor:	pron|这里-Int-S1 verb|有-Inf-Neg-S noun|字-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+@G:	05
+*CHI:	这儿 有 字 的 [^c] . [+ bok] 55811_56611
+%wor:	这儿 55811_55931 有 55951_56051 字 56071_56091 的 56111_56611 .
+%act:	翻到第一合页 .
+%mor:	pron|这儿-Int-S1 verb|有-Inf-S noun|字-Acc part|的 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|DISCOURSE 5|2|PUNCT
+*CHI:	从前 然后 它 这 月亮 [^c] . 56192_57393
+%wor:	从前 56192_56512 然后 56532_56612 它 56632_56713 这 56733_56873 月亮 56893_57393 .
+%xsgra:	$eki:11
+%act:	指一下月亮 .
+%mor:	noun|从前 adv|然后 pron|它-Int-S3 det|这-Def noun|月亮 .
+%gra:	1|5|NMOD-TMOD 2|5|ADVMOD 3|5|NSUBJ 4|5|DET 5|0|ROOT 6|5|PUNCT
+*INV:	嗯 [^c] .
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	也 有 个 洞 [^c] . 66740_69123
+%wor:	也 66740_68163 有 68183_68563 个 68583_68603 洞 68623_69123 .
+%act:	指虫卵 .
+%mor:	sconj|也 verb|有-Inf-S noun|个 noun|洞-Acc .
+%gra:	1|2|MARK 2|0|ROOT 3|4|NMOD 4|2|OBJ 5|2|PUNCT
+*CHI:	是 谁 爬 的 呢 [^c] ? 68784_71428
+%wor:	是 68784_70087 谁 70107_70147 爬 70167_70187 的 70207_70908 呢 70928_71428 ?
+%mor:	verb|是-Inf-S pron|谁-Int-S1 verb|爬-Inf-S part|的 part|呢 ?
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|CCOMP 4|1|DISCOURSE 5|1|DISCOURSE 6|1|PUNCT
+*INV:	谁 爬 的 呢 [^c] .
+%mor:	pron|谁-Int-S1 verb|爬-Inf-S part|的 part|呢 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|DISCOURSE 4|2|DISCOURSE 5|2|PUNCT
+@G:	06
+*CHI:	噢 ‡ [^c] 原来 是 小 虫子 爬 的 [^c] . 70968_75758
+%wor:	噢 70968_71449 ‡ 原来 71470_72251 是 72271_72712 小 72732_73454 虫子 73474_75117 爬 75137_75238 的 75258_75758 .
+%xsgra:	$set:cha, $eki:31
+%act:	翻 开第二合页看到毛毛虫 .
+%mor:	punct|噢 propn|‡ adv|原来 aux|是-Inf-S part|小 noun|虫子 verb|爬-Inf-S part|的 .
+%gra:	1|7|PUNCT 2|7|NSUBJ 3|7|ADVMOD 4|7|COP 5|6|CASE 6|7|NSUBJ 7|0|ROOT 8|7|DISCOURSE 9|7|PUNCT
+@G:	07, 08, 09, 10, 11
+*CHI:	这 怎么 没 小 虫子 啊 [^c] . [+ bch] 81360_83203
+%wor:	这 81360_81400 怎么 81420_81500 没 81520_81540 小 81560_81600 虫子 81620_82682 啊 82703_83203 .
+%act:	来回翻看水果页 .
+%mor:	pron|这-Int-S1 adv|怎么 verb|没-Inf-S part|小 noun|虫子-Acc part|啊 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|5|CASE 5|3|OBJ 6|3|DISCOURSE 7|3|PUNCT
+*CHI:	没 洞 [^c] .
+%mor:	verb|没-Inf-S noun|洞-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	然后 它 就 说 这 个 谁 的 洞 [^c] . 84507_88053
+%wor:	然后 84507_84707 它 84727_84747 就 84767_84867 说 84887_85088 这 85108_85268 个 85288_85689 谁 85709_87193 的 87213_87533 洞 87553_88053 .
+%act:	翻水果页 .
+%mor:	adv|然后 pron|它-Int-S3 sconj|就 verb|说-Inf-S det|这-Def noun|个 pron|谁-Int-S1 part|的 noun|洞-Acc .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|MARK 4|0|ROOT 5|6|DET 6|7|CLF 7|9|DET 8|7|CASE 9|4|OBJ 10|4|PUNCT
+@G:	12
+*CHI:	它 说 是 小 虫子 的 洞 [^c] . 90840_93624
+%wor:	它 90840_91180 说 91200_91341 是 91361_91441 小 91461_91481 虫子 91501_91962 的 91982_93104 洞 93124_93624 .
+%act:	翻到星期六页看着小虫子
+%mor:	pron|它-Int-S3 verb|说-Inf-S aux|是-Inf-S part|小 noun|虫子 part|的 noun|洞 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|7|COP 4|5|CASE 5|7|NMOD 6|5|CASE 7|2|XCOMP 8|2|PUNCT
+@G:	13
+*CHI:	小 虫子 ‡ 树 上去 了 [^c] . 93184_100218
+%wor:	小 93184_93224 虫子 93245_93365 ‡ 树 93385_93445 上去 93465_99698 了 99718_100218 .
+%xsgra:	$eki:d1
+%act:	翻到星期天页 .
+%mor:	part|小 noun|虫子 punct|‡ part|树 verb|上去-Inf-S part|了 .
+%gra:	1|2|CASE 2|4|NMOD 3|4|PUNCT 4|5|NSUBJ 5|0|ROOT 6|5|DISCOURSE 7|5|PUNCT
+@G:	14
+*CHI:	这 是 什么 [^c] ? [+ bch] 126540_135814
+%wor:	这 126540_133331 是 133351_135294 什么 135314_135814 ?
+%act:	翻到大毛毛虫和虫茧页看虫茧
+%mor:	pron|这-Int-S1 aux|是-Inf-S pron|什么-Int-S1 ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	大便 [^c] .
+%mor:	noun|大便 .
+%gra:	1|0|ROOT 2|1|PUNCT
+@G:	15
+*CHI:	蝴蝶 飞 过来 说 [^c] .
+%xsgra:	$eki:jb1
+%act:	翻到蝴蝶页 .
+%mor:	noun|蝴蝶 verb|飞-Inf-S verb|过来-Inf-S verb|说-Inf-S .
+%gra:	1|4|NSUBJ 2|4|ADVCL 3|2|MARK 4|0|ROOT 5|4|PUNCT
+*INV:	嗯 [^c] . 191260_191760
+%wor:	嗯 191260_191760 .
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+@G:	16
+*CHI:	这 没有 的 [^c] . [+ bok] 204540_238940
+%wor:	这 204540_205020 没有 237340_237500 的 238440_238940 .
+%act:	翻到封底环衬
+%mor:	pron|这-Int-S1 verb|有-Inf-Neg-S part|的 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+@G:	17
+*CHI:	没 了 [^c] . [+ str] 239260_322360
+%wor:	没 239260_239760 了 321860_322360 .
+%act:	合上封底 .
+%mor:	verb|没-Inf-S part|了 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+@End

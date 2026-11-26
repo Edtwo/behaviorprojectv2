@@ -1,0 +1,478 @@
+@UTF8
+@PID:	11312/c-00015250-1
+@Begin
+@Languages:	eng
+@Participants:	CHI Target_Child, MOT Mother
+@ID:	eng|Bates|CHI|2;04.|male|TD|MC|Target_Child|||
+@ID:	eng|Bates|MOT||female|||Mother|||
+@Comment:	[ba3 morphotag | engine=stanza-1.11.1 ; lang=eng | 2026-05-07T09:24:11-04:00]
+@Types:	cross, toyplay, TD
+*CHI:	they're go [*] climb up it .
+%act:	<1w-5w> makes man climb ladder . <1w> holding ladder upright with man at base .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|go-Inf-S verb|climb-Inf-S adp|up pron|it-Prs-Acc-S3 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|XCOMP 5|4|COMPOUND-PRT 6|3|PUNCT 7|3|PUNCT
+*CHI:	an(d) +...
+%act:	<1w> holds man at top of ladder . puts man on floor <1w-2w> makes man climb ladder .
+%mor:	cconj|and +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah .
+%act:	<1w> holds man . reaches in dollhouse with man . puts man in bench
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	they can climb up on the ladder +...
+%mor:	pron|they-Prs-Nom-P3 aux|can-Fin-S verb|climb-Inf-S adp|up adp|on det|the-Def-Art noun|ladder +...
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|COMPOUND-PRT 5|7|CASE 6|7|DET 7|3|OBL 8|3|PUNCT
+*CHI:	an(d) this &-uh +...
+%act:	reaches in dollhouse . takes man from bench and holds at top of ladder
+%xpho:	<2w> DI
+%mor:	cconj|and pron|this-Dem-S1 +...
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*MOT:	and these are +...
+%act:	<1w> reaches in dollhouse , picks up bench and puts back down .
+%mor:	cconj|and pron|this-Dem-P1 aux|be-Fin-Ind-Pres-P3 +...
+%gra:	1|2|CC 2|0|ROOT 3|2|COP 4|2|PUNCT
+*MOT:	I think these are chairs .
+%act:	<1w> picks up table and holds out to examine .
+%mor:	pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 pron|this-Dem-P1 aux|be-Fin-Ind-Pres-P3 noun|chair-Plur .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|NSUBJ 4|5|COP 5|2|CCOMP 6|2|PUNCT
+*MOT:	oh look .
+%act:	<1w> puts table back in dollhouse .
+%mor:	intj|oh verb|look-Fin-Imp-S .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	a table and chairs [=! read] .
+%act:	<1w> takes bench out and turns it in her hand
+%mor:	det|a-Ind-Art noun|table cconj|and noun|chair-Plur .
+%gra:	1|2|DET 2|0|ROOT 3|4|CC 4|2|CONJ 5|2|PUNCT
+*MOT:	I think they wan(t) (t)a eat .
+%mor:	pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 pron|they-Prs-Nom-P3 verb|want-Fin-Ind-Pres-P3 part|to verb|eat-Inf-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|6|MARK 6|4|XCOMP 7|2|PUNCT
+*CHI:	0 .
+%act:	puts man on floor . holds man on floor
+*MOT:	here's some beds and there's their bedroom .
+%act:	<1w> puts bench in dollhouse . picks up bed and puts in dollhouse
+%mor:	adv|here~aux|be-Fin-Ind-Pres-S3 det|some-Def-Ind noun|bed-Plur cconj|and pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 pron|their-Prs-Gen-P3 noun|bedroom .
+%gra:	1|0|ROOT 2|1|COP 3|4|DET 4|1|NSUBJ 5|7|CC 6|7|EXPL 7|1|CONJ 8|9|NMOD-POSS 9|7|NSUBJ 10|1|PUNCT
+*MOT:	see ?
+%mor:	verb|see-Fin-Imp-S ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	puts ladder on floor
+*MOT:	what's this ?
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*MOT:	there's a little +...
+%act:	<1w> sets bed in dollhouse
+%mor:	pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 det|a-Ind-Art adj|little-S1 +...
+%gra:	1|2|EXPL 2|0|ROOT 3|4|DET 4|2|NSUBJ 5|2|PUNCT
+*MOT:	another bed .
+%mor:	det|another-Def-Ind noun|bed .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	that's the bedroom .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 det|the-Def-Art noun|bedroom .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|4|PUNCT
+*MOT:	you think they can go to sleep now ?
+%mor:	pron|you-Prs-Nom-S2 verb|think-Fin-Ind-Pres-S2 pron|they-Prs-Nom-P3 aux|can-Fin-S verb|go-Inf-S part|to verb|sleep-Inf-S adv|now ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|NSUBJ 4|5|AUX 5|2|CCOMP 6|7|MARK 7|5|ADVCL 8|7|ADVMOD 9|2|PUNCT
+*CHI:	0 .
+%gpx:	nods
+%act:	snatches bed out of dollhouse and puts on floor with both hands .
+*MOT:	&-uh (.) <they (.) &-uh> [/] they don't want to sleep outside though .
+%mor:	pron|they-Prs-Nom-P3 aux|do-Fin-Ind-Pres-P3~part|not verb|want-Inf-S part|to verb|sleep-Inf-S adv|outside adv|though .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|ADVMOD 8|6|ADVMOD 9|4|PUNCT
+*MOT:	they want to sleep inside in their bedroom .
+%mor:	pron|they-Prs-Nom-P3 verb|want-Fin-Ind-Pres-P3 part|to verb|sleep-Inf-S adv|inside adp|in pron|their-Prs-Gen-P3 noun|bedroom .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|4|ADVMOD 6|8|CASE 7|8|NMOD-POSS 8|4|OBL 9|2|PUNCT
+*CHI:	0 .
+%act:	reaches in dollhouse and takes out bed . begins to set bed on floor , hesitating . picks up a bed in each hand
+*CHI:	&-uh yyy .
+%act:	<1w-2w> puts bed on floor near car .
+%xpho:	<2w> de i du h
+*CHI:	there [!] the bed .
+%act:	<1w-3w> puts bed on floor near car .
+%mor:	pron|there-Dem-S1 det|the-Def-Art noun|bed .
+%gra:	1|0|ROOT 2|3|DET 3|1|NSUBJ 4|1|PUNCT
+*CHI:	now they [*] in yyy .
+%act:	<1w> puts other bed on floor
+%xpho:	<4w> de i du h
+%mor:	adv|now pron|they-Prs-Nom-P3 adp|in .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	I think this is their house .
+%act:	<1w> taps dollhouse
+%mor:	pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 pron|this-Dem-S1 aux|be-Fin-Ind-Pres-S3 pron|their-Prs-Gen-P3 noun|house .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|6|NSUBJ 4|6|COP 5|6|NMOD-POSS 6|2|CCOMP 7|2|PUNCT
+*MOT:	I think that's their room over there .
+%gpx:	<1w> points to area in dollhouse
+%mor:	pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 pron|that-Dem~aux|be-Fin-Ind-Pres-S3 pron|their-Prs-Gen-P3 noun|room adp|over adv|there .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|6|NSUBJ 4|6|COP 5|6|NMOD-POSS 6|2|CCOMP 7|8|CASE 8|6|NMOD 9|2|PUNCT
+*CHI:	0 .
+%act:	takes bed from floor and sets in dollhouse
+*MOT:	can you put them in their beds ?
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|put-Inf-S pron|they-Prs-Acc-P3 adp|in pron|their-Prs-Gen-P3 noun|bed-Plur ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|7|CASE 6|7|NMOD-POSS 7|3|OBL 8|3|PUNCT
+*CHI:	0 .
+%act:	picks up and drops man . picks up man and puts in bed in dollhouse
+%gpx:	nods
+*MOT:	another +...
+%mor:	det|another-Def-Ind +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	how cute .
+%mor:	adv|how adj|cute-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	they're sleeping now .
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|sleep-Part-Pres-S adv|now .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*CHI:	where .
+%act:	<bef> picks up man , begins to put in dollhouse but hesitates
+%xpho:	<2w> t
+%mor:	adv|where .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	where [*] yyy xxx another one ?
+%act:	<1w> picks up bed from floor .
+%xpho:	<2w> d
+%mor:	adv|where det|another-Def-Ind noun|one ?
+%gra:	1|0|ROOT 2|3|DET 3|1|NSUBJ 4|1|PUNCT
+*CHI:	and .
+%act:	<1w> puts bed in dollhouse . puts man in bed
+%mor:	cconj|and .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	uhhuh .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	and <these are> [/] these are chairs (.) they sit on +...
+%act:	<1w> picks up lawn chair and sets in dollhouse
+%mor:	cconj|and pron|this-Dem-P1 aux|be-Fin-Ind-Pres-P3 noun|chair-Plur pron|they-Prs-Nom-P3 verb|sit-Fin-Ind-Pres-P3 adp|on +...
+%gra:	1|4|CC 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|6|NSUBJ 6|4|ACL-RELCL 7|6|COMPOUND-PRT 8|4|PUNCT
+*CHI:	where's another chair ?
+%act:	leans on dollhouse
+%mor:	adv|where~aux|be-Fin-Ind-Pres-S3 det|another-Def-Ind noun|chair ?
+%gra:	1|0|ROOT 2|1|COP 3|4|DET 4|1|NSUBJ 5|1|PUNCT
+*MOT:	here's one and here's one .
+%gpx:	points to chairs in dollhouse
+%act:	moves bench
+%mor:	adv|here~aux|be-Fin-Ind-Pres-S3 num|one cconj|and adv|here~aux|be-Fin-Ind-Pres-S3 num|one .
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|5|CC 5|1|CONJ 6|7|COP 7|1|CONJ 8|1|PUNCT
+*CHI:	yyy (.) &-um (.) hm: .
+%act:	<aft> reaches in dollhouse and touches table while still holding man in hand
+%xpho:	<1w> teh
+%mor:	intj|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	see these little things are chairs (.) I think .
+%gpx:	reaches in dollhouse and points through holes of bench
+%mor:	verb|see-Fin-Imp-S det|this-Def-Dem-Plur adj|little-S1 noun|thing-Plur aux|be-Fin-Ind-Pres-P3 noun|chair-Plur pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 .
+%gra:	1|0|ROOT 2|4|DET 3|4|AMOD 4|6|NSUBJ 5|6|COP 6|1|CCOMP 7|8|NSUBJ 8|6|PARATAXIS 9|1|PUNCT
+*MOT:	see ?
+%act:	<1w> picks dog up and puts down .
+%mor:	verb|see-Fin-Imp-S ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	how they sit ?
+%act:	<1w-3w> picks man up and puts in bench
+%mor:	adv|how pron|they-Prs-Nom-P3 verb|sit-Fin-Ind-Pres-P3 ?
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ADVCL-RELCL 4|1|PUNCT
+*MOT:	let's get a person there .
+%act:	<1w-5w> picks man up and puts in bench
+%mor:	verb|let-Fin-Imp-S~pron|we-Prs-Acc-P1 verb|get-Inf-S det|a-Ind-Art noun|person-Acc adv|there .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|5|DET 5|3|OBJ 6|3|ADVMOD 7|1|PUNCT
+*MOT:	and these people eat (.) see ?
+%act:	<1w> puts another man in bench
+%mor:	cconj|and det|this-Def-Dem-Plur noun|person-Plur verb|eat-Fin-Ind-Pres-P3 verb|see-Inf-S ?
+%gra:	1|4|CC 2|3|DET 3|4|NSUBJ 4|0|ROOT 5|4|XCOMP 6|4|PUNCT
+*MOT:	and that's their table .
+%gpx:	<1w-4w> points to table in dollhouse
+%mor:	cconj|and pron|that-Dem~aux|be-Fin-Ind-Pres-S3 pron|their-Prs-Gen-P3 noun|table .
+%gra:	1|5|CC 2|5|NSUBJ 3|5|COP 4|5|NMOD-POSS 5|0|ROOT 6|5|PUNCT
+*MOT:	look !
+%gpx:	<1w> points to table in dollhouse
+%mor:	verb|look-Fin-Imp-S !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	look !
+%gpx:	<1w> points to table in dollhouse
+%mor:	verb|look-Fin-Imp-S !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	there's a little food down there on the table !
+%gpx:	<1w-9w> points to table in dollhouse
+%mor:	pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 det|a-Ind-Art adj|little-S1 noun|food adp|down adv|there adp|on det|the-Def-Art noun|table !
+%gra:	1|2|EXPL 2|0|ROOT 3|5|DET 4|5|AMOD 5|2|NSUBJ 6|2|ADVMOD 7|2|ADVMOD 8|10|CASE 9|10|DET 10|2|OBL 11|2|PUNCT
+*MOT:	see ?
+%gpx:	<1w> points to table in dollhouse
+%mor:	verb|see-Fin-Imp-S ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&=laughs .
+%act:	still holding man
+*MOT:	yeah (.) they have little food .
+%mor:	intj|yeah pron|they-Prs-Nom-P3 verb|have-Fin-Ind-Pres-P3 adj|little-S1 noun|food-Acc .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|5|AMOD 5|3|OBJ 6|3|PUNCT
+*MOT:	can you find their dogs ?
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|find-Inf-S pron|their-Prs-Gen-P3 noun|dog-Plur-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|NMOD-POSS 5|3|OBJ 6|3|PUNCT
+*CHI:	0 .
+%act:	puts man on floor
+%gpx:	nods
+*MOT:	where's the dogs of the family ?
+%mor:	adv|where~aux|be-Fin-Ind-Pres-S3 det|the-Def-Art noun|dog-Plur adp|of det|the-Def-Art noun|family ?
+%gra:	1|0|ROOT 2|1|COP 3|4|DET 4|1|NSUBJ 5|7|CASE 6|7|DET 7|4|NMOD 8|1|PUNCT
+*CHI:	0 .
+%act:	reaches in dollhouse through door , takes out dog and holds
+*MOT:	yeah what are they going to do ?
+%mor:	intj|yeah pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 pron|they-Prs-Nom-P3 verb|go-Part-Pres-S part|to verb|do-Inf-S ?
+%gra:	1|5|DISCOURSE 2|7|OBJ 3|5|AUX 4|5|NSUBJ 5|0|ROOT 6|7|MARK 7|5|XCOMP 8|5|PUNCT
+*CHI:	they gonna play them [*] .
+%act:	<aft> holds up both dogs and then puts them on floor
+%mor:	pron|they-Prs-Nom-P3 verb|go-Part-Pres-S~part|to verb|play-Inf-S pron|they-Prs-Acc-P3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|4|OBJ 6|2|PUNCT
+*MOT:	oh_boy .
+%mor:	propn|ohboy .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	when they finish eating .
+%par:	<2w> breath
+%mor:	adv|when pron|they-Prs-Nom-P3 verb|finish-Fin-Ind-Pres-P3 verb|eat-Ger-S .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|XCOMP 5|3|PUNCT
+*MOT:	soon as they finish eating ?
+%mor:	adv|soon sconj|as pron|they-Prs-Nom-P3 verb|finish-Fin-Ind-Pres-P3 verb|eat-Part-Pres-S ?
+%gra:	1|0|ROOT 2|4|MARK 3|4|NSUBJ 4|1|ADVCL 5|4|XCOMP 6|1|PUNCT
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	think they're finished ?
+%mor:	verb|think-Fin-Imp-S pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|finish-Part-Past-S ?
+%gra:	1|0|ROOT 2|4|NSUBJ-PASS 3|4|AUX-PASS 4|1|CCOMP 5|1|PUNCT
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	takes man from bed and puts on floor near dogs . stands dog upright
+%gpx:	nods
+*MOT:	oh neat !
+%mor:	intj|oh adj|neat-S1 !
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	and what are the dogs going to play with them ?
+%mor:	cconj|and pron|what-Int-S1 aux|be-Fin-Ind-Pres-P3 det|the-Def-Art noun|dog-Plur verb|go-Part-Pres-S part|to verb|play-Inf-S adp|with pron|they-Prs-Acc-P3 ?
+%gra:	1|6|CC 2|8|OBJ 3|6|AUX 4|5|DET 5|6|NSUBJ 6|0|ROOT 7|8|MARK 8|6|XCOMP 9|10|CASE 10|8|OBL 11|6|PUNCT
+*CHI:	&-um yyy going [*] play with them [/] them .
+%act:	picks up a different man from floor and twists in hand
+%xpho:	<6w> et og D& m ge <2w> et og D& m ge
+%mor:	verb|go-Part-Pres-S noun|play-Acc adp|with pron|they-Prs-Acc-P3 .
+%gra:	1|0|ROOT 2|1|OBJ 3|4|CASE 4|1|OBL 5|1|PUNCT
+*CHI:	oh I xxx .
+%xpho:	<3w> et og D& m ge
+%mor:	intj|oh pron|I-Prs-Nom-S1 .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	I think that's the farmer just like yours .
+%mor:	pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 pron|that-Dem~aux|be-Fin-Ind-Pres-S3 det|the-Def-Art noun|farmer adv|just adp|like pron|your-Prs-S2 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|6|NSUBJ 4|6|COP 5|6|DET 6|2|CCOMP 7|9|ADVMOD 8|9|CASE 9|6|NMOD 10|2|PUNCT
+*MOT:	what do you think that farmer should do ?
+%mor:	pron|what-Int-S1 aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|think-Inf-S sconj|that noun|farmer aux|should-Fin-S verb|do-Inf-S ?
+%gra:	1|8|OBJ 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|8|MARK 6|8|NSUBJ 7|8|AUX 8|4|CCOMP 9|4|PUNCT
+*CHI:	play with them .
+%act:	<1w> puts man on floor . picks man up .
+%mor:	verb|play-Fin-Imp-S adp|with pron|they-Prs-Acc-P3 .
+%gra:	1|0|ROOT 2|3|CASE 3|1|OBL 4|1|PUNCT
+*CHI:	our dog .
+%act:	<1w> drops man and moves him aside .
+%mor:	pron|our-Prs-Gen-P1 noun|dog .
+%gra:	1|2|NMOD-POSS 2|0|ROOT 3|2|PUNCT
+*CHI:	ah .
+%act:	<1w> reaches in dollhouse and puts hand on man in bed
+%mor:	intj|ah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	another dog ?
+%mor:	det|another-Def-Ind noun|dog ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	maybe he'd like to drive his truck .
+%mor:	adv|maybe pron|he-Prs-Nom-S3~aux|would-Fin-S verb|like-Inf-S part|to verb|drive-Inf-S pron|his-Prs-Gen-S3 noun|truck-Acc .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|8|NMOD-POSS 8|6|OBJ 9|4|PUNCT
+*CHI:	truck ?
+%act:	pulls hand away . reaches to pick up man on floor
+%mor:	noun|truck ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	hm: !
+%mor:	intj|hm !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	hm: .
+%mor:	intj|hm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	maybe he'd like to drive <that farm> [//] that car .
+%mor:	adv|maybe pron|he-Prs-Nom-S3~aux|would-Fin-S verb|like-Inf-S part|to verb|drive-Inf-S det|that-Def-Dem-Sing noun|car-Acc .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|8|DET 8|6|OBJ 9|4|PUNCT
+*CHI:	0 .
+%act:	picks up man and puts in truck
+*MOT:	do you think he wants to take some of the rest of his family for a ride ?
+%mor:	aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|think-Inf-S pron|he-Prs-Nom-S3 verb|want-Fin-Ind-Pres-S3 part|to verb|take-Inf-S det|some-Def-Ind adp|of det|the-Def-Art noun|rest adp|of pron|his-Prs-Gen-S3 noun|family adp|for det|a-Ind-Art noun|ride ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|NSUBJ 5|3|CCOMP 6|7|MARK 7|5|XCOMP 8|7|OBJ 9|11|CASE 10|11|DET 11|8|NMOD 12|14|CASE 13|14|NMOD-POSS 14|11|NMOD 15|17|CASE 16|17|DET 17|7|OBL 18|3|PUNCT
+*CHI:	mhm .
+%act:	picks up man
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	who's that lady ?
+%mor:	pron|who-Int~aux|be-Fin-Ind-Pres-S3 det|that-Def-Dem-Sing noun|lady ?
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|4|PUNCT
+*CHI:	&-um (.) my dogs are go(ing) (.) in right there [!] and I don't need to yyy dogs in [*] .
+%act:	<aft> slowly puts dogs to dollhouse and puts through dollhouse door
+%mor:	pron|my-Prs-Gen-S1 noun|dog-Plur aux|be-Fin-Ind-Pres-P3 verb|go-Part-Pres-S adp|in adv|right adv|there cconj|and pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not verb|need-Inf-S part|to noun|dog-Plur-Acc adp|in .
+%gra:	1|2|NMOD-POSS 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|ADVMOD 6|7|ADVMOD 7|4|ADVMOD 8|12|CC 9|12|NSUBJ 10|12|AUX 11|12|ADVMOD 12|4|CONJ 13|14|MARK 14|12|OBJ 15|12|OBL 16|4|PUNCT
+*MOT:	they don't wan(t) (t)a go for a ride ?
+%gpx:	shakes head
+%mor:	pron|they-Prs-Nom-P3 aux|do-Fin-Ind-Pres-P3~part|not verb|want-Inf-S part|to verb|go-Inf-S adp|for det|a-Ind-Art noun|ride ?
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|9|CASE 8|9|DET 9|6|OBL 10|4|PUNCT
+*MOT:	okay (.) leave them home and where [//] where's the kids ?
+%mor:	intj|okay verb|leave-Fin-Imp-S pron|they-Prs-Acc-P3 adv|home cconj|and adv|where~aux|be-Fin-Ind-Pres-S3 det|the-Def-Art noun|kid-Plur ?
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|OBJ 4|2|ADVMOD 5|6|CC 6|2|CONJ 7|9|COP 8|9|DET 9|6|NSUBJ 10|2|PUNCT
+*MOT:	maybe the kids wan(t) (t)a go for a ride .
+%mor:	adv|maybe det|the-Def-Art noun|kid-Plur verb|want-Fin-Ind-Pres-P3 part|to verb|go-Inf-S adp|for det|a-Ind-Art noun|ride .
+%gra:	1|4|ADVMOD 2|3|DET 3|4|NSUBJ 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|9|CASE 8|9|DET 9|6|OBL 10|4|PUNCT
+*CHI:	0 .
+%act:	pulls grill out of dollhouse and sets outside on floor . puts hand on dog . pulls hand away
+*MOT:	think this might be a kid (.) right here .
+%act:	<aft> picks up man from floor and holds out to Ed . lets Ed take man
+%mor:	verb|think-Fin-Imp-S pron|this-Dem-S1 aux|might-Fin-S aux|be-Inf-S det|a-Ind-Art noun|kid adv|right adv|here .
+%gra:	1|0|ROOT 2|6|NSUBJ 3|6|AUX 4|6|COP 5|6|DET 6|1|CCOMP 7|8|ADVMOD 8|6|ADVMOD 9|1|PUNCT
+*CHI:	&-um .
+%act:	<1w> takes Mother's man .
+*CHI:	&-um .
+*CHI:	&-um right there .
+%act:	<1w> reaches in dollhouse and puts hand on dog <1w> puts man in truck .
+%mor:	adv|right adv|there .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	you going to find one more person to go for a ride ?
+%mor:	pron|you-Prs-Nom-S2 verb|go-Part-Pres-S part|to verb|find-Inf-S num|one adj|more-Cmp-S1 noun|person-Acc part|to verb|go-Inf-S adp|for det|a-Ind-Art noun|ride ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|7|NUMMOD 6|7|AMOD 7|4|OBJ 8|9|MARK 9|4|ADVCL 10|12|CASE 11|12|DET 12|9|OBL 13|2|PUNCT
+*CHI:	&-um .
+%act:	<1w> reaches in dollhouse door . <1w> takes hand away from dog .
+*CHI:	oops !
+%act:	<1w> pulls hand away quickly
+%mor:	intj|oop !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	oh .
+%act:	<1w> reaches in window in other side .
+%int:	<1w> drawn out
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	here another one .
+%act:	<1w> reaches in dollhouse with other hand and takes out man .
+%mor:	adv|here det|another-Def-Ind noun|one .
+%gra:	1|0|ROOT 2|3|DET 3|1|NSUBJ 4|1|PUNCT
+*CHI:	two !
+%act:	<1w> puts man in truck
+%mor:	num|two !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	oh_boy .
+%mor:	propn|ohboy .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	for go ride .
+%act:	moves truck with foot and then hand
+%mor:	adp|for verb|go-Inf-S noun|ride-Acc .
+%gra:	1|2|CASE 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	vroom_vroom_vroom@o .
+%mor:	on|vroomvroomvroom .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	now they go back to their house .
+%act:	<1w> takes man from truck and puts back . drives truck to dollhouse .
+%mor:	adv|now pron|they-Prs-Nom-P3 verb|go-Fin-Ind-Pres-P3 adv|back adp|to pron|their-Prs-Gen-P3 noun|house .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|7|CASE 6|7|NMOD-POSS 7|3|OBL 8|3|PUNCT
+*CHI:	<and they> [/] and they sleep again .
+%act:	<1w> parks truck at dollhouse and takes man out . puts man in dollhouse through window and into a bed
+%xpho:	<5w> swip
+%mor:	cconj|and pron|they-Prs-Nom-P3 verb|sleep-Fin-Ind-Pres-P3 adv|again .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*MOT:	they're going to go to sleep again ?
+%mor:	pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|go-Part-Pres-S part|to verb|go-Inf-S part|to verb|sleep-Inf-S adv|again ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|MARK 7|5|ADVCL 8|7|ADVMOD 9|3|PUNCT
+*MOT:	yeah (.) think they're pretty tired (.) huh ?
+%mor:	intj|yeah verb|think-Fin-Imp-S pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 adv|pretty adj|tired-S1 intj|huh ?
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|7|NSUBJ 4|7|COP 5|6|ADVMOD 6|7|AMOD 7|2|CCOMP 8|2|PUNCT
+*CHI:	where [*] another bed ?
+%act:	takes man from truck and holds in hand
+%par:	<bef> big exhale
+%mor:	adv|where det|another-Def-Ind noun|bed ?
+%gra:	1|0|ROOT 2|3|DET 3|1|NSUBJ 4|1|PUNCT
+*MOT:	there's one back there .
+%gpx:	points to bed in dollhouse
+%mor:	pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 num|one noun|back adv|there .
+%gra:	1|2|EXPL 2|0|ROOT 3|4|NUMMOD 4|2|NSUBJ 5|2|ADVMOD 6|2|PUNCT
+*CHI:	oh .
+%act:	reaches in dollhouse with man and outs him in bed
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	they don('t) stay awake .
+%xpho:	<3w-4w> te wek
+%mor:	pron|they-Prs-Nom-P3 aux|do-Fin-Ind-Pres-P3~part|not verb|stay-Inf-S adj|awake-S1 .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|XCOMP 6|4|PUNCT
+*MOT:	don't stay awake ?
+%mor:	aux|do-Fin-Imp-S~part|not verb|stay-Fin-Imp-S adj|awake-S1 ?
+%gra:	1|3|AUX 2|3|ADVMOD 3|0|ROOT 4|3|XCOMP 5|3|PUNCT
+*MOT:	maybe they're hungry again (.) you think ?
+%mor:	adv|maybe pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 adj|hungry-S1 adv|again pron|you-Prs-Nom-S2 verb|think-Fin-Ind-Pres-S2 ?
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|ADVMOD 6|7|NSUBJ 7|4|PARATAXIS 8|4|PUNCT
+*CHI:	mhm .
+%act:	takes man out truck
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	where do you think they'll go if they're hungry ?
+%mor:	adv|where aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|think-Inf-S pron|they-Prs-Nom-P3~aux|will-Fin-S verb|go-Inf-S sconj|if pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 adj|hungry-S1 ?
+%gra:	1|4|ADVMOD 2|4|AUX 3|4|NSUBJ 4|0|ROOT 5|7|NSUBJ 6|7|AUX 7|4|CCOMP 8|11|MARK 9|11|NSUBJ 10|11|COP 11|7|ADVCL 12|4|PUNCT
+*CHI:	in here .
+%act:	<1w> puts man in bench in dollhouse
+%mor:	adp|in adv|here .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*CHI:	one will (.) go (.) here .
+%int:	<4w> rise and fall
+%mor:	pron|one-Prs-S3 aux|will-Fin-S verb|go-Inf-S adv|here .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*MOT:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	one will go in here .
+%act:	takes man from truck and puts in bench in dollhouse . the men are in two different benches
+%mor:	pron|one-Prs-S3 aux|will-Fin-S verb|go-Inf-S adp|in adv|here .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*MOT:	yeah hm [^ ns] .
+%mor:	intj|yeah intj|hm .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|PUNCT
+*MOT:	now they're eating (.) huh ?
+%mor:	adv|now pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|eat-Part-Pres-S intj|huh ?
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	yyy one .
+%act:	situates man in kitchen
+%xpho:	t3rt w6n
+%mor:	num|one .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	there [/] there now they're eating !
+%act:	picks up grill and holds in hand
+%int:	<1w> rise and fall
+%xpho:	<2w> der
+%mor:	pron|there-Int-S1 adv|now pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 verb|eat-Part-Pres-S !
+%gra:	1|5|EXPL 2|5|ADVMOD 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*MOT:	0 [=! chuckles] .
+%act:	pats Ed's back
+*CHI:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yep .
+%mor:	intj|yep .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's that ?
+%gpx:	<1w> points to grill
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	&-um what's that ?
+%act:	examines grill turning it in his hand
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*MOT:	oh .
+%int:	<1w> drawn out
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's on there ?
+%gpx:	<1w> points to grill
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 adp|on adv|there ?
+%gra:	1|0|ROOT 2|4|COP 3|4|CASE 4|1|ADVMOD 5|1|PUNCT
+*CHI:	what's on there ?
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 adp|on adv|there ?
+%gra:	1|0|ROOT 2|4|COP 3|4|CASE 4|1|ADVMOD 5|1|PUNCT
+*MOT:	there's hamburgers (.) hotdogs and steak [!] .
+%mor:	pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 noun|hamburger-Plur noun|hotdog-Plur cconj|and noun|steak .
+%gra:	1|2|EXPL 2|0|ROOT 3|2|NSUBJ 4|2|NSUBJ 5|6|CC 6|4|CONJ 7|2|PUNCT
+*MOT:	I think that's a barbecue !
+%gpx:	<1w> points to each item on grill
+%mor:	pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 pron|that-Dem~aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|barbecue !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|6|NSUBJ 4|6|COP 5|6|DET 6|2|CCOMP 7|2|PUNCT
+@End

@@ -217,8 +217,12 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# datasets - never commit (large / restricted / derived)
-data/
+# datasets: the public CHILDES corpora the project uses ARE committed (data/childes/, see
+# data/README.md for license + citations); the archive of unused corpora is not
+data/*
+!data/README.md
+!data/childes/
+data/childes/not_in_use/
 *.zip
 
 # macOS + Python cache + outputs
@@ -227,14 +231,23 @@ __pycache__/
 *.pyc
 results/*
 !results/.gitkeep
+# board figures + the summary numbers behind them (no per-child data)
+!results/poster/
+!results/operating_point.csv
+!results/asr_stress.csv
+!results/asr_stress_unequal.csv
 
 # personal ISEF registration screenshots (possible PII - keep local, do not commit)
 Data Security during Fair Registration/
 
-# demo transcripts + generated reports (contain minors data - keep local)
-demo/transcripts/
+# generated demo reports (regenerate with src/demo_report.py); demo transcripts are committed
+# (they are copies of public Gillam files, the same as data/childes/Gillam)
 demo/reports/
 web_test/
 .vercel
 web/.vercel
 web/models/
+
+# Not re-posted: EllisWeismer is a password-protected clinical corpus; Providence used only for the local audio test.
+data/childes/EllisWeismer/
+data/childes/Providence/

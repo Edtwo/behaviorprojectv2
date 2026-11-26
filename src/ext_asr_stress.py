@@ -52,3 +52,24 @@ for wer in [0,.10,.20,.30,.40]:
 
 pd.DataFrame(rows).to_csv("results/asr_stress.csv", index=False)
 print("wrote results/asr_stress.csv")
+
+# ---- unequal errors: speech recognition is usually worse on impaired speech ----
+# Same test, but impaired children get MORE errors than typical children.
+print("\nUnequal error rates (typical children | impaired children), mean of 3 runs")
+uneq = []
+for (wt, mt), (wi, mi) in [((.10, .05), (.20, .10)), ((.15, .10), (.30, .20)), ((.20, .10), (.40, .30)),
+                           ((.10, 0), (.40, 0)), ((.20, .10), (.20, .30))]:
+    aucs = []
+    for seed in range(3):
+        rng = np.random.default_rng(seed)
+        X = np.array([feats(corrupt(u, wi if s else wt, mi if s else mt, rng)) + [a]
+                      for u, a, s in zip(en.utts, en.age_months, y)])
+        p = np.zeros(len(y))
+        for tr, te in folds: p[te] = lr().fit(clean[tr], y[tr]).predict_proba(X[te])[:, 1]
+        aucs.append(roc_auc_score(y, p))
+    uneq.append({"wer_td": wt, "merge_td": mt, "wer_sli": wi, "merge_sli": mi, "auc": float(np.mean(aucs))})
+    print(f"  words wrong {wt:.0%} | {wi:.0%}, sentence breaks missed {mt:.0%} | {mi:.0%}  ->  AUC {np.mean(aucs):.3f}")
+pd.DataFrame(uneq).to_csv("results/asr_stress_unequal.csv", index=False)
+print("Reading: word errors barely matter (they even help when impaired speech has more of them, an artifact);\n"
+      "the screen breaks only when impaired children's SENTENCE BREAKS are missed far more often.\n"
+      "So sentence segmentation, not word accuracy, is what a recorder must get right.")

@@ -1,0 +1,823 @@
+@UTF8
+@PID:	11312/a-00102247-0
+@Begin
+@Languages:	zho
+@Participants:	INV Investigator, CHI Target_Child
+@ID:	zho|ZhouNarratives|INV|||||Investigator|||
+@ID:	zho|ZhouNarratives|CHI|4;||||Target_Child|||
+@Comment:	[ba3 morphotag | engine=stanza-1.11.1 ; lang=zho | 2026-05-07T08:02:40-04:00]
+@Media:	4ym01, video
+@Date:	02-MAR-2017
+@Situation:	Kindergarten of Hua Shi Zi Zhu Fu You
+@Types:	cross, narrative, TD
+*INV:	孩名 ‡ 你 把 那 本 书 拿 过来 . 680_4757
+%wor:	孩名 680_3775 ‡ 你 3795_3815 把 3835_3855 那 3875_3935 本 3956_3976 书 3996_4056 拿 4076_4237 过来 4257_4757 .
+%mor:	noun|孩名 punct|‡ pron|你-Int-S2 adp|把 det|那-Def noun|本 noun|书 verb|拿-Inf-S verb|过来-Inf-S .
+%gra:	1|8|NSUBJ 2|8|PUNCT 3|8|NSUBJ 4|7|CASE 5|6|DET 6|7|CLF 7|8|OBL-PATIENT 8|0|ROOT 9|8|MARK 10|8|PUNCT
+*INV:	自己 先 看 一 遍 [^c] . 4337_5038
+%wor:	自己 4337_4398 先 4418_4438 看 4458_4478 一 4498_4518 遍 4538_5038 .
+%mor:	pron|自己-Int-S1 sconj|先 verb|看-Inf-S num|一 noun|遍-Acc .
+%gra:	1|3|NSUBJ 2|3|MARK 3|0|ROOT 4|5|NUMMOD 5|3|OBJ 6|3|PUNCT
+*CHI:	0 .
+%com:	the child turns pages
+*CHI:	我 看 好 了 [^c] . 4579_5239
+%wor:	我 4579_4619 看 4639_4679 好 4699_4719 了 4739_5239 .
+%mor:	pron|我-Int-S1 verb|看-Inf-S adj|好-S1 part|了 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|2|DISCOURSE 5|2|PUNCT
+*INV:	这么 快 啊 . 26580_28543
+%wor:	这么 26580_27983 快 28003_28023 啊 28043_28543 .
+%mor:	adv|这么 adj|快-S1 part|啊 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*CHI:	嗯 .
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	看 好 了 , 我们 来 给 朵拉 讲讲 听 „ 好不好 ? 28084_31331
+%wor:	看 28084_28104 好 28124_28144 了 28164_28184 , 我们 28204_28264 来 28284_28304 给 28324_28344 朵拉 28364_28505 讲讲 28525_30771 听 30791_30811 „ 好不好 30831_31331 ?
+%mor:	verb|看-Inf-S adj|好-S1 part|了 cm|cm pron|我-Int-P1 sconj|来 verb|给-Inf-S propn|朵拉-Acc verb|讲讲-Inf-S verb|听-Inf-S punct|„ adj|好不好-S1 ?
+%gra:	1|9|ADVCL 2|1|XCOMP 3|1|DISCOURSE 4|1|PUNCT 5|9|NSUBJ 6|9|MARK 7|9|ADVCL 8|7|OBJ 9|0|ROOT 10|9|XCOMP 11|12|PUNCT 12|10|CONJ 13|9|PUNCT
+*INV:	给 朵拉 讲讲 . 30951_31592
+%wor:	给 30951_30991 朵拉 31011_31072 讲讲 31092_31592 .
+%mor:	verb|给-Inf-S propn|朵拉-Acc verb|讲讲-Inf-S .
+%gra:	1|3|ADVCL 2|1|OBJ 3|0|ROOT 4|3|PUNCT
+*INV:	你 一边 翻 , 一边 讲 „ 好 吧 ? 31232_33577
+%wor:	你 31232_31252 一边 31272_31332 翻 31352_31372 , 一边 31392_31533 讲 31553_31633 „ 好 31653_33057 吧 33077_33577 ?
+%mor:	pron|你-Int-S2 adv|一边 verb|翻-Inf-S cm|cm adv|一边 verb|讲-Inf-S punct|„ adj|好-S1 punct|吧 ?
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|6|PUNCT 5|6|ADVMOD 6|3|CONJ 7|8|PUNCT 8|6|XCOMP 9|8|PUNCT 10|3|PUNCT
+*CHI:	0 .
+%com:	the child turns to the first page .
+*CHI:	这 是 什么 字 ?
+%mor:	pron|这-Int-S1 aux|是-Inf-S pron|什么-Int-S1 noun|字 ?
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|4|PUNCT
+*INV:	哦 ‡ 不 认识 字 没关系 . 34040_38503
+%wor:	哦 34040_37683 ‡ 不 37703_37823 认识 37843_37923 字 37943_37983 没关系 38003_38503 .
+%mor:	punct|哦 punct|‡ adv|不 verb|认识-Inf-S part|字 adj|没关系-S1 .
+%gra:	1|6|PUNCT 2|6|PUNCT 3|4|ADVMOD 4|5|COMPOUND 5|6|NSUBJ 6|0|ROOT 7|6|PUNCT
+*INV:	我们 看 图画 自己 讲 . 38223_39264
+%wor:	我们 38223_38503 看 38523_38563 图画 38583_38644 自己 38664_38744 讲 38764_39264 .
+%mor:	pron|我-Int-P1 verb|看-Inf-S noun|图画 pron|自己-Int-S1 verb|讲-Inf-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|NSUBJ 4|3|APPOS 5|2|CCOMP 6|2|PUNCT
+*INV:	自己 编 .
+%mor:	pron|自己-Int-S1 verb|编-Inf-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*INV:	不 照 着 它 , 自己 讲 啊 . 38864_40184
+%wor:	不 38864_38944 照 38964_38984 着 39004_39024 它 39044_39204 , 自己 39224_39584 讲 39604_39664 啊 39684_40184 .
+%mor:	adv|不 verb|照-Inf-S aux|着-Inf-Prog-S pron|它-Int-S3 cm|cm pron|自己-Int-S1 verb|讲-Inf-S part|啊 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|AUX 4|2|OBJ 5|7|PUNCT 6|7|NSUBJ 7|2|PARATAXIS 8|7|DISCOURSE 9|2|PUNCT
+*CHI:	+< 这 是 坏人 .
+%mor:	pron|这-Int-S1 aux|是-Inf-S noun|坏人 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*INV:	哦 ‡ 这 是 坏人 . 53550_54170
+%wor:	哦 53550_53570 ‡ 这 53590_53610 是 53630_53650 坏人 53670_54170 .
+%mor:	pron|哦-Int-S1 punct|‡ pron|这-Int-S1 aux|是-Inf-S noun|坏人 .
+%gra:	1|5|NMOD-TMOD 2|1|PUNCT 3|5|NSUBJ 4|5|COP 5|0|ROOT 6|5|PUNCT
+*CHI:	这些 [/] 这些 都 是 枪 . 53750_57519
+%wor:	这些 53750_53850 这些 53870_56618 都 56638_56658 是 56678_56999 枪 57019_57519 .
+%mor:	det|这些-Def sconj|都 aux|是-Inf-S noun|枪 .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|COP 4|0|ROOT 5|4|PUNCT
+*INV:	哦 ‡ 是 枪 啊 ? 57059_57800
+%wor:	哦 57059_57100 ‡ 是 57120_57140 枪 57160_57280 啊 57300_57800 ?
+%mor:	punct|哦 punct|‡ aux|是-Inf-S noun|枪 part|啊 ?
+%gra:	1|4|PUNCT 2|4|PUNCT 3|4|COP 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*CHI:	它 这 是 一 个 喇叭 [^c] . 57360_58382
+%wor:	它 57360_57461 这 57481_57561 是 57581_57681 一 57701_57741 个 57761_57862 喇叭 57882_58382 .
+%mor:	pron|它-Int-S3 pron|这-Int-S1 aux|是-Inf-S num|一 noun|个 noun|喇叭 .
+%gra:	1|6|NSUBJ 2|6|NSUBJ 3|6|COP 4|6|NUMMOD 5|4|CLF 6|0|ROOT 7|6|PUNCT
+*INV:	嗯 .
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	这 个 是 <他 的> [/] 他 的 武器 . 58403_60528
+%wor:	这 58403_58664 个 58684_58885 是 58905_59747 他 59767_59847 的 59867_59928 他 59948_59968 的 59988_60008 武器 60028_60528 .
+%mor:	det|这-Def noun|个 aux|是-Inf-S pron|他-Int-S3 part|的 noun|武器 .
+%gra:	1|2|DET 2|6|NSUBJ 3|6|COP 4|6|DET 5|4|CASE 6|0|ROOT 7|6|PUNCT
+*INV:	嗯 ‡ 他 的 武器 .
+%mor:	punct|嗯 propn|‡ pron|他-Int-S3 part|的 noun|武器 .
+%gra:	1|2|PUNCT 2|5|NMOD 3|5|DET 4|3|CASE 5|0|ROOT 6|5|PUNCT
+*CHI:	他 在 吹 (..) 东西 .
+%mor:	pron|他-Int-S3 adv|在 verb|吹-Inf-S noun|东西-Acc .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	他 在 吹 呀 . 69790_71573
+%wor:	他 69790_70892 在 70912_71013 吹 71033_71053 呀 71073_71573 .
+%mor:	pron|他-Int-S3 adv|在 verb|吹-Inf-S part|呀 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*CHI:	都 吓 死 人 了 . 71213_74700
+%wor:	都 71213_72095 吓 72115_72636 死 72657_72717 人 72737_74180 了 74200_74700 .
+%mor:	sconj|都 verb|吓-Inf-S verb|死-Inf-S noun|人-Acc part|了 .
+%gra:	1|2|MARK 2|0|ROOT 3|2|MARK 4|2|OBJ 5|2|DISCOURSE 6|2|PUNCT
+*INV:	吓 死 了 . 74922_76665
+%wor:	吓 74922_75704 死 75724_76145 了 76165_76665 .
+%mor:	verb|吓-Inf-S verb|死-Inf-S part|了 .
+%gra:	1|0|ROOT 2|1|XCOMP 3|1|DISCOURSE 4|1|PUNCT
+*CHI:	嗯 ‡ 猫头鹰 [^c] .
+%mor:	punct|嗯 propn|‡ noun|猫头鹰 .
+%gra:	1|3|PUNCT 2|3|NMOD 3|0|ROOT 4|3|PUNCT
+*INV:	猫头(鹰) [^c] .
+%mor:	noun|猫头鹰 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	+< 吓 死 , xxx 飞 走 . 76265_77427
+%wor:	吓 76265_76285 死 76306_76346 , 飞 76366_76907 走 76927_77427 .
+%mor:	verb|吓-Inf-S verb|死-Inf-S cm|cm verb|飞-Inf-S verb|走-Inf-S .
+%gra:	1|5|ADVCL 2|1|XCOMP 3|4|PUNCT 4|5|ADVCL 5|0|ROOT 6|5|PUNCT
+*CHI:	他们 ya [: 家] 有 很 多 宝藏 [^c] .
+%mor:	pron|他-Int-P3 part|家 verb|有-Inf-S adv|很 adj|多-S1 noun|宝藏-Acc .
+%gra:	1|2|COMPOUND 2|3|NSUBJ 3|0|ROOT 4|5|ADVMOD 5|6|AMOD 6|3|OBJ 7|3|PUNCT
+*INV:	哦 ‡ 他们 家 有 很 多 宝藏 [^c] .
+%mor:	propn|哦 punct|‡ pron|他-Int-P3 part|家 verb|有-Inf-S adv|很 adj|多-S1 noun|宝藏-Acc .
+%gra:	1|5|NSUBJ 2|1|PUNCT 3|4|COMPOUND 4|5|NSUBJ 5|0|ROOT 6|7|ADVMOD 7|8|AMOD 8|5|OBJ 9|5|PUNCT
+*CHI:	他 在 抱 着 宝宝 睡觉 [^c] . 87850_90576
+%wor:	他 87850_89735 在 89755_89775 抱 89795_89815 着 89835_89855 宝宝 89875_90055 睡觉 90076_90576 .
+%mor:	pron|他-Int-S3 adv|在 verb|抱-Inf-S aux|着-Inf-Prog-S noun|宝宝-Acc verb|睡觉-Inf-S .
+%gra:	1|6|NSUBJ 2|6|ADVMOD 3|6|ADVCL 4|3|AUX 5|3|OBJ 6|0|ROOT 7|6|PUNCT
+*INV:	嗯 .
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	他 也 在 睡觉 [^c] . 90918_93483
+%wor:	他 90918_92863 也 92883_92923 在 92943_92963 睡觉 92983_93483 .
+%mor:	pron|他-Int-S3 sconj|也 adv|在 verb|睡觉-Inf-S .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*INV:	嗯 .
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	他 去 拿 宝藏 . 93064_94967
+%wor:	他 93064_93084 去 93104_93565 拿 93585_94447 宝藏 94467_94967 .
+%mor:	pron|他-Int-S3 verb|去-Inf-S verb|拿-Inf-S noun|宝藏-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|3|OBJ 5|2|PUNCT
+*CHI:	他们 在 (.) 上面 (..) 开车 [//] 开 车子 [^c] . 99080_102294
+%wor:	他们 99080_99441 在 99461_99482 上面 99502_99683 开车 99703_101090 开 101110_101773 车子 101794_102294 .
+%mor:	pron|他-Int-P3 verb|在-Inf-S noun|上面-Acc verb|开-Inf-S noun|车子-Acc .
+%gra:	1|4|NSUBJ 2|4|ADVCL 3|2|OBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	这些 都 是 (.) 魔鬼 .
+%mor:	det|这些-Def sconj|都 aux|是-Inf-S noun|魔鬼 .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	魔:鬼 +...
+%mor:	noun|魔鬼 +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	这里 还 有 xxx <那里 那 个 是> [//] 坏人 的 车 [^c] . 114650_119034
+%wor:	这里 114650_114750 还 114770_114790 有 114810_114830 那里 114850_115050 那 115070_115110 个 115130_115891 是 115911_116972 坏人 116992_118113 的 118133_118514 车 118534_119034 .
+%mor:	pron|这里-Int-S1 sconj|还 verb|有-Inf-S noun|坏人 part|的 noun|车-Acc .
+%gra:	1|3|NSUBJ 2|3|MARK 3|0|ROOT 4|6|NMOD 5|4|CASE 6|3|OBJ 7|3|PUNCT
+*CHI:	他们 在 (.) 吹 喇叭 [^c] . 127940_129220
+%wor:	他们 127940_128620 在 128640_128660 吹 128680_128700 喇叭 128720_129220 .
+%mor:	pron|他-Int-P3 adv|在 verb|吹-Inf-S noun|喇叭-Acc .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	吹 喇叭 [^c] . 128800_129340
+%wor:	吹 128800_128820 喇叭 128840_129340 .
+%mor:	verb|吹-Inf-S noun|喇叭-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*INV:	哦 ‡ 朵拉 想 问问 你 .
+%mor:	punct|哦 punct|‡ propn|朵拉 aux|想-Inf-S verb|问问-Inf-S pron|你-Int-S2 .
+%gra:	1|5|PUNCT 2|3|PUNCT 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+*INV:	这 本 书 它 的 封面 在 哪里 啊 [^c] ? 128920_136245
+%wor:	这 128920_128960 本 128980_129020 书 129040_129100 它 129120_129180 的 129200_129320 封面 129341_129621 在 129641_135485 哪里 135505_135725 啊 135745_136245 ?
+%mor:	det|这-Def noun|本 noun|书 pron|它-Int-S3 part|的 noun|封面 verb|在-Inf-S pron|哪里-Int-S1 part|啊 ?
+%gra:	1|2|DET 2|3|CLF 3|6|NMOD 4|6|DET 5|4|CASE 6|7|NSUBJ 7|0|ROOT 8|7|OBJ 9|7|DISCOURSE 10|7|PUNCT
+*CHI:	0 .
+%act:	指着书的封面 .
+*INV:	这里 . 135785_136285
+%wor:	这里 135785_136285 .
+%mor:	pron|这里-Int-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	你 怎么 知道 的 啊 [^c] ? 135885_136805
+%wor:	你 135885_135905 怎么 135925_136065 知道 136085_136245 的 136265_136285 啊 136305_136805 ?
+%mor:	pron|你-Int-S2 adv|怎么 verb|知道-Inf-S part|的 part|啊 ?
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|DISCOURSE 5|3|DISCOURSE 6|3|PUNCT
+*INV:	往 这边 看看 .
+%mor:	adp|往 pron|这边-Int-S1 verb|看看-Inf-S .
+%gra:	1|2|CASE 2|3|OBL 3|0|ROOT 4|3|PUNCT
+*INV:	你 怎么 知道 的 啊 [^c] ? 136346_138747
+%wor:	你 136346_136366 怎么 136386_136826 知道 136846_137887 的 137907_138227 啊 138247_138747 ?
+%mor:	pron|你-Int-S2 adv|怎么 verb|知道-Inf-S part|的 part|啊 ?
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|DISCOURSE 5|3|DISCOURSE 6|3|PUNCT
+*CHI:	因为 它 有 一 个 字 的 [^c] . 141930_143731
+%wor:	因为 141930_142530 它 142550_142991 有 143011_143031 一 143051_143111 个 143131_143151 字 143171_143211 的 143231_143731 .
+%mor:	adp|因为 pron|它-Int-S3 verb|有-Inf-S num|一 noun|个 noun|字-Acc part|的 .
+%gra:	1|3|CASE 2|3|NSUBJ 3|0|ROOT 4|6|NUMMOD 5|4|CLF 6|3|OBJ 7|3|DISCOURSE 8|3|PUNCT
+*INV:	哦 ‡ 有 字 啊 . 143332_144032
+%wor:	哦 143332_143392 ‡ 有 143412_143452 字 143472_143512 啊 143532_144032 .
+%mor:	punct|哦 punct|‡ verb|有-Inf-S noun|字-Acc punct|啊 .
+%gra:	1|3|PUNCT 2|3|PUNCT 3|0|ROOT 4|3|OBJ 5|3|PUNCT 6|3|PUNCT
+*INV:	嗯 ‡ 那 +/.
+%mor:	punct|嗯 propn|‡ pron|那-Int-S1 +/.
+%gra:	1|2|PUNCT 2|0|ROOT 3|2|APPOS 4|2|PUNCT
+*CHI:	+< 这 都 是 魔鬼 . 143572_144252
+%wor:	这 143572_143612 都 143632_143692 是 143712_143732 魔鬼 143752_144252 .
+%mor:	pron|这-Int-S1 sconj|都 aux|是-Inf-S noun|魔鬼 .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|COP 4|0|ROOT 5|4|PUNCT
+*INV:	魔鬼 .
+%mor:	noun|魔鬼 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	好 ‡ 那 那 这 个 故事 是 从 哪 一 页 开始 的 啊 ? 143832_145975
+%wor:	好 143832_143852 ‡ 那 143872_143912 那 143932_143992 这 144012_144033 个 144053_144073 故事 144093_144173 是 144193_144233 从 144253_144273 哪 144293_144313 一 144333_144413 页 144433_144453 开始 144473_145274 的 145294_145455 啊 145475_145975 ?
+%mor:	adv|好 punct|‡ det|那-Def det|那-Def det|这-Def noun|个 noun|故事 verb|是-Inf-S adp|从 det|哪-Def num|一 noun|页 verb|开始-Inf-S part|的 part|啊 ?
+%gra:	1|8|ADVMOD 2|1|PUNCT 3|6|DET 4|6|DET 5|6|DET 6|7|CLF 7|8|NSUBJ 8|0|ROOT 9|12|CASE 10|12|DET 11|12|NUMMOD 12|13|OBL 13|8|XCOMP 14|8|DISCOURSE 15|8|DISCOURSE 16|8|PUNCT
+*INV:	你 翻 到 那 一 页 . 146116_150401
+%wor:	你 146116_146216 翻 146236_146356 到 146376_146756 那 146776_146796 一 146817_149881 页 149901_150401 .
+%mor:	pron|你-Int-S2 verb|翻-Inf-S verb|到-Inf-S det|那-Def num|一 noun|页-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|MARK 4|6|DET 5|6|NUMMOD 6|2|OBJ 7|2|PUNCT
+*INV:	我 看看 .
+%mor:	pron|我-Int-S1 verb|看看-Inf-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*INV:	是 从 哪 一 页 开始 的 啊 ? 151583_154106
+%wor:	是 151583_151603 从 151623_151704 哪 151724_151904 一 151924_152124 页 152144_152264 开始 152284_153446 的 153466_153586 啊 153606_154106 ?
+%mor:	verb|是-Inf-S adp|从 det|哪-Def num|一 noun|页 verb|开始-Inf-S part|的 part|啊 ?
+%gra:	1|0|ROOT 2|5|CASE 3|5|DET 4|5|NUMMOD 5|6|OBL 6|1|XCOMP 7|1|DISCOURSE 8|1|DISCOURSE 9|1|PUNCT
+*INV:	从 这里 啊 . 154447_155909
+%wor:	从 154447_154528 这里 154548_155389 啊 155409_155909 .
+%mor:	adp|从 pron|这里-Int-S1 part|啊 .
+%gra:	1|2|CASE 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*INV:	哦 ‡ 那 这 本 书 叫 什么 名字 啊 [^c] ? 155850_160075
+%wor:	哦 155850_158694 ‡ 那 158714_158734 这 158754_158854 本 158874_159174 书 159194_159214 叫 159234_159254 什么 159274_159375 名字 159395_159555 啊 159575_160075 ?
+%mor:	pron|哦-Int-S1 punct|‡ det|那-Def det|这-Def noun|本 noun|书 verb|叫-Inf-S pron|什么-Int-S1 noun|名字-Acc part|啊 ?
+%gra:	1|7|OBL 2|1|PUNCT 3|5|DET 4|5|DET 5|6|CLF 6|7|NSUBJ 7|0|ROOT 8|9|DET 9|7|OBJ 10|7|DISCOURSE 11|7|PUNCT
+*CHI:	叫 (..) 坏人 [^c] . 159635_160175
+%wor:	叫 159635_159655 坏人 159675_160175 .
+%mor:	verb|叫-Inf-S noun|坏人-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*INV:	叫 坏人 啊 [^c] . 159755_160415
+%wor:	叫 159755_159775 坏人 159795_159895 啊 159915_160415 .
+%mor:	verb|叫-Inf-S noun|坏人-Acc part|啊 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|DISCOURSE 4|1|PUNCT
+*INV:	好 ‡ 我们 看看 .
+%mor:	adv|好 punct|‡ pron|我-Int-P1 verb|看看-Inf-S .
+%gra:	1|4|ADVMOD 2|4|PUNCT 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*INV:	你 看看 这里 有 什么 东西 啊 ?
+%mor:	pron|你-Int-S2 verb|看看-Inf-S pron|这里-Int-S1 verb|有-Inf-S pron|什么-Int-S1 noun|东西-Acc part|啊 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|6|DET 6|4|OBJ 7|2|DISCOURSE 8|2|PUNCT
+*INV:	这里 有 些 什么 呀 [^c] ? 160036_166825
+%wor:	这里 160036_160396 有 160416_160516 些 160536_164442 什么 164462_166304 呀 166325_166825 ?
+%mor:	pron|这里-Int-S1 verb|有-Inf-S adj|些-S1 pron|什么-Int-S1 part|呀 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|AMOD 4|2|OBJ 5|2|DISCOURSE 6|2|PUNCT
+*CHI:	有 些 坏人 [^c] .
+%mor:	verb|有-Inf-S adj|些-S1 noun|坏人-Acc .
+%gra:	1|0|ROOT 2|3|AMOD 3|1|OBJ 4|1|PUNCT
+*INV:	+< 有 些 坏人 呀 [^c] . 166385_167065
+%wor:	有 166385_166405 些 166425_166445 坏人 166465_166545 呀 166565_167065 .
+%mor:	verb|有-Inf-S adj|些-S1 noun|坏人-Acc part|呀 .
+%gra:	1|0|ROOT 2|3|AMOD 3|1|OBJ 4|1|DISCOURSE 5|1|PUNCT
+*INV:	这里 有 什么 呀 [^c] ? 166605_168607
+%wor:	这里 166605_166765 有 166785_166805 什么 166825_168087 呀 168107_168607 ?
+%mor:	pron|这里-Int-S1 verb|有-Inf-S pron|什么-Int-S1 part|呀 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|DISCOURSE 5|2|PUNCT
+*CHI:	没 了 [^c] .
+%mor:	verb|没-Inf-S part|了 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*INV:	没 了 [^c] . 168147_168727
+%wor:	没 168147_168207 了 168227_168727 .
+%mor:	verb|没-Inf-S part|了 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*CHI:	白 的 .
+%mor:	propn|白 part|的 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*INV:	+< 好 ‡ 这 是 谁 呀 ? 171710_175755
+%wor:	好 171710_174654 ‡ 这 174674_174694 是 174714_175194 谁 175214_175235 呀 175255_175755 ?
+%mor:	adv|好 punct|‡ pron|这-Int-S1 aux|是-Inf-S pron|谁-Int-S1 part|呀 ?
+%gra:	1|5|ADVMOD 2|5|PUNCT 3|5|NSUBJ 4|5|COP 5|0|ROOT 6|5|DISCOURSE 7|5|PUNCT
+*CHI:	坏人 .
+%mor:	noun|坏人 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	坏人 呀 . 175435_176295
+%wor:	坏人 175435_175775 呀 175795_176295 .
+%mor:	noun|坏人 part|呀 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*INV:	我们 看看 哦 .
+%mor:	pron|我-Int-P1 verb|看看-Inf-S pron|哦-Int-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*INV:	这里 有 些 什么 东西 呀 [^c] ? 175835_179680
+%wor:	这里 175835_176396 有 176416_176817 些 176837_177037 什么 177057_177217 东西 177237_179160 呀 179180_179680 ?
+%mor:	pron|这里-Int-S1 verb|有-Inf-S adj|些-S1 pron|什么-Int-S1 noun|东西-Acc part|呀 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|AMOD 4|5|DET 5|2|OBJ 6|2|DISCOURSE 7|2|PUNCT
+*CHI:	他 说 什么 字 &=pounds_book ?
+%mor:	pron|他-Int-S3 verb|说-Inf-S pron|什么-Int-S1 noun|字-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*INV:	这里 有 些 什么 呀 [^c] ? 179400_181282
+%wor:	这里 179400_179581 有 179601_179681 些 179701_180362 什么 180382_180762 呀 180782_181282 ?
+%mor:	pron|这里-Int-S1 verb|有-Inf-S adj|些-S1 pron|什么-Int-S1 part|呀 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|AMOD 4|2|OBJ 5|2|DISCOURSE 6|2|PUNCT
+*CHI:	榔头 什么的 [^c] .
+%mor:	noun|榔头 adj|什么的-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*INV:	哦 ‡ 这 是 谁 的 啊 [^c] ? 180903_183786
+%wor:	哦 180903_180943 ‡ 这 180963_180983 是 181003_181243 谁 181263_183206 的 183226_183266 啊 183286_183786 ?
+%mor:	punct|哦 punct|‡ pron|这-Int-S1 aux|是-Inf-S pron|谁-Int-S1 part|的 part|啊 ?
+%gra:	1|5|PUNCT 2|5|PUNCT 3|5|NSUBJ 4|5|COP 5|0|ROOT 6|5|DISCOURSE 7|5|DISCOURSE 8|5|PUNCT
+*INV:	榔头 什么的 是 谁 的 东西 啊 [^c] ? 183326_185248
+%wor:	榔头 183326_184167 什么的 184187_184327 是 184347_184367 谁 184388_184448 的 184468_184648 东西 184668_184728 啊 184748_185248 ?
+%mor:	noun|榔头 pron|什么的-Int-S1 aux|是-Inf-S pron|谁-Int-S1 part|的 noun|东西 punct|啊 ?
+%gra:	1|2|NMOD 2|6|NSUBJ 3|6|COP 4|6|DET 5|4|CASE 6|0|ROOT 7|6|PUNCT 8|6|PUNCT
+*CHI:	是 [/] 是 坏人 的 东西 [^c] . 186070_187351
+%wor:	是 186070_186210 是 186230_186250 坏人 186270_186490 的 186510_186831 东西 186851_187351 .
+%mor:	aux|是-Inf-S noun|坏人 part|的 noun|东西 .
+%gra:	1|4|COP 2|4|NMOD 3|2|CASE 4|0|ROOT 5|4|PUNCT
+*INV:	+< 坏人 用 这些 东西 做 什么 啊 [^c] ? 186931_191837
+%wor:	坏人 186931_189634 用 189654_189695 这些 189715_189795 东西 189815_191056 做 191076_191157 什么 191177_191317 啊 191337_191837 ?
+%mor:	noun|坏人 verb|用-Inf-S det|这些-Def noun|东西-Acc verb|做-Inf-S pron|什么-Int-S1 part|啊 ?
+%gra:	1|5|NSUBJ 2|5|ADVCL 3|4|DET 4|2|OBJ 5|0|ROOT 6|5|OBJ 7|5|DISCOURSE 8|5|PUNCT
+*CHI:	<搞 装修 的> [?] [^c] .
+%mor:	verb|搞-Inf-S verb|装修-Inf-S part|的 .
+%gra:	1|0|ROOT 2|1|XCOMP 3|1|DISCOURSE 4|1|PUNCT
+*INV:	打 什么 人 +/. 191397_192318
+%wor:	打 191397_191477 什么 191497_191797 人 191818_192318 +/.
+%mor:	verb|打-Inf-S pron|什么-Int-S1 noun|人-Acc +/.
+%gra:	1|0|ROOT 2|3|NMOD 3|1|OBJ 4|1|PUNCT
+*CHI:	<是 这 个> [/] 是 这 个 . 191878_196684
+%wor:	是 191878_192679 这 192699_192859 个 192879_193820 是 193840_194842 这 194862_196164 个 196184_196684 .
+%mor:	aux|是-Inf-S det|这-Def noun|个 .
+%gra:	1|3|COP 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	xxx .
+*INV:	哦 ‡ 他们 打 什么 人 ? 196444_197525
+%wor:	哦 196444_196584 ‡ 他们 196604_196684 打 196704_196724 什么 196744_197005 人 197025_197525 ?
+%mor:	punct|哦 adp|‡ pron|他-Int-P3 verb|打-Inf-S pron|什么-Int-S1 noun|人-Acc ?
+%gra:	1|4|PUNCT 2|3|CASE 3|4|OBL 4|0|ROOT 5|6|NMOD 6|4|OBJ 7|4|PUNCT
+*CHI:	打 坏人 的 .
+%mor:	verb|打-Inf-S noun|坏人-Acc part|的 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|DISCOURSE 4|1|PUNCT
+*INV:	打 坏人 的 啊 . 197946_198807
+%wor:	打 197946_198006 坏人 198026_198246 的 198267_198287 啊 198307_198807 .
+%mor:	verb|打-Inf-S noun|坏人-Acc part|的 part|啊 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|DISCOURSE 4|1|DISCOURSE 5|1|PUNCT
+*INV:	这里 [/] 这里 发生 了 什么 事情 啊 [^c] ? 198347_199367
+%wor:	这里 198347_198427 这里 198447_198547 发生 198567_198627 了 198647_198667 什么 198687_198747 事情 198767_198847 啊 198867_199367 ?
+%mor:	pron|这里-Int-S1 verb|发生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 noun|事情-Acc part|啊 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|AUX 4|5|DET 5|2|OBJ 6|2|DISCOURSE 7|2|PUNCT
+*CHI:	他们 在 木头 上 走 [^c] . 201410_202170
+%wor:	他们 201410_201470 在 201490_201510 木头 201530_201610 上 201630_201650 走 201670_202170 .
+%mor:	pron|他-Int-P3 verb|在-Inf-S noun|木头-Acc noun|上 verb|走-Inf-S .
+%gra:	1|5|NSUBJ 2|5|ADVCL 3|2|OBJ 4|3|ACL 5|0|ROOT 6|5|PUNCT
+*INV:	在 木头 上 走 [^c] . 201710_202370
+%wor:	在 201710_201730 木头 201750_201810 上 201830_201850 走 201870_202370 .
+%mor:	adp|在 noun|木头 noun|上 verb|走-Inf-S .
+%gra:	1|2|CASE 2|4|OBL 3|2|ACL 4|0|ROOT 5|4|PUNCT
+*INV:	是 什么 时候 啊 „ 你 看 [^c] ? 201910_204113
+%wor:	是 201910_201930 什么 201950_203252 时候 203272_203513 啊 203533_203553 „ 你 203573_203593 看 203613_204113 ?
+%mor:	aux|是-Inf-S pron|什么-Int-S1 noun|时候 part|啊 punct|„ pron|你-Int-S2 verb|看-Inf-S ?
+%gra:	1|3|COP 2|3|DET 3|7|OBL 4|3|DISCOURSE 5|7|PUNCT 6|7|NSUBJ 7|0|ROOT 8|7|PUNCT
+*CHI:	晚上 [^c] . 204234_204734
+%wor:	晚上 204234_204734 .
+%mor:	noun|晚上 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	你 怎么 知道 是 晚上 啊 ? 205596_206817
+%wor:	你 205596_205936 怎么 205956_206077 知道 206097_206157 是 206177_206197 晚上 206217_206297 啊 206317_206817 ?
+%mor:	pron|你-Int-S2 adv|怎么 verb|知道-Inf-S aux|是-Inf-S noun|晚上 part|啊 ?
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|5|COP 5|3|XCOMP 6|3|DISCOURSE 7|3|PUNCT
+*CHI:	因为 它 天气 黑 了 [^c] . 206357_208860
+%wor:	因为 206357_206417 它 206437_206457 天气 206477_208060 黑 208080_208340 了 208360_208860 .
+%mor:	adp|因为 pron|它-Int-S3 noun|天气 adj|黑-S1 part|了 .
+%gra:	1|4|CASE 2|4|NSUBJ 3|4|NSUBJ 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*INV:	哦 ‡ 天气 黑 了 [^c] . 209442_210282
+%wor:	哦 209442_209462 ‡ 天气 209482_209542 黑 209562_209762 了 209782_210282 .
+%mor:	punct|哦 punct|‡ noun|天气 adj|黑-S1 part|了 .
+%gra:	1|4|PUNCT 2|4|PUNCT 3|4|NSUBJ 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*INV:	这里 发生 了 什么 啊 [^c] ? 209822_213527
+%wor:	这里 209822_211665 发生 211685_211765 了 211785_211805 什么 211825_213007 啊 213027_213527 ?
+%mor:	pron|这里-Int-S1 verb|发生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 part|啊 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|AUX 4|2|OBJ 5|2|DISCOURSE 6|2|PUNCT
+*CHI:	有 月亮 还有 他 的 宝藏 [^c] . 213107_213948
+%wor:	有 213107_213127 月亮 213147_213247 还有 213267_213328 他 213348_213388 的 213408_213428 宝藏 213448_213948 .
+%mor:	verb|有-Inf-S noun|月亮 verb|还有-Inf-S pron|他-Int-S3 sconj|的 noun|宝藏-Acc .
+%gra:	1|0|ROOT 2|3|NSUBJ 3|6|ACL-RELCL 4|3|OBJ 5|3|MARK-REL 6|1|OBJ 7|1|PUNCT
+*CHI:	宝:藏 [^c] .
+%mor:	noun|宝藏 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	这里 发生 了 什么 [^c] ? 216630_217570
+%wor:	这里 216630_216850 发生 216870_216970 了 216990_217050 什么 217070_217570 ?
+%mor:	pron|这里-Int-S1 verb|发生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|AUX 4|2|OBJ 5|2|PUNCT
+*CHI:	有 马 [^c] .
+%mor:	verb|有-Inf-S propn|马-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*INV:	有 马 [^c] . 220515_224019
+%wor:	有 220515_223499 马 223519_224019 .
+%mor:	verb|有-Inf-S propn|马-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*INV:	做 什么 啊 ?
+%mor:	verb|做-Inf-S pron|什么-Int-S1 part|啊 ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|DISCOURSE 4|1|PUNCT
+*CHI:	+< 马 都 吓 死 人 了 [^c] . 223599_224320
+%wor:	马 223599_223619 都 223639_223659 吓 223679_223699 死 223719_223739 人 223759_223800 了 223820_224320 .
+%mor:	propn|马 sconj|都 verb|吓-Inf-S verb|死-Inf-S noun|人-Acc part|了 .
+%gra:	1|3|NSUBJ 2|3|MARK 3|0|ROOT 4|3|XCOMP 5|4|OBJ 6|3|DISCOURSE 7|3|PUNCT
+*INV:	哦 ‡ 马 都 吓 死 了 [^c] . 223880_224980
+%wor:	哦 223880_223940 ‡ 马 223960_224040 都 224060_224380 吓 224400_224420 死 224440_224460 了 224480_224980 .
+%mor:	punct|哦 punct|‡ propn|马 sconj|都 verb|吓-Inf-S verb|死-Inf-S part|了 .
+%gra:	1|3|PUNCT 2|3|PUNCT 3|6|NSUBJ 4|6|MARK 5|6|ADVCL 6|0|ROOT 7|6|DISCOURSE 8|6|PUNCT
+*INV:	这里 发生 了 什么 [^c] ? 226864_228385
+%wor:	这里 226864_227084 发生 227104_227825 了 227845_227865 什么 227885_228385 ?
+%mor:	pron|这里-Int-S1 verb|发生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|AUX 4|2|OBJ 5|2|PUNCT
+*CHI:	驾@o .
+%mor:	on|驾 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	坏人 (..) 想 [/] 想 把 他 的 轮子 弄 坏 [^c] . 228106_229547
+%wor:	坏人 228106_228246 想 228266_228306 想 228326_228386 把 228406_228446 他 228466_228506 的 228526_228546 轮子 228566_228947 弄 228967_229027 坏 229047_229547 .
+%mor:	noun|坏人 aux|想-Inf-S adp|把 pron|他-Int-S3 part|的 noun|轮子 verb|弄-Inf-S adj|坏-S1 .
+%gra:	1|7|NSUBJ 2|7|AUX 3|6|CASE 4|6|DET 5|4|CASE 6|7|OBL-PATIENT 7|0|ROOT 8|7|XCOMP 9|7|PUNCT
+*INV:	他 为什么 要 把 他 轮子 弄 坏 呀 [^c] ? 231190_233793
+%wor:	他 231190_232812 为什么 232832_232992 要 233012_233032 把 233052_233072 他 233092_233112 轮子 233133_233193 弄 233213_233233 坏 233253_233273 呀 233293_233793 ?
+%mor:	pron|他-Int-S3 adv|为什么 aux|要-Inf-S adp|把 pron|他-Int-S3 noun|轮子 verb|弄-Inf-S adj|坏-S1 part|呀 ?
+%gra:	1|7|NSUBJ 2|7|ADVMOD 3|7|AUX 4|6|CASE 5|6|NMOD 6|7|OBL-PATIENT 7|0|ROOT 8|7|XCOMP 9|7|DISCOURSE 10|7|PUNCT
+*CHI:	看 xxx &=points .
+%mor:	verb|看-Inf-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	+< 对 呀 ‡ 他 为什么 要 把 他 弄 坏 呀 [^c] ? 233333_234294
+%wor:	对 233333_233353 呀 233373_233393 ‡ 他 233413_233433 为什么 233453_233553 要 233573_233593 把 233613_233633 他 233653_233693 弄 233713_233733 坏 233753_233774 呀 233794_234294 ?
+%mor:	adp|对 pron|呀-Int-S1 punct|‡ pron|他-Int-S3 adv|为什么 aux|要-Inf-S adp|把 pron|他-Int-S3 verb|弄-Inf-S adj|坏-S1 part|呀 ?
+%gra:	1|2|CASE 2|9|OBL 3|2|PUNCT 4|9|NSUBJ 5|9|ADVMOD 6|9|AUX 7|8|CASE 8|9|OBL-PATIENT 9|0|ROOT 10|9|XCOMP 11|9|DISCOURSE 12|9|PUNCT
+*CHI:	因为 他 是 坏人 , [^c] 所以 要 把 他 弄 坏 . 233834_235335
+%wor:	因为 233834_233894 他 233914_233934 是 233954_233974 坏人 233994_234054 , 所以 234074_234154 要 234174_234675 把 234695_234715 他 234735_234775 弄 234795_234815 坏 234835_235335 .
+%mor:	adp|因为 pron|他-Int-S3 aux|是-Inf-S noun|坏人 cm|cm sconj|所以 aux|要-Inf-S adp|把 pron|他-Int-S3 verb|弄-Inf-S adj|坏-S1 .
+%gra:	1|4|CASE 2|4|NSUBJ 3|4|COP 4|10|CCOMP 5|4|PUNCT 6|10|MARK 7|10|AUX 8|9|CASE 9|10|OBL-PATIENT 10|0|ROOT 11|10|XCOMP 12|10|PUNCT
+*INV:	+< 原来 他 是 坏人 .
+%mor:	adv|原来 pron|他-Int-S3 aux|是-Inf-S noun|坏人 .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*INV:	这里 发生 什么 事情 ? 234875_238400
+%wor:	这里 234875_237700 发生 237720_237780 什么 237800_237880 事情 237900_238400 ?
+%mor:	pron|这里-Int-S1 verb|发生-Inf-S pron|什么-Int-S1 noun|事情-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	&=coughs <这里 发生> [//] 这些 都 是 好 人 . 237980_243067
+%wor:	这里 237980_238040 发生 238060_238120 这些 238140_238220 都 238240_238260 是 238280_242327 好 242347_242547 人 242567_243067 .
+%mor:	det|这些-Def sconj|都 aux|是-Inf-S part|好 noun|人 .
+%gra:	1|5|NSUBJ 2|5|MARK 3|5|COP 4|5|CASE 5|0|ROOT 6|5|PUNCT
+*CHI:	<那些 都> [//] 这些 都 是 坏人 .
+%mor:	det|这些-Def sconj|都 aux|是-Inf-S noun|坏人 .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	他们 都 吓 死 人 . 246210_247691
+%wor:	他们 246210_246370 都 246390_246410 吓 246430_247131 死 247151_247171 人 247191_247691 .
+%mor:	pron|他-Int-P3 sconj|都 verb|吓-Inf-S verb|死-Inf-S noun|人-Acc .
+%gra:	1|3|NSUBJ 2|3|MARK 3|0|ROOT 4|3|XCOMP 5|3|OBJ 6|3|PUNCT
+*INV:	吓 死 了 „ 是 吧 ? 247271_249593
+%wor:	吓 247271_247752 死 247772_248993 了 249013_249033 „ 是 249053_249073 吧 249093_249593 ?
+%mor:	verb|吓-Inf-S verb|死-Inf-S aux|了-Inf-Perf-S punct|„ aux|是-Inf-S noun|吧 ?
+%gra:	1|2|CSUBJ 2|0|ROOT 3|2|AUX 4|6|PUNCT 5|6|COP 6|2|CCOMP 7|2|PUNCT
+*INV:	那 你 看 . 249133_250334
+%wor:	那 249133_249153 你 249174_249814 看 249834_250334 .
+%mor:	pron|那-Int-S1 pron|你-Int-S2 verb|看-Inf-S .
+%gra:	1|3|NSUBJ 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	你 [//] 如果 你 是 他们 , 你 会 感觉 怎么样 [^c] 啊 ? 249915_253439
+%wor:	你 249915_252238 如果 252258_252418 你 252438_252458 是 252478_252518 他们 252538_252638 , 你 252658_252678 会 252698_252718 感觉 252738_252798 怎么样 252818_252919 啊 252939_253439 ?
+%mor:	adp|如果 pron|你-Int-S2 aux|是-Inf-S pron|他-Int-P3 cm|cm pron|你-Int-S2 aux|会-Inf-S verb|感觉-Inf-S adj|怎么样-S1 part|啊 ?
+%gra:	1|4|CASE 2|4|NSUBJ 3|4|COP 4|8|CCOMP 5|4|PUNCT 6|8|NSUBJ 7|8|AUX 8|0|ROOT 9|8|XCOMP 10|8|DISCOURSE 11|8|PUNCT
+*CHI:	不 知道 .
+%mor:	adv|不 verb|知道-Inf-S .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV:	你 会不会 吓 死 啊 [^c] ? 252979_253719
+%wor:	你 252979_252999 会不会 253019_253119 吓 253139_253159 死 253179_253199 啊 253219_253719 ?
+%mor:	pron|你-Int-S2 aux|会不会-Inf-S verb|吓-Inf-S verb|死-Inf-S part|啊 ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|XCOMP 5|3|DISCOURSE 6|3|PUNCT
+*CHI:	&=nods .
+*CHI:	会 的 啊 [^c] . 253259_253879
+%wor:	会 253259_253319 的 253339_253359 啊 253379_253879 .
+%mor:	noun|会 part|的 part|啊 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|DISCOURSE 4|1|PUNCT
+*INV:	那 你 会 怎么 办 啊 [^c] ? 253419_256543
+%wor:	那 253419_254721 你 254741_254861 会 254881_254901 怎么 254921_255983 办 256003_256023 啊 256043_256543 ?
+%mor:	pron|那-Int-S1 pron|你-Int-S2 aux|会-Inf-S adv|怎么 verb|办-Inf-S part|啊 ?
+%gra:	1|5|NSUBJ 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|5|DISCOURSE 7|5|PUNCT
+*CHI:	跑 掉 [^c] .
+%mor:	verb|跑-Inf-S verb|掉-Inf-S .
+%gra:	1|0|ROOT 2|1|MARK 3|1|PUNCT
+*INV:	跑 掉 [^c] . 256163_256743
+%wor:	跑 256163_256223 掉 256243_256743 .
+%mor:	verb|跑-Inf-S verb|掉-Inf-S .
+%gra:	1|0|ROOT 2|1|MARK 3|1|PUNCT
+*INV:	这里 发生 了 什么 [^c] ? 256403_261189
+%wor:	这里 256403_258166 发生 258186_258306 了 258326_260669 什么 260689_261189 ?
+%mor:	pron|这里-Int-S1 verb|发生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|AUX 4|2|OBJ 5|2|PUNCT
+*CHI:	不 知道 [^c] .
+%mor:	adv|不 verb|知道-Inf-S .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV:	不 知道 啊 [^c] .
+%mor:	adv|不 verb|知道-Inf-S part|啊 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*INV:	你 看 这 是 什么 东西 啊 ?
+%mor:	pron|你-Int-S2 verb|看-Inf-S pron|这-Int-S1 aux|是-Inf-S pron|什么-Int-S1 noun|东西 part|啊 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|6|NSUBJ 4|6|COP 5|6|DET 6|2|CCOMP 7|2|DISCOURSE 8|2|PUNCT
+*INV:	你 看 这 什么 东西 啊 [^c] ? 261730_262230
+%wor:	你 看 这 什么 261730_262230 东西 啊 ?
+%mor:	pron|你-Int-S2 verb|看-Inf-S det|这-Def pron|什么-Int-S1 noun|东西-Acc part|啊 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|5|CLF 5|2|OBJ 6|2|DISCOURSE 7|2|PUNCT
+*CHI:	+< 宝藏 .
+%mor:	noun|宝藏 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	宝藏 啊 .
+%mor:	noun|宝藏 part|啊 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*INV:	你 看 他 驼 着 宝藏 要 去 哪里 .
+%mor:	pron|你-Int-S2 verb|看-Inf-S pron|他-Int-S3 verb|驼-Inf-S aux|着-Inf-Prog-S noun|宝藏-Acc aux|要-Inf-S verb|去-Inf-S pron|哪里-Int-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|4|AUX 6|4|OBJ 7|8|AUX 8|2|CCOMP 9|8|OBJ 10|2|PUNCT
+*INV:	你 知道 吗 ?
+%mor:	pron|你-Int-S2 verb|知道-Inf-S part|吗 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*CHI:	&=head_shakes .
+*INV:	不 知道 啊 .
+%mor:	adv|不 verb|知道-Inf-S part|啊 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*INV:	这里 发生 什么 啊 [^c] ? 280590_286279
+%wor:	这里 280590_285037 发生 285057_285338 什么 285358_285759 啊 285779_286279 ?
+%mor:	pron|这里-Int-S1 verb|发生-Inf-S pron|什么-Int-S1 part|啊 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|DISCOURSE 5|2|PUNCT
+*CHI:	这 个 是 宝藏 . 285819_286699
+%wor:	这 285819_285839 个 285859_286139 是 286159_286179 宝藏 286199_286699 .
+%mor:	det|这-Def noun|个 aux|是-Inf-S noun|宝藏 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*INV:	这 个 是 宝藏 .
+%mor:	det|这-Def noun|个 aux|是-Inf-S noun|宝藏 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*INV:	那 这里 &~呢 发生 什么 事 啊 ? 286280_287200
+%wor:	那 286280_286300 这里 286320_286380 发生 286400_286480 什么 286500_286620 事 286640_286680 啊 286700_287200 ?
+%mor:	det|那-Def pron|这里-Int-S1 verb|发生-Inf-S pron|什么-Int-S1 noun|事-Acc part|啊 ?
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|DISCOURSE 7|3|PUNCT
+*CHI:	他 [/] &~sh 他 说 他 是 坏人 [^c] . 288283_290466
+%wor:	他 288283_288443 他 288463_289786 说 289806_289866 他 289886_289906 是 289926_289946 坏人 289966_290466 .
+%mor:	pron|他-Int-S3 verb|说-Inf-S pron|他-Int-S3 aux|是-Inf-S noun|坏人 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|NSUBJ 4|5|COP 5|2|CCOMP 6|2|PUNCT
+*INV:	他 说 他 是 坏人 [^c] . 290046_291308
+%wor:	他 290046_290667 说 290687_290707 他 290728_290748 是 290768_290788 坏人 290808_291308 .
+%mor:	pron|他-Int-S3 verb|说-Inf-S pron|他-Int-S3 aux|是-Inf-S noun|坏人 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|NSUBJ 4|5|COP 5|2|CCOMP 6|2|PUNCT
+*INV:	这里 呢 ? 290888_291468
+%wor:	这里 290888_290948 呢 290968_291468 ?
+%mor:	pron|这里-Int-S1 part|呢 ?
+%gra:	1|0|ROOT 2|1|CASE 3|1|PUNCT
+*INV:	发生 什么 啊 ? 291008_291728
+%wor:	发生 291008_291088 什么 291108_291208 啊 291228_291728 ?
+%mor:	verb|发生-Inf-S pron|什么-Int-S1 part|啊 ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|DISCOURSE 4|1|PUNCT
+*CHI:	&~yu4tu1tu1 &~tu1 .
+*INV:	&~tu1 啊 .
+%mor:	part|啊 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&~tu1 .
+*INV:	什么 &~tu 啊 . 295530_296110
+%wor:	什么 295530_295590 啊 295610_296110 .
+%mor:	pron|什么-Int-S1 part|啊 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*CHI:	不是 &~tu4 . 295650_296150
+%wor:	不是 295650_296150 .
+%mor:	aux|是-Inf-Neg-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	是 &~tu1 . 296490_296990
+%wor:	是 296490_296990 .
+%mor:	aux|是-Inf-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	&~tu1 什么 啊 . 296670_302574
+%wor:	什么 296670_302054 啊 302074_302574 .
+%mor:	pron|什么-Int-S1 part|啊 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*INV:	什么 &~tu 啊 . 302314_302914
+%wor:	什么 302314_302394 啊 302414_302914 .
+%mor:	pron|什么-Int-S1 part|啊 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*CHI:	+< &~tu1 &~tu1 (...) &~tu1 他 在 睡觉 . 302454_303034
+%wor:	他 302454_302474 在 302494_302514 睡觉 302534_303034 .
+%mor:	pron|他-Int-S3 adv|在 verb|睡觉-Inf-S .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*INV:	他 在 睡觉 啊 . 302654_303395
+%wor:	他 302654_302694 在 302714_302775 睡觉 302795_302875 啊 302895_303395 .
+%mor:	pron|他-Int-S3 adv|在 verb|睡觉-Inf-S part|啊 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*INV:	那 这里 呢 [^c] . 303155_304255
+%wor:	那 303155_303175 这里 303195_303735 呢 303755_304255 .
+%mor:	pron|那-Int-S1 pron|这里-Int-S1 part|呢 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|CASE 4|2|PUNCT
+*INV:	这里 发生 什么 啊 ? 303795_304776
+%wor:	这里 303795_303915 发生 303935_304095 什么 304115_304256 啊 304276_304776 ?
+%mor:	pron|这里-Int-S1 verb|发生-Inf-S pron|什么-Int-S1 part|啊 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|DISCOURSE 5|2|PUNCT
+*CHI:	他 也 在 睡觉 . 304316_305056
+%wor:	他 304316_304376 也 304396_304436 在 304456_304536 睡觉 304556_305056 .
+%mor:	pron|他-Int-S3 sconj|也 adv|在 verb|睡觉-Inf-S .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*INV:	还 在 睡觉 .
+%mor:	sconj|还 adv|在 verb|睡觉-Inf-S .
+%gra:	1|3|MARK 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	他 在 拿 宝藏 [^c] . 310520_311981
+%wor:	他 310520_311161 在 311181_311401 拿 311421_311461 宝藏 311481_311981 .
+%mor:	pron|他-Int-S3 adv|在 verb|拿-Inf-S noun|宝藏-Acc .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	他 在 拿 宝藏 啊 [^c] . 312183_312963
+%wor:	他 312183_312263 在 312283_312303 拿 312323_312343 宝藏 312363_312443 啊 312463_312963 .
+%mor:	pron|他-Int-S3 adv|在 verb|拿-Inf-S noun|宝藏-Acc part|啊 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|DISCOURSE 6|3|PUNCT
+*INV:	嗯 ‡ <如果 是 你> [//] 你 看 你 [//] 如果 你 是 他 , [^c] <你 拿> [/] 你 拿 那么 多 宝藏 . 313224_319515
+%wor:	嗯 313224_313525 ‡ 如果 313545_313846 是 313866_313886 你 313906_313946 你 313966_313986 看 314006_314046 你 314066_314487 如果 314507_315268 你 315288_315569 是 315589_316791 他 316811_316911 , 你 316931_316971 拿 316991_317072 你 317092_317172 拿 317192_317372 那么 317392_317853 多 317873_318995 宝藏 319015_319515 .
+%mor:	punct|嗯 propn|‡ pron|你-Int-S2 verb|看-Inf-S adp|如果 pron|你-Int-S2 aux|是-Inf-S pron|他-Int-S3 cm|cm pron|你-Int-S2 verb|拿-Inf-S adv|那么 adj|多-S1 noun|宝藏-Acc .
+%gra:	1|4|PUNCT 2|4|NSUBJ 3|4|NSUBJ 4|0|ROOT 5|8|CASE 6|8|NSUBJ 7|8|COP 8|11|CCOMP 9|11|PUNCT 10|11|NSUBJ 11|4|XCOMP 12|13|ADVMOD 13|14|AMOD 14|11|OBJ 15|4|PUNCT
+*INV:	你 去 怎么 做 [^c] ? 319175_320337
+%wor:	你 319175_319256 去 319276_319716 怎么 319736_319817 做 319837_320337 ?
+%mor:	pron|你-Int-S2 sconj|去 adv|怎么 verb|做-Inf-S ?
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	不 知道 [^c] .
+%mor:	adv|不 verb|知道-Inf-S .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV:	不 知道 [^c] .
+%mor:	adv|不 verb|知道-Inf-S .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV:	好 ‡ 那 我 还 想 问 你 . 319937_321779
+%wor:	好 319937_320297 ‡ 那 320317_320358 我 320378_320959 还 320979_321119 想 321139_321159 问 321179_321259 你 321279_321779 .
+%mor:	adv|好 punct|‡ pron|那-Int-S1 pron|我-Int-S1 sconj|还 aux|想-Inf-S verb|问-Inf-S pron|你-Int-S2 .
+%gra:	1|7|ADVMOD 2|1|PUNCT 3|7|NSUBJ 4|3|APPOS 5|7|MARK 6|7|AUX 7|0|ROOT 8|7|OBJ 9|7|PUNCT
+*INV:	这 个 拿 宝藏 的 人 , 还有 这个 睡觉 的 , 这个 睡觉 的 , 还有 这 个 人 . 321960_327768
+%wor:	这 321960_321980 个 322000_322020 拿 322040_322060 宝藏 322080_322140 的 322160_322180 人 322200_322220 , 还有 322240_322320 这个 322340_323923 睡觉 323943_324163 的 324183_324544 , 这个 324564_324984 睡觉 325004_325145 的 325165_325245 , 还有 325265_326968 这 326988_327208 个 327228_327248 人 327268_327768 .
+%mor:	det|这-Def noun|个 verb|拿-Inf-S noun|宝藏-Acc sconj|的 noun|人 cm|cm verb|还有-Inf-S pron|这个-Int-S1 verb|睡觉-Inf-S sconj|的 cm|cm pron|这个-Int-S1 verb|睡觉-Inf-S sconj|的 cm|cm verb|还有-Inf-S det|这-Def noun|个 noun|人-Acc .
+%gra:	1|2|DET 2|6|CLF 3|6|ACL-RELCL 4|3|OBJ 5|3|MARK-REL 6|0|ROOT 7|8|CC 8|6|CONJ 9|10|NSUBJ 10|6|ACL-RELCL 11|10|MARK-REL 12|17|PUNCT 13|14|NSUBJ 14|17|ADVCL 15|14|MARK-REL 16|17|CC 17|8|CONJ 18|19|DET 19|20|CLF 20|17|OBJ 21|6|PUNCT
+*INV:	他们 <是 一> [/] 是 一 个 人 吗 , 还是 不 是 一 个 人 [^c] ? 327348_329591
+%wor:	他们 327348_327448 是 327468_327548 一 327568_327609 是 327629_328570 一 328590_328610 个 328630_328650 人 328670_328690 吗 328710_328730 , 还是 328750_328851 不 328871_328911 是 328931_328971 一 328991_329031 个 329051_329071 人 329091_329591 ?
+%mor:	pron|他-Int-P3 aux|是-Inf-S num|一 noun|个 noun|人 part|吗 cm|cm sconj|还是 adv|不 aux|是-Inf-S num|一 noun|个 noun|人 ?
+%gra:	1|13|NSUBJ 2|5|COP 3|5|NUMMOD 4|3|CLF 5|13|ACL 6|5|DISCOURSE 7|13|PUNCT 8|13|MARK 9|13|ADVMOD 10|13|COP 11|13|NUMMOD 12|11|CLF 13|0|ROOT 14|13|PUNCT
+*CHI:	不 是 一 个 人 [^c] . 329131_329851
+%wor:	不 329131_329171 是 329191_329211 一 329231_329291 个 329311_329331 人 329351_329851 .
+%mor:	adv|不 aux|是-Inf-S num|一 noun|个 noun|人 .
+%gra:	1|5|ADVMOD 2|5|COP 3|5|NUMMOD 4|3|CLF 5|0|ROOT 6|5|PUNCT
+*INV:	不 是 一 个 人 [^c] . 329512_333297
+%wor:	不 329512_329532 是 329552_329592 一 329612_329692 个 329712_332777 人 332797_333297 .
+%mor:	adv|不 aux|是-Inf-S num|一 noun|个 noun|人 .
+%gra:	1|5|ADVMOD 2|5|COP 3|5|NUMMOD 4|3|CLF 5|0|ROOT 6|5|PUNCT
+*INV:	那 这里 [/] 这里 发生 什么 啊 [^c] ? 336780_339363
+%wor:	那 336780_337481 这里 337501_338502 这里 338522_338642 发生 338662_338763 什么 338783_338843 啊 338863_339363 ?
+%mor:	pron|那-Int-S1 pron|这里-Int-S1 verb|发生-Inf-S pron|什么-Int-S1 part|啊 ?
+%gra:	1|3|NSUBJ 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|DISCOURSE 6|3|PUNCT
+*CHI:	不 知道 [^c] .
+%mor:	adv|不 verb|知道-Inf-S .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV:	不 知道 [^c] .
+%mor:	adv|不 verb|知道-Inf-S .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV:	这里 发生 了 什么 啊 [^c] ? 338983_344430
+%wor:	这里 338983_339363 发生 339383_339624 了 339644_339724 什么 339744_343910 啊 343930_344430 ?
+%mor:	pron|这里-Int-S1 verb|发生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 part|啊 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|AUX 4|2|OBJ 5|2|DISCOURSE 6|2|PUNCT
+*CHI:	不 知道 .
+%mor:	adv|不 verb|知道-Inf-S .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV:	真的 不 知道 , 假的 不 知道 . 344051_345051
+%wor:	真的 344051_344271 不 344291_344311 知道 344331_344391 , 假的 344411_344491 不 344511_344531 知道 344551_345051 .
+%mor:	adv|真的 adv|不 verb|知道-Inf-S cm|cm adj|假的-S1 adv|不 verb|知道-Inf-S .
+%gra:	1|3|ADVMOD 2|3|ADVMOD 3|0|ROOT 4|7|PUNCT 5|7|ADVMOD 6|7|ADVMOD 7|3|XCOMP 8|3|PUNCT
+*CHI:	不 知道 .
+%mor:	adv|不 verb|知道-Inf-S .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV:	好 ‡ 那 你 看 这 是 个 什么 东西 呀 [^c] ? 344651_347074
+%wor:	好 344651_344691 ‡ 那 344712_344732 你 344752_344792 看 344812_344832 这 344852_344892 是 344912_344952 个 344972_345633 什么 345653_346234 东西 346254_346554 呀 346574_347074 ?
+%mor:	adv|好 punct|‡ pron|那-Int-S1 pron|你-Int-S2 verb|看-Inf-S pron|这-Int-S1 aux|是-Inf-S noun|个 pron|什么-Int-S1 noun|东西 part|呀 ?
+%gra:	1|5|ADVMOD 2|1|PUNCT 3|5|NSUBJ 4|5|NSUBJ 5|0|ROOT 6|10|NSUBJ 7|10|COP 8|10|NMOD 9|10|DET 10|5|CCOMP 11|5|DISCOURSE 12|5|PUNCT
+*CHI:	这 个 是 房子 [^c] .
+%mor:	det|这-Def noun|个 aux|是-Inf-S noun|房子 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*INV:	房 [//] 谁 的 房子 啊 [^c] ? 350540_351721
+%wor:	房 350540_350620 谁 350640_350660 的 350680_351101 房子 351121_351201 啊 351221_351721 ?
+%mor:	pron|谁-Int-S1 part|的 noun|房子 part|啊 ?
+%gra:	1|3|DET 2|1|CASE 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*CHI:	&=points 他们 的 房子 [^c] .
+%mor:	pron|他-Int-P3 part|的 noun|房子 .
+%gra:	1|3|DET 2|1|CASE 3|0|ROOT 4|3|PUNCT
+*INV:	他们 的 房子 啊 [^c] . 351261_351961
+%wor:	他们 351261_351321 的 351341_351361 房子 351381_351441 啊 351461_351961 .
+%mor:	pron|他-Int-P3 part|的 noun|房子 part|啊 .
+%gra:	1|3|DET 2|1|CASE 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*INV:	哦 ‡ 这里 在 发生 什么 事情 啊 [^c] ? 351501_355127
+%wor:	哦 351501_351882 ‡ 这里 351902_353705 在 353725_353785 发生 353805_353865 什么 353885_353986 事情 354006_354607 啊 354627_355127 ?
+%mor:	punct|哦 adp|‡ pron|这里-Int-S1 adv|在 verb|发生-Inf-S pron|什么-Int-S1 noun|事情-Acc part|啊 ?
+%gra:	1|5|PUNCT 2|3|CASE 3|5|OBL 4|5|ADVMOD 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|DISCOURSE 9|5|PUNCT
+*CHI:	他 的 房子 在 [/] 在 这里 . 356250_359675
+%wor:	他 356250_356350 的 356370_356390 房子 356410_357512 在 357532_357572 在 357592_359155 这里 359175_359675 .
+%mor:	pron|他-Int-S3 part|的 noun|房子 verb|在-Inf-S pron|这里-Int-S1 .
+%gra:	1|3|DET 2|1|CASE 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	他们 的 房子 都 在 这 [//] 这里 , 这里 , 和 这里 . 362200_365764
+%wor:	他们 362200_364082 的 364102_364122 房子 364142_364202 都 364222_364242 在 364262_364282 这 364302_364322 这里 364342_364423 , 这里 364443_365184 , 和 365204_365244 这里 365264_365764 .
+%mor:	pron|他-Int-P3 part|的 noun|房子 sconj|都 verb|在-Inf-S pron|这里-Int-S1 cm|cm pron|这里-Int-S1 cm|cm adp|和 pron|这里-Int-S1 .
+%gra:	1|3|DET 2|1|CASE 3|5|NSUBJ 4|5|MARK 5|0|ROOT 6|5|OBJ 7|8|PUNCT 8|6|APPOS 9|11|PUNCT 10|11|CASE 11|5|OBL 12|5|PUNCT
+*INV:	那 这里 发生 什么 事情 啊 ? 365524_368728
+%wor:	那 365524_366185 这里 366205_367306 发生 367326_367407 什么 367427_367527 事情 367547_368208 啊 368228_368728 ?
+%mor:	det|那-Def pron|这里-Int-S1 verb|发生-Inf-S pron|什么-Int-S1 noun|事情-Acc part|啊 ?
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|DISCOURSE 7|3|PUNCT
+*CHI:	他们 都 是 (..) 魔鬼 [^c] . 368308_372292
+%wor:	他们 368308_368508 都 368528_371592 是 371612_371772 魔鬼 371792_372292 .
+%mor:	pron|他-Int-P3 sconj|都 aux|是-Inf-S noun|魔鬼 .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|COP 4|0|ROOT 5|4|PUNCT
+*INV:	都 是 魔鬼 呀 [^c] . 373495_374275
+%wor:	都 373495_373555 是 373575_373635 魔鬼 373655_373755 呀 373775_374275 .
+%mor:	sconj|都 aux|是-Inf-S noun|魔鬼 part|呀 .
+%gra:	1|3|MARK 2|3|COP 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*CHI:	他们 是 老 巫婆 [^c] . 377000_385811
+%wor:	他们 377000_384370 是 384390_384410 老 384430_385291 巫婆 385311_385811 .
+%mor:	pron|他-Int-P3 aux|是-Inf-S part|老 noun|巫婆 .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|CASE 4|0|ROOT 5|4|PUNCT
+*INV:	他们 是 老 巫婆 [^c] . 385452_386112
+%wor:	他们 385452_385512 是 385532_385552 老 385572_385592 巫婆 385612_386112 .
+%mor:	pron|他-Int-P3 aux|是-Inf-S part|老 noun|巫婆 .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|CASE 4|0|ROOT 5|4|PUNCT
+*INV:	那 你 看 这些 老 巫婆 和 这里 的 这些 [/] 这些 人 他们 有 什么 关系 [^c] ? 385752_388195
+%wor:	那 385752_385792 你 385812_385852 看 385872_385912 这些 385932_386133 老 386153_386313 巫婆 386333_386593 和 386613_386773 这里 386793_386934 的 386954_386994 这些 387014_387094 这些 387114_387174 人 387194_387214 他们 387234_387314 有 387334_387595 什么 387615_387675 关系 387695_388195 ?
+%mor:	pron|那-Int-S1 pron|你-Int-S2 verb|看-Inf-S det|这些-Def part|老 noun|巫婆 cconj|和 pron|这里-Int-S1 part|的 det|这些-Def noun|人 pron|他-Int-P3 verb|有-Inf-S pron|什么-Int-S1 noun|关系-Acc ?
+%gra:	1|3|NSUBJ 2|3|NSUBJ 3|0|ROOT 4|6|DET 5|6|CASE 6|13|NSUBJ 7|11|CC 8|11|DET 9|8|CASE 10|11|DET 11|6|CONJ 12|11|APPOS 13|3|CCOMP 14|15|DET 15|13|OBJ 16|3|PUNCT
+*CHI:	不 知道 .
+%mor:	adv|不 verb|知道-Inf-S .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV:	不 知道 .
+%mor:	adv|不 verb|知道-Inf-S .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*INV:	哦 ‡ 那 我们 翻 过来 .
+%mor:	pron|哦-Int-S1 punct|‡ pron|那-Int-S1 pron|我-Int-P1 verb|翻-Inf-S verb|过来-Inf-S .
+%gra:	1|5|NMOD-TMOD 2|1|PUNCT 3|5|NSUBJ 4|3|APPOS 5|0|ROOT 6|5|MARK 7|5|PUNCT
+*INV:	这里 发生 什么 事情 啊 [^c] ? 387775_389957
+%wor:	这里 387775_387835 发生 387855_387915 什么 387935_388015 事情 388035_389437 啊 389457_389957 ?
+%mor:	pron|这里-Int-S1 verb|发生-Inf-S pron|什么-Int-S1 noun|事情-Acc part|啊 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|DISCOURSE 6|2|PUNCT
+*CHI:	他 抱 着 宝宝 睡 .
+%mor:	pron|他-Int-S3 verb|抱-Inf-S aux|着-Inf-Prog-S noun|宝宝-Acc verb|睡-Inf-S .
+%gra:	1|5|NSUBJ 2|5|ADVCL 3|2|AUX 4|2|OBJ 5|0|ROOT 6|5|PUNCT
+*INV:	他 抱 着 宝宝 睡 .
+%mor:	pron|他-Int-S3 verb|抱-Inf-S aux|着-Inf-Prog-S noun|宝宝-Acc verb|睡-Inf-S .
+%gra:	1|5|NSUBJ 2|5|ADVCL 3|2|AUX 4|2|OBJ 5|0|ROOT 6|5|PUNCT
+*INV:	这里 发生 什么 啊 ? 392140_396725
+%wor:	这里 392140_392360 发生 392380_393261 什么 393281_396205 啊 396225_396725 ?
+%mor:	pron|这里-Int-S1 verb|发生-Inf-S pron|什么-Int-S1 part|啊 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|DISCOURSE 5|2|PUNCT
+*CHI:	没 人 了 [^c] . 396446_397046
+%wor:	没 396446_396466 人 396486_396526 了 396546_397046 .
+%mor:	verb|没-Inf-S noun|人-Acc part|了 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|DISCOURSE 4|1|PUNCT
+*INV:	没 人 了 [^c] . 396586_399009
+%wor:	没 396586_396626 人 396646_398489 了 398509_399009 .
+%mor:	verb|没-Inf-S noun|人-Acc part|了 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|DISCOURSE 4|1|PUNCT
+*INV:	好 ‡ 这 个 故事 是 在 哪 一 页 结束 的 [^c] ? 398609_405638
+%wor:	好 398609_399110 ‡ 这 399130_399150 个 399170_399630 故事 399650_399891 是 399911_400031 在 400051_400291 哪 400311_402515 一 402535_402575 页 402595_402615 结束 402635_405118 的 405138_405638 ?
+%mor:	adv|好 punct|‡ det|这-Def noun|个 noun|故事 verb|是-Inf-S adp|在 det|哪-Def num|一 noun|页 verb|结束-Inf-S part|的 ?
+%gra:	1|6|ADVMOD 2|1|PUNCT 3|4|DET 4|5|CLF 5|6|NSUBJ 6|0|ROOT 7|10|CASE 8|10|DET 9|10|NUMMOD 10|11|OBL 11|6|XCOMP 12|6|DISCOURSE 13|6|PUNCT
+*CHI:	这 一 页 &=pounds_book [^c] . 405218_405859
+%wor:	这 405218_405299 一 405319_405339 页 405359_405859 .
+%mor:	det|这-Def num|一 noun|页 .
+%gra:	1|3|DET 2|3|NUMMOD 3|0|ROOT 4|3|PUNCT
+*INV:	那 这 一 页 这 是 什么 啊 ? 405940_410025
+%wor:	那 405940_405960 这 405980_406000 一 406020_406040 页 406060_406240 这 406260_406440 是 406460_406480 什么 406500_409505 啊 409525_410025 ?
+%mor:	det|那-Def det|这-Def num|一 noun|页 pron|这-Int-S1 aux|是-Inf-S pron|什么-Int-S1 part|啊 ?
+%gra:	1|4|DET 2|4|DET 3|4|NUMMOD 4|7|NSUBJ 5|7|NSUBJ 6|7|COP 7|0|ROOT 8|7|DISCOURSE 9|7|PUNCT
+*INV:	这 里面 有 些 什么 啊 [^c] ? 409565_414031
+%wor:	这 409565_409585 里面 409605_410686 有 410707_410767 些 410787_410907 什么 410927_413511 啊 413531_414031 ?
+%mor:	det|这-Def noun|里面 verb|有-Inf-S adj|些-S1 pron|什么-Int-S1 part|啊 ?
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|5|AMOD 5|3|OBJ 6|3|DISCOURSE 7|3|PUNCT
+*CHI:	没有 了 [^c] .
+%mor:	verb|有-Inf-Neg-S part|了 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*INV:	没有 了 [^c] . 413571_414151
+%wor:	没有 413571_413631 了 413651_414151 .
+%mor:	verb|有-Inf-Neg-S part|了 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*INV:	哦 ‡ 那 这 个 故事 的 结果 是 什么 [^c] ? 413751_417696
+%wor:	哦 413751_413791 ‡ 那 413811_415594 这 415614_415874 个 415894_415914 故事 415934_416034 的 416054_416375 结果 416395_416675 是 416695_417176 什么 417196_417696 ?
+%mor:	pron|哦-Int-S1 punct|‡ det|那-Def det|这-Def noun|个 noun|故事 part|的 noun|结果 aux|是-Inf-S pron|什么-Int-S1 ?
+%gra:	1|10|OBL 2|1|PUNCT 3|5|DET 4|5|DET 5|6|CLF 6|8|NMOD 7|6|CASE 8|10|NSUBJ 9|10|COP 10|0|ROOT 11|10|PUNCT
+*CHI:	结果 就是 土 泥 [^c] . 417336_418057
+%wor:	结果 417336_417396 就是 417416_417497 土 417517_417537 泥 417557_418057 .
+%mor:	noun|结果 aux|是-Inf-S part|土 part|泥 .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|CASE 4|0|ROOT 5|4|PUNCT
+*INV:	啊 ?
+%mor:	part|啊 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	土 泥 [^c] . 417597_418137
+%wor:	土 417597_417617 泥 417637_418137 .
+%mor:	propn|土 part|泥 .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|PUNCT
+*INV:	土 泥 啊 [^c] . 417697_418537
+%wor:	土 417697_417717 泥 417737_418017 啊 418037_418537 .
+%mor:	propn|土 part|泥 part|啊 .
+%gra:	1|2|COMPOUND 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*INV:	哦 ‡ 那 你 说 那 几 个 人 他们 是 好 人 还是 坏人 [^c] ? 420560_426727
+%wor:	哦 420560_421020 ‡ 那 421040_421080 你 421100_421200 说 421220_421701 那 421721_421941 几 421961_421981 个 422002_422102 人 422122_423504 他们 423524_423844 是 423864_424545 好 424565_424665 人 424685_424805 还是 424825_426207 坏人 426227_426727 ?
+%mor:	punct|哦 punct|‡ pron|那-Int-S1 pron|你-Int-S2 verb|说-Inf-S det|那-Def num|几 noun|个 noun|人 pron|他-Int-P3 aux|是-Inf-S part|好 noun|人 aux|是-Inf-S noun|坏人 ?
+%gra:	1|5|PUNCT 2|5|PUNCT 3|5|NSUBJ 4|3|APPOS 5|0|ROOT 6|8|DET 7|8|NUMMOD 8|9|NMOD 9|15|NSUBJ 10|9|APPOS 11|15|COP 12|13|CASE 13|15|NSUBJ 14|15|COP 15|5|CCOMP 16|5|PUNCT
+*CHI:	坏人 [^c] .
+%mor:	noun|坏人 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	为什么 [^c] ? 426468_426968
+%wor:	为什么 426468_426968 ?
+%mor:	verb|为-Inf-S ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	因为 他们 眼睛 &=stares . 426848_427569
+%wor:	因为 426848_426948 他们 426968_427049 眼睛 427069_427569 .
+%com:	the child shapes his hand into semi-circle and stares, imitating the robbers' eyes .
+%mor:	adp|因为 pron|他-Int-P3 noun|眼睛 .
+%gra:	1|3|CASE 2|3|NMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	<他们 都 是> [//] 这 [/] 这 是 像 半 [/] 半 椭圆形 的 , 所以 他 这样 [^c] . 427209_429071
+%wor:	他们 427209_427770 都 427790_427810 是 427830_427850 这 427870_427910 这 427930_427950 是 427970_427990 像 428010_428070 半 428090_428110 半 428130_428170 椭圆形 428190_428390 的 428410_428430 , 所以 428451_428511 他 428531_428551 这样 428571_429071 .
+%mor:	pron|这-Int-S1 verb|是-Inf-S verb|像-Inf-S part|半 noun|椭圆形-Acc part|的 cm|cm sconj|所以 pron|他-Int-S3 pron|这样-Int-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|5|CASE 5|3|OBJ 6|2|DISCOURSE 7|9|PUNCT 8|9|MARK 9|3|OBJ 10|2|PARATAXIS 11|2|PUNCT
+*INV:	+< 眼睛 是 那样 的 .
+%mor:	noun|眼睛 aux|是-Inf-S pron|那样-Int-S1 part|的 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*INV:	他 眼睛 是 这样 的 , 所以 他们 就 是 坏人 啊 . 428651_433857
+%wor:	他 428651_428671 眼睛 428691_428751 是 428771_428791 这样 428811_428871 的 428891_428911 , 所以 428931_429152 他们 429172_430133 就 430153_430213 是 430233_430353 坏人 430373_433337 啊 433357_433857 .
+%mor:	pron|他-Int-S3 noun|眼睛 aux|是-Inf-S pron|这样-Int-S1 part|的 cm|cm sconj|所以 pron|他-Int-P3 sconj|就 aux|是-Inf-S noun|坏人 part|啊 .
+%gra:	1|2|NMOD 2|3|NSUBJ 3|0|ROOT 4|3|XCOMP 5|4|DISCOURSE 6|11|PUNCT 7|11|MARK 8|11|NSUBJ 9|11|MARK 10|11|COP 11|3|PARATAXIS 12|11|DISCOURSE 13|3|PUNCT
+*CHI:	嗯 .
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	哦 ‡ 原来 是 这样 啊 . 437020_437878
+%wor:	哦 437020_437041 ‡ 原来 437062_437146 是 437167_437231 这样 437252_437357 啊 437378_437878 .
+%mor:	punct|哦 punct|‡ adv|原来 aux|是-Inf-S pron|这样-Int-S1 part|啊 .
+%gra:	1|5|PUNCT 2|5|PUNCT 3|5|ADVMOD 4|5|COP 5|0|ROOT 6|5|DISCOURSE 7|5|PUNCT
+*INV:	好 ‡ 来 ‡ 看看 这 个 星星 吧 .
+%mor:	adv|好 propn|‡ verb|来-Inf-S verb|‡-Inf-S verb|看看-Inf-S det|这-Def noun|个 noun|星星-Acc part|吧 .
+%gra:	1|5|ADVMOD 2|5|NSUBJ 3|5|ADVCL 4|3|MARK 5|0|ROOT 6|7|DET 7|8|CLF 8|5|OBJ 9|5|DISCOURSE 10|5|PUNCT
+@End

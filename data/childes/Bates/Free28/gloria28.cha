@@ -1,0 +1,692 @@
+@UTF8
+@PID:	11312/c-00015253-1
+@Begin
+@Languages:	eng
+@Participants:	MOT Mother, CHI Target_Child
+@ID:	eng|Bates|MOT||female|||Mother|||
+@ID:	eng|Bates|CHI|2;04.|female|TD|MC|Target_Child|||
+@Comment:	[ba3 morphotag | engine=stanza-1.11.1 ; lang=eng | 2026-05-07T09:13:32-04:00]
+@Types:	cross, toyplay, TD
+*MOT:	here (.) watch .
+%act:	<1w> picks up shape box object and puts in shape box .
+%mor:	adv|here verb|watch-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|ACL 3|1|PUNCT
+*MOT:	let's dump dese [: these] out .
+%act:	<1w> turns shape box over and dumps all the shape box objects on floor .
+%mor:	verb|let-Fin-Imp-S~pron|we-Prs-Acc-P1 verb|dump-Inf-S pron|this-Dem-P1 adp|out .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|3|OBJ 5|3|COMPOUND-PRT 6|1|PUNCT
+*MOT:	okay ?
+%act:	<1w> closes lid <1w> puts shape box on floor .
+%mor:	intj|okay ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	more ball .
+%act:	<1w> picks up shape box object and holds in hand . <1w> holds nesting cup and shape box object . puts object in nesting cup .
+%mor:	adj|more-Cmp-S1 noun|ball .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	what's that [?] ?
+%act:	<1w> shows to Mother
+%xpho:	<1w> s&t
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 pron|that-Dem ?
+%gra:	1|0|ROOT 2|3|COP 3|1|NSUBJ 4|1|PUNCT
+*CHI:	ball ?
+%mor:	noun|ball ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	that's a ball (.) yeah !
+%act:	<dur> moves nesting cups away . moves shape box closer to Gloria <bef> gathers shape box objects near shape box .
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 det|a-Ind-Art noun|ball intj|yeah !
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*CHI:	ball ?
+%act:	<aft> puts shape box object from hand in nesting cup . begins to dump shape box objects out of nesting cup . takes objects out of nesting cup
+%gpx:	points to shape box object in nesting cup in hand
+%mor:	noun|ball ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	here can put +...
+%gpx:	points to hole on shape box lid
+%mor:	adv|here aux|can-Fin-S verb|put-Inf-S +...
+%gra:	1|0|ROOT 2|3|AUX 3|1|ACL 4|1|PUNCT
+*MOT:	can you find the hole that the ball goes in ?
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|find-Inf-S det|the-Def-Art noun|hole-Acc pron|that-Rel det|the-Def-Art noun|ball verb|go-Fin-Ind-Pres-S3 adp|in ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|9|OBJ 7|8|DET 8|9|NSUBJ 9|5|ACL-RELCL 10|9|COMPOUND-PRT 11|3|PUNCT
+*CHI:	where ?
+%mor:	adv|where ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	this ?
+%gpx:	<1w> points to shape box object in nesting cup
+%mor:	pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	can you find the hole that that goes in ?
+%gpx:	<1w> points to shape box lid
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|find-Inf-S det|the-Def-Art noun|hole-Acc pron|that-Rel pron|that-Dem verb|go-Fin-Ind-Pres-S3 adp|in ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|8|OBJ 7|8|NSUBJ 8|5|ACL-RELCL 9|8|COMPOUND-PRT 10|3|PUNCT
+*CHI:	0 .
+%act:	reaches for shape box . puts object to hole and drops it through
+*MOT:	huh !
+%par:	<1w> excited breath
+%mor:	intj|huh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	good girl !
+%act:	<1w> picks up object from floor .
+%mor:	adj|good-S1 noun|girl !
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	what about this one ?
+%act:	<1w> holds out shape box object to Gloria
+%mor:	pron|what-Int-S1 adp|about det|this-Def-Dem-Sing noun|one ?
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|NMOD 5|1|PUNCT
+*CHI:	huh ?
+%act:	<bef> reaches in nesting cup in hand , takes out object and holds near lid
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	can you find the hole that this one goes in ?
+%act:	turns shape box object in hand
+%mor:	aux|can-Fin-S pron|you-Prs-Nom-S2 verb|find-Inf-S det|the-Def-Art noun|hole-Acc pron|that-Rel det|this-Def-Dem-Sing noun|one verb|go-Fin-Ind-Pres-S3 adp|in ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|9|OBJ 7|8|DET 8|9|NSUBJ 9|5|ACL-RELCL 10|9|COMPOUND-PRT 11|3|PUNCT
+*CHI:	0 .
+%act:	puts shape box object to wrong hole on lid . tries to push object through
+*MOT:	&~aw !
+%act:	continues to hold shape box object
+*MOT:	no (.) it doesn't go in there !
+%mor:	intj|no pron|it-Prs-Nom-S3 aux|do-Fin-Ind-Pres-S3~part|not verb|go-Inf-S adp|in adv|there !
+%gra:	1|5|DISCOURSE 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|7|CASE 7|5|OBL 8|5|PUNCT
+*CHI:	what .
+%act:	takes shape box object from lid and holds in hand
+%mor:	pron|what-Int-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	try this one .
+%gpx:	points to correct hole for Gloria's shape box object
+%mor:	verb|try-Fin-Imp-S det|this-Def-Dem-Sing noun|one-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	0 .
+%act:	puts shape box object to lid and drops through hole Mother pointed to
+*MOT:	what about this one ?
+%act:	<dur> picks up object from lid and holds out to Gloria <bef> puts shape box object on shape box lid .
+%mor:	pron|what-Int-S1 adp|about det|this-Def-Dem-Sing noun|one ?
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|NMOD 5|1|PUNCT
+*CHI:	one more !
+%act:	<bef> raises nesting cup to look in . puts on floor . reaches for shape box object on floor
+%mor:	num|one adj|more-Cmp-S1 !
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	which one does this one go ?
+%mor:	det|which-Def-Int noun|one verb|do-Fin-Ind-Pres-S3 det|this-Def-Dem-Sing num|one noun|go-Acc ?
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|6|DET 5|6|NUMMOD 6|3|OBJ 7|3|PUNCT
+*CHI:	one more !
+%act:	<aft> picks up shape box object from floor . puts object to lid and drops through hole
+%mor:	num|one adj|more-Cmp-S1 !
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	oh one more okay .
+%act:	<1w> holds out shape box object to self .
+%mor:	intj|oh num|one adv|more adj|okay-S1 .
+%gra:	1|4|DISCOURSE 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*MOT:	which one does this one go in ?
+%act:	<1w> holds out shape box object to Gloria
+%mor:	det|which-Def-Int noun|one-Acc aux|do-Fin-Ind-Pres-S3 det|this-Def-Dem-Sing noun|one verb|go-Inf-S adp|in ?
+%gra:	1|2|DET 2|6|OBJ 3|6|AUX 4|5|DET 5|6|NSUBJ 6|0|ROOT 7|6|COMPOUND-PRT 8|6|PUNCT
+*CHI:	0 .
+%act:	puts finger through hole . opens and closes lid slightly . opens lid completely . puts fingers through hole on open lid
+*MOT:	oh !
+%act:	<1w> leans forward to look in shape box .
+%mor:	intj|oh !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	what's in there ?
+%mor:	pron|what-Int-S1~aux|be-Fin-Ind-Pres-S3 adp|in adv|there ?
+%gra:	1|0|ROOT 2|4|COP 3|4|CASE 4|1|OBL 5|1|PUNCT
+*MOT:	okay .
+%act:	<1w> holds out shape box object to Gloria . gives object to her
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	try and find the place where this one goes .
+%act:	<1w-9w> holds out shape box object to Gloria . gives object to her
+%mor:	verb|try-Fin-Imp-S cconj|and verb|find-Fin-Imp-S det|the-Def-Art noun|place-Acc adv|where det|this-Def-Dem-Sing noun|one verb|go-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|5|DET 5|3|OBJ 6|9|ADVMOD 7|8|DET 8|9|NSUBJ 9|5|ACL-RELCL 10|1|PUNCT
+*CHI:	where go ?
+%act:	<bef> takes shape box object from Mother
+%mor:	adv|where verb|go-Fin-Ind-Pres-S3 ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	I don't know .
+%mor:	pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not verb|know-Inf-S .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	this ?
+%act:	<dur> puts object to wrong hole <bef> reaches for shape box with object .
+%mor:	pron|this-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	yyy .
+%act:	<aft> takes object from shape box
+%xpho:	w6n wi
+*MOT:	no .
+%gpx:	<1w> shakes head .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	this one .
+%gpx:	<1w> points to hole on shape box
+%mor:	det|this-Def-Dem-Sing noun|one .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	&-uh !
+%act:	<1w> leans around to see Gloria's hands
+*CHI:	where .
+%act:	<1w> puts hand on shape box object on floor . <1w> puts shape box object to hole Mother pointed to and drops object through .
+%mor:	adv|where .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	some more play [?] .
+%act:	<1w> opens lid . leans forward to look in shape box <1w> reaches for shape box and puts fingers through holes .
+%mor:	det|some-Def-Ind adj|more-Cmp-S1 noun|play .
+%gra:	1|3|DET 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	see [!] (.) it's in there .
+%mor:	verb|see-Fin-Imp-S pron|it-Prs-Nom-S3~aux|be-Fin-Ind-Pres-S3 adp|in adv|there .
+%gra:	1|0|ROOT 2|5|NSUBJ 3|5|COP 4|5|CASE 5|1|CCOMP 6|1|PUNCT
+*CHI:	0 .
+%act:	reaches in shape box , takes out object and holds in hand
+*MOT:	okay .
+%act:	<1w> closes lid .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	now you put it back in there .
+%gpx:	<1w> points to shape box lid
+%mor:	adv|now pron|you-Prs-Nom-S2 verb|put-Fin-Ind-Past-S2-irr pron|it-Prs-Acc-S3 adv|back adp|in adv|there .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|ADVMOD 6|7|CASE 7|3|OBL 8|3|PUNCT
+*MOT:	let's find where this one goes .
+%act:	<1w> reaches for object on floor . picks up shape box object and holds it out to Gloria
+%mor:	verb|let-Fin-Imp-S~pron|we-Prs-Acc-P1 verb|find-Inf-S adv|where det|this-Def-Dem-Sing noun|one verb|go-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|7|ADVMOD 5|6|DET 6|7|NSUBJ 7|3|CCOMP 8|1|PUNCT
+*CHI:	what is it ?
+%act:	<dur> drops object through <bef> reaches for shape box with object . puts object to correct hole .
+%mor:	pron|what-Int-S1 aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 ?
+%gra:	1|0|ROOT 2|1|COP 3|1|NSUBJ 4|1|PUNCT
+*MOT:	oh .
+%act:	puts object to shape box lid
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	where ?
+%act:	fingers object on floor
+%mor:	adv|where ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	where is it (.) Mom ?
+%mor:	adv|where aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 noun|mom ?
+%gra:	1|0|ROOT 2|1|COP 3|4|NSUBJ 4|1|NSUBJ 5|1|PUNCT
+*MOT:	I don't know .
+%act:	<bef> drops shape box object through hole
+%mor:	pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not verb|know-Inf-S .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	did he go pottie ?
+%act:	<bef> reaches for shape box and opens lid
+%mor:	aux|do-Fin-Ind-Past-S3-irr pron|he-Prs-Nom-S3 verb|go-Inf-S noun|pottie-Acc ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	I think so .
+%act:	<1w> picks up shape box object .
+%mor:	pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 adv|so .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*MOT:	where's this one go ?
+%act:	<1w> holds object out to Gloria
+%mor:	adv|where~aux|be-Fin-Ind-Pres-S3 det|this-Def-Dem-Sing noun|one verb|go-Inf-S ?
+%gra:	1|0|ROOT 2|5|COP 3|4|DET 4|5|NSUBJ 5|1|NSUBJ 6|1|PUNCT
+*CHI:	&-uh .
+*CHI:	huh ?
+%act:	<aft> closes shape box lid
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	where's this one go ?
+%act:	<bef> gives object ot Gloria
+%mor:	adv|where~aux|be-Fin-Ind-Pres-S3 det|this-Def-Dem-Sing noun|one verb|go-Inf-S ?
+%gra:	1|0|ROOT 2|5|COP 3|4|DET 4|5|NSUBJ 5|1|NSUBJ 6|1|PUNCT
+*CHI:	where is it ?
+%mor:	adv|where aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 ?
+%gra:	1|0|ROOT 2|1|COP 3|2|NSUBJ 4|1|PUNCT
+*MOT:	try this one .
+%gpx:	points to hole
+%mor:	verb|try-Fin-Imp-S det|this-Def-Dem-Sing noun|one-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	0 .
+%act:	puts object to lid of shape box and drops through hole
+*MOT:	oh .
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah .
+%act:	<1w> picks up shape box object and holds out to Gloria . gives to Gloria
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	okay .
+%act:	<1w> picks up shape box object and holds out to Gloria . gives to Gloria
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	where's this one go ?
+%act:	<1w-4w> picks up shape box object and holds out to Gloria . gives to Gloria
+%mor:	adv|where~aux|be-Fin-Ind-Pres-S3 det|this-Def-Dem-Sing noun|one verb|go-Inf-S ?
+%gra:	1|0|ROOT 2|5|COP 3|4|DET 4|5|NSUBJ 5|1|NSUBJ 6|1|PUNCT
+*CHI:	huh ?
+%act:	<aft> puts object to wrong hole on shape box lid
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no !
+%gpx:	shakes head
+%mor:	intj|no !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what ?
+%act:	takes object away from shape box and holds object in hand
+%mor:	pron|what-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	look !
+%mor:	verb|look-Fin-Imp-S !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	where ?
+%mor:	adv|where ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	&-uh does it go in there ?
+%mor:	aux|do-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 verb|go-Inf-S adp|in adv|there ?
+%gra:	1|3|AUX 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*MOT:	see if it goes in .
+%mor:	verb|see-Fin-Imp-S sconj|if pron|it-Prs-Nom-S3 verb|go-Fin-Ind-Pres-S3 adv|in .
+%gra:	1|0|ROOT 2|4|MARK 3|4|NSUBJ 4|1|ADVCL 5|4|ADVMOD 6|1|PUNCT
+*CHI:	0 .
+%act:	puts object to the hole Mother points to
+*MOT:	&-uh .
+*MOT:	it doesn't go in there .
+%mor:	pron|it-Prs-Nom-S3 aux|do-Fin-Ind-Pres-S3~part|not verb|go-Inf-S adp|in adv|there .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+*CHI:	0 .
+%act:	takes object away and puts on floor
+*MOT:	what about right in here ?
+%gpx:	<1w> points to hole
+%mor:	pron|what-Int-S1 adp|about adv|right adp|in adv|here ?
+%gra:	1|0|ROOT 2|5|CASE 3|5|ADVMOD 4|5|CASE 5|1|NMOD 6|1|PUNCT
+*MOT:	see if it goes in there .
+%mor:	verb|see-Fin-Imp-S sconj|if pron|it-Prs-Nom-S3 verb|go-Fin-Ind-Pres-S3 adp|in adv|there .
+%gra:	1|0|ROOT 2|4|MARK 3|4|NSUBJ 4|1|CCOMP 5|6|CASE 6|4|ADVMOD 7|1|PUNCT
+*MOT:	no .
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	what .
+%act:	<aft> picks up shape box object <dur> reaches for object on floor . <bef> puts object to hole Mother pointed to . takes object away .
+%mor:	pron|what-Int-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	that ?
+%act:	<aft> tries to make shape box object go through hole
+%gpx:	points to hole on shape box
+%mor:	pron|that-Dem ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	&~aw !
+*MOT:	don't fit .
+%mor:	aux|do-Fin-Imp-S~part|not verb|fit-Fin-Imp-S .
+%gra:	1|3|AUX 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	let's try this one .
+%gpx:	<1w> points to hole
+%mor:	verb|let-Fin-Imp-S~pron|we-Prs-Acc-P1 verb|try-Inf-S det|this-Def-Dem-Sing noun|one-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|5|DET 5|3|OBJ 6|1|PUNCT
+*CHI:	huh ?
+%act:	<aft> puts object to hole on shape box <dur> puts object from one hand to the other . <bef> takes object from shape box . tosses shape box object aside .
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	oh .
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	this one !
+%act:	<bef> puts object to another hole and drops through
+%mor:	det|this-Def-Dem-Sing noun|one !
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	yeah .
+%par:	<aft> laughs
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	&-uh more !
+%act:	<aft> reaches for object on floor . picks it up and changes hands . reaches for objects on floor . manipulates them on floor
+%mor:	adj|more-Cmp-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	where .
+%act:	leans around to see Gloria's hands
+%mor:	adv|where .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	oh .
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	there's some more .
+%mor:	pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 det|some-Def-Ind adj|more-Cmp-S1 .
+%gra:	1|2|EXPL 2|0|ROOT 3|4|DET 4|2|NSUBJ 5|2|PUNCT
+*CHI:	there it is .
+%act:	<aft> drops object through correct hole
+%mor:	pron|there-Int-S1 pron|it-Prs-Nom-S3 aux|be-Fin-Ind-Pres-S3 .
+%gra:	1|3|EXPL 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	more .
+%act:	<aft> picks up object and drops through the correct hole . reaches for shape box and opens lid
+%mor:	adj|more-Cmp-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	+< xxx one more .
+%mor:	num|one adj|more-Cmp-S1 .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	yep .
+%mor:	intj|yep .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	see they're all in there now .
+%act:	<1w> leans forward to look in
+%mor:	verb|see-Fin-Imp-S pron|they-Prs-Nom-P3~aux|be-Fin-Ind-Pres-P3 adv|all adp|in adv|there adv|now .
+%gra:	1|0|ROOT 2|6|NSUBJ 3|6|COP 4|6|ADVMOD 5|6|CASE 6|1|CCOMP 7|6|ADVMOD 8|1|PUNCT
+*MOT:	you going to dump them all out ?
+%mor:	pron|you-Prs-Nom-S2 verb|go-Part-Pres-S part|to verb|dump-Inf-S pron|they-Prs-Acc-P3 det|all-Def-Tot adp|out ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|4|OBJ 6|7|DET 7|4|COMPOUND-PRT 8|2|PUNCT
+*CHI:	0 .
+%act:	picks up shape box and turns it over . sets it in her lap , picks it up and turns it over . dumps objects onto floor . raises shape box high . sets shape box in lap
+*MOT:	oops .
+%act:	<aft> reaches in shape box , takes out left over objects and sets them on floor
+%mor:	intj|oop .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	you want pottie [*] ?
+%act:	<dur> reaches for various objects on floor <bef> takes shape box from lap and sets aside . closes lid to shape box .
+%mor:	pron|you-Prs-Nom-S2 verb|want-Fin-Ind-Pres-S2 noun|pottie-Acc ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	where ?
+%act:	picks up object from floor
+%mor:	adv|where ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	I don't know .
+%mor:	pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not verb|know-Inf-S .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	where ?
+%act:	<1w> pulls away . holds out object in hand .
+%mor:	adv|where ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	go: .
+%act:	<1w> puts object to lid and drops through hole
+%mor:	verb|go-Fin-Imp-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	there it goes .
+%mor:	pron|there-Int-S1 pron|it-Prs-Nom-S3 verb|go-Fin-Ind-Pres-S3 .
+%gra:	1|3|EXPL 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	more !
+%act:	<1w> puts hand toward self .
+%mor:	adj|more-Cmp-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	get those .
+%act:	<1w> picks up some shape box objects from floor .
+%mor:	verb|get-Fin-Imp-S pron|that-Dem-P1 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	do more balls .
+%act:	<1w> holds objects in lap
+%mor:	verb|do-Fin-Imp-S adj|more-Cmp-S1 noun|ball-Plur-Acc .
+%gra:	1|0|ROOT 2|3|AMOD 3|1|OBJ 4|1|PUNCT
+*MOT:	oh .
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	I don't think there are any more balls .
+%act:	<1w> picks up various objects to see if there are any balls
+%mor:	pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not verb|think-Inf-S pron|there-Int-S1 verb|be-Fin-Ind-Pres-P3 det|any-Def-Ind adj|more-Cmp-S1 noun|ball-Plur .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|6|EXPL 6|4|CCOMP 7|9|DET 8|9|AMOD 9|6|NSUBJ 10|4|PUNCT
+*MOT:	I think +...
+%mor:	pron|I-Prs-Nom-S1 verb|think-Fin-Ind-Pres-S1 +...
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*MOT:	yep !
+%mor:	intj|yep !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	that's it !
+%mor:	pron|that-Dem~aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 !
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	xxx where go .
+%act:	<aft> changes ball to other hand . puts ball to shape box and drops through hole <dur> puts one ball to shape box and drops through hole . <bef> holds out two balls in hands to Mother .
+%mor:	adv|where verb|go-Fin-Ind-Pres-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	yep (.) that goes .
+%mor:	intj|yep pron|that-Dem verb|go-Fin-Ind-Pres-S3 .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	one more ball !
+%act:	shakes head while looking for balls
+%mor:	num|one adj|more-Cmp-S1 noun|ball !
+%gra:	1|3|NUMMOD 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	you put them all in there .
+%gpx:	points to shape box
+%mor:	pron|you-Prs-Nom-S2 verb|put-Fin-Ind-Past-S2-irr pron|they-Prs-Acc-P3 det|all-Def-Tot adp|in adv|there .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|3|DET 5|6|CASE 6|2|OBL 7|2|PUNCT
+*CHI:	huh ?
+%act:	<aft> reaches for shape box . puts fingers in holes on lid
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	here's some more round ones that go in there though .
+%act:	picks up cylinder shape box object and sets upright on floor
+%mor:	adv|here~verb|be-Fin-Ind-Pres-S3 det|some-Def-Ind adj|more-Cmp-S1 adj|round-S1 noun|one-Plur pron|that-Rel verb|go-Fin-Ind-Pres-P3 adp|in adv|there adv|though .
+%gra:	1|2|EXPL 2|0|ROOT 3|6|DET 4|6|AMOD 5|6|AMOD 6|2|NSUBJ 7|8|NSUBJ 8|6|ACL-RELCL 9|10|CASE 10|8|OBL 11|8|ADVMOD 12|2|PUNCT
+*CHI:	where ?
+%mor:	adv|where ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	in (.) where you put the balls .
+%mor:	adp|in adv|where pron|you-Prs-Nom-S2 verb|put-Fin-Ind-Past-S2-irr det|the-Def-Art noun|ball-Plur-Acc .
+%gra:	1|2|CASE 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*MOT:	yeah .
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	there ?
+%act:	<aft> picks up cylinder object , changes hands . puts object to lid and drops through hole
+%mor:	adv|there ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yeah !
+%mor:	intj|yeah !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	more !
+%act:	<aft> puts object through correct hole
+%par:	<aft> laughs
+%mor:	adj|more-Cmp-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	more !
+%par:	<aft> yawns
+%mor:	adj|more-Cmp-S1 !
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 .
+%act:	reaches for other cylinder object . picks it up , changes hands and puts it through hole
+*CHI:	all done .
+%act:	<aft> holds object out in hands and shows Mother . turns object in hands <dur> holds out in hands . <bef> picks up last cylinder object .
+%mor:	det|all-Def-Tot verb|do-Part-Past-S-irr .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	put that one in there &=points .
+%mor:	verb|put-Fin-Imp-S det|that-Def-Dem-Sing noun|one-Acc adp|in adv|there .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|5|CASE 5|1|OBL 6|1|PUNCT
+*CHI:	here .
+%act:	puts object through hole
+%mor:	adv|here .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	let's play with these now .
+%act:	holds nesting cup out to Gloria . waves nesting cup in air
+%mor:	verb|let-Fin-Imp-S~pron|we-Prs-Acc-P1 verb|play-Inf-S adp|with pron|this-Dem-P1 adv|now .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|5|CASE 5|3|OBL 6|3|ADVMOD 7|1|PUNCT
+*CHI:	where ?
+%gpx:	looks around on floor for more objects
+%mor:	adv|where ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	here there's some more over there by you .
+%gpx:	points to nesting cups by Gloria
+%act:	<bef> puts nesting cup on floor
+%mor:	adv|here pron|there-Int-S1~verb|be-Fin-Ind-Pres-S3 det|some-Def-Ind adj|more-Cmp-S1 adp|over adv|there adp|by pron|you-Prs-Acc-S2 .
+%gra:	1|3|ADVMOD 2|3|EXPL 3|0|ROOT 4|5|DET 5|3|NSUBJ 6|7|CASE 7|3|OBL 8|9|CASE 9|7|OBL 10|3|PUNCT
+*CHI:	huh .
+%act:	<aft> picks up shape box object from floor and puts on open lid
+%mor:	intj|huh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	let's put the box away .
+%act:	picks up shape box objects and holds out to Gloria
+%mor:	verb|let-Fin-Imp-S~pron|we-Prs-Acc-P1 verb|put-Inf-S det|the-Def-Art noun|box-Acc adv|away .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|XCOMP 4|5|DET 5|3|OBJ 6|3|ADVMOD 7|1|PUNCT
+*CHI:	no .
+%act:	takes object away from lid
+%gpx:	shakes head
+%mor:	intj|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no ?
+%mor:	intj|no ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	okay .
+%act:	<1w> puts objects back on floor
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	where down [*] .
+%act:	<dur> reaches for shape box with object <bef> picks up shape box object from floor . changes hands . closes lid to shape box .
+%mor:	adv|where adv|down .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	huh ?
+%act:	<dur> picks up nesting cup and puts inside nesting cup <bef> picks up nesting cup and sets on floor near herself . picks other nesting cup and puts inside nesting cup .
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	doesn't work !
+%act:	<aft> manipulates object on lid to make it drop through hole
+%mor:	aux|do-Fin-Ind-Pres-S3~part|not verb|work-Inf-S !
+%gra:	1|3|AUX 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	doesn't work ?
+%act:	<dur> puts in nesting cup <bef> takes out nesting cup and puts on floor . picks up other nesting cup .
+%mor:	aux|do-Fin-Ind-Pres-S3~part|not verb|work-Inf-S ?
+%gra:	1|3|AUX 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	where my rabbit [*] ?
+%act:	takes object from lid
+%mor:	adv|where pron|my-Prs-Gen-S1 noun|rabbit ?
+%gra:	1|0|ROOT 2|3|NMOD-POSS 3|1|NSUBJ 4|1|PUNCT
+*MOT:	oh (.) she put it away .
+%act:	picks up nesting cup and puts in nesting cups
+%mor:	intj|oh pron|she-Prs-Nom-S3 verb|put-Fin-Ind-Past-S3-irr pron|it-Prs-Acc-S3 adv|away .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|ADVMOD 6|3|PUNCT
+*CHI:	huh ?
+%act:	<aft> moves object on floor
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Sandie put it away .
+%act:	picks up nesting cup and puts in nesting cups
+%mor:	propn|Sandie verb|put-Fin-Ind-Past-S3-irr pron|it-Prs-Acc-S3 adv|away .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|ADVMOD 5|2|PUNCT
+*CHI:	where ?
+%act:	<aft> holds hand in lap
+%mor:	adv|where ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	oh (.) bunny rabbit had to go night night .
+%act:	holds onto nesting cups and manipulates with fingers
+%mor:	intj|oh noun|bunny noun|rabbit verb|have-Fin-Ind-Past-S3-irr part|to verb|go-Inf-S noun|night noun|night .
+%gra:	1|4|DISCOURSE 2|3|COMPOUND 3|4|NSUBJ 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|8|COMPOUND 8|6|OBL-UNMARKED 9|4|PUNCT
+*CHI:	huh ?
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	bunny_rabbit had to go night night for awhile .
+%mor:	propn|bunnyrabbit verb|have-Fin-Ind-Past-S3-irr part|to verb|go-Inf-S noun|night noun|night adp|for adv|awhile .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|6|COMPOUND 6|4|OBL-UNMARKED 7|8|CASE 8|4|OBL 9|2|PUNCT
+*CHI:	where ?
+%mor:	adv|where ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	in a bed .
+%mor:	adp|in det|a-Ind-Art noun|bed .
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	where ?
+%gpx:	points toward door
+%mor:	adv|where ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx in there ?
+%mor:	adp|in adv|there ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	uhhuh .
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	where is it ?
+%mor:	adv|where aux|be-Fin-Ind-Pres-S3 pron|it-Prs-Nom-S3 ?
+%gra:	1|0|ROOT 2|1|COP 3|2|NSUBJ 4|1|PUNCT
+*MOT:	I don't know .
+%mor:	pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not verb|know-Inf-S .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	where it go ?
+%mor:	adv|where pron|it-Prs-Nom-S3 verb|go-Fin-Ind-Pres-S3 ?
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ADVCL-RELCL 4|1|PUNCT
+*MOT:	I don't know .
+%mor:	pron|I-Prs-Nom-S1 aux|do-Fin-Ind-Pres-S1~part|not verb|know-Inf-S .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	go pottie ?
+%mor:	verb|go-Fin-Imp-S noun|pottie-Acc ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	yeah .
+%act:	continues to manipulate nesting cups on floor
+%mor:	intj|yeah .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	where ?
+%gpx:	points in other direction
+%mor:	adv|where ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	uhhuh .
+%gpx:	nods
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	here .
+%act:	<aft> manipulates objects on lid
+%mor:	adv|here .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	oh .
+%act:	reaches in dollhouse , takes out ladder and turns it in hand
+%mor:	intj|oh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	hey Gloria look what I found .
+%mor:	intj|hey propn|Gloria verb|look-Fin-Ind-Pres-S3 pron|what-Rel-S1 pron|I-Prs-Nom-S1 verb|find-Fin-Ind-Past-S1-irr .
+%gra:	1|3|DISCOURSE 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|NSUBJ 6|4|ACL-RELCL 7|3|PUNCT
+*CHI:	huh ?
+%mor:	intj|huh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	a ladder !
+%act:	<1w> leans ladder on dollhouse
+%mor:	det|a-Ind-Art noun|ladder !
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	see the ladder ?
+%mor:	verb|see-Fin-Imp-S det|the-Def-Art noun|ladder-Acc ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	where +...
+%mor:	adv|where +...
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	see ?
+%act:	<1w> holds out dog so Gloria can see . <1w> reaches in dollhouse and takes out dog .
+%mor:	verb|see-Fin-Imp-S ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	here's the doggie .
+%act:	<1w-3w> holds out dog so Gloria can see .
+%mor:	adv|here~aux|be-Fin-Ind-Pres-S3 det|the-Def-Art noun|doggie .
+%gra:	1|0|ROOT 2|1|COP 3|4|DET 4|1|NSUBJ 5|1|PUNCT
+*MOT:	jup_jup_jup_jup_jup@o .
+%act:	<1w> falls in dollhouse <1w> pauses at top . <1w> puts dog to ladder and makes him climb ladder .
+%xpho:	<1w> dZup dZup dZup dZup dZup
+%mor:	on|jupjupjupjupjup .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Geronimo !
+%act:	<1w> falls in dollhouse
+%mor:	propn|Geronimo !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	boom@o .
+%par:	<1w> laughs
+%mor:	on|boom .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	uhhuh .
+%act:	tries to hold ladder steeper to dollhouse
+%par:	<1w> breathy
+%gpx:	<bef> big smile
+%mor:	intj|uhhuh .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you stand it up ?
+%act:	<1w> resets ladder to dollhouse
+%par:	<1w> spoken softly
+%mor:	pron|you-Prs-Nom-S2 verb|stand-Fin-Ind-Pres-S2 pron|it-Prs-Acc-S3 adp|up ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|COMPOUND-PRT 5|2|PUNCT
+*MOT:	okay .
+%mor:	intj|okay .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	xxx .
+%act:	<dur> reaches in dollhouse and takes out man <bef> puts objects from lap to floor .
+*CHI:	here .
+%act:	<dur> holds out man to Mother <bef> drops shape box objects from other hand to floor .
+%mor:	adv|here .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	you do it .
+%mor:	pron|you-Prs-Nom-S2 verb|do-Fin-Ind-Pres-S2 pron|it-Prs-Acc-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	jup_jup_jup_jup_jup@o .
+%act:	puts man to ladder and makes him climb as Mother did with dog
+%mor:	on|jupjupjupjupjup .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	uhoh (.) fall down .
+%act:	reaches for ladder , leans it on dollhouse and holds it
+%mor:	intj|uhoh verb|fall-Fin-Imp-S adv|down .
+%gra:	1|2|DISCOURSE 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*MOT:	Mommy better hold it (.) huh ?
+%mor:	propn|Mommy adv|well verb|hold-Fin-Imp-S pron|it-Prs-Acc-S3 intj|huh ?
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|OBJ 6|3|PUNCT
+@End

@@ -1,0 +1,569 @@
+@UTF8
+@PID:	11312/a-00074401-1
+@Begin
+@Languages:	spa
+@Participants:	MAD Mother, CHI Target_Child, PAD Father
+@ID:	spa|Ornat|MAD|||||Mother|||
+@ID:	spa|Ornat|CHI|1;07.00||||Target_Child|||
+@ID:	spa|Ornat|PAD|||||Father|||
+@Comment:	[ba3 morphotag | engine=stanza-1.11.1 ; lang=spa | 2026-05-07T09:19:58-04:00]
+@Media:	010700f, video
+@Tape Location:	Z-1;07-039
+@Situation:	María en su silla , llega mamá con un plato.
+@Types:	long, toyplay, TD
+*MAD:	0 [% llega con un tenedor] toma , mi amor . 0_20456
+%mor:	verb|tomar-Fin-Ind-Pres-S3 cm|cm det|mi-Def-Prs-Sing-S noun|amor-Masc-Acc .
+%gra:	1|0|ROOT 2|4|PUNCT 3|4|DET 4|1|OBJ 5|1|PUNCT
+*CHI:	xxx . 20456_22496
+*MAD:	venga pínchalo y comételo . 22496_26048
+%mor:	verb|venir-Fin-Sub-Pres-S3 noun|pínchalo-Masc-Acc cconj|y noun|comételo-Masc .
+%gra:	1|0|ROOT 2|1|OBJ 3|4|CC 4|2|CONJ 5|1|PUNCT
+*MAD:	tú , quítate perro . 26048_28325
+%mor:	pron|tú-Prs-Nom-S2 cm|cm verb|quítate-Fin-Ind-Pres-S noun|perro-Masc-Acc .
+%gra:	1|3|NSUBJ 2|1|PUNCT 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	xxx (.) quis@c . 28325_31726
+%com:	coge el tenedor con dos dedos , no puede pinchar el jamón
+%mor:	chi|quis .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	cómo se coge el tenedor ? 31726_35198
+%mor:	pron|cómo-Ind-S1 pron|él-Prs-Acc-reflx-S3 verb|coger-Fin-Ind-Pres-S3 det|el-Masc-Def-Art-Sing noun|tenedor-Masc ?
+%gra:	1|3|OBL 2|3|EXPL-PV 3|0|ROOT 4|5|DET 5|3|NSUBJ 6|3|PUNCT
+*MAD:	si es que lo estás cogiendo mal . 35198_36470
+%mor:	sconj|si aux|ser-Fin-Ind-Pres-S3 sconj|que pron|él-Prs-Acc-S3 aux|estar-Fin-Ind-Pres-S1 verb|coger-Ger-S adv|mal .
+%gra:	1|2|MARK 2|0|ROOT 3|6|MARK 4|6|OBJ 5|6|AUX 6|2|CCOMP 7|6|ADVMOD 8|2|PUNCT
+*MAD:	te pincha Mamá ? 36470_40190
+%mor:	pron|tú-Prs-Dat-S2 verb|pinchar-Fin-Ind-Pres-S3 propn|mamá-Acc ?
+%gra:	1|2|EXPL-PV 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	&=rie qué (Ma)má ! 40190_52401
+%mor:	det|qué-Def-Int propn|mamá !
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MAD:	está rico ? 52401_53925
+%mor:	aux|estar-Fin-Ind-Pres-S3 adj|rico-S1 ?
+%gra:	1|2|COP 2|0|ROOT 3|2|PUNCT
+*CHI:	um . 53925_56648
+%mor:	x|um .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	Mamá , bota . 56648_59840
+%mor:	propn|mamá cm|cm noun|bota-Fem .
+%gra:	1|0|ROOT 2|3|PUNCT 3|1|APPOS 4|1|PUNCT
+*MAD:	te la has quitado ? 59840_61755
+%mor:	pron|tú-Prs-Dat-S2 pron|él-Prs-Acc-S3 aux|haber-Fin-Ind-Pres-S2 verb|quitar-Part-Past-S ?
+%gra:	1|4|OBL-ARG 2|4|OBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*CHI:	mm ? 61755_62690
+%mor:	noun|mm-Masc ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	quieres que te la ponga ? 62690_63670
+%mor:	verb|querer-Fin-Ind-Pres-S1 sconj|que pron|tú-Prs-Dat-S2 pron|él-Prs-Acc-S3 verb|poner-Fin-Sub-Pres-S3 ?
+%gra:	1|0|ROOT 2|5|MARK 3|5|OBL-ARG 4|5|OBJ 5|1|CCOMP 6|1|PUNCT
+*CHI:	um (l)a(s) bota . 63670_64980
+%mor:	x|um det|el-Fem-Def-Art-Plur noun|bota-Fem .
+%gra:	1|3|DEP 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MAD:	como te la vuelvas a quitar , Mamá te va a hacer ? 65151_68575
+%mor:	sconj|como pron|tú-Prs-Dat-S2 pron|él-Prs-Acc-S3 verb|volver-Fin-Ind-Pres-S1 adp|a verb|quitar-Inf-S cm|cm propn|mamá pron|tú-Prs-Dat-S2 verb|ir-Fin-Ind-Pres-S3 adp|a verb|hacer-Inf-S ?
+%gra:	1|4|MARK 2|4|EXPL-PV 3|4|OBJ 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|4|PUNCT 8|10|NSUBJ 9|10|EXPL-PV 10|4|ADVCL 11|12|MARK 12|10|XCOMP 13|4|PUNCT
+*CHI:	tastas@c [= pegar] . 68575_69670
+%mor:	chi|tastas .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	bueno , pues ten cuida(d)o . 69670_71243
+%mor:	adj|buen-S1 cm|cm sconj|pues verb|ten-Fin-Ind-Pres-S1 noun|cuidado-Masc-Acc .
+%gra:	1|0|ROOT 2|4|PUNCT 3|4|MARK 4|1|ADVCL 5|4|OBJ 6|1|PUNCT
+*CHI:	la bota no . 71243_72541
+%mor:	det|el-Fem-Def-Art-Sing noun|bota-Fem adv|no .
+%gra:	1|2|DET 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*MAD:	no te las pongo ? 72541_73526
+%mor:	adv|no pron|tú-Prs-Dat-S2 pron|él-Prs-Acc-P3 verb|poner-Fin-Ind-Pres-S1 ?
+%gra:	1|4|ADVMOD 2|4|OBL-ARG 3|4|OBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	no . 73526_74191
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	sí te las pongo , pero como te las vuelvas a quitar tastas@c . 74191_78118
+%mor:	intj|sí pron|tú-Prs-Dat-S2 pron|él-Prs-Acc-P3 verb|poner-Fin-Ind-Pres-S1 cm|cm cconj|pero sconj|como pron|tú-Prs-Dat-S2 pron|él-Prs-Acc-P3 verb|volver-Fin-Ind-Pres-S1 adp|a verb|quitar-Inf-S chi|tastas .
+%gra:	1|4|ADVCL 2|4|EXPL-PV 3|4|OBJ 4|0|ROOT 5|10|PUNCT 6|10|CC 7|10|MARK 8|10|EXPL-PV 9|10|OBJ 10|4|CONJ 11|12|MARK 12|10|XCOMP 13|12|DEP 14|4|PUNCT
+*CHI:	ta(s)ta(s)@c bota . 78118_79710
+%mor:	chi|tastas noun|bota-Fem .
+%gra:	1|2|DEP 2|0|ROOT 3|2|PUNCT
+*MAD:	María , las botas están sucias , eh ? 79710_83790
+%mor:	propn|María cm|cm det|el-Fem-Def-Art-Plur noun|bota-Fem-Plur aux|estar-Fin-Ind-Pres-P3 adj|sucia-P1 cm|cm x|eh ?
+%gra:	1|6|NSUBJ 2|1|PUNCT 3|4|DET 4|6|NSUBJ 5|6|COP 6|0|ROOT 7|8|PUNCT 8|6|APPOS 9|6|PUNCT
+*MAD:	se ensucian mucho . 83790_86920
+%mor:	pron|él-Prs-Acc-reflx-S3 verb|ensucir-Fin-Ind-Pres-P3 pron|mucho-Ind-S1 .
+%gra:	1|2|EXPL-PV 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*CHI:	eh ? 86920_87486
+%mor:	x|eh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	bota ? 87486_91758
+%mor:	noun|bota-Fem ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	Mamá , tastas@c [= pegar] ! 91758_93656
+%mor:	propn|mamá cm|cm chi|tastas !
+%gra:	1|0|ROOT 2|3|PUNCT 3|1|DEP 4|1|PUNCT
+*MAD:	sí , tastas@c [= pegar] si te las quitas . 93656_96250
+%mor:	intj|sí cm|cm chi|tastas sconj|si pron|tú-Prs-Dat-S2 pron|él-Prs-Acc-P3 verb|quitar-Fin-Ind-Pres-P .
+%gra:	1|3|ADVCL 2|1|PUNCT 3|0|ROOT 4|7|MARK 5|7|OBL-ARG 6|7|OBJ 7|3|ADVCL 8|3|PUNCT
+*CHI:	eh ? 96250_97278
+%mor:	x|eh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	tastas@c [= pegar] . 97278_99111
+%mor:	chi|tastas .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	se come con la otra mano , María . 99111_103203
+%mor:	pron|él-Prs-Acc-reflx-S3 verb|comir-Fin-Ind-Pres-S3 adp|con det|el-Fem-Def-Art-Sing det|otro-Fem-Def-Ind-Sing noun|mano-Fem cm|cm propn|María .
+%gra:	1|2|EXPL-PV 2|0|ROOT 3|6|CASE 4|6|DET 5|4|DET 6|2|OBL 7|8|PUNCT 8|2|NSUBJ 9|2|PUNCT
+*CHI:	mm ? 103203_103795
+%mor:	noun|mm-Masc ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	con la otra mano . 103795_104650
+%mor:	adp|con det|el-Fem-Def-Art-Sing det|otro-Fem-Def-Ind-Sing noun|mano-Fem .
+%gra:	1|4|CASE 2|4|DET 3|2|DET 4|0|ROOT 5|4|PUNCT
+*CHI:	así . 104650_115540
+%com:	cambia de mano
+%mor:	adv|así .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	tasta(s)@c tasta(s)@c bota . 115540_119950
+%mor:	chi|tastas chi|tastas noun|bota-Fem .
+%gra:	1|3|DEP 2|1|DEP 3|0|ROOT 4|3|PUNCT
+*MAD:	pínchalo , pínchalo . 119950_121940
+%mor:	noun|pínchalo-Masc cm|cm noun|pínchalo-Masc .
+%gra:	1|0|ROOT 2|3|PUNCT 3|1|CONJ 4|1|PUNCT
+*MAD:	está rico ? 121940_129241
+%mor:	aux|estar-Fin-Ind-Pres-S3 adj|rico-S1 ?
+%gra:	1|2|COP 2|0|ROOT 3|2|PUNCT
+*CHI:	mm . 129241_141116
+%com:	afiramativo
+%mor:	noun|mm-Masc .
+%gra:	1|0|ROOT 2|1|PUNCT
+@Tape Location:	Z-1;07-040
+@Situation:	Durante la cena , María sentada en su silla y mamá con ella.
+*CHI:	Mamá , caca . 141116_144870
+%com:	señalando
+%mor:	propn|mamá cm|cm noun|caca-Fem .
+%gra:	1|0|ROOT 2|3|PUNCT 3|1|APPOS 4|1|PUNCT
+*MAD:	dónde ? 144870_145478
+%mor:	adv|dónde ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	aquí Mamá , caca . 145478_147413
+%mor:	adv|aquí propn|mamá cm|cm noun|caca-Fem .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|PUNCT 4|2|APPOS 5|2|PUNCT
+*MAD:	Mamá no tiene caca . 147413_149336
+%mor:	propn|mamá adv|no verb|tener-Fin-Ind-Pres-S3 noun|caca-Fem-Acc .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	Mamá no caca . 149336_151838
+%mor:	propn|mamá adv|no verb|cacar-Fin-Ind-Pres-S3 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MAD:	no . 151838_155695
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	ahí pupa . 155695_157261
+%mor:	adv|ahí noun|pupa-Fem .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MAD:	me voy ? 157261_162110
+%mor:	pron|yo-Prs-Dat-S1 verb|ir-Fin-Ind-Pres-S1 ?
+%gra:	1|2|EXPL-PV 2|0|ROOT 3|2|PUNCT
+*CHI:	no . 162110_162925
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	quieres que me vaya ? 162925_164088
+%mor:	verb|querer-Fin-Ind-Pres-S1 sconj|que pron|yo-Prs-Dat-S1 verb|ir-Fin-Sub-Pres-S3 ?
+%gra:	1|0|ROOT 2|4|MARK 3|4|OBL-ARG 4|1|CCOMP 5|1|PUNCT
+*CHI:	mm . 164088_164521
+%mor:	noun|mm-Masc .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	a dónde ? 164521_165178
+%mor:	adp|a adv|dónde ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*CHI:	no , Mamá no . 165178_166730
+%mor:	adv|no cm|cm propn|mamá adv|no .
+%gra:	1|3|ADVMOD 2|1|PUNCT 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*MAD:	no quieres que me vaya ? 166730_167793
+%mor:	adv|no verb|querer-Fin-Ind-Pres-S1 sconj|que pron|yo-Prs-Dat-S1 verb|ir-Fin-Sub-Pres-S3 ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|5|MARK 4|5|OBL-ARG 5|2|CCOMP 6|2|PUNCT
+*CHI:	no . 167793_168320
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	porqué ? 168320_168950
+%mor:	adv|porqué ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*PAD:	xxx [% habla con mamá] . 168950_172781
+*CHI:	achis@b , achis@b . 172781_175645
+%mor:	bab|achis cm|cm bab|achis .
+%gra:	1|0|ROOT 2|1|PUNCT 3|1|DEP 4|1|PUNCT
+*CHI:	0 [% María trata de pinchar un trocito de jamón .no hace caso a Mamá] . 175645_186128
+@Tape Location:	Z-1;07-041
+@Situation:	Durante la cena.María juega con el tenedor.
+*MAD:	venga , pínchalo , no juegues . 186128_188405
+%mor:	verb|venir-Fin-Sub-Pres-S3 cm|cm noun|pínchalo-Masc-Acc cm|cm adv|no verb|jugar-Fin-Ind-Pres-S2 .
+%gra:	1|0|ROOT 2|3|PUNCT 3|1|OBJ 4|3|PUNCT 5|6|ADVMOD 6|1|ADVCL 7|1|PUNCT
+*MAD:	a pincharlo . 188405_189255
+%mor:	adp|a verb|pinchar-Inf-S~pron|él-Prs-Acc-S3 .
+%gra:	1|2|MARK 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	aquí ? 189255_190516
+%com:	mirando a Mamá
+%mor:	adv|aquí ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	sí . 190516_191116
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	te lo pincha Mamá ? 191116_198116
+%mor:	pron|tú-Prs-Dat-S2 pron|él-Prs-Acc-S3 verb|pinchar-Fin-Ind-Pres-S1 propn|mamá ?
+%gra:	1|3|OBL-ARG 2|3|OBJ 3|0|ROOT 4|3|NSUBJ 5|3|PUNCT
+*CHI:	um . 198116_198908
+%mor:	x|um .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	venga , cómetelo ahora . 198908_203268
+%mor:	verb|venir-Fin-Sub-Pres-S3 cm|cm noun|cómetelo-Masc-Acc adv|ahora .
+%gra:	1|0|ROOT 2|3|PUNCT 3|1|OBJ 4|1|ADVMOD 5|1|PUNCT
+*MAD:	cómetelo hija . 203268_204871
+%mor:	adj|cómetelo-S1 noun|hija-Fem .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	0 [% se lo come] . 204871_207510
+*CHI:	mm ? 207510_208491
+%mor:	noun|mm-Masc ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	mastica . 208491_209813
+%mor:	verb|masticar-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	mm , mm . 209813_210740
+%mor:	noun|mm-Masc cm|cm noun|mm-Masc .
+%gra:	1|0|ROOT 2|1|PUNCT 3|1|APPOS 4|1|PUNCT
+*MAD:	xxx . 210740_227356
+*CHI:	0 [% trata de pinchar otra vez] Mamá , í . 227356_229210
+%mor:	propn|mamá cm|cm x|í .
+%gra:	1|0|ROOT 2|1|PUNCT 3|1|APPOS 4|1|PUNCT
+*MAD:	pincho ? 229210_231498
+%mor:	noun|pincho-Masc ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	um . 231498_232156
+%com:	afirmativo
+%mor:	x|um .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	0 [% pincha] ya . 232156_235645
+%mor:	adv|ya .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 [% María come y vuelve a tratar de pinchar] Mamá ! 235645_243525
+%mor:	propn|mamá !
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	0 [% le ayuda] . 243525_252396
+*CHI:	má(s) . 252396_253343
+%mor:	adv|más .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	quieres más ? 253343_254160
+%mor:	verb|querer-Fin-Ind-Pres-S1 adv|más ?
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	um . 254160_254696
+%com:	afirmativo
+%mor:	x|um .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	de verdad ? 254696_255603
+%mor:	adp|de noun|verdad-Fem ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*CHI:	um . 255603_255950
+%mor:	x|um .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	te lo vas a comer ? 255950_256751
+%mor:	pron|tú-Prs-Dat-S2 pron|él-Prs-Acc-S3 verb|ir-Fin-Ind-Pres-S1 adp|a verb|comer-Inf-S ?
+%gra:	1|3|EXPL-PV 2|3|OBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|3|PUNCT
+*CHI:	um . 256751_257411
+%mor:	x|um .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	xxx . 257411_259130
+%com:	va a la cocina a por más jamón
+*MAD:	mastica bien eso , hija . 259130_266548
+%mor:	verb|masticar-Fin-Ind-Pres-S3 adv|bien pron|ese-Dem-S1 cm|cm noun|hija-Fem .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|OBJ 4|5|PUNCT 5|3|APPOS 6|1|PUNCT
+*CHI:	0 [% juega con el tenedor .golpea con el la mesa] . 266548_277056
+*MAD:	0 [% desde la cocina] qué haces , María ? 277056_279585
+%mor:	pron|qué-Int-S1 verb|hacer-Fin-Ind-Pres-S1 cm|cm propn|María ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT 4|2|NSUBJ 5|2|PUNCT
+*CHI:	&=canta . 279585_313636
+@Tape Location:	Z-1;07-042
+@Situation:	María sentada , llega mamá con más jamón.
+*MAD:	toma . 313636_314513
+%mor:	verb|tomar-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	má(s) ti [= pinchar] . 314513_316686
+%com:	quiere que Mamá le pinche un trocito de jamón
+%mor:	adv|más pron|tú-Prs-Acc-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MAD:	lo pincho ? 316686_317126
+%mor:	pron|él-Prs-Acc-S3 noun|pincho-Masc ?
+%gra:	1|2|OBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	sí , sí . 317126_318055
+%mor:	intj|sí cm|cm intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT 3|1|ADVCL 4|1|PUNCT
+*MAD:	0 [% pincha] . 318055_321370
+*CHI:	0 [% mirando a Mamá] titi@c , titi@c [= pinchar] . 321370_324538
+%mor:	chi|titi cm|cm chi|titi .
+%gra:	1|0|ROOT 2|1|PUNCT 3|1|DEP 4|1|PUNCT
+*MAD:	venga , ya está pinchado , cómetelo . 324538_329385
+%com:	se lo mete en la boca
+%mor:	verb|venir-Fin-Sub-Pres-S3 cm|cm adv|ya aux|estar-Fin-Ind-Pres-S3 adj|pinchar-S1 cm|cm noun|cómetelo-Masc .
+%gra:	1|0|ROOT 2|5|PUNCT 3|5|ADVMOD 4|5|COP 5|1|PARATAXIS 6|7|PUNCT 7|5|CONJ 8|1|PUNCT
+*MAD:	mastícalo bien . 329385_333416
+%mor:	noun|mastícalo-Masc adv|bien .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	no . 333416_334040
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	está rico ? 334040_334888
+%mor:	aux|estar-Fin-Ind-Pres-S3 adj|rico-S1 ?
+%gra:	1|2|COP 2|0|ROOT 3|2|PUNCT
+*CHI:	no . 334888_335511
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	no ? 335511_336208
+%mor:	adv|no ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	sí , está muy rico . 336208_337991
+%mor:	intj|sí cm|cm aux|estar-Fin-Ind-Pres-S3 adv|mucho adj|rico-S1 .
+%gra:	1|5|ADVCL 2|1|PUNCT 3|5|COP 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	no . 337991_338896
+%com:	lo escupe
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	má(s) , no . 338896_341046
+%mor:	adv|más cm|cm adv|no .
+%gra:	1|3|ADVMOD 2|1|PUNCT 3|0|ROOT 4|3|PUNCT
+*MAD:	para qué me has hecho ir a por ello ? 341046_343088
+%mor:	adp|para pron|qué-Int-S1 pron|yo-Prs-Dat-S1 aux|haber-Fin-Ind-Pres-S1 verb|hacer-Part-Past-S verb|ir-Inf-S adp|a adp|por pron|él-Prs-Acc,Nom-S3 ?
+%gra:	1|2|CASE 2|5|OBL 3|5|EXPL-PV 4|5|AUX 5|0|ROOT 6|5|XCOMP 7|9|CASE 8|9|CASE 9|6|OBL 10|5|PUNCT
+*CHI:	no , má(s) no . 343088_344185
+%mor:	adv|no cm|cm adv|más adv|no .
+%gra:	1|4|ADVMOD 2|1|PUNCT 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*MAD:	si no querías más , porqué me has hecho ir a por más ? 344185_346041
+%mor:	sconj|si adv|no verb|querer-Fin-Ind-Pres-S1 adv|más cm|cm sconj|porqué pron|yo-Prs-Dat-S1 aux|haber-Fin-Ind-Pres-S1 verb|hacer-Part-Past-S verb|ir-Inf-S adp|a adp|por adv|más ?
+%gra:	1|3|MARK 2|3|ADVMOD 3|9|ADVCL 4|3|ADVMOD 5|3|PUNCT 6|9|MARK 7|9|OBL-ARG 8|9|AUX 9|0|ROOT 10|9|XCOMP 11|13|CASE 12|13|CASE 13|10|ADVMOD 14|9|PUNCT
+*CHI:	Mamá , no . 346041_347803
+%mor:	propn|mamá cm|cm adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT 3|1|ADVMOD 4|1|PUNCT
+*MAD:	un poquito . 347803_348456
+%mor:	det|uno-Masc-Ind-Art-Sing noun|poquito-Masc .
+%gra:	1|0|ROOT 2|1|FIXED 3|1|PUNCT
+*CHI:	no . 348456_349096
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	uno chiquitito . 349096_350056
+%com:	lloriqueando
+%mor:	pron|uno-Ind-S1 adj|chiquitito-S1 .
+%gra:	1|0|ROOT 2|1|AMOD 3|1|PUNCT
+*MAD:	el último . 350056_351745
+%mor:	det|el-Masc-Def-Art-Sing adj|último-S1 .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	no . 351745_352621
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	no má(s) , no . 352621_356815
+%mor:	adv|no adv|más cm|cm adv|no .
+%gra:	1|2|ADVMOD 2|4|ADVMOD 3|2|PUNCT 4|0|ROOT 5|4|PUNCT
+*MAD:	estoy enfadada contigo . 356815_358393
+%mor:	aux|estar-Fin-Ind-Pres-S1 adj|enfadado-S1 pron|tú-Prs-S2 .
+%gra:	1|2|COP 2|0|ROOT 3|2|NSUBJ 4|2|PUNCT
+*CHI:	(Ma)má . 358393_358946
+%com:	dándole el plato
+%mor:	propn|mamá .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	no , déjalo ahí . 358946_360928
+%mor:	adv|no cm|cm verb|déjalo-Fin-Ind-Pres-S1 adv|ahí .
+%gra:	1|3|ADVMOD 2|1|PUNCT 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*MAD:	ahí déjalo . 360928_365630
+%mor:	adv|ahí verb|déjalo-Fin-Ind-Pres-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	aquí ? 365630_366736
+%mor:	adv|aquí ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	ahora estoy enfadada . 366736_368048
+%mor:	adv|ahora aux|estar-Fin-Ind-Pres-S1 adj|enfadado-S1 .
+%gra:	1|3|ADVMOD 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	Mamá ! 368048_376981
+%com:	se queda mirándola con un dedito en la boca
+%mor:	propn|mamá !
+%gra:	1|0|ROOT 2|1|PUNCT
+*PAD:	bueno , hija . 376981_381535
+%mor:	adj|buen-S1 cm|cm noun|hija-Fem .
+%gra:	1|0|ROOT 2|3|PUNCT 3|1|DEP 4|1|PUNCT
+*MAD:	no habla mucho hoy no eh [% se dirige a papá] ? 381535_387170
+%mor:	adv|no verb|hablar-Fin-Ind-Pres-S3 pron|mucho-Ind-S1 adv|hoy adv|no intj|eh ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|ADVMOD 4|2|ADVMOD 5|6|ADVMOD 6|2|OBL 7|2|PUNCT
+*PAD:	con todo lo que habla cuando quiere en la calle . 387170_392278
+%mor:	adp|con det|todo-Masc-Def-Tot-Sing pron|él-Prs-Acc-S3 pron|que-Rel-S1 verb|hablar-Fin-Ind-Pres-S3 sconj|cuando verb|querer-Fin-Ind-Pres-S3 adp|en det|el-Fem-Def-Art-Sing noun|calle-Fem .
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|5|NSUBJ 5|3|ACL-RELCL 6|7|MARK 7|5|ADVCL 8|10|CASE 9|10|DET 10|7|OBL 11|3|PUNCT
+*MAD:	cómete más , María . 392278_395693
+%mor:	verb|cómeter-Fin-Ind-Pres-S3 adv|más cm|cm propn|María-Acc .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|4|PUNCT 4|1|OBJ 5|1|PUNCT
+*CHI:	no . 395693_396448
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	www [= hablan Mamá y Papá] . 396448_401708
+*CHI:	Mamá . 401708_403045
+%mor:	propn|mamá .
+%gra:	1|0|ROOT 2|1|PUNCT
+*PAD:	María , nos despedimos ? 403045_406853
+%mor:	propn|María cm|cm pron|yo-Prs-Dat-P1 verb|despedir-Fin-Ind-Pres-P1 ?
+%gra:	1|4|NSUBJ 2|1|PUNCT 3|4|EXPL-PV 4|0|ROOT 5|4|PUNCT
+*CHI:	0 [% empuja el plato hacia el borde de la mesa] . 406853_410270
+*MAD:	no , no , no , no . 410270_411491
+%mor:	adv|no cm|cm adv|no cm|cm adv|no cm|cm adv|no .
+%gra:	1|3|ADVMOD 2|3|PUNCT 3|5|ADVMOD 4|3|PUNCT 5|7|ADVMOD 6|5|PUNCT 7|0|ROOT 8|7|PUNCT
+*MAD:	déjalo ahí . 411491_413531
+%mor:	verb|déjalo-Fin-Ind-Pres-S1 adv|ahí .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	ahí . 413531_414356
+%mor:	adv|ahí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*PAD:	me das un beso María ? 414356_415458
+%mor:	pron|yo-Prs-Dat-S1 verb|dar-Fin-Ind-Pres-S1 det|uno-Masc-Ind-Art-Sing noun|beso-Masc-Acc propn|María ?
+%gra:	1|2|OBL-ARG 2|0|ROOT 3|4|DET 4|2|OBJ 5|4|APPOS 6|2|PUNCT
+*PAD:	me das un beso ? 415458_416956
+%mor:	pron|yo-Prs-Dat-S1 verb|dar-Fin-Ind-Pres-S1 det|uno-Masc-Ind-Art-Sing noun|beso-Masc-Acc ?
+%gra:	1|2|EXPL-PV 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	mm . 416956_417651
+%mor:	noun|mm-Masc .
+%gra:	1|0|ROOT 2|1|PUNCT
+*PAD:	xxx ? 417651_419151
+*CHI:	no: . 419151_420088
+%com:	lloriqueando
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	tíraselo un beso . 420088_421648
+%com:	lloriquea y luego se adelanta hacia Papá
+%mor:	noun|tíraselo-Masc det|uno-Masc-Ind-Art-Sing noun|beso-Masc-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MAD:	si te lo va a dar , pero como no te acercas . 421648_424636
+%mor:	sconj|si pron|tú-Prs-Dat-S2 pron|él-Prs-Acc-S3 verb|ir-Fin-Ind-Pres-S3 adp|a verb|dar-Inf-S cm|cm cconj|pero sconj|como adv|no pron|tú-Prs-Dat-S2 verb|acercar-Fin-Ind-Pres-S3 .
+%gra:	1|4|MARK 2|4|EXPL-PV 3|4|OBJ 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|12|PUNCT 8|12|CC 9|12|MARK 10|12|ADVMOD 11|12|OBJ 12|4|CONJ 13|4|PUNCT
+*MAD:	me das uno a mí ? 424636_425263
+%mor:	pron|yo-Prs-Dat-S1 verb|dar-Fin-Ind-Pres-S1 pron|uno-Ind-S1 adp|a pron|yo-Prs-Acc-S1 ?
+%gra:	1|2|EXPL-PV 2|0|ROOT 3|2|OBJ 4|5|CASE 5|2|OBL-ARG 6|2|PUNCT
+*CHI:	mm . 425263_426121
+%mor:	noun|mm-Masc .
+%gra:	1|0|ROOT 2|1|PUNCT
+*PAD:	me voy ahí para que me lo des ? 426121_427703
+%mor:	pron|yo-Prs-Dat-S1 verb|ir-Fin-Ind-Pres-S1 adv|ahí adp|para sconj|que pron|yo-Prs-Dat-S1 pron|él-Prs-Acc-S3 verb|des-Fin-Sub-Pres-S3 ?
+%gra:	1|2|EXPL-PV 2|0|ROOT 3|2|ADVMOD 4|8|MARK 5|8|MARK 6|8|OBL-ARG 7|8|OBJ 8|2|ADVCL 9|2|PUNCT
+*CHI:	mm . 427703_428313
+%mor:	noun|mm-Masc .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	un besito . 428313_429738
+%mor:	det|uno-Masc-Ind-Art-Sing noun|besito-Masc .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	0 [% le da un beso] . 429738_432056
+*MAD:	díle adiós a Papá . 432056_433788
+%mor:	noun|díle-Masc noun|adiós-Masc-Acc adp|a propn|Papá .
+%gra:	1|0|ROOT 2|1|OBJ 3|4|CASE 4|2|NMOD 5|1|PUNCT
+*CHI:	a(d)ió(s) Papá . 433788_435036
+%mor:	noun|adiós-Masc propn|Papá .
+%gra:	1|2|DEP 2|0|ROOT 3|2|PUNCT
+@Tape Location:	Z-1;07-043
+@Situation:	María se va a bañar.Está sobre la mesa de la cocina; mamá la desviste.
+*MAD:	qué te pasa nene ? 435036_448186
+%mor:	pron|qué-Int-S1 pron|tú-Prs-Dat-S2 verb|pasar-Fin-Ind-Pres-S3 noun|nene-Masc-Acc ?
+%gra:	1|3|NSUBJ 2|3|OBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	xxx (.) este , este . 448186_453131
+%com:	le da el pie para que le quite el pantalón
+%mor:	pron|este-Dem-S1 cm|cm pron|este-Dem-S1 .
+%gra:	1|0|ROOT 2|3|PUNCT 3|1|APPOS 4|1|PUNCT
+*MAD:	este , este , cuál ? 453131_455563
+%mor:	pron|este-Dem-S1 cm|cm pron|este-Dem-S1 cm|cm pron|cuál-Int-S1 ?
+%gra:	1|0|ROOT 2|3|PUNCT 3|1|APPOS 4|3|PUNCT 5|1|APPOS 6|1|PUNCT
+*CHI:	epapupoepa@b [= vocalizaciones] [% mira a su derecha] . 455563_461286
+%mor:	bab|epapupoepa .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	cuál es , ese de Papá ? 461286_462736
+%mor:	pron|cuál-Int-S1 aux|ser-Fin-Ind-Pres-S3 cm|cm pron|ese-Dem-S1 adp|de propn|Papá ?
+%gra:	1|4|NSUBJ 2|4|COP 3|4|PUNCT 4|0|ROOT 5|6|CASE 6|4|NMOD 7|4|PUNCT
+*CHI:	mira , (Pa)pá . 462736_464255
+%mor:	verb|mirar-Fin-Ind-Pres-S3 cm|cm propn|Papá-Acc .
+%gra:	1|0|ROOT 2|3|PUNCT 3|1|OBJ 4|1|PUNCT
+*CHI:	acá . 464255_467983
+%mor:	adv|acá .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	0 [% se levanta y Mamá le quita el pantalón] a calle . 467983_488495
+%mor:	adp|a noun|calle-Fem .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MAD:	dónde va mi nene ? 488495_492080
+%mor:	adv|dónde verb|ir-Fin-Ind-Pres-S3 det|mi-Def-Prs-Sing-S noun|nene-Masc ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|DET 4|2|NSUBJ 5|2|PUNCT
+*CHI:	a calle ! 492080_493171
+%mor:	adp|a noun|calle-Fem !
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MAD:	claro , a qué ? 493171_494771
+%mor:	adj|claro-S1 cm|cm adp|a pron|qué-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT 3|4|CASE 4|1|NMOD 5|1|PUNCT
+*CHI:	a calle . 494771_495998
+%mor:	adp|a noun|calle-Fem .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MAD:	pero , a dónde ? 495871_496580
+%mor:	cconj|pero cm|cm adp|a adv|dónde ?
+%gra:	1|4|ADVMOD 2|4|PUNCT 3|4|CASE 4|0|ROOT 5|4|PUNCT
+*MAD:	a la calle , a dónde ? 496580_497306
+%mor:	adp|a det|el-Fem-Def-Art-Sing noun|calle-Fem cm|cm adp|a adv|dónde ?
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|PUNCT 5|6|CASE 6|3|ADVMOD 7|3|PUNCT
+*CHI:	nene , a calle , nene . 497306_499195
+%mor:	noun|nene-Masc cm|cm adp|a noun|calle-Fem cm|cm noun|nene-Masc .
+%gra:	1|0|ROOT 2|4|PUNCT 3|4|CASE 4|1|NMOD 5|6|PUNCT 6|1|CONJ 7|1|PUNCT
+*MAD:	a la calle el nene ? 499195_502736
+%mor:	adp|a det|el-Fem-Def-Art-Sing noun|calle-Fem det|el-Masc-Def-Art-Sing noun|nene-Masc ?
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|5|DET 5|3|APPOS 6|3|PUNCT
+*CHI:	um . 502736_503313
+%mor:	x|um .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	a calle nene calle ne(ne) . 503313_511310
+%mor:	adp|a noun|calle-Fem propn|nene noun|calle-Fem propn|nene .
+%gra:	1|2|CASE 2|0|ROOT 3|2|FLAT 4|2|APPOS 5|4|FLAT 6|2|PUNCT
+*MAD:	0 [% le quita la camiseta] . 511310_515150
+*CHI:	xxx Papá . 515150_516284
+%mor:	propn|Papá .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	qué te pasa , hija ? 516284_517981
+%mor:	pron|qué-Int-S1 pron|tú-Prs-Dat-S2 verb|pasar-Fin-Ind-Pres-S3 cm|cm noun|hija-Fem-Acc ?
+%gra:	1|3|NSUBJ 2|3|EXPL-PV 3|0|ROOT 4|5|PUNCT 5|3|OBJ 6|3|PUNCT
+*CHI:	Papá , este . 517981_519030
+%com:	señalando
+%mor:	propn|Papá cm|cm pron|este-Dem-S1 .
+%gra:	1|0|ROOT 2|3|PUNCT 3|1|APPOS 4|1|PUNCT
+*MAD:	Papá este . 519030_520038
+%mor:	propn|Papá pron|este-Dem-S1 .
+%gra:	1|0|ROOT 2|1|APPOS 3|1|PUNCT
+*MAD:	qué hace Papá ? 520038_520861
+%mor:	pron|qué-Int-S1 verb|hacer-Fin-Ind-Pres-S3 propn|Papá ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|NSUBJ 4|2|PUNCT
+*CHI:	Mamá , este . 520861_522103
+%mor:	propn|mamá cm|cm pron|este-Dem-S1 .
+%gra:	1|0|ROOT 2|3|PUNCT 3|1|APPOS 4|1|PUNCT
+*MAD:	Mamá esta . 522103_523039
+%mor:	propn|mamá pron|este-Dem-S1 .
+%gra:	1|0|ROOT 2|1|APPOS 3|1|PUNCT
+*CHI:	Papá este . 523039_524871
+%mor:	propn|Papá pron|este-Dem-S1 .
+%gra:	1|0|ROOT 2|1|APPOS 3|1|PUNCT
+*MAD:	las braguitas . 524871_535703
+%com:	se las quita
+%mor:	det|el-Fem-Def-Art-Plur noun|braguita-Fem-Plur .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	ay , Mamá ! 535703_539116
+%mor:	intj|ay cm|cm propn|mamá !
+%gra:	1|0|ROOT 2|1|PUNCT 3|1|APPOS 4|1|PUNCT
+*MAD:	uy , mi niña . 539116_540646
+%mor:	intj|uy cm|cm det|mi-Def-Prs-Sing-S noun|niña-Fem .
+%gra:	1|4|DEP 2|1|PUNCT 3|4|DET 4|0|ROOT 5|4|PUNCT
+*MAD:	tienes caca ? 540646_544061
+%mor:	verb|tener-Fin-Ind-Pres-S1 noun|caca-Fem-Acc ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	um caca . 544061_545756
+%mor:	x|um noun|caca-Fem .
+%gra:	1|2|DEP 2|0|ROOT 3|2|PUNCT
+@Tape Location:	Z-1;07-044
+@Situation:	María en el baño.Está jugando con unos tapones mientras mamá la lava la cabeza.
+*MAD:	quieres que te traiga otros juguetes Mamá ? 545756_564173
+%mor:	verb|querer-Fin-Ind-Pres-S1 sconj|que pron|tú-Prs-Dat-S2 verb|traigar-Fin-Sub-Pres-S3 det|otro-Masc-Def-Ind-Plur noun|juguete-Masc-Plur-Acc propn|mamá ?
+%gra:	1|0|ROOT 2|4|MARK 3|4|OBL-ARG 4|1|CCOMP 5|6|DET 6|4|OBJ 7|6|APPOS 8|1|PUNCT
+*CHI:	mm . 564173_564605
+%mor:	noun|mm-Masc .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MAD:	sí ? 564605_565303
+%mor:	intj|sí ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	mm . 565303_565705
+%com:	afirmativo
+%mor:	noun|mm-Masc .
+%gra:	1|0|ROOT 2|1|PUNCT
+@End

@@ -1,0 +1,157 @@
+@UTF8
+@PID:	11312/c-00034180-1
+@Begin
+@Languages:	eng
+@Participants:	CHI Target_Child, INV Investigator
+@ID:	eng|Gillam|CHI|7;09.|male|||Target_Child|||
+@ID:	eng|Gillam|INV|||||Investigator|||
+@Comment:	[ba3 morphotag | engine=stanza-1.11.1 ; lang=eng | 2026-05-04T05:43:56-04:00]
+@Date:	28-FEB-2002
+@Transcriber:	Rebecca Garcia/Samantha Castanuela
+@Comment:	DOB = 5/22/1994
+@Comment:	Ethnicity = Hispanic American
+@Comment:	Impairment = No
+@G:	McDonalds
+@Types:	cross, narrative, TD
+*CHI:	tuesday their mother said kids where do you wanna go ?
+%mor:	propn|tuesday pron|their-Prs-Gen-P3 noun|mother verb|say-Fin-Ind-Past-S3-irr noun|kid-Plur adv|where aux|do-Fin-Ind-Pres-S2 pron|you-Prs-Nom-S2 verb|want-Inf-S~part|to verb|go-Inf-S ?
+%gra:	1|4|OBL-UNMARKED 2|3|NMOD-POSS 3|4|NSUBJ 4|0|ROOT 5|4|IOBJ 6|9|ADVMOD 7|9|AUX 8|9|NSUBJ 9|4|CCOMP 10|11|MARK 11|9|XCOMP 12|4|PUNCT
+*CHI:	and Erin waited <and &~eri> [/] and said [/] said Mcdonalds loud .
+%mor:	cconj|and propn|Erin verb|wait-Fin-Ind-Past-S3 cconj|and verb|say-Fin-Ind-Past-S3-irr propn|Mcdonald-Acc adv|loud .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|5|CC 5|3|CONJ 6|5|OBJ 7|5|ADVMOD 8|3|PUNCT
+*CHI:	<and then her> [/] and then they went to the car .
+%mor:	cconj|and adv|then pron|they-Prs-Nom-P3 verb|go-Fin-Ind-Past-P3-irr adp|to det|the-Def-Art noun|car .
+%gra:	1|4|CC 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*INV:	mhm .
+%mor:	intj|mhm .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	and they drove to Mcdonalds .
+%mor:	cconj|and pron|they-Prs-Nom-P3 verb|drive-Fin-Ind-Past-P3-irr adp|to propn|Mcdonald .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|5|CASE 5|3|OBL 6|3|PUNCT
+*CHI:	and they went <to the &~mm:> [/] to <the clerk> [/] the clerk .
+%mor:	cconj|and pron|they-Prs-Nom-P3 verb|go-Fin-Ind-Past-P3-irr adp|to det|the-Def-Art noun|clerk .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*CHI:	and Raymond ordered a burger french fries and a large vanilla shake .
+%mor:	cconj|and propn|Raymond verb|order-Fin-Ind-Past-S3 det|a-Ind-Art noun|burger adj|French-S1 noun|fry-Plur-Acc cconj|and det|a-Ind-Art adj|large-S1 noun|vanilla noun|shake .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|7|DET 5|7|COMPOUND 6|7|AMOD 7|3|OBJ 8|12|CC 9|12|DET 10|12|AMOD 11|12|COMPOUND 12|7|CONJ 13|3|PUNCT
+*CHI:	<&~a> [/] and he &-uh wanted a happy meal .
+%mor:	cconj|and pron|he-Prs-Nom-S3 verb|want-Fin-Ind-Past-S3 det|a-Ind-Art adj|happy-S1 noun|meal-Acc .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|6|DET 5|6|AMOD 6|3|OBJ 7|3|PUNCT
+*CHI:	<and her &~m> [/] and the clerk said that's <&~s> [/] twelve fifty .
+%mor:	cconj|and det|the-Def-Art noun|clerk verb|say-Fin-Ind-Past-S3-irr pron|that-Dem~aux|be-Fin-Ind-Pres-S3 num|twelve num|fifty .
+%gra:	1|4|CC 2|3|DET 3|4|NSUBJ 4|0|ROOT 5|7|NSUBJ 6|7|COP 7|8|NUMMOD 8|4|CCOMP 9|4|PUNCT
+*CHI:	her mother looked inside her <&~pur> [/] purse .
+%mor:	pron|her-Prs-Gen-S3 noun|mother verb|look-Fin-Ind-Past-S3 adp|inside pron|her-Prs-Gen-S3 noun|purse .
+%gra:	1|2|NMOD-POSS 2|3|NSUBJ 3|0|ROOT 4|6|CASE 5|6|NMOD-POSS 6|3|OBL 7|3|PUNCT
+*CHI:	but she didn't have the purse .
+%mor:	cconj|but pron|she-Prs-Nom-S3 aux|do-Fin-Ind-Past-S3-irr~part|not verb|have-Inf-S det|the-Def-Art noun|purse-Acc .
+%gra:	1|5|CC 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+*CHI:	she forgot it at the kitchen at home .
+%com:	Alien story is told before Late for School story
+%mor:	pron|she-Prs-Nom-S3 verb|forget-Fin-Ind-Past-S3-irr pron|it-Prs-Acc-S3 adp|at det|the-Def-Art noun|kitchen adp|at noun|home .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|6|CASE 5|6|DET 6|2|OBL 7|8|CASE 8|2|OBL 9|2|PUNCT
+@G:	LateForSchool
+*CHI:	I call this story Being_Late_For_School .
+%mor:	pron|I-Prs-Nom-S1 verb|call-Fin-Ind-Pres-S1 det|this-Def-Dem-Sing noun|story-Acc propn|BeingLateForSchool-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|OBJ 6|2|PUNCT
+*CHI:	&-uh once upon a time there was <a &~ki> [/] a kid name James .
+%mor:	adv|once adp|upon det|a-Ind-Art noun|time pron|there-Int-S1 verb|be-Fin-Ind-Past-S3-irr det|a-Ind-Art noun|kid noun|name propn|James .
+%gra:	1|6|ADVMOD 2|4|CASE 3|4|DET 4|6|OBL 5|6|EXPL 6|0|ROOT 7|9|DET 8|9|COMPOUND 9|6|NSUBJ 10|9|APPOS 11|6|PUNCT
+*CHI:	<he was> [/] he woke up .
+%mor:	pron|he-Prs-Nom-S3 verb|wake-Fin-Ind-Past-S3-irr adp|up .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|COMPOUND-PRT 4|2|PUNCT
+*CHI:	he looked at his clock .
+%mor:	pron|he-Prs-Nom-S3 verb|look-Fin-Ind-Past-S3 adp|at pron|his-Prs-Gen-S3 noun|clock .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|NMOD-POSS 5|2|OBL 6|2|PUNCT
+*CHI:	and he saw that he was gonna be late for school .
+%mor:	cconj|and pron|he-Prs-Nom-S3 verb|see-Fin-Ind-Past-S3-irr sconj|that pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr verb|go-Part-Pres-S~part|to aux|be-Inf-S adj|late-S1 adp|for noun|school .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|7|MARK 5|7|NSUBJ 6|7|AUX 7|3|CCOMP 8|10|MARK 9|10|COP 10|7|XCOMP 11|12|CASE 12|10|OBL 13|3|PUNCT
+*CHI:	then he went to the kitchen for breakfast .
+%mor:	adv|then pron|he-Prs-Nom-S3 verb|go-Fin-Ind-Past-S3-irr adp|to det|the-Def-Art noun|kitchen adp|for noun|breakfast .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|8|CASE 8|3|OBL 9|3|PUNCT
+*CHI:	<and he made a mess in the> [/] and he made a mess in [/] in the kitchen .
+%mor:	cconj|and pron|he-Prs-Nom-S3 verb|make-Fin-Ind-Past-S3-irr det|a-Ind-Art noun|mess-Acc adp|in det|the-Def-Art noun|kitchen .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|8|CASE 7|8|DET 8|3|OBL 9|3|PUNCT
+*CHI:	and James said oh no .
+%mor:	cconj|and propn|James verb|say-Fin-Ind-Past-S3-irr intj|oh intj|no .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|DISCOURSE 5|3|DISCOURSE 6|3|PUNCT
+*CHI:	and he <get> [/] got dressed .
+%mor:	cconj|and pron|he-Prs-Nom-S3 aux|get-Fin-Ind-Past-S3-irr verb|dress-Part-Past-S .
+%gra:	1|4|CC 2|4|NSUBJ-PASS 3|4|AUX-PASS 4|0|ROOT 5|4|PUNCT
+*CHI:	and [/] and he put on his shoes .
+%mor:	cconj|and pron|he-Prs-Nom-S3 verb|put-Fin-Ind-Past-S3-irr adp|on pron|his-Prs-Gen-S3 noun|shoe-Plur .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|COMPOUND-PRT 5|6|NMOD-POSS 6|3|OBL 7|3|PUNCT
+*CHI:	he tied them up .
+%mor:	pron|he-Prs-Nom-S3 verb|tie-Fin-Ind-Past-S3 pron|they-Prs-Acc-P3 adp|up .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|COMPOUND-PRT 5|2|PUNCT
+*CHI:	but <then he> [/] then one of his laces broke .
+%mor:	cconj|but adv|then num|one adp|of pron|his-Prs-Gen-S3 noun|lace-Plur verb|break-Fin-Ind-Past-S3-irr .
+%gra:	1|7|CC 2|7|ADVMOD 3|7|NSUBJ 4|6|CASE 5|6|NMOD-POSS 6|3|NMOD 7|0|ROOT 8|7|PUNCT
+*CHI:	and James said errrrr@c .
+%mor:	cconj|and propn|James verb|say-Fin-Ind-Past-S3-irr chi|errrrr .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|DEP 5|3|PUNCT
+*CHI:	and when he got outside <he he's> [/] the school bus left when he was about to go .
+%mor:	cconj|and adv|when pron|he-Prs-Nom-S3 verb|get-Fin-Ind-Past-S3-irr adp|outside det|the-Def-Art noun|school noun|bus verb|leave-Fin-Ind-Past-S3-irr adv|when pron|he-Prs-Nom-S3 aux|be-Fin-Ind-Past-S3-irr adj|about-S1 part|to verb|go-Inf-S .
+%gra:	1|9|CC 2|4|ADVMOD 3|4|NSUBJ 4|9|ADVCL 5|8|CASE 6|8|DET 7|8|COMPOUND 8|4|OBL 9|0|ROOT 10|13|ADVMOD 11|13|NSUBJ 12|13|COP 13|9|ADVCL 14|15|MARK 15|13|XCOMP 16|9|PUNCT
+*CHI:	and James said wait wait .
+%mor:	cconj|and propn|James verb|say-Fin-Ind-Past-S3-irr verb|wait-Fin-Imp-S verb|wait-Fin-Imp-S .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|CCOMP 5|3|CCOMP 6|3|PUNCT
+*CHI:	<and then he gotta school> [/] and then he went to school walking .
+%mor:	cconj|and adv|then pron|he-Prs-Nom-S3 verb|go-Fin-Ind-Past-S3-irr adp|to noun|school noun|walking-Ger .
+%gra:	1|4|CC 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|7|CASE 6|7|COMPOUND 7|4|OBL 8|4|PUNCT
+*CHI:	and then the principal came and said you are late for school .
+%mor:	cconj|and adv|then det|the-Def-Art noun|principal verb|come-Fin-Ind-Past-S3-irr cconj|and verb|say-Fin-Ind-Past-S3-irr pron|you-Prs-Nom-S2 aux|be-Fin-Ind-Pres-S2 adj|late-S1 adp|for noun|school .
+%gra:	1|5|CC 2|5|ADVMOD 3|4|DET 4|5|NSUBJ 5|0|ROOT 6|7|CC 7|5|CONJ 8|10|NSUBJ 9|10|COP 10|7|CCOMP 11|12|CASE 12|10|OBL 13|5|PUNCT
+@G:	Aliens
+*CHI:	I call this story Aliens_At_The_Park .
+%mor:	pron|I-Prs-Nom-S1 verb|call-Fin-Ind-Pres-S1 det|this-Def-Dem-Sing noun|story-Acc propn|AliensAtThePark-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|OBJ 6|2|PUNCT
+*CHI:	once upon a time there was two children name john and Sarah .
+%mor:	sconj|once adp|upon det|a-Ind-Art noun|time pron|there-Int-S1 verb|be-Fin-Ind-Past-S3-irr num|two noun|child-Plur noun|name propn|john cconj|and propn|Sarah .
+%gra:	1|4|CASE 2|4|CASE 3|4|DET 4|6|OBL 5|6|EXPL 6|0|ROOT 7|9|NUMMOD 8|9|COMPOUND 9|10|COMPOUND 10|6|NSUBJ 11|12|CC 12|10|CONJ 13|6|PUNCT
+*CHI:	they went to the park <to to> [/] to have fun .
+%mor:	pron|they-Prs-Nom-P3 verb|go-Fin-Ind-Past-P3-irr adp|to det|the-Def-Art noun|park part|to verb|have-Inf-S noun|fun-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|7|MARK 7|2|ADVCL 8|7|OBJ 9|2|PUNCT
+*CHI:	but then they saw <&~a some> [/] a spaceship .
+%mor:	cconj|but adv|then pron|they-Prs-Nom-P3 verb|see-Fin-Ind-Past-P3-irr det|a-Ind-Art noun|spaceship-Acc .
+%gra:	1|4|CC 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|6|DET 6|4|OBJ 7|4|PUNCT
+*CHI:	and <&~st &~stephe> [/] Stephanie <xxx uh> [/] saw aliens out of the spaceship .
+%mor:	cconj|and propn|Stephanie verb|see-Fin-Ind-Past-S3-irr noun|alien-Plur-Acc adp|out adp|of det|the-Def-Art noun|spaceship .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|8|CASE 6|8|CASE 7|8|DET 8|3|OBL 9|3|PUNCT
+*CHI:	and she wanted to go say hi .
+%mor:	cconj|and pron|she-Prs-Nom-S3 verb|want-Fin-Ind-Past-S3 part|to verb|go-Inf-S verb|say-Inf-S intj|hi .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|XCOMP 7|3|DISCOURSE 8|3|PUNCT
+*CHI:	but john didn't wanna .
+%mor:	cconj|but propn|john aux|do-Fin-Ind-Past-S3-irr~part|not verb|want-Inf-S~part|to .
+%gra:	1|5|CC 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|5|XCOMP 7|5|PUNCT
+*CHI:	<she &~w> [/] he wanted to go home .
+%mor:	pron|he-Prs-Nom-S3 verb|want-Fin-Ind-Past-S3 part|to verb|go-Inf-S adv|home .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|4|ADVMOD 6|2|PUNCT
+*CHI:	<and> [/] but Stephanie took john's hand and went where the aliens were .
+%mor:	cconj|but propn|Stephanie verb|take-Fin-Ind-Past-S3-irr propn|john~part|s noun|hand-Acc cconj|and verb|go-Fin-Ind-Past-S3-irr adv|where det|the-Def-Art noun|alien-Plur aux|be-Fin-Ind-Past-P3-irr .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|6|NMOD-POSS 5|4|CASE 6|3|OBJ 7|8|CC 8|3|CONJ 9|8|CCOMP 10|11|DET 11|12|NSUBJ 12|9|COP 13|3|PUNCT
+*CHI:	and the aliens talked .
+%mor:	cconj|and det|the-Def-Art noun|alien-Plur verb|talk-Fin-Ind-Past-P3 .
+%gra:	1|4|CC 2|3|DET 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	&-uh and Stephanie said hello .
+%mor:	cconj|and propn|Stephanie verb|say-Fin-Ind-Past-S3-irr intj|hello .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	but the aliens didn't answer .
+%mor:	cconj|but det|the-Def-Art noun|alien-Plur aux|do-Fin-Ind-Past-P3-irr~part|not verb|answer-Inf-S .
+%gra:	1|6|CC 2|3|DET 3|6|NSUBJ 4|6|AUX 5|6|ADVMOD 6|0|ROOT 7|6|PUNCT
+*CHI:	<she &~s> [/] she shouted again hello .
+%mor:	pron|she-Prs-Nom-S3 verb|shout-Fin-Ind-Past-S3 adv|again intj|hello .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|DISCOURSE 5|2|PUNCT
+*CHI:	but they didn't answer .
+%mor:	cconj|but pron|they-Prs-Nom-P3 aux|do-Fin-Ind-Past-P3-irr~part|not verb|answer-Inf-S .
+%gra:	1|5|CC 2|5|NSUBJ 3|5|AUX 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	she shouted louder hello !
+%mor:	pron|she-Prs-Nom-S3 verb|shout-Fin-Ind-Past-S3 adj|louder-Cmp-S1 intj|hello !
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|AMOD 4|2|OBJ 5|2|PUNCT
+*CHI:	but they still didn't <hear xxx> [/] hear her .
+%mor:	cconj|but pron|they-Prs-Nom-P3 adv|still aux|do-Fin-Ind-Past-P3-irr~part|not verb|hear-Inf-S pron|her-Prs-Acc-S3 .
+%gra:	1|6|CC 2|6|NSUBJ 3|6|ADVMOD 4|6|AUX 5|6|ADVMOD 6|0|ROOT 7|6|OBJ 8|6|PUNCT
+*CHI:	and then they went back home .
+%mor:	cconj|and adv|then pron|they-Prs-Nom-P3 verb|go-Fin-Ind-Past-P3-irr adv|back adv|home .
+%gra:	1|4|CC 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|4|ADVMOD 6|4|ADVMOD 7|4|PUNCT
+@End

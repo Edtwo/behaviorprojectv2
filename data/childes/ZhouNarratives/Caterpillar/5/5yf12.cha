@@ -1,0 +1,141 @@
+@UTF8
+@PID:	11312/a-00102383-0
+@Begin
+@Languages:	zho
+@Participants:	CHI Target_Child, INV Investigator
+@ID:	zho|ZhouNarratives|CHI|5;||||Target_Child|||
+@ID:	zho|ZhouNarratives|INV|||||Investigator|||
+@Media:	5yf12, video
+@Date:	14-OCT-2008
+@Situation:	Kindergarten of Liu Yi
+@G:	04
+@Types:	cross, narrative, TD
+*CHI:	<有 一 个> [//] 有一天 太阳 升 起来 了 [^c] . [+ bok] 48600_60615
+%wor:	有 48600_50001 一 50021_50222 个 50242_51183 有一天 51203_54527 太阳 54547_54768 升 54788_54808 起来 54828_60095 了 60115_60615 .
+%act:	扉页2
+%mor:	noun|有一天 noun|太阳 verb|升-Inf-S verb|起来-Inf-S part|了 .
+%gra:	1|3|NMOD-TMOD 2|3|NSUBJ 3|0|ROOT 4|3|MARK 5|3|DISCOURSE 6|3|PUNCT
+*INV:	嗯 .
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+@G:	05
+*CHI:	后来 毛毛虫 起来 了 [^c] .
+%act:	第1&2 页
+%mor:	noun|后来 noun|毛毛虫 verb|起来-Inf-S part|了 .
+%gra:	1|3|NMOD-TMOD 2|3|NSUBJ 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*CHI:	它 看 到 还是 在 晚上 [^c] . 60175_62698
+%wor:	它 60175_60195 看 60215_60235 到 60255_60275 还是 60295_61757 在 61777_62178 晚上 62198_62698 .
+%mor:	pron|它-Int-S3 verb|看-Inf-S verb|到-Inf-S sconj|还是 verb|在-Inf-S noun|晚上-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|MARK 4|5|MARK 5|2|XCOMP 6|5|OBJ 7|2|PUNCT
+*CHI:	它 就 又 睡 了 [^c] . 64340_65060
+%wor:	它 64340_64360 就 64380_64400 又 64420_64440 睡 64460_64540 了 64560_65060 .
+%mor:	pron|它-Int-S3 sconj|就 sconj|又 verb|睡-Inf-S part|了 .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|MARK 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*CHI:	它 在 做 梦 [^c] . 64600_66763
+%wor:	它 64600_64820 在 64840_65541 做 65561_66243 梦 66263_66763 .
+%mor:	pron|它-Int-S3 adv|在 verb|做-Inf-S noun|梦-Acc .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+@G:	06
+*CHI:	有一天 毛毛虫 长大 了 一些 [^c] . 66383_69447
+%wor:	有一天 66383_66583 毛毛虫 66603_66703 长大 66723_68646 了 68666_68927 一些 68947_69447 .
+%xsgra:	$set:cha, $eki:31
+%act:	第3&4页
+%mor:	noun|有一天 noun|毛毛虫 verb|长大-Inf-S aux|了-Inf-Perf-S adj|一些-S1 .
+%gra:	1|3|NMOD-TMOD 2|3|NSUBJ 3|0|ROOT 4|3|AUX 5|3|XCOMP 6|3|PUNCT
+*CHI:	后来 太阳 公公 真的 升 起来 [^c] . 69588_75176
+%wor:	后来 69588_70529 太阳 70550_71431 公公 71451_73875 真的 73895_74596 升 74616_74656 起来 74676_75176 .
+%xsgra:	$set:tim, $eki:22
+%mor:	noun|后来 noun|太阳 noun|公公 adv|真的 verb|升-Inf-S verb|起来-Inf-S .
+%gra:	1|5|NMOD-TMOD 2|3|NMOD 3|5|NSUBJ 4|5|ADVMOD 5|0|ROOT 6|5|MARK 7|5|PUNCT
+@G:	07
+*CHI:	后来 它 一 天 吃 了 一 个 苹果 [^c] . 77500_78821
+%wor:	后来 77500_77960 它 77980_78000 一 78020_78060 天 78080_78100 吃 78120_78161 了 78181_78221 一 78241_78261 个 78281_78301 苹果 78321_78821 .
+%xsgra:	$eps:atm1, $eki:5a3, $iki:5a1
+%act:	第5&6页
+%mor:	noun|后来 pron|它-Int-S3 num|一 noun|天 verb|吃-Inf-S aux|了-Inf-Perf-S num|一 noun|个 noun|苹果-Acc .
+%gra:	1|5|NMOD-TMOD 2|5|NSUBJ 3|4|NUMMOD 4|5|NMOD-TMOD 5|0|ROOT 6|5|AUX 7|9|NUMMOD 8|7|CLF 9|5|OBJ 10|5|PUNCT
+@G:	08
+*CHI:	一 天 吃 了 一 个 生 梨 [^c] . 78421_79502
+%wor:	一 78421_78461 天 78481_78501 吃 78521_78561 了 78581_78621 一 78641_78721 个 78741_78862 生 78882_78982 梨 79002_79502 .
+%xsgra:	$eps:atm2, $eki:6a1, $iki:6a1
+%act:	梨页
+%mor:	num|一 noun|天 verb|吃-Inf-S aux|了-Inf-Perf-S num|一 noun|个 noun|生 noun|梨-Acc .
+%gra:	1|2|NUMMOD 2|3|NMOD-TMOD 3|0|ROOT 4|3|AUX 5|8|NUMMOD 6|5|CLF 7|8|NMOD 8|3|OBJ 9|3|PUNCT
+@G:	09
+*CHI:	一 天 吃 了 一 个 [^c] +... 79042_80363
+%wor:	一 79042_79062 天 79082_79202 吃 79222_79342 了 79362_79583 一 79603_79843 个 79863_80363 +...
+%xsgra:	$eps:atm3, $iki:7a1
+%mor:	num|一 noun|天 verb|吃-Inf-S aux|了-Inf-Perf-S num|一 noun|个-Acc +...
+%gra:	1|2|NUMMOD 2|3|NMOD-TMOD 3|0|ROOT 4|3|AUX 5|6|NUMMOD 6|3|OBJ 7|3|PUNCT
+*CHI:	这 是 什么 呀 [^c] ? [+ bch] 91660_93642
+%wor:	这 91660_92741 是 92762_92782 什么 92802_93122 呀 93142_93642 ?
+%act:	李子
+%mor:	pron|这-Int-S1 aux|是-Inf-S pron|什么-Int-S1 part|呀 ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*INV:	我 也 不 知道 . 93182_94123
+%wor:	我 93182_93363 也 93383_93463 不 93483_93603 知道 93623_94123 .
+%mor:	pron|我-Int-S1 sconj|也 adv|不 verb|知道-Inf-S .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+@G:	10
+*CHI:	一 天 吃 了 一 个 草莓 [^c] . 93823_96167
+%wor:	一 93823_93843 天 93864_94925 吃 94945_95386 了 95406_95486 一 95506_95587 个 95607_95647 草莓 95667_96167 .
+%xsgra:	$eps:atm4, $eki:8a1, $iki:8a1
+%act:	草莓页
+%mor:	num|一 noun|天 verb|吃-Inf-S aux|了-Inf-Perf-S num|一 noun|个 noun|草莓-Acc .
+%gra:	1|2|NUMMOD 2|3|NMOD-TMOD 3|0|ROOT 4|3|AUX 5|7|NUMMOD 6|5|CLF 7|3|OBJ 8|3|PUNCT
+@G:	11
+*CHI:	后来 又 吃 了 一些 草莓 [^c] . 95887_100595
+%wor:	后来 95887_96308 又 96328_97069 吃 97089_97170 了 97190_97210 一些 97230_100075 草莓 100095_100595 .
+%xsgra:	$eps:atm5, $iki:9a1
+%act:	草莓桔子页
+%mor:	noun|后来 sconj|又 verb|吃-Inf-S aux|了-Inf-Perf-S adj|一些-S1 noun|草莓-Acc .
+%gra:	1|3|NMOD-TMOD 2|3|MARK 3|0|ROOT 4|3|AUX 5|6|AMOD 6|3|OBJ 7|3|PUNCT
+@G:	12
+*CHI:	又 吃 了 一些 东西 [^c] . 100676_101597
+%wor:	又 100676_100736 吃 100756_100876 了 100896_100956 一些 100976_101077 东西 101097_101597 .
+%xsgra:	$eps:atm6, $iki:a1
+%act:	星期六页
+%mor:	sconj|又 verb|吃-Inf-S aux|了-Inf-Perf-S adj|一些-S1 noun|东西-Acc .
+%gra:	1|2|MARK 2|0|ROOT 3|2|AUX 4|5|AMOD 5|2|OBJ 6|2|PUNCT
+*CHI:	它 吃 的 东西 实在 太 多 了 [^c] . 103720_104580
+%wor:	它 103720_103740 吃 103760_103780 的 103800_103820 东西 103840_103900 实在 103920_103980 太 104000_104020 多 104040_104060 了 104080_104580 .
+%xsgra:	$eki:a1
+%mor:	pron|它-Int-S3 verb|吃-Inf-S sconj|的 noun|东西 adv|实在 adv|太 adj|多-S1 part|了 .
+%gra:	1|2|NSUBJ 2|4|ACL-RELCL 3|2|MARK-REL 4|7|NSUBJ 5|7|ADVMOD 6|7|ADVMOD 7|0|ROOT 8|7|DISCOURSE 9|7|PUNCT
+@G:	13
+*CHI:	它 要 休息 一会儿 [^c] . 104201_106645
+%wor:	它 104201_104521 要 104541_105002 休息 105022_106125 一会儿 106145_106645 .
+%act:	星期天页
+%mor:	pron|它-Int-S3 aux|要-Inf-S verb|休息-Inf-S adj|一会儿-S1 .
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|XCOMP 5|3|PUNCT
+*CHI:	可是 它 没 看 到 树叶 的 地方 休息 [^c] . 107327_110573
+%wor:	可是 107327_107407 它 107427_107447 没 107467_107487 看 107508_107588 到 107608_107628 树叶 107648_107808 的 107828_109011 地方 109031_110053 休息 110073_110573 .
+%xsgra:	$eki:da2
+%mor:	sconj|可是 pron|它-Int-S3 adv|没 verb|看-Inf-S verb|到-Inf-S noun|树叶 part|的 noun|地方 verb|休息-Inf-S .
+%gra:	1|4|MARK 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|MARK 6|8|NMOD 7|6|CASE 8|9|NSUBJ 9|4|XCOMP 10|4|PUNCT
+@G:	14
+*CHI:	<它 就 在> [///] 很 快 , 毛毛虫 肚子 胀 得 要 [/] 要 变成 一 个 蝴蝶 这么 大 了 [^c] . 113940_125029
+%wor:	它 113940_114100 就 114120_119464 在 119484_119504 很 119524_119544 快 119564_119664 , 毛毛虫 119684_119845 肚子 119865_119965 胀 119985_120866 得 120886_121666 要 121686_121726 要 121746_121786 变成 121806_121926 一 121946_121986 个 122006_122227 蝴蝶 122247_122367 这么 122387_122507 大 122527_124509 了 124529_125029 .
+%xsgra:	$end:ine3, $eki:g2
+%act:	大毛毛虫 页
+%mor:	adv|很 adj|快-S1 cm|cm noun|毛毛虫 noun|肚子 verb|胀-Inf-S part|得 aux|要-Inf-S verb|变成-Inf-S num|一 noun|个 noun|蝴蝶-Acc adv|这么 adj|大-S1 part|了 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT 4|5|NMOD 5|6|NSUBJ 6|2|PARATAXIS 7|6|COMPOUND-EXT 8|9|AUX 9|6|XCOMP 10|12|NUMMOD 11|10|CLF 12|9|OBJ 13|14|ADVMOD 14|6|XCOMP 15|14|DISCOURSE 16|2|PUNCT
+*CHI:	很 快 , 它 就 变成 了 一 个 蝴蝶 [^c] . 132034_135257
+%wor:	很 132034_132054 快 132074_132174 , 它 就 变成 134316_134436 了 一 134456_134496 个 134516_134737 蝴蝶 134757_135257 .
+%xsgra:	$end:con2, $eki:jb1, $iki:jb2
+%mor:	adv|很 adj|快-S1 cm|cm pron|它-Int-S3 sconj|就 verb|变成-Inf-S aux|了-Inf-Perf-S num|一 noun|个 noun|蝴蝶-Acc .
+%gra:	1|2|ADVMOD 2|6|ADVMOD 3|6|MARK 4|6|NSUBJ 5|6|MARK 6|0|ROOT 7|6|AUX 8|10|NUMMOD 9|8|CLF 10|6|OBJ 11|6|PUNCT
+@G:	15
+*CHI:	一 只 很 漂亮的 蝴蝶 它 在 空中 飞翔 [^c] . 225470_316370
+%wor:	一 225470_225730 只 很 231054_231074 漂亮的 蝴蝶 233777_233897 它 281350_282210 在 315870_316370 空中 飞翔 .
+%xsgra:	$eki:jb1
+%act:	蝴蝶页
+%mor:	num|一 noun|只 adv|很 adj|漂亮的-S1 noun|蝴蝶 pron|它-Int-S3 verb|在-Inf-S noun|空中-Acc verb|飞翔-Inf-S .
+%gra:	1|6|NUMMOD 2|1|CLF 3|4|ADVMOD 4|6|AMOD 5|6|NMOD 6|9|NSUBJ 7|9|ADVCL 8|7|OBJ 9|0|ROOT 10|9|PUNCT
+@G:	16
+*CHI:	没 了 [^c] . [+ str] 352110_356263
+%wor:	没 352110_355743 了 355763_356263 .
+%act:	封底环衬
+%mor:	verb|没-Inf-S part|了 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+@End

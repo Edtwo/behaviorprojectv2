@@ -21,6 +21,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "src"))
 RESULTS = os.path.join(ROOT, "results")
 import stage2_level_estimator as s2
+import stage3_delay_classifier as s3
 import stage4_interpretability as s4
 import ext_percentiles as pct
 from sklearn.linear_model import LogisticRegression
@@ -49,9 +50,12 @@ class Screener:
         self.delay_model = make_pipeline(
             StandardScaler(), LogisticRegression(class_weight="balanced", max_iter=1000)
         ).fit(enni[DELAY_FEATURES], enni["y"])
+        self.cutoff = s3.screening_cutoff(
+            lambda: make_pipeline(StandardScaler(), LogisticRegression(class_weight="balanced", max_iter=1000)),
+            enni[DELAY_FEATURES], enni["y"], enni["child_id"])
 
     def screen(self, row):
-        text, info = s4.readout(row, self.level_model, self.delay_model, self.norms)
+        text, info = s4.readout(row, self.level_model, self.delay_model, self.norms, cutoff=self.cutoff)
         p = pct.percentile_for(row["mluw"], row["age_months"], self.curves)
         return text, info, p
 

@@ -1,0 +1,1358 @@
+@UTF8
+@PID:	11312/a-00115587-0
+@Begin
+@Languages:	zho
+@Participants:	INV Investigator, CHI Child
+@ID:	zho|ZhouNarratives|INV|||||Investigator|||
+@ID:	zho|ZhouNarratives|CHI|||||Child|||
+@Comment:	[ba3 morphotag | engine=stanza-1.11.1 ; lang=zho | 2026-05-15T17:09:48+08:00]
+@Comment:	[ba3 align | fa=whisper ; lang=zho | 2026-05-15T17:05:53+08:00]
+@Comment:	[ba3 utseg | engine=stanza-whisper ; lang=zho | 2026-05-15T15:34:09+08:00]
+@Comment:	Batchalign 0.1.0, ASR Engine rev. The transcript ha been checked.
+@Comment:	[ba3 transcribe | asr=rev ; lang=zho | 2026-05-15T15:33:58+08:00]
+@Media:	6ym6, video
+*INV:	然后 录 下 来 . 0_6123
+%wor:	然后 0_3421 录 3421_4362 下 4362_4982 来 4982_6123 .
+%mor:	adv|然后 verb|录-Inf-S verb|下-Inf-S verb|来-Inf-S .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|MARK 4|2|MARK 5|2|PUNCT
+*INV:	让 巧虎 回去 再 听 . 6143_7063
+%wor:	让 6143_6203 巧虎 6203_6683 回去 6683_6943 再 6943_7023 听 7023_7063 .
+%mor:	verb|让-Inf-S propn|巧虎 verb|回去-Inf-S adv|再 verb|听-Inf-S .
+%gra:	1|0|ROOT 2|5|NSUBJ 3|5|ADVCL 4|5|ADVMOD 5|1|CCOMP 6|1|PUNCT
+*INV:	好 手 不要 动 啊 . 7083_8329
+%wor:	好 7083_7123 手 7123_7183 不要 7183_7424 动 7424_8524 啊 8524_9205 .
+%xalign:	monotonicity:end_clamped end_truncated_by=876ms original_end=9205 clamped_to=8329 cause=utr_token_range_overlap
+%mor:	part|好 noun|手 aux|要-Inf-Neg-S verb|动-Inf-S part|啊 .
+%gra:	1|2|CASE 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*INV:	好了 请 你 坐 在 这 边 的 小 椅 子 上 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=5205 previous_start_ms=7083
+%xrev:	[?]
+%mor:	adv|好了 verb|请-Inf-S pron|你-Int-S2 verb|坐-Inf-S verb|在-Inf-S det|这-Def noun|边 part|的 part|小 noun|椅 part|子 noun|上 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|4|MARK 6|7|DET 7|11|NMOD 8|7|CASE 9|10|CASE 10|11|COMPOUND 11|4|OBJ 12|11|ACL 13|2|PUNCT
+*CHI:	嗯 . 8329_8349
+%wor:	嗯 8329_8349 .
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	好 了 人名 很 棒 啊 . 8369_14983
+%wor:	好 8369_8409 了 8409_8529 人名 8529_9150 很 9150_9190 棒 9190_10171 啊 10171_18983 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=18983 clamped_to=14983 cause=utr_token_range_overlap
+%mor:	adj|好-S1 aux|了-Inf-Perf-S noun|人名 adv|很 adj|棒-S1 part|啊 .
+%gra:	1|5|ADVCL 2|1|AUX 3|5|NSUBJ 4|5|ADVMOD 5|0|ROOT 6|5|DISCOURSE 7|5|PUNCT
+*INV:	还是 有 点 矮 了 . 14983_18145
+%wor:	还是 14983_15423 有 15423_15763 点 15763_17324 矮 17324_17885 了 17885_18145 .
+%mor:	sconj|还是 verb|有-Inf-S adj|点-S1 adj|矮-S1 part|了 .
+%gra:	1|2|MARK 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|2|DISCOURSE 6|2|PUNCT
+*INV:	没有 高 的 . 18165_21687
+%wor:	没有 18165_20286 高 20286_20947 的 20947_21687 .
+%mor:	verb|有-Inf-Neg-S adj|高-S1 part|的 .
+%gra:	1|0|ROOT 2|1|XCOMP 3|1|DISCOURSE 4|1|PUNCT
+*INV:	你知不知道 他 叫 什么 名字 吗 . 21707_24950
+%wor:	你知不知道 21707_23308 他 23308_23348 叫 23348_23408 什么 23408_23949 名字 23949_24869 吗 24869_24950 .
+%mor:	verb|你知不知道-Inf-S pron|他-Int-S3 verb|叫-Inf-S pron|什么-Int-S1 noun|名字-Acc part|吗 .
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|CCOMP 4|5|DET 5|3|OBJ 6|1|DISCOURSE-SP 7|1|PUNCT
+*CHI:	巧虎 . 24970_26050
+%wor:	巧虎 24970_26050 .
+%mor:	propn|巧虎 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	对 了 . 26070_27731
+%wor:	对 26070_26150 了 26150_27731 .
+%mor:	verb|对-Inf-S part|了 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*INV:	跟 他 拉 拉 手 吧 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=23732 previous_start_ms=26070
+%xrev:	[?]
+%mor:	adp|跟 pron|他-Int-S3 verb|拉-Inf-S verb|拉-Inf-S part|手 part|吧 .
+%gra:	1|2|CASE 2|3|OBL 3|0|ROOT 4|5|COMPOUND 5|3|OBJ 6|3|DISCOURSE 7|3|PUNCT
+*INV:	你好 人名 . 30418_30878
+%wor:	你好 30418_30778 人名 30778_30878 .
+%mor:	adj|你好-S1 noun|人名 .
+%gra:	1|2|AMOD 2|0|ROOT 3|2|PUNCT
+*INV:	今天 我 请 你 给我 讲 两 个 故 事 好不好 . 30898_35863
+%wor:	今天 30898_31018 我 31018_31058 请 31058_31098 你 31098_31138 给我 31138_31218 讲 31218_31258 两 31258_31298 个 31298_31338 故 31338_31378 事 31378_31418 好不好 31418_35863 .
+%mor:	noun|今天 pron|我-Int-S1 verb|请-Inf-S pron|你-Int-S2 adv|给我 verb|讲-Inf-S num|两 noun|个 noun|故 noun|事 adj|好不好-S1 .
+%gra:	1|3|NMOD-TMOD 2|3|NSUBJ 3|0|ROOT 4|6|NSUBJ 5|6|ADVMOD 6|3|CCOMP 7|10|NUMMOD 8|7|CLF 9|10|NMOD 10|11|NSUBJ 11|6|CCOMP 12|3|PUNCT
+*CHI:	嗯 . 35883_36706
+%wor:	嗯 35883_38025 .
+%xalign:	monotonicity:end_clamped end_truncated_by=1319ms original_end=38025 clamped_to=36706 cause=utr_token_range_overlap
+%mor:	punct|嗯 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	好了 第一 本 故 事 是 在 这里 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=34025 previous_start_ms=35883
+%xrev:	[?]
+%mor:	adv|好了 num|第一 noun|本 verb|故-Inf-S part|事 verb|是-Inf-S verb|在-Inf-S pron|这里-Int-S1 .
+%gra:	1|3|ADVMOD 2|3|NUMMOD 3|5|NMOD 4|5|COMPOUND 5|6|NSUBJ 6|0|ROOT 7|6|XCOMP 8|7|OBJ 9|6|PUNCT
+*INV:	你看 过 啦 ? 36706_40409
+%wor:	你看 36706_40349 过 40349_40389 啦 40389_40409 ?
+%mor:	verb|你看-Inf-S aux|过-Inf-Perf-S part|啦 ?
+%gra:	1|0|ROOT 2|1|AUX 3|1|DISCOURSE 4|1|PUNCT
+*CHI:	现在 就 这 两 本 书 . 40429_42774
+%wor:	现在 40429_40609 就 40609_40649 这 40649_40689 两 40689_40729 本 40729_43611 书 43611_46773 .
+%xalign:	monotonicity:end_clamped end_truncated_by=3999ms original_end=46773 clamped_to=42774 cause=utr_token_range_overlap
+%mor:	noun|现在 sconj|就 det|这-Def num|两 noun|本 noun|书 .
+%gra:	1|6|NMOD-TMOD 2|6|MARK 3|5|DET 4|6|NUMMOD 5|4|CLF 6|0|ROOT 7|6|PUNCT
+*INV:	哦 来 请 你 拿 过 来 . 42774_52999
+%wor:	哦 42774_52699 来 52699_52759 请 52759_52799 你 52799_52839 拿 52839_52879 过 52879_52959 来 52959_52999 .
+%mor:	pron|哦-Int-S1 sconj|来 verb|请-Inf-S pron|你-Int-S2 verb|拿-Inf-S aux|过-Inf-Perf-S verb|来-Inf-S .
+%gra:	1|3|NSUBJ 2|3|MARK 3|0|ROOT 4|5|NSUBJ 5|3|CCOMP 6|5|AUX 7|5|XCOMP 8|3|PUNCT
+*INV:	然后 你 先 看 一 遍 . 53019_53920
+%wor:	然后 53019_53119 你 53119_53259 先 53259_53379 看 53379_53839 一 53839_53880 遍 53880_53920 .
+%mor:	adv|然后 pron|你-Int-S2 adv|先 verb|看-Inf-S num|一 noun|遍-Acc .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|6|NUMMOD 6|4|OBJ 7|4|PUNCT
+*INV:	然后 再 讲 给 巧虎 听 好 吗 . 53940_54082
+%wor:	然后 53940_54020 再 54020_54180 讲 54180_54240 给 54240_54280 巧虎 54280_54440 听 54440_54500 好 54500_54580 吗 54580_57582 .
+%xalign:	monotonicity:end_clamped end_truncated_by=3500ms original_end=57582 clamped_to=54082 cause=utr_token_range_overlap
+%mor:	adv|然后 adv|再 verb|讲-Inf-S verb|给-Inf-S noun|巧虎 verb|听-Inf-S adj|好-S1 part|吗 .
+%gra:	1|3|ADVMOD 2|3|ADVMOD 3|0|ROOT 4|3|MARK 5|6|NSUBJ 6|3|XCOMP 7|6|XCOMP 8|3|DISCOURSE 9|3|PUNCT
+*INV:	好 你 先 自己 看 一 遍 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=53582 previous_start_ms=53940
+%xrev:	[?]
+%mor:	adv|好 pron|你-Int-S2 verb|先-Inf-S pron|自己-Int-S1 verb|看-Inf-S num|一 noun|遍-Acc .
+%gra:	1|5|ADVMOD 2|5|NSUBJ 3|5|ADVCL 4|3|OBJ 5|0|ROOT 6|7|NUMMOD 7|5|OBJ 8|5|PUNCT
+*INV:	巧虎 坐 在 这 . 54082_54322
+%wor:	巧虎 54082_54182 坐 54182_54242 在 54242_54282 这 54282_54322 .
+%mor:	propn|巧虎 verb|坐-Inf-S verb|在-Inf-S pron|这-Int-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|MARK 4|2|OBJ 5|2|PUNCT
+*INV:	这样 放 下 . 54342_54503
+%wor:	这样 54342_54443 放 54443_54483 下 54483_54503 .
+%mor:	pron|这样-Int-S1 verb|放-Inf-S verb|下-Inf-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|MARK 4|2|PUNCT
+*CHI:	它 是 干 嘛 的 . 54523_63360
+%wor:	它 54523_54563 是 54563_54603 干 54603_54643 嘛 54643_54683 的 54683_67360 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=67360 clamped_to=63360 cause=utr_token_range_overlap
+%mor:	pron|它-Int-S3 aux|是-Inf-S verb|干-Inf-S part|嘛 part|的 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|DISCOURSE 5|3|DISCOURSE 6|3|PUNCT
+*INV:	嗯 好 你 先 自己 看 一 看 哦 . 63360_64080
+%wor:	嗯 63360_63660 好 63660_63700 你 63700_63740 先 63740_63780 自己 63780_63880 看 63880_63940 一 63940_63980 看 63980_64020 哦 64020_64080 .
+%mor:	punct|嗯 adv|好 pron|你-Int-S2 verb|先-Inf-S pron|自己-Int-S1 verb|看-Inf-S num|一 verb|看-Inf-S part|哦 .
+%gra:	1|2|PUNCT 2|6|ADVMOD 3|6|NSUBJ 4|6|ADVCL 5|4|OBJ 6|0|ROOT 7|8|NUMMOD 8|6|XCOMP 9|6|DISCOURSE-SP 10|6|PUNCT
+*CHI:	然后 . 64100_64180
+%wor:	然后 64100_64180 .
+%mor:	adv|然后 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	我们 再 讲 给 巧虎 听 . 64200_64660
+%wor:	我们 64200_64280 再 64280_64340 讲 64340_64400 给 64400_64460 巧虎 64460_64620 听 64620_64660 .
+%mor:	pron|我-Int-P1 adv|再 verb|讲-Inf-S verb|给-Inf-S noun|巧虎 verb|听-Inf-S .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|MARK 5|6|NSUBJ 6|3|XCOMP 7|3|PUNCT
+*INV:	看 完 啦 嗯 . 64680_64840
+%wor:	看 64680_64720 完 64720_64760 啦 64760_64800 嗯 64800_64840 .
+%mor:	verb|看-Inf-S verb|完-Inf-S part|啦 punct|嗯 .
+%gra:	1|0|ROOT 2|1|MARK 3|1|DISCOURSE 4|1|PUNCT 5|1|PUNCT
+*INV:	好 . 64860_74168
+%wor:	好 64860_78168 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=78168 clamped_to=74168 cause=utr_token_range_overlap
+%mor:	adj|好-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	请 你 一 边 翻 书 一 边 把 这 个 故 事 讲 给 巧虎 听 好不好 . 74168_83431
+%wor:	请 74168_74989 你 74989_75029 一 75029_75069 边 75069_75109 翻 75109_75149 书 75149_75209 一 75209_75249 边 75249_75289 把 75289_75350 这 75350_75390 个 75390_75430 故 75430_75510 事 75510_75570 讲 75570_75610 给 75610_80559 巧虎 80559_80639 听 80639_80719 好不好 80719_87431 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=87431 clamped_to=83431 cause=utr_token_range_overlap
+%mor:	verb|请-Inf-S pron|你-Int-S2 num|一 noun|边 verb|翻-Inf-S noun|书-Acc num|一 noun|边 adp|把 det|这-Def noun|个 noun|故 noun|事 verb|讲-Inf-S verb|给-Inf-S noun|巧虎 verb|听-Inf-S adj|好不好-S1 .
+%gra:	1|14|ADVCL 2|14|NSUBJ 3|4|NUMMOD 4|5|OBL 5|14|ADVCL 6|5|OBJ 7|8|NUMMOD 8|6|APPOS 9|13|CASE 10|13|DET 11|10|CLF 12|13|NMOD 13|14|OBL-PATIENT 14|0|ROOT 15|14|MARK 16|17|NSUBJ 17|14|CCOMP 18|17|XCOMP 19|14|PUNCT
+*CHI:	有 点 小 气 . 83431_91417
+%wor:	有 83431_89515 点 89515_90836 小 90836_91217 气 91217_91417 .
+%mor:	verb|有-Inf-S noun|点 part|小 noun|气-Acc .
+%gra:	1|0|ROOT 2|4|NMOD 3|4|CASE 4|1|OBJ 5|1|PUNCT
+*INV:	我 看 你 胆 子 很 大 . 91437_93478
+%wor:	我 91437_92398 看 92398_92878 你 92878_92918 胆 92918_93358 子 93358_93398 很 93398_93438 大 93438_93478 .
+%mor:	pron|我-Int-S1 verb|看-Inf-S pron|你-Int-S2 noun|胆 part|子 adv|很 adj|大-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|NMOD 4|5|COMPOUND 5|7|NSUBJ 6|7|ADVMOD 7|2|CCOMP 8|2|PUNCT
+*INV:	哎 啊 啊 叫 人名 啊 . 93498_96181
+%wor:	哎 93498_95100 啊 95100_95160 啊 95160_95200 叫 95200_95260 人名 95260_95900 啊 95900_96181 .
+%mor:	punct|哎 adj|啊-S1 sconj|啊 verb|叫-Inf-S noun|人名-Acc part|啊 .
+%gra:	1|2|PUNCT 2|4|ADVCL 3|4|MARK 4|0|ROOT 5|4|OBJ 6|4|DISCOURSE-SP 7|4|PUNCT
+*CHI:	从前有个 很 凶 的 强盗 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=92181 previous_start_ms=93498
+%xrev:	[?]
+%mor:	verb|从前有个-Inf-S adv|很 adj|凶-S1 sconj|的 noun|强盗-Acc .
+%gra:	1|0|ROOT 2|3|ADVMOD 3|5|AMOD 4|3|MARK-REL 5|1|OBJ 6|1|PUNCT
+*CHI:	他们 穿 的 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=92581 previous_start_ms=93498
+%xrev:	[?]
+%mor:	pron|他-Int-P3 verb|穿-Inf-S part|的 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*INV:	啊 没 关 系 你就 读 你 认 识 的 好了 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=92801 previous_start_ms=93498
+%xrev:	[?]
+%mor:	adv|啊 adv|没 verb|关-Inf-S verb|系-Inf-S pron|你就-Int-S3 verb|读-Inf-S pron|你-Int-S2 verb|认-Inf-S verb|识-Inf-S sconj|的 adj|好了-S1 .
+%gra:	1|3|ADVMOD 2|3|ADVMOD 3|0|ROOT 4|3|XCOMP 5|6|NSUBJ 6|3|CCOMP 7|8|NSUBJ 8|11|ACL-RELCL 9|8|XCOMP 10|8|MARK-REL 11|6|OBJ 12|3|PUNCT
+*INV:	或者 你可以 看 着 这个 画 面 . 101959_102600
+%wor:	或者 101959_102079 你可以 102079_102359 看 102359_102399 着 102399_102439 这个 102439_102520 画 102520_102560 面 102560_102600 .
+%mor:	sconj|或者 aux|你可以-Inf-S verb|看-Inf-S aux|着-Inf-Prog-S det|这个-Def noun|画 part|面 .
+%gra:	1|3|MARK 2|3|AUX 3|0|ROOT 4|3|AUX 5|7|DET 6|7|COMPOUND 7|3|OBJ 8|3|PUNCT
+*INV:	这样 来 讲 也可以 . 102620_102920
+%wor:	这样 102620_102700 来 102700_102740 讲 102740_102800 也可以 102800_102920 .
+%mor:	pron|这样-Int-S1 sconj|来 verb|讲-Inf-S aux|也可以-Inf-S .
+%gra:	1|3|OBL 2|3|MARK 3|0|ROOT 4|3|AUX 5|3|PUNCT
+*INV:	好 . 102940_102980
+%wor:	好 102940_102980 .
+%mor:	adj|好-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	就 你 喜欢 的 方 式 . 103000_111223
+%wor:	就 103000_103601 你 103601_105264 喜欢 105264_110714 的 110714_110815 方 110815_110895 式 110895_115223 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=115223 clamped_to=111223 cause=utr_token_range_overlap
+%mor:	sconj|就 pron|你-Int-S2 verb|喜欢-Inf-S sconj|的 noun|方 part|式 .
+%gra:	1|6|MARK 2|3|NSUBJ 3|6|ACL-RELCL 4|3|MARK-REL 5|6|COMPOUND 6|0|ROOT 7|6|PUNCT
+*CHI:	黑 斗 篷 带 着 都 带 着 高 高 的 黑 帽 子 . 111223_112263
+%wor:	黑 111223_111643 斗 111643_111723 篷 111723_111763 带 111763_111823 着 111823_111863 都 111863_111923 带 111923_111983 着 111983_112023 高 112023_112083 高 112083_112123 的 112123_112163 黑 112163_112203 帽 112203_112243 子 112243_112263 .
+%mor:	noun|黑 noun|斗 part|篷 verb|带-Inf-S aux|着-Inf-Prog-S sconj|都 verb|带-Inf-S aux|着-Inf-Prog-S adj|高-S1 adj|高-S1 sconj|的 noun|黑 part|帽 part|子 .
+%gra:	1|3|NMOD 2|3|COMPOUND 3|7|NSUBJ 4|7|ADVCL 5|4|AUX 6|7|MARK 7|0|ROOT 8|7|AUX 9|10|ADVCL 10|14|AMOD 11|10|MARK-REL 12|13|COMPOUND 13|14|COMPOUND 14|7|OBJ 15|7|PUNCT
+*CHI:	我们 都是 走 走 上 嗯 . 112283_121516
+%wor:	我们 112283_112384 都是 112384_112484 走 112484_112664 走 112664_112704 上 112704_112784 嗯 112784_125516 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=125516 clamped_to=121516 cause=utr_token_range_overlap
+%mor:	pron|我-Int-P1 verb|是-Inf-S verb|走-Inf-S verb|走-Inf-S noun|上-Acc punct|嗯 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|3|XCOMP 5|4|OBJ 6|2|PUNCT 7|2|PUNCT
+*CHI:	第一 个 强 盗 有一 只 刺 大 象 . 121516_126147
+%wor:	第一 121516_121716 个 121716_121756 强 121756_121816 盗 121816_121856 有一 121856_121936 只 121936_121976 刺 121976_122016 大 122016_122056 象 122056_130147 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=130147 clamped_to=126147 cause=utr_token_range_overlap
+%mor:	num|第一 noun|个 part|强 part|盗 num|有一 noun|只 verb|刺-Inf-S part|大 noun|象 .
+%gra:	1|4|NUMMOD 2|1|CLF 3|4|CASE 4|9|NSUBJ 5|9|NUMMOD 6|5|CLF 7|9|AMOD 8|9|CASE 9|0|ROOT 10|9|PUNCT
+*CHI:	第二 个 <强盗> [/] 强盗 有 一个 撒 胡 椒 粉 的 喷 喷 壶 . 126147_133353
+%wor:	第二 126147_126427 个 126427_126487 强盗 126487_126687 强盗 126687_126787 有 126787_130109 一个 130109_131850 撒 131850_133711 胡 133711_133811 椒 133811_133851 粉 133851_134031 的 134031_134071 喷 134071_134111 喷 134111_134311 壶 134311_137353 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=137353 clamped_to=133353 cause=utr_token_range_overlap
+%mor:	num|第二 noun|个 noun|强盗 verb|有-Inf-S num|一个 noun|撒 noun|胡 noun|椒 part|粉 part|的 verb|喷-Inf-S verb|喷-Inf-S part|壶 .
+%gra:	1|3|NUMMOD 2|1|CLF 3|4|NSUBJ 4|0|ROOT 5|6|NUMMOD 6|9|NMOD 7|8|NMOD 8|9|COMPOUND 9|13|NMOD 10|9|CASE 11|13|AMOD 12|13|COMPOUND 13|4|OBJ 14|4|PUNCT
+*CHI:	第三 个 强 盗 有一 把 巨 大的 红 斧头 . 133353_138499
+%wor:	第三 133353_133453 个 133453_133493 强 133493_133533 盗 133533_133573 有一 133573_133653 把 133653_133693 巨 133693_133833 大的 133833_135054 红 135054_140037 斧头 140037_142499 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=142499 clamped_to=138499 cause=utr_token_range_overlap
+%mor:	num|第三 noun|个 part|强 part|盗 num|有一 noun|把 adj|巨-S1 adj|大的-S1 noun|红 noun|斧头 .
+%gra:	1|2|NUMMOD 2|4|NMOD 3|4|CASE 4|10|NSUBJ 5|10|NUMMOD 6|5|CLF 7|8|ADVCL 8|10|AMOD 9|8|MARK-REL 10|0|ROOT 11|10|PUNCT
+*CHI:	嗯 晚上 天 黑 了 他们 就到 路 上 去 寻 找 倒 霉 的 人 . 138499_146733
+%wor:	嗯 138499_138599 晚上 138599_138699 天 138699_138759 黑 138759_138799 了 138799_138839 他们 138839_144385 就到 144385_144565 路 144565_144986 上 144986_146287 去 146287_146468 寻 146468_146648 找 146648_146688 倒 146688_146728 霉 146728_147048 的 147048_147989 人 147989_150733 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=150733 clamped_to=146733 cause=utr_token_range_overlap
+%mor:	punct|嗯 noun|晚上 part|天 noun|黑 aux|了-Inf-Perf-S pron|他-Int-P3 verb|就到-Inf-S noun|路-Acc noun|上 sconj|去 verb|寻-Inf-S verb|找-Inf-S verb|倒-Inf-S propn|霉-Acc sconj|的 noun|人-Acc .
+%gra:	1|3|PUNCT 2|3|COMPOUND 3|11|NSUBJ 4|11|ADVCL 5|4|AUX 6|11|NSUBJ 7|11|ADVCL 8|7|OBJ 9|8|ACL 10|11|MARK 11|0|ROOT 12|16|ACL-RELCL 13|12|XCOMP 14|13|OBJ 15|12|MARK-REL 16|11|OBJ 17|11|PUNCT
+*CHI:	嗯 他 强 盗 就是 寻 找 了 一个 很 晚 的时候 在 路 上 的 哦 . 146733_161200
+%wor:	嗯 146733_146833 他 146833_146873 强 146873_146913 盗 146913_146953 就是 146953_147033 寻 147033_147073 找 147073_147133 了 147133_147173 一个 147173_160480 很 160480_160580 晚 160580_160620 的时候 160620_160820 在 160820_160880 路 160880_160940 上 160940_161020 的 161020_161100 哦 161100_161200 .
+%mor:	punct|嗯 pron|他-Int-S3 adj|强-S1 part|盗 verb|是-Inf-S verb|寻-Inf-S verb|找-Inf-S aux|了-Inf-Perf-S det|一个-Def adv|很 adj|晚-S1 sconj|的时候 verb|在-Inf-S noun|路-Acc noun|上 part|的 part|哦 .
+%gra:	1|5|PUNCT 2|4|NMOD 3|4|COMPOUND 4|5|NSUBJ 5|0|ROOT 6|5|XCOMP 7|6|XCOMP 8|7|AUX 9|11|OBL 10|11|ADVMOD 11|13|XCOMP 12|11|MARK-REL 13|6|XCOMP 14|13|OBJ 15|14|ACL 16|5|DISCOURSE 17|5|DISCOURSE 18|5|PUNCT
+*CHI:	对 了 . 161220_161380
+%wor:	对 161220_161340 了 161340_161380 .
+%mor:	verb|对-Inf-S part|了 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*INV:	对 了 . 161400_161541
+%wor:	对 161400_161440 了 161440_161541 .
+%mor:	verb|对-Inf-S part|了 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*CHI:	我 妈 妈 肯 定 要 不 收 [/] 收 他们 两 个 了 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=157541 previous_start_ms=161400
+%xrev:	[?]
+%mor:	pron|我-Int-S1 part|妈 part|妈 aux|肯-Inf-S verb|定-Inf-S aux|要-Inf-S adv|不 verb|收-Inf-S pron|他-Int-P3 num|两 noun|个 part|了 .
+%gra:	1|2|COMPOUND 2|3|COMPOUND 3|5|NSUBJ 4|5|AUX 5|0|ROOT 6|8|AUX 7|8|ADVMOD 8|5|XCOMP 9|8|IOBJ 10|11|NUMMOD 11|9|ACL 12|8|DISCOURSE-SP 13|5|PUNCT
+*CHI:	我 妈 妈 问 我 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=160042 previous_start_ms=161400
+%xrev:	[?]
+%mor:	pron|我-Int-S1 part|妈 part|妈 verb|问-Inf-S pron|我-Int-S1 .
+%gra:	1|2|COMPOUND 2|3|COMPOUND 3|4|NSUBJ 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*INV:	哎 然后 呢 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=160482 previous_start_ms=161400
+%xrev:	[?]
+%mor:	punct|哎 adv|然后 part|呢 .
+%gra:	1|2|PUNCT 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*CHI:	每 个 男 人 见 了 他们 都 好 害 怕 . 168349_171113
+%wor:	每 168349_168609 个 168609_168709 男 168709_168749 人 168749_168809 见 168809_168869 了 168869_168909 他们 168909_168990 都 168990_169270 好 169270_170011 害 170011_170532 怕 170532_171113 .
+%mor:	det|每-Def noun|个 noun|男 part|人 verb|见-Inf-S aux|了-Inf-Perf-S pron|他-Int-P3 sconj|都 adv|好 verb|害-Inf-S verb|怕-Inf-S .
+%gra:	1|2|DET 2|4|NMOD 3|4|COMPOUND 4|5|NSUBJ 5|0|ROOT 6|5|AUX 7|10|NSUBJ 8|10|MARK 9|10|ADVMOD 10|5|CCOMP 11|10|XCOMP 12|5|PUNCT
+*CHI:	勇 敢 的 男 人 跑 了 . 171133_177612
+%wor:	勇 171133_172255 敢 172255_172396 的 172396_175140 男 175140_178646 人 178646_178706 跑 178706_181331 了 181331_181612 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=181612 clamped_to=177612 cause=utr_token_range_overlap
+%mor:	propn|勇 adj|敢-S1 part|的 noun|男 part|人 verb|跑-Inf-S part|了 .
+%gra:	1|5|NMOD 2|5|AMOD 3|2|CASE 4|5|COMPOUND 5|6|NSUBJ 6|0|ROOT 7|6|DISCOURSE 8|6|PUNCT
+*CHI:	女 人 晕倒 了 . 177612_178873
+%wor:	女 177612_177652 人 177652_177892 晕倒 177892_178132 了 178132_178873 .
+%mor:	noun|女 noun|人 verb|晕倒-Inf-S part|了 .
+%gra:	1|2|NMOD 2|3|NSUBJ 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*CHI:	狗 也 逃 了 . 178894_179334
+%wor:	狗 178894_178994 也 178994_179154 逃 179154_179294 了 179294_179334 .
+%mor:	noun|狗 sconj|也 verb|逃-Inf-S part|了 .
+%gra:	1|3|NSUBJ 2|3|MARK 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*CHI:	狗 也 不 怕 . 179354_183788
+%wor:	狗 179354_179394 也 179394_179434 不 179434_179474 怕 179474_187788 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=187788 clamped_to=183788 cause=utr_token_range_overlap
+%mor:	noun|狗 sconj|也 adv|不 verb|怕-Inf-S .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	这是 他们 强盗 每 一次 去 协 助 马车 局 都是 先 把 胡 椒 粉 喷 到 马 的 眼 睛 里 面 去 . 183788_196655
+%wor:	这是 183788_184228 他们 184228_184388 强盗 184388_184768 每 184768_184808 一次 184808_196853 去 196853_196973 协 196973_197213 助 197213_197333 马车 197333_197433 局 197433_197473 都是 197473_197573 先 197573_197613 把 197613_197673 胡 197673_198113 椒 198113_198153 粉 198153_198254 喷 198254_198294 到 198294_198394 马 198394_198534 的 198534_198634 眼 198634_198674 睛 198674_198874 里 198874_199074 面 199074_200454 去 200454_200655 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=200655 clamped_to=196655 cause=utr_token_range_overlap
+%mor:	verb|是-Inf-S pron|他-Int-P3 verb|强盗-Inf-S adv|每 num|一次 verb|去-Inf-S verb|协-Inf-S verb|助-Inf-S noun|马车 part|局 verb|是-Inf-S sconj|先 adp|把 propn|胡 propn|椒 part|粉 verb|喷-Inf-S verb|到-Inf-S noun|马 part|的 noun|眼-Acc noun|睛 noun|里 noun|面-Acc verb|去-Inf-S .
+%gra:	1|0|ROOT 2|25|NSUBJ 3|25|ADVCL 4|6|ADVMOD 5|6|OBL 6|8|ADVCL 7|6|XCOMP 8|3|XCOMP 9|10|COMPOUND 10|25|NSUBJ 11|25|ADVCL 12|25|MARK 13|16|CASE 14|16|NMOD 15|16|COMPOUND 16|17|OBL-PATIENT 17|25|ADVCL 18|17|MARK 19|21|NMOD 20|19|CASE 21|17|OBJ 22|21|ACL 23|22|ACL 24|17|OBJ 25|1|CCOMP 26|1|PUNCT
+*CHI:	再 用斧头把 马 车 的 轮 子 砍 碎 . 196655_200458
+%wor:	再 196655_197776 用斧头把 197776_198556 马 198556_198676 车 198676_198877 的 198877_199017 轮 199017_199117 子 199117_199517 砍 199517_199717 碎 199717_200458 .
+%mor:	adv|再 adp|用斧头把 propn|马 part|车 part|的 noun|轮 part|子 verb|砍-Inf-S verb|碎-Inf-S .
+%gra:	1|8|ADVMOD 2|7|CASE 3|4|COMPOUND 4|7|NMOD 5|4|CASE 6|7|COMPOUND 7|8|OBL-PATIENT 8|0|ROOT 9|8|MARK 10|8|PUNCT
+*CHI:	然后 用 车胎 他 把 乘 [/] 乘 客 赶 下 车 . 200478_206948
+%wor:	然后 200478_200958 用 200958_201759 车胎 201759_202200 他 202200_202240 把 202240_202360 乘 202360_202400 乘 202400_202500 客 202500_202620 赶 202620_202700 下 202700_202940 车 202940_210948 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=210948 clamped_to=206948 cause=utr_token_range_overlap
+%mor:	adv|然后 verb|用-Inf-S noun|车胎-Acc pron|他-Int-S3 adp|把 verb|乘-Inf-S part|客 verb|赶-Inf-S verb|下-Inf-S noun|车 .
+%gra:	1|8|ADVMOD 2|8|ADVCL 3|2|OBJ 4|8|NSUBJ 5|7|CASE 6|7|COMPOUND 7|8|OBL-PATIENT 8|0|ROOT 9|8|MARK 10|8|IOBJ 11|8|PUNCT
+*CHI:	抢 走 他们 的 食 物 . 206948_214697
+%wor:	抢 206948_207128 走 207128_207248 他们 207248_207408 的 207408_214377 食 214377_214657 物 214657_214697 .
+%mor:	verb|抢-Inf-S verb|走-Inf-S pron|他-Int-P3 part|的 verb|食-Inf-S part|物 .
+%gra:	1|0|ROOT 2|1|MARK 3|6|DET 4|3|CASE 5|6|COMPOUND 6|2|OBJ 7|1|PUNCT
+*CHI:	啊 财 物 . 214717_215579
+%wor:	啊 214717_214798 财 214798_215478 物 215478_215579 .
+%mor:	part|啊 verb|财-Inf-S part|物 .
+%gra:	1|3|CASE 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	他们 这 三 个 强 盗 藏 在 很 高 的 一个 很 高 的 山 洞 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=211579 previous_start_ms=214717
+%xrev:	[?]
+%mor:	pron|他-Int-P3 det|这-Def num|三 noun|个 part|强 noun|盗 verb|藏-Inf-S verb|在-Inf-S adv|很 adj|高-S1 sconj|的 det|一个-Def adv|很 adj|高-S1 sconj|的 noun|山 part|洞 .
+%gra:	1|7|NSUBJ 2|4|DET 3|4|NUMMOD 4|6|NMOD 5|6|CASE 6|7|NSUBJ 7|0|ROOT 8|7|MARK 9|10|ADVMOD 10|17|AMOD 11|10|MARK-REL 12|14|DET 13|14|ADVMOD 14|17|AMOD 15|14|MARK-REL 16|17|COMPOUND 17|7|OBJ 18|7|PUNCT
+*CHI:	把 抢 来 的 东 西 都 送 到 这个 山 洞 里 面 去 . 220328_228048
+%wor:	把 220328_220488 抢 220488_220608 来 220608_221069 的 221069_221249 东 221249_221570 西 221570_221710 都 221710_222211 送 222211_224194 到 224194_224915 这个 224915_227219 山 227219_227259 洞 227259_227420 里 227420_227500 面 227500_229042 去 229042_232048 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=232048 clamped_to=228048 cause=utr_token_range_overlap
+%mor:	adp|把 verb|抢-Inf-S verb|来-Inf-S sconj|的 noun|东 noun|西 sconj|都 verb|送-Inf-S verb|到-Inf-S det|这个-Def noun|山 part|洞 noun|里 part|面 verb|去-Inf-S .
+%gra:	1|6|CASE 2|6|ACL-RELCL 3|2|XCOMP 4|2|MARK-REL 5|6|NMOD 6|15|OBL 7|15|MARK 8|15|ADVCL 9|8|MARK 10|12|DET 11|12|COMPOUND 12|8|OBJ 13|12|ACL 14|8|OBJ 15|0|ROOT 16|15|PUNCT
+*CHI:	这个 洞 里 面 全 都是 一 箱 一 箱 的 钱 . 228048_229128
+%wor:	这个 228048_228628 洞 228628_228668 里 228668_228708 面 228708_228748 全 228748_228788 都是 228788_228888 一 228888_228928 箱 228928_228968 一 228968_229008 箱 229008_229068 的 229068_229108 钱 229108_229128 .
+%mor:	det|这个-Def noun|洞 adp|里 noun|面 adv|全 aux|是-Inf-S num|一 noun|箱 num|一 noun|箱 part|的 noun|钱 .
+%gra:	1|2|DET 2|4|NMOD 3|2|CASE 4|12|NSUBJ 5|12|ADVMOD 6|12|COP 7|8|NUMMOD 8|10|NMOD 9|10|NUMMOD 10|12|NMOD 11|10|CASE 12|0|ROOT 13|12|PUNCT
+*CHI:	几只手表 . 229148_229288
+%wor:	几只手表 229148_229288 .
+%mor:	noun|几只手表 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	黄金 跟 宝 石 . 229308_236797
+%wor:	黄金 229308_231890 跟 231890_232130 宝 232130_233051 石 233051_240796 .
+%xalign:	monotonicity:end_clamped end_truncated_by=3999ms original_end=240796 clamped_to=236797 cause=utr_token_range_overlap
+%mor:	noun|黄金 cconj|跟 propn|宝 part|石 .
+%gra:	1|0|ROOT 2|4|CC 3|4|COMPOUND 4|1|CONJ 5|1|PUNCT
+*CHI:	有 一个 很 冷 的 黑 夜 里 . 236797_238758
+%wor:	有 236797_237057 一个 237057_237557 很 237557_237597 冷 237597_237637 的 237637_237677 黑 237677_237717 夜 237717_237757 里 237757_238758 .
+%mor:	verb|有-Inf-S num|一个 adv|很 adj|冷-S1 sconj|的 noun|黑 part|夜 noun|里 .
+%gra:	1|0|ROOT 2|7|NUMMOD 3|4|ADVMOD 4|7|AMOD 5|4|MARK-REL 6|7|COMPOUND 7|1|OBJ 8|7|ACL 9|1|PUNCT
+*CHI:	这个 三 个 强 盗 又 捡 到了 一 辆 马 车 . 238778_247090
+%wor:	这个 238778_238898 三 238898_239099 个 239099_239139 强 239139_239319 盗 239319_244363 又 244363_244403 捡 244403_244463 到了 244463_245084 一 245084_245144 辆 245144_245264 马 245264_248787 车 248787_251090 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=251090 clamped_to=247090 cause=utr_token_range_overlap
+%mor:	det|这个-Def num|三 noun|个 part|强 part|盗 sconj|又 verb|捡-Inf-S verb|到了-Inf-S num|一 noun|辆 noun|马 part|车 .
+%gra:	1|3|DET 2|3|NUMMOD 3|5|NMOD 4|5|CASE 5|7|NSUBJ 6|7|MARK 7|0|ROOT 8|7|MARK 9|10|NUMMOD 10|12|NMOD 11|12|COMPOUND 12|7|OBJ 13|7|PUNCT
+*CHI:	可是 车 上 只有 一个 叫 苏 尼 的 狗 . 247090_247951
+%wor:	可是 247090_247190 车 247190_247230 上 247230_247270 只有 247270_247370 一个 247370_247490 叫 247490_247590 苏 247590_247811 尼 247811_247851 的 247851_247891 狗 247891_247951 .
+%mor:	sconj|可是 noun|车 adp|上 verb|只有-Inf-S num|一个 verb|叫-Inf-S propn|苏-Acc propn|尼 sconj|的 noun|狗-Acc .
+%gra:	1|4|MARK 2|4|NSUBJ 3|2|CASE 4|0|ROOT 5|10|NUMMOD 6|10|ACL-RELCL 7|6|OBJ 8|7|FLAT-NAME 9|6|MARK-REL 10|4|OBJ 11|4|PUNCT
+*CHI:	他 正 要 去 协 靠 姑 妈 . 247971_256354
+%wor:	他 247971_248011 正 248011_248472 要 248472_248813 去 248813_249133 协 249133_250496 靠 250496_253782 姑 253782_255545 妈 255545_260354 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=260354 clamped_to=256354 cause=utr_token_range_overlap
+%mor:	pron|他-Int-S3 adv|正 aux|要-Inf-S verb|去-Inf-S verb|协-Inf-S verb|靠-Inf-S propn|姑 part|妈 .
+%gra:	1|6|NSUBJ 2|6|ADVMOD 3|6|AUX 4|6|ADVCL 5|4|XCOMP 6|0|ROOT 7|8|COMPOUND 8|6|OBJ 9|6|PUNCT
+*CHI:	因为 姑 妈 是 个 坏 心 肠 的人 . 256354_258415
+%wor:	因为 256354_257834 姑 257834_257874 妈 257874_257914 是 257914_257954 个 257954_257994 坏 257994_258034 心 258034_258094 肠 258094_258134 的人 258134_258415 .
+%mor:	adp|因为 propn|姑 part|妈 aux|是-Inf-S noun|个 adj|坏-S1 part|心 part|肠 noun|的人 .
+%gra:	1|9|CASE 2|3|COMPOUND 3|9|NSUBJ 4|9|COP 5|9|NMOD 6|7|COMPOUND 7|8|COMPOUND 8|9|NMOD 9|0|ROOT 10|9|PUNCT
+*CHI:	所以 他 很 高 兴 碰 到了 这 三 个 强 盗 . 258435_267162
+%wor:	所以 258435_259955 他 259955_260376 很 260376_260476 高 260476_262997 兴 262997_264658 碰 264658_265679 到了 265679_265759 这 265759_268940 三 268940_269180 个 269180_269521 强 269521_269641 盗 269641_271162 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=271162 clamped_to=267162 cause=utr_token_range_overlap
+%mor:	sconj|所以 pron|他-Int-S3 adv|很 adj|高-S1 adv|兴 verb|碰-Inf-S verb|到了-Inf-S det|这-Def num|三 noun|个 part|强 noun|盗-Acc .
+%gra:	1|4|MARK 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|6|ADVMOD 6|4|XCOMP 7|6|MARK 8|10|DET 9|10|NUMMOD 10|12|NMOD 11|12|CASE 12|6|OBJ 13|4|PUNCT
+*INV:	然后 呢 . 267162_271785
+%wor:	然后 267162_271564 呢 271564_271785 .
+%mor:	adv|然后 part|呢 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*CHI:	车 上 又 xxx 了 六 个 苏 尼 . 271805_272308
+%wor:	车 271805_272705 上 272705_273726 又 273726_273926 了 273926_274366 六 274366_274626 个 274626_274766 苏 274766_274827 尼 274827_276308 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=276308 clamped_to=272308 cause=utr_token_range_overlap
+%mor:	noun|车 adp|上 sconj|又 aux|了-Inf-Perf-S num|六 noun|个 propn|苏-Acc propn|尼 .
+%gra:	1|3|NSUBJ 2|1|CASE 3|4|MARK 4|0|ROOT 5|7|NUMMOD 6|5|CLF 7|4|OBJ 8|7|FLAT-NAME 9|4|PUNCT
+*CHI:	所以 这 三 个 强 盗 就 用 <暖和的> [/] 暖和的 斗 篷 把 他 包 起 来 带 走了 . 272308_275350
+%wor:	所以 272308_272928 这 272928_272968 三 272968_273048 个 273048_273088 强 273088_273148 盗 273148_273188 就 273188_273308 用 273308_273449 暖和的 273449_273649 暖和的 273649_274209 斗 274209_274449 篷 274449_274630 把 274630_274710 他 274710_274770 包 274770_274810 起 274810_274910 来 274910_274970 带 274970_275030 走了 275030_275350 .
+%mor:	sconj|所以 det|这-Def num|三 noun|个 part|强 part|盗 sconj|就 verb|用-Inf-S adj|暖和的-S1 noun|斗 part|篷 adp|把 pron|他-Int-S3 verb|包-Inf-S verb|起-Inf-S sconj|来 verb|带-Inf-S verb|走了-Inf-S .
+%gra:	1|17|MARK 2|4|DET 3|4|NUMMOD 4|6|NMOD 5|6|CASE 6|17|NSUBJ 7|8|MARK 8|17|ADVCL 9|11|AMOD 10|11|COMPOUND 11|8|OBJ 12|13|CASE 13|14|OBL-PATIENT 14|17|ADVCL 15|14|MARK 16|17|MARK 17|0|ROOT 18|17|MARK 19|17|PUNCT
+*CHI:	然后 . 275370_282601
+%wor:	然后 275370_286601 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=286601 clamped_to=282601 cause=utr_token_range_overlap
+%mor:	adv|然后 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	在 山 洞 里 给 苏 尼 铺 了 一 张 柔 软 的 床 . 282601_290321
+%wor:	在 282601_286147 山 286147_286187 洞 286187_286227 里 286227_286267 给 286267_286307 苏 286307_286467 尼 286467_286527 铺 286527_286567 了 286567_286607 一 286607_286687 张 286687_286728 柔 286728_286768 软 286768_286808 的 286808_287309 床 287309_294321 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=294321 clamped_to=290321 cause=utr_token_range_overlap
+%mor:	verb|在-Inf-S propn|山 part|洞 noun|里 verb|给-Inf-S propn|苏-Acc propn|尼 verb|铺-Inf-S aux|了-Inf-Perf-S num|一 noun|张 part|柔 noun|软 part|的 noun|床-Acc .
+%gra:	1|8|ADVCL 2|3|COMPOUND 3|1|OBJ 4|3|ACL 5|8|ADVCL 6|5|OBJ 7|6|FLAT-NAME 8|0|ROOT 9|8|AUX 10|15|NUMMOD 11|10|CLF 12|13|CASE 13|15|NMOD 14|13|CASE 15|8|OBJ 16|8|PUNCT
+*CHI:	他 一 躺 下去 就 睡 着 了 . 290321_294268
+%wor:	他 290321_290481 一 290481_290521 躺 290521_290561 下去 290561_291422 就 291422_293667 睡 293667_294208 着 294208_294248 了 294248_294268 .
+%mor:	pron|他-Int-S3 num|一 verb|躺-Inf-S verb|下去-Inf-S sconj|就 verb|睡-Inf-S aux|着-Inf-Prog-S part|了 .
+%gra:	1|6|NSUBJ 2|3|OBL 3|6|ADVCL 4|3|MARK 5|6|MARK 6|0|ROOT 7|6|AUX 8|6|DISCOURSE 9|6|PUNCT
+*CHI:	还 蛮 舒 服 的 . 294288_295650
+%wor:	还 294288_294328 蛮 294328_294568 舒 294568_295229 服 295229_295610 的 295610_295650 .
+%mor:	sconj|还 adv|蛮 adj|舒-S1 verb|服-Inf-S part|的 .
+%gra:	1|4|MARK 2|4|ADVMOD 3|4|ADVMOD 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*CHI:	还 太 好 睡 了 . 295670_299585
+%wor:	还 295670_295830 太 295830_296151 好 296151_298896 睡 298896_301761 了 301761_303585 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=303585 clamped_to=299585 cause=utr_token_range_overlap
+%mor:	sconj|还 adv|太 adv|好 verb|睡-Inf-S part|了 .
+%gra:	1|4|MARK 2|4|ADVMOD 3|4|ADVMOD 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*CHI:	第二 天 早 上 苏 尼 醒 过 来 发 现 车 上 都是 闪闪 发 光 的 财 宝 . 299585_309878
+%wor:	第二 299585_301726 天 301726_302087 早 302087_302407 上 302407_303008 苏 303008_303088 尼 303088_303248 醒 303248_303348 过 303348_304689 来 304689_304769 发 304769_304869 现 304869_305210 车 305210_306170 上 306170_306231 都是 306231_307952 闪闪 307952_311175 发 311175_311275 光 311275_311435 的 311435_311696 财 311696_312436 宝 312436_313878 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=313878 clamped_to=309878 cause=utr_token_range_overlap
+%mor:	num|第二 noun|天 noun|早 adp|上 propn|苏 propn|尼 verb|醒-Inf-S aux|过-Inf-Perf-S sconj|来 verb|发-Inf-S verb|现-Inf-S part|车 adp|上 aux|是-Inf-S adj|闪闪-S1 verb|发-Inf-S noun|光-Acc sconj|的 propn|财 part|宝 .
+%gra:	1|3|NUMMOD 2|1|CLF 3|10|NMOD-TMOD 4|3|CASE 5|10|NSUBJ 6|5|FLAT-NAME 7|10|ADVCL 8|7|AUX 9|10|MARK 10|20|ACL 11|12|COMPOUND 12|10|OBJ 13|12|CASE 14|20|COP 15|16|ADVMOD 16|20|ACL-RELCL 17|16|OBJ 18|16|MARK-REL 19|20|COMPOUND 20|0|ROOT 21|20|PUNCT
+*CHI:	这 些 是 做 什么 用 呢 . 309878_311159
+%wor:	这 309878_310178 些 310178_310358 是 310358_310618 做 310618_310658 什么 310658_310738 用 310738_310798 呢 310798_311159 .
+%mor:	det|这-Def noun|些 verb|是-Inf-S verb|做-Inf-S pron|什么-Int-S1 verb|用-Inf-S part|呢 .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|XCOMP 5|6|NSUBJ 6|4|CCOMP 7|3|DISCOURSE 8|3|PUNCT
+*CHI:	他们 三 个 人 xxx 带 走 . 311179_316568
+%wor:	他们 311179_311959 三 311959_315803 个 315803_317425 人 317425_317665 带 317665_318005 走 318005_320568 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=320568 clamped_to=316568 cause=utr_token_range_overlap
+%mor:	pron|他-Int-P3 num|三 noun|个 noun|人 verb|带-Inf-S verb|走-Inf-S .
+%gra:	1|4|NMOD 2|4|NUMMOD 3|2|CLF 4|5|NSUBJ 5|0|ROOT 6|5|XCOMP 7|5|PUNCT
+*CHI:	他们 从 来 没有 想 到 它 要 它 [/] 它 从 来 没有 想 到 要用 他们 的 财 宝 . 316568_326861
+%wor:	他们 316568_316648 从 316648_316688 来 316688_316728 没有 316728_316808 想 316808_316848 到 316848_316888 它 316888_316928 要 316928_316968 它 316968_317608 它 317608_317648 从 317648_317689 来 317689_318029 没有 318029_327277 想 327277_327317 到 327317_327417 要用 327417_327918 他们 327918_330000 的 330000_330360 财 330360_330540 宝 330540_330861 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=330861 clamped_to=326861 cause=utr_token_range_overlap
+%mor:	pron|他-Int-P3 adp|从 sconj|来 verb|有-Inf-Neg-S verb|想-Inf-S verb|到-Inf-S pron|它-Int-S3 aux|要-Inf-S pron|它-Int-S3 adp|从 sconj|来 verb|有-Inf-Neg-S verb|想-Inf-S verb|到-Inf-S verb|要用-Inf-S pron|他-Int-P3 sconj|的 noun|财 part|宝 .
+%gra:	1|4|NSUBJ 2|4|CASE 3|4|MARK 4|0|ROOT 5|4|XCOMP 6|5|MARK 7|5|OBJ 8|12|AUX 9|12|NSUBJ 10|12|CASE 11|12|MARK 12|4|XCOMP 13|12|XCOMP 14|13|MARK 15|19|ACL-RELCL 16|15|OBJ 17|15|MARK-REL 18|19|COMPOUND 19|13|OBJ 20|4|PUNCT
+*CHI:	这个 是 我的 图 案 . 326861_329445
+%wor:	这个 326861_326941 是 326941_327001 我的 327001_327101 图 327101_329164 案 329164_329445 .
+%mor:	det|这个-Def aux|是-Inf-S pron|我的-Int-S1 part|图 part|案 .
+%gra:	1|5|NSUBJ 2|5|COP 3|4|COMPOUND 4|5|COMPOUND 5|0|ROOT 6|5|PUNCT
+*CHI:	他们 有 图 案 是 吧 . 329465_330587
+%wor:	他们 329465_329545 有 329545_330106 图 330106_330226 案 330226_330306 是 330306_330467 吧 330467_330587 .
+%mor:	pron|他-Int-P3 verb|有-Inf-S verb|图-Inf-S part|案 aux|是-Inf-S part|吧 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|COMPOUND 4|5|NSUBJ 5|2|CCOMP 6|2|DISCOURSE 7|2|PUNCT
+*CHI:	嗯 好 . 330607_338200
+%wor:	嗯 330607_338040 好 338040_338200 .
+%mor:	punct|嗯 adj|好-S1 .
+%gra:	1|2|PUNCT 2|0|ROOT 3|2|PUNCT
+*INV:	然后 呢 . 338220_338581
+%wor:	然后 338220_338380 呢 338380_338581 .
+%mor:	adv|然后 part|呢 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*CHI:	一次 他们 为 了 要 用 这 些 财 宝 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=334581 previous_start_ms=338220
+%xrev:	[?]
+%mor:	num|一次 pron|他-Int-P3 adp|为 aux|了-Inf-Perf-S aux|要-Inf-S verb|用-Inf-S det|这-Def noun|些 noun|财 part|宝 .
+%gra:	1|2|NUMMOD 2|6|NSUBJ 3|0|ROOT 4|6|AUX 5|6|AUX 6|3|XCOMP 7|8|DET 8|10|NMOD 9|10|COMPOUND 10|6|OBJ 11|3|PUNCT
+*CHI:	他们 就 把 所有 走 丢 的 小 孩 不 快 乐 的 小 孩 没 人 的 小 孩 通 通 找 了 过 来 . 339727_353108
+%wor:	他们 339727_341368 就 341368_341409 把 341409_341449 所有 341449_342510 走 342510_342610 丢 342610_343111 的 343111_343151 小 343151_343471 孩 343471_344072 不 344072_344112 快 344112_344152 乐 344152_345073 的 345073_345113 小 345113_345153 孩 345153_345233 没 345233_345273 人 345273_345614 的 345614_345734 小 345734_345774 孩 345774_345954 通 345954_345994 通 345994_347636 找 347636_347676 了 347676_348077 过 348077_348357 来 348357_357108 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=357108 clamped_to=353108 cause=utr_token_range_overlap
+%mor:	pron|他-Int-P3 sconj|就 adp|把 det|所有-Def verb|走-Inf-S verb|丢-Inf-S sconj|的 part|小 noun|孩 adv|不 adv|快 verb|乐-Inf-S sconj|的 part|小 noun|孩 verb|没-Inf-S noun|人-Acc sconj|的 part|小 noun|孩 verb|通-Inf-S part|通 verb|找-Inf-S aux|了-Inf-Perf-S aux|过-Inf-Perf-S verb|来-Inf-S .
+%gra:	1|23|NSUBJ 2|23|MARK 3|9|CASE 4|9|DET 5|9|ACL-RELCL 6|9|ACL-RELCL 7|6|MARK-REL 8|9|CASE 9|12|OBL-PATIENT 10|12|ADVMOD 11|12|ADVMOD 12|15|ACL-RELCL 13|12|MARK-REL 14|15|CASE 15|16|OBL-PATIENT 16|20|ACL-RELCL 17|16|OBJ 18|16|MARK-REL 19|20|CASE 20|22|NMOD 21|23|ADVCL 22|21|OBJ 23|0|ROOT 24|23|AUX 25|23|AUX 26|23|XCOMP 27|23|PUNCT
+*CHI:	他们 还 买 了 一 座 美 丽 的 城 [/] 城堡 . 353108_358918
+%wor:	他们 353108_353248 还 353248_353308 买 353308_353348 了 353348_354390 一 354390_354430 座 354430_354470 美 354470_356594 丽 356594_356694 的 356694_356734 城 356734_358858 城堡 358858_358918 .
+%mor:	pron|他-Int-P3 sconj|还 verb|买-Inf-S aux|了-Inf-Perf-S num|一 noun|座 propn|美 propn|丽 part|的 noun|城堡-Acc .
+%gra:	1|3|NSUBJ 2|3|MARK 3|0|ROOT 4|3|AUX 5|10|NUMMOD 6|5|CLF 7|8|NMOD 8|10|NMOD 9|8|CASE 10|3|OBJ 11|3|PUNCT
+*CHI:	让 这 些 孩子 都有 地方 住 . 358938_362372
+%wor:	让 358938_358978 这 358978_359018 些 359018_359058 孩子 359058_359279 都有 359279_359840 地方 359840_360220 住 360220_366372 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=366372 clamped_to=362372 cause=utr_token_range_overlap
+%mor:	verb|让-Inf-S det|这-Def noun|些 noun|孩子 verb|都有-Inf-S noun|地方 verb|住-Inf-S .
+%gra:	1|0|ROOT 2|4|DET 3|2|CLF 4|7|NSUBJ 5|1|CCOMP 6|7|NSUBJ 7|5|CCOMP 8|1|PUNCT
+*CHI:	孩子 们 戴 上 红 帽 子 . 362372_367796
+%wor:	孩子 362372_363112 们 363112_364113 戴 364113_366395 上 366395_366435 红 366435_366595 帽 366595_366956 子 366956_367796 .
+%mor:	noun|孩子 part|们 verb|戴-Inf-S verb|上-Inf-S noun|红 part|帽 part|子 .
+%gra:	1|2|COMPOUND 2|3|NSUBJ 3|0|ROOT 4|3|MARK 5|6|COMPOUND 6|7|COMPOUND 7|3|OBJ 8|3|PUNCT
+*CHI:	穿 着 红 斗 篷 住进了 他们 的 新家 . 367816_372661
+%wor:	穿 367816_368037 着 368037_368077 红 368077_368337 斗 368337_368417 篷 368417_368457 住进了 368457_370299 他们 370299_371440 的 371440_371480 新家 371480_372661 .
+%mor:	verb|穿-Inf-S aux|着-Inf-Prog-S noun|红 noun|斗 part|篷 verb|住进了-Inf-S pron|他-Int-P3 sconj|的 noun|新家 .
+%gra:	1|6|ADVCL 2|1|AUX 3|5|NMOD 4|5|COMPOUND 5|1|OBJ 6|9|ACL-RELCL 7|6|OBJ 8|6|MARK-REL 9|0|ROOT 10|9|PUNCT
+*CHI:	为什么 全 穿 啊 . 372681_376665
+%wor:	为什么 372681_373662 全 373662_373702 穿 373702_374042 啊 374042_376665 .
+%mor:	adp|为什么 adv|全 verb|穿-Inf-S part|啊 .
+%gra:	1|3|CASE 2|3|ADVMOD 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*INV:	很有 意思 啊 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=372665 previous_start_ms=372681
+%xrev:	[?]
+%mor:	verb|很有-Inf-S noun|意思-Acc part|啊 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|DISCOURSE-SP 4|1|PUNCT
+*INV:	然后 呢 . 377332_379175
+%wor:	然后 377332_379055 呢 379055_379175 .
+%mor:	adv|然后 part|呢 .
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*CHI:	很 快 的 城 堡 的 xxx 了 . 379195_382841
+%wor:	很 379195_380677 快 380677_380757 的 380757_380797 城 380797_380897 堡 380897_382380 的 382380_382420 了 382420_382841 .
+%mor:	adv|很 adj|快-S1 sconj|的 noun|城 part|堡 part|的 part|了 .
+%gra:	1|2|ADVMOD 2|5|AMOD 3|2|MARK-REL 4|5|COMPOUND 5|0|ROOT 6|5|CASE 7|5|DISCOURSE 8|5|PUNCT
+*CHI:	每 天 都有 一个 人 把 小 孩 带 到 这 三 个 门 强盗 的 门 口 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=378841 previous_start_ms=379195
+%xrev:	[?]
+%mor:	det|每-Def noun|天 verb|都有-Inf-S det|一个-Def noun|人 adp|把 part|小 noun|孩 verb|带-Inf-S verb|到-Inf-S det|这-Def num|三 noun|个 noun|门 verb|强盗-Inf-S sconj|的 noun|门 part|口 .
+%gra:	1|2|DET 2|3|OBL 3|0|ROOT 4|5|DET 5|9|NSUBJ 6|8|CASE 7|8|CASE 8|9|OBL-PATIENT 9|3|CCOMP 10|9|MARK 11|13|DET 12|13|NUMMOD 13|14|NMOD 14|15|NSUBJ 15|18|ACL-RELCL 16|15|MARK-REL 17|18|COMPOUND 18|9|OBJ 19|3|PUNCT
+*CHI:	家 门 口 . 384383_389648
+%wor:	家 384383_384583 门 384583_387825 口 387825_393648 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=393648 clamped_to=389648 cause=utr_token_range_overlap
+%mor:	noun|家 part|门 part|口 .
+%gra:	1|2|COMPOUND 2|3|COMPOUND 3|0|ROOT 4|3|PUNCT
+*CHI:	孩子 们 渐 渐 长 大 了 . 389648_397914
+%wor:	孩子 389648_389808 们 389808_389968 渐 389968_392109 渐 392109_392209 长 392209_394491 大 394491_395952 了 395952_397914 .
+%mor:	noun|孩子 part|们 adv|渐 adv|渐 adj|长-S1 adj|大-S1 part|了 .
+%gra:	1|2|COMPOUND 2|5|NSUBJ 3|5|ADVMOD 4|5|ADVMOD 5|0|ROOT 6|5|XCOMP 7|5|DISCOURSE 8|5|PUNCT
+*CHI:	结 了 婚 . 397934_398795
+%wor:	结 397934_398094 了 398094_398174 婚 398174_398795 .
+%mor:	verb|结-Inf-S aux|了-Inf-Perf-S noun|婚-Acc .
+%gra:	1|0|ROOT 2|1|AUX 3|1|OBJ 4|1|PUNCT
+*CHI:	他们 也 在 城 堡 四 周 建 起 了 自己 的 房 子 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=394795 previous_start_ms=397934
+%xrev:	[?]
+%mor:	pron|他-Int-P3 sconj|也 verb|在-Inf-S noun|城 part|堡 num|四 noun|周-Acc verb|建-Inf-S verb|起-Inf-S aux|了-Inf-Perf-S pron|自己-Int-S1 part|的 noun|房 part|子 .
+%gra:	1|8|NSUBJ 2|8|MARK 3|8|ADVCL 4|5|COMPOUND 5|3|OBJ 6|7|NUMMOD 7|3|OBJ 8|0|ROOT 9|8|MARK 10|8|AUX 11|14|NMOD 12|11|CASE 13|14|COMPOUND 14|8|OBJ 15|8|PUNCT
+*CHI:	房 子 越 造 越 多 . 403022_405088
+%wor:	房 403022_403062 子 403062_404323 越 404323_404824 造 404824_406425 越 406425_408067 多 408067_409088 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=409088 clamped_to=405088 cause=utr_token_range_overlap
+%mor:	noun|房 part|子 adv|越 verb|造-Inf-S adv|越 adj|多-S1 .
+%gra:	1|2|COMPOUND 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|6|ADVMOD 6|4|XCOMP 7|4|PUNCT
+*CHI:	穿 成 了 一个 小 村 子 . 405088_405808
+%wor:	穿 405088_405528 成 405528_405568 了 405568_405628 一个 405628_405708 小 405708_405748 村 405748_405788 子 405788_405808 .
+%mor:	verb|穿-Inf-S verb|成-Inf-S aux|了-Inf-Perf-S num|一个 part|小 noun|村 part|子 .
+%gra:	1|0|ROOT 2|1|MARK 3|1|AUX 4|6|NUMMOD 5|6|CASE 6|7|COMPOUND 7|1|OBJ 8|1|PUNCT
+*CHI:	村 里 的人 全 都 穿 着 戴 着 红 帽 子 . 405828_414866
+%wor:	村 405828_405909 里 405909_405969 的人 405969_408152 全 408152_408552 都 408552_408632 穿 408632_408672 着 408672_408712 戴 408712_408752 着 408752_408792 红 408792_408832 帽 408832_418525 子 418525_418866 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=418866 clamped_to=414866 cause=utr_token_range_overlap
+%mor:	noun|村 noun|里 noun|的人 adv|全 sconj|都 verb|穿-Inf-S aux|着-Inf-Prog-S verb|戴-Inf-S aux|着-Inf-Prog-S noun|红 part|帽 noun|子-Acc .
+%gra:	1|3|NMOD 2|1|ACL 3|8|NSUBJ 4|6|ADVMOD 5|8|MARK 6|8|ADVCL 7|6|AUX 8|0|ROOT 9|8|AUX 10|11|COMPOUND 11|12|NMOD 12|8|OBJ 13|8|PUNCT
+*CHI:	穿 着 胡 斗 篷 . 414866_418407
+%wor:	穿 414866_415066 着 415066_416126 胡 416126_418327 斗 418327_418367 篷 418367_418407 .
+%mor:	verb|穿-Inf-S aux|着-Inf-Prog-S propn|胡 propn|斗 part|篷 .
+%gra:	1|0|ROOT 2|1|AUX 3|5|NMOD 4|3|CONJ 5|1|OBJ 6|1|PUNCT
+*CHI:	为 了 经 验 好 心 的 养 父 . 418427_422950
+%wor:	为 418427_418507 了 418507_418547 经 418547_418588 验 418588_418648 好 418648_419108 心 419108_422189 的 422189_422229 养 422229_422290 父 422290_422950 .
+%mor:	adp|为 aux|了-Inf-Perf-S adp|经 verb|验-Inf-S adj|好-S1 part|心 sconj|的 verb|养-Inf-S part|父 .
+%gra:	1|0|ROOT 2|1|AUX 3|4|CASE 4|9|ACL-RELCL 5|6|COMPOUND 6|4|OBJ 7|4|MARK-REL 8|9|COMPOUND 9|1|OBJ 10|1|PUNCT
+*CHI:	他们 给 三 个 强 盗 每 . 422970_425674
+%wor:	他们 422970_423590 给 423590_425972 三 425972_427292 个 427292_427412 强 427412_427552 盗 427552_427672 每 427672_429674 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=429674 clamped_to=425674 cause=utr_token_range_overlap
+%mor:	pron|他-Int-P3 verb|给-Inf-S num|三 noun|个 part|强 part|盗 det|每-Def .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NUMMOD 4|6|NMOD 5|6|CASE 6|2|OBJ 7|2|OBJ 8|2|PUNCT
+*CHI:	三 个 强 盗 每 人 建 了 一 条 高 塔 . 425674_431850
+%wor:	三 425674_429319 个 429319_429359 强 429359_430862 盗 430862_431102 每 431102_431443 人 431443_431483 建 431483_431523 了 431523_431563 一 431563_431623 条 431623_431803 高 431803_431863 塔 431863_435850 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=435850 clamped_to=431850 cause=utr_token_range_overlap
+%mor:	num|三 noun|个 part|强 part|盗 det|每-Def noun|人 verb|建-Inf-S aux|了-Inf-Perf-S num|一 noun|条 part|高 noun|塔-Acc .
+%gra:	1|2|NUMMOD 2|4|NMOD 3|4|CASE 4|7|NSUBJ 5|6|DET 6|7|NSUBJ 7|0|ROOT 8|7|AUX 9|12|NUMMOD 10|9|CLF 11|12|CASE 12|7|OBJ 13|7|PUNCT
+*CHI:	一 共 建 了 三 座 高 高 的 塔 . 431850_433391
+%wor:	一 431850_431890 共 431890_431950 建 431950_431990 了 431990_432030 三 432030_432110 座 432110_432370 高 432370_433150 高 433150_433311 的 433311_433351 塔 433351_433391 .
+%mor:	num|一 adv|共 verb|建-Inf-S aux|了-Inf-Perf-S num|三 noun|座 adj|高-S1 adj|高-S1 sconj|的 noun|塔-Acc .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|AUX 5|10|NUMMOD 6|5|CLF 7|8|ADVCL 8|10|AMOD 9|8|MARK-REL 10|3|OBJ 11|3|PUNCT
+*CHI:	不 回 了 . 433411_433571
+%wor:	不 433411_433451 回 433451_433491 了 433491_433571 .
+%mor:	adv|不 verb|回-Inf-S part|了 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*CHI:	这 四 村 啊 . 433591_440599
+%wor:	这 433591_433911 四 433911_438474 村 438474_438514 啊 438514_444598 .
+%xalign:	monotonicity:end_clamped end_truncated_by=3999ms original_end=444598 clamped_to=440599 cause=utr_token_range_overlap
+%mor:	det|这-Def num|四 noun|村 part|啊 .
+%gra:	1|3|DET 2|3|NUMMOD 3|0|ROOT 4|3|CASE 5|3|PUNCT
+*CHI:	这个 这个 还 有一 只 皮 衫 帽 子 哦 . 440599_450703
+%wor:	这个 440599_445681 这个 445681_445761 还 445761_445801 有一 445801_446661 只 446661_446801 皮 446801_447782 衫 447782_447822 帽 447822_448682 子 448682_449903 哦 449903_450703 .
+%mor:	det|这个-Def det|这个-Def sconj|还 num|有一 noun|只 noun|皮 noun|衫 part|帽 part|子 adj|哦-S1 .
+%gra:	1|2|DET 2|10|NSUBJ 3|10|MARK 4|5|NUMMOD 5|9|NMOD 6|9|NMOD 7|8|COMPOUND 8|9|COMPOUND 9|10|NSUBJ 10|0|ROOT 11|10|PUNCT
+*INV:	哎 巧 虎 说 . 450723_451804
+%wor:	哎 450723_450803 巧 450803_450863 虎 450863_451183 说 451183_451804 .
+%mor:	punct|哎 propn|巧 propn|虎 verb|说-Inf-S .
+%gra:	1|2|PUNCT 2|4|NSUBJ 3|2|FLAT-NAME 4|0|ROOT 5|4|PUNCT
+*INV:	哦 人名 你的 故 事 讲得 太 好 听 了 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=447804 previous_start_ms=450723
+%xrev:	[?]
+%mor:	punct|哦 noun|人名 part|你的 sconj|故 part|事 verb|讲得-Inf-S adv|太 adv|好 verb|听-Inf-S part|了 .
+%gra:	1|2|PUNCT 2|5|NMOD 3|2|CASE 4|5|COMPOUND 5|6|NSUBJ 6|9|ADVCL 7|9|ADVMOD 8|9|ADVMOD 9|0|ROOT 10|9|DISCOURSE 11|9|PUNCT
+*INV:	可是 我 还有 些 地方 没 听 明白 . 457601_457909
+%wor:	可是 457601_457701 我 457701_457842 还有 457842_457962 些 457962_459284 地方 459284_459364 没 459364_459425 听 459425_459465 明白 459465_461068 .
+%xalign:	monotonicity:end_clamped end_truncated_by=3159ms original_end=461068 clamped_to=457909 cause=utr_token_range_overlap
+%mor:	sconj|可是 pron|我-Int-S1 verb|还有-Inf-S adj|些-S1 noun|地方 adv|没 verb|听-Inf-S verb|明白-Inf-S .
+%gra:	1|3|MARK 2|3|NSUBJ 3|0|ROOT 4|5|AMOD 5|7|NSUBJ 6|7|ADVMOD 7|3|CCOMP 8|7|XCOMP 9|3|PUNCT
+*INV:	我想 先 问 问 你好 不好 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=457068 previous_start_ms=457601
+%xrev:	[?]
+%mor:	pron|我想-Int-S1 sconj|先 verb|问-Inf-S verb|问-Inf-S pron|你好-Int-S1 adj|不好-S1 .
+%gra:	1|3|NSUBJ 2|3|MARK 3|0|ROOT 4|3|XCOMP 5|6|NSUBJ 6|4|CCOMP 7|3|PUNCT
+*INV:	嗯 这个 故 事 书 的 封 面 在 哪 里 啊 . 457909_466331
+%wor:	嗯 457909_457969 这个 457969_459311 故 459311_459351 事 459351_459392 书 459392_459432 的 459432_460854 封 460854_463439 面 463439_463839 在 463839_463899 哪 463899_466364 里 466364_467826 啊 467826_470331 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=470331 clamped_to=466331 cause=utr_token_range_overlap
+%mor:	punct|嗯 det|这个-Def noun|故 noun|事 part|书 part|的 verb|封-Inf-S noun|面 adp|在 pron|哪-Int-S1 noun|里 part|啊 .
+%gra:	1|10|PUNCT 2|5|DET 3|4|NMOD 4|5|COMPOUND 5|8|NMOD 6|5|CASE 7|8|AMOD 8|9|NSUBJ 9|10|CASE 10|0|ROOT 11|10|ACL 12|10|DISCOURSE 13|10|PUNCT
+*INV:	诶 你 怎么 知道 的 . 466331_470194
+%wor:	诶 466331_469834 你 469834_469994 怎么 469994_470074 知道 470074_470154 的 470154_470194 .
+%mor:	punct|诶 pron|你-Int-S2 adv|怎么 verb|知道-Inf-S part|的 .
+%gra:	1|4|PUNCT 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*CHI:	他 就是 从 这里 <翻 到> [/] 翻 到 这个 地方 . 470214_470755
+%wor:	他 470214_470254 就是 470254_470334 从 470334_470374 这里 470374_470454 翻 470454_470494 到 470494_470534 翻 470534_470574 到 470574_470614 这个 470614_470694 地方 470694_470755 .
+%mor:	pron|他-Int-S3 sconj|就是 adp|从 pron|这里-Int-S1 verb|翻-Inf-S verb|到-Inf-S det|这个-Def noun|地方-Acc .
+%gra:	1|5|NSUBJ 2|5|MARK 3|4|CASE 4|5|OBL 5|0|ROOT 6|5|MARK 7|8|DET 8|5|OBJ 9|5|PUNCT
+*INV:	哦 这个 地方 是 什么 ? 470775_476624
+%wor:	哦 470775_471035 这个 471035_471115 地方 471115_471215 是 471215_475439 什么 475439_480624 ?
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=480624 clamped_to=476624 cause=utr_token_range_overlap
+%mor:	adv|哦 det|这个-Def noun|地方 aux|是-Inf-S pron|什么-Int-S1 ?
+%gra:	1|5|ADVMOD 2|3|DET 3|5|NSUBJ 4|5|COP 5|0|ROOT 6|5|PUNCT
+*CHI:	反 面 . 476624_477565
+%wor:	反 476624_477525 面 477525_477565 .
+%mor:	verb|反-Inf-S noun|面-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*INV:	哦 反 面 他的 封 面 在 在 哪 里 . 477585_486456
+%wor:	哦 477585_478205 反 478205_480528 面 480528_480568 他的 480568_482130 封 482130_482391 面 482391_484834 在 484834_485434 在 485434_486315 哪 486315_486375 里 486375_486456 .
+%mor:	punct|哦 verb|反-Inf-S part|面 pron|他的-Int-S3 verb|封-Inf-S noun|面 verb|在-Inf-S verb|在-Inf-S det|哪-Def noun|里-Acc .
+%gra:	1|3|PUNCT 2|3|COMPOUND 3|6|NMOD 4|6|DET 5|6|AMOD 6|7|NSUBJ 7|0|ROOT 8|7|MARK 9|10|DET 10|8|OBJ 11|7|PUNCT
+*INV:	封 面 在 这 . 486476_488859
+%wor:	封 486476_486716 面 486716_486756 在 486756_488618 这 488618_488859 .
+%mor:	verb|封-Inf-S noun|面 verb|在-Inf-S pron|这-Int-S1 .
+%gra:	1|3|ADVCL 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	然后 他 买 的时候 那个 服 务 员 用 在 弄 一个 机 器 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=484859 previous_start_ms=486476
+%xrev:	[?]
+%mor:	adv|然后 pron|他-Int-S3 verb|买-Inf-S sconj|的时候 det|那个-Def verb|服-Inf-S part|务 part|员 verb|用-Inf-S verb|在-Inf-S verb|弄-Inf-S det|一个-Def noun|机 part|器 .
+%gra:	1|9|ADVMOD 2|3|NSUBJ 3|8|ACL-RELCL 4|3|MARK-REL 5|8|DET 6|7|COMPOUND 7|8|COMPOUND 8|9|NSUBJ 9|0|ROOT 10|9|MARK 11|9|XCOMP 12|14|DET 13|14|COMPOUND 14|11|OBJ 15|9|PUNCT
+*INV:	哦好 . 494274_496578
+%wor:	哦好 494274_496578 .
+%mor:	verb|哦好-Inf-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	诶 这 故 事 说 叫 什么 名 字 啊 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=492578 previous_start_ms=494274
+%xrev:	[?]
+%mor:	punct|诶 det|这-Def noun|故 noun|事 verb|说-Inf-S verb|叫-Inf-S pron|什么-Int-S1 noun|名 part|字 part|啊 .
+%gra:	1|5|PUNCT 2|4|DET 3|4|NMOD 4|5|NSUBJ 5|0|ROOT 6|5|XCOMP 7|9|NMOD 8|9|COMPOUND 9|6|OBJ 10|5|DISCOURSE-SP 11|5|PUNCT
+*CHI:	三 个 强 盗 . 499306_503291
+%wor:	三 499306_500227 个 500227_501969 强 501969_502249 盗 502249_503291 .
+%mor:	num|三 noun|个 part|强 part|盗 .
+%gra:	1|2|NUMMOD 2|4|NMOD 3|4|CASE 4|0|ROOT 5|4|PUNCT
+*CHI:	他要 讲 . 503311_504813
+%wor:	他要 503311_504692 讲 504692_504813 .
+%mor:	pron|他要-Int-S3 verb|讲-Inf-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*INV:	诶 这里 有 些 什么 呀 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=500813 previous_start_ms=503311
+%xrev:	[?]
+%mor:	punct|诶 pron|这里-Int-S1 verb|有-Inf-S adj|些-S1 pron|什么-Int-S1 part|呀 .
+%gra:	1|3|PUNCT 2|3|NSUBJ 3|0|ROOT 4|5|AMOD 5|3|OBJ 6|3|DISCOURSE-SP 7|3|PUNCT
+*CHI:	这 就是 三 个 强 盗 . 507824_510011
+%wor:	这 507824_508304 就是 508304_509747 三 509747_509987 个 509987_510227 强 510227_510708 盗 510708_510989 .
+%xalign:	monotonicity:end_clamped end_truncated_by=978ms original_end=510989 clamped_to=510011 cause=utr_token_range_overlap
+%mor:	pron|这-Int-S1 aux|是-Inf-S num|三 noun|个 part|强 part|盗 .
+%gra:	1|6|NSUBJ 2|6|COP 3|4|NUMMOD 4|6|NMOD 5|6|CASE 6|0|ROOT 7|6|PUNCT
+*CHI:	因为 这 给 你 介 绍 他是 谁 写 的 啊 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=506989 previous_start_ms=507824
+%xrev:	[?]
+%mor:	adp|因为 pron|这-Int-S1 verb|给-Inf-S pron|你-Int-S2 verb|介-Inf-S verb|绍-Inf-S pron|他是-Int-S3 pron|谁-Int-S1 verb|写-Inf-S part|的 part|啊 .
+%gra:	1|3|CASE 2|3|NSUBJ 3|0|ROOT 4|5|NSUBJ 5|3|CCOMP 6|5|XCOMP 7|9|NSUBJ 8|9|NSUBJ 9|6|CCOMP 10|5|DISCOURSE 11|3|DISCOURSE 12|3|PUNCT
+*CHI:	谁 做 的 . 510011_510572
+%wor:	谁 510011_510271 做 510271_510532 的 510532_510572 .
+%mor:	pron|谁-Int-S1 verb|做-Inf-S part|的 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*INV:	啊 . 510592_511393
+%wor:	啊 510592_511393 .
+%mor:	part|啊 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	诶 这里 有 些 什么 . 511413_517282
+%wor:	诶 511413_512353 这里 512353_512473 有 512473_516197 些 516197_519640 什么 519640_521282 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=521282 clamped_to=517282 cause=utr_token_range_overlap
+%mor:	punct|诶 pron|这里-Int-S1 verb|有-Inf-S adj|些-S1 pron|什么-Int-S1 .
+%gra:	1|3|PUNCT 2|3|NSUBJ 3|0|ROOT 4|5|AMOD 5|3|OBJ 6|3|PUNCT
+*CHI:	就 这里 是 让 你看 看 他是 哪 个 公 司 . 517282_518403
+%wor:	就 517282_517322 这里 517322_517422 是 517422_517482 让 517482_517522 你看 517522_517622 看 517622_517662 他是 517662_517842 哪 517842_517883 个 517883_518283 公 518283_518343 司 518343_518403 .
+%mor:	sconj|就 pron|这里-Int-S1 verb|是-Inf-S verb|让-Inf-S verb|你看-Inf-S verb|看-Inf-S pron|他是-Int-S1 det|哪-Def noun|个 noun|公 part|司 .
+%gra:	1|3|MARK 2|3|NSUBJ 3|0|ROOT 4|3|XCOMP 5|6|ADVCL 6|4|CCOMP 7|6|IOBJ 8|9|DET 9|11|NMOD 10|11|COMPOUND 11|6|OBJ 12|3|PUNCT
+*CHI:	然后 是 地 址 是 哪 儿 . 518423_526545
+%wor:	然后 518423_518504 是 518504_529803 地 529803_529963 址 529963_530004 是 530004_530044 哪 530044_530084 儿 530084_530545 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=530545 clamped_to=526545 cause=utr_token_range_overlap
+%mor:	adv|然后 aux|是-Inf-S noun|地 part|址 aux|是-Inf-S pron|哪-Int-S1 part|儿 .
+%gra:	1|7|ADVMOD 2|7|COP 3|4|COMPOUND 4|7|NSUBJ 5|7|COP 6|7|COMPOUND 7|0|ROOT 8|7|PUNCT
+*CHI:	嗯 这里 也是 一个 白 封 面 啊 . 526545_532970
+%wor:	嗯 526545_529547 这里 529547_530388 也是 530388_530468 一个 530468_530628 白 530628_530708 封 530708_532450 面 532450_532930 啊 532930_532970 .
+%mor:	punct|嗯 pron|这里-Int-S1 aux|是-Inf-S det|一个-Def noun|白 verb|封-Inf-S part|面 part|啊 .
+%gra:	1|7|PUNCT 2|7|NSUBJ 3|7|COP 4|7|DET 5|6|NSUBJ 6|7|COMPOUND 7|0|ROOT 8|7|DISCOURSE 9|7|PUNCT
+*INV:	诶 这里 发 生 了 什么 呀 . 532990_533431
+%wor:	诶 532990_533030 这里 533030_533110 发 533110_533151 生 533151_533191 了 533191_533251 什么 533251_533331 呀 533331_533431 .
+%mor:	punct|诶 pron|这里-Int-S1 verb|发-Inf-S verb|生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 part|呀 .
+%gra:	1|3|PUNCT 2|3|NSUBJ 3|0|ROOT 4|3|MARK 5|4|AUX 6|4|OBJ 7|3|DISCOURSE 8|3|PUNCT
+*CHI:	这 已经 开始 了 呀 . 533451_536838
+%wor:	这 533451_533491 已经 533491_533571 开始 533571_540497 了 540497_540597 呀 540597_540838 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=540838 clamped_to=536838 cause=utr_token_range_overlap
+%mor:	pron|这-Int-S1 adv|已经 verb|开始-Inf-S part|了 part|呀 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|DISCOURSE 5|3|DISCOURSE 6|3|PUNCT
+*CHI:	第一 页 哦 . 536838_539299
+%wor:	第一 536838_538959 页 538959_539259 哦 539259_539299 .
+%mor:	num|第一 noun|页 part|哦 .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|CASE 4|2|PUNCT
+*INV:	发 生 了 些 什么 事 啊 . 539319_541985
+%wor:	发 539319_539359 生 539359_539399 了 539399_539439 些 539439_539480 什么 539480_540761 事 540761_543122 啊 543122_545985 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=545985 clamped_to=541985 cause=utr_token_range_overlap
+%mor:	verb|发-Inf-S verb|生-Inf-S aux|了-Inf-Perf-S adj|些-S1 pron|什么-Int-S1 noun|事-Acc part|啊 .
+%gra:	1|2|CSUBJ 2|0|ROOT 3|2|AUX 4|6|AMOD 5|6|NMOD 6|2|OBJ 7|2|DISCOURSE 8|2|PUNCT
+*CHI:	就是 很 久 了 很 久 以前 他们 他们 他们 穿 的 黑黑 . 541985_548675
+%wor:	就是 541985_542065 很 542065_542105 久 542105_542145 了 542145_542845 很 542845_542905 久 542905_543526 以前 543526_543686 他们 543686_546509 他们 546509_547269 他们 547269_548370 穿 548370_548631 的 548631_548751 黑黑 548751_552675 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=552675 clamped_to=548675 cause=utr_token_range_overlap
+%mor:	verb|是-Inf-S adv|很 adj|久-S1 aux|了-Inf-Perf-S adv|很 adj|久-S1 noun|以前 pron|他-Int-P3 pron|他-Int-P3 pron|他-Int-P3 verb|穿-Inf-S sconj|的 adj|黑黑-S1 .
+%gra:	1|0|ROOT 2|3|ADVMOD 3|1|XCOMP 4|3|AUX 5|6|ADVMOD 6|3|XCOMP 7|6|NMOD-TMOD 8|9|NMOD 9|11|NSUBJ 10|11|NSUBJ 11|13|ADVCL 12|11|MARK-REL 13|1|PARATAXIS 14|1|PUNCT
+*INV:	哎 你 听 用 自己 的话 来 说 啊 . 548675_549135
+%wor:	哎 548675_548715 你 548715_548755 听 548755_548815 用 548815_548855 自己 548855_548935 的话 548935_549015 来 549015_549055 说 549055_549095 啊 549095_549135 .
+%mor:	punct|哎 pron|你-Int-S2 verb|听-Inf-S verb|用-Inf-S pron|自己-Int-S1 part|的话 sconj|来 verb|说-Inf-S part|啊 .
+%gra:	1|8|PUNCT 2|8|NSUBJ 3|8|ADVCL 4|3|XCOMP 5|4|OBJ 6|4|DISCOURSE 7|8|MARK 8|0|ROOT 9|8|DISCOURSE 10|8|PUNCT
+*INV:	发 生 了 什么 . 549155_550917
+%wor:	发 549155_549215 生 549215_549255 了 549255_549335 什么 549335_550917 .
+%mor:	verb|发-Inf-S verb|生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 .
+%gra:	1|2|CSUBJ 2|0|ROOT 3|2|AUX 4|2|OBJ 5|2|PUNCT
+*CHI:	他们 就在 洞里面 正 在 休 息 . 550937_558968
+%wor:	他们 550937_551197 就在 551197_551397 洞里面 551397_558864 正 558864_559304 在 559304_559384 休 559384_562747 息 562747_562968 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=562968 clamped_to=558968 cause=utr_token_range_overlap
+%mor:	pron|他-Int-P3 verb|就在-Inf-S noun|洞里面-Acc adv|正 adv|在 verb|休-Inf-S verb|息-Inf-S .
+%gra:	1|7|NSUBJ 2|7|ADVCL 3|2|OBJ 4|7|ADVMOD 5|7|ADVMOD 6|7|ADVCL 7|0|ROOT 8|7|PUNCT
+*INV:	哦 诶 这里 有 些 什么 呀 . 558968_564651
+%wor:	哦 558968_560548 诶 560548_560608 这里 560608_563070 有 563070_563190 些 563190_563270 什么 563270_564611 呀 564611_564651 .
+%mor:	punct|哦 punct|诶 pron|这里-Int-S1 verb|有-Inf-S adj|些-S1 pron|什么-Int-S1 part|呀 .
+%gra:	1|4|PUNCT 2|4|PUNCT 3|4|NSUBJ 4|0|ROOT 5|6|AMOD 6|4|OBJ 7|4|DISCOURSE-SP 8|4|PUNCT
+*CHI:	就是 介 绍 他们 用 什么 用 什么 用 什么 . 564671_570294
+%wor:	就是 564671_566692 介 566692_566752 绍 566752_566792 他们 566792_566872 用 566872_566912 什么 566912_567632 用 567632_569293 什么 569293_569873 用 569873_569913 什么 569913_570294 .
+%mor:	verb|是-Inf-S verb|介-Inf-S verb|绍-Inf-S pron|他-Int-P3 verb|用-Inf-S pron|什么-Int-S1 verb|用-Inf-S pron|什么-Int-S1 verb|用-Inf-S pron|什么-Int-S1 .
+%gra:	1|0|ROOT 2|1|XCOMP 3|2|XCOMP 4|9|NSUBJ 5|7|ADVCL 6|5|OBJ 7|9|ADVCL 8|7|OBJ 9|3|CCOMP 10|9|OBJ 11|1|PUNCT
+*CHI:	我们 底 下 这个 . 570314_572277
+%wor:	我们 570314_572015 底 572015_572135 下 572135_572175 这个 572175_573776 .
+%xalign:	monotonicity:end_clamped end_truncated_by=1499ms original_end=573776 clamped_to=572277 cause=utr_token_range_overlap
+%mor:	pron|我-Int-P1 verb|底-Inf-S verb|下-Inf-S det|这个-Def .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|MARK 4|2|OBJ 5|2|PUNCT
+*INV:	哦 用 什么 呀 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=569776 previous_start_ms=570314
+%xrev:	[?]
+%mor:	adv|哦 verb|用-Inf-S pron|什么-Int-S1 part|呀 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|2|DISCOURSE-SP 5|2|PUNCT
+*CHI:	红 斧头 . 572277_573338
+%wor:	红 572277_572357 斧头 572357_573338 .
+%mor:	noun|红 noun|斧头 .
+%gra:	1|2|NMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	这个 是 喷 壶 xxx 红 斧头 . 573358_579662
+%wor:	这个 573358_574639 是 574639_574759 喷 574759_577681 壶 577681_577981 红 577981_578402 斧头 578402_579662 .
+%mor:	det|这个-Def aux|是-Inf-S verb|喷-Inf-S part|壶 part|红 noun|斧头 .
+%gra:	1|6|NSUBJ 2|6|COP 3|4|COMPOUND 4|5|COMPOUND 5|6|NMOD 6|0|ROOT 7|6|PUNCT
+*INV:	哦 这 谁 的 呀 . 579682_582524
+%wor:	哦 579682_579843 这 579843_581043 谁 581043_581124 的 581124_581164 呀 581164_582524 .
+%mor:	punct|哦 pron|这-Int-S1 pron|谁-Int-S1 part|的 part|呀 .
+%gra:	1|3|PUNCT 2|3|NSUBJ 3|0|ROOT 4|3|CASE 5|3|DISCOURSE 6|3|PUNCT
+*CHI:	这个 是 第二 个 的 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=578525 previous_start_ms=579682
+%xrev:	[?]
+%mor:	det|这个-Def aux|是-Inf-S num|第二 noun|个 part|的 .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|NUMMOD 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*CHI:	这个 是 第三 个 的 . 589444_589885
+%wor:	这个 589444_589544 是 589544_589585 第三 589585_589725 个 589725_589845 的 589845_589885 .
+%mor:	det|这个-Def aux|是-Inf-S num|第三 noun|个 part|的 .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|NUMMOD 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*CHI:	这个 是 第一 . 589905_590286
+%wor:	这个 589905_589985 是 589985_590146 第一 590146_590286 .
+%mor:	det|这个-Def aux|是-Inf-S num|第一 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	这个 是 第三 个 的 . 590306_591271
+%wor:	这个 590306_590386 是 590386_590426 第三 590426_590566 个 590566_590727 的 590727_591789 .
+%xalign:	monotonicity:end_clamped end_truncated_by=518ms original_end=591789 clamped_to=591271 cause=utr_token_range_overlap
+%mor:	det|这个-Def aux|是-Inf-S num|第三 noun|个 part|的 .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|NUMMOD 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*CHI:	这个 是 第一 个 的 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=587789 previous_start_ms=590306
+%xrev:	[?]
+%mor:	det|这个-Def aux|是-Inf-S num|第一 noun|个 part|的 .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|NUMMOD 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT
+*CHI:	这个 第二 个 的 哦 . 591271_595814
+%wor:	这个 591271_593873 第二 593873_595694 个 595694_595734 的 595734_595774 哦 595774_595814 .
+%mor:	det|这个-Def num|第二 noun|个 part|的 noun|哦 .
+%gra:	1|3|DET 2|3|NUMMOD 3|5|NMOD 4|3|CASE 5|0|ROOT 6|5|PUNCT
+*INV:	他们 用 它 来 干 什么 呀 . 595834_596538
+%wor:	他们 595834_595914 用 595914_595954 它 595954_596154 来 596154_596295 干 596295_596555 什么 596555_598556 呀 598556_600537 .
+%xalign:	monotonicity:end_clamped end_truncated_by=3999ms original_end=600537 clamped_to=596538 cause=utr_token_range_overlap
+%mor:	pron|他-Int-P3 verb|用-Inf-S pron|它-Int-S3 sconj|来 verb|干-Inf-S pron|什么-Int-S1 part|呀 .
+%gra:	1|5|NSUBJ 2|5|ADVCL 3|2|OBJ 4|5|MARK 5|0|ROOT 6|5|OBJ 7|5|DISCOURSE-SP 8|5|PUNCT
+*CHI:	嗯 结 束 马 车 了 哦 . 596538_598719
+%wor:	嗯 596538_596738 结 596738_596838 束 596838_598458 马 598458_598578 车 598578_598659 了 598659_598699 哦 598699_598719 .
+%mor:	punct|嗯 verb|结-Inf-S verb|束-Inf-S propn|马 part|车 part|了 pron|哦-Int-S1 .
+%gra:	1|2|PUNCT 2|0|ROOT 3|2|MARK 4|5|COMPOUND 5|2|OBJ 6|2|DISCOURSE 7|2|OBJ 8|2|PUNCT
+*INV:	哎 呦 这里 发 生 了 什么 呀 . 598739_599559
+%wor:	哎 598739_598779 呦 598779_598979 这里 598979_599079 发 599079_599119 生 599119_599419 了 599419_599459 什么 599459_599519 呀 599519_599559 .
+%mor:	punct|哎 propn|呦 pron|这里-Int-S1 verb|发-Inf-S verb|生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 part|呀 .
+%gra:	1|4|PUNCT 2|3|NMOD 3|4|NSUBJ 4|0|ROOT 5|4|MARK 6|4|AUX 7|5|OBJ 8|4|DISCOURSE 9|4|PUNCT
+*CHI:	他们 就是 晚上 天 黑 了 . 599579_607345
+%wor:	他们 599579_599679 就是 599679_602400 晚上 602400_604501 天 604501_604621 黑 604621_605922 了 605922_611345 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=611345 clamped_to=607345 cause=utr_token_range_overlap
+%mor:	pron|他-Int-P3 aux|是-Inf-S noun|晚上 part|天 noun|黑 part|了 .
+%gra:	1|5|NSUBJ 2|5|COP 3|5|NMOD 4|5|CASE 5|0|ROOT 6|5|DISCOURSE 7|5|PUNCT
+*CHI:	他们 去 到 马 路 上 去 寻 找 导路 人 . 607345_616111
+%wor:	他们 607345_608105 去 608105_614490 到 614490_614610 马 614610_615091 路 615091_615491 上 615491_615551 去 615551_615711 寻 615711_615791 找 615791_615951 导路 615951_616031 人 616031_616111 .
+%mor:	pron|他-Int-P3 verb|去-Inf-S verb|到-Inf-S propn|马 part|路 noun|上 sconj|去 verb|寻-Inf-S verb|找-Inf-S verb|导路-Inf-S part|人 .
+%gra:	1|8|NSUBJ 2|8|ADVCL 3|2|MARK 4|5|COMPOUND 5|3|OBJ 6|5|ACL 7|8|MARK 8|0|ROOT 9|8|XCOMP 10|11|COMPOUND 11|9|OBJ 12|8|PUNCT
+*INV:	哦 这是 什么 时候 啊 . 616131_616752
+%wor:	哦 616131_616251 这是 616251_616412 什么 616412_616552 时候 616552_616712 啊 616712_616752 .
+%mor:	pron|哦-Int-S1 verb|是-Inf-S pron|什么-Int-S1 noun|时候-Acc part|啊 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NMOD 4|2|OBJ 5|2|DISCOURSE-SP 6|2|PUNCT
+*CHI:	晚上 . 616772_618278
+%wor:	晚上 616772_620095 .
+%xalign:	monotonicity:end_clamped end_truncated_by=1817ms original_end=620095 clamped_to=618278 cause=utr_token_range_overlap
+%mor:	noun|晚上 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	诶 你 怎么 知道 的 诶 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=616095 previous_start_ms=616772
+%xrev:	[?]
+%mor:	punct|诶 pron|你-Int-S2 adv|怎么 verb|知道-Inf-S part|的 punct|诶 .
+%gra:	1|4|PUNCT 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|DISCOURSE 6|4|PUNCT 7|4|PUNCT
+*CHI:	这是 一个 人 . 618278_619761
+%wor:	这是 618278_618439 一个 618439_619721 人 619721_619761 .
+%mor:	aux|是-Inf-S det|一个-Def noun|人 .
+%gra:	1|3|COP 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	女 人 晕 掉 了 . 619781_625110
+%wor:	女 619781_620322 人 620322_621544 晕 621544_621624 掉 621624_622886 了 622886_625110 .
+%mor:	noun|女 part|人 verb|晕-Inf-S verb|掉-Inf-S part|了 .
+%gra:	1|2|COMPOUND 2|3|NSUBJ 3|0|ROOT 4|3|MARK 5|3|DISCOURSE 6|3|PUNCT
+*CHI:	男 人 跑 了 . 625130_625358
+%wor:	男 625130_625912 人 625912_625992 跑 625992_626853 了 626853_629358 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=629358 clamped_to=625358 cause=utr_token_range_overlap
+%mor:	noun|男 part|人 verb|跑-Inf-S part|了 .
+%gra:	1|2|COMPOUND 2|3|NSUBJ 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*CHI:	狗 也 跑 了 . 625358_630281
+%wor:	狗 625358_625978 也 625978_628179 跑 628179_630241 了 630241_630281 .
+%mor:	noun|狗 sconj|也 verb|跑-Inf-S part|了 .
+%gra:	1|3|NSUBJ 2|3|MARK 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*INV:	哈哈 哈哈 真 有 意思 啊 . 630301_631982
+%wor:	哈哈 630301_630381 哈哈 630381_631662 真 631662_631702 有 631702_631742 意思 631742_631902 啊 631902_631982 .
+%mor:	propn|哈哈 propn|哈哈 adv|真 verb|有-Inf-S noun|意思-Acc part|啊 .
+%gra:	1|4|NSUBJ 2|1|FLAT-NAME 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|4|DISCOURSE-SP 7|4|PUNCT
+*INV:	啊 这里 发 生 了 什么 呢 . 632002_634107
+%wor:	啊 632002_632042 这里 632042_632262 发 632262_632302 生 632302_632402 了 632402_634244 什么 634244_634484 呢 634484_638106 .
+%xalign:	monotonicity:end_clamped end_truncated_by=3999ms original_end=638106 clamped_to=634107 cause=utr_token_range_overlap
+%mor:	part|啊 pron|这里-Int-S1 verb|发-Inf-S verb|生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 part|呢 .
+%gra:	1|2|CASE 2|3|NSUBJ 3|0|ROOT 4|3|MARK 5|4|AUX 6|4|OBJ 7|4|DISCOURSE-SP 8|3|PUNCT
+*CHI:	他们 就是 学 习 了 那个 马 车 . 634107_639269
+%wor:	他们 634107_634427 就是 634427_634547 学 634547_634647 习 634647_637188 了 637188_637608 那个 637608_638309 马 638309_638789 车 638789_639269 .
+%mor:	pron|他-Int-P3 verb|是-Inf-S part|学 verb|习-Inf-S aux|了-Inf-Perf-S det|那个-Def propn|马 part|车 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|4|AUX 6|8|DET 7|8|COMPOUND 8|4|OBJ 9|2|PUNCT
+*CHI:	先 把 这个 胡 椒 粉 撒 到 他们 的 眼 睛 里 . 639289_644915
+%wor:	先 639289_639329 把 639329_639850 这个 639850_641030 胡 641030_641270 椒 641270_641310 粉 641310_641350 撒 641350_642931 到 642931_643071 他们 643071_643532 的 643532_644052 眼 644052_644272 睛 644272_648814 里 648814_648915 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=648915 clamped_to=644915 cause=utr_token_range_overlap
+%mor:	sconj|先 adp|把 det|这个-Def part|胡 noun|椒 part|粉 verb|撒-Inf-S verb|到-Inf-S pron|他-Int-P3 part|的 noun|眼 noun|睛 noun|里 .
+%gra:	1|7|MARK 2|6|CASE 3|6|DET 4|5|CASE 5|6|COMPOUND 6|7|OBL-PATIENT 7|0|ROOT 8|7|MARK 9|12|DET 10|9|CASE 11|12|NMOD 12|7|IOBJ 13|12|ACL 14|7|PUNCT
+*INV:	他们 为什么 要 把 这个 胡 椒 粉 撒 到 马 的 眼 睛 里 . 644915_652635
+%wor:	他们 644915_649182 为什么 649182_651105 要 651105_651185 把 651185_651265 这个 651265_651526 胡 651526_651566 椒 651566_651606 粉 651606_651766 撒 651766_651926 到 651926_652007 马 652007_653189 的 653189_654972 眼 654972_655172 睛 655172_655613 里 655613_656635 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=656635 clamped_to=652635 cause=utr_token_range_overlap
+%mor:	pron|他-Int-P3 verb|为-Inf-S aux|要-Inf-S adp|把 det|这个-Def part|胡 noun|椒 part|粉 verb|撒-Inf-S verb|到-Inf-S noun|马 part|的 noun|眼 noun|睛 noun|里 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|9|AUX 4|8|CASE 5|8|DET 6|7|CASE 7|8|COMPOUND 8|9|OBL-PATIENT 9|2|XCOMP 10|9|MARK 11|14|NMOD 12|11|CASE 13|14|NMOD 14|9|IOBJ 15|14|ACL 16|2|PUNCT
+*CHI:	这个 然后 这个 马 就 停 下 来了 呀 . 652635_654437
+%wor:	这个 652635_653496 然后 653496_653616 这个 653616_653776 马 653776_653836 就 653836_653876 停 653876_653916 下 653916_654096 来了 654096_654357 呀 654357_654437 .
+%mor:	det|这个-Def adv|然后 det|这个-Def noun|马 sconj|就 verb|停-Inf-S adp|下 verb|来了-Inf-S part|呀 .
+%gra:	1|4|DET 2|8|ADVMOD 3|4|DET 4|8|NSUBJ 5|8|MARK 6|8|ADVCL 7|6|MARK 8|0|ROOT 9|8|DISCOURSE 10|8|PUNCT
+*CHI:	然后 他们 <就 好> [/] 就 好弄 这个 马 [/] 马 面 . 654457_662413
+%wor:	然后 654457_654757 他们 654757_654958 就 654958_655058 好 655058_655178 就 655178_655298 好弄 655298_657140 这个 657140_657241 马 657241_657281 马 657281_663248 面 663248_666413 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=666413 clamped_to=662413 cause=utr_token_range_overlap
+%mor:	adv|然后 pron|他-Int-P3 sconj|就 verb|好弄-Inf-S det|这个-Def propn|马 part|面 .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|MARK 4|0|ROOT 5|7|DET 6|7|COMPOUND 7|4|OBJ 8|4|PUNCT
+*CHI:	把 这个 胡 椒 粉 从 眼 睛 里 弄 出来 . 662413_675544
+%wor:	把 662413_663253 这个 663253_664174 胡 664174_664715 椒 664715_669679 粉 669679_669879 从 669879_670200 眼 670200_671341 睛 671341_674884 里 674884_675064 弄 675064_675144 出来 675144_675544 .
+%mor:	adp|把 det|这个-Def part|胡 propn|椒 part|粉 adp|从 noun|眼 noun|睛 adp|里 verb|弄-Inf-S verb|出来-Inf-S .
+%gra:	1|5|CASE 2|5|DET 3|5|CASE 4|5|COMPOUND 5|10|OBL-PATIENT 6|8|CASE 7|8|NMOD 8|10|OBL 9|8|CASE 10|0|ROOT 11|10|MARK 12|10|PUNCT
+*INV:	这样 的 诶 . 675564_675705
+%wor:	这样 675564_675645 的 675645_675685 诶 675685_675705 .
+%mor:	pron|这样-Int-S1 part|的 punct|诶 .
+%gra:	1|0|ROOT 2|1|CASE 3|1|PUNCT 4|1|PUNCT
+*INV:	这里 发 生 了 什么 呀 . 675725_676706
+%wor:	这里 675725_675805 发 675805_675845 生 675845_675905 了 675905_675985 什么 675985_676345 呀 676345_676706 .
+%mor:	pron|这里-Int-S1 verb|发-Inf-S verb|生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 part|呀 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|MARK 4|3|AUX 5|3|OBJ 6|2|DISCOURSE 7|2|PUNCT
+*CHI:	他们 正用 斧头 把 马 车 一个 轮 子 给 他们 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=672706 previous_start_ms=675725
+%xrev:	[?]
+%mor:	pron|他-Int-P3 verb|正用-Inf-S noun|斧头-Acc adp|把 propn|马 part|车 num|一个 noun|轮 noun|子 verb|给-Inf-S pron|他-Int-P3 .
+%gra:	1|10|NSUBJ 2|10|ADVCL 3|2|OBJ 4|6|CASE 5|6|COMPOUND 6|9|NMOD 7|9|NUMMOD 8|7|CLF 9|10|OBL-PATIENT 10|0|ROOT 11|10|IOBJ 12|10|PUNCT
+*INV:	为什么 要 拿 斧头 哎 砍马 车 . 676733_681970
+%wor:	为什么 676733_679638 要 679638_681441 拿 681441_681501 斧头 681501_682123 哎 682123_682163 砍马 682163_683285 车 683285_685970 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=685970 clamped_to=681970 cause=utr_token_range_overlap
+%mor:	adp|为什么 aux|要-Inf-S verb|拿-Inf-S noun|斧头-Acc punct|哎 verb|砍马-Inf-S part|车 .
+%gra:	1|3|CASE 2|3|AUX 3|6|ADVCL 4|3|OBJ 5|3|PUNCT 6|7|COMPOUND 7|0|ROOT 8|7|PUNCT
+*CHI:	强 盗 嘛 很 坏 的 . 681970_690444
+%wor:	强 681970_682691 盗 682691_685916 嘛 685916_689843 很 689843_690344 坏 690344_690404 的 690404_690444 .
+%mor:	part|强 verb|盗-Inf-S part|嘛 adv|很 adj|坏-S1 part|的 .
+%gra:	1|2|CASE 2|3|COMPOUND 3|5|NSUBJ 4|5|ADVMOD 5|0|ROOT 6|5|DISCOURSE 7|5|PUNCT
+*INV:	这里 发 生 了 什么 呀 . 690464_693049
+%wor:	这里 690464_691085 发 691085_692808 生 692808_692908 了 692908_692949 什么 692949_693009 呀 693009_693049 .
+%mor:	pron|这里-Int-S1 verb|发-Inf-S verb|生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 part|呀 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|MARK 4|3|AUX 5|3|OBJ 6|2|DISCOURSE 7|2|PUNCT
+*INV:	诶 巧虎 都 没 看 明白 . 693069_695233
+%wor:	诶 693069_693109 巧虎 693109_693189 都 693189_693229 没 693229_693289 看 693289_694732 明白 694732_695233 .
+%mor:	punct|诶 propn|巧虎 sconj|都 adv|没 verb|看-Inf-S verb|明白-Inf-S .
+%gra:	1|2|PUNCT 2|5|NSUBJ 3|5|MARK 4|5|ADVMOD 5|0|ROOT 6|5|XCOMP 7|5|PUNCT
+*CHI:	他们 <就是 把 就是 把> [/] 就是 把 这 辆 马 车 的 这个 人 里 面 赶 出来 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=691233 previous_start_ms=693069
+%xrev:	[?]
+%mor:	pron|他-Int-P3 verb|是-Inf-S adp|把 det|这-Def noun|辆 propn|马 noun|车 part|的 det|这个-Def noun|人 noun|里 noun|面 verb|赶-Inf-S verb|出来-Inf-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|10|CASE 4|7|DET 5|4|CLF 6|7|NMOD 7|10|NMOD 8|7|CASE 9|10|DET 10|13|OBL-PATIENT 11|10|ACL 12|13|OBL-PATIENT 13|2|XCOMP 14|13|MARK 15|2|PUNCT
+*CHI:	然后 把 他们 要 运 的 这 些 财 宝 都 搬 回 他们 的 洞 里 哦 . 700497_705159
+%wor:	然后 700497_702758 把 702758_702798 他们 702798_702878 要 702878_702918 运 702918_702958 的 702958_702998 这 702998_703038 些 703038_703078 财 703078_703138 宝 703138_703178 都 703178_703218 搬 703218_703258 回 703258_703298 他们 703298_703378 的 703378_703458 洞 703458_703538 里 703538_703598 哦 703598_705159 .
+%mor:	adv|然后 adp|把 pron|他-Int-P3 aux|要-Inf-S verb|运-Inf-S sconj|的 det|这-Def noun|些 noun|财 part|宝 sconj|都 verb|搬-Inf-S verb|回-Inf-S pron|他-Int-P3 part|的 noun|洞-Acc noun|里 part|哦 .
+%gra:	1|12|ADVMOD 2|10|CASE 3|5|NSUBJ 4|5|AUX 5|10|ACL-RELCL 6|5|MARK-REL 7|8|DET 8|10|NMOD 9|10|COMPOUND 10|12|OBL 11|12|MARK 12|0|ROOT 13|12|MARK 14|16|DET 15|14|CASE 16|12|OBJ 17|16|ACL 18|12|DISCOURSE-SP 19|12|PUNCT
+*INV:	是 这样 的 . 705179_711305
+%wor:	是 705179_705359 这样 705359_711883 的 711883_715305 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=715305 clamped_to=711305 cause=utr_token_range_overlap
+%mor:	aux|是-Inf-S pron|这样-Int-S1 part|的 .
+%gra:	1|2|COP 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*INV:	哦 你 觉得 这 些 人 感 觉 怎么样 啊 . 711305_713486
+%wor:	哦 711305_712085 你 712085_712225 觉得 712225_712406 这 712406_712646 些 712646_712746 人 712746_713166 感 713166_713286 觉 713286_713346 怎么样 713346_713446 啊 713446_713486 .
+%mor:	punct|哦 pron|你-Int-S2 verb|觉得-Inf-S det|这-Def noun|些 noun|人 part|感 verb|觉-Inf-S adj|怎么样-S1 part|啊 .
+%gra:	1|3|PUNCT 2|3|NSUBJ 3|0|ROOT 4|6|DET 5|4|CLF 6|7|COMPOUND 7|8|NSUBJ 8|3|CCOMP 9|8|XCOMP 10|3|DISCOURSE 11|3|PUNCT
+*CHI:	吓 死 了 . 713507_713607
+%wor:	吓 713507_713547 死 713547_713587 了 713587_713607 .
+%mor:	verb|吓-Inf-S verb|死-Inf-S part|了 .
+%gra:	1|2|ADVCL 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*INV:	哦 要 是 你 你 会 怎么样 . 713627_721598
+%wor:	哦 713627_713667 要 713667_713707 是 713707_716749 你 716749_720353 你 720353_720393 会 720393_720533 怎么样 720533_725598 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=725598 clamped_to=721598 cause=utr_token_range_overlap
+%mor:	adv|哦 aux|要-Inf-S aux|是-Inf-S pron|你-Int-S2 pron|你-Int-S2 aux|会-Inf-S adj|怎么样-S1 .
+%gra:	1|3|ADVMOD 2|3|AUX 3|0|ROOT 4|7|NSUBJ 5|7|NSUBJ 6|7|AUX 7|3|CCOMP 8|3|PUNCT
+*INV:	你 会 感 觉 怎么样 . 721598_727740
+%wor:	你 721598_722518 会 722518_727520 感 727520_727560 觉 727560_727640 怎么样 727640_727740 .
+%mor:	pron|你-Int-S2 aux|会-Inf-S aux|感-Inf-S verb|觉-Inf-S adj|怎么样-S1 .
+%gra:	1|4|NSUBJ 2|4|AUX 3|4|AUX 4|0|ROOT 5|4|XCOMP 6|4|PUNCT
+*CHI:	我就 把 你 打 死 了 . 727760_729721
+%wor:	我就 727760_727840 把 727840_728000 你 728000_728040 打 728040_728200 死 728200_729241 了 729241_729721 .
+%mor:	pron|我就-Int-S3 adp|把 pron|你-Int-S2 verb|打-Inf-S verb|死-Inf-S part|了 .
+%gra:	1|4|NSUBJ 2|3|CASE 3|4|OBL-PATIENT 4|0|ROOT 5|4|XCOMP 6|4|DISCOURSE 7|4|PUNCT
+*INV:	呵 呵 呵 . 729741_732803
+%wor:	呵 729741_730021 呵 730021_730061 呵 730061_732803 .
+%mor:	propn|呵 adj|呵-S1 adj|呵-S1 .
+%gra:	1|2|NSUBJ 2|3|ADVCL 3|0|ROOT 4|3|PUNCT
+*INV:	嗯 好 这里 发 生 了 什么 呀 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=728803 previous_start_ms=729741
+%xrev:	[?]
+%mor:	punct|嗯 adj|好-S1 pron|这里-Int-S1 verb|发-Inf-S verb|生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 part|呀 .
+%gra:	1|2|PUNCT 2|4|ADVCL 3|2|OBJ 4|0|ROOT 5|4|MARK 6|4|AUX 7|5|OBJ 8|4|DISCOURSE 9|4|PUNCT
+*INV:	他们 就是 在 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=729203 previous_start_ms=729741
+%xrev:	[?]
+%mor:	pron|他-Int-P3 sconj|就是 verb|在-Inf-S .
+%gra:	1|3|NSUBJ 2|3|MARK 3|0|ROOT 4|3|PUNCT
+*CHI:	这 潮 汛 处 他们 就 把 这个 这个 监 狩 这 就 弄 到 里 面 去 . 734464_743728
+%wor:	这 734464_735946 潮 735946_736106 汛 736106_736147 处 736147_736187 他们 736187_736347 就 736347_736387 把 736387_737449 这个 737449_741236 这个 741236_741717 监 741717_741757 狩 741757_741797 这 741797_741837 就 741837_741917 弄 741917_741957 到 741957_742558 里 742558_743179 面 743179_744101 去 744101_747728 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=747728 clamped_to=743728 cause=utr_token_range_overlap
+%mor:	det|这-Def noun|潮 verb|汛-Inf-S verb|处-Inf-S pron|他-Int-P3 sconj|就 adp|把 det|这个-Def det|这个-Def verb|监-Inf-S verb|狩-Inf-S pron|这-Int-S1 sconj|就 verb|弄-Inf-S verb|到-Inf-S noun|里 part|面 verb|去-Inf-S .
+%gra:	1|2|DET 2|14|NMOD-TMOD 3|14|ADVCL 4|3|XCOMP 5|4|OBJ 6|14|MARK 7|12|CASE 8|10|DET 9|10|DET 10|11|OBL-PATIENT 11|14|ADVCL 12|14|OBL-PATIENT 13|14|MARK 14|0|ROOT 15|14|MARK 16|17|COMPOUND 17|14|OBJ 18|14|CCOMP 19|14|PUNCT
+*INV:	弄 到 哪 里 去 . 743728_748674
+%wor:	弄 743728_745390 到 745390_747152 哪 747152_748614 里 748614_748654 去 748654_748674 .
+%mor:	verb|弄-Inf-S verb|到-Inf-S det|哪-Def noun|里 verb|去-Inf-S .
+%gra:	1|0|ROOT 2|1|MARK 3|4|DET 4|5|OBL 5|1|OBJ 6|1|PUNCT
+*CHI:	这个 树 屋 里 . 748694_748914
+%wor:	这个 748694_748774 树 748774_748814 屋 748814_748874 里 748874_748914 .
+%mor:	det|这个-Def noun|树 part|屋 noun|里 .
+%gra:	1|3|DET 2|3|COMPOUND 3|0|ROOT 4|3|ACL 5|3|PUNCT
+*INV:	这里 发 生 了 什么 呀 . 748934_750196
+%wor:	这里 748934_749635 发 749635_749695 生 749695_749735 了 749735_750096 什么 750096_750156 呀 750156_750196 .
+%mor:	pron|这里-Int-S1 verb|发-Inf-S verb|生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 part|呀 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|MARK 4|3|AUX 5|3|OBJ 6|2|DISCOURSE 7|2|PUNCT
+*INV:	都 不是 发 生 . 750216_753506
+%wor:	都 750216_750256 不是 750256_752299 发 752299_753741 生 753741_757506 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=757506 clamped_to=753506 cause=utr_token_range_overlap
+%mor:	sconj|都 aux|是-Inf-Neg-S verb|发-Inf-S part|生 .
+%gra:	1|4|MARK 2|4|COP 3|4|COMPOUND 4|0|ROOT 5|4|PUNCT
+*CHI:	什么 就是 他们 家 里 面 . 753506_763615
+%wor:	什么 753506_760912 就是 760912_761653 他们 761653_762674 家 762674_762994 里 762994_763274 面 763274_763615 .
+%mor:	pron|什么-Int-S1 aux|是-Inf-S pron|他-Int-P3 part|家 adp|里 noun|面 .
+%gra:	1|6|NSUBJ 2|6|COP 3|4|COMPOUND 4|6|NMOD 5|4|CASE 6|0|ROOT 7|6|PUNCT
+*CHI:	他们 就 在 看 . 763635_763835
+%wor:	他们 763635_763715 就 763715_763755 在 763755_763795 看 763795_763835 .
+%mor:	pron|他-Int-P3 sconj|就 adv|在 verb|看-Inf-S .
+%gra:	1|4|NSUBJ 2|4|MARK 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	啊 这个 财 宝 真 好 . 763855_766597
+%wor:	啊 763855_763935 这个 763935_764455 财 764455_765056 宝 765056_766137 真 766137_766237 好 766237_766597 .
+%mor:	part|啊 det|这个-Def noun|财 part|宝 adv|真 adj|好-S1 .
+%gra:	1|4|CASE 2|3|DET 3|4|COMPOUND 4|6|NSUBJ 5|6|ADVMOD 6|0|ROOT 7|6|PUNCT
+*INV:	啊 呵 呵 呵 . 766617_767799
+%wor:	啊 766617_766657 呵 766657_767018 呵 767018_767078 呵 767078_767799 .
+%mor:	adj|啊-S1 adj|呵-S1 adj|呵-S1 adj|呵-S1 .
+%gra:	1|3|ADVCL 2|3|ADVCL 3|0|ROOT 4|3|XCOMP 5|3|PUNCT
+*INV:	好 哎 这里 发 生 了 什么 呢 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=763799 previous_start_ms=766617
+%xrev:	[?]
+%mor:	adv|好 punct|哎 pron|这里-Int-S1 verb|发-Inf-S verb|生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 part|呢 .
+%gra:	1|4|ADVMOD 2|1|PUNCT 3|4|NSUBJ 4|0|ROOT 5|4|MARK 6|5|AUX 7|5|OBJ 8|4|DISCOURSE 9|4|PUNCT
+*CHI:	他们 又 在 寒 冷 的 黑 夜 里 又 [/] 又 先 弄 到了 一 辆 马 车 . 767916_777180
+%wor:	他们 767916_769679 又 769679_769739 在 769739_769779 寒 769779_769819 冷 769819_769959 的 769959_769999 黑 769999_770140 夜 770140_770180 里 770180_770420 又 770420_770460 又 770460_770500 先 770500_770560 弄 770560_770600 到了 770600_770961 一 770961_771001 辆 771001_771081 马 771081_773806 车 773806_781180 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=781180 clamped_to=777180 cause=utr_token_range_overlap
+%mor:	pron|他-Int-P3 sconj|又 adp|在 adj|寒-S1 adj|冷-S1 sconj|的 noun|黑 part|夜 noun|里 sconj|又 sconj|先 verb|弄-Inf-S verb|到了-Inf-S num|一 noun|辆 noun|马 part|车 .
+%gra:	1|12|NSUBJ 2|12|MARK 3|8|CASE 4|5|ADVCL 5|8|AMOD 6|5|MARK-REL 7|8|COMPOUND 8|12|OBL 9|8|ACL 10|12|MARK 11|12|MARK 12|0|ROOT 13|12|MARK 14|15|NUMMOD 15|17|NMOD 16|17|COMPOUND 17|12|OBJ 18|12|PUNCT
+*CHI:	这里 面 可是 这里 面 只有 <一个> [/] 一个 孤 儿 叫 [/] 叫 孙女 . 777180_791087
+%wor:	这里 777180_779481 面 779481_782482 可是 782482_783223 这里 783223_783323 面 783323_783763 只有 783763_784523 一个 784523_785044 一个 785044_785244 孤 785244_785344 儿 785344_785484 叫 785484_785544 叫 785544_785904 孙女 785904_791087 .
+%mor:	pron|这里-Int-S1 noun|面 sconj|可是 pron|这里-Int-S1 part|面 verb|只有-Inf-S num|一个 noun|孤 noun|儿 verb|叫-Inf-S noun|孙女-Acc .
+%gra:	1|2|DET 2|6|OBL 3|6|MARK 4|5|COMPOUND 5|6|NSUBJ 6|0|ROOT 7|9|NUMMOD 8|9|NUMMOD 9|10|NSUBJ 10|6|CCOMP 11|10|OBJ 12|6|PUNCT
+*INV:	嗯 哎 巧虎 说 这里 发 生 什么 . 791107_791491
+%wor:	嗯 791107_791147 哎 791147_791187 巧虎 791187_791267 说 791267_791307 这里 791307_791387 发 791387_791447 生 791447_791487 什么 791487_791988 .
+%xalign:	monotonicity:end_clamped end_truncated_by=497ms original_end=791988 clamped_to=791491 cause=utr_token_range_overlap
+%mor:	punct|嗯 punct|哎 propn|巧虎 verb|说-Inf-S pron|这里-Int-S1 verb|发-Inf-S verb|生-Inf-S pron|什么-Int-S1 .
+%gra:	1|4|PUNCT 2|4|PUNCT 3|4|NSUBJ 4|0|ROOT 5|6|NSUBJ 6|4|CCOMP 7|6|XCOMP 8|6|OBJ 9|4|PUNCT
+*INV:	我就 没 看 明白 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=787988 previous_start_ms=791107
+%xrev:	[?]
+%mor:	pron|我就-Int-S3 adv|没 verb|看-Inf-S verb|明白-Inf-S .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|XCOMP 5|3|PUNCT
+*CHI:	嗯 我 又 都 看 不 明白 哦 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=791090 previous_start_ms=791107
+%xrev:	[?]
+%mor:	punct|嗯 pron|我-Int-S1 sconj|又 sconj|都 verb|看-Inf-S adv|不 verb|明白-Inf-S pron|哦-Int-S1 .
+%gra:	1|5|PUNCT 2|5|NSUBJ 3|5|MARK 4|5|MARK 5|0|ROOT 6|5|ADVMOD 7|5|XCOMP 8|7|OBJ 9|5|PUNCT
+*INV:	所以 需要 你 给 他 讲 一 讲 . 791491_798281
+%wor:	所以 791491_791611 需要 791611_791911 你 791911_791951 给 791951_791991 他 791991_792051 讲 792051_792932 一 792932_800819 讲 800819_802281 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=802281 clamped_to=798281 cause=utr_token_range_overlap
+%mor:	sconj|所以 aux|需要-Inf-S pron|你-Int-S2 verb|给-Inf-S pron|他-Int-S3 verb|讲-Inf-S num|一 noun|讲-Acc .
+%gra:	1|6|MARK 2|6|AUX 3|6|NSUBJ 4|6|ADVCL 5|4|OBJ 6|0|ROOT 7|8|NUMMOD 8|6|OBJ 9|6|PUNCT
+*CHI:	就是 他 就 把 把 这个 应 该 是 这个 旁 边 一个 人 . 798281_806945
+%wor:	就是 798281_800642 他 800642_800762 就 800762_803743 把 803743_804483 把 804483_804924 这个 804924_806024 应 806024_806064 该 806064_806104 是 806104_806144 这个 806144_806224 旁 806224_806304 边 806304_806344 一个 806344_806724 人 806724_806945 .
+%mor:	verb|是-Inf-S pron|他-Int-S3 sconj|就 adp|把 adp|把 det|这个-Def aux|应-Inf-S adv|该 aux|是-Inf-S det|这个-Def noun|旁 noun|边 num|一个 noun|人 .
+%gra:	1|0|ROOT 2|14|NSUBJ 3|14|MARK 4|14|CASE 5|6|CASE 6|14|DET 7|14|AUX 8|14|ADVMOD 9|14|COP 10|11|DET 11|14|NMOD 12|14|COP 13|14|NUMMOD 14|1|CCOMP 15|1|PUNCT
+*CHI:	然后 带 [/] 带 到 他们 家 里去 . 806965_809088
+%wor:	然后 806965_807865 带 807865_808025 带 808025_808225 到 808225_808685 他们 808685_809146 家 809146_812547 里去 812547_813088 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=813088 clamped_to=809088 cause=utr_token_range_overlap
+%mor:	adv|然后 verb|带-Inf-S verb|到-Inf-S pron|他-Int-P3 part|家 noun|里去-Acc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|MARK 4|5|COMPOUND 5|6|NMOD 6|2|OBJ 7|2|PUNCT
+*INV:	啊 这里 发 生 什么 了 . 809088_812614
+%wor:	啊 809088_809128 这里 809128_809228 发 809228_809288 生 809288_809448 什么 809448_811191 了 811191_812614 .
+%mor:	verb|啊-Inf-Neg-S pron|这里-Int-S1 verb|发-Inf-S verb|生-Inf-S pron|什么-Int-S1 part|了 .
+%gra:	1|3|ADVCL 2|1|OBJ 3|0|ROOT 4|3|XCOMP 5|4|OBJ 6|3|DISCOURSE 7|3|PUNCT
+*CHI:	嗯 就是 . 812634_816661
+%wor:	嗯 812634_814397 就是 814397_816661 .
+%mor:	punct|嗯 aux|是-Inf-S .
+%gra:	1|2|PUNCT 2|0|ROOT 3|2|PUNCT
+*CHI:	把 这个 人 就 放 在 他们 家 里 去 . 816681_818352
+%wor:	把 816681_816761 这个 816761_816842 人 816842_816902 就 816902_817122 放 817122_817262 在 817262_819566 他们 819566_819807 家 819807_820007 里 820007_820148 去 820148_822352 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=822352 clamped_to=818352 cause=utr_token_range_overlap
+%mor:	adp|把 det|这个-Def noun|人 sconj|就 verb|放-Inf-S verb|在-Inf-S pron|他-Int-P3 part|家 adp|里 verb|去-Inf-S .
+%gra:	1|3|CASE 2|3|DET 3|5|OBL-PATIENT 4|5|MARK 5|10|ADVCL 6|5|MARK 7|8|COMPOUND 8|5|OBJ 9|8|CASE 10|0|ROOT 11|10|PUNCT
+*CHI:	放 在 草 上 . 818352_821453
+%wor:	放 818352_818772 在 818772_819992 草 819992_820072 上 820072_821453 .
+%mor:	verb|放-Inf-S verb|在-Inf-S noun|草-Acc adp|上 .
+%gra:	1|0|ROOT 2|1|MARK 3|1|OBJ 4|3|CASE 5|1|PUNCT
+*INV:	哦 这是 什么地方 呀 . 821473_825555
+%wor:	哦 821473_823134 这是 823134_823354 什么地方 823354_825095 呀 825095_825555 .
+%mor:	pron|哦-Int-S1 aux|是-Inf-S pron|什么地方-Int-S1 part|呀 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*CHI:	这是 他们 的 那个 树 屋 呀 . 825575_826436
+%wor:	这是 825575_825675 他们 825675_825756 的 825756_825796 那个 825796_825876 树 825876_825916 屋 825916_825996 呀 825996_826436 .
+%mor:	aux|是-Inf-S pron|他-Int-P3 part|的 det|那个-Def noun|树 part|屋 part|呀 .
+%gra:	1|6|COP 2|6|DET 3|2|CASE 4|6|DET 5|6|COMPOUND 6|0|ROOT 7|6|DISCOURSE 8|6|PUNCT
+*CHI:	嗯 人 的 . 826456_828517
+%wor:	嗯 826456_828437 人 828437_828477 的 828477_828517 .
+%mor:	punct|嗯 part|人 part|的 .
+%gra:	1|2|PUNCT 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*CHI:	房 东 呀 . 828537_829160
+%wor:	房 828537_829157 东 829157_830198 呀 830198_833160 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=833160 clamped_to=829160 cause=utr_token_range_overlap
+%mor:	propn|房 propn|东 part|呀 .
+%gra:	1|0|ROOT 2|1|FLAT-NAME 3|1|CASE 4|1|PUNCT
+*INV:	嗯 哎 这里 发 生 什么 . 829160_832341
+%wor:	嗯 829160_831220 哎 831220_831320 这里 831320_831481 发 831481_831541 生 831541_832121 什么 832121_832341 .
+%mor:	punct|嗯 propn|哎 pron|这里-Int-S1 verb|发-Inf-S verb|生-Inf-S pron|什么-Int-S1 .
+%gra:	1|4|PUNCT 2|4|NSUBJ 3|2|APPOS 4|0|ROOT 5|4|MARK 6|4|OBJ 7|4|PUNCT
+*CHI:	早 上 醒 过 . 832361_836443
+%wor:	早 832361_836283 上 836283_836323 醒 836323_836363 过 836363_836443 .
+%mor:	noun|早 adp|上 verb|醒-Inf-S aux|过-Inf-Perf-S .
+%gra:	1|3|NMOD-TMOD 2|1|CASE 3|0|ROOT 4|3|AUX 5|3|PUNCT
+*CHI:	来 他 就 哎 . 836463_840365
+%wor:	来 836463_836523 他 836523_836563 就 836563_837963 哎 837963_840365 .
+%mor:	verb|来-Inf-S pron|他-Int-S3 sconj|就 punct|哎 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|MARK 4|1|PUNCT 5|1|PUNCT
+*CHI:	这个 散 弓 弯 的 钱 怎么 那么 多 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=836365 previous_start_ms=836463
+%xrev:	[?]
+%mor:	det|这个-Def verb|散-Inf-S part|弓 verb|弯-Inf-S sconj|的 noun|钱 adv|怎么 adv|那么 adj|多-S1 .
+%gra:	1|3|DET 2|3|COMPOUND 3|4|NSUBJ 4|6|ACL-RELCL 5|4|MARK-REL 6|9|NSUBJ 7|9|ADVMOD 8|9|ADVMOD 9|0|ROOT 10|9|PUNCT
+*INV:	嗯 你要 是 有 这么 多 的 钱 你 会 用 来 做 什么 . 840997_841897
+%wor:	嗯 840997_841037 你要 841037_841137 是 841137_841177 有 841177_841217 这么 841217_841297 多 841297_841337 的 841337_841377 钱 841377_841417 你 841417_841457 会 841457_841497 用 841497_841537 来 841537_841697 做 841697_841797 什么 841797_841897 .
+%mor:	punct|嗯 pron|你要-Int-S1 verb|是-Inf-S verb|有-Inf-S adv|这么 adj|多-S1 sconj|的 noun|钱-Acc pron|你-Int-S2 aux|会-Inf-S verb|用-Inf-S sconj|来 verb|做-Inf-S pron|什么-Int-S1 .
+%gra:	1|3|PUNCT 2|3|NSUBJ 3|0|ROOT 4|11|ADVCL 5|6|ADVMOD 6|8|AMOD 7|6|MARK-REL 8|4|OBJ 9|11|NSUBJ 10|11|AUX 11|3|CCOMP 12|13|MARK 13|11|XCOMP 14|13|OBJ 15|3|PUNCT
+*CHI:	我 交 到 警 察 局 去 . 841917_851804
+%wor:	我 841917_842017 交 842017_842217 到 842217_842717 警 842717_843077 察 843077_845579 局 845579_853843 去 853843_855804 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=855804 clamped_to=851804 cause=utr_token_range_overlap
+%mor:	pron|我-Int-S1 verb|交-Inf-S verb|到-Inf-S noun|警 part|察 part|局 verb|去-Inf-S .
+%gra:	1|7|NSUBJ 2|7|ADVCL 3|2|MARK 4|5|COMPOUND 5|6|COMPOUND 6|2|OBJ 7|0|ROOT 8|7|PUNCT
+*INV:	交 到 警 察 局 去 . 851804_864350
+%wor:	交 851804_853785 到 853785_854205 警 854205_858427 察 858427_861269 局 861269_862189 去 862189_864350 .
+%mor:	verb|交-Inf-S verb|到-Inf-S noun|警 part|察 part|局 verb|去-Inf-S .
+%gra:	1|6|ADVCL 2|1|MARK 3|4|COMPOUND 4|5|COMPOUND 5|1|OBJ 6|0|ROOT 7|6|PUNCT
+*INV:	哦 巧 虎 发 现 这里 有 个 人 . 864370_865171
+%wor:	哦 864370_864410 巧 864410_864650 虎 864650_864730 发 864730_864851 现 864851_864911 这里 864911_864991 有 864991_865111 个 865111_865151 人 865151_865171 .
+%mor:	punct|哦 propn|巧 part|虎 verb|发-Inf-S verb|现-Inf-S pron|这里-Int-S1 verb|有-Inf-S noun|个 noun|人-Acc .
+%gra:	1|4|PUNCT 2|3|COMPOUND 3|4|NSUBJ 4|7|ADVCL 5|4|MARK 6|4|OBJ 7|0|ROOT 8|9|NMOD 9|7|OBJ 10|7|PUNCT
+*INV:	这里 还有 一个 . 865191_865591
+%wor:	这里 865191_865411 还有 865411_865511 一个 865511_865591 .
+%mor:	pron|这里-Int-S1 verb|还有-Inf-S num|一个 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*INV:	这里 还有 一个 . 865611_866612
+%wor:	这里 865611_865691 还有 865691_865851 一个 865851_866612 .
+%mor:	pron|这里-Int-S1 verb|还有-Inf-S num|一个 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*INV:	哎 这 还有 一个 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=862612 previous_start_ms=865611
+%xrev:	[?]
+%mor:	punct|哎 pron|这-Int-S1 verb|还有-Inf-S num|一个 .
+%gra:	1|3|PUNCT 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	他们 是 同 一个 人 吗 . 867216_869157
+%wor:	他们 867216_867556 是 867556_868016 同 868016_868857 一个 868857_868937 人 868937_868977 吗 868977_869157 .
+%mor:	pron|他-Int-P3 aux|是-Inf-S det|同-Def det|一个-Def noun|人 part|吗 .
+%gra:	1|5|NSUBJ 2|5|COP 3|5|DET 4|5|DET 5|0|ROOT 6|5|DISCOURSE 7|5|PUNCT
+*CHI:	不是 他们 就是 这 三 个 . 869177_872080
+%wor:	不是 869177_869838 他们 869838_869938 就是 869938_870018 这 870018_870058 三 870058_870098 个 870098_872080 .
+%mor:	verb|是-Inf-Neg-S pron|他-Int-P3 aux|是-Inf-S det|这-Def num|三 noun|个 .
+%gra:	1|0|ROOT 2|6|NSUBJ 3|6|COP 4|6|DET 5|6|NUMMOD 6|1|CCOMP 7|1|PUNCT
+*INV:	四 个 . 872100_872400
+%wor:	四 872100_872360 个 872360_872400 .
+%mor:	num|四 noun|个 .
+%gra:	1|2|NUMMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	这个 是他 . 872420_872905
+%wor:	这个 872420_873341 是他 873341_876905 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=876905 clamped_to=872905 cause=utr_token_range_overlap
+%mor:	det|这个-Def verb|是-Inf-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	<这个> [/] 这个 不是 他 . 872905_873726
+%wor:	这个 872905_873045 这个 873045_873506 不是 873506_873646 他 873646_873726 .
+%mor:	det|这个-Def aux|是-Inf-Neg-S pron|他-Int-S3 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	这个 他是 . 873746_877753
+%wor:	这个 873746_875830 他是 875830_877753 .
+%mor:	det|这个-Def pron|他是-Int-S1 .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	应该 是 他 旁 边 一个 人 . 877773_882261
+%wor:	应该 877773_878935 是 878935_881841 他 881841_881921 旁 881921_882041 边 882041_882101 一个 882101_882221 人 882221_882261 .
+%mor:	aux|应该-Inf-S aux|是-Inf-S pron|他-Int-S3 part|旁 noun|边 num|一个 noun|人 .
+%gra:	1|7|AUX 2|7|COP 3|5|NMOD 4|5|CASE 5|7|NMOD 6|7|NUMMOD 7|0|ROOT 8|7|PUNCT
+*INV:	哦 . 882281_882322
+%wor:	哦 882281_882322 .
+%mor:	pron|哦-Int-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	但 不 像 他 . 882342_882789
+%wor:	但 882342_882382 不 882382_882422 像 882422_882662 他 882662_886169 .
+%xalign:	monotonicity:end_clamped end_truncated_by=3380ms original_end=886169 clamped_to=882789 cause=utr_token_range_overlap
+%mor:	sconj|但 adv|不 verb|像-Inf-S pron|他-Int-S3 .
+%gra:	1|3|MARK 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*INV:	你 怎么 知道 的 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=882169 previous_start_ms=882342
+%xrev:	[?]
+%mor:	pron|你-Int-S2 adv|怎么 verb|知道-Inf-S part|的 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|DISCOURSE 5|3|PUNCT
+*CHI:	因为 你看 它 下面 是 绿 绿 颜 色 的 . 882789_891753
+%wor:	因为 882789_883789 你看 883789_885490 它 885490_885530 下面 885530_885610 是 885610_885650 绿 885650_887471 绿 887471_889712 颜 889712_891513 色 891513_891593 的 891593_891753 .
+%mor:	adp|因为 verb|你看-Inf-S pron|它-Int-S3 noun|下面 aux|是-Inf-S noun|绿 part|绿 part|颜 part|色 part|的 .
+%gra:	1|2|CASE 2|9|XCOMP 3|9|NSUBJ 4|9|NSUBJ 5|9|COP 6|7|COMPOUND 7|8|COMPOUND 8|9|COMPOUND 9|0|ROOT 10|9|DISCOURSE 11|9|PUNCT
+*CHI:	这个 下面 没有 哦 . 891773_894394
+%wor:	这个 891773_893694 下面 893694_894214 没有 894214_894354 哦 894354_894394 .
+%mor:	det|这个-Def noun|下面 verb|有-Inf-Neg-S adj|哦-S1 .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|XCOMP 5|3|PUNCT
+*INV:	还有 这个 呢 . 894414_895557
+%wor:	还有 894414_895715 这个 895715_895835 呢 895835_896976 .
+%xalign:	monotonicity:end_clamped end_truncated_by=1419ms original_end=896976 clamped_to=895557 cause=utr_token_range_overlap
+%mor:	verb|还有-Inf-S pron|这个-Int-S1 part|呢 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|DISCOURSE-SP 4|1|PUNCT
+*CHI:	这个 就是他 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=892976 previous_start_ms=894414
+%xrev:	[?]
+%mor:	det|这个-Def verb|是-Inf-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*INV:	这里 发 生 了 什么 呢 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=894276 previous_start_ms=894414
+%xrev:	[?]
+%mor:	pron|这里-Int-S1 verb|发-Inf-S verb|生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 part|呢 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|MARK 4|3|AUX 5|3|OBJ 6|3|DISCOURSE-SP 7|2|PUNCT
+*CHI:	他们 就 把 这 些 孤儿 . 895557_896237
+%wor:	他们 895557_895737 就 895737_895777 把 895777_895857 这 895857_895917 些 895917_896017 孤儿 896017_896237 .
+%mor:	pron|他-Int-P3 sconj|就 adp|把 det|这-Def noun|些 noun|孤儿 .
+%gra:	1|6|NSUBJ 2|6|MARK 3|6|CASE 4|6|DET 5|4|CLF 6|0|ROOT 7|6|PUNCT
+*CHI:	或者 什么 不 开 心 的人 啊 . 896257_903784
+%wor:	或者 896257_906203 什么 906203_906303 不 906303_906403 开 906403_906443 心 906443_906483 的人 906483_906583 啊 906583_907784 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=907784 clamped_to=903784 cause=utr_token_range_overlap
+%mor:	sconj|或者 pron|什么-Int-S1 adv|不 verb|开-Inf-S noun|心-Acc part|的人 part|啊 .
+%gra:	1|4|MARK 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|OBJ 6|4|DISCOURSE 7|4|DISCOURSE-SP 8|4|PUNCT
+*CHI:	小 孩 啊 . 903784_906446
+%wor:	小 903784_905885 孩 905885_906406 啊 906406_906446 .
+%mor:	part|小 noun|孩 part|啊 .
+%gra:	1|2|CASE 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*CHI:	都 带 到 他们 家 里 去 . 906466_909969
+%wor:	都 906466_906506 带 906506_906546 到 906546_906586 他们 906586_909849 家 909849_909909 里 909909_909949 去 909949_909969 .
+%mor:	sconj|都 verb|带-Inf-S verb|到-Inf-S pron|他-Int-P3 part|家 noun|里 verb|去-Inf-S .
+%gra:	1|7|MARK 2|7|ADVCL 3|2|MARK 4|5|COMPOUND 5|2|OBJ 6|5|ACL 7|0|ROOT 8|7|PUNCT
+*INV:	哦 . 909989_910029
+%wor:	哦 909989_910029 .
+%mor:	pron|哦-Int-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	我觉得 这里 应 该 是 强 盗 火 车 . 910049_914077
+%wor:	我觉得 910049_910169 这里 910169_910249 应 910249_910289 该 910289_910329 是 910329_910369 强 910369_910690 盗 910690_910750 火 910750_915694 车 915694_918077 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=918077 clamped_to=914077 cause=utr_token_range_overlap
+%mor:	verb|我觉得-Inf-S pron|这里-Int-S1 aux|应-Inf-S adv|该 aux|是-Inf-S part|强 verb|盗-Inf-S part|火 part|车 .
+%gra:	1|0|ROOT 2|9|NSUBJ 3|9|AUX 4|9|ADVMOD 5|9|COP 6|7|CASE 7|8|COMPOUND 8|9|COMPOUND 9|1|CCOMP 10|1|PUNCT
+*INV:	哈哈哈 强 盗 火 车 . 914077_918142
+%wor:	哈哈哈 914077_917962 强 917962_918002 盗 918002_918042 火 918042_918102 车 918102_918142 .
+%mor:	propn|哈哈哈 part|强 verb|盗-Inf-S noun|火 part|车 .
+%gra:	1|3|NSUBJ 2|3|CASE 3|0|ROOT 4|5|COMPOUND 5|3|OBJ 6|3|PUNCT
+*INV:	好 这里 发 生 了 什么 呀 . 918162_919243
+%wor:	好 918162_918222 这里 918222_918302 发 918302_918362 生 918362_918943 了 918943_919083 什么 919083_919183 呀 919183_919243 .
+%mor:	part|好 pron|这里-Int-S1 verb|发-Inf-S verb|生-Inf-S aux|了-Inf-Perf-S pron|什么-Int-S1 part|呀 .
+%gra:	1|2|CASE 2|3|NSUBJ 3|0|ROOT 4|3|MARK 5|4|AUX 6|4|OBJ 7|4|DISCOURSE-SP 8|3|PUNCT
+*CHI:	他们 就 买了 一 套 房 子 . 919263_923855
+%wor:	他们 919263_919343 就 919343_919403 买了 919403_919504 一 919504_919584 套 919584_921907 房 921907_921947 子 921947_927855 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=927855 clamped_to=923855 cause=utr_token_range_overlap
+%mor:	pron|他-Int-P3 sconj|就 verb|买了-Inf-S num|一 noun|套 noun|房 part|子 .
+%gra:	1|3|NSUBJ 2|3|MARK 3|0|ROOT 4|5|NUMMOD 5|7|NMOD 6|7|COMPOUND 7|3|OBJ 8|3|PUNCT
+*CHI:	为 了 让 那 些 什么 那 些 小 孩子 都 住 在 这里 面 . 923855_931575
+%wor:	为 923855_924756 了 924756_925437 让 925437_925738 那 925738_925798 些 925798_925838 什么 925838_925918 那 925918_926319 些 926319_926379 小 926379_926439 孩子 926439_926619 都 926619_926739 住 926739_926900 在 926900_926960 这里 926960_927100 面 927100_935575 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=935575 clamped_to=931575 cause=utr_token_range_overlap
+%mor:	adp|为 aux|了-Inf-Perf-S verb|让-Inf-S det|那-Def noun|些 pron|什么-Int-S1 det|那-Def noun|些 part|小 noun|孩子 sconj|都 verb|住-Inf-S verb|在-Inf-S pron|这里-Int-S1 part|面 .
+%gra:	1|3|CASE 2|3|AUX 3|12|XCOMP 4|6|DET 5|4|CLF 6|3|OBJ 7|10|DET 8|7|CLF 9|10|CASE 10|6|CONJ 11|12|MARK 12|0|ROOT 13|12|MARK 14|15|COMPOUND 15|12|OBJ 16|12|PUNCT
+*INV:	哦 这是 谁 的 房 子 呀 . 931575_938999
+%wor:	哦 931575_935577 这是 935577_935697 谁 935697_935757 的 935757_936977 房 936977_937037 子 937037_937998 呀 937998_938999 .
+%mor:	pron|哦-Int-S1 aux|是-Inf-S pron|谁-Int-S1 part|的 noun|房 part|子 part|呀 .
+%gra:	1|6|NSUBJ 2|6|COP 3|6|DET 4|3|CASE 5|6|COMPOUND 6|0|ROOT 7|6|DISCOURSE 8|6|PUNCT
+*CHI:	这是 他们 的 . 939019_939259
+%wor:	这是 939019_939139 他们 939139_939219 的 939219_939259 .
+%mor:	verb|是-Inf-S pron|他-Int-P3 part|的 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|DISCOURSE 4|1|PUNCT
+*CHI:	然后 这 些 小 孩 . 939279_940599
+%wor:	然后 939279_939359 这 939359_939399 些 939399_939439 小 939439_939479 孩 939479_940599 .
+%mor:	adv|然后 det|这-Def noun|些 part|小 noun|孩 .
+%gra:	1|5|ADVMOD 2|5|DET 3|2|CLF 4|5|CASE 5|0|ROOT 6|5|PUNCT
+*INV:	谁的 呀 ? 940619_945622
+%wor:	谁的 940619_945582 呀 945582_945622 ?
+%mor:	adj|谁的-S1 part|呀 ?
+%gra:	1|0|ROOT 2|1|DISCOURSE 3|1|PUNCT
+*CHI:	强 盗 的 . 945642_946282
+%wor:	强 945642_946182 盗 946182_946242 的 946242_946282 .
+%mor:	part|强 verb|盗-Inf-S part|的 .
+%gra:	1|2|CASE 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*INV:	哦 . 946302_946383
+%wor:	哦 946302_946383 .
+%mor:	pron|哦-Int-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	然后 他们 就 让 小 孩 穿 上 了 红 红 的 斗篷 红 红 红 的 帽 子 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=942383 previous_start_ms=946302
+%xrev:	[?]
+%mor:	adv|然后 pron|他-Int-P3 sconj|就 verb|让-Inf-S part|小 part|孩 verb|穿-Inf-S verb|上-Inf-S aux|了-Inf-Perf-S noun|红 noun|红 sconj|的 noun|斗篷-Acc noun|红 noun|红 noun|红-Acc sconj|的 noun|帽 part|子 .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|MARK 4|0|ROOT 5|6|CASE 6|7|NSUBJ 7|4|CCOMP 8|7|MARK 9|7|AUX 10|11|NMOD 11|13|NMOD 12|11|MARK-REL 13|7|OBJ 14|19|PUNCT 15|16|NMOD 16|14|OBJ 17|16|MARK-REL 18|19|COMPOUND 19|7|OBJ 20|4|PUNCT
+*INV:	哦 巧虎 发 现 这里 有 些 小 孩 . 952161_958770
+%wor:	哦 952161_952541 巧虎 952541_952801 发 952801_952841 现 952841_952881 这里 952881_952962 有 952962_953062 些 953062_953202 小 953202_958489 孩 958489_958770 .
+%mor:	punct|哦 propn|巧虎 verb|发-Inf-S verb|现-Inf-S pron|这里-Int-S1 verb|有-Inf-S adj|些-S1 part|小 noun|孩-Acc .
+%gra:	1|3|PUNCT 2|3|NSUBJ 3|0|ROOT 4|3|MARK 5|6|NSUBJ 6|3|XCOMP 7|9|AMOD 8|9|CASE 9|6|OBJ 10|3|PUNCT
+*INV:	这里 还有 . 958790_960172
+%wor:	这里 958790_960111 还有 960111_960172 .
+%mor:	pron|这里-Int-S1 verb|还有-Inf-S .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*INV:	他们 有 什么 关 系 . 960192_960792
+%wor:	他们 960192_960272 有 960272_960312 什么 960312_960512 关 960512_960592 系 960592_960792 .
+%mor:	pron|他-Int-P3 verb|有-Inf-S pron|什么-Int-S1 noun|关 part|系 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|COMPOUND 5|2|OBJ 6|2|PUNCT
+*INV:	车 上 啊 . 960812_961940
+%wor:	车 960812_960913 上 960913_961033 啊 961033_965940 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=965940 clamped_to=961940 cause=utr_token_range_overlap
+%mor:	noun|车 adp|上 part|啊 .
+%gra:	1|0|ROOT 2|1|CASE 3|1|CASE 4|1|PUNCT
+*CHI:	他们 就是 就是 <住 到> [/] 住 到 这里 面 呀 他们 就是 他们 呀 . 961940_971164
+%wor:	他们 961940_962100 就是 962100_962180 就是 962180_962260 住 962260_962300 到 962300_962340 住 962340_962380 到 962380_962420 这里 962420_962580 面 962580_962820 呀 962820_965201 他们 965201_965481 就是 965481_971024 他们 971024_971124 呀 971124_971164 .
+%mor:	pron|他-Int-P3 verb|是-Inf-S verb|是-Inf-S verb|住-Inf-S verb|到-Inf-S pron|这里-Int-S1 part|面 part|呀 pron|他-Int-P3 aux|是-Inf-S pron|他-Int-P3 part|呀 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|3|XCOMP 5|4|MARK 6|7|COMPOUND 7|4|OBJ 8|11|DISCOURSE 9|11|NSUBJ 10|11|COP 11|2|PARATAXIS 12|11|DISCOURSE 13|2|PUNCT
+*INV:	哦 好 . 971184_971324
+%wor:	哦 971184_971284 好 971284_971324 .
+%mor:	adv|哦 adj|好-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	连 哪 里 都 看 . 971344_972747
+%wor:	连 971344_974305 哪 974305_974846 里 974846_974966 都 974966_975546 看 975546_976747 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=976747 clamped_to=972747 cause=utr_token_range_overlap
+%mor:	adv|连 det|哪-Def noun|里 sconj|都 verb|看-Inf-S .
+%gra:	1|5|ADVMOD 2|3|DET 3|5|NSUBJ 4|5|MARK 5|0|ROOT 6|5|PUNCT
+*INV:	哈哈哈 这里 发 生 什么 了 . 972747_973347
+%wor:	哈哈哈 972747_973067 这里 973067_973167 发 973167_973207 生 973207_973247 什么 973247_973307 了 973307_973347 .
+%mor:	propn|哈哈哈 pron|这里-Int-S1 verb|发-Inf-S verb|生-Inf-S pron|什么-Int-S1 part|了 .
+%gra:	1|3|NSUBJ 2|3|NSUBJ 3|0|ROOT 4|3|MARK 5|3|OBJ 6|3|DISCOURSE 7|3|PUNCT
+*CHI:	他们 <就是> [/] 就是 城堡 每 天 都 有 孩子 . 973367_981675
+%wor:	他们 973367_974228 就是 974228_974708 就是 974708_977251 城堡 977251_977431 每 977431_977511 天 977511_977551 都 977551_981334 有 981334_981615 孩子 981615_981675 .
+%mor:	pron|他-Int-P3 aux|是-Inf-S noun|城堡 det|每-Def noun|天 sconj|都 verb|有-Inf-S noun|孩子-Acc .
+%gra:	1|7|NSUBJ 2|3|COP 3|7|OBL 4|5|DET 5|7|OBL 6|7|MARK 7|0|ROOT 8|7|OBJ 9|7|PUNCT
+*INV:	这里 发 生 什么 了 . 981695_983040
+%wor:	这里 981695_981815 发 981815_982696 生 982696_983236 什么 983236_983957 了 983957_987040 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=987040 clamped_to=983040 cause=utr_token_range_overlap
+%mor:	pron|这里-Int-S1 verb|发-Inf-S verb|生-Inf-S pron|什么-Int-S1 part|了 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|XCOMP 4|3|OBJ 5|2|DISCOURSE 6|2|PUNCT
+*CHI:	就 结 了 婚 就 房 子 买 起 来了 . 983040_989347
+%wor:	就 983040_985322 结 985322_985703 了 985703_987525 婚 987525_987585 就 987585_987625 房 987625_989107 子 989107_989147 买 989147_989187 起 989187_989267 来了 989267_989347 .
+%mor:	sconj|就 verb|结-Inf-S aux|了-Inf-Perf-S verb|婚-Inf-S sconj|就 part|房 part|子 verb|买-Inf-S verb|起-Inf-S verb|来了-Inf-S .
+%gra:	1|8|MARK 2|8|ADVCL 3|2|AUX 4|2|XCOMP 5|4|MARK 6|7|COMPOUND 7|2|OBJ 8|0|ROOT 9|8|MARK 10|8|XCOMP 11|8|PUNCT
+*CHI:	然后 成 了 一个 村 庄 . 989367_991275
+%wor:	然后 989367_991510 成 991510_991990 了 991990_993172 一个 993172_993252 村 993252_993332 庄 993332_995275 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=995275 clamped_to=991275 cause=utr_token_range_overlap
+%mor:	adv|然后 verb|成-Inf-S aux|了-Inf-Perf-S num|一个 noun|村 part|庄 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|AUX 4|6|NUMMOD 5|6|COMPOUND 6|2|OBJ 7|2|PUNCT
+*CHI:	给 强 [/] 强 盗 造 了 三 层 塔 啊 . 991275_1000487
+%wor:	给 991275_997583 强 997583_997703 强 997703_998063 盗 998063_998584 造 998584_999445 了 999445_999485 三 999485_999826 层 999826_999946 塔 999946_1000446 啊 1000446_1000487 .
+%mor:	verb|给-Inf-S propn|强-Acc verb|盗-Inf-S verb|造-Inf-S aux|了-Inf-Perf-S num|三 noun|层 noun|塔-Acc punct|啊 .
+%gra:	1|4|ADVCL 2|1|OBJ 3|4|ADVCL 4|0|ROOT 5|4|AUX 6|8|NUMMOD 7|6|CLF 8|4|OBJ 9|4|PUNCT 10|4|PUNCT
+*CHI:	高 塔 . 1000507_1001328
+%wor:	高 1000507_1000887 塔 1000887_1001328 .
+%mor:	propn|高 propn|塔 .
+%gra:	1|0|ROOT 2|1|FLAT-NAME 3|1|PUNCT
+*INV:	哇 真 聪 明 . 1001348_1002229
+%wor:	哇 1001348_1001448 真 1001448_1001928 聪 1001928_1002069 明 1002069_1002229 .
+%mor:	propn|哇 adv|真 propn|聪 propn|明 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|FLAT-NAME 5|3|PUNCT
+*INV:	诶 巧虎 想问你 . 1002249_1004615
+%wor:	诶 1002249_1004552 巧虎 1004552_1004732 想问你 1004732_1005053 .
+%xalign:	monotonicity:end_clamped end_truncated_by=438ms original_end=1005053 clamped_to=1004615 cause=utr_token_range_overlap
+%mor:	punct|诶 propn|巧虎 verb|想问你-Inf-S .
+%gra:	1|3|PUNCT 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*INV:	这个故事 是在 哪里 结束的 呀 ?
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=1001053 previous_start_ms=1002249
+%xrev:	[?]
+%mor:	noun|这个故事 verb|是-Inf-S pron|哪里-Int-S1 verb|结束的-Inf-S part|呀 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|2|DISCOURSE 6|2|PUNCT
+*INV:	你 是 怎么 知道 的 . 1004615_1004875
+%wor:	你 1004615_1004655 是 1004655_1004695 怎么 1004695_1004775 知道 1004775_1004835 的 1004835_1004875 .
+%mor:	pron|你-Int-S2 verb|是-Inf-S adv|怎么 verb|知道-Inf-S part|的 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|ADVMOD 4|2|XCOMP 5|2|DISCOURSE 6|2|PUNCT
+*CHI:	后面 没了 呀 . 1004895_1005095
+%wor:	后面 1004895_1004975 没了 1004975_1005055 呀 1005055_1005095 .
+%mor:	noun|后面 verb|了-Inf-S part|呀 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|DISCOURSE 4|2|PUNCT
+*INV:	这里 有些 什么 呀 . 1005115_1009802
+%wor:	这里 1005115_1007197 有些 1007197_1007417 什么 1007417_1007557 呀 1007557_1013801 .
+%xalign:	monotonicity:end_clamped end_truncated_by=3999ms original_end=1013801 clamped_to=1009802 cause=utr_token_range_overlap
+%mor:	pron|这里-Int-S1 verb|有些-Inf-S pron|什么-Int-S1 part|呀 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|OBJ 4|2|DISCOURSE-SP 5|2|PUNCT
+*CHI:	就 给 他们 造 了 高 台 . 1009802_1014145
+%wor:	就 1009802_1011123 给 1011123_1011343 他们 1011343_1012003 造 1012003_1013805 了 1013805_1013845 高 1013845_1014025 台 1014025_1014145 .
+%mor:	sconj|就 verb|给-Inf-S pron|他-Int-P3 verb|造-Inf-S aux|了-Inf-Perf-S part|高 propn|台-Acc .
+%gra:	1|4|MARK 2|4|ADVCL 3|2|OBJ 4|0|ROOT 5|4|AUX 6|7|CASE 7|4|OBJ 8|4|PUNCT
+*CHI:	然后 让 他们 . 1014165_1014949
+%wor:	然后 1014165_1016547 让 1016547_1017107 他们 1017107_1018949 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=1018949 clamped_to=1014949 cause=utr_token_range_overlap
+%mor:	adv|然后 verb|让-Inf-S pron|他-Int-P3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*INV:	你 觉得 这 三 个 强 盗 是 好 人 还是 坏人 . 1014949_1021124
+%wor:	你 1014949_1016331 觉得 1016331_1016431 这 1016431_1016471 三 1016471_1016511 个 1016511_1016591 强 1016591_1021718 盗 1021718_1021899 是 1021899_1021959 好 1021959_1022460 人 1022460_1022520 还是 1022520_1022780 坏人 1022780_1025124 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=1025124 clamped_to=1021124 cause=utr_token_range_overlap
+%mor:	pron|你-Int-S2 verb|觉得-Inf-S det|这-Def num|三 noun|个 part|强 part|盗 aux|是-Inf-S part|好 noun|人 aux|是-Inf-S noun|坏人 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|DET 4|5|NUMMOD 5|7|NMOD 6|7|CASE 7|12|NSUBJ 8|10|COP 9|10|CASE 10|12|ACL 11|12|COP 12|2|CCOMP 13|2|PUNCT
+*CHI:	<本 来 是 坏 人> [/] 本 来 是 坏 人 . 1021124_1021544
+%wor:	本 1021124_1021184 来 1021184_1021224 是 1021224_1021264 坏 1021264_1021304 人 1021304_1021344 本 1021344_1021384 来 1021384_1021424 是 1021424_1021484 坏 1021484_1021524 人 1021524_1021544 .
+%mor:	det|本-Def adp|来 aux|是-Inf-S adj|坏-S1 noun|人 .
+%gra:	1|5|NSUBJ 2|1|CASE 3|5|COP 4|5|AMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	然后 就 好了 . 1021564_1027815
+%wor:	然后 1021564_1021644 就 1021644_1021684 好了 1021684_1031815 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=1031815 clamped_to=1027815 cause=utr_token_range_overlap
+%mor:	adv|然后 sconj|就 verb|好了-Inf-S .
+%gra:	1|3|ADVMOD 2|3|MARK 3|0|ROOT 4|3|PUNCT
+*INV:	为什么 说 本 来 是 坏 人 又 变 成 好人 . 1027815_1029216
+%wor:	为什么 1027815_1028335 说 1028335_1028375 本 1028375_1028415 来 1028415_1028796 是 1028796_1028876 坏 1028876_1028976 人 1028976_1029016 又 1029016_1029056 变 1029056_1029096 成 1029096_1029136 好人 1029136_1029216 .
+%mor:	adv|为什么 verb|说-Inf-S det|本-Def adp|来 aux|是-Inf-S adj|坏-S1 noun|人 sconj|又 verb|变-Inf-S verb|成-Inf-S noun|好人-Acc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|7|DET 4|3|CASE 5|7|COP 6|7|AMOD 7|9|NSUBJ 8|9|MARK 9|2|CCOMP 10|9|MARK 11|9|OBJ 12|2|PUNCT
+*CHI:	他 本 来 都 骑 着 马 车 . 1029236_1037593
+%wor:	他 1029236_1029577 本 1029577_1029637 来 1029637_1029857 都 1029857_1030118 骑 1030118_1030598 着 1030598_1030638 马 1030638_1030718 车 1030718_1041593 .
+%xalign:	monotonicity:end_clamped end_truncated_by=4000ms original_end=1041593 clamped_to=1037593 cause=utr_token_range_overlap
+%mor:	pron|他-Int-S3 adv|本 adp|来 sconj|都 verb|骑-Inf-S aux|着-Inf-Prog-S noun|马 part|车 .
+%gra:	1|5|NSUBJ 2|5|ADVMOD 3|2|CASE 4|5|MARK 5|0|ROOT 6|5|AUX 7|8|COMPOUND 8|5|OBJ 9|5|PUNCT
+*CHI:	然后 把 钱 都 运 回去 . 1037593_1048667
+%wor:	然后 1037593_1041558 把 1041558_1045643 钱 1045643_1046224 都 1046224_1046424 运 1046424_1048607 回去 1048607_1048667 .
+%mor:	adv|然后 adp|把 noun|钱 sconj|都 verb|运-Inf-S verb|回去-Inf-S .
+%gra:	1|5|ADVMOD 2|3|CASE 3|5|OBL-PATIENT 4|5|MARK 5|0|ROOT 6|5|MARK 7|5|PUNCT
+*CHI:	然后 又 把 孩子 让 他们 长 大 . 1048687_1050630
+%wor:	然后 1048687_1048767 又 1048767_1049368 把 1049368_1049929 孩子 1049929_1050129 让 1050129_1050169 他们 1050169_1050249 长 1050249_1050289 大 1050289_1050630 .
+%mor:	adv|然后 sconj|又 adp|把 noun|孩子 verb|让-Inf-S pron|他-Int-P3 adj|长-S1 adj|大-S1 .
+%gra:	1|5|ADVMOD 2|5|MARK 3|4|CASE 4|5|OBL-PATIENT 5|0|ROOT 6|7|NSUBJ 7|5|CCOMP 8|7|XCOMP 9|5|PUNCT
+*CHI:	然后 成 为 村 长 . 1050650_1051371
+%wor:	然后 1050650_1051210 成 1051210_1051270 为 1051270_1051310 村 1051310_1051350 长 1051350_1051371 .
+%mor:	adv|然后 verb|成-Inf-S verb|为-Inf-S noun|村 part|长 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|MARK 4|5|COMPOUND 5|2|OBJ 6|2|PUNCT
+*CHI:	然后 就 后 面 好 前面 坏 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=1047371 previous_start_ms=1050650
+%xrev:	[?]
+%mor:	adv|然后 sconj|就 adv|后 noun|面 adj|好-S1 noun|前面 adj|坏-S1 .
+%gra:	1|5|ADVMOD 2|5|MARK 3|5|ADVMOD 4|5|NSUBJ 5|0|ROOT 6|7|NSUBJ 7|5|XCOMP 8|5|PUNCT
+*INV:	哦 是 这样的 .
+%xalign:	monotonicity:timing_stripped non_monotonic start_ms=1050554 previous_start_ms=1050650
+%xrev:	[?]
+%mor:	pron|哦-Int-S1 aux|是-Inf-S adj|这样的-S1 .
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*INV:	巧虎 说 我 明白 了 . 1054639_1056161
+%wor:	巧虎 1054639_1054799 说 1054799_1055259 我 1055259_1055480 明白 1055480_1055560 了 1055560_1056161 .
+%mor:	propn|巧虎 verb|说-Inf-S pron|我-Int-S1 verb|明白-Inf-S part|了 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|NSUBJ 4|2|CCOMP 5|2|DISCOURSE 6|2|PUNCT
+*INV:	谢谢 你 . 1056181_1056541
+%wor:	谢谢 1056181_1056501 你 1056501_1056541 .
+%mor:	verb|谢谢-Inf-S pron|你-Int-S2 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*INV:	奖你 一颗 星星 . 1056561_1059665
+%wor:	奖你 1056561_1057142 一颗 1057142_1057382 星星 1057382_1059665 .
+%mor:	noun|奖你 adj|一颗-S1 noun|星星 .
+%gra:	1|3|NSUBJ 2|3|AMOD 3|0|ROOT 4|3|PUNCT
+@End

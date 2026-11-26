@@ -1,0 +1,1329 @@
+@UTF8
+@PID:	11312/a-00073871-1
+@Begin
+@Languages:	spa, zho
+@Participants:	MOT Mother, CHI Target_Child, INV Investigator
+@ID:	spa|FernAguado|MOT|||||Mother|||
+@ID:	spa|FernAguado|CHI|3;06.03||||Target_Child|||
+@ID:	spa|FernAguado|INV|||||Investigator|||
+@Comment:	[ba3 morphotag | engine=stanza-1.11.1 ; lang=spa | 2026-05-05T21:52:06-04:00]
+@Date:	28-OCT-1999
+@Location:	Pamplona , Navarra , Spain
+@Situation:	CHI y MOT juegan con la casita
+@Comment:	instead of esk , we are using zho in Languages line because we haven't started a Basque tagger
+@Types:	long, toyplay, TD
+*MOT:	a_ver cuéntame .
+%mor:	x|aver intj|cuéntame .
+%gra:	1|2|DEP 2|0|ROOT 3|2|PUNCT
+*MOT:	qué pasa ahí ?
+%mor:	pron|qué-Int-S1 verb|pasar-Fin-Ind-Pres-S3 adv|ahí ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*MOT:	a_ver (.) qué es eso (.) eh ?
+%mor:	verb|aver-Fin-S pron|qué-Int-S1 aux|ser-Fin-Ind-Pres-S3 pron|ese-Dem-S1 intj|eh ?
+%gra:	1|0|ROOT 2|1|CCOMP 3|4|COP 4|5|DET 5|1|CCOMP 6|1|PUNCT
+*CHI:	no se .
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	no sabes ?
+%mor:	adv|no verb|saber-Fin-Ind-Pres-S1 ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	aquí hay otra más .
+%mor:	adv|aquí verb|haber-Fin-Ind-Pres-S3 pron|otro-Ind-S1 adv|más .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|3|ADVMOD 5|2|PUNCT
+*MOT:	hay otro ?
+%mor:	verb|haber-Fin-Ind-Pres-S3 pron|otro-Ind-S1 ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	a_ver qué más hay ?
+%mor:	verb|aver-Fin-S pron|qué-Int-S1 adv|más verb|haber-Fin-Ind-Pres-S3 ?
+%gra:	1|0|ROOT 2|4|OBJ 3|4|ADVMOD 4|1|CCOMP 5|1|PUNCT
+*MOT:	a_ver ponlo tú como quieras .
+%mor:	intj|aver verb|poner-Fin-Ind-Pres-S pron|tú-Prs-Nom-S2 sconj|como verb|querer-Fin-Ind-Pres-S1 .
+%gra:	1|2|DEP 2|0|ROOT 3|2|OBJ 4|5|MARK 5|2|ADVCL 6|2|PUNCT
+*MOT:	bueno (.) cuántas cosas (.) que bonito !
+%mor:	adj|buen-S1 det|cuánto-Fem-Def-Dem-Plur noun|cosa-Fem-Plur pron|que-Rel-S1 adj|bonito-S1 !
+%gra:	1|0|ROOT 2|3|DET 3|1|NSUBJ 4|5|MARK 5|3|AMOD 6|1|PUNCT
+*MOT:	a_ver más .
+%mor:	x|aver adv|más .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	sí aquí .
+%mor:	intj|sí adv|aquí .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*MOT:	qué más cosas se meten ahí ?
+%mor:	det|qué-Def-Int adv|más noun|cosa-Fem-Plur pron|él-Prs-Acc-reflx-S3 verb|meter-Fin-Ind-Pres-P3 adv|ahí ?
+%gra:	1|3|DET 2|3|ADVMOD 3|5|NSUBJ 4|5|EXPL-PV 5|0|ROOT 6|5|ADVMOD 7|5|PUNCT
+*CHI:	mamá el coche .
+%mor:	noun|mamá-Fem det|el-Masc-Def-Art-Sing noun|coche-Masc-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	un coche !
+%mor:	det|uno-Masc-Ind-Art-Sing noun|coche-Masc !
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	dónde los montamos ?
+%mor:	adv|dónde pron|él-Prs-Acc-P3 verb|montar-Fin-Ind-Pres-P1 ?
+%gra:	1|3|ADVMOD 2|3|OBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	no se .
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	dónde quieres montarlos ?
+%mor:	adv|dónde aux|querer-Fin-Ind-Pres-S2 verb|montar-Inf-S~pron|él-Prs-Acc-P3 ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|XCOMP 4|3|OBJ 5|2|PUNCT
+*CHI:	aquí .
+%mor:	adv|aquí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	y qué hay ahí (.) a_ver ?
+%mor:	cconj|y pron|qué-Int-S1 verb|haber-Fin-Ind-Pres-S3 adv|ahí x|aver ?
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|OBJ 6|3|PUNCT
+*MOT:	eso qué son ?
+%mor:	pron|ese-Dem-S1 pron|qué-Int-S1 aux|ser-Fin-Ind-Pres-P3 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|COP 4|2|PUNCT
+*CHI:	no se .
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	qué son eso (.) eh ?
+%mor:	pron|qué-Int-S1 aux|ser-Fin-Ind-Pres-P3 pron|ese-Dem-S1 intj|eh ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|COMPOUND 5|3|PUNCT
+*CHI:	no se .
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	esto qué es o qué ?
+%mor:	pron|este-Dem-S1 pron|qué-Int-S1 aux|ser-Fin-Ind-Pres-S3 cconj|o pron|qué-Int-S1 ?
+%gra:	1|2|NSUBJ 2|3|NSUBJ 3|0|ROOT 4|5|CC 5|2|CONJ 6|3|PUNCT
+*CHI:	pues una mesa .
+%mor:	sconj|pues det|uno-Fem-Ind-Art-Sing noun|mesa-Fem .
+%gra:	1|3|MARK 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	pues pon la mesa y qué más a_ver ?
+%mor:	sconj|pues verb|poner-Fin-Ind-Pres-S1 det|el-Fem-Def-Art-Sing noun|mesa-Fem-Acc cconj|y pron|qué-Int-S1 adv|más noun|aver ?
+%gra:	1|2|MARK 2|0|ROOT 3|4|DET 4|2|OBJ 5|8|CC 6|8|NSUBJ 7|8|ADVMOD 8|2|CONJ 9|2|PUNCT
+*CHI:	las sillas (.) ama ?
+%mor:	det|el-Fem-Def-Art-Plur noun|silla-Fem-Plur verb|amar-Fin-Ind-Pres-S3 ?
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	las sillas a_ver dónde crees tú que son (.) a_ver cariño ?
+%mor:	det|el-Fem-Def-Art-Plur noun|silla-Fem-Plur propn|aver adv|dónde verb|creer-Fin-Ind-Pres-S1 pron|tú-Prs-Nom-S2 pron|que-Rel-S1 aux|ser-Fin-Ind-Pres-P3 adp|aver noun|cariño-Masc ?
+%gra:	1|2|DET 2|5|NSUBJ 3|2|APPOS 4|5|ADVMOD 5|0|ROOT 6|5|OBJ 7|10|NSUBJ 8|10|COP 9|10|CASE 10|6|ACL-RELCL 11|5|PUNCT
+*CHI:	no se .
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	esto qué es (.) a_ver pues .
+%mor:	pron|este-Dem-S1 pron|qué-Int-S1 aux|ser-Fin-Ind-Pres-S3 noun|aver sconj|pues .
+%gra:	1|4|NSUBJ 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT 6|4|PUNCT
+*CHI:	no se .
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	pues una silla .
+%mor:	sconj|pues det|uno-Fem-Ind-Art-Sing noun|silla-Fem .
+%gra:	1|3|MARK 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	otra silla .
+%mor:	det|otro-Fem-Def-Ind-Sing noun|silla-Fem .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	ya hemos encontrado las sillas .
+%mor:	adv|ya aux|haber-Fin-Ind-Pres-P1 verb|encontrar-Part-Past-S det|el-Fem-Def-Art-Plur noun|silla-Fem-Plur-Acc .
+%gra:	1|3|ADVMOD 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*MOT:	a_ver dónde las vas a poner .
+%mor:	x|aver adv|dónde pron|él-Prs-Acc-P3 verb|ir-Fin-Ind-Pres-S adp|a verb|poner-Inf-S .
+%gra:	1|4|ADVMOD 2|4|ADVMOD 3|4|OBJ 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|4|PUNCT
+*CHI:	y quiénes pueden comer ama ?
+%mor:	cconj|y pron|quién-Int-P1 aux|poder-Fin-Ind-Pres-P3 verb|comer-Inf-S noun|ama-Fem-Acc ?
+%gra:	1|4|CC 2|4|NSUBJ 3|4|AUX 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*MOT:	sí ?
+%mor:	intj|sí ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	<pues los que tú quieras> [//] si es tu casita ahora los que tú quieras pueden comer .
+%mor:	sconj|si aux|ser-Fin-Ind-Pres-S3 det|tu-Def-Prs-Sing-S noun|casita-Fem adv|ahora det|el-Masc-Def-Art-Plur pron|que-Rel-S1 pron|tú-Prs-Nom-S2 verb|querer-Fin-Ind-Pres-S1 aux|poder-Fin-Ind-Pres-P3 verb|comer-Inf-S .
+%gra:	1|2|MARK 2|11|ADVCL 3|4|DET 4|2|NSUBJ 5|11|ADVMOD 6|9|DET 7|9|OBJ 8|9|NSUBJ 9|11|CSUBJ 10|11|AUX 11|0|ROOT 12|11|PUNCT
+*CHI:	ama mira otra silla .
+%mor:	verb|amar-Fin-Ind-Pres-S3 verb|mirar-Fin-Ind-Pres-S3 det|otro-Fem-Def-Ind-Sing noun|silla-Fem-Acc .
+%gra:	1|2|ADVCL 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*MOT:	otra silla ?
+%mor:	det|otro-Fem-Def-Ind-Sing noun|silla-Fem ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	pues a_ver dónde la vas a poner (.) otra silla .
+%mor:	sconj|pues verb|aver-Fin-S adv|dónde pron|él-Prs-Acc-S3 verb|ir-Fin-Ind-Pres-S adp|a verb|poner-Inf-S det|otro-Fem-Def-Ind-Sing noun|silla-Fem-Acc .
+%gra:	1|2|MARK 2|0|ROOT 3|5|ADVMOD 4|5|OBJ 5|2|XCOMP 6|7|MARK 7|5|XCOMP 8|9|DET 9|7|OBJ 10|2|PUNCT
+*CHI:	ésta ?
+%mor:	pron|este-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	esa que ?
+%mor:	pron|ese-Dem-S1 pron|que-Rel-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT 3|1|PUNCT
+*CHI:	Marta eso lo [*] qué es ?
+%mor:	propn|Marta pron|ese-Dem-S1 pron|él-Prs-Acc-S3 pron|qué-Int-S1 aux|ser-Fin-Ind-Pres-S3 ?
+%gra:	1|4|NSUBJ 2|4|NSUBJ 3|4|DET 4|0|ROOT 5|4|COP 6|4|PUNCT
+*MOT:	qué te parece ?
+%mor:	pron|qué-Int-S1 pron|tú-Prs-Dat-S2 verb|parecer-Fin-Ind-Pres-S3 ?
+%gra:	1|3|NSUBJ 2|3|EXPL-PV 3|0|ROOT 4|3|PUNCT
+*CHI:	qué ?
+%mor:	pron|qué-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	lo [*] qué es eso ?
+%mor:	pron|él-Prs-Acc-S3 pron|qué-Int-S1 aux|ser-Fin-Ind-Pres-S3 pron|ese-Dem-S1 ?
+%gra:	1|2|DET 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*MOT:	qué te parece a ti que es eso ?
+%mor:	pron|qué-Int-S1 pron|tú-Prs-Dat-S2 verb|parecer-Fin-Ind-Pres-S3 adp|a pron|tú-Prs-Acc-S1 pron|que-Rel-S1 aux|ser-Fin-Ind-Pres-S3 pron|ese-Dem-S1 ?
+%gra:	1|3|NSUBJ 2|3|OBL-ARG 3|0|ROOT 4|5|CASE 5|3|OBL-ARG 6|8|MARK 7|8|COP 8|3|CSUBJ 9|3|PUNCT
+*CHI:	para calentar algo .
+%mor:	adp|para verb|calentar-Inf-S pron|algo-Ind-S1 .
+%gra:	1|2|MARK 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	pues igual .
+%mor:	sconj|pues adj|igual-S1 .
+%gra:	1|2|MARK 2|0|ROOT 3|2|PUNCT
+*MOT:	dónde [/] dónde hay bancos ?
+%mor:	adv|dónde verb|haber-Fin-Ind-Pres-S3 noun|banco-Masc-Plur-Acc ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	aquí hay uno .
+%mor:	adv|aquí verb|haber-Fin-Ind-Pres-S3 pron|uno-Ind-S1 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	hay uno ?
+%mor:	verb|haber-Fin-Ind-Pres-S3 pron|uno-Ind-S1 ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	pues a_ver quién se va a poner ahí ?
+%mor:	sconj|pues verb|aver-Fin-S pron|quién-Int-S1 pron|él-Prs-Acc-reflx-S3 verb|ir-Fin-Ind-Pres-S3 adp|a verb|poner-Inf-S adv|ahí ?
+%gra:	1|2|MARK 2|0|ROOT 3|5|NSUBJ 4|5|EXPL-PV 5|2|CCOMP 6|7|MARK 7|5|XCOMP 8|7|ADVMOD 9|2|PUNCT
+*MOT:	ese quién es ?
+%mor:	pron|ese-Dem-S1 pron|quién-Int-S1 aux|ser-Fin-Ind-Pres-S3 ?
+%gra:	1|3|NSUBJ 2|1|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	<quién es ese> [/] quién es ese ?
+%mor:	pron|quién-Int-S1 aux|ser-Fin-Ind-Pres-S3 pron|ese-Dem-S1 ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	y otro .
+%mor:	cconj|y pron|otro-Ind-S1 .
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*MOT:	otro .
+%mor:	pron|otro-Ind-S1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	y dónde se va a poner ahora ?
+%mor:	cconj|y adv|dónde pron|él-Prs-Acc-reflx-S3 verb|ir-Fin-Ind-Pres-S3 adp|a verb|poner-Inf-S adv|ahora ?
+%gra:	1|4|CC 2|4|ADVMOD 3|4|EXPL-IMPERS 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|4|ADVMOD 8|4|PUNCT
+*CHI:	y otro .
+%mor:	cconj|y pron|otro-Ind-S1 .
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*MOT:	esa quién es (.) a_ver (.) cuéntame .
+%mor:	pron|ese-Dem-S1 pron|quién-Int-S1 aux|ser-Fin-Ind-Pres-S3 x|aver intj|cuéntame .
+%gra:	1|5|NSUBJ 2|5|NSUBJ 3|5|COP 4|5|DEP 5|0|ROOT 6|5|PUNCT
+*CHI:	ésta ?
+%mor:	pron|este-Dem-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	no se .
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	pues no se .
+%mor:	sconj|pues adv|no pron|él-Prs-Acc-reflx-S3 .
+%gra:	1|3|MARK 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	no sabes ?
+%mor:	adv|no verb|saber-Fin-Ind-Pres-S1 ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	y qué las vas a poner ahí en la mesa o qué ?
+%mor:	cconj|y pron|qué-Int-S1 pron|él-Prs-Acc-P3 verb|ir-Fin-Ind-Pres-S1 adp|a verb|poner-Inf-S adv|ahí adp|en det|el-Fem-Def-Art-Sing noun|mesa-Fem cconj|o pron|qué-Int-S1 ?
+%gra:	1|4|CC 2|4|NSUBJ 3|6|OBJ 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|ADVMOD 8|10|CASE 9|10|DET 10|4|OBL 11|12|CC 12|4|CONJ 13|4|PUNCT
+*MOT:	pues ten (.) <que se te cae> [/] que se te cae ese del gorro .
+%mor:	sconj|pues verb|ten-Fin-Ind-Pres-S1 sconj|que pron|él-Prs-Acc-reflx-S3 pron|tú-Prs-Dat-S2 verb|caer-Fin-Ind-Pres-S3 pron|ese-Dem-S1 adp|de~det|el-Masc-Def-Art-Sing noun|gorro-Masc .
+%gra:	1|2|MARK 2|0|ROOT 3|6|MARK 4|6|EXPL-PV 5|6|OBL-ARG 6|2|CCOMP 7|6|NSUBJ 8|10|CASE 9|10|DET 10|7|NMOD 11|2|PUNCT
+*MOT:	quién es ese ?
+%mor:	pron|quién-Int-S1 aux|ser-Fin-Ind-Pres-S3 pron|ese-Dem-S1 ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	no se .
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	no sabes ?
+%mor:	adv|no verb|saber-Fin-Ind-Pres-S1 ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	y luego éste .
+%mor:	cconj|y adv|luego pron|este-Dem-S1 .
+%gra:	1|3|CC 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	y luego ese .
+%mor:	cconj|y adv|luego pron|ese-Dem-S1 .
+%gra:	1|3|CC 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	ahí va (.) si tenemos otro ahí ?
+%mor:	adv|ahí verb|ir-Fin-Ind-Pres-S3 sconj|si verb|tener-Fin-Ind-Pres-P1 pron|otro-Ind-S1 adv|ahí ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|MARK 4|2|CCOMP 5|4|OBJ 6|4|ADVMOD 7|2|PUNCT
+*CHI:	dónde ?
+%mor:	adv|dónde ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	eh ?
+%mor:	x|eh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	dónde ama ?
+%mor:	adv|dónde verb|amar-Fin-Ind-Pres-S3 ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	éste [//] (.) ese quién es (.) a_ver ?
+%mor:	pron|ese-Dem-S1 pron|quién-Int-S1 aux|ser-Fin-Ind-Pres-S3 noun|aver ?
+%gra:	1|4|NSUBJ 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*MOT:	oh (.) chica <quiénes son> [//] esos (.) parecen [/-] quiénes son ?
+%mor:	intj|oh noun|chica-Fem pron|ese-Dem-P1 pron|quién-Int-P1 aux|ser-Fin-Ind-Pres-P3 ?
+%gra:	1|2|DEP 2|0|ROOT 3|2|NSUBJ 4|2|NSUBJ 5|2|COP 6|2|PUNCT
+*CHI:	y mira otra .
+%mor:	cconj|y verb|mirar-Fin-Ind-Pres-S3 pron|otro-Ind-S1 .
+%gra:	1|2|CC 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	ah (.) pues mira otra .
+%mor:	intj|ah sconj|pues verb|mirar-Fin-Ind-Pres-S3 pron|otro-Ind-S1 .
+%gra:	1|3|DEP 2|3|MARK 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*MOT:	pues igual mejor arriba o qué ?
+%mor:	sconj|pues adv|igual adj|mejor-Cmp-S1 adv|arriba cconj|o pron|qué-Int-S1 ?
+%gra:	1|3|MARK 2|3|ADVMOD 3|0|ROOT 4|3|ADVMOD 5|6|CC 6|4|CONJ 7|3|PUNCT
+*MOT:	qué hacen ahora esos ?
+%mor:	pron|qué-Int-S1 verb|hacer-Fin-Ind-Pres-P3 adv|ahora pron|ese-Dem-P1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|NSUBJ 5|2|PUNCT
+*CHI:	dónde están los platos ama ?
+%mor:	adv|dónde verb|estar-Fin-Ind-Pres-P3 det|el-Masc-Def-Art-Plur noun|plato-Masc-Plur verb|amar-Fin-Ind-Pres-S3 ?
+%gra:	1|2|ADVMOD 2|5|ADVCL 3|4|DET 4|2|NSUBJ 5|0|ROOT 6|5|PUNCT
+*MOT:	dónde están los platos ?
+%mor:	adv|dónde verb|estar-Fin-Ind-Pres-P3 det|el-Masc-Def-Art-Plur noun|plato-Masc-Plur ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|DET 4|2|NSUBJ 5|2|PUNCT
+*MOT:	pues no se .
+%mor:	sconj|pues adv|no pron|él-Prs-Acc-reflx-S3 .
+%gra:	1|3|MARK 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	voy a_ver si hay platos por ahí .
+%mor:	verb|ir-Fin-Ind-Pres-S1 verb|aver-Inf-S sconj|si verb|haber-Fin-Ind-Pres-S3 noun|plato-Masc-Plur-Acc adp|por adv|ahí .
+%gra:	1|0|ROOT 2|1|XCOMP 3|4|MARK 4|2|CCOMP 5|4|OBJ 6|7|CASE 7|4|ADVMOD 8|1|PUNCT
+*CHI:	Marta [/] Marta .
+%mor:	propn|Marta .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	a lo mejor está en ese armario .
+%mor:	adp|a pron|él-Prs-Acc-S3 noun|mejor verb|estar-Fin-Ind-Pres-S3 adp|en det|ese-Masc-Def-Dem-Sing noun|armario-Masc .
+%gra:	1|4|ADVMOD 2|1|FIXED 3|1|FIXED 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*MOT:	mira a_ver si están en ese armario .
+%mor:	verb|mirar-Fin-Ind-Pres-S3 noun|aver-Acc sconj|si aux|estar-Fin-Ind-Pres-P3 adp|en det|ese-Masc-Def-Dem-Sing noun|armario-Masc .
+%gra:	1|0|ROOT 2|1|OBJ 3|4|MARK 4|1|ADVCL 5|7|CASE 6|7|DET 7|4|OBL 8|1|PUNCT
+*CHI:	Marta .
+%mor:	propn|Marta .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	si no ves no hay .
+%mor:	sconj|si adv|no verb|ver-Fin-Ind-Pres-S1 adv|no verb|haber-Fin-Ind-Pres-S3 .
+%gra:	1|3|MARK 2|3|ADVMOD 3|5|ADVCL 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*CHI:	mira .
+%mor:	verb|mirar-Fin-Ind-Pres-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*INV:	hay o no hay ?
+%mor:	verb|haber-Fin-Ind-Pres-S3 cconj|o adv|no verb|haber-Fin-Ind-Pres-S3 ?
+%gra:	1|0|ROOT 2|4|CC 3|4|ADVMOD 4|1|CONJ 5|1|PUNCT
+*MOT:	mira a_ver en ese armario de la cocina a_ver si hay .
+%mor:	verb|mirar-Fin-Ind-Pres-S3 noun|aver-Acc adp|en det|ese-Masc-Def-Dem-Sing noun|armario-Masc adp|de det|el-Fem-Def-Art-Sing noun|cocina-Fem x|aver sconj|si verb|haber-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|CASE 4|5|DET 5|1|OBL 6|8|CASE 7|8|DET 8|5|NMOD 9|11|MARK 10|11|MARK 11|1|ADVCL 12|1|PUNCT
+*CHI:	lo [*] qué es la cocina ?
+%mor:	pron|él-Prs-Acc-S3 pron|qué-Int-S1 aux|ser-Fin-Ind-Pres-S3 det|el-Fem-Def-Art-Sing noun|cocina-Fem ?
+%gra:	1|2|DET 2|5|NSUBJ 3|5|COP 4|5|DET 5|0|ROOT 6|5|PUNCT
+*MOT:	no se mira por ahí a_ver si hay .
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 verb|mirar-Fin-Ind-Pres-S3 adp|por adv|ahí verb|aver-Fin-S sconj|si verb|haber-Fin-Ind-Pres-S3 .
+%gra:	1|3|ADVMOD 2|3|EXPL-PV 3|0|ROOT 4|5|CASE 5|3|ADVMOD 6|3|ADVCL 7|8|MARK 8|6|CCOMP 9|3|PUNCT
+*MOT:	a_ver (.) venga pues ponle .
+%mor:	x|aver verb|venir-Fin-Sub-Pres-S3 sconj|pues verb|poner-Fin-Ind-Pres-S3 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|ADVCL 5|2|PUNCT
+*MOT:	hay platos o no hay platos .
+%mor:	verb|haber-Fin-Ind-Pres-S3 noun|plato-Masc-Plur-Acc cconj|o adv|no verb|haber-Fin-Ind-Pres-S3 noun|plato-Masc-Plur-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|5|CC 4|5|ADVMOD 5|1|CONJ 6|5|OBJ 7|1|PUNCT
+*CHI:	no .
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	no hay platos ?
+%mor:	adv|no verb|haber-Fin-Ind-Pres-S3 noun|plato-Masc-Plur-Acc ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*MOT:	pues igual es que <no quieren> [/-] no van a comer o qué ?
+%mor:	sconj|pues adv|igual aux|ser-Fin-Ind-Pres-S3 sconj|que adv|no verb|ir-Fin-Ind-Pres-P3 adp|a verb|comer-Inf-S cconj|o pron|qué-Int-S1 ?
+%gra:	1|3|MARK 2|3|ADVMOD 3|0|ROOT 4|6|MARK 5|6|ADVMOD 6|3|CCOMP 7|8|MARK 8|6|XCOMP 9|10|CC 10|6|CONJ 11|3|PUNCT
+*MOT:	entonces qué va a hacer ?
+%mor:	adv|entonces pron|qué-Int-S1 verb|ir-Fin-Ind-Pres-S3 adp|a verb|hacer-Inf-S ?
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|3|PUNCT
+*CHI:	dormir .
+%mor:	verb|dormir-Inf-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	esto qué es ?
+%mor:	pron|este-Dem-S1 pron|qué-Int-S1 aux|ser-Fin-Ind-Pres-S3 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|COP 4|2|PUNCT
+*MOT:	qué es esto ?
+%mor:	pron|qué-Int-S1 aux|ser-Fin-Ind-Pres-S3 pron|este-Dem-S1 ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	un tobogán .
+%mor:	det|uno-Masc-Ind-Art-Sing noun|tobogán-Masc .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	un tobogán !
+%mor:	det|uno-Masc-Ind-Art-Sing noun|tobogán-Masc !
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	oye si no van a comer no se .
+%mor:	verb|oír-Fin-Ind-Pres-S3 sconj|si adv|no verb|ir-Fin-Ind-Pres-P3 adp|a verb|comer-Inf-S adv|no pron|él-Prs-Acc-reflx-S3 .
+%gra:	1|0|ROOT 2|4|MARK 3|4|ADVMOD 4|1|XCOMP 5|6|MARK 6|4|XCOMP 7|6|ADVMOD 8|6|EXPL-PV 9|1|PUNCT
+*MOT:	y la oveja ?
+%mor:	cconj|y det|el-Fem-Def-Art-Sing noun|oveja-Fem ?
+%gra:	1|3|CC 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	ah (.) vas a meter el coche al garaje ?
+%mor:	intj|ah verb|ir-Fin-Ind-Pres-S adp|a verb|meter-Inf-S det|el-Masc-Def-Art-Sing noun|coche-Masc-Acc adp|a~det|el-Masc-Def-Art-Sing noun|garaje-Masc ?
+%gra:	1|2|OBL 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|6|DET 6|4|OBJ 7|9|CASE 8|9|DET 9|4|OBL 10|2|PUNCT
+*MOT:	muy bien (.) vaya casa chica .
+%mor:	adv|mucho adv|bien verb|ir-Fin-Sub-Pres-S3 noun|casa-Fem adj|chica-S1 .
+%gra:	1|2|ADVMOD 2|3|ADVMOD 3|0|ROOT 4|3|NSUBJ 5|4|AMOD 6|3|PUNCT
+*MOT:	<quién vive en esta casa> [//] eh (.) Eider quién vive en esta casa ?
+%mor:	propn|eh propn|Eider pron|quién-Int-S1 verb|vivir-Fin-Ind-Pres-S3 adp|en det|este-Fem-Def-Dem-Sing noun|casa-Fem ?
+%gra:	1|2|DET 2|4|NSUBJ 3|4|NSUBJ 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*CHI:	pues todos éstos .
+%mor:	sconj|pues det|todo-Masc-Def-Tot-Plur pron|este-Dem-P1 .
+%gra:	1|3|MARK 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	y quiénes son esos ?
+%mor:	cconj|y pron|quién-Int-P1 aux|ser-Fin-Ind-Pres-P3 pron|ese-Dem-P1 ?
+%gra:	1|4|CC 2|4|NSUBJ 3|4|COP 4|0|ROOT 5|4|PUNCT
+*CHI:	pues éstos .
+%mor:	sconj|pues pron|este-Dem-P1 .
+%gra:	1|2|MARK 2|0|ROOT 3|2|PUNCT
+*MOT:	qué vas a sacar por ahí ?
+%mor:	pron|qué-Int-S1 verb|ir-Fin-Ind-Pres-S1 adp|a verb|sacar-Inf-S adp|por adv|ahí ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|6|CASE 6|2|ADVMOD 7|2|PUNCT
+*CHI:	quiero ir con Julen .
+%mor:	verb|querer-Fin-Ind-Pres-S1 verb|ir-Inf-S adp|con propn|julen .
+%gra:	1|0|ROOT 2|1|XCOMP 3|4|CASE 4|2|OBL 5|1|PUNCT
+*MOT:	pero ahora ya has jugado con el barco .
+%mor:	cconj|pero adv|ahora adv|ya aux|haber-Fin-Ind-Pres-S2 verb|jugar-Part-Past-S adp|con det|el-Masc-Def-Art-Sing noun|barco-Masc .
+%gra:	1|5|ADVMOD 2|5|ADVMOD 3|5|ADVMOD 4|5|AUX 5|0|ROOT 6|8|CASE 7|8|DET 8|5|OBL 9|5|PUNCT
+*MOT:	vamos a jugar con esta casita tan bonita que nos ha traído Marta .
+%mor:	verb|ir-Fin-Ind-Pres-P1 adp|a verb|jugar-Inf-S adp|con det|este-Fem-Def-Dem-Sing noun|casita-Fem adv|tanto adj|bonito-S1 pron|que-Rel-S1 pron|yo-Prs-Dat-P1 aux|haber-Fin-Ind-Pres-S3 verb|traer-Part-Past-S propn|Marta .
+%gra:	1|0|ROOT 2|3|MARK 3|1|XCOMP 4|6|CASE 5|6|DET 6|3|OBL 7|8|ADVMOD 8|6|AMOD 9|12|OBJ 10|12|OBL-ARG 11|12|AUX 12|6|ACL 13|12|NSUBJ 14|1|PUNCT
+*CHI:	pero Julen no va a jugar con esto .
+%mor:	cconj|pero propn|julen adv|no verb|ir-Fin-Ind-Pres-S3 adp|a verb|jugar-Inf-S adp|con pron|este-Dem-S1 .
+%gra:	1|4|ADVMOD 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|8|CASE 8|6|OBL 9|4|PUNCT
+*MOT:	bueno pero no te preocupes que ya jugará luego Julen (.) vale ?
+%mor:	adj|buen-S1 cconj|pero adv|no pron|tú-Prs-Dat-S2 verb|preocupar-Fin-Ind-Pres-S1 sconj|que adv|ya verb|jugar-Fin-Ind-Fut-S3 adv|luego propn|julen verb|valer-Fin-Ind-Pres-S3 ?
+%gra:	1|0|ROOT 2|5|CC 3|5|ADVMOD 4|5|OBL-ARG 5|1|CONJ 6|8|MARK 7|8|ADVMOD 8|5|CCOMP 9|8|ADVMOD 10|8|NSUBJ 11|5|CCOMP 12|1|PUNCT
+*CHI:	con quién ?
+%mor:	adp|con pron|quién-Int-S1 ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	pues con los juguetes .
+%mor:	sconj|pues adp|con det|el-Masc-Def-Art-Plur noun|juguete-Masc-Plur .
+%gra:	1|4|MARK 2|4|CASE 3|4|DET 4|0|ROOT 5|4|PUNCT
+*CHI:	conmigo ?
+%mor:	pron|yo-Prs-S2 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	claro que contigo y con Sara pero ahora tú juegas conmigo y Julen juega con Sara .
+%mor:	adj|claro-S1 sconj|que pron|tú-Prs-S2 cconj|y adp|con propn|Sara cconj|pero adv|ahora pron|tú-Prs-Nom-S2 verb|jugar-Fin-Ind-Pres-S1 pron|yo-Prs-Nom-S2 cconj|y propn|julen verb|jugar-Fin-Ind-Pres-S3 adp|con propn|Sara .
+%gra:	1|0|ROOT 2|3|CASE 3|1|NMOD 4|6|CC 5|6|CASE 6|3|CONJ 7|10|CC 8|10|ADVMOD 9|10|NSUBJ 10|1|CONJ 11|10|OBJ 12|14|CC 13|14|NSUBJ 14|1|CONJ 15|16|CASE 16|14|OBL 17|1|PUNCT
+*CHI:	vale .
+%mor:	verb|valer-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	vale (.) venga pues .
+%mor:	verb|valer-Fin-Ind-Pres-S3 verb|venir-Fin-Sub-Pres-S3 sconj|pues .
+%gra:	1|0|ROOT 2|1|XCOMP 3|1|PUNCT 4|1|PUNCT
+*CHI:	pues van a salir de la cama .
+%mor:	sconj|pues verb|ir-Fin-Ind-Pres-P3 adp|a verb|salir-Inf-S adp|de det|el-Fem-Def-Art-Sing noun|cama-Fem .
+%gra:	1|2|MARK 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|7|CASE 6|7|DET 7|2|OBL 8|2|PUNCT
+*MOT:	a dónde van ?
+%mor:	adp|a adv|dónde verb|ir-Fin-Ind-Pres-P3 ?
+%gra:	1|2|CASE 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	ála (.) cuántos [//] hay ahí (.) eh (.) cuántos ?
+%mor:	propn|ála verb|haber-Fin-Ind-Pres-S3 adv|ahí intj|eh pron|cuánto-Ind-P1 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|3|FIXED 5|2|OBJ 6|2|PUNCT
+*CHI:	muchos .
+%mor:	pron|mucho-Ind-P1 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	uno dos tres cuatro y cinco .
+%mor:	pron|uno-Ind-S1 num|dos num|tres num|cuatro cconj|y num|cinco .
+%gra:	1|0|ROOT 2|4|NUMMOD 3|4|NUMMOD 4|1|APPOS 5|6|CC 6|4|CONJ 7|1|PUNCT
+*MOT:	tres ?
+%mor:	num|tres ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	cuatro y cinco .
+%mor:	num|cuatro cconj|y num|cinco .
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|1|PUNCT
+*MOT:	casi familia numerosa son esos .
+%mor:	adv|casi noun|familia-Fem adj|numeroso-S1 aux|ser-Fin-Ind-Pres-P3 pron|ese-Dem-P1 .
+%gra:	1|2|ADVMOD 2|5|NSUBJ 3|2|AMOD 4|5|COP 5|0|ROOT 6|5|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	y qué hacen ?
+%mor:	cconj|y pron|qué-Int-S1 verb|hacer-Fin-Ind-Pres-P3 ?
+%gra:	1|3|CC 2|3|OBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	qué están mirando ?
+%mor:	pron|qué-Int-S1 aux|estar-Fin-Ind-Pres-P3 verb|mirar-Ger-S ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*MOT:	qué hacen ?
+%mor:	pron|qué-Int-S1 verb|hacer-Fin-Ind-Pres-P3 ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|PUNCT
+*CHI:	pues van a ir a la cama ahora .
+%mor:	sconj|pues verb|ir-Fin-Ind-Pres-P3 adp|a verb|ir-Inf-S adp|a det|el-Fem-Def-Art-Sing noun|cama-Fem adv|ahora .
+%gra:	1|2|MARK 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|7|CASE 6|7|DET 7|2|OBL 8|2|ADVMOD 9|2|PUNCT
+*MOT:	ah (.) van a ir a la cama (.) ála pues venga .
+%mor:	intj|ah verb|ir-Fin-Ind-Pres-P3 adp|a verb|ir-Inf-S adp|a det|el-Fem-Def-Art-Sing noun|cama-Fem adj|álo-S1 sconj|pues verb|venir-Fin-Sub-Pres-S3 .
+%gra:	1|2|OBL 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|7|CASE 6|7|DET 7|4|OBL 8|7|AMOD 9|10|MARK 10|2|ADVCL 11|2|PUNCT
+*MOT:	a_ver dónde van a dormir .
+%mor:	x|aver adv|dónde verb|ir-Fin-Ind-Pres-P3 adp|a verb|dormir-Inf-S .
+%gra:	1|3|ADVMOD 2|3|ADVMOD 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|3|PUNCT
+*MOT:	esos en qué cama van a dormir .
+%mor:	pron|ese-Dem-P1 adp|en det|qué-Def-Int noun|cama-Fem verb|ir-Fin-Ind-Pres-P3 adp|a verb|dormir-Inf-S .
+%gra:	1|5|NSUBJ 2|4|CASE 3|4|DET 4|5|OBL 5|0|ROOT 6|7|MARK 7|5|XCOMP 8|5|PUNCT
+*CHI:	yo creo que en la grande .
+%mor:	pron|yo-Prs-Nom-S1 verb|creer-Fin-Ind-Pres-S1 sconj|que adp|en det|el-Fem-Def-Art-Sing adj|grande-S1 .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|6|MARK 4|6|CASE 5|6|DET 6|2|OBL 7|2|PUNCT
+*MOT:	que duermen juntos ?
+%mor:	pron|que-Rel-S1 verb|duermar-Fin-Ind-Pres-P3 adj|junto-P1 ?
+%gra:	1|2|MARK 2|0|ROOT 3|2|XCOMP 4|2|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	quiénes son esos ?
+%mor:	pron|quién-Int-P1 aux|ser-Fin-Ind-Pres-P3 pron|ese-Dem-P1 ?
+%gra:	1|3|NSUBJ 2|3|COP 3|0|ROOT 4|3|PUNCT
+*CHI:	los pequeños .
+%mor:	det|el-Masc-Def-Art-Plur adj|pequeño-P1 .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	éste pequeño va a dormir .
+%mor:	det|este-Masc-Def-Dem-Sing adj|pequeño-S1 verb|ir-Fin-Ind-Pres-S3 adp|a verb|dormir-Inf-S .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|3|PUNCT
+*MOT:	ese pequeño dónde va a dormir ?
+%mor:	det|ese-Masc-Def-Dem-Sing adj|pequeño-S1 adv|dónde verb|ir-Fin-Ind-Pres-S3 adp|a verb|dormir-Inf-S ?
+%gra:	1|3|DET 2|3|AMOD 3|4|ADVMOD 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|4|PUNCT
+*CHI:	aquí .
+%mor:	adv|aquí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	ah (.) esa es su cama ?
+%mor:	x|ah pron|ese-Dem-S1 aux|ser-Fin-Ind-Pres-S3 det|su-Def-Prs-Sing noun|cama-Fem ?
+%gra:	1|5|NSUBJ 2|5|NSUBJ 3|5|COP 4|5|DET 5|0|ROOT 6|5|PUNCT
+*CHI:	es una cuna .
+%mor:	aux|ser-Fin-Ind-Pres-S3 det|uno-Fem-Ind-Art-Sing noun|cuna-Fem .
+%gra:	1|3|COP 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	eh ?
+%mor:	x|eh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	esta es una cama (.) pero éstos son los niños .
+%mor:	pron|este-Dem-S1 aux|ser-Fin-Ind-Pres-S3 det|uno-Fem-Ind-Art-Sing noun|cama-Fem cconj|pero pron|este-Dem-P1 aux|ser-Fin-Ind-Pres-P3 det|el-Masc-Def-Art-Plur noun|niño-Masc-Plur .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|9|CC 6|9|NSUBJ 7|9|COP 8|9|DET 9|4|CONJ 10|4|PUNCT
+*CHI:	éste es el grande .
+%mor:	pron|este-Dem-S1 aux|ser-Fin-Ind-Pres-S3 det|el-Masc-Def-Art-Sing noun|grande .
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|4|PUNCT
+*MOT:	ah (.) ese es el grande y va a dormir ahí (.) muy bien .
+%mor:	x|ah pron|ese-Dem-S1 aux|ser-Fin-Ind-Pres-S3 det|el-Masc-Def-Art-Sing noun|grande cconj|y verb|ir-Fin-Ind-Pres-S3 adp|a verb|dormir-Inf-S adv|ahí adv|mucho adv|bien .
+%gra:	1|5|NSUBJ 2|5|NSUBJ 3|5|COP 4|5|DET 5|0|ROOT 6|7|CC 7|5|CONJ 8|9|MARK 9|7|XCOMP 10|7|ADVMOD 11|12|ADVMOD 12|7|ADVMOD 13|5|PUNCT
+*MOT:	y éste otro ?
+%mor:	cconj|y det|este-Masc-Def-Dem-Sing pron|otro-Ind-S1 ?
+%gra:	1|3|CC 2|3|DET 3|0|ROOT 4|3|PUNCT
+*CHI:	y éste pues aquí .
+%mor:	cconj|y pron|este-Dem-S1 sconj|pues adv|aquí .
+%gra:	1|2|CC 2|0|ROOT 3|4|MARK 4|2|ADVMOD 5|2|PUNCT
+*MOT:	ahí va a dormir ?
+%mor:	adv|ahí verb|ir-Fin-Ind-Pres-S3 adp|a verb|dormir-Inf-S ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|2|PUNCT
+*MOT:	ah (.) muy bien (.) y ese ?
+%mor:	intj|ah adv|mucho adv|bien cconj|y pron|ese-Dem-S1 ?
+%gra:	1|3|DEP 2|3|ADVMOD 3|0|ROOT 4|5|CC 5|1|CONJ 6|3|PUNCT
+*CHI:	no es .
+%mor:	adv|no aux|ser-Fin-Ind-Pres-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	no .
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	hay un padre .
+%mor:	verb|haber-Fin-Ind-Pres-S3 det|uno-Masc-Ind-Art-Sing noun|padre-Masc-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	esa quién es ?
+%mor:	pron|ese-Dem-S1 pron|quién-Int-S1 aux|ser-Fin-Ind-Pres-S3 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|COP 4|1|PUNCT
+*CHI:	y luego aquí ama .
+%mor:	cconj|y adv|luego adv|aquí verb|amar-Fin-Ind-Pres-S3 .
+%gra:	1|4|CC 2|4|ADVMOD 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*MOT:	esa es la ama ?
+%mor:	pron|ese-Dem-S1 aux|ser-Fin-Ind-Pres-S3 det|el-Fem-Def-Art-Sing noun|ama-Fem ?
+%gra:	1|4|NSUBJ 2|4|COP 3|4|DET 4|0|ROOT 5|4|PUNCT
+*CHI:	uno aquí y otro aquí .
+%mor:	pron|uno-Ind-S1 adv|aquí cconj|y pron|otro-Ind-S1 adv|aquí .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|4|CC 4|1|CONJ 5|1|CONJ 6|1|PUNCT
+*MOT:	ah (.) esa cama es un poco pequeña para dormir dos (.) me parece (.) eh (.) Eider ?
+%mor:	x|ah det|ese-Fem-Def-Dem-Sing noun|cama-Fem aux|ser-Fin-Ind-Pres-S3 det|uno-Masc-Ind-Art-Sing pron|poco-Ind-S1 adj|pequeño-S1 adp|para verb|dormir-Inf-S num|dos pron|yo-Prs-Dat-S1 verb|parecer-Fin-Ind-Pres-S3 propn|eh propn|Eider ?
+%gra:	1|7|NSUBJ 2|3|DET 3|7|NSUBJ 4|7|COP 5|7|ADVMOD 6|5|FIXED 7|0|ROOT 8|9|MARK 9|7|ADVCL 10|12|NSUBJ 11|12|OBL-ARG 12|7|ADVCL 13|12|NSUBJ 14|13|FLAT 15|7|PUNCT
+*CHI:	oye Marta éste dónde va ?
+%mor:	verb|oír-Fin-Ind-Pres-S3 propn|Marta pron|este-Dem-S1 adv|dónde verb|ir-Fin-Ind-Pres-S3 ?
+%gra:	1|0|ROOT 2|1|NSUBJ 3|1|NSUBJ 4|5|ADVMOD 5|2|ACL-RELCL 6|1|PUNCT
+*MOT:	ah (.) dónde tú quieras .
+%mor:	intj|ah adv|dónde pron|tú-Prs-Nom-S2 verb|querer-Fin-Ind-Pres-S1 .
+%gra:	1|4|DEP 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*INV:	dónde tú quieras Eider .
+%mor:	adv|dónde pron|tú-Prs-Nom-S2 verb|querer-Fin-Ind-Pres-S1 propn|Eider .
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|3|NSUBJ 5|3|PUNCT
+*MOT:	claro (.) búscale una cama .
+%mor:	adj|claro-S1 noun|búscale-Masc det|uno-Fem-Ind-Art-Sing noun|cama-Fem .
+%gra:	1|2|AMOD 2|0|ROOT 3|4|DET 4|2|NSUBJ 5|2|PUNCT
+*MOT:	si no tiene búscale .
+%mor:	sconj|si adv|no verb|tener-Fin-Ind-Pres-S3 noun|búscale-Masc-Acc .
+%gra:	1|3|MARK 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	tienes otra cama ?
+%mor:	verb|tener-Fin-Ind-Pres-S1 det|otro-Fem-Def-Ind-Sing noun|cama-Fem-Acc ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	esto [//] (.) no hay más que esto Eider .
+%mor:	adv|no verb|haber-Fin-Ind-Pres-S3 adv|más sconj|que pron|este-Dem-S1 propn|Eider .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|ADVMOD 4|5|CASE 5|2|OBL 6|5|APPOS 7|2|PUNCT
+*MOT:	aquí hay alguna otra cama ?
+%mor:	adv|aquí verb|haber-Fin-Ind-Pres-S3 det|alguno-Fem-Def-Ind-Sing det|otro-Fem-Def-Ind-Sing noun|cama-Fem-Acc ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|5|DET 4|5|DET 5|2|OBJ 6|2|PUNCT
+*CHI:	<pues aquí está eso> [<] .
+%mor:	sconj|pues adv|aquí aux|estar-Fin-Ind-Pres-S3 pron|ese-Dem-S1 .
+%gra:	1|3|MARK 2|3|ADVMOD 3|0|ROOT 4|3|NSUBJ 5|3|PUNCT
+*MOT:	<pues por ejemplo> [>] .
+%mor:	sconj|pues adp|por noun|ejemplo-Masc .
+%gra:	1|2|MARK 2|0|ROOT 3|2|FIXED 4|2|PUNCT
+*MOT:	oye si no tienes sitio tampoco está mal que duerma ahí .
+%mor:	verb|oír-Fin-Ind-Pres-S3 sconj|si adv|no verb|tener-Fin-Ind-Pres-S1 noun|sitio-Masc-Acc adv|tampoco aux|estar-Fin-Ind-Pres-S3 adv|mal pron|que-Rel-S1 verb|duerma-Fin-Sub-Pres-S3 adv|ahí .
+%gra:	1|0|ROOT 2|4|MARK 3|4|ADVMOD 4|1|ADVCL 5|4|OBJ 6|7|ADVMOD 7|1|CCOMP 8|1|CCOMP 9|10|MARK 10|7|CCOMP 11|10|ADVMOD 12|1|PUNCT
+*CHI:	pues en la mesa dormía ese .
+%mor:	sconj|pues adp|en det|el-Fem-Def-Art-Sing noun|mesa-Fem verb|dormir-Fin-Ind-Imp-S3 pron|ese-Dem-S1 .
+%gra:	1|5|MARK 2|4|CASE 3|4|DET 4|5|OBL 5|0|ROOT 6|5|NSUBJ 7|5|PUNCT
+*MOT:	no .
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	en la mesa (.) claro .
+%mor:	adp|en det|el-Fem-Def-Art-Sing noun|mesa-Fem adj|claro-S1 .
+%gra:	1|3|CASE 2|3|DET 3|0|ROOT 4|3|AMOD 5|3|PUNCT
+*MOT:	pues muy bien (.) no ?
+%mor:	sconj|pues adv|mucho adv|bien adv|no ?
+%gra:	1|3|MARK 2|3|ADVMOD 3|4|ADVMOD 4|0|ROOT 5|4|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	ay (.) muy bien .
+%mor:	intj|ay adv|mucho adv|bien .
+%gra:	1|3|DEP 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	y éstos estaban ahí .
+%mor:	cconj|y pron|este-Dem-P1 aux|estar-Fin-Ind-Imp-P3 adv|ahí .
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*MOT:	porqué dices (.) Eider ?
+%mor:	sconj|porqué verb|decir-Fin-Ind-Pres-S1 propn|Eider ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|NSUBJ 4|2|PUNCT
+*CHI:	porque hay otro sitio aquí .
+%mor:	sconj|porque verb|haber-Fin-Ind-Pres-S3 det|otro-Masc-Def-Ind-Sing noun|sitio-Masc-Acc adv|aquí .
+%gra:	1|2|MARK 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|ADVMOD 6|2|PUNCT
+*MOT:	hay otro sitio ?
+%mor:	verb|haber-Fin-Ind-Pres-S3 det|otro-Masc-Def-Ind-Sing noun|sitio-Masc-Acc ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	sí (.) mira .
+%mor:	intj|sí verb|mirar-Fin-Ind-Pres-S3 .
+%gra:	1|2|ADVCL 2|0|ROOT 3|2|PUNCT
+*MOT:	pues igual caben ahí todos .
+%mor:	sconj|pues adv|igual verb|caber-Fin-Ind-Pres-P3 adv|ahí pron|todo-Tot-P1 .
+%gra:	1|3|MARK 2|3|ADVMOD 3|0|ROOT 4|3|ADVMOD 5|3|NSUBJ 6|3|PUNCT
+*MOT:	no se (.) eh ?
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 verb|eh-Fin-Ind-Pres-S1 ?
+%gra:	1|3|ADVMOD 2|3|EXPL-PV 3|0|ROOT 4|3|PUNCT
+*MOT:	esa cama no se si es muy grande .
+%mor:	det|ese-Fem-Def-Dem-Sing noun|cama-Fem adv|no pron|él-Prs-Acc-reflx-S3 sconj|si aux|ser-Fin-Ind-Pres-S3 adv|mucho adj|grande-S1 .
+%gra:	1|2|DET 2|8|NSUBJ 3|8|ADVMOD 4|8|EXPL-PV 5|8|MARK 6|8|COP 7|8|ADVMOD 8|0|ROOT 9|8|PUNCT
+*CHI:	hay uno .
+%mor:	verb|haber-Fin-Ind-Pres-S3 pron|uno-Ind-S1 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	hay uno ?
+%mor:	verb|haber-Fin-Ind-Pres-S3 pron|uno-Ind-S1 ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	ya está .
+%mor:	adv|ya aux|estar-Fin-Ind-Pres-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	ya está durmiendo ?
+%mor:	adv|ya aux|estar-Fin-Ind-Pres-S3 verb|dormir-Ger-S ?
+%gra:	1|3|ADVMOD 2|3|AUX 3|0|ROOT 4|3|PUNCT
+*MOT:	y eso la xxx ?
+%mor:	cconj|y pron|ese-Dem-S1 pron|él-Prs-Acc-S3 ?
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	eh ?
+%mor:	x|eh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	la xxx y la zaldia@s también ?
+%mor:	det|el-Fem-Def-Art-Sing cconj|y det|el-Fem-Def-Art-Sing noun|zaldia adv|también ?
+%gra:	1|0|ROOT 2|4|CC 3|4|DET 4|1|CONJ 5|1|ADVMOD 6|1|PUNCT
+*MOT:	esos que duermen también ahí ?
+%mor:	pron|ese-Dem-P1 pron|que-Rel-S1 verb|duermar-Fin-Ind-Pres-P3 adv|también adv|ahí ?
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|ACL 4|5|ADVMOD 5|3|ADVMOD 6|1|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	ah (.) muy bien .
+%mor:	intj|ah adv|mucho adv|bien .
+%gra:	1|3|DEP 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	y qué ahí van a dormir o les vas a meter en algún sitio ?
+%mor:	cconj|y pron|qué-Int-S1 adv|ahí verb|ir-Fin-Ind-Pres-P3 adp|a verb|dormir-Inf-S cconj|o pron|él-Prs-Dat-P3 verb|ir-Fin-Ind-Pres-S1 adp|a verb|meter-Inf-S adp|en det|alguno-Masc-Def-Ind-Sing noun|sitio-Masc ?
+%gra:	1|4|CC 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|9|CC 8|9|OBL-ARG 9|4|CONJ 10|11|MARK 11|9|XCOMP 12|14|CASE 13|14|DET 14|9|OBL 15|4|PUNCT
+*CHI:	los voy a meter en el balcón .
+%mor:	pron|él-Prs-Acc-P3 verb|ir-Fin-Ind-Pres-S1 adp|a verb|meter-Inf-S adp|en det|el-Masc-Def-Art-Sing noun|balcón-Masc .
+%gra:	1|2|OBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|7|CASE 6|7|DET 7|4|OBL 8|2|PUNCT
+*MOT:	sí pues igual dentro (.) no (.) porque si hace frío (.) chica .
+%mor:	intj|sí sconj|pues adv|igual adv|dentro adv|no sconj|porque sconj|si verb|hacer-Fin-Ind-Pres-S3 noun|frío-Masc-Acc adj|chica-S1 .
+%gra:	1|0|ROOT 2|1|MARK 3|4|ADVMOD 4|1|ADVMOD 5|4|ADVMOD 6|8|MARK 7|8|MARK 8|4|ADVCL 9|8|OBJ 10|9|AMOD 11|1|PUNCT
+*CHI:	ahí (.) los voy a meter aquí .
+%mor:	adv|ahí pron|él-Prs-Acc-P3 verb|ir-Fin-Ind-Pres-S1 adp|a verb|meter-Inf-S adv|aquí .
+%gra:	1|3|ADVMOD 2|3|OBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|3|ADVMOD 7|3|PUNCT
+*MOT:	ahí .
+%mor:	adv|ahí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	ese quién es ?
+%mor:	pron|ese-Dem-S1 pron|quién-Int-S1 aux|ser-Fin-Ind-Pres-S3 ?
+%gra:	1|3|NSUBJ 2|1|NSUBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	el padre o cómo me dijiste ?
+%mor:	det|el-Masc-Def-Art-Sing noun|padre-Masc cconj|o pron|cómo-Ind-S1 pron|yo-Prs-Dat-S1 verb|dijistir-Fin-Ind-Pres-S1 ?
+%gra:	1|2|DET 2|0|ROOT 3|6|CC 4|6|OBL 5|6|OBJ 6|2|CONJ 7|2|PUNCT
+*MOT:	mira esas parecen gemelas .
+%mor:	verb|mirar-Fin-Ind-Pres-S3 pron|ese-Dem-P1 verb|parecer-Fin-Ind-Pres-P3 adj|gemelo-P1 .
+%gra:	1|3|ADVCL 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|3|PUNCT
+*CHI:	quién ?
+%mor:	pron|quién-Int-S1 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	esas que has metido como tus amigas (.) eh Eider .
+%mor:	pron|ese-Dem-P1 pron|que-Rel-S1 aux|haber-Fin-Ind-Pres-S2 verb|meter-Part-Past-S sconj|como det|tu-Def-Prs-Plur-S noun|amiga-Fem-Plur propn|eh propn|Eider .
+%gra:	1|0|ROOT 2|4|OBJ 3|4|AUX 4|1|ACL-RELCL 5|7|CASE 6|7|DET 7|4|OBL 8|7|APPOS 9|8|FLAT 10|1|PUNCT
+*CHI:	y se echaban (.) vale ?
+%mor:	cconj|y pron|él-Prs-Acc-reflx-S3 verb|echar-Fin-Ind-Imp-P3 verb|valer-Fin-Ind-Pres-S3 ?
+%gra:	1|3|CC 2|3|EXPL-PV 3|0|ROOT 4|3|XCOMP 5|3|PUNCT
+*MOT:	eh ?
+%mor:	x|eh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	y se echaban .
+%mor:	cconj|y pron|él-Prs-Acc-reflx-S3 verb|echar-Fin-Ind-Imp-P3 .
+%gra:	1|3|CC 2|3|EXPL-PV 3|0|ROOT 4|3|PUNCT
+*MOT:	se echaban ?
+%mor:	pron|él-Prs-Acc-reflx-S3 verb|echar-Fin-Ind-Imp-P3 ?
+%gra:	1|2|EXPL-PV 2|0|ROOT 3|2|PUNCT
+*MOT:	ah (.) vale .
+%mor:	intj|ah verb|valer-Fin-Ind-Pres-S3 .
+%gra:	1|2|DEP 2|0|ROOT 3|2|PUNCT
+*CHI:	y todos para [//] la cabeza para abajo (.) vale .
+%mor:	cconj|y det|todo-Masc-Def-Tot-Plur det|el-Fem-Def-Art-Sing noun|cabeza-Fem adp|para adv|abajo verb|valer-Fin-Ind-Pres-S3 .
+%gra:	1|7|CC 2|3|DET 3|4|DET 4|7|NSUBJ 5|6|CASE 6|4|ADVMOD 7|0|ROOT 8|7|PUNCT
+*MOT:	ah (.) como tú quieras oye si es tu casa y tus juguetes .
+%mor:	intj|ah sconj|como pron|tú-Prs-Nom-S2 verb|querer-Fin-Ind-Pres-S1 verb|oír-Fin-Ind-Pres-S3 sconj|si aux|ser-Fin-Ind-Pres-S3 det|tu-Def-Prs-Sing-S noun|casa-Fem cconj|y det|tu-Def-Prs-Plur-S noun|juguete-Masc-Plur .
+%gra:	1|5|DEP 2|4|MARK 3|4|NSUBJ 4|5|ADVCL 5|0|ROOT 6|9|MARK 7|9|COP 8|9|DET 9|5|CCOMP 10|12|CC 11|12|DET 12|9|CONJ 13|5|PUNCT
+*MOT:	les gusta dormir con la cabeza para abajo ?
+%mor:	pron|él-Prs-Dat-P3 verb|gustar-Fin-Ind-Pres-S3 verb|dormir-Inf-S adp|con det|el-Fem-Def-Art-Sing noun|cabeza-Fem adp|para adv|abajo ?
+%gra:	1|2|OBL-ARG 2|0|ROOT 3|2|CSUBJ 4|6|CASE 5|6|DET 6|3|OBL 7|8|CASE 8|6|ADVMOD 9|2|PUNCT
+*MOT:	pues muy bien .
+%mor:	sconj|pues adv|mucho adv|bien .
+%gra:	1|3|MARK 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	y el aita@s ?
+%mor:	cconj|y det|el-Masc-Def-Art-Sing noun|aita ?
+%gra:	1|3|CC 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	muy bien .
+%mor:	adv|mucho adv|bien .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	xxx .
+*MOT:	y hasta cuando duermen ?
+%mor:	cconj|y adp|hasta sconj|cuando verb|duermar-Fin-Ind-Pres-P3 ?
+%gra:	1|4|CC 2|4|MARK 3|4|MARK 4|0|ROOT 5|4|PUNCT
+*MOT:	cuánto van a dormir ahí ?
+%mor:	pron|cuánto-Ind-S1 verb|ir-Fin-Ind-Pres-P3 adp|a verb|dormir-Inf-S adv|ahí ?
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|2|ADVMOD 6|2|PUNCT
+*CHI:	a [/] hasta [/-] y ya .
+%mor:	cconj|y adv|ya .
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*MOT:	pues venga (.) es hora de levantarse .
+%mor:	sconj|pues verb|venir-Fin-Sub-Pres-S3 aux|ser-Fin-Ind-Pres-S3 noun|hora-Fem adp|de verb|levantar-Inf-S~pron|él-Prs-Acc-reflx-S3 .
+%gra:	1|2|MARK 2|4|ADVCL 3|4|COP 4|0|ROOT 5|6|MARK 6|4|ACL 7|6|EXPL-PV 8|4|PUNCT
+*CHI:	y se iban a_ver el garaje .
+%com:	abre el garaje
+%mor:	cconj|y pron|él-Prs-Acc-reflx-S3 verb|ir-Fin-Ind-Imp-P3 verb|aver-Inf-S det|el-Masc-Def-Art-Sing noun|garaje-Masc-Acc .
+%gra:	1|3|CC 2|3|EXPL-PV 3|0|ROOT 4|3|XCOMP 5|6|DET 6|4|OBJ 7|3|PUNCT
+*MOT:	<a dónde se iban> [/] a dónde se iban Eider ?
+%mor:	adp|a adv|dónde pron|él-Prs-Acc-reflx-S3 verb|ir-Fin-Ind-Imp-P3 propn|Eider ?
+%gra:	1|2|CASE 2|4|ADVMOD 3|4|EXPL-PV 4|0|ROOT 5|4|NSUBJ 6|4|PUNCT
+*CHI:	y los padres y los niños todavía estaban durmiendo (.) vale ?
+%mor:	cconj|y det|el-Masc-Def-Art-Plur noun|padre-Masc-Plur cconj|y det|el-Masc-Def-Art-Plur noun|niño-Masc-Plur adv|todavía aux|estar-Fin-Ind-Imp-P3 verb|dormir-Ger-S verb|valer-Fin-Ind-Pres-S3 ?
+%gra:	1|9|CC 2|3|DET 3|9|NSUBJ 4|6|CC 5|6|DET 6|3|CONJ 7|9|ADVMOD 8|9|AUX 9|0|ROOT 10|9|XCOMP 11|9|PUNCT
+*MOT:	ah (.) vale y entonces quién se va a levantar (.) quién ?
+%mor:	intj|ah verb|valer-Fin-Ind-Pres-S3 cconj|y adv|entonces pron|quién-Int-S1 pron|él-Prs-Acc-reflx-S3 verb|ir-Fin-Ind-Pres-S3 adp|a verb|levantar-Inf-S pron|quién-Int-S1 ?
+%gra:	1|2|DEP 2|0|ROOT 3|7|CC 4|7|ADVMOD 5|7|NSUBJ 6|7|EXPL-PV 7|2|CONJ 8|9|MARK 9|7|XCOMP 10|7|NSUBJ 11|2|PUNCT
+*CHI:	el padre y la madre .
+%mor:	det|el-Masc-Def-Art-Sing noun|padre-Masc cconj|y det|el-Fem-Def-Art-Sing noun|madre-Fem .
+%gra:	1|2|DET 2|0|ROOT 3|5|CC 4|5|DET 5|2|CONJ 6|2|PUNCT
+*MOT:	ah (.) el padre y la madre (.) bien .
+%mor:	intj|ah det|el-Masc-Def-Art-Sing noun|padre-Masc cconj|y det|el-Fem-Def-Art-Sing noun|madre-Fem adv|bien .
+%gra:	1|3|DEP 2|3|DET 3|0|ROOT 4|6|CC 5|6|DET 6|3|CONJ 7|3|ADVMOD 8|3|PUNCT
+*CHI:	y el coche lo van a sacar vale (.) los chicos ?
+%mor:	cconj|y det|el-Masc-Def-Art-Sing noun|coche-Masc pron|él-Prs-Acc-S3 verb|ir-Fin-Ind-Pres-P3 adp|a verb|sacar-Inf-S verb|valer-Fin-Ind-Pres-S3 det|el-Masc-Def-Art-Plur noun|chico-Masc-Plur ?
+%gra:	1|5|CC 2|3|DET 3|5|NSUBJ 4|5|OBJ 5|0|ROOT 6|7|MARK 7|5|XCOMP 8|5|XCOMP 9|10|DET 10|8|NSUBJ 11|5|PUNCT
+*MOT:	dónde van (.) en el coche ?
+%mor:	adv|dónde verb|ir-Fin-Ind-Pres-P3 adp|en det|el-Masc-Def-Art-Sing noun|coche-Masc ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|2|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	papá y mamá .
+%mor:	noun|papá-Masc cconj|y noun|mamá-Fem .
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|1|PUNCT
+*MOT:	papá y mamá a dónde van ?
+%mor:	noun|papá-Masc cconj|y noun|mamá-Fem adp|a adv|dónde verb|ir-Fin-Ind-Pres-P3 ?
+%gra:	1|0|ROOT 2|3|CC 3|1|CONJ 4|5|CASE 5|6|ADVMOD 6|1|ACL-RELCL 7|1|PUNCT
+*CHI:	y luego hay que quitarlos .
+%mor:	cconj|y adv|luego verb|haber-Fin-Ind-Pres-S3 sconj|que verb|quitar-Inf-S~pron|él-Prs-Acc-P3 .
+%gra:	1|5|CC 2|3|ADVMOD 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|3|PUNCT
+*MOT:	hay tres .
+%mor:	verb|haber-Fin-Ind-Pres-S3 num|tres .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*CHI:	hay que quitar dos sillas y ya está .
+%mor:	verb|haber-Fin-Ind-Pres-S3 sconj|que verb|quitar-Inf-S num|dos noun|silla-Fem-Plur-Acc cconj|y adv|ya aux|estar-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|3|MARK 3|1|XCOMP 4|5|NUMMOD 5|3|OBJ 6|8|CC 7|8|ADVMOD 8|1|CONJ 9|1|PUNCT
+*MOT:	hay que quitar dos sillas porqué ?
+%mor:	verb|haber-Fin-Ind-Pres-S3 sconj|que verb|quitar-Inf-S num|dos noun|silla-Fem-Plur-Acc adv|porqué ?
+%gra:	1|0|ROOT 2|3|MARK 3|1|XCOMP 4|5|NUMMOD 5|3|OBJ 6|3|ADVMOD 7|1|PUNCT
+*CHI:	porque sí .
+%mor:	sconj|porque intj|sí .
+%gra:	1|2|MARK 2|0|ROOT 3|2|PUNCT
+*MOT:	ah (.) bueno pues bien si tu quieres quitar pues ya está .
+%mor:	adv|ah adj|buen-S1 sconj|pues adv|bien sconj|si pron|tu-Prs-Dat-S2 verb|querer-Fin-Ind-Pres-S1 verb|quitar-Inf-S sconj|pues adv|ya verb|estar-Fin-Ind-Pres-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|7|MARK 4|2|ADVMOD 5|7|MARK 6|7|NSUBJ 7|2|ADVCL 8|7|XCOMP 9|11|MARK 10|11|ADVMOD 11|2|ADVCL 12|2|PUNCT
+*MOT:	y esos en el coche a dónde van ?
+%mor:	cconj|y pron|ese-Dem-P1 adp|en det|el-Masc-Def-Art-Sing noun|coche-Masc adp|a adv|dónde verb|ir-Fin-Ind-Pres-P3 ?
+%gra:	1|2|CC 2|8|NSUBJ 3|5|CASE 4|5|DET 5|2|NMOD 6|7|CASE 7|8|ADVMOD 8|0|ROOT 9|8|PUNCT
+*CHI:	a_ver los caballos y las ardias@s (.) mira .
+%mor:	verb|aver-Fin-S det|el-Masc-Def-Art-Plur noun|caballo-Masc-Plur-Acc cconj|y det|el-Fem-Def-Art-Plur noun|ardias verb|mirar-Fin-Ind-Pres-S3 .
+%gra:	1|7|CSUBJ 2|3|DET 3|1|OBJ 4|6|CC 5|6|DET 6|3|CONJ 7|0|ROOT 8|7|PUNCT
+*MOT:	y las qué ?
+%mor:	cconj|y det|el-Fem-Def-Art-Plur pron|qué-Int-S1 ?
+%gra:	1|3|CC 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	cómo le has llamado a eso ?
+%mor:	pron|cómo-Ind-S1 pron|él-Prs-Dat-S3 aux|haber-Fin-Ind-Pres-S2 verb|llamar-Part-Past-S adp|a pron|ese-Dem-S1 ?
+%gra:	1|4|OBL 2|4|EXPL 3|4|AUX 4|0|ROOT 5|6|CASE 6|4|OBL 7|4|PUNCT
+*CHI:	[- zho] ardias .
+%mor:	x|ardias .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	eh ?
+%mor:	x|eh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	[- zho] ardias .
+%mor:	x|ardias .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	ardias@s sí pero en castellano cómo se llaman ?
+%mor:	noun|ardias intj|sí cconj|pero adp|en noun|castellano-Masc pron|cómo-Ind-S1 pron|él-Prs-Acc-reflx-S3 verb|llamar-Fin-Ind-Pres-P3 ?
+%gra:	1|0|ROOT 2|1|ADVCL 3|8|CC 4|5|CASE 5|8|OBL 6|8|OBL 7|8|EXPL-PV 8|1|CONJ 9|1|PUNCT
+*CHI:	no se .
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	no sabes ?
+%mor:	adv|no verb|saber-Fin-Ind-Pres-S1 ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	ovejas .
+%mor:	noun|oveja-Fem-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	ovejas .
+%mor:	noun|oveja-Fem-Plur .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	ovejas se llaman .
+%mor:	noun|oveja-Fem-Plur pron|él-Prs-Acc-reflx-S3 verb|llamar-Fin-Ind-Pres-P3 .
+%gra:	1|3|NSUBJ 2|3|EXPL-PV 3|0|ROOT 4|3|PUNCT
+*CHI:	había ovejas .
+%mor:	verb|haber-Fin-Ind-Imp-S3 noun|oveja-Fem-Plur-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	había ovejas (.) vale .
+%mor:	verb|haber-Fin-Ind-Imp-S3 noun|oveja-Fem-Plur-Acc verb|valer-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|OBJ 4|1|PUNCT
+*CHI:	vamos a_ver ovejas .
+%mor:	verb|ir-Fin-Ind-Pres-P1 verb|aver-Inf-S noun|oveja-Fem-Plur-Acc .
+%gra:	1|0|ROOT 2|1|XCOMP 3|2|OBJ 4|1|PUNCT
+*MOT:	chica pues qué bien (.) no ?
+%mor:	noun|chica-Fem sconj|pues det|qué-Def-Int adv|bien adv|no ?
+%gra:	1|0|ROOT 2|4|MARK 3|4|DET 4|1|ADVMOD 5|1|ADVMOD 6|1|PUNCT
+*MOT:	se van los aitas@s .
+%mor:	pron|él-Prs-Acc-reflx-S3 verb|ir-Fin-Ind-Pres-P3 det|el-Masc-Def-Art-Plur noun|aitas .
+%gra:	1|2|EXPL-PV 2|0|ROOT 3|4|DET 4|2|NSUBJ 5|2|PUNCT
+*MOT:	que bien se lo van a pasar .
+%mor:	sconj|que adv|bien pron|él-Prs-Acc-reflx-S3 pron|él-Prs-Acc-S3 verb|ir-Fin-Ind-Pres-P3 adp|a verb|pasar-Inf-S .
+%gra:	1|5|MARK 2|5|ADVMOD 3|5|EXPL-PV 4|5|OBJ 5|0|ROOT 6|7|MARK 7|5|XCOMP 8|5|PUNCT
+*CHI:	y luego abren la puerta .
+%mor:	cconj|y adv|luego verb|abrir-Fin-Ind-Pres-P3 det|el-Fem-Def-Art-Sing noun|puerta-Fem-Acc .
+%gra:	1|3|CC 2|3|ADVMOD 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*MOT:	ah (.) se van a meter ahí ?
+%mor:	intj|ah pron|él-Prs-Acc-reflx-S3 verb|ir-Fin-Ind-Pres-P3 adp|a verb|meter-Inf-S adv|ahí ?
+%gra:	1|3|OBL 2|3|EXPL-PV 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|3|ADVMOD 7|3|PUNCT
+*MOT:	chica pues yo no se si van a pasar .
+%mor:	noun|chica-Fem sconj|pues pron|yo-Prs-Nom-S1 adv|no pron|él-Prs-Acc-reflx-S3 sconj|si verb|ir-Fin-Ind-Pres-P3 adp|a verb|pasar-Inf-S .
+%gra:	1|0|ROOT 2|7|MARK 3|7|NSUBJ 4|7|ADVMOD 5|1|EXPL-PV 6|7|MARK 7|1|ACL 8|9|MARK 9|7|XCOMP 10|1|PUNCT
+*CHI:	ahí va le pega al aita@s el gorro en el garaje .
+%mor:	adv|ahí verb|ir-Fin-Ind-Pres-S3 pron|él-Prs-Dat-S3 verb|pegar-Fin-Ind-Pres-S3 adp|a~det|el-Masc-Def-Art-Sing adp|aita det|el-Masc-Def-Art-Sing noun|gorro-Masc-Acc adp|en det|el-Masc-Def-Art-Sing noun|garaje-Masc .
+%gra:	1|2|ADVMOD 2|4|ADVCL 3|4|EXPL 4|0|ROOT 5|7|CASE 6|7|DET 7|4|CASE 8|9|DET 9|4|OBJ 10|12|CASE 11|12|DET 12|4|OBL 13|4|PUNCT
+*CHI:	va a entrar .
+%mor:	verb|ir-Fin-Ind-Pres-S3 adp|a verb|entrar-Inf-S .
+%gra:	1|0|ROOT 2|3|MARK 3|1|XCOMP 4|1|PUNCT
+*MOT:	chica pues ahí no se si se lo van a pasar muy bien (.) Eider .
+%mor:	noun|chica-Fem sconj|pues adv|ahí adv|no pron|él-Prs-Acc-reflx-S3 sconj|si pron|él-Prs-Acc-reflx-S3 pron|él-Prs-Acc-S3 verb|ir-Fin-Ind-Pres-P3 adp|a verb|pasar-Inf-S adv|mucho adv|bien propn|Eider-Acc .
+%gra:	1|0|ROOT 2|9|MARK 3|9|ADVMOD 4|9|ADVMOD 5|9|EXPL-PV 6|9|MARK 7|9|EXPL-PV 8|11|OBJ 9|1|ADVCL 10|11|MARK 11|9|XCOMP 12|13|ADVMOD 13|11|ADVMOD 14|11|OBJ 15|1|PUNCT
+*CHI:	aparcan el coche y ya está .
+%mor:	verb|aparcar-Fin-Ind-Pres-P3 det|el-Masc-Def-Art-Sing noun|coche-Masc-Acc cconj|y adv|ya aux|estar-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|6|CC 5|6|ADVMOD 6|1|CONJ 7|1|PUNCT
+*MOT:	ah (.) aparcan dentro el coche .
+%mor:	x|ah verb|aparcar-Fin-Ind-Pres-P3 adv|dentro det|el-Masc-Def-Art-Sing noun|coche-Masc-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|5|DET 5|2|OBJ 6|2|PUNCT
+*CHI:	y luego les saco por un lado .
+%mor:	cconj|y adv|luego pron|él-Prs-Dat-P3 verb|saco-Fin-Ind-Pres-S3 adp|por det|uno-Masc-Ind-Art-Sing noun|lado-Masc .
+%gra:	1|4|CC 2|4|ADVMOD 3|4|OBL-ARG 4|0|ROOT 5|7|CASE 6|7|DET 7|4|OBL 8|4|PUNCT
+*MOT:	y luego (.) ah (.) luego les sacas .
+%mor:	cconj|y adv|luego adp|a~cconj|e adv|luego pron|él-Prs-Dat-P3 verb|saca-Fin-Ind-Pres-P1 .
+%gra:	1|7|CC 2|7|ADVMOD 3|7|MARK 4|7|CC 5|7|ADVMOD 6|7|OBL-ARG 7|0|ROOT 8|7|PUNCT
+*CHI:	por aquí .
+%com:	la puerta trasera del garaje
+%mor:	adp|por adv|aquí .
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*MOT:	ah (.) por ahí también se abre ?
+%mor:	intj|ah adp|por adv|ahí adv|también pron|él-Prs-Acc-reflx-S3 verb|abrir-Fin-Ind-Pres-S3 ?
+%gra:	1|6|DEP 2|3|CASE 3|6|ADVMOD 4|6|ADVMOD 5|6|EXPL-PV 6|0|ROOT 7|6|PUNCT
+*CHI:	mira .
+%mor:	verb|mirar-Fin-Ind-Pres-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	ah (.) si no había visto .
+%mor:	intj|ah sconj|si adv|no aux|haber-Fin-Ind-Imp-S3 verb|ver-Part-Past-S .
+%gra:	1|5|DEP 2|5|MARK 3|5|ADVMOD 4|5|AUX 5|0|ROOT 6|5|PUNCT
+*MOT:	oh (.) chica vaya casa más chula .
+%mor:	x|oh noun|chica-Fem verb|ir-Fin-Sub-Pres-S3 noun|casa-Fem-Acc adv|más adj|chulo-S1 .
+%gra:	1|2|AMOD 2|3|NSUBJ 3|0|ROOT 4|3|OBJ 5|6|ADVMOD 6|4|AMOD 7|3|PUNCT
+*MOT:	no puedes salir o qué ?
+%mor:	adv|no aux|poder-Fin-Ind-Pres-S2 verb|salir-Inf-S cconj|o pron|qué-Int-S1 ?
+%gra:	1|3|ADVMOD 2|3|AUX 3|0|ROOT 4|5|CC 5|3|CONJ 6|3|PUNCT
+*MOT:	despacio no te hagas daño .
+%mor:	adv|despacio adv|no pron|tú-Prs-Dat-S2 verb|hagar-Fin-Ind-Pres-S1 noun|daño-Masc-Acc .
+%gra:	1|4|ADVMOD 2|4|ADVMOD 3|4|OBL-ARG 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*MOT:	te ayudo ?
+%mor:	pron|tú-Prs-Dat-S2 verb|ayudo-Fin-Ind-Pres-S1 ?
+%gra:	1|2|EXPL-PV 2|0|ROOT 3|2|PUNCT
+*CHI:	he sacado a uno .
+%com:	un muñeco .
+%mor:	aux|haber-Fin-Ind-Pres-S1 verb|sacar-Part-Past-S adp|a pron|uno-Ind-S1 .
+%gra:	1|2|AUX 2|0|ROOT 3|4|CASE 4|2|OBL 5|2|PUNCT
+*MOT:	sí (.) es que <el aita@s> [//] como el aita@s da con la cabeza arriba pues igual te ayudo un poco .
+%mor:	intj|sí aux|ser-Fin-Ind-Pres-S3 sconj|que sconj|como det|el-Masc-Def-Art-Sing noun|aita verb|dar-Fin-Ind-Pres-S3 adp|con det|el-Fem-Def-Art-Sing noun|cabeza-Fem adv|arriba sconj|pues adv|igual pron|tú-Prs-Dat-S2 verb|ayudo-Fin-Ind-Pres-S1 det|uno-Masc-Ind-Art-Sing pron|poco-Ind-S1 .
+%gra:	1|2|ADVCL 2|0|ROOT 3|15|MARK 4|7|MARK 5|6|DET 6|7|NSUBJ 7|15|ADVCL 8|10|CASE 9|10|DET 10|7|OBL 11|10|ADVMOD 12|15|MARK 13|15|ADVMOD 14|15|EXPL-PV 15|2|ADVCL 16|15|ADVMOD 17|16|FIXED 18|2|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	igual tienes que sacar el coche .
+%mor:	adv|igual verb|tener-Fin-Ind-Pres-S1 sconj|que verb|sacar-Inf-S det|el-Masc-Def-Art-Sing noun|coche-Masc-Acc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|CC 4|2|CONJ 5|6|DET 6|4|OBJ 7|2|PUNCT
+*MOT:	saca el coche porque si no me parece que no va a poder salir porque ese gorro tan grande (.) chica .
+%mor:	verb|sacar-Fin-Ind-Pres-S3 det|el-Masc-Def-Art-Sing noun|coche-Masc-Acc sconj|porque sconj|si adv|no pron|yo-Prs-Dat-S1 verb|parecer-Fin-Ind-Pres-S3 sconj|que adv|no verb|ir-Fin-Ind-Pres-S3 adp|a aux|poder-Inf-S verb|salir-Inf-S sconj|porque det|ese-Masc-Def-Dem-Sing noun|gorro-Masc adv|tanto adj|grande-S1 noun|chica-Fem .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|8|MARK 5|8|MARK 6|8|ADVMOD 7|8|OBL-ARG 8|1|ADVCL 9|11|MARK 10|11|ADVMOD 11|8|CSUBJ 12|14|MARK 13|14|AUX 14|11|XCOMP 15|20|MARK 16|17|DET 17|14|NSUBJ 18|19|ADVMOD 19|17|AMOD 20|17|AMOD 21|1|PUNCT
+*MOT:	no se yo (.) eh ?
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 pron|yo-Prs-Nom-S1 intj|eh ?
+%gra:	1|3|ADVMOD 2|3|EXPL-PV 3|0|ROOT 4|3|FLAT 5|3|PUNCT
+*CHI:	ahora aquí estaban y <ahora se metían> [/] ahora se metían y luego nadie venía por la puerta .
+%mor:	adv|ahora adv|aquí verb|estar-Fin-Ind-Imp-P3 cconj|y adv|ahora pron|él-Prs-Acc-reflx-S3 verb|meter-Fin-Ind-Imp-P3 cconj|y adv|luego pron|nadie-Neg-S1 verb|venir-Fin-Ind-Imp-S3 adp|por det|el-Fem-Def-Art-Sing noun|puerta-Fem .
+%gra:	1|3|ADVMOD 2|3|ADVMOD 3|0|ROOT 4|7|CC 5|7|ADVMOD 6|7|EXPL-PV 7|3|CONJ 8|11|CC 9|11|ADVMOD 10|11|NSUBJ 11|3|CONJ 12|14|CASE 13|14|DET 14|11|OBL 15|3|PUNCT
+*MOT:	y qué [/] qué ?
+%mor:	cconj|y pron|qué-Int-S1 ?
+%gra:	1|2|CC 2|0|ROOT 3|2|PUNCT
+*CHI:	ama ?
+%mor:	verb|amar-Fin-Ind-Pres-S3 ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	Eider qué pasa ?
+%mor:	propn|Eider pron|qué-Int-S1 verb|pasar-Fin-Ind-Pres-S3 ?
+%gra:	1|3|NSUBJ 2|3|NSUBJ 3|0|ROOT 4|3|PUNCT
+*CHI:	que saca a los papás .
+%mor:	pron|que-Rel-S1 verb|sacar-Fin-Ind-Pres-S3 adp|a det|el-Masc-Def-Art-Plur noun|papás-Masc-Plur-Acc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBJ 6|2|PUNCT
+*MOT:	qué los saca ?
+%mor:	pron|qué-Int-S1 pron|él-Prs-Acc-P3 verb|sacar-Fin-Ind-Pres-S3 ?
+%gra:	1|3|NSUBJ 2|3|OBJ 3|0|ROOT 4|3|PUNCT
+*MOT:	bien y ?
+%mor:	adv|bien cconj|y ?
+%gra:	1|0|ROOT 2|1|PUNCT 3|1|PUNCT
+*MOT:	están aquí .
+%mor:	aux|estar-Fin-Ind-Pres-P3 adv|aquí .
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|PUNCT
+*CHI:	porque hay una puerta aquí .
+%mor:	sconj|porque verb|haber-Fin-Ind-Pres-S3 det|uno-Fem-Ind-Art-Sing noun|puerta-Fem-Acc adv|aquí .
+%gra:	1|2|MARK 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|ADVMOD 6|2|PUNCT
+*MOT:	ah (.) pues mejor que entren por la puerta mejor que por la ventana (.) o qué te parece ?
+%mor:	intj|ah sconj|pues adj|mejor-Cmp-S1 sconj|que verb|entrar-Fin-Sub-Pres-P3 adp|por det|el-Fem-Def-Art-Sing noun|puerta-Fem adj|mejor-Cmp-S1 sconj|que adp|por det|el-Fem-Def-Art-Sing noun|ventana-Fem cconj|o pron|qué-Int-S1 pron|tú-Prs-Dat-S2 verb|parecer-Fin-Ind-Pres-S3 ?
+%gra:	1|3|DEP 2|3|MARK 3|0|ROOT 4|5|MARK 5|3|CSUBJ 6|8|CASE 7|8|DET 8|5|OBL 9|8|AMOD 10|13|MARK 11|13|CASE 12|13|DET 13|9|NMOD 14|17|CC 15|17|NSUBJ 16|17|OBL-ARG 17|5|CONJ 18|3|PUNCT
+*MOT:	y se abre esa puerta ?
+%mor:	cconj|y pron|él-Prs-Acc-reflx-S3 verb|abrir-Fin-Ind-Pres-S3 det|ese-Fem-Def-Dem-Sing noun|puerta-Fem ?
+%gra:	1|3|CC 2|3|EXPL-PASS 3|0|ROOT 4|5|DET 5|3|NSUBJ 6|3|PUNCT
+*CHI:	a_ver .
+%mor:	x|aver .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	ah (.) muy bien .
+%mor:	intj|ah adv|mucho adv|bien .
+%gra:	1|3|DEP 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	cuidado que se va a hacer un chichón ese amatxo@s .
+%mor:	noun|cuidado-Masc pron|que-Rel-S1 pron|él-Prs-Acc-reflx-S3 verb|ir-Fin-Ind-Pres-S3 adp|a verb|hacer-Inf-S det|uno-Masc-Ind-Art-Sing noun|chichón-Masc-Acc det|ese-Masc-Def-Dem-Sing noun|amatxo .
+%gra:	1|0|ROOT 2|4|MARK 3|4|EXPL-PV 4|1|ACL-RELCL 5|6|MARK 6|4|XCOMP 7|8|DET 8|6|OBJ 9|10|DET 10|6|OBJ 11|1|PUNCT
+*MOT:	oh (.) chica pues ahí mejor que entren por la puerta (.) o qué te parece ?
+%com:	CHI toca el timbre
+%mor:	intj|oh noun|chica-Fem sconj|pues adv|ahí adj|mejor-Cmp-S1 sconj|que verb|entrar-Fin-Sub-Pres-P3 adp|por det|el-Fem-Def-Art-Sing noun|puerta-Fem cconj|o pron|qué-Int-S1 pron|tú-Prs-Dat-S2 verb|parecer-Fin-Ind-Pres-S3 ?
+%gra:	1|2|DEP 2|0|ROOT 3|5|MARK 4|5|ADVMOD 5|2|AMOD 6|7|MARK 7|5|CSUBJ 8|10|CASE 9|10|DET 10|7|OBL 11|14|CC 12|14|NSUBJ 13|14|OBL-ARG 14|7|CONJ 15|2|PUNCT
+*CHI:	a_ver (.) llamaban al timbre .
+%mor:	propn|aver verb|llamar-Fin-Ind-Imp-P3 adp|a~det|el-Masc-Def-Art-Sing noun|timbre-Masc .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|5|CASE 4|5|DET 5|2|OBL 6|2|PUNCT
+*MOT:	tocan el timbre ?
+%mor:	verb|tocar-Fin-Ind-Pres-P3 det|el-Masc-Def-Art-Sing noun|timbre-Masc-Acc ?
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*CHI:	mira hay un timbre .
+%mor:	verb|mirar-Fin-Ind-Pres-S verb|haber-Fin-Ind-Pres-S3 det|uno-Masc-Ind-Art-Sing noun|timbre-Masc-Acc .
+%gra:	1|2|ADVCL 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|PUNCT
+*CHI:	has oído ?
+%mor:	aux|haber-Fin-Ind-Pres-S2 verb|oír-Part-Past-S ?
+%gra:	1|2|AUX 2|0|ROOT 3|2|PUNCT
+*MOT:	no (.) a_ver ?
+%mor:	adv|no x|aver ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	mira .
+%mor:	verb|mirar-Fin-Ind-Pres-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	ah (.) no [/] no había oído .
+%mor:	intj|ah adv|no aux|haber-Fin-Ind-Imp-S3 verb|oír-Part-Past-S .
+%gra:	1|4|DEP 2|4|ADVMOD 3|4|AUX 4|0|ROOT 5|4|PUNCT
+*CHI:	mira [/] mira .
+%com:	lo toca
+%mor:	verb|mirar-Fin-Ind-Pres-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	bueno chica pero ya tanto tocar el timbre .
+%mor:	adj|buen-S1 noun|chica-Fem cconj|pero adv|ya pron|tanto-Dem-S1 verb|tocar-Inf-S det|el-Masc-Def-Art-Sing noun|timbre-Masc-Acc .
+%gra:	1|2|AMOD 2|0|ROOT 3|6|CC 4|6|ADVMOD 5|6|ADVMOD 6|2|CONJ 7|8|DET 8|6|OBJ 9|2|PUNCT
+*MOT:	no les abre nadie o qué la puerta ?
+%mor:	adv|no pron|él-Prs-Dat-P3 verb|abrir-Fin-Ind-Pres-S3 pron|nadie-Neg-S1 cconj|o pron|qué-Int-S1 det|el-Fem-Def-Art-Sing noun|puerta-Fem ?
+%gra:	1|3|ADVMOD 2|3|OBL-ARG 3|0|ROOT 4|3|NSUBJ 5|8|CC 6|8|NSUBJ 7|8|DET 8|4|CONJ 9|3|PUNCT
+*CHI:	no porque están durmiendo todos .
+%mor:	adv|no sconj|porque aux|estar-Fin-Ind-Pres-P3 verb|dormir-Ger-S pron|todo-Tot-P1 .
+%gra:	1|4|ADVMOD 2|4|MARK 3|4|AUX 4|0|ROOT 5|4|NSUBJ 6|4|PUNCT
+*MOT:	y no tienen llave o qué ?
+%mor:	cconj|y adv|no verb|tener-Fin-Ind-Pres-P3 noun|llave-Fem-Acc cconj|o pron|qué-Int-S1 ?
+%gra:	1|3|CC 2|3|ADVMOD 3|0|ROOT 4|3|OBJ 5|6|CC 6|4|CONJ 7|3|PUNCT
+*CHI:	no .
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	me_cachis (.) pues entonces no van a poder entrar (.) o qué va a pasar (.) eh ?
+%mor:	noun|mecachis-Masc sconj|pues adv|entonces adv|no verb|ir-Fin-Ind-Pres-P3 adp|a aux|poder-Inf-S verb|entrar-Inf-S cconj|o pron|qué-Int-S1 verb|ir-Fin-Ind-Pres-S3 adp|a verb|pasar-Inf-S intj|eh ?
+%gra:	1|0|ROOT 2|5|MARK 3|5|ADVMOD 4|5|ADVMOD 5|1|ADVCL 6|8|MARK 7|8|AUX 8|5|XCOMP 9|11|CC 10|11|NSUBJ 11|8|CONJ 12|13|MARK 13|11|XCOMP 14|13|OBJ 15|1|PUNCT
+*MOT:	dime .
+%mor:	intj|dime .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	mira .
+%mor:	verb|mirar-Fin-Ind-Pres-S .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	ah (.) pues ya han entra(d)o (.) muy bien .
+%mor:	intj|ah sconj|pues adv|ya aux|haber-Fin-Ind-Pres-P3 verb|entrar-Part-Past-S adv|mucho adv|bien .
+%gra:	1|5|DEP 2|5|MARK 3|5|ADVMOD 4|5|AUX 5|0|ROOT 6|7|ADVMOD 7|5|ADVMOD 8|5|PUNCT
+*CHI:	<y luego> [/] y luego se cierra esta puerta .
+%mor:	cconj|y adv|luego pron|él-Prs-Acc-reflx-S3 verb|cerrar-Fin-Ind-Pres-S3 det|este-Fem-Def-Dem-Sing noun|puerta-Fem .
+%gra:	1|4|CC 2|4|ADVMOD 3|4|EXPL-PV 4|0|ROOT 5|6|DET 6|4|NSUBJ 7|4|PUNCT
+*MOT:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	se tienen que ir .
+%mor:	pron|él-Prs-Acc-reflx-S3 verb|tener-Fin-Ind-Pres-P3 sconj|que verb|ir-Inf-S .
+%gra:	1|4|EXPL-PV 2|0|ROOT 3|4|CC 4|2|CONJ 5|2|PUNCT
+*MOT:	se tienen que ir otra vez ?
+%mor:	pron|él-Prs-Acc-reflx-S3 verb|tener-Fin-Ind-Pres-P3 sconj|que verb|ir-Inf-S det|otro-Fem-Def-Ind-Sing noun|vez-Fem ?
+%gra:	1|4|EXPL-PV 2|0|ROOT 3|4|CC 4|2|CONJ 5|6|DET 6|4|OBL 7|2|PUNCT
+*MOT:	a dónde van pues ?
+%mor:	adp|a adv|dónde verb|ir-Fin-Ind-Pres-P3 sconj|pues ?
+%gra:	1|2|CASE 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT 5|3|PUNCT
+*CHI:	ahora a su casa .
+%mor:	adv|ahora adp|a det|su-Def-Prs-Sing noun|casa-Fem .
+%gra:	1|0|ROOT 2|4|CASE 3|4|DET 4|1|NMOD 5|1|PUNCT
+*MOT:	y los chiquitos <dónde van Eider> [//] a dónde van Eider ?
+%mor:	cconj|y det|el-Masc-Def-Art-Plur noun|chiquito-Masc-Plur adp|a adv|dónde verb|ir-Fin-Ind-Pres-P3 propn|Eider ?
+%gra:	1|6|CC 2|3|DET 3|6|NSUBJ 4|5|CASE 5|6|ADVMOD 6|0|ROOT 7|6|NSUBJ 8|6|PUNCT
+*MOT:	dime .
+%mor:	intj|dime .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	pues se van a su casa .
+%mor:	sconj|pues pron|él-Prs-Acc-reflx-S3 verb|ir-Fin-Ind-Pres-P3 adp|a det|su-Def-Prs-Sing noun|casa-Fem .
+%gra:	1|3|MARK 2|3|EXPL-PV 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*MOT:	pues se van hasta su casa ?
+%mor:	sconj|pues pron|él-Prs-Acc-reflx-S3 verb|ir-Fin-Ind-Pres-P3 adp|hasta det|su-Def-Prs-Sing noun|casa-Fem ?
+%gra:	1|3|MARK 2|3|EXPL-PV 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|3|PUNCT
+*MOT:	ah (.) no .
+%mor:	intj|ah adv|no .
+%gra:	1|2|DEP 2|0|ROOT 3|2|PUNCT
+*MOT:	yo pensaba que vivían aquí .
+%mor:	pron|yo-Prs-Nom-S1 verb|pensar-Fin-Ind-Imp-S3 sconj|que verb|vivir-Fin-Ind-Imp-P3 adv|aquí .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|4|MARK 4|2|CCOMP 5|4|ADVMOD 6|2|PUNCT
+*CHI:	iban aquí y +...
+%mor:	verb|ir-Fin-Ind-Imp-P3 adv|aquí cconj|y +...
+%gra:	1|0|ROOT 2|1|ADVMOD 3|1|CC 4|1|PUNCT
+*MOT:	<y qué> [/] y qué cariño ?
+%mor:	cconj|y det|qué-Def-Int noun|cariño-Masc ?
+%gra:	1|3|CC 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	otra vez al garaje ?
+%mor:	det|otro-Fem-Def-Ind-Sing noun|vez-Fem adp|a~det|el-Masc-Def-Art-Sing noun|garaje-Masc ?
+%gra:	1|2|DET 2|0|ROOT 3|5|CASE 4|5|DET 5|2|NMOD 6|2|PUNCT
+*MOT:	di .
+%mor:	propn|dar .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	ya está .
+%mor:	adv|ya aux|estar-Fin-Ind-Pres-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	<niñito chiquitito> [/] niñito chiquitito .
+%mor:	noun|niñito-Masc adj|chiquitito-S1 .
+%gra:	1|0|ROOT 2|1|AMOD 3|1|PUNCT
+*CHI:	niñito .
+%mor:	noun|niñito-Masc .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	qué se va a despertar o qué ?
+%mor:	pron|qué-Int-S1 pron|él-Prs-Acc-reflx-S3 verb|ir-Fin-Ind-Pres-S3 adp|a verb|despertar-Inf-S cconj|o pron|qué-Int-S1 ?
+%gra:	1|3|NSUBJ 2|3|EXPL-PV 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|CC 7|3|CONJ 8|3|PUNCT
+*CHI:	no .
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	eh (.) dime cariño .
+%mor:	intj|eh verb|decir-Fin-Ind-Pres-S1 noun|cariño-Masc-Acc .
+%gra:	1|2|OBJ 2|0|ROOT 3|2|OBJ 4|2|PUNCT
+*CHI:	el papá .
+%mor:	det|el-Masc-Def-Art-Sing noun|papá-Masc .
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	ah (.) el papá ahora (.) a_ver ?
+%mor:	intj|ah det|el-Masc-Def-Art-Sing noun|papá-Masc adv|ahora noun|aver ?
+%gra:	1|3|DEP 2|3|DET 3|5|NSUBJ 4|5|ADVMOD 5|0|ROOT 6|5|PUNCT
+*MOT:	a_ver (.) ese papá .
+%mor:	verb|aver-Fin-S det|ese-Masc-Def-Dem-Sing noun|papá-Masc-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	ese con ese gorro no se que va a hacer (.) eh Eider ?
+%mor:	pron|ese-Dem-S1 adp|con det|ese-Masc-Def-Dem-Sing noun|gorro-Masc adv|no pron|él-Prs-Acc-reflx-S3 pron|que-Rel-S1 verb|ir-Fin-Ind-Pres-S3 adp|a verb|hacer-Inf-S propn|eh propn|Eider-Acc ?
+%gra:	1|8|NSUBJ 2|4|CASE 3|4|DET 4|1|NMOD 5|8|ADVMOD 6|8|EXPL-PV 7|8|MARK 8|0|ROOT 9|10|MARK 10|8|XCOMP 11|12|DET 12|10|OBJ 13|8|PUNCT
+*MOT:	di .
+%mor:	propn|dar .
+%gra:	1|0|ROOT 2|1|PUNCT
+*CHI:	ahora entran .
+%mor:	adv|ahora verb|entrar-Fin-Ind-Pres-P3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	por dónde ?
+%mor:	adp|por adv|dónde ?
+%gra:	1|2|CASE 2|0|ROOT 3|2|PUNCT
+*CHI:	por aquí (.) vale ama ?
+%mor:	adp|por adv|aquí verb|valer-Fin-Ind-Pres-S3 noun|ama-Fem ?
+%gra:	1|2|CASE 2|3|ADVMOD 3|0|ROOT 4|3|NSUBJ 5|3|PUNCT
+*MOT:	por dónde tú quieras ?
+%mor:	adp|por adv|dónde pron|tú-Prs-Nom-S2 verb|querer-Fin-Ind-Pres-S1 ?
+%gra:	1|2|CASE 2|4|ADVMOD 3|4|NSUBJ 4|0|ROOT 5|4|PUNCT
+*CHI:	ves cómo ?
+%mor:	verb|ver-Fin-Ind-Pres-S1 pron|cómo-Ind-S1 ?
+%gra:	1|0|ROOT 2|1|OBL 3|1|PUNCT
+*MOT:	a_ver (.) qué van a por los chiquitos o qué van ?
+%mor:	verb|aver-Fin-S pron|qué-Int-S1 verb|ir-Fin-Ind-Pres-P3 adp|a adp|por det|el-Masc-Def-Art-Plur noun|chiquito-Masc-Plur cconj|o pron|qué-Int-S1 verb|ir-Fin-Ind-Pres-P3 ?
+%gra:	1|0|ROOT 2|3|NSUBJ 3|1|CCOMP 4|7|CASE 5|7|CASE 6|7|DET 7|3|OBL 8|10|CC 9|10|NSUBJ 10|3|CONJ 11|1|PUNCT
+*MOT:	a dónde van ?
+%mor:	adp|a adv|dónde verb|ir-Fin-Ind-Pres-P3 ?
+%gra:	1|2|CASE 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*CHI:	ahora a por los chiquitos porque van a ir todos a los columpios .
+%mor:	adv|ahora adp|a adp|por det|el-Masc-Def-Art-Plur noun|chiquito-Masc-Plur sconj|porque verb|ir-Fin-Ind-Pres-P3 adp|a verb|ir-Inf-S pron|todo-Tot-P1 adp|a det|el-Masc-Def-Art-Plur noun|columpio-Masc-Plur .
+%gra:	1|0|ROOT 2|5|CASE 3|5|CASE 4|5|DET 5|1|NMOD 6|7|MARK 7|1|ADVCL 8|9|MARK 9|7|XCOMP 10|9|OBJ 11|13|CASE 12|13|DET 13|9|OBL 14|1|PUNCT
+*MOT:	oh (.) <que bien> [/] que bien se lo van a pasar .
+%mor:	intj|oh pron|que-Rel-S1 adv|bien pron|él-Prs-Acc-reflx-S3 pron|él-Prs-Acc-S3 verb|ir-Fin-Ind-Pres-P3 adp|a verb|pasar-Inf-S .
+%gra:	1|6|DEP 2|6|MARK 3|6|ADVMOD 4|6|EXPL-PV 5|8|OBJ 6|0|ROOT 7|8|MARK 8|6|XCOMP 9|6|PUNCT
+*CHI:	ama .
+%mor:	verb|amar-Fin-Ind-Pres-S3 .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	qué (.) a_ver ?
+%mor:	det|qué-Def-Int noun|aver ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	y el otro mamá ?
+%mor:	cconj|y det|el-Masc-Def-Art-Sing det|otro-Masc-Def-Ind-Sing noun|mamá-Fem ?
+%gra:	1|4|CC 2|4|DET 3|2|DET 4|0|ROOT 5|4|PUNCT
+*MOT:	qué otro ?
+%mor:	det|qué-Def-Int pron|otro-Ind-S1 ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	el aita@s ?
+%mor:	det|el-Masc-Def-Art-Sing noun|aita ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*MOT:	pues está ahí en la puerta .
+%mor:	sconj|pues aux|estar-Fin-Ind-Pres-S3 adv|ahí adp|en det|el-Fem-Def-Art-Sing noun|puerta-Fem .
+%gra:	1|2|MARK 2|0|ROOT 3|2|ADVMOD 4|6|CASE 5|6|DET 6|2|OBL 7|2|PUNCT
+*MOT:	sí [/] sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	cierra la puerta .
+%mor:	verb|cerrar-Fin-Ind-Pres-S3 det|el-Fem-Def-Art-Sing noun|puerta-Fem-Acc .
+%gra:	1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PUNCT
+*MOT:	a_ver a qué columpios van a ir (.) a_ver .
+%mor:	x|aver adp|a det|qué-Def-Int noun|columpio-Masc-Plur verb|ir-Fin-Ind-Pres-P3 adp|a verb|ir-Inf-S noun|aver-Acc .
+%gra:	1|5|DEP 2|4|CASE 3|4|DET 4|5|OBL 5|0|ROOT 6|7|MARK 7|5|XCOMP 8|7|OBJ 9|5|PUNCT
+*CHI:	pues tú no sabes ama .
+%mor:	sconj|pues pron|tú-Prs-Nom-S2 adv|no verb|saber-Fin-Ind-Pres-S1 verb|amar-Fin-Ind-Pres-S3 .
+%gra:	1|4|MARK 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|4|XCOMP 6|4|PUNCT
+*MOT:	no .
+%mor:	adv|no .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	yo no se .
+%mor:	pron|yo-Prs-Nom-S1 adv|no pron|él-Prs-Acc-reflx-S3 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	pues a_ver .
+%mor:	sconj|pues noun|aver .
+%gra:	1|2|MARK 2|0|ROOT 3|2|PUNCT
+*CHI:	ellos van aquí .
+%mor:	pron|él-Prs-Acc,Nom-P3 verb|ir-Fin-Ind-Pres-P3 adv|aquí .
+%gra:	1|2|NSUBJ 2|0|ROOT 3|2|ADVMOD 4|2|PUNCT
+*MOT:	el qué ?
+%mor:	det|el-Masc-Def-Art-Sing pron|qué-Int-S1 ?
+%gra:	1|2|DET 2|0|ROOT 3|2|PUNCT
+*CHI:	no se puede .
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 aux|poder-Fin-Ind-Pres-S3 .
+%gra:	1|3|ADVMOD 2|3|EXPL-PV 3|0|ROOT 4|3|PUNCT
+*MOT:	por ahí no se puede ?
+%mor:	adp|por adv|ahí adv|no pron|él-Prs-Acc-reflx-S3 aux|poder-Fin-Ind-Pres-S3 ?
+%gra:	1|2|CASE 2|5|ADVMOD 3|5|ADVMOD 4|5|EXPL-PV 5|0|ROOT 6|5|PUNCT
+*MOT:	a_ver (.) quiénes van a ir a los columpios ?
+%mor:	x|aver pron|quién-Int-P1 verb|ir-Fin-Ind-Pres-P3 adp|a verb|ir-Inf-S adp|a det|el-Masc-Def-Art-Plur noun|columpio-Masc-Plur ?
+%gra:	1|3|ADVMOD 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|8|CASE 7|8|DET 8|5|OBL 9|3|PUNCT
+*CHI:	eh (.) los tres .
+%mor:	intj|eh det|el-Masc-Def-Art-Plur num|tres .
+%gra:	1|3|DEP 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	tres ?
+%mor:	num|tres ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	pues venga (.) a_ver quién va a ir ?
+%mor:	sconj|pues verb|venir-Fin-Sub-Pres-S3 verb|aver-Inf-S pron|quién-Int-S1 verb|ir-Fin-Ind-Pres-S3 adp|a verb|ir-Inf-S ?
+%gra:	1|2|MARK 2|0|ROOT 3|2|XCOMP 4|5|NSUBJ 5|3|CCOMP 6|7|MARK 7|5|XCOMP 8|2|PUNCT
+*MOT:	esos chiquitos van a ir ?
+%mor:	det|ese-Masc-Def-Dem-Plur noun|chiquito-Masc-Plur verb|ir-Fin-Ind-Pres-P3 adp|a verb|ir-Inf-S ?
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|3|PUNCT
+*MOT:	ahí va se va a caer ese crío .
+%mor:	adv|ahí verb|ir-Fin-Ind-Pres-S3 pron|él-Prs-Acc-reflx-S3 verb|ir-Fin-Ind-Pres-S3 adp|a verb|caer-Inf-S det|ese-Masc-Def-Dem-Sing noun|crío-Masc-Acc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|4|EXPL-PV 4|2|XCOMP 5|6|MARK 6|4|XCOMP 7|8|DET 8|6|OBJ 9|2|PUNCT
+*MOT:	ten cuidado .
+%mor:	verb|ten-Fin-Ind-Pres-S noun|cuidado-Masc-Acc .
+%gra:	1|0|ROOT 2|1|OBJ 3|1|PUNCT
+*MOT:	no se cae ?
+%mor:	adv|no pron|él-Prs-Acc-reflx-S3 verb|caer-Fin-Ind-Pres-S3 ?
+%gra:	1|3|ADVMOD 2|3|EXPL-PV 3|0|ROOT 4|3|PUNCT
+*MOT:	en los columpios están .
+%mor:	adp|en det|el-Masc-Def-Art-Plur noun|columpio-Masc-Plur aux|estar-Fin-Ind-Pres-P3 .
+%gra:	1|3|CASE 2|3|DET 3|4|OBL 4|0|ROOT 5|4|PUNCT
+*CHI:	éste se pone aquí .
+%mor:	pron|este-Dem-S1 pron|él-Prs-Acc-reflx-S3 verb|poner-Fin-Ind-Pres-S3 adv|aquí .
+%gra:	1|3|NSUBJ 2|3|EXPL-PV 3|0|ROOT 4|3|ADVMOD 5|3|PUNCT
+*MOT:	se ha sentado en el banco o dónde está ?
+%mor:	pron|él-Prs-Acc-reflx-S3 aux|haber-Fin-Ind-Pres-S3 verb|sentar-Part-Past-S adp|en det|el-Masc-Def-Art-Sing noun|banco-Masc cconj|o adv|dónde verb|estar-Fin-Ind-Pres-S3 ?
+%gra:	1|3|EXPL-PV 2|3|AUX 3|0|ROOT 4|6|CASE 5|6|DET 6|3|OBL 7|9|CC 8|9|ADVMOD 9|3|CONJ 10|3|PUNCT
+*MOT:	ah (.) que hay unos bancos ahí .
+%mor:	intj|ah pron|que-Rel-S1 verb|haber-Fin-Ind-Pres-S3 det|uno-Masc-Ind-Art-Plur noun|banco-Masc-Plur-Acc adv|ahí .
+%gra:	1|3|DEP 2|3|MARK 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|ADVMOD 7|3|PUNCT
+*MOT:	ah (.) muy bien (.) chica vaya parque así podría ser el tuyo un día .
+%mor:	x|ah adv|mucho adv|bien adj|chica-S1 verb|ir-Fin-Sub-Pres-S3 noun|parque-Masc-Acc adv|así aux|poder-Fin-Cnd-S3 aux|ser-Inf-S det|el-Masc-Def-Art-Sing noun|tuyo-Masc det|uno-Masc-Ind-Art-Sing noun|día-Masc .
+%gra:	1|5|NSUBJ 2|3|ADVMOD 3|4|ADVMOD 4|5|NSUBJ 5|0|ROOT 6|5|OBJ 7|11|ADVMOD 8|11|AUX 9|11|COP 10|11|DET 11|5|ADVCL 12|13|DET 13|11|NMOD 14|5|PUNCT
+*MOT:	pero no se mueven .
+%mor:	cconj|pero adv|no pron|él-Prs-Acc-reflx-S3 verb|mover-Fin-Ind-Pres-P3 .
+%gra:	1|4|ADVMOD 2|4|ADVMOD 3|4|EXPL-PV 4|0|ROOT 5|4|PUNCT
+*MOT:	no les dan sus aitas@s o qué ?
+%mor:	adv|no pron|él-Prs-Dat-P3 verb|dar-Fin-Ind-Pres-P3 det|su-Def-Prs-Plur noun|aitas cconj|o pron|qué-Int-S1 ?
+%gra:	1|3|ADVMOD 2|3|OBL-ARG 3|0|ROOT 4|5|DET 5|3|OBJ 6|7|CC 7|3|CONJ 8|3|PUNCT
+*CHI:	eh ?
+%mor:	x|eh ?
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	que no se mueven los columpios (.) chica ?
+%mor:	pron|que-Rel-S1 adv|no pron|él-Prs-Acc-reflx-S3 verb|mover-Fin-Ind-Pres-P3 det|el-Masc-Def-Art-Plur noun|columpio-Masc-Plur adj|chica-S1 ?
+%gra:	1|4|MARK 2|4|ADVMOD 3|4|EXPL-PASS 4|0|ROOT 5|6|DET 6|4|NSUBJ 7|6|AMOD 8|4|PUNCT
+*CHI:	les doy .
+%mor:	pron|él-Prs-Dat-P3 verb|dar-Fin-Ind-Pres-S1 .
+%gra:	1|2|OBL-ARG 2|0|ROOT 3|2|PUNCT
+*MOT:	no saben darse ?
+%mor:	adv|no verb|saber-Fin-Ind-Pres-P3 verb|dar-Inf-S~pron|él-Prs-Acc-reflx-S3 ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|XCOMP 4|3|EXPL-PV 5|2|PUNCT
+*CHI:	ya les voy a dar .
+%mor:	adv|ya pron|él-Prs-Dat-P3 verb|ir-Fin-Ind-Pres-S1 adp|a verb|dar-Inf-S .
+%gra:	1|3|ADVMOD 2|5|OBL-ARG 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|3|PUNCT
+*MOT:	eh (.) les vas a dar tú .
+%mor:	intj|eh pron|él-Prs-Dat-P3 verb|ir-Fin-Ind-Pres-S1 adp|a verb|dar-Inf-S pron|tú-Prs-Nom-S2 .
+%gra:	1|3|DEP 2|3|OBL-ARG 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|3|PUNCT
+*MOT:	bueno que alto .
+%mor:	adj|buen-S1 sconj|que adj|alto-S1 .
+%gra:	1|0|ROOT 2|3|MARK 3|1|AMOD 4|1|PUNCT
+*MOT:	ten cuidado (.) eh ?
+%mor:	verb|ten-Fin-Ind-Pres-S noun|cuidado-Masc-Acc x|eh ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|OBJ 4|1|PUNCT
+*CHI:	el columpio vamos a ponerlo aquí .
+%mor:	det|el-Masc-Def-Art-Sing noun|columpio-Masc verb|ir-Fin-Ind-Pres-P1 adp|a verb|poner-Inf-S~pron|él-Prs-Acc-S3 adv|aquí .
+%gra:	1|2|DET 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|5|OBJ 7|5|ADVMOD 8|3|PUNCT
+*MOT:	oh (.) si se ha caído de tan alto que le has dado .
+%mor:	intj|oh sconj|si pron|él-Prs-Acc-reflx-S3 aux|haber-Fin-Ind-Pres-S3 verb|caer-Part-Past-S adp|de adv|tanto adj|alto-S1 pron|que-Rel-S1 pron|él-Prs-Dat-S3 aux|haber-Fin-Ind-Pres-S2 verb|dar-Part-Past-S .
+%gra:	1|5|DEP 2|5|MARK 3|5|EXPL-PV 4|5|AUX 5|0|ROOT 6|8|CASE 7|8|ADVMOD 8|5|AMOD 9|12|MARK 10|12|OBL-ARG 11|12|AUX 12|8|ACL-RELCL 13|5|PUNCT
+*MOT:	ten cuidado chica .
+%mor:	verb|ten-Fin-Ind-Pres-S noun|cuidado-Masc-Acc adj|chica-S1 .
+%gra:	1|0|ROOT 2|1|OBJ 3|2|AMOD 4|1|PUNCT
+*CHI:	le ha dado su padre .
+%mor:	pron|él-Prs-Dat-S3 aux|haber-Fin-Ind-Pres-S3 verb|dar-Part-Past-S det|su-Def-Prs-Sing noun|padre-Masc-Acc .
+%gra:	1|3|OBL-ARG 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*MOT:	se va a hacer un chichón .
+%mor:	pron|él-Prs-Acc-reflx-S3 verb|ir-Fin-Ind-Pres-S3 adp|a verb|hacer-Inf-S det|uno-Masc-Ind-Art-Sing noun|chichón-Masc-Acc .
+%gra:	1|2|EXPL-PV 2|0|ROOT 3|4|MARK 4|2|XCOMP 5|6|DET 6|4|OBJ 7|2|PUNCT
+*MOT:	que ha ido su papá a cogerle ?
+%mor:	pron|que-Rel-S1 aux|haber-Fin-Ind-Pres-S3 verb|ir-Part-Past-S det|su-Def-Prs-Sing noun|papá-Masc-Acc adp|a verb|coger-Inf-S~pron|él-Prs-Dat-S3 ?
+%gra:	1|3|NSUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|7|MARK 7|3|ADVCL 8|7|OBL-ARG 9|3|PUNCT
+*MOT:	claro (.) le trae unos mimos .
+%mor:	adj|claro-S1 pron|él-Prs-Dat-S3 verb|traer-Fin-Ind-Pres-S3 det|uno-Masc-Ind-Art-Plur noun|mimo-Masc-Plur-Acc .
+%gra:	1|3|ADVMOD 2|3|EXPL 3|0|ROOT 4|5|DET 5|3|OBJ 6|3|PUNCT
+*CHI:	ya está ama .
+%mor:	adv|ya aux|estar-Fin-Ind-Pres-S3 adj|ama-S1 .
+%gra:	1|3|ADVMOD 2|3|COP 3|0|ROOT 4|3|PUNCT
+*MOT:	ya está y otra vez se va a montar ?
+%mor:	adv|ya aux|estar-Fin-Ind-Pres-S3 cconj|y det|otro-Fem-Def-Ind-Sing noun|vez-Fem pron|él-Prs-Acc-reflx-S3 verb|ir-Fin-Ind-Pres-S3 adp|a verb|montar-Inf-S ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|7|CC 4|5|DET 5|7|OBL 6|7|EXPL-PV 7|2|CONJ 8|9|MARK 9|7|XCOMP 10|2|PUNCT
+*MOT:	bueno pues <no le des tan fuerte (.) eh Eider> [//] no le des tan fuerte porque como otra vez se vuelva a caer .
+%mor:	adj|buen-S1 sconj|pues adv|no pron|él-Prs-Dat-S3 verb|des-Fin-Sub-Pres-S3 adv|tanto adj|fuerte-S1 sconj|porque sconj|como det|otro-Fem-Def-Ind-Sing noun|vez-Fem pron|él-Prs-Acc-reflx-S3 verb|volver-Fin-Sub-Pres-S3 adp|a verb|caer-Inf-S .
+%gra:	1|0|ROOT 2|5|MARK 3|5|ADVMOD 4|5|OBL-ARG 5|1|ADVCL 6|7|ADVMOD 7|5|XCOMP 8|13|MARK 9|11|CASE 10|11|DET 11|13|OBL 12|13|EXPL-PV 13|5|ADVCL 14|15|MARK 15|13|XCOMP 16|1|PUNCT
+*CHI:	ya está .
+%mor:	adv|ya aux|estar-Fin-Ind-Pres-S3 .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	y a los otros ?
+%mor:	cconj|y adp|a det|el-Masc-Def-Art-Plur pron|otro-Ind-P1 ?
+%gra:	1|4|CC 2|4|CASE 3|4|DET 4|0|ROOT 5|4|PUNCT
+*CHI:	los otros ahora voy a ponerlos .
+%mor:	det|el-Masc-Def-Art-Plur pron|otro-Ind-P1 adv|ahora verb|ir-Fin-Ind-Pres-S1 adp|a verb|poner-Inf-S~pron|él-Prs-Acc-P3 .
+%gra:	1|2|DET 2|4|NSUBJ 3|4|ADVMOD 4|0|ROOT 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|4|PUNCT
+*MOT:	ahora mismo ?
+%mor:	adv|ahora adj|mismo-S1 ?
+%gra:	1|0|ROOT 2|1|AMOD 3|1|PUNCT
+*MOT:	pero cuidado .
+%mor:	cconj|pero noun|cuidado-Masc .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*MOT:	ahí va <que alto> [/] que alto chica les estás dando .
+%mor:	adv|ahí verb|ir-Fin-Ind-Pres-S3 sconj|que adj|alto-S1 noun|chica-Fem pron|él-Prs-Dat-P3 aux|estar-Fin-Ind-Pres-S2 verb|dar-Ger-S .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|8|MARK 4|5|AMOD 5|8|NSUBJ 6|8|OBL-ARG 7|8|AUX 8|2|CSUBJ 9|2|PUNCT
+*MOT:	ten cuidado (.) eh ?
+%mor:	verb|ten-Fin-Ind-Pres-S noun|cuidado-Masc-Acc x|eh ?
+%gra:	1|0|ROOT 2|1|OBJ 3|1|OBJ 4|1|PUNCT
+*CHI:	ya está y ahora se van a la casita .
+%mor:	adv|ya verb|estar-Fin-Ind-Pres-S3 cconj|y adv|ahora pron|él-Prs-Acc-reflx-S3 verb|ir-Fin-Ind-Pres-P3 adp|a det|el-Fem-Def-Art-Sing noun|casita-Fem .
+%gra:	1|2|ADVMOD 2|0|ROOT 3|6|CC 4|6|ADVMOD 5|6|EXPL-PV 6|2|CONJ 7|9|CASE 8|9|DET 9|6|OBL 10|2|PUNCT
+*MOT:	a casa le dice ?
+%mor:	adp|a noun|casa-Fem pron|él-Prs-Dat-S3 verb|decir-Fin-Ind-Pres-S3 ?
+%gra:	1|2|CASE 2|4|OBL 3|4|OBL-ARG 4|0|ROOT 5|4|PUNCT
+*CHI:	y luego la ama .
+%mor:	cconj|y adv|luego det|el-Fem-Def-Art-Sing noun|ama-Fem .
+%gra:	1|4|CC 2|4|ADVMOD 3|4|DET 4|0|ROOT 5|4|PUNCT
+*MOT:	ha ido la madre a buscarlos ?
+%mor:	aux|haber-Fin-Ind-Pres-S3 verb|ir-Part-Past-S det|el-Fem-Def-Art-Sing noun|madre-Fem-Acc adp|a verb|buscar-Inf-S~pron|él-Prs-Acc-P3 ?
+%gra:	1|2|AUX 2|0|ROOT 3|4|DET 4|2|OBJ 5|6|MARK 6|2|ADVCL 7|6|OBJ 8|2|PUNCT
+*CHI:	que no quieren .
+%mor:	pron|que-Rel-S1 adv|no verb|querer-Fin-Ind-Pres-P3 .
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|PUNCT
+*MOT:	qué [//] que no quieren venir ?
+%mor:	pron|que-Rel-S1 adv|no verb|querer-Fin-Ind-Pres-P3 verb|venir-Inf-S ?
+%gra:	1|3|NSUBJ 2|3|ADVMOD 3|0|ROOT 4|3|XCOMP 5|3|PUNCT
+*MOT:	pues tendrá que ir a buscarlos .
+%mor:	sconj|pues verb|tener-Fin-Ind-Fut-S3 sconj|que verb|ir-Inf-S adp|a verb|buscar-Inf-S~pron|él-Prs-Acc-P3 .
+%gra:	1|2|MARK 2|0|ROOT 3|4|CC 4|2|CONJ 5|6|MARK 6|4|XCOMP 7|6|OBJ 8|2|PUNCT
+*MOT:	se lo está pasando tan bien (.) chica .
+%mor:	pron|él-Prs-Acc-reflx-S3 pron|él-Prs-Acc-S3 aux|estar-Fin-Ind-Pres-S3 verb|pasar-Ger-S adv|tanto adv|bien adj|chica-S1 .
+%gra:	1|4|EXPL-PV 2|4|OBJ 3|4|AUX 4|0|ROOT 5|6|ADVMOD 6|7|ADVMOD 7|4|XCOMP 8|4|PUNCT
+*MOT:	qué les dice ?
+%mor:	pron|qué-Int-S1 pron|él-Prs-Dat-P3 verb|decir-Fin-Ind-Pres-S3 ?
+%gra:	1|3|NSUBJ 2|3|OBL-ARG 3|0|ROOT 4|3|PUNCT
+*CHI:	les coge porque no quieren ir .
+%mor:	pron|él-Prs-Dat-P3 verb|coger-Fin-Ind-Pres-S3 sconj|porque adv|no verb|querer-Fin-Ind-Pres-P3 verb|ir-Inf-S .
+%gra:	1|2|OBL-ARG 2|0|ROOT 3|5|MARK 4|5|ADVMOD 5|2|ADVCL 6|5|XCOMP 7|2|PUNCT
+*MOT:	ah (.) no quieren ir y a dónde van dices ahora a casa ?
+%mor:	intj|ah adv|no verb|querer-Fin-Ind-Pres-P3 verb|ir-Inf-S cconj|y adp|a adv|dónde verb|ir-Fin-Ind-Pres-P3 verb|decir-Fin-Ind-Pres-P1 adv|ahora adp|a noun|casa-Fem ?
+%gra:	1|3|DEP 2|3|ADVMOD 3|0|ROOT 4|3|XCOMP 5|9|CC 6|7|CASE 7|8|ADVMOD 8|9|ADVCL 9|3|CONJ 10|9|ADVMOD 11|12|CASE 12|9|OBL 13|3|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	y qué van a hacer en casa ?
+%mor:	cconj|y pron|qué-Int-S1 verb|ir-Fin-Ind-Pres-P3 adp|a verb|hacer-Inf-S adp|en noun|casa-Fem ?
+%gra:	1|3|CC 2|3|NSUBJ 3|0|ROOT 4|5|MARK 5|3|XCOMP 6|7|CASE 7|3|OBL 8|3|PUNCT
+*CHI:	eh (.) su madre .
+%mor:	x|eh det|su-Def-Prs-Sing noun|madre-Fem .
+%gra:	1|3|DEP 2|3|DET 3|0|ROOT 4|3|PUNCT
+*MOT:	dónde van ?
+%mor:	adv|dónde verb|ir-Fin-Ind-Pres-P3 ?
+%gra:	1|2|ADVMOD 2|0|ROOT 3|2|PUNCT
+*CHI:	que me llamo Eider .
+%mor:	pron|que-Rel-S1 pron|yo-Prs-Dat-S1 verb|llamar-Fin-Ind-Pres-S1 propn|Eider .
+%gra:	1|3|MARK 2|3|EXPL-PV 3|0|ROOT 4|3|NSUBJ 5|3|PUNCT
+*MOT:	otra vez a dormir Eider ?
+%mor:	det|otro-Fem-Def-Ind-Sing noun|vez-Fem adp|a verb|dormir-Inf-S propn|Eider-Acc ?
+%gra:	1|2|DET 2|4|OBL 3|4|MARK 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+*CHI:	sí .
+%mor:	intj|sí .
+%gra:	1|0|ROOT 2|1|PUNCT
+*MOT:	ah (.) chica cuánto duermen estos críos (.) no ?
+%mor:	intj|ah noun|chica-Fem pron|cuánto-Ind-S1 verb|duermar-Fin-Ind-Pres-P3 det|este-Masc-Def-Dem-Plur noun|crío-Masc-Plur adv|no ?
+%gra:	1|2|DEP 2|0|ROOT 3|4|NSUBJ 4|2|CSUBJ 5|6|DET 6|4|NSUBJ 7|4|ADVMOD 8|2|PUNCT
+@End

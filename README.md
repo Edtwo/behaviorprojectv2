@@ -1,37 +1,33 @@
 # FirstWords
-_Science fair project - behavior research (collab with polaris242)._
+_ISEF project, Behavioral & Cognitive Sciences (Developmental Psychology)._
 
-An interpretable tool that estimates a young child's **language-developmental level** from a short
-speech sample and **flags likely language delay** - an accessible early-screening aid, built on the
-public CHILDES child-language database. ISEF project (Behavioral & Cognitive Sciences / Developmental
-Psychology).
+**Research question:** how little speech, and how little expertise, does it take to detect
+Developmental Language Disorder (DLD) in school-age children? DLD affects about 7% of children
+(about two per classroom) and is mostly missed; a full evaluation needs a specialist many families
+cannot reach. We test whether a few simple, explainable measures of a short speech sample can screen
+for it, using 1,100+ children from the public CHILDES database (included in `data/childes/`).
 
-> A "growth chart for language": a pediatrician plots height against age norms; FirstWords plots a
-> child's *talking* (sentence length, vocabulary, grammar) against age norms, and flags kids who look
-> behind - so families can seek help sooner.
+## Main results (all child-independent: no child is ever in both training and testing)
+| Hypothesis | Result |
+|---|---|
+| The signal is language, not age or how much the child talks | ROC-AUC **0.86** [0.81-0.91] on 345 held-out ENNI children; age alone 0.42, transcript length alone 0.49 |
+| It works as a screen | Cutoff chosen inside the training folds only: catches **91%** (68/75) of children with DLD, clears 64% of typical children; at 7% prevalence it clears 6 in 10 children, 98% of them correctly |
+| About 10 sentences are enough | AUC 0.82 from 10 utterances; 0.85 even with 40% of words transcribed wrong |
+| No grammar coding is needed | Words-only screen AUC 0.857 vs 0.861 with morpheme coding |
+| It transfers to other labs | No retraining: Gillam (USA, 664 children) AUC 0.80; Conti-Ramsden (UK, 118 teens) 0.70. A cutoff recalibrated from 30 local typical children catches ~80% at Gillam |
+| It gives the same answer twice | Split-half reliability 0.90 |
 
-## Status (2026-07-18)
-Both signals verified, and **Stages 2 (core level estimator) and 3 (delay classifier) are built and
-validated child-independently**:
-- **Core estimator** (Brown + ENNI-TD, 499 files, 281 distinct children, 18-120 mo): ridge regression
-  predicts a child's age from transcript features with **MAE 11.2 months, R² 0.76, child-independent**
-  (GroupKFold by child; predict-mean baseline MAE 27.1).
-- **Delay classifier** (ENNI, TD vs SLI, same task): **ROC-AUC 0.861** [0.81–0.91], child-independent
-  (StratifiedGroupKFold by child). Crucially, **age alone (AUC 0.42) and transcript length alone
-  (0.49) are at/below chance** — the signal is genuinely linguistic, not an artifact. At a screening
-  threshold: 91% sensitivity, 65% specificity.
-- **Age-gap score**: TD children ≈ 0; SLI children's estimated language age lags ~16 months (d ≈ 1.0).
+Also: as accurate as a 3,000-feature text model (0.82, overlapping intervals) while explaining every
+decision; an age-normed growth chart (9.7% of typical children fall below the 10th percentile, target 10%);
+an equity audit (vocabulary measures over-flag typically developing Black children, 31% vs 14%;
+sentence length shows no significant gap); language measures also track age in German and Cantonese.
+Limits we state: a screening aid, not a diagnosis; validated for ages 4-10; the recording path is a
+prototype not yet tested on real child audio; an individual "language age" at 4-10 is only good to
+about +-13 months, so the readout leads with the growth-chart percentile.
 
-**Interpretability + demo + extensions (done):** SHAP drivers + an age-normed per-child readout
-(Stage 4); a paste-a-transcript screening **demo** (Stage 5: `.venv/bin/python src/stage5_demo.py --demo`);
-a language **growth chart** (percentile curves, well-calibrated); **cross-corpus external validation**
-on Conti-Ramsden 4 (AUC 0.70, no refit); **short-sample robustness** (AUC 0.82 at just 10 utterances);
-and a **fairness audit** (sex/age subgroups). See the handoff (Sections 0b, 9, 10).
-
-**October 2026:** the screen holds up to transcription errors (AUC 0.85 with 40% of words wrong), gives
-consistent answers (split-half reliability 0.90), and runs as a **browser-based web demo** (`web/`;
-transcript, typed sentences, or a recording transcribed on-device). Current state, board and demo
-details: PROJECT_HANDOFF.md **Section 0d**. Pitch + judging plan: [`docs/PITCH.md`](docs/PITCH.md).
+**Demo:** a browser-based prototype (`web/`) screens a transcript, typed sentences, or a recording
+transcribed on the device. Full current state: PROJECT_HANDOFF.md **Section 0d**. Pitch and judging
+plan: [`docs/PITCH.md`](docs/PITCH.md). Team ownership exercise: [`exercises/`](exercises/reimplement_classifier/README.md).
 
 ## Learn the project
 - [`docs/EXPLAINER.md`](docs/EXPLAINER.md) — teaches the whole project from scratch: the science
@@ -69,6 +65,8 @@ details: PROJECT_HANDOFF.md **Section 0d**. Pitch + judging plan: [`docs/PITCH.m
 │   ├── demo_server.py              # Offline backup demo app (localhost:5050)
 │   ├── audio_screen.py             # Record-and-screen prototype (faster-whisper)
 │   ├── export_web_model.py         # Trains + exports the words-only model for the web demo
+│   ├── ext_operating_point.py      # Strict cutoff (chosen in training folds), outside-lab recalibration
+│   ├── ext_level_by_range.py       # Language-age accuracy within each age range
 │   ├── ext_asr_stress.py           # Transcription-error stress test
 │   ├── ext_reliability.py          # Split-half reliability
 │   ├── ext_fairness_ethnicity.py   # Ethnicity fairness audit on Gillam (interview only)
@@ -86,19 +84,24 @@ details: PROJECT_HANDOFF.md **Section 0d**. Pitch + judging plan: [`docs/PITCH.m
 │   └── verify_pipeline.py          # no-download smoke test of the CHAT->features pipeline
 ├── web/                    # Browser web demo (index.html, app.js, model.json); web/models/ gitignored
 ├── scripts/                # fetch_web_model.sh (speech model files for the web demo)
-├── docs/                   # EXPLAINER, METHODS_WALKTHROUGH, READING_LIST, PITCH, ISEF_SCORECARD, INTERVIEW_DRILL
-├── data/                   # (gitignored) CHILDES corpora: Brown (TD), ENNI (TD+SLI)
-└── results/                # (gitignored) outputs / figures
+├── docs/                   # EXPLAINER, METHODS_WALKTHROUGH, READING_LIST, PITCH, ISEF_SCORECARD, BOARD_REVIEW, INTERVIEW_DRILL
+├── data/childes/           # the public CHILDES corpora used (CC BY-NC-SA; see data/README.md)
+├── exercises/              # ownership exercise: rebuild the classifier yourself
+└── results/                # outputs (gitignored) except poster/ figures + summary CSVs
 ```
 
 ## Setup
 ```bash
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
-# Download CHILDES corpora (free TalkBank account) into data/childes/  (Brown, ENNI, ...)
-.venv/bin/python src/stage1_check.py     # confirm the signals on your data
+# the CHILDES data is already in data/childes/ - no download needed
+.venv/bin/python src/stage2_level_estimator.py   # builds results/features.csv (needed by most scripts)
+.venv/bin/python src/stage3_delay_classifier.py  # headline delay result (AUC 0.861)
+.venv/bin/python src/ext_operating_point.py      # strict cutoff + outside-lab recalibration
 ```
 
 ## Data
-CHILDES via TalkBank (https://childes.talkbank.org) - free account required to download; de-identified;
-used under TalkBank terms. Corpora are NOT committed (gitignored). See PROJECT_HANDOFF.md Section 4.
+CHILDES via TalkBank (https://talkbank.org/childes/), de-identified child-language transcripts, used
+under the CC BY-NC-SA license. The corpora the project uses are included in `data/childes/`; read
+[`data/README.md`](data/README.md) for the license, required citations, and the rule against any
+attempt to identify a child.
