@@ -38,7 +38,7 @@ measured, honest answers, including where each one stops working. That matters m
 6. **Prior work comparison.** A BEHA judge who knows Gabani et al. (2009) may ask how your accuracy compares. *Fix:* look up their reported numbers in the paper (do not quote from memory) and have one honest sentence ready: same corpus, different goal (interpretable, artifact-controlled, words-only, works from audio).
 7. **Language age is weak inside 4-10 years (ISS-24).** MAE 13.1 months, R² 0.39 within ENNI; the 0.81 headline spans 1.5-10 years. The demo now leads with the growth-chart percentile. Never say "accurate to 10 months" about one school-age child.
 8. **Data privacy.** The committed CHILDES files include children's birthdates and locations; a private repo is safer (ISS-27, team decision).
-9. **Poster density.** Ten figures plus tiles. Judges spend ~1 minute on the board before talking. Consider dropping fig5 or fig9 to the interview binder.
+9. **Poster density.** Still dense (Section 5 has 4 tiles + 3 figures). fig5 and fig9 are already swapped out (BOARD_REVIEW.md); consider dropping one Section 5 tile.
 
 ## What was added in November 2026 (all reproducible, scripts in `src/`)
 
