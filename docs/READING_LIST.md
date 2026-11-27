@@ -88,6 +88,20 @@ institutional access to the journals (JSLHR = *Journal of Speech, Language, and 
   approach for detecting language impairment in children. *(NAACL / BioNLP)*.** → A canonical paper on
   **machine detection of SLI from transcripts**. Your project is the accessible, artifact-controlled,
   interpretable version of this line of work. Read it to place yourself in the literature honestly.
+  - **Journal version, verified via PubMed (2026-11-26):** Gabani, K., Solorio, T., Liu, Y., Hassanali, K.-N.,
+    & Dollaghan, C. A. (2011). Exploring a corpus-based approach for detecting language impairment in monolingual
+    English-speaking children. *Artificial Intelligence in Medicine, 53*(3), 161-170. doi:10.1016/j.artmed.2011.08.001
+    (PMID 21937203). What the abstract says: two datasets, three language tasks. (a) Two spontaneous narrative tasks
+    from **118 children, average age 13** (this matches Conti-Ramsden's adolescents, the same lab as our Conti4 outside
+    test: check in the paper). (b) Play sessions from **600+ children, average age 6**. Many features + language models
+    and standard ML classifiers. Results reported as **F-measure: over 85% on two tasks, 48% on the third**, far above a
+    cut-off baseline.
+  - **How to compare honestly (interview, not board):** F-measure is not AUC, so the numbers are not directly
+    comparable. Their models were trained and tested within each dataset; ours is trained on ENNI only and applied to
+    Conti4 with no retraining (0.70). Our differences: a few interpretable measures, artifact controls (age/length
+    alone at chance), child-independent splits, locked-box outside labs, words-only model that works from audio.
+    **Still unverified (abstract only):** their exact evaluation method (were splits by child?), and the NAACL 2009
+    paper's datasets/numbers (aclanthology.org is not reachable from the cloud session). Read the PDF yourselves.
 - **Hassanali, K.-N., Liu, Y., Iglesias, A., Solorio, T., & Dollaghan, C. (2014). Automatic generation of
   the Index of Productive Syntax. *(JSLHR / NLP venue)*.** → Automating IPSyn — relevant to your
   `syntax_index` caveats.

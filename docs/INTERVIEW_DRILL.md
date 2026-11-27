@@ -56,7 +56,7 @@ Format: question -> what a strong answer must include -> where to check it.
     Must include: the Gillam gap, what you found the cause was (not grammar), what you'd do. -> ISS-17
 20. **Name a result you were excited about that turned out to be wrong.** -> ISS-16 (typology), ISS-15 (German 0.99)
 21. **Someone did ML on ENNI in 2009. What's new here?**
-    Know Gabani et al.'s actual reported numbers (look them up; not in the repo). -> READING_LIST.md section D
+    Know Gabani et al.'s reported numbers (2011 journal abstract now in READING_LIST.md; read the paper for their evaluation method). -> READING_LIST.md section D
 22. **Why does the AUC fall from 30 to 66 months in the toddler test?** -> ISS-28
 23. **If you had a year and a clinic partner, what would you do next?**
     Must include something concrete: speaker separation, a toddler cutoff from local typical kids, a prospective test.
