@@ -81,6 +81,42 @@ def transcribe_timed(path):
     out = [(re.sub(r"\s+", " ", " ".join(t for t, _, _ in u)).strip(), u[0][1], u[-1][2]) for u in utts]
     return [o for o in out if re.search(r"[a-zA-Z]", o[0])]
 
+VOICE_FILTER = os.path.join(ROOT, "models", "voice_filter.json")
+MIN_CHILD_UTTS = 10   # ~10 sentences are enough to screen (fig6); fewer -> ask for more audio
+_VF = None
+
+def encoder_embedding(seg, sr=16000):
+    """Mean of the Whisper base.en ENCODER output over an utterance's 20 ms frames (512 numbers).
+    It carries who is speaking (child vs adult voice); see ISS-36 / ext_voice_filter.py."""
+    import ctranslate2
+    m = _get_model()
+    seg = seg[:sr * 30]
+    mel = m.feature_extractor(seg)
+    mel = np.pad(mel, ((0, 0), (0, max(0, 3000 - mel.shape[1]))))[:, :3000]
+    out = np.array(m.model.encode(ctranslate2.StorageView.from_array(
+        np.ascontiguousarray(mel[None].astype(np.float32))), to_cpu=True))[0]
+    k = max(1, min(1500, int(np.ceil(len(seg) / sr / 0.02))))
+    return out[:k].mean(0)
+
+def child_only(path, timed):
+    """EXPERIMENTAL child-voice filter (ISS-36): keep the utterances the exported model calls
+    'child'. Tested on 5 families' full home recordings (+11.7 -> +4.2 mo language-age error);
+    does NOT help on short clips. Returns (kept utterance texts, n_kept, n_total)."""
+    global _VF
+    if _VF is None:
+        import json
+        _VF = json.load(open(VOICE_FILTER))
+        for k in ("mean", "scale", "coef"):
+            _VF[k] = np.array(_VF[k])
+    from faster_whisper.audio import decode_audio
+    audio = decode_audio(path, sampling_rate=16000)
+    kept = []
+    for text, s, e in timed:
+        z = (encoder_embedding(audio[int(s * 16000):int(e * 16000) + 1]) - _VF["mean"]) / _VF["scale"]
+        if 1 / (1 + np.exp(-(z @ _VF["coef"] + _VF["intercept"]))) >= _VF["threshold"]:
+            kept.append(text)
+    return kept, len(kept), len(timed)
+
 def features(utts):
     words = [w.lower() for u in utts for w in re.findall(r"[a-z']+", u.lower())]
     lens = [len(re.findall(r"[a-z']+", u.lower())) for u in utts if re.findall(r"[a-z']+", u.lower())]
@@ -173,9 +209,18 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--audio", required=True); ap.add_argument("--age-months", type=float, required=True)
     ap.add_argument("--html", action="store_true")
+    ap.add_argument("--child-only", action="store_true",
+                    help="experimental: drop utterances the voice filter calls adult (ISS-36)")
     a = ap.parse_args()
     print(f"Transcribing {a.audio} ...")
-    utts = transcribe(a.audio)
+    if a.child_only:
+        utts, k, n = child_only(a.audio, transcribe_timed(a.audio))
+        print(f"  child-voice filter: kept {k} of {n} utterances")
+        if k < MIN_CHILD_UTTS:
+            raise SystemExit(f"  Only {k} child sentences found; about {MIN_CHILD_UTTS} are needed to screen. "
+                             f"Use a longer recording (the filter was validated on full ~1-hour sessions).")
+    else:
+        utts = transcribe(a.audio)
     feat = features(utts)
     if not feat:
         raise SystemExit("No speech transcribed.")

@@ -66,6 +66,7 @@ PAGE = """<!doctype html><html><head><meta charset="utf-8"><title>FirstWords</ti
   <div class="agebar">Child's age (used for audio; read from the file for a transcript):
     <input id="yrs" type="number" min="1" max="12" value="5"> yrs
     <input id="mos" type="number" min="0" max="11" value="0"> mos</div>
+  <div class="agebar"><label><input id="childonly" type="checkbox"> Recording has adults talking too: keep only the child's voice (experimental filter)</label></div>
   <div id="chosen"></div>
   <button id="go" class="btn big" disabled>Analyze</button>
   <div id="status">Choose a file or record, then click Analyze.</div>
@@ -101,7 +102,7 @@ recBtn.onclick=async()=>{
 go.onclick=async()=>{
  if(!chosen) return;
  go.disabled=true; status.textContent='Analyzing (a few seconds)...';
- const fd=new FormData(); fd.append('file',chosen,chosen.name); fd.append('age',ageMonths());
+ const fd=new FormData(); fd.append('file',chosen,chosen.name); fd.append('age',ageMonths()); fd.append('child_only',document.getElementById('childonly').checked?'1':'0');
  try{const resp=await fetch('/analyze',{method:'POST',body:fd}); frame.srcdoc=await resp.text();
    status.textContent='Done. Choose another, or record again.';}
  catch(e){status.textContent='Something went wrong. Try again.';}
@@ -150,12 +151,23 @@ def analyze():
         tmp = tempfile.NamedTemporaryFile(suffix=ext or ".webm", delete=False)
         f.save(tmp.name)
         try:
-            utts = a.transcribe(tmp.name)
+            title = name
+            if request.form.get("child_only") == "1":
+                utts, k, n = a.child_only(tmp.name, a.transcribe_timed(tmp.name))
+                title = f"{name} (child-voice filter: kept {k} of {n} sentences)"
+                if k < a.MIN_CHILD_UTTS:
+                    return ("<html><body style='font-family:Arial;padding:24px;color:#241f52'>"
+                            f"<b>Only {k} of {n} sentences sound like the child.</b> About {a.MIN_CHILD_UTTS} "
+                            "child sentences are needed to screen. Record longer, or turn the filter off if "
+                            "only the child is talking. (The filter is experimental and was tested on full "
+                            "home recordings, not short clips.)</body></html>")
+            else:
+                utts = a.transcribe(tmp.name)
             feat = a.features(utts)
             if not feat:
                 return ("<html><body style='font-family:Arial;padding:24px;color:#241f52'>"
                         "<b>No speech detected.</b> Record again, closer to the microphone.</body></html>")
-            doc, _ = a.build_report(name, utts, feat, age, screener=_REDUCED)
+            doc, _ = a.build_report(title, utts, feat, age, screener=_REDUCED)
             return Response(doc, mimetype="text/html")
         finally:
             try: os.unlink(tmp.name)

@@ -77,6 +77,7 @@ plan: [`docs/PITCH.md`](docs/PITCH.md). Team ownership exercise: [`exercises/`](
 │   ├── poster_figures_young.py     # Nov 2026: fig14 (toddler AUC by age) + fig12 (both directions)
 │   ├── ext_asr_childspeech.py      # Nov 2026: real child-speech ASR test (Providence home audio)
 │   ├── ext_voice_filter.py         # Nov 2026: child-vs-adult voice filter from the Whisper encoder (ISS-36)
+│   ├── export_voice_filter.py      # Nov 2026: writes models/voice_filter.json for the offline demo's --child-only option
 │   ├── poster_figures_audio.py     # Nov 2026: fig13 (real home recordings: raw vs voice filter vs child-only)
 │   ├── ext_operating_points.py     # Nov 2026: false alarms vs misses per 100 children at each cutoff
 │   ├── ext_continuity.py           # Nov 2026: toddler late talking <-> school-age DLD, transfer both ways (fig12)
